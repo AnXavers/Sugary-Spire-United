@@ -1,0 +1,1 @@
+targetRoom = mineshaft_2;

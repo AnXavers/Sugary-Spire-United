@@ -1,0 +1,1 @@
+logicOutput = currentState == 1;

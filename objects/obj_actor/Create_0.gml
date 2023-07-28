@@ -1,0 +1,17 @@
+image_speed = 0.35;
+sin_add = 0;
+sin_set = 0;
+sin_mag = 0;
+sin_dir = 0;
+sin_move = 0;
+sin_x = 0;
+sin_y = 0;
+shake_magx = 0;
+shake_magx_acc = 0.6;
+shake_timer = 3;
+shake_delay = 3;
+shake_dir = 1;
+draw_shakex = 0;
+shake_magy = 0;
+shake_magy_acc = 0;
+draw_shakey = 0;

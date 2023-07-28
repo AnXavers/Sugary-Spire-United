@@ -1,0 +1,9 @@
+fadealpha = 0;
+AT = 0;
+HAT = 0;
+fadein = 0;
+alarm[0] = 125;
+var _cam_x = camera_get_view_x(view_camera[0]);
+var _cam_y = camera_get_view_y(view_camera[0]);
+PlayerX = x - _cam_x;
+PlayerY = y - _cam_y;

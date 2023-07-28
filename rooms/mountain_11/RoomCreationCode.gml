@@ -1,0 +1,1 @@
+global.balls = 0;

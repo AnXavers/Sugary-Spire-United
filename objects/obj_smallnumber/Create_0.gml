@@ -1,0 +1,10 @@
+vspeed = -3;
+image_speed = 0.25;
+alarm[0] = 50;
+alarm[1] = 5;
+number = "1";
+flash = 1;
+color = 0;
+scale = 1;
+alpha = 1;
+scaledraw = false;

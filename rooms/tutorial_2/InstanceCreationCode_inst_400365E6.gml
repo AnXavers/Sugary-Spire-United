@@ -1,0 +1,1 @@
+text = "Now sonny, I know you already know about all that fancy stuff like using your scooter and your trusty grab. However, before I throw you out into the real world out there you need to learn some new moves. At Mach 3, if you dive while in the air by pressing DOWN and press JUMP during the dive, you can do the divebomb. This lets you groundpound instantly! Tally-ho!";

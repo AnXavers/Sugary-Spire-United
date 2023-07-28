@@ -1,0 +1,10 @@
+attack_buffer_max = 20;
+cooldown_max = 50;
+threshold_x = 250;
+threshold_y = 250;
+attack_buffer = 0;
+cooldown = 0;
+state = 1;
+scr_collision_init();
+grav = 0.5;
+image_speed = 0.35;

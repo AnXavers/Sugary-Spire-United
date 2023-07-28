@@ -1,0 +1,1 @@
+targetRoom = dance_7;

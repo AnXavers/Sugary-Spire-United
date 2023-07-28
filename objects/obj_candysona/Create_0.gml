@@ -1,0 +1,18 @@
+collectvanish = false;
+collectboxid = -4;
+in_the_void = false;
+platIndex = 0;
+platAlpha = 1;
+depth = 2;
+state = states.normal;
+candyID = -4;
+scr_collision_init();
+grav = 0.5;
+global.collected = 0;
+global.collectsound = mu_entryway_title;
+flash = false;
+image_speed = 0.35;
+gotowardsPlayer = false;
+var my_sona = irandom_range(1, 12);
+sprite_index = asset_get_index("spr_candysona_idle" + string(my_sona));
+deadspr = asset_get_index("spr_candysona_dead" + string(my_sona));

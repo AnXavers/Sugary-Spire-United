@@ -1,0 +1,12 @@
+scr_collision_init();
+image_speed = 0;
+baddieid = -4;
+refresh = 0;
+depth = 1;
+hsp = 0;
+vsp = 0;
+grav = 0.5;
+y += 7;
+sprite_index = spr_baddiespawnerNew;
+mask_index = spr_baddiespawnerNew;
+instance_change(obj_baddiespawner, false);

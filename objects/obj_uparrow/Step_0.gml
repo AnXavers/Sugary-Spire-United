@@ -1,0 +1,8 @@
+image_speed = 0.2;
+with (obj_player)
+{
+	if ((!place_meeting(x, y, obj_door) && (!place_meeting(x, y, obj_startgate) || state == 61) && !place_meeting(x, y, obj_keydoorclock) && !place_meeting(x, y, obj_janitorDoor) && !place_meeting(x, y, obj_keydoor) && !place_meeting(x, y, obj_exitgate)) || !grounded || state != 1)
+		instance_destroy(other.id);
+}
+x = obj_player.x;
+y = obj_player.y - 50;

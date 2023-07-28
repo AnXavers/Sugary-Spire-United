@@ -1,0 +1,11 @@
+event_inherited();
+paletteselect = obj_player.paletteselect;
+pal_sprite = obj_player.spr_palette;
+image_alpha = 1;
+sprite_index = obj_player.sprite_index;
+image_index = obj_player.image_index;
+image_speed = 0;
+image_xscale = obj_player.xscale;
+playerID = obj_player;
+draw_alpha = 0.5;
+draw_angle = obj_player.draw_angle;

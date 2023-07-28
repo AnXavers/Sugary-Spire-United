@@ -1,0 +1,1 @@
+global.waterincaninv = 1;
