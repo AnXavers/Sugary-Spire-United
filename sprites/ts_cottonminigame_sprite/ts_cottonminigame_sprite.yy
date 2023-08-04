@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a4dbe1a9-ea20-4d86-89db-7c1c81d50588",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5af80d90-587f-4b43-b2fc-a8761709740c",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 160,
+  "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1ce95739-4480-45ac-ac3e-d39813f846da","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"550c1521-02d1-4719-8337-1ed3c19153c5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a4dbe1a9-ea20-4d86-89db-7c1c81d50588","path":"sprites/ts_cottonminigame_sprite/ts_cottonminigame_sprite.yy",},},},"Disabled":false,"id":"5061088b-99aa-4dd0-a140-671a5702905f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5af80d90-587f-4b43-b2fc-a8761709740c","path":"sprites/ts_cottonminigame_sprite/ts_cottonminigame_sprite.yy",},},},"Disabled":false,"id":"b9704f53-1eeb-4fbd-bbbd-303a2e4407c0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 160,
+  "width": 128,
 }

@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"93ce49fd-60b1-44a0-b7a7-b38bd6831967",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e58c1ba8-583e-4787-aecc-4fc6f386246e",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 900,
+  "height": 640,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0431fa67-2634-49d6-ae24-d7e4be9e218b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"23eaa472-f5fc-4c72-a9f7-fae970a75e71","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"93ce49fd-60b1-44a0-b7a7-b38bd6831967","path":"sprites/ts_wafer2_sprite/ts_wafer2_sprite.yy",},},},"Disabled":false,"id":"3192eac8-933f-45c5-83a5-26e47b8f3aae","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e58c1ba8-583e-4787-aecc-4fc6f386246e","path":"sprites/ts_wafer2_sprite/ts_wafer2_sprite.yy",},},},"Disabled":false,"id":"0d370fd3-5714-4723-92d1-75d57a6f88c0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 900,
+  "width": 1024,
 }
