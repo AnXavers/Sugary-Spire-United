@@ -42,7 +42,7 @@ function scr_savelevelDetails()
 		ini_write_string("Treasure", string(global.levelname), global.treasure);
 	if (ini_read_string("Highscore", string(global.levelname), 0) < global.collect)
 		ini_write_string("Highscore", string(global.levelname), global.collect);
-	if (ini_read_string("Laps", string(global.levelname), 0) < global.lapcount)
+	if (ini_read_string("Laps", string(global.levelname), 1) < global.lapcount)
 		ini_write_string("Laps", string(global.levelname), global.lapcount);
 	if (ini_read_string("Confecti", string(global.levelname) + "1", 0) == 0)
 		ini_write_string("Confecti", string(global.levelname) + "1", global.mallowfollow);

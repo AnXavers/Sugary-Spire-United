@@ -115,7 +115,7 @@ draw_set_halign(1);
 draw_set_font(global.lapfont);
 var x_shk = random_range(-1, 1);
 var y_shk = random_range(-1, 1);
-if (global.lapcount > 0)
+if (global.lapcount > 1)
 {
 	draw_sprite(spr_lapbg, 0, 480 + x_shk, lap_y + y_shk);
 	draw_text(480 + x_shk, lap_y + y_shk, global.lapcount);

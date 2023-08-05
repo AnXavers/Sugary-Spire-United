@@ -1,4 +1,4 @@
-if (room == timesuproom || room == rank_room || room == rm_credits || room == rm_titlecard || room == hub_w1 || room == hub_w2 || room == tutorial_1 || instance_exists(obj_bosscontroller))
+if (room == timesuproom || room == rank_room || room == rm_credits || room == rm_titlecard || room == hub_w1 || room == hub_w2 || room == tutorial_2 || instance_exists(obj_bosscontroller))
 	DrawHUD = 0;
 else
 	DrawHUD = 1;
@@ -177,7 +177,7 @@ else if (global.collect < global.srank)
 	global.currentrank = "A";
 else if (global.collect >= global.srank)
 {
-	if (global.combolost == 0 && global.secretfound > 2 && global.lapcount >= 1 && global.treasure)
+	if (global.combolost == 0 && global.secretfound > 2 && global.lapcount >= 2 && global.treasure)
 		global.currentrank = "P";
 	else
 		global.currentrank = "S";

@@ -40,6 +40,7 @@ add_music(devroom, mu_what, mu_painter, false);
 add_music(rm_missing, mu_void, mu_painter, false);
 add_music(realtitlescreen, mu_title, mu_painter, false);
 add_music(hub_w1, mu_hubw1, mu_painter, true);
+add_music(hub_hallway, mu_hubw1, mu_painter, true);
 add_music(hub_w2, mu_hubw2, mu_painter, true);
 add_music(rm_credits, mu_credits, mu_painter, false);
 add_music(tutorial_1, mu_tutorial, mu_painter, false);

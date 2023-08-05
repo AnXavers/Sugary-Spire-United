@@ -16,7 +16,7 @@ if (global.gamePauseState == 0)
 		rousr_dissonance_set_timestamps(undefined, undefined);
 	if (room != realtitlescreen && room != rm_introVideo && room != scootercutsceneidk && room != outer_room1 && room != outer_room2 && room != hub_w1 && room != palroom && room != rank_room)
 	{
-		if (global.lapcount == 0)
+		if (global.lapcount == 1)
 			rousr_dissonance_set_state(string(global.collect) + " Points | Rank " + string(global.rpcrank));
 		else
 			rousr_dissonance_set_state(string(global.collect) + " Points | Rank " + string(global.rpcrank) + " | Lap " + string(global.lapcount));

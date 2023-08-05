@@ -62,7 +62,7 @@ function scr_levelSet()
 	global.janitorRudefollow = false;
 	global.janitorLapfollow = false;
 	global.treasure = 0;
-	global.lapcount = 0;
+	global.lapcount = 1;
 	global.lapmusic = false;
 	ini_open("saveData.ini");
 	var ranks = ini_read_string("Ranks", string(global.levelname), "none");
