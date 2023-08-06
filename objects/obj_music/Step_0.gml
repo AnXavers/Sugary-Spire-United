@@ -54,8 +54,6 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 				_new_song = mu_lap;
 			else 
 				_new_song = mu_escape;
-		if (escapemusic != -4)
-			_new_song = escapemusic;
 		unforce_cont = true;
 	}
 	if (_new_song != -4 && music != _new_song && music != mu_sucrose)

@@ -1,3 +1,4 @@
+depth = 400
 targetRoom = mountain_intro;
 targetDoor = "A";
 level = "fudge";

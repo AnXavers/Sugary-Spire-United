@@ -7,8 +7,8 @@ audio_stop_sound(sound_taunt6);
 audio_stop_sound(sound_taunt7);
 audio_stop_sound(sound_taunt8);
 if (obj_player.character == "P")
-	tauntsound = choose(127, 45, 163, 210, 9, 23, 11);
+	tauntsound = choose(sound_taunt1, sound_taunt2, sound_taunt3, sound_taunt4, sound_taunt5, sound_taunt6, sound_taunt7);
 else
-	tauntsound = choose(151, 17, 199, 188, 196, 30, 64, 198);
+	tauntsound = choose(sound_tauntpizzano1, sound_tauntpizzano2, sound_tauntpizzano3, sound_tauntpizzano4, sound_tauntpizzano5, sound_tauntpizzano6, sound_tauntpizzano7, sound_tauntpizzano8);
 scr_sound(tauntsound);
 image_speed = 0.5;

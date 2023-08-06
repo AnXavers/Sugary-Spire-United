@@ -13,5 +13,5 @@ output = function()
 };
 condition = function()
 {
-	return audio_sound_get_track_position(global.music) >= 9.45 && obj_music.music == 53;
+	return audio_sound_get_track_position(global.music) >= 9.45 && obj_music.music == mu_sucrose;
 };

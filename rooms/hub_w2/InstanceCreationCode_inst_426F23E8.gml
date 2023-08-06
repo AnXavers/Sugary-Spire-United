@@ -1,3 +1,4 @@
+depth = 400
 targetRoom = estate_1;
 targetDoor = "A";
 level = "estate";
