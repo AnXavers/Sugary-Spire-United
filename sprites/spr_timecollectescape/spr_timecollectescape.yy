@@ -41,8 +41,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Spire",
-    "path": "folders/Sprites/Layer Assets/Spire.yy",
+    "name": "Collectibles",
+    "path": "folders/Sprites/Objects/Collectibles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
