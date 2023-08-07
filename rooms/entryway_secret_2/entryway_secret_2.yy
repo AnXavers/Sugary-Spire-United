@@ -35,6 +35,7 @@
     {"name":"inst_041C7A45","path":"rooms/entryway_secret_2/entryway_secret_2.yy",},
     {"name":"inst_89C0E8BD","path":"rooms/entryway_secret_2/entryway_secret_2.yy",},
     {"name":"inst_1D735625","path":"rooms/entryway_secret_2/entryway_secret_2.yy",},
+    {"name":"inst_5F0C6E82","path":"rooms/entryway_secret_2/entryway_secret_2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -67,6 +68,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_041C7A45","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"properties":[],"rotation":0.0,"scaleX":26.0,"scaleY":2.0,"x":160.0,"y":800.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_89C0E8BD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_slope","path":"objects/obj_slope/obj_slope.yy",},"properties":[],"rotation":0.0,"scaleX":-2.0,"scaleY":2.0,"x":736.0,"y":736.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1D735625","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_slope","path":"objects/obj_slope/obj_slope.yy",},"properties":[],"rotation":0.0,"scaleX":-2.0,"scaleY":2.0,"x":448.0,"y":672.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5F0C6E82","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_candysona","path":"objects/obj_candysona/obj_candysona.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":864.0,"y":736.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":63,"SerialiseWidth":40,"TileCompressedData":[
 -16,0,1,461,-54,0,1,383,-39,0,1,399,-80,0,3,314,315,316,-37,0,3,330,331,332,-37,0,3,346,347,348,-37,0,3,362,363,364,-37,0,3,378,

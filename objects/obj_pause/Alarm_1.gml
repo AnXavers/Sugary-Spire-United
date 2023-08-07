@@ -1,1 +1,1 @@
-scr_music(12);
+scr_music(mu_pause);

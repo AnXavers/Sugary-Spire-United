@@ -3,10 +3,10 @@ function state_player_machtumble()
 	static bufferslap = 0;
 	static attack_afterimagetimer = 6;
 	hsp = xscale * movespeed;
-	if (movespeed < 11 && grounded)
-		movespeed += 0.5;
-	else if (movespeed < 11 && !grounded)
-		movespeed = 11;
+	if grounded
+		movespeed += 0.1;
+	else
+		movespeed += 0.125;
 	if (scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles))
 	{
 		scr_sound(sound_maximumspeedland);
