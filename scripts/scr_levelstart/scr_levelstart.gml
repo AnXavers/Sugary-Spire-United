@@ -21,7 +21,7 @@ function scr_levelstart()
 			global.srank = 21000;
 			break;
 		case "sucrose":
-			global.srank = 18000;
+			global.srank = 30000;
 		case "estate":
 			global.srank = 26500;
 			break;
