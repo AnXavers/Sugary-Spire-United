@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Exitway",
-    "path": "folders/Sprites/Backgrounds/World Unknown/Exitway.yy",
+    "name": "Escape",
+    "path": "folders/Sprites/Backgrounds/World Unknown/Exitway/Escape.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

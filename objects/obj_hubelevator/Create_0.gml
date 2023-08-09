@@ -1,9 +1,10 @@
 depth = 10;
 state = 0;
 var i = 0;
-hub_array[i++] = [121, "FLOOR 2"];
-hub_array[i++] = [66, "FLOOR 1"];
-hub_array[i++] = [130, "BASEMENT"];
+hub_array[i++] = [hub_w3, "FLOOR 3"];
+hub_array[i++] = [hub_w2, "FLOOR 2"];
+hub_array[i++] = [hub_w1, "FLOOR 1"];
+hub_array[i++] = [hub_basement, "BASEMENT"];
 drawx = 0;
 drawy = 0;
 surface2 = -4;

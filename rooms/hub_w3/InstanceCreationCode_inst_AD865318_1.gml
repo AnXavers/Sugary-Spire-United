@@ -1,7 +1,6 @@
 targetRoom = bee_1;
 targetDoor = "A";
 level = "bee";
-details = [gate_createlayer(spr_bee_startgate, 0), gate_createlayer(spr_bee_startgate, 1), gate_createlayer(spr_bee_startgate, 2)];
 info = 
 {
 	bginfo: [spr_beecard_beegee, 2, 4, 8, 0, 0],

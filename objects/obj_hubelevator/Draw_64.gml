@@ -26,8 +26,9 @@ if (state == 1)
 else if (state == 2)
 {
 	draw_sprite_tiled(bg_menuTile, -1, drawx++, drawy++);
+	draw_sprite(spr_elevator, 0, 464, 348);
 	draw_set_font(global.font);
 	draw_set_halign(1);
-	var msg = "I CANT DRAW! \nPUT A CUTSCENE HERE";
-	draw_text(480 + random_range(1, -1), 270 - (string_height(msg) / 2), msg);
+	var msg = "GOING TO";
+	draw_text(480, 400 - (string_height(msg) / 2), (msg + string(other.hub_array[other.selected])));
 }
