@@ -754,6 +754,7 @@
     {"name":"obj_parryhitbox","order":579,"path":"objects/obj_parryhitbox/obj_parryhitbox.yy",},
     {"name":"obj_palexample","order":580,"path":"objects/obj_palexample/obj_palexample.yy",},
     {"name":"obj_crackerkicker","order":581,"path":"objects/obj_crackerkicker/obj_crackerkicker.yy",},
+    {"name":"Room247","order":1,"path":"rooms/Room247/Room247.yy",},
     {"name":"obj_rotatingPlatform","order":582,"path":"objects/obj_rotatingPlatform/obj_rotatingPlatform.yy",},
     {"name":"obj_disappearingblock","order":583,"path":"objects/obj_disappearingblock/obj_disappearingblock.yy",},
     {"name":"obj_crackerkicker_kickhitbox","order":584,"path":"objects/obj_crackerkicker_kickhitbox/obj_crackerkicker_kickhitbox.yy",},

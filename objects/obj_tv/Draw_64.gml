@@ -120,6 +120,11 @@ if (global.lapcount > 1)
 	draw_sprite(spr_lapbg, 0, 480 + x_shk, lap_y + y_shk);
 	draw_text(480 + x_shk, lap_y + y_shk, global.lapcount);
 }
+if (global.lapcount >= 2)
+{
+	draw_sprite(spr_harrylap, 0, 40, 470);
+	draw_text(120, 470, global.lapcount);
+}
 if (shownewtext == 1)
 {
 	draw_sprite_ext(textbubblesprites, textbubbleframes, 448, 45, 1, 1, 0, c_white, 1);

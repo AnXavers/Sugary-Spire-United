@@ -825,6 +825,7 @@
     {"id":{"name":"obj_parryhitbox","path":"objects/obj_parryhitbox/obj_parryhitbox.yy",},},
     {"id":{"name":"obj_palexample","path":"objects/obj_palexample/obj_palexample.yy",},},
     {"id":{"name":"obj_crackerkicker","path":"objects/obj_crackerkicker/obj_crackerkicker.yy",},},
+    {"id":{"name":"Room247","path":"rooms/Room247/Room247.yy",},},
     {"id":{"name":"obj_rotatingPlatform","path":"objects/obj_rotatingPlatform/obj_rotatingPlatform.yy",},},
     {"id":{"name":"obj_disappearingblock","path":"objects/obj_disappearingblock/obj_disappearingblock.yy",},},
     {"id":{"name":"obj_crackerkicker_kickhitbox","path":"objects/obj_crackerkicker_kickhitbox/obj_crackerkicker_kickhitbox.yy",},},
@@ -4130,6 +4131,7 @@
     {"roomId":{"name":"tutorial_1","path":"rooms/tutorial_1/tutorial_1.yy",},},
     {"roomId":{"name":"tutorial_portal","path":"rooms/tutorial_portal/tutorial_portal.yy",},},
     {"roomId":{"name":"silver_main","path":"rooms/silver_main/silver_main.yy",},},
+    {"roomId":{"name":"Room247","path":"rooms/Room247/Room247.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Backgrounds","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

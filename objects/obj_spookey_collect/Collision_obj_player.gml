@@ -12,5 +12,5 @@ if (!(ds_list_find_index(global.saveroom, id) != -1))
 	global.combotime = 60;
 	ds_list_add(global.saveroom, id);
 	instance_destroy();
-	scr_queue_tvanim(199, 150);
+	scr_queue_tvanim(spr_pizzytvkey, 150);
 }
