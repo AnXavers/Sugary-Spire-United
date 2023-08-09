@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Object599",
+  "name": "obj_online_nametag",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Online Functionality",
+    "path": "folders/Objects/Online Functionality.yy",
   },
   "parentObjectId": null,
   "persistent": false,
