@@ -133,6 +133,8 @@
     {"name":"Collectibles","order":2,"path":"folders/Sprites/Objects/Collectibles.yy",},
     {"name":"Confecti","order":15,"path":"folders/Sprites/Objects/Collectibles/Confecti.yy",},
     {"name":"Janitor","order":16,"path":"folders/Sprites/Objects/Collectibles/Janitor.yy",},
+    {"name":"Jerald","order":10,"path":"folders/Sprites/Objects/Collectibles/Janitor/Jerald.yy",},
+    {"name":"Rudy","order":11,"path":"folders/Sprites/Objects/Collectibles/Janitor/Rudy.yy",},
     {"name":"Polka","order":17,"path":"folders/Sprites/Objects/Collectibles/Polka.yy",},
     {"name":"Doors","order":9,"path":"folders/Sprites/Objects/Doors.yy",},
     {"name":"Level Layout","order":10,"path":"folders/Sprites/Objects/Level Layout.yy",},
@@ -202,8 +204,6 @@
     {"name":"Tutorial","order":5,"path":"folders/Tile Sets/Spire/Tutorial.yy",},
     {"name":"Unused or Unknown","order":3621,"path":"folders/Tile Sets/Unused or Unknown.yy",},
     {"name":"Timelines","order":14,"path":"folders/Timelines.yy",},
-    {"name":"Jerald","order":10,"path":"folders/Sprites/Objects/Collectibles/Janitor/Jerald.yy",},
-    {"name":"Rudy","order":11,"path":"folders/Sprites/Objects/Collectibles/Janitor/Rudy.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_minedummycart","order":1,"path":"objects/obj_minedummycart/obj_minedummycart.yy",},

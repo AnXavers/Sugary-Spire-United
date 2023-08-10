@@ -163,6 +163,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Collectibles","folderPath":"folders/Sprites/Objects/Collectibles.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Confecti","folderPath":"folders/Sprites/Objects/Collectibles/Confecti.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Janitor","folderPath":"folders/Sprites/Objects/Collectibles/Janitor.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Jerald","folderPath":"folders/Sprites/Objects/Collectibles/Janitor/Jerald.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rudy","folderPath":"folders/Sprites/Objects/Collectibles/Janitor/Rudy.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Polka","folderPath":"folders/Sprites/Objects/Collectibles/Polka.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Doors","folderPath":"folders/Sprites/Objects/Doors.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Global","folderPath":"folders/Sprites/Objects/Global.yy",},
@@ -240,8 +242,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tutorial","folderPath":"folders/Tile Sets/Spire/Tutorial.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Unused or Unknown","folderPath":"folders/Tile Sets/Unused or Unknown.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Jerald","folderPath":"folders/Sprites/Objects/Collectibles/Janitor/Jerald.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rudy","folderPath":"folders/Sprites/Objects/Collectibles/Janitor/Rudy.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"intro.mp4","CopyToMask":-1,"filePath":"datafiles/gamedata",},

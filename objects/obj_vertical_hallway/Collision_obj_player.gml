@@ -2,18 +2,18 @@ if (pos_x == "POO")
 	pos_x = other.x;
 with (other.id)
 {
-	var bbox_size = abs(bbox_right - bbox_left);
+	var bbox_size = abs(bbox_bottom - bbox_top);
 	global.combofreeze = 30;
 	x = other.pos_x;
 	y = other.y + (other.sprite_height / 2);
-	var _x1 = clamp(x, other.x + bbox_size, other.bbox_right - bbox_size);
-	var xpos_difference = _x1 - other.x;
-	var xpos = xpos_difference / other.image_xscale;
-	var xpos_offset = xpos * other.hallwayxscale;
+	var _y1 = clamp(y, other.y + bbox_size, other.bbox_bottom - bbox_size);
+	var ypos_difference = _y1 - other.y;
+	var ypos = ypos_difference / other.image_yscale;
+	var ypos_offset = ypos * other.hallwayyscale;
 	targetDoor = other.targetDoor;
 	targetRoom = other.targetRoom;
 	vertical = true;
-	verticaloffset = xpos_offset;
+	verticaloffset = ypos_offset;
 	hallwaydirection = sign(other.image_yscale);
 	if (!instance_exists(obj_fadeout))
 	{

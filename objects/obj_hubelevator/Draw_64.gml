@@ -26,7 +26,7 @@ if (state == 1)
 else if (state == 2)
 {
 	draw_sprite_tiled(bg_menuTile, -1, drawx++, drawy++);
-	draw_sprite(spr_elevator, 0, 464, 348);
+	draw_sprite(spr_elevator, selected, 464, 348);
 	draw_set_font(global.font);
 	draw_set_halign(1);
 	var msg = "GOING TO ";
