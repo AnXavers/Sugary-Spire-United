@@ -29,6 +29,14 @@ else if (state == 2)
 	draw_sprite(spr_elevator, 0, 464, 348);
 	draw_set_font(global.font);
 	draw_set_halign(1);
-	var msg = "GOING TO";
-	draw_text(480, 400 - (string_height(msg) / 2), (msg + string(other.hub_array[other.selected])));
+	var msg = "GOING TO ";
+	if selected == 0
+		var hubmsg = "FLOOR 3"
+	else if selected == 1
+		var hubmsg = "FLOOR 2"
+	else if selected == 2
+		var hubmsg = "FLOOR 1"
+	else
+		var hubmsg = "THE BASEMENT"
+	draw_text(480, 400 - (string_height(msg) / 2), (msg + hubmsg));
 }

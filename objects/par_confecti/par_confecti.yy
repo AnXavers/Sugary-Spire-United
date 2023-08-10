@@ -17,8 +17,8 @@
     "path": "folders/Objects/Parent.yy",
   },
   "parentObjectId": {
-    "name": "par_follower",
-    "path": "objects/par_follower/par_follower.yy",
+    "name": "obj_finale_follower",
+    "path": "objects/obj_finale_follower/obj_finale_follower.yy",
   },
   "persistent": true,
   "physicsAngularDamping": 0.1,

@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Janitor",
-    "path": "folders/Sprites/Objects/Collectibles/Janitor.yy",
+    "name": "Rudy",
+    "path": "folders/Sprites/Objects/Collectibles/Janitor/Rudy.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

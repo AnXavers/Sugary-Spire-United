@@ -36,7 +36,9 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 	var unforce_cont = false;
 	if (global.panic)
 	{
-		if (obj_player.character != "P")
+		if levelname == "finale"
+			_new_song = mu_finale;
+		else if (obj_player.character != "P")
 			if (global.lapcount >= 10)
 				_new_song = mu_sucrose;
 			else if (global.lapcount >= 5)

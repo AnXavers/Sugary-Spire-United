@@ -29,7 +29,7 @@
   ],
   "parent": {
     "name": "Tutorial",
-    "path": "folders/Rooms/Spire/Tutorial.yy",
+    "path": "folders/Rooms/Levels/Tutorial.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

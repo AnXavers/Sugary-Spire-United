@@ -1,5 +1,6 @@
 scr_collision_init();
 scr_playersounds_init();
+global.testbuild = 1
 lastroom = -4;
 upsideDownJump = false;
 terminalVelocity = 20;
