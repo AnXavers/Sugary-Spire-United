@@ -9,11 +9,10 @@ with (other.id)
 	var _y1 = clamp(y, other.y + bbox_size, other.bbox_bottom - bbox_size);
 	var ypos_difference = _y1 - other.y;
 	var ypos = ypos_difference / other.image_yscale;
-	var ypos_offset = ypos * other.hallwayyscale;
 	targetDoor = other.targetDoor;
 	targetRoom = other.targetRoom;
 	vertical = true;
-	verticaloffset = ypos_offset;
+	verticaloffset = ypos;
 	hallwaydirection = sign(other.image_yscale);
 	if (!instance_exists(obj_fadeout))
 	{

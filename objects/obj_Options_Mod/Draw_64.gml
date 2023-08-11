@@ -1,0 +1,24 @@
+draw_set_font(global.font);
+draw_set_halign(1);
+draw_option(150, 30 + ScrollY, "BACK", optionselected == 0);
+draw_set_halign(fa_left);
+draw_option(200, 100 + ScrollY, "CUSTOM LAP MUSIC", optionselected == 1);
+draw_option(150, 150 + ScrollY, "ON", optionsaved_defaultlap);
+draw_option(150, 200 + ScrollY, "OFF", !optionsaved_defaultlap);
+draw_option(200, 250 + ScrollY, "LAP 10 MUSIC", optionselected == 2);
+draw_option(150, 300 + ScrollY, "SUGARCUBE HAILSTORM", !optionsaved_mu_lap10);
+draw_option(150, 350 + ScrollY, "NO MORE NUZZLES", optionsaved_mu_lap10);
+draw_option(200, 400 + ScrollY, "LAP 5 MUSIC", optionselected == 3);
+draw_option(150, 450 + ScrollY, "HARRYS DESPAIRY", !optionsaved_mu_lap5);
+draw_option(150, 500 + ScrollY, "PIZZANOS THEMETUNE", optionsaved_mu_lap5);
+draw_option(200, 550 + ScrollY, "LAP 2 MUSIC", optionselected == 4);
+draw_option(150, 600 + ScrollY, "SWEET RELEASE OF DEATH", !optionsaved_mu_lap2);
+draw_option(150, 650 + ScrollY, "A PIZZANO MEGALO", optionsaved_mu_lap2);
+draw_option(200, 700 + ScrollY, "ESCAPE MUSIC", optionselected == 5);
+draw_option(150, 750 + ScrollY, "GLUCOSE GETAWAY", !optionsaved_mu_escape);
+draw_option(150, 800 + ScrollY, "BLUE LICORICE", optionsaved_mu_escape);
+draw_set_font(global.smallfont);
+var _string_width = string_width(subtitle) + 32;
+if (subtitle != "")
+	draw_sprite_ext(spr_optionSubtitle, 0, 480, 521, _string_width / 32, 1, 0, c_white, 1);
+draw_text(480, 512, subtitle);

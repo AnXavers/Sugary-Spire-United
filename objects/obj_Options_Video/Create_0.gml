@@ -1,7 +1,7 @@
 optionselected = 0;
 ini_open("optionData.ini");
 global.fullscreen = ini_read_real("Settings", "fullscrn", 0);
-global.selectedResolution = ini_read_real("Settings", "resolution", 1);
+global.selectedResolution = ini_read_real("Settings", "resolution", 3);
 global.smoothcam = ini_read_real("Settings", "smthcam", 1);
 global.hitstunEnabled = ini_read_real("Settings", "hitstun", 1);
 global.screentilt = ini_read_real("Settings", "scrntilt", 1);

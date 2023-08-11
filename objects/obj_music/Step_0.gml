@@ -36,26 +36,36 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 	var unforce_cont = false;
 	if (global.panic)
 	{
-		if levelname == "finale"
+		if global.levelname == "finale"
 			_new_song = mu_finale;
-		else if (obj_player.character != "P")
-			if (global.lapcount >= 10)
-				_new_song = mu_sucrose;
-			else if (global.lapcount >= 5)
-				_new_song = mu_pizzanodespairy;
-			else if (global.lapcount >= 2)
-				_new_song = mu_pizzanolap;
-			else 
-				_new_song = mu_pizzanoescape;
+		else if !global.defaultlapmusic
+			if (obj_player.character != "P")
+                if (global.lapcount >= 10)
+                    _new_song = mu_sucrose;
+                else if (global.lapcount >= 5)
+                    _new_song = mu_pizzanodespairy;
+                else if (global.lapcount >= 2)
+                    _new_song = mu_pizzanolap;
+                else 
+                    _new_song = mu_pizzanoescape;
+            else
+                if (global.lapcount >= 10)
+                    _new_song = mu_sucrose;
+                else if (global.lapcount >= 5)
+                    _new_song = mu_despairy;
+                else if (global.lapcount >= 2)
+                    _new_song = mu_lap;
+                else 
+                    _new_song = mu_escape;
 		else
 			if (global.lapcount >= 10)
-				_new_song = mu_sucrose;
+				_new_song = global.lap10song
 			else if (global.lapcount >= 5)
-				_new_song = mu_despairy;
+				_new_song = global.lap5song
 			else if (global.lapcount >= 2)
-				_new_song = mu_lap;
+				_new_song = global.lap2song
 			else 
-				_new_song = mu_escape;
+				_new_song = global.escapesong
 		unforce_cont = true;
 	}
 	if (_new_song != -4 && music != _new_song && music != mu_sucrose)

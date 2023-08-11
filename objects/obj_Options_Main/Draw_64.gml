@@ -1,13 +1,17 @@
 draw_set_halign(1);
 draw_set_font(global.font);
 draw_sprite_tiled(bg_options, 0, bgx, bgy);
-draw_sprite_ext(spr_arrow, -1, 250, CursorY + 24, 1, 1, 0, c_white, 1);
+if !instance_exists(obj_Options_Mod)
+	draw_sprite_ext(spr_arrow, -1, 250, CursorY + 24, 1, 1, 0, c_white, 1);
+else
+	draw_sprite_ext(spr_arrow, -1, 150, CursorY + 24, 1, 1, 0, c_white, 1);
 if (selected == 0)
 {
 	draw_option(150, 30, "BACK", optionselected == 0);
 	draw_option(480, 100, "AUDIO CONFIG", optionselected == 1);
 	draw_option(480, 200, "VIDEO CONFIG", optionselected == 2);
 	draw_option(480, 300, "CONTROL CONFIG", optionselected == 3);
+	draw_option(480, 400, "MOD CONFIG", optionselected == 4);
 	draw_set_font(global.smallfont);
 	var _string_width = string_width(subtitle) + 32;
 	if (subtitle != "")

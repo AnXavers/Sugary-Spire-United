@@ -34,17 +34,23 @@ room_details =
 	continuous: false,
 	my_func: undefined
 };
-add_music(rm_disclaimer, mu_gummyharry, mu_painter, false);
+add_music(rm_disclaimer, mu_paletteselect, mu_painter, false);
+add_music(rm_verify, mu_paletteselect, mu_painter, false);
 add_music(rm_introVideo, -4, mu_painter, false);
 add_music(devroom, mu_what, mu_painter, false);
 add_music(rm_missing, mu_void, mu_painter, false);
 add_music(realtitlescreen, mu_title, mu_painter, false);
+add_music(hub_basement, mu_paletteselect, mu_painter, true);
+add_music(silver_0, mu_silver, mu_danger, true);
 add_music(hub_hallway, mu_hubw1, mu_painter, true);
 add_music(hub_w1, mu_hubw1, mu_painter, true);
+add_music(silver_1, mu_silver, mu_danger, true);
 add_music(hub_shop1, mu_hubshop1, mu_painter, true);
 add_music(hub_w2, mu_hubw2, mu_pizzanothemetune, true);
+add_music(silver_2, mu_silver, mu_danger, true);
 add_music(hub_shop2, mu_hubshop2, mu_pizzanothemetune, true);
 add_music(hub_w3, mu_hubw2, mu_pizzanothemetune, true);
+add_music(silver_3, mu_silver, mu_danger, true);
 add_music(hub_shop3, mu_hubshop2, mu_pizzanothemetune, true);
 add_music(hub_outside, mu_top, mu_finale, true);
 add_music(rm_credits, mu_credits, mu_painter, false);
@@ -76,8 +82,8 @@ add_music(dance_9, mu_dance, mu_dancesecret, true);
 add_music(sucrose_1, mu_sucrose, mu_sucrosesecret, false);
 add_music(estate_1, mu_estate, mu_estatesecret, false);
 add_music(estate_6, mu_estate, mu_estatesecret, true);
-add_music(238, mu_gummyharry, mu_estatesecret, true);
-add_music(bee_1, mu_martian, mu_what, false);
+add_music(estate_dog, mu_danger, mu_estatesecret, true);
+add_music(bee_1, mu_bee, mu_what, false);
 audio_sound_loop_start(mu_waffle, 34.9);
 audio_sound_loop_end(mu_waffle, 218.18);
 audio_sound_loop_start(mu_steamy, 8);

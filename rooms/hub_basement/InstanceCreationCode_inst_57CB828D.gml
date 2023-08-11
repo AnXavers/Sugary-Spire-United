@@ -1,3 +1,3 @@
-targetRoom = rm_painter;
+targetRoom = fudge_1;
 targetDoor = "A";
-level = "painter";
+level = "fudge";

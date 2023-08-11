@@ -29,7 +29,7 @@ if (!global.panic && room != rank_room && room != timesuproom && !instance_exist
 	}
 	if (instance_exists(obj_gummyharry))
 	{
-		global.harrymusic = scr_music(42);
+		global.harrymusic = scr_music(mu_gummyharry);
 		audio_sound_gain(global.harrymusic, 0, 0);
 	}
 }

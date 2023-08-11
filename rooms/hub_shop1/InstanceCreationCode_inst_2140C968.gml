@@ -1,4 +1,5 @@
 idle = spr_rosette_shopnpc;
 speak = spr_rosette_shopnpc;
-mytex = spr_dialogbg;
+mytex = spr_rosettebg;
+image_speed = 1
 text = "The the when the when the";

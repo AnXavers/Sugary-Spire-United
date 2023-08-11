@@ -1,24 +1,24 @@
 if (inputbuffer > 0)
-	inputbuffer--;
+    inputbuffer--
 if (deletebuffer > 0)
-	deletebuffer--;
+    deletebuffer--
 with (ImportButton)
 {
-	if (buffertimer > 0)
-		buffertimer--;
-	if (buffertimer <= 0)
-	{
-		buffertimer = 0;
-		activated = false;
-	}
+    if (buffertimer > 0)
+        buffertimer--
+    if (buffertimer <= 0)
+    {
+        buffertimer = 0
+        activated = 0
+    }
 }
 with (ExportButton)
 {
-	if (buffertimer > 0)
-		buffertimer--;
-	if (buffertimer <= 0)
-	{
-		buffertimer = 0;
-		activated = false;
-	}
+    if (buffertimer > 0)
+        buffertimer--
+    if (buffertimer <= 0)
+    {
+        buffertimer = 0
+        activated = 0
+    }
 }

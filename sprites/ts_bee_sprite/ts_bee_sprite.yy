@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"57937e61-cfcd-4bf1-a610-a9e53a0f6b7d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b55f7849-bcf6-4665-b6f9-c88f7743daab",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1008,
+  "height": 1504,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"40d4d555-1ad3-4b93-aa8a-edafa313f370","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b8535512-d048-46ea-aef2-b2640ca7d592","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"57937e61-cfcd-4bf1-a610-a9e53a0f6b7d","path":"sprites/ts_bee_sprite/ts_bee_sprite.yy",},},},"Disabled":false,"id":"efc8a2d2-44ad-4ffc-a69c-473ccc651483","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b55f7849-bcf6-4665-b6f9-c88f7743daab","path":"sprites/ts_bee_sprite/ts_bee_sprite.yy",},},},"Disabled":false,"id":"ba0e8214-3a23-4cf2-8381-51e15e671664","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1008,
+  "width": 544,
 }

@@ -57,7 +57,7 @@ if (canmove == 1)
 			subtitle = "ADJUST WINDOWED RESOLUTION";
 			CursorY = 200;
 			optionsaved_resolution += (key_right2 + key_left2);
-			optionsaved_resolution = wrap(optionsaved_resolution, 0, 2);
+			optionsaved_resolution = wrap(optionsaved_resolution, 0, 4);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);
@@ -65,12 +65,28 @@ if (canmove == 1)
 				{
 					case 0:
 						window_set_size(480, 260);
+						window_set_min_width(480)
+						window_set_min_height(260)
 						break;
 					case 1:
 						window_set_size(960, 540);
+						window_set_min_width(960)
+						window_set_min_height(540)
 						break;
 					case 2:
 						window_set_size(1280, 720);
+						window_set_min_width(1280)
+						window_set_min_height(720)
+						break;
+					case 3:
+						window_set_size(1920, 1080);
+						window_set_min_width(1920)
+						window_set_min_height(1080)
+						break;
+					case 4:
+						window_set_size(3840, 1080);
+						window_set_min_width(3840)
+						window_set_min_height(1080)
 						break;
 				}
 				ini_open("optionData.ini");
@@ -82,7 +98,7 @@ if (canmove == 1)
 			break;
 		case 3:
 			subtitle = "TOGGLES HITSTUN";
-			CursorY = 300;
+			CursorY = 350;
 			optionsaved_hitstun += (key_right2 + key_left2);
 			optionsaved_hitstun = wrap(optionsaved_hitstun, 0, 1);
 			if (key_jump)
@@ -96,7 +112,7 @@ if (canmove == 1)
 			break;
 		case 4:
 			subtitle = "TOGGLE SMOOTHCAM";
-			CursorY = 400;
+			CursorY = 450;
 			optionsaved_smoothcam += (key_right2 + key_left2);
 			optionsaved_smoothcam = wrap(optionsaved_smoothcam, 0, 1);
 			if (key_jump)
@@ -110,7 +126,7 @@ if (canmove == 1)
 			break;
 		case 5:
 			subtitle = "TOGGLE ESCAPE SCREEN MELT EFFECTS";
-			CursorY = 500;
+			CursorY = 550;
 			optionsaved_screenmelt += (key_right2 + key_left2);
 			optionsaved_screenmelt = wrap(optionsaved_screenmelt, 0, 1);
 			if (key_jump)
@@ -124,7 +140,7 @@ if (canmove == 1)
 			break;
 		case 6:
 			subtitle = "TOGGLE ESCAPE SCREEN TILT EFFECTS";
-			CursorY = 600;
+			CursorY = 650;
 			optionsaved_screentilt += (key_right2 + key_left2);
 			optionsaved_screentilt = wrap(optionsaved_screentilt, 0, 1);
 			if (key_jump)
@@ -138,7 +154,7 @@ if (canmove == 1)
 			break;
 		case 7:
 			subtitle = "TOGGLE LINEAR FILTERING WHEN USING SCREEN SCALES NOT IN 16:9";
-			CursorY = 700;
+			CursorY = 750;
 			optionsaved_smoothscale += (key_right2 + key_left2);
 			optionsaved_smoothscale = wrap(optionsaved_smoothscale, 0, 1);
 			if (key_jump)
@@ -152,7 +168,7 @@ if (canmove == 1)
 			break;
 		case 8:
 			subtitle = "TOGGLE LOW PERFORMANCE MODE";
-			CursorY = 800;
+			CursorY = 850;
 			optionsaved_lowperformance += (key_right2 + key_left2);
 			optionsaved_lowperformance = wrap(optionsaved_lowperformance, 0, 1);
 			if (key_jump)

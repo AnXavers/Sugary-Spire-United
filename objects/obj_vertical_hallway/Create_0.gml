@@ -3,4 +3,3 @@ visited = 0;
 acttransition = 0;
 targetDoor = "A";
 pos_x = "POO";
-other.hallwayyscale = 1

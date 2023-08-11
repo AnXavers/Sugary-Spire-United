@@ -10,6 +10,12 @@ secret_array = [];
 oldComboTitle = 0;
 blue_aftimg = 0;
 mach_aftimg = 0;
+global.color0 = 0
+global.color1 = 0
+global.color2 = 0
+global.color3 = 0
+global.color4 = 0
+global.color5 = 0
 my_pal_surface = -4;
 my_pal_buffer = -4;
 my_palettes = [];
@@ -18,6 +24,7 @@ new_palette("Sugar", 8441896, 6066975);
 new_palette("Gremlin", 8446200, 1607896);
 new_palette("Golden", 1489391, 25527, 1489391, 25527, 25527, 1489391);
 new_palette("Purple", 16273560, 16273560);
+new_palette("Gum", 16737753, 9984923);
 new_palette("Cream n' Chips", spr_pattern0, 13150344);
 new_palette("Valiant Hero", spr_pattern1, 13150344);
 new_palette("Dead Man's Treats", spr_pattern2, 13150344);

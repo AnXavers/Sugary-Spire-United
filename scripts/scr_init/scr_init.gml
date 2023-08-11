@@ -1,20 +1,3 @@
-function scr_setgmliverooms(room)
-{
-    var _bool = false;
-    switch room_get_name(room)
-    {
-        case "exitway_1":
-        case "exitway_2":
-        case "exitway_3":
-        case "exitway_4":
-        case "exitway_secret1":
-            _bool = true;
-            break;
-    }
-
-    return _bool;
-}
-
 scribble_anim_wave(0.5, 3, 0.5);
 pal_swap_init_system(10, 3, 12);
 global.levelname = "none";
@@ -101,6 +84,11 @@ global.musicVolume = ini_read_real("Settings", "musicvol", 0.6);
 global.dialogueVolume = ini_read_real("Settings", "dialoguevol", 1);
 global.soundVolume = ini_read_real("Settings", "soundvol", 1);
 global.masterVolume = ini_read_real("Settings", "mastervol", 1);
+global.defaultlapmusic = ini_read_real("Settings", "defaultlap", 0);
+global.mulap10 = ini_read_real("Settings", "mu_lap10", 0);
+global.mulap5 = ini_read_real("Settings", "mu_lap5", 0);
+global.mulap2 = ini_read_real("Settings", "mu_lap2", 0);
+global.muescape = ini_read_real("Settings", "mu_escape", 0);
 ini_close();
 
 audio_master_gain(global.masterVolume);
@@ -113,12 +101,64 @@ switch (ini_read_real("Settings", "resolution", 1))
 {
 	case 0:
 		window_set_size(480, 260);
+		window_set_min_width(480)
+		window_set_min_height(260)
 		break;
 	case 1:
 		window_set_size(960, 540);
+		window_set_min_width(960)
+		window_set_min_height(540)
 		break;
 	case 2:
 		window_set_size(1280, 720);
+		window_set_min_width(1280)
+		window_set_min_height(720)
+		break;
+	case 3:
+		window_set_size(1920, 1080);
+		window_set_min_width(1920)
+		window_set_min_height(1080)
+		break;
+	case 4:
+		window_set_size(3840, 1080);
+		window_set_min_width(3840)
+		window_set_min_height(1080)
+		break;
+}
+switch (ini_read_real("Settings", "mu_lap10", 0))
+{
+	case 0:
+		global.lap10song = mu_sucrose;
+		break;
+	case 1:
+		global.lap10song = mu_finale;
+		break;
+}
+switch (ini_read_real("Settings", "mu_lap5", 0))
+{
+	case 0:
+		global.lap5song = mu_despairy;
+		break;
+	case 1:
+		global.lap5song = mu_pizzanodespairy;
+		break;
+}
+switch (ini_read_real("Settings", "mu_lap2", 0))
+{
+	case 0:
+		global.lap2song = mu_lap;
+		break;
+	case 1:
+		global.lap2song = mu_pizzanolap;
+		break;
+}
+switch (ini_read_real("Settings", "mu_escape", 0))
+{
+	case 0:
+		global.escapesong = mu_escape
+		break;
+	case 1:
+		global.escapesong = mu_pizzanoescape;
 		break;
 }
 window_set_fullscreen(ini_read_real("Settings", "fullscrn", 0));
@@ -132,13 +172,5 @@ audio_sound_gain(sfx_combovoice6p, 2, 0);
 audio_sound_gain(sfx_combovoice7p, 2, 0);
 audio_sound_gain(sfx_combovoice8p, 2, 0);
 gml_release_mode(true);
-var _emptyfuckroom = room_add();
-room_assign(_emptyfuckroom, rm_blank);
-room_instance_add(_emptyfuckroom, 0, 0, obj_eventtrigger327);
-for (var i = 0; room_exists(i); i++)
-{
-	if (scr_setgmliverooms(i))
-		room_assign(i, _emptyfuckroom);
-}
 global.doorsave = ds_list_create();
 global.afterimage_list = ds_list_create();

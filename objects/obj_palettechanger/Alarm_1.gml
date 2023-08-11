@@ -1,2 +1,2 @@
-showtext = true;
-alarm[0] = 300;
+showtext = 1
+alarm[0] = 300

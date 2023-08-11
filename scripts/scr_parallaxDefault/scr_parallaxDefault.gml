@@ -38,6 +38,7 @@ function scr_default_parallax(argument0 = false)
 	scr_addParallaxLayer("Backgrounds_still2", defaultParallaxFar, [0.85, 0.85]);
 	scr_addParallaxLayer("Backgrounds_still3", defaultParallaxFar, [0.7, 0.7]);
 	scr_addParallaxLayer("Backgrounds_still4", defaultParallaxFar, [0.65, 0.65]);
+	scr_addParallaxLayer("Assets_still", defaultParallaxFar, [1, 1]);
 	scr_addParallaxLayer("Assets_BG", defaultParallax, [0.1, 0.1]);
 	scr_addParallaxLayer("Assets_BG1", defaultParallax, [0.05, 0.05]);
 	scr_addParallaxLayer("Assets_BG2", defaultParallax, [0.1, 0.1]);
