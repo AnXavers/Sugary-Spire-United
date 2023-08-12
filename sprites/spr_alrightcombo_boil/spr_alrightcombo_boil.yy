@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "Combo",
-    "path": "folders/Sprites/Combo.yy",
+    "path": "folders/Sprites/UI/Combo.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

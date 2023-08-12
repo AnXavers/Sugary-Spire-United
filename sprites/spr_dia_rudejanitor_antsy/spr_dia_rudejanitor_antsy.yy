@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "UI",
-    "path": "folders/Sprites/UI.yy",
+    "name": "Dialogue Icons",
+    "path": "folders/Sprites/Dialogue Icons.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

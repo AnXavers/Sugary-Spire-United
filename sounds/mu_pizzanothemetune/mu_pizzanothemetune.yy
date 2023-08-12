@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 180.58449,
   "parent": {
-    "name": "IDK where to put these",
-    "path": "folders/Sounds/Music/IDK where to put these.yy",
+    "name": "Boss",
+    "path": "folders/Sounds/Music/Boss.yy",
   },
   "preload": true,
   "sampleRate": 44100,

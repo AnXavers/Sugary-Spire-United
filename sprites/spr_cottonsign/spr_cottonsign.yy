@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Cottontown",
+    "path": "folders/Sprites/Layer Assets/Levels/Cottontown.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

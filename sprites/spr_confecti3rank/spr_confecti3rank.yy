@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Rank Card",
+    "path": "folders/Sprites/UI/Rank/Rank Card.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
