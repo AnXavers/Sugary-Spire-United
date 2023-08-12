@@ -133,7 +133,7 @@ if (canmove == 1)
 			{
 				scr_sound(sound_enemythrow);
 				ini_open("optionData.ini");
-				ini_write_real("Settings", "screenmelt", optionsaved_screenmelt);
+				ini_write_real("Settings", "tvmsg", optionsaved_screenmelt);
 				ini_close();
 				global.screenmelt = optionsaved_screenmelt;
 			}
@@ -153,17 +153,17 @@ if (canmove == 1)
 			}
 			break;
 		case 7:
-			subtitle = "TOGGLE LINEAR FILTERING WHEN USING SCREEN SCALES NOT IN 16:9";
+			subtitle = "TOGGLE TV MESSAGE POPUPS";
 			CursorY = 750;
-			optionsaved_smoothscale += (key_right2 + key_left2);
-			optionsaved_smoothscale = wrap(optionsaved_smoothscale, 0, 1);
+			optionsaved_tvmessages += (key_right2 + key_left2);
+			optionsaved_tvmessages = wrap(optionsaved_tvmessages, 0, 1);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);
 				ini_open("optionData.ini");
-				ini_write_real("Settings", "smoothscale", optionsaved_smoothscale);
+				ini_write_real("Settings", "tvmsg", optionsaved_tvmessages);
 				ini_close();
-				global.smoothscale = optionsaved_smoothscale;
+				global.tvmessages = optionsaved_tvmessages;
 			}
 			break;
 		case 8:

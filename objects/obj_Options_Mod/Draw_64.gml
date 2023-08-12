@@ -18,6 +18,7 @@ draw_option(200, 700 + ScrollY, "ESCAPE MUSIC", optionselected == 5);
 draw_option(150, 750 + ScrollY, "GLUCOSE GETAWAY", !optionsaved_mu_escape);
 draw_option(150, 800 + ScrollY, "BLUE LICORICE", optionsaved_mu_escape);
 draw_set_font(global.smallfont);
+draw_set_halign(1);
 var _string_width = string_width(subtitle) + 32;
 if (subtitle != "")
 	draw_sprite_ext(spr_optionSubtitle, 0, 480, 521, _string_width / 32, 1, 0, c_white, 1);
