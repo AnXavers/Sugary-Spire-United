@@ -120,6 +120,7 @@ bgdex = 0;
 paltime = 0;
 rankpal = spr_rankpal;
 janspr = spr_rankrudejanitor;
+lapjanspr = spr_rankotherjanitor
 janscale = 1;
 jandraw = 1;
 clipy = 809;
@@ -128,6 +129,10 @@ if (global.treasure == 1)
 	janspr = spr_rankrudejanitor;
 else
 	janspr = spr_null;
+if (global.lapcount >= 2)
+	lapjanspr = spr_rankotherjanitor;
+else
+	lapjanspr = spr_null;
 
 setcolors = function()
 {

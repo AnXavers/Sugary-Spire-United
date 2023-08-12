@@ -1,10 +1,10 @@
 targetRoom = molasses_1;
 targetDoor = "A";
 level = "molasses";
-details = [gate_createlayer(1312, 0), gate_createlayer(1312, 1), gate_createlayer(1312, 2, 1), gate_createlayer(1312, 3, 0.75), gate_createlayer(1312, 4, 0.5), gate_createlayer(1312, 5, 0.25)];
+details = [gate_createlayer(spr_molasses_startgate, 0), gate_createlayer(spr_molasses_startgate, 1), gate_createlayer(spr_molasses_startgate, 2, 1), gate_createlayer(spr_molasses_startgate, 3, 0.75), gate_createlayer(spr_molasses_startgate, 4, 0.5), gate_createlayer(spr_molasses_startgate, 5, 0.25)];
 info = 
 {
-	bginfo: [1178, 2, 4, 8, 0, 0],
-	titleinfo: [495, 0, 5, 6, 672, 160],
-	song: 121
+    bginfo: [spr_molassescard_bg, (2 << 0), (4 << 0), (8 << 0), 0, 0],
+    titleinfo: [spr_molassescard_title, (0 << 0), (5 << 0), (6 << 0), 0, 0],
+    song: mu_swamp_title
 };

@@ -1,0 +1,1 @@
+targetRoom = hub_shop1

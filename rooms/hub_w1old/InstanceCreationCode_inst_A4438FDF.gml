@@ -1,10 +1,10 @@
 targetRoom = mines_1;
 targetDoor = "A";
 level = "mines";
-details = [gate_createlayer(1732, 0), gate_createlayer(1732, 1), gate_createlayer(1732, 2, 1), gate_createlayer(1732, 3, 0.66), gate_createlayer(1732, 4, 0.33)];
+details = [gate_createlayer(spr_mines_startgate, 0), gate_createlayer(spr_mines_startgate, 1), gate_createlayer(spr_mines_startgate, 2, 1), gate_createlayer(spr_mines_startgate, 3, 0.66), gate_createlayer(spr_mines_startgate, 4, 0.33)];
 info = 
 {
-	bginfo: [1178, 2, 4, 8, 0, 0],
-	titleinfo: [495, 0, 5, 6, 672, 160],
-	song: 56
+    bginfo: [spr_minescard_bg, (1 << 0), (5 << 0), (8 << 0), 0, 0],
+    titleinfo: [spr_minescard_title, (0 << 0), (4 << 0), (7 << 0), 0, 0],
+    song: mu_mines_title
 };

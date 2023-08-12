@@ -2570,6 +2570,7 @@
     {"id":{"name":"spr_cottondeco","path":"sprites/spr_cottondeco/spr_cottondeco.yy",},},
     {"id":{"name":"spr_heatmeterunder","path":"sprites/spr_heatmeterunder/spr_heatmeterunder.yy",},},
     {"id":{"name":"spr_playerN_parry3","path":"sprites/spr_playerN_parry3/spr_playerN_parry3.yy",},},
+    {"id":{"name":"spr_doorP_large","path":"sprites/spr_doorP_large/spr_doorP_large.yy",},},
     {"id":{"name":"spr_witch_almanac","path":"sprites/spr_witch_almanac/spr_witch_almanac.yy",},},
     {"id":{"name":"spr_palp","path":"sprites/spr_palp/spr_palp.yy",},},
     {"id":{"name":"spr_blockdebris","path":"sprites/spr_blockdebris/spr_blockdebris.yy",},},

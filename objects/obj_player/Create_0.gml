@@ -18,6 +18,7 @@ global.color4 = 0
 global.color5 = 0
 my_pal_surface = -4;
 my_pal_buffer = -4;
+global.doortaunt = 0
 my_palettes = [];
 new_palette("Default", c_white, 13150344);
 new_palette("Sugar", 8441896, 6066975);

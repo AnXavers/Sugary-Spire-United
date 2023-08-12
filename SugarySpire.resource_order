@@ -2434,6 +2434,7 @@
     {"name":"spr_cottondeco","order":37,"path":"sprites/spr_cottondeco/spr_cottondeco.yy",},
     {"name":"spr_heatmeterunder","order":350,"path":"sprites/spr_heatmeterunder/spr_heatmeterunder.yy",},
     {"name":"spr_playerN_parry3","order":135,"path":"sprites/spr_playerN_parry3/spr_playerN_parry3.yy",},
+    {"name":"spr_doorP_large","order":893,"path":"sprites/spr_doorP_large/spr_doorP_large.yy",},
     {"name":"spr_witch_almanac","order":875,"path":"sprites/spr_witch_almanac/spr_witch_almanac.yy",},
     {"name":"spr_palp","order":598,"path":"sprites/spr_palp/spr_palp.yy",},
     {"name":"spr_blockdebris","order":10,"path":"sprites/spr_blockdebris/spr_blockdebris.yy",},

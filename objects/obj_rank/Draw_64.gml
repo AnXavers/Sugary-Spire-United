@@ -33,7 +33,17 @@ draw_sprite_ext(card1spr, carddex1, 649 + (cshake1 ? irandom_range(-2, 2) : 0), 
 draw_sprite_ext(card2spr, carddex2, 723 + (cshake2 ? irandom_range(-2, 2) : 0), 325 + (cshake2 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
 draw_sprite_ext(card3spr, carddex3, 798 + (cshake3 ? irandom_range(-2, 2) : 0), 327 + (cshake3 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
 if (jandraw == 1)
-	draw_sprite_ext(janspr, 0, 558, 88 + clipy, janscale, janscale, 0, c_white, 1);
+{
+	if lapjanspr = spr_null
+		draw_sprite_ext(janspr, 0, 558, 88 + clipy, janscale, janscale, 0, c_white, 1);
+	else if janspr = spr_null
+		draw_sprite_ext(lapjanspr, 0, 558, 88 + clipy, janscale, janscale, 0, c_white, 1);
+	else
+	{
+		draw_sprite_ext(janspr, 0, 568, 88 + clipy, janscale, janscale, 0, c_white, 1);
+		draw_sprite_ext(lapjanspr, 0, 510, 88 + clipy, janscale, janscale, 0, c_white, 1);
+	}
+}
 draw_sprite_ext(spr_confecti1rank, global.mallowfollow, 514 + (shake1 ? irandom_range(-2, 2) : 0), 190 + (shake1 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
 draw_sprite_ext(spr_confecti2rank, global.chocofollow, 594 + (shake2 ? irandom_range(-2, 2) : 0), 186 + (shake2 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
 draw_sprite_ext(spr_confecti3rank, global.crackfollow, 677 + (shake3 ? irandom_range(-2, 2) : 0), 187 + (shake3 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
@@ -62,6 +72,11 @@ for (i = 0; i < _string_length; i++)
 	pal_swap_set(spr_palcandle, pal, false);
 	draw_text(_xx, _yy + _yyoffset + clipy, string_char_at(_string, i + 1));
 	shader_reset();
+}
+if (global.lapcount >= 2)
+{
+	draw_set_font(global.lapfont);
+	draw_text(880, 340 + clipy, global.lapcount)
 }
 draw_sprite_ext(spr_rankletter, rankdex, 725, 108 + clipy, rscale, rscale, 0, c_white, 1);
 if (stampani == 1)

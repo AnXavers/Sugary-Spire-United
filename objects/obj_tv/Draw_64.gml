@@ -122,8 +122,9 @@ if (global.lapcount > 1)
 }
 if (global.lapcount >= 2)
 {
-	draw_sprite(spr_harrylap, 0, 40, 470);
-	draw_text(120, 470, global.lapcount);
+	draw_set_halign(fa_left);
+	draw_sprite(spr_harrylap, image_index, 70, 485);
+	draw_text(115 + x_shk, 460 + y_shk, global.lapcount);
 }
 if (shownewtext == 1)
 {

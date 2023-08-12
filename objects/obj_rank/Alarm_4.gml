@@ -1,8 +1,8 @@
 scr_hatScript();
 scr_levelSet();
 global.levelname = "none";
-obj_player.targetDoor = "A";
-obj_player.targetRoom = hub_w1;
+obj_player.targetRoom = global.entergateroom;
+obj_player.targetDoor = global.entergatedoor;
 audio_stop_all();
 instance_create(x, y, obj_fadeout);
 alarm[0] = -1;
