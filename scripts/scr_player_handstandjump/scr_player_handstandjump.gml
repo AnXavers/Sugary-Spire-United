@@ -105,14 +105,12 @@ function state_player_handstandjump()
 		sprite_index = spr_mach2;
 		grav = 0.5;
 	}
-	if (key_slap2 && !key_down && animation_end(undefined, 5))
+	if (key_slap2 && !key_down)
 	{
 		sprite_index = spr_player_machtumble;
 		image_index = 0;
 		image_speed = 0.2;
 		state = 103;
-		if (movespeed < 13)
-			movespeed += 2;
 		with (instance_create(x, y, obj_jumpdust))
 			image_xscale = other.xscale;
 	}

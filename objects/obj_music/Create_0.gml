@@ -44,6 +44,7 @@ add_music(hub_basement, mu_hubw0, mu_painter, true);
 add_music(silver_0, mu_silver, mu_danger, true);
 add_music(hub_hallway, mu_hubw1, mu_painter, true);
 add_music(hub_w1, mu_hubw1, mu_painter, true);
+add_music(hub_w1old, mu_hubw1, mu_painter, true);
 add_music(silver_1, mu_silver, mu_danger, true);
 add_music(hub_shop1, mu_hubshop1, mu_painter, true);
 add_music(hub_w2, mu_hubw2, mu_pizzanothemetune, true);

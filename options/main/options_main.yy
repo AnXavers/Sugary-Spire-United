@@ -15,6 +15,6 @@
   "option_steam_app_id": "0",
   "option_template_description": "",
   "option_template_icon": "template_icon.png",
-  "option_template_image": "${base_options_dir}/main/template_image.png",
+  "option_template_image": "template_image.png",
   "option_window_colour": 0,
 }

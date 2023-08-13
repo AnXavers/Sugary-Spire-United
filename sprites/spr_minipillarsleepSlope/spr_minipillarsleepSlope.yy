@@ -3,9 +3,9 @@
   "resourceVersion": "1.0",
   "name": "spr_minipillarsleepSlope",
   "bbox_bottom": 31,
-  "bbox_left": 2,
+  "bbox_left": 1,
   "bbox_right": 31,
-  "bbox_top": 2,
+  "bbox_top": 1,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3d9ff07a-80f4-4835-955b-04b477cf0a7f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"671c3b12-6f3e-47cb-bc7d-6a37fc39e0a8",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"021515bc-9c66-4891-a109-8fcbd75c9a87","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c7a48d12-2b72-48c1-af3b-8a61b7aefe46","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": {
     "resourceType": "GMNineSliceData",
@@ -77,7 +77,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3d9ff07a-80f4-4835-955b-04b477cf0a7f","path":"sprites/spr_minipillarsleepSlope/spr_minipillarsleepSlope.yy",},},},"Disabled":false,"id":"b29d4fc6-7054-4a4f-b237-b9a012a6b960","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"671c3b12-6f3e-47cb-bc7d-6a37fc39e0a8","path":"sprites/spr_minipillarsleepSlope/spr_minipillarsleepSlope.yy",},},},"Disabled":false,"id":"7e2ff57f-8ddd-4984-b716-5f3dcf7ef2d4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

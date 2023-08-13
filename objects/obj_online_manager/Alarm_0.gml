@@ -1,9 +1,0 @@
-local_name_text = instance_create(x, (y - 32), obj_online_nametag)
-local_name_text.textcolor = obj_online_manager.color
-username = string_upper(username)
-local_name_text.text = username
-player.color = obj_online_manager.color
-player.name_text = local_name_text
-local_name_text.target = player
-local_name_text.special = obj_online_manager.special
-name_set = 1
