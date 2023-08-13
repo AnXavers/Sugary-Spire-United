@@ -109,8 +109,12 @@ function state_player_backbreaker()
 				paletteselect = 0;
 				break;
 			case "C":
-				character = "P";
+				character = "T";
 				paletteselect = 1;
+				break;
+			case "T":
+				character = "P";
+				paletteselect = 0;
 				break;
 		}
 		scr_characterspr();

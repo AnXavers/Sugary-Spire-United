@@ -110,7 +110,7 @@ function state_player_superslam()
 		if (character == "P")
 			sprite_index = spr_player_machfreefall;
 		if (character == "DEEZNUTS")
-			sprite_index = spr_playerN_jump;
+			sprite_index = spr_Noise_jump;
 	}
 	if (move != 0)
 	{

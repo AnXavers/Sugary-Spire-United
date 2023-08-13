@@ -3,6 +3,7 @@ function state_player_mach1()
 	switch (character)
 	{
 		case "P":
+		case "T":
 			dir = xscale;
 			move = key_left + key_right;
 			landAnim = 0;

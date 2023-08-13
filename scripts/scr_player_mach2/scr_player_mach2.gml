@@ -14,7 +14,7 @@ function state_player_mach2()
 		vsp /= 20;
 		jumpstop = 1;
 	}
-	if (character == "P")
+	if (character == "P" || character == "T")
 	{
 		if (grounded && vsp > 0)
 			jumpstop = 0;
@@ -127,7 +127,7 @@ function state_player_mach2()
 		sprite_index = spr_machroll;
 		vsp = 10;
 	}
-	if (((!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)) && (character == "P" || character == "N"))
+	if (((!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)) && (character == "P" || character == "N" || character == "T"))
 	{
 		if (!upsideDownJump)
 		{

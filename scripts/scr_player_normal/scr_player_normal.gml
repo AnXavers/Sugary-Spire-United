@@ -77,7 +77,20 @@ function state_player_normal()
 							sprite_index = spr_player_winding;
 						}
 					}
-					else if (facehurt == 1 && character == "P")
+					if (character == "T")
+							{
+								if (global.cane == 1)
+									sprite_index = spr_caneidle;
+								else
+								{
+									sprite_index = spr_idle;
+									if (global.levelname == "fudge")
+										sprite_index = spr_player_fudgeidle;
+									if (global.levelname == "dance")
+										sprite_index = spr_player_danceidle;
+								}
+							}
+					else if (facehurt == 1 && character == "P" || character == "T")
 					{
 						windingAnim = 0;
 						if (sprite_index != spr_player_facehurtup && sprite_index != spr_player_facehurt)

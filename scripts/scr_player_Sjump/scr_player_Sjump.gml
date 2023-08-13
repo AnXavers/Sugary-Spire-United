@@ -51,7 +51,7 @@ function state_player_Sjump()
 		machhitAnim = 0;
 		movespeed = 0;
 	}
-	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && character == "P" && sprite_index != spr_player_superjump_cancelprep)
+	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && ((character == "P" || character == "T") && sprite_index != spr_player_superjump_cancelprep))
 	{
 		scr_sound(sound_superjumpcancel);
 		image_index = 0;

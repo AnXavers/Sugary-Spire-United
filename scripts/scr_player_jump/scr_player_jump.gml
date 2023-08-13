@@ -104,7 +104,7 @@ function state_player_jump()
 	}
 	if (key_jump)
 		input_buffer_jump = 0;
-	if (character == "P")
+	if (character == "P" || character == "T")
 	{
 		if (vsp > 5)
 			fallinganimation++;
