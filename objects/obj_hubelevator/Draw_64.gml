@@ -1,3 +1,4 @@
+var y_shk = random_range(-1, 1);
 if (state == 1)
 {
 	var txt = hub_array[selected][1];
@@ -5,6 +6,7 @@ if (state == 1)
 	var length = array_length(hub_array);
 	draw_set_halign(1);
 	draw_set_font(global.font);
+	draw_text(480, 400 - (string_height(hub_choosing) / 2) + y_shk, hub_choosing);
 	if (!surface_exists(surface2))
 		surface2 = surface_create(480, 240);
 	surface_set_target(surface2);
@@ -31,12 +33,14 @@ else if (state == 2)
 	draw_set_halign(1);
 	var msg = "GOING TO ";
 	if selected == 0
-		var hubmsg = "FLOOR 3"
+		var hubmsg = "TOP"
 	else if selected == 1
-		var hubmsg = "FLOOR 2"
+		var hubmsg = "FLOOR 3"
 	else if selected == 2
+		var hubmsg = "FLOOR 2"
+	else if selected == 3
 		var hubmsg = "FLOOR 1"
 	else
 		var hubmsg = "THE BASEMENT"
-	draw_text(480, 400 - (string_height(msg) / 2), (msg + hubmsg));
+	draw_text(480, 400 - (string_height(msg) / 2) + y_shk, (msg + hubmsg));
 }
