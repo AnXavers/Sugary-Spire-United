@@ -1,4 +1,4 @@
-idle = spr_silverconeboy;
-speak = spr_silverconeboy;
-mytex = spr_silverconeboybg;
-text = "Just what do your think you're doing?";
+idle = spr_silverclone;
+speak = spr_silverclone;
+mytex = spr_silverclonebg;
+text = "...";
