@@ -2,8 +2,6 @@ if (global.panic == 1 && room != sucrose_1)
 {
 	with (obj_player)
 	{
-		if (taunttimer = 19)
-			global.collect += 20
 		if (grounded && (!other.drop || other.drop_state == 1) && key_up && (state == 1 || state == 68 || state == 69 || state == 70 || state == 64))
 		{
 			targetDoor = "none";
@@ -28,6 +26,7 @@ if (global.panic == 1 && room != sucrose_1)
 			}
 			global.panic = false;
 			global.lapmusic = false;
+			global.exitgatetaunt = 0
 			if (global.rank == "p")
 				scr_sound(mu_rankp);
 			if (global.rank == "s")

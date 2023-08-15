@@ -20,6 +20,7 @@ global.dialogmsg = 0;
 global.dialogchoices = 0;
 global.choiced = 0;
 global.dialogNPC = -4;
+global.exitgatetaunt = 0
 global.dancetimer = 0;
 global.maxdancetimer = 0;
 global.martian_alarmed = false;

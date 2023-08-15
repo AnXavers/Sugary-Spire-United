@@ -130,5 +130,9 @@ function state_player_backbreaker()
 		sprite_index = spr_taunt;
 		with (instance_create(x, y, obj_taunteffect))
 			playerID = other.id;
+		if (place_meeting(x, y, obj_exitgate) && global.exitgatetaunt <= 10 && global.panic)
+			global.collect += 20
+			instance_create(x, y, obj_20)
+			global.exitgatetaunt += 1
 	}
 }

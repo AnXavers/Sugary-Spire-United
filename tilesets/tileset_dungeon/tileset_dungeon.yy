@@ -13,7 +13,7 @@
   "out_tilevborder": 2,
   "parent": {
     "name": "Dungeon",
-    "path": "folders/Tile Sets/Dungeon.yy",
+    "path": "folders/Tile Sets/Levels/Dungeon.yy",
   },
   "spriteId": {
     "name": "tile_dungeon",

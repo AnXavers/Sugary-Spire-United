@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tower and Hub",
-    "path": "folders/Tile Sets/Tower and Hub.yy",
+    "name": "Tower",
+    "path": "folders/Tile Sets/Tower.yy",
   },
   "spriteId": {
     "name": "tile_towerfloor4tiles",

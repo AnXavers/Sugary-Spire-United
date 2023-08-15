@@ -9,13 +9,16 @@
     "TileSerialiseData": [],
   },
   "out_columns": 20,
-  "out_tilehborder": 2,
-  "out_tilevborder": 2,
+  "out_tilehborder": 0,
+  "out_tilevborder": 0,
   "parent": {
     "name": "Entrance",
-    "path": "folders/Tile Sets/Entrance.yy",
+    "path": "folders/Tile Sets/Levels/Entrance.yy",
   },
-  "spriteId": null,
+  "spriteId": {
+    "name": "tile_tower",
+    "path": "sprites/tile_tower/tile_tower.yy",
+  },
   "spriteNoExport": false,
   "textureGroupId": {
     "name": "Backgrounds",

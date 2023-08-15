@@ -10,7 +10,6 @@ if random_index = 100
 else
 	hub_array[i++] = [hub_w1, "FLOOR 1"];
 hub_array[i++] = [hub_basement, "BASEMENT"];
-hub_array[i++] = [inbetweencutscene, "TO TOWER"];
 drawx = 0;
 drawy = 0;
 surface2 = -4;
