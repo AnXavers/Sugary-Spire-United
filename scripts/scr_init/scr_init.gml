@@ -1,5 +1,6 @@
 scribble_anim_wave(0.5, 3, 0.5);
 pal_swap_init_system(10, 3, 12);
+global.fileselect = "saveData.ini"
 global.levelname = "none";
 global.firstlvlRoom = 66;
 global.secretfound = 0;
@@ -8,6 +9,7 @@ global.playmiliseconds = 0;
 global.playseconds = 0;
 global.playminutes = 0;
 global.playhour = 0;
+global.hasbeenhurt = 0;
 global.fill = 0;
 global.freezeframe = false;
 global.freezeframetimer = 5;

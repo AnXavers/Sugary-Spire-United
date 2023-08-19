@@ -2,10 +2,10 @@ function scr_savelevelDetails()
 {
 	if (global.collect >= global.srank)
 	{
-		if (global.combolost == 0 && global.secretfound > 2 && global.lapcount >= 1 && global.treasure)
+		if (global.lapcount >= 10 && !global.hasbeenhurt && global.toppintotal == 5 && global.combolost == 0 && global.secretfound > 2 && global.treasure)
+			global.rank = "e";
+		else if (global.combolost == 0 && global.secretfound > 2 && global.lapcount >= 1 && global.treasure)
 			global.rank = "p";
-			if (global.lapcount >= 10 && global.hurtcounter == 0 && global.toppintotal == 5)
-				global.rank = "e";
 		else
 			global.rank = "s";
 	}
@@ -20,24 +20,28 @@ function scr_savelevelDetails()
 	switch (global.rank)
 	{
 		case "e":
+			scr_musicnoloop(mu_rankp);
+			break;
 		case "p":
+			scr_musicnoloop(mu_rankp);
+			break;
 		case "s":
-			scr_musicnoloop(44);
+			scr_musicnoloop(mu_ranks);
 			break;
 		case "a":
-			scr_musicnoloop(182);
+			scr_musicnoloop(mu_ranka);
 			break;
 		case "b":
-			scr_musicnoloop(3);
+			scr_musicnoloop(mu_rankb);
 			break;
 		case "c":
-			scr_musicnoloop(216);
+			scr_musicnoloop(mu_rankc);
 			break;
 		case "d":
-			scr_musicnoloop(1);
+			scr_musicnoloop(mu_rankd);
 			break;
 	}
-	ini_open("saveData.ini");
+	ini_open(global.fileselect);
 	if (ini_read_string("Secret", string(global.levelname), 0) < global.secretfound)
 		ini_write_string("Secret", string(global.levelname), global.secretfound);
 	if (ini_read_string("Treasure", string(global.levelname), 0) == 0)
@@ -63,7 +67,7 @@ function scr_savelevelDetails()
 function confecti_count_level()
 {
 	var cnt = 0;
-	ini_open("saveData.ini");
+	ini_open(global.fileselect);
 	for (var i = 1; i <= 5; i++)
 	{
 		var _c = string(argument0) + string(i);

@@ -1,5 +1,5 @@
 DoorUnlock = false;
-ini_open("saveData.ini");
+ini_open(global.fileselect);
 var entrywayrank = ini_read_string("Ranks", "entryway", "none");
 var cottonrank = ini_read_string("Ranks", "steamy", "none");
 var moleassrank = ini_read_string("Ranks", "molasses", "none");

@@ -1,4 +1,4 @@
-ini_open("saveData.ini");
+ini_open(global.fileselect);
 kungairtime = ini_read_real("achievments", "kungairtime", 0);
 ini_close();
 global.kungairtime = 0;

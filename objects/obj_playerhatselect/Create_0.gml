@@ -4,7 +4,7 @@ alarm[0] = 100;
 fadeout = false;
 depth = -1;
 var i = 0;
-ini_open("saveData.ini");
+ini_open(global.fileselect);
 HatIndex[i++] = true;
 HatIndex[i++] = ini_read_real("HatsUnlock", "Entryway", false);
 HatIndex[i++] = ini_read_real("HatsUnlock", "Cottontown", false);

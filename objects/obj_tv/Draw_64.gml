@@ -1,4 +1,4 @@
-if (is_hub() || !scr_roomcheck())
+if (is_hub() || !scr_roomcheck() || global.levelname == "none")
 	exit;
 bobbing = wave(2, -2, 3, 0);
 draw_set_font(global.combofont);

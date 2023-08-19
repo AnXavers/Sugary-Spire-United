@@ -35,7 +35,7 @@ if (obj_player.character == "P")
 		setcolors(109, 121, 134, 84, 87, 99);
 		sprite_index = spr_rankP;
 }
-if (obj_player.character == "N")
+else
 {
 	if (global.rank == "p")
 	{
@@ -75,6 +75,10 @@ alarm[7] = 120;
 image_speed = 0.45;
 switch (dex)
 {
+	case 6:
+		cakedex = 4;
+		bgdex = 0;
+		break;
 	case 5:
 		cakedex = 4;
 		bgdex = 0;

@@ -1,49 +1,49 @@
-if global.levelname = "entryway"
+if global.levelname == "entryway"
 {
 	var _minutes = 1
 	var _seconds = 10
 }
-if global.levelname = "steamy"
+if global.levelname == "steamy"
 {
 	var _minutes = 1
 	var _seconds = 15
 }
-if global.levelname = "molasses"
+if global.levelname == "molasses"
 {
 	var _minutes = 1
 	var _seconds = 35
 }
-if global.levelname = "mines"
+if global.levelname == "mines"
 {
 	var _minutes = 0
 	var _seconds = 00
 }
-if global.levelname = "fudge"
+if global.levelname == "fudge"
 {
 	var _minutes = 2
 	var _seconds = 10
 }
-if global.levelname = "dance"
+if global.levelname == "dance"
 {
 	var _minutes = 1
 	var _seconds = 30
 }
-if global.levelname = "estate"
+if global.levelname == "estate"
 {
 	var _minutes = 2
 	var _seconds = 15
 }
-if global.levelname = "bee"
+if global.levelname == "bee"
 {
 	var _minutes = 1
 	var _seconds = 30
 }
-if global.levelname = "sucrose"
+if global.levelname == "sucrose"
 {
 	var _minutes = 0
 	var _seconds = 0
 }
-if global.levelname = "martian"
+if global.levelname == "martian"
 {
 	var _minutes = 2
 	var _seconds = 00

@@ -6,7 +6,7 @@ if (sprite_index != spr_exitgateclosed)
 		{
 			global.levelname = other.level;
 			scr_levelstart(global.levelname, other.targetRoom);
-			ini_open("saveData.ini");
+			ini_open(global.fileselect);
 			var ranks = ini_read_string("Ranks", string(global.levelname), "none");
 			ini_close();
 			global.showplaytimer = ranks != "none";

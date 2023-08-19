@@ -1,6 +1,6 @@
 function scr_hatScript()
 {
-	ini_open("saveData.ini");
+	ini_open(global.fileselect);
 	var entryway = ini_read_string("Ranks", "entryway", "none");
 	var steamy = ini_read_string("Ranks", "steamy", "none");
 	var molasses = ini_read_string("Ranks", "molasses", "none");

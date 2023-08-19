@@ -15,7 +15,7 @@ if (optionselected == 1 && (key_jump || keyboard_check_pressed(vk_enter)))
 		image_index = 0;
 	with (obj_player)
 		scr_characterspr();
-	file_delete("saveData.ini");
+	file_delete(global.fileselect);
 	scr_sound(sound_destroyblock1);
 	scr_sound(sound_explosion);
 	instance_destroy();

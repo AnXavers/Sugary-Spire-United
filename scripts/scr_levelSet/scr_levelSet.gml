@@ -34,6 +34,7 @@ function scr_levelSet()
 	global.panic = 0;
 	global.style = 0;
 	global.stylethreshold = 0;
+	global.hasbeenhurt = 0
 	global.hurtcounter = 0;
 	global.hurtmilestone = 0;
 	global.minesProgress = false;
@@ -64,10 +65,10 @@ function scr_levelSet()
 	global.treasure = 0;
 	global.lapcount = 1;
 	global.lapmusic = false;
-	ini_open("saveData.ini");
+	ini_open(global.fileselect);
 	var ranks = ini_read_string("Ranks", string(global.levelname), "none");
 	ini_close();
-	ini_open("saveData.ini");
+	ini_open(global.fileselect);
 	global.kungairtime = ini_read_string("achievments", "kungairtime", 0);
 	ini_close();
 	global.showplaytimer = ranks != "none";

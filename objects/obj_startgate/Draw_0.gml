@@ -57,7 +57,7 @@ if (showtext)
 	draw_set_font(global.smallfont);
 	draw_set_halign(1);
 	draw_set_color(c_white);
-	ini_open("saveData.ini");
+	ini_open(global.fileselect);
 	draw_text(x, y - 252, string(ini_read_string("Highscore", string(level), 0)) + " POINTS - " + string(ini_read_string("Laps", string(level), 0)) + " LAPS");
 	draw_text(x, y - 278, ini_read_string("Secret", string(level), 0) + " OF 3 SECRETS");
 	for (i = 0; i < 5; i++)

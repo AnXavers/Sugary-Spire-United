@@ -13,7 +13,7 @@ spacingy = 61;
 scrolling = 0;
 scrolldelay = 210;
 descSurface = -4;
-ini_open("saveData.ini");
+ini_open(global.fileselect);
 var slime_kills = ini_read_string("Kills", "obj_gumslime", 0);
 var knight_kills = ini_read_string("Kills", "obj_knight", 0);
 var juice_kills = ini_read_string("Kills", "obj_googlyjuice", 0);

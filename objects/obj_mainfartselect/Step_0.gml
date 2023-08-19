@@ -9,6 +9,12 @@ if (abletomove)
 			abletomove = false;
 		}
 	}
+	if (keyboard_check_pressed(vk_delete))
+	{
+		scr_sound(sound_step);
+		abletomove = false;
+		instance_create(0, 0, obj_erasefile);
+	}
 	if (-key_left2 && selected < 2)
 	{
 		scr_sound(sound_step);
@@ -26,17 +32,19 @@ if (abletomove)
 		obj_file1.image_index = 0;
 		obj_file1.sprite_index = spr_file1confirm;
 	}
-	if (key_jump && selected == 1 && !instance_exists(obj_Options_Main))
+	if (key_jump && selected == 1 && obj_file1.sprite_index != spr_file2confirm)
 	{
 		scr_sound(sound_toppingot);
 		abletomove = false;
-		instance_create(0, 0, obj_Options_Main);
+		obj_file2.image_index = 0;
+		obj_file2.sprite_index = spr_file2confirm;
 	}
-	if (key_jump && selected == 2 && !instance_exists(obj_erasefile))
+	if (key_jump && selected == 2 && obj_file1.sprite_index != spr_file3confirm)
 	{
 		scr_sound(sound_toppingot);
 		abletomove = false;
-		instance_create(0, 0, obj_erasefile);
+		obj_file3.image_index = 0;
+		obj_file3.sprite_index = spr_file3confirm;
 	}
 }
 var justfarded = 0;
@@ -44,15 +52,18 @@ switch (selected)
 {
 	case 0:
 		justfarded = 96;
-		_message = "PLAY GAME";
+		_message = "FILE 1";
+		global.fileselect = "saveData.ini"
 		break;
 	case 1:
 		justfarded = 480;
-		_message = "OPTIONS";
+		_message = "FILE 2";
+		global.fileselect = "saveData2.ini"
 		break;
 	case 2:
 		justfarded = 828;
-		_message = "ERASE SAVE FILE";
+		_message = "FILE 3";
+		global.fileselect = "saveData3.ini"
 		break;
 }
 lightX = lerp(lightX, justfarded, 0.2);

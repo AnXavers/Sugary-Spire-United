@@ -4,5 +4,5 @@ function scr_roomcheck()
 }
 function is_hub()
 {
-	return room == hub_w1 || room == hub_w2 || room == hub_basement || room == hub_hallway;
+	return room == hub_w1 || room == hub_w2 || room == hub_w3 || room == hub_top || room == hub_outside || room == hub_basement || room == hub_hallway;
 }

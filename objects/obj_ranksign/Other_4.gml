@@ -1,4 +1,4 @@
-ini_open("saveData.ini");
+ini_open(global.fileselect);
 levelrank = ini_read_string("Ranks", string(levelsign), "none");
 ini_close();
 if (levelrank == "none")

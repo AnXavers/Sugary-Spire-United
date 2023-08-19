@@ -74,7 +74,7 @@ if ((ds_list_find_index(global.baddieroom, id) == -1 || important) && inhaleddes
 		global.style += 10;
 		global.combofreeze = 30;
 	}
-	ini_open("saveData.ini");
+	ini_open(global.fileselect);
 	var obj = object_get_name(object_index);
 	var checkkills = ini_read_real("Kills", obj, 0);
 	ini_write_real("Kills", obj, checkkills + 1);

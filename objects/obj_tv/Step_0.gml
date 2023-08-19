@@ -16,13 +16,21 @@ else
 if (global.hurtcounter >= global.hurtmilestone && global.hurtcounter >= 5)
 {
 	showtext = 1;
-	alarm[0] = 150;
 	if (obj_player.character == "P")
 		character = "Pizzelle";
-	else
+	else if (obj_player.character == "N")
 		character = "Pizzano";
-	scr_controlprompt("You have hurt " + string(character) + " " + string(global.hurtmilestone) + " times...", -4, 150);
+	else if (obj_player.character == "G")
+		character = "Gumbob";
+	else if (obj_player.character == "C")
+		character = "Pizzano";
+	else if (obj_player.character == "T")
+		character = "The Noise";
+	else if (obj_player.character == "S")
+		character = "Peppino";
+	message = "You have hurt " + string(character) + " " + string(global.hurtmilestone) + " times..."
 	global.hurtmilestone += 5;
+	alarm[0] = 150;
 }
 if (obj_player.state == 56)
 {
