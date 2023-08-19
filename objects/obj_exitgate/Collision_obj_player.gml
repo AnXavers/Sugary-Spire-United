@@ -27,6 +27,8 @@ if (global.panic == 1 && room != sucrose_1)
 			global.panic = false;
 			global.lapmusic = false;
 			global.exitgatetaunt = 0
+			if (global.rank == "e")
+				scr_sound(mu_rankp);
 			if (global.rank == "p")
 				scr_sound(mu_rankp);
 			if (global.rank == "s")

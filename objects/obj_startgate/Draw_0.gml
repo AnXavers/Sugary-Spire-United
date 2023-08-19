@@ -73,6 +73,9 @@ if (showtext)
 	var _rankspr = spr_null;
 	switch (_rank)
 	{
+		case "e":
+			_rankspr = spr_rankbubble_efilled;
+			break;
 		case "p":
 			_rankspr = spr_rankbubble_pfilled;
 			break;

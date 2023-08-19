@@ -14,7 +14,7 @@ function scr_commonenemy()
 			create_small_number(x, y, string(_score));
 			global.collect += _score;
 			global.combotime = 60;
-			global.style += 4;
+			global.style += 10;
 			global.combofreeze = 30;
 			if (object_index == obj_googlyjuice && chance(0.5))
 			{
@@ -49,5 +49,6 @@ function scr_commonenemy()
 }
 function use_heat()
 {
-	return eliteEnemy || global.martian_alarmed;
+	if global.heatmeter
+		return eliteEnemy || global.martian_alarmed;
 }

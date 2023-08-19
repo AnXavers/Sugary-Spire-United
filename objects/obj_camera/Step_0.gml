@@ -179,6 +179,8 @@ else if (global.collect >= global.srank)
 {
 	if (global.combolost == 0 && global.secretfound > 2 && global.lapcount >= 2 && global.treasure)
 		global.currentrank = "P";
+		if (global.lapcount >= 10 && global.hurtcounter == 0 && global.toppintotal == 5)
+			global.currentrank = "E";
 	else
 		global.currentrank = "S";
 }

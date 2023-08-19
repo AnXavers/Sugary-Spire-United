@@ -32,7 +32,8 @@ if (obj_player.character == "P")
 		sprite_index = spr_rankD;
 	}
 	if (global.rank == "e")
-		sprite_index = spr_rankS;
+		setcolors(109, 121, 134, 84, 87, 99);
+		sprite_index = spr_rankP;
 }
 if (obj_player.character == "N")
 {
@@ -67,7 +68,8 @@ if (obj_player.character == "N")
 		sprite_index = spr_pizzano_rankD;
 	}
 	if (global.rank == "e")
-		sprite_index = spr_pizzano_rankS;
+		setcolors(109, 121, 134, 84, 87, 99);
+		sprite_index = spr_pizzano_rankP;
 }
 alarm[7] = 120;
 image_speed = 0.45;
@@ -98,6 +100,6 @@ switch (dex)
 		bgdex = 1;
 		break;
 }
-if (global.rank != "p")
+if (global.rank != "p" || global.rank != "e")
 	flash = 1;
 alarm[3] = -1;

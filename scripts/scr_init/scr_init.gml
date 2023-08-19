@@ -90,6 +90,7 @@ global.mulap10 = ini_read_real("Settings", "mu_lap10", 0);
 global.mulap5 = ini_read_real("Settings", "mu_lap5", 0);
 global.mulap2 = ini_read_real("Settings", "mu_lap2", 0);
 global.muescape = ini_read_real("Settings", "mu_escape", 0);
+global.heatmeter = ini_read_real("Settings", "heatmeter", 0);
 global.tvmessages = ini_read_real("Settings", "tvmsg", 1);
 ini_close();
 

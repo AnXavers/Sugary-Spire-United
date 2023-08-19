@@ -28,6 +28,18 @@ function scr_levelstart()
 		case "bee":
 			global.srank = 29000;
 			break;
+		case "finale":
+			global.srank = 19500;
+			break;
+		case "exitway":
+			global.srank = 19500;
+			break;
+		case "dungeon":
+			global.srank = 18500;
+			break;
+		case "entrance":
+			global.srank = 16000;
+			break;
 		default:
 			global.srank = 99999;
 			break;

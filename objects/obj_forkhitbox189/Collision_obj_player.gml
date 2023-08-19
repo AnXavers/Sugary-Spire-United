@@ -51,7 +51,7 @@ with (obj_player)
 		state = 73;
 		image_index = 0;
 		flash = 1;
-		global.style -= 15;
+		global.style -= 30;
 	}
 }
 with (instance_nearest(x, y, obj_sluggy))

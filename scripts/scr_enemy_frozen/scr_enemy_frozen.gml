@@ -22,7 +22,7 @@ function scr_enemy_frozen()
 				create_small_number(x, y, string(_score));
 				global.collect += _score;
 				global.combotime = 60;
-				global.style += 4;
+				global.style += 10;
 				global.combofreeze = 30;
 			}
 			if (!eliteEnemy || eliteHP <= 0)

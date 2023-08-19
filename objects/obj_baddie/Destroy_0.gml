@@ -29,7 +29,7 @@ if ((ds_list_find_index(global.baddieroom, id) == -1 && inhaleddestroyvar == 0) 
 		create_small_number(x, y, string(_score));
 		global.collect += _score;
 		global.combotime = 60;
-		global.style += 4;
+		global.style += 10;
 		global.combofreeze = 30;
 		if (obj_tv.sucroseTimer && global.fill != 0)
 			global.fill += time_in_frames(0, 2.5);

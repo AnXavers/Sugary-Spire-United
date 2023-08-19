@@ -51,6 +51,9 @@ function rank_checker(rank = global.rank)
 	var value = 0;
 	switch (rank)
 	{
+		case "e":
+			value = 6;
+			break;
 		case "p":
 			value = 5;
 			break;

@@ -74,12 +74,10 @@ add_music(molasses_6, mu_swamp1, mu_swampsecret, true);
 add_music(molasses_6b, mu_swamp2, mu_swampsecret, true);
 add_music(mines_1, mu_mineshaft1, mu_minessecret, false, function()
 {
-	if (global.minesProgress && obj_player.state == 61)
-		return 99;
-	else if (global.minesProgress)
-		return 184;
+	if (global.minesProgress)
+		return mu_mineshaft2;
 	else
-		return 39;
+		return mu_mineshaft1;
 });
 add_music(mines_6, mu_mineshaft2, mu_minessecret, false);
 add_music(mineshaft_1, mu_mineshaft1, mu_minessecret, false);

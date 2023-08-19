@@ -30,6 +30,15 @@ switch (global.levelname)
 	case "sucrose":
 		current_bg = 8;
 		break;
+	case "entrance":
+		current_bg = 0;
+		break;
+	case "bloodsauce":
+		current_bg = 3;
+		break;
+	case "exitway":
+		current_bg = 0;
+		break;
 }
 if (instance_exists(obj_secretfound))
 {

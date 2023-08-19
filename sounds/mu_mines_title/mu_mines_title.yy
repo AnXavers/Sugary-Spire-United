@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 5.773,
+  "duration": 5.77381,
   "parent": {
     "name": "Mines",
     "path": "folders/Sounds/Music/Levels/Mines.yy",

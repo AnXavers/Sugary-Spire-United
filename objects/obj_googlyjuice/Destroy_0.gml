@@ -71,7 +71,7 @@ if ((ds_list_find_index(global.baddieroom, id) == -1 || important) && inhaleddes
 				break;
 		}
 		global.combotime = 60;
-		global.style += 4;
+		global.style += 10;
 		global.combofreeze = 30;
 	}
 	ini_open("saveData.ini");

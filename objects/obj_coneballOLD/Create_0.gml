@@ -71,7 +71,7 @@ hurtplayer = function()
 			state = 73;
 			image_index = 0;
 			flash = 1;
-			global.style -= 15;
+			global.style -= 30;
 		}
 	}
 };

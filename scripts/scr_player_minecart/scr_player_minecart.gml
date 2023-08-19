@@ -89,8 +89,8 @@ function state_player_minecart()
 			sprite_index = spr_player_hurtroll;
 		}
 	}
-	var groundedlandsprite = (movespeed >= 12) ? 1183 : 1417;
-	var groundedsprite = (movespeed >= 12) ? 116 : 117;
+	var groundedlandsprite = (movespeed >= 12) ? spr_player_minecartfastland : spr_player_minecartland;
+	var groundedsprite = (movespeed >= 12) ? spr_player_minecartfast : spr_player_minecart;
 	if (!grounded)
 	{
 		if (sprite_index != spr_player_minecartjump)

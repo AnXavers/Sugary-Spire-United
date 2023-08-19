@@ -1,3 +1,5 @@
+if !global.heatmeter
+	global.style = 0
 if (global.style >= 220)
 	global.stylethreshold = 4;
 else if (global.style >= 165)

@@ -10,8 +10,9 @@ if canmove
 		optionsaved_mu_lap10 = global.mulap10;
 		optionsaved_mu_lap5 = global.mulap5;
 		optionsaved_mu_lap2 = global.mulap2;
+		optionsaved_mu_escape = global.muescape;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 5)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 6)
 	{
 		optionselected += 1;
 		scr_sound(sound_step);
@@ -20,6 +21,7 @@ if canmove
 		optionsaved_mu_lap5 = global.mulap5;
 		optionsaved_mu_lap2 = global.mulap2;
 		optionsaved_mu_escape = global.muescape;
+		optionsaved_heatmeter = global.heatmeter
 	}
 	switch (optionselected)
 	{
@@ -47,7 +49,7 @@ if canmove
 			}
 			break;
 		case 2:
-			subtitle = "LAP 10 MUSIC";
+			subtitle = "MUSIC THAT PLAYS DURING LAP 10 ONWARD";
 			CursorY = 250;
 			optionsaved_mu_lap10 += (key_right2 + key_left2);
 			optionsaved_mu_lap10 = wrap(optionsaved_mu_lap10, 0, 1);
@@ -70,7 +72,7 @@ if canmove
 			}
 			break;
 		case 3:
-			subtitle = "LAP 5 MUSIC";
+			subtitle = "MUSIC THAT PLAYS DURING LAP 5 TO 9";
 			CursorY = 400;
 			optionsaved_mu_lap5 += (key_right2 + key_left2);
 			optionsaved_mu_lap5 = wrap(optionsaved_mu_lap5, 0, 1);
@@ -93,7 +95,7 @@ if canmove
 			}
 			break;
 		case 4:
-			subtitle = "LAP 2 MUSIC";
+			subtitle = "MUSIC THAT PLAYS DURING LAP 2 TO 4";
 			CursorY = 550;
 			optionsaved_mu_lap2 += (key_right2 + key_left2);
 			optionsaved_mu_lap2 = wrap(optionsaved_mu_lap2, 0, 1);
@@ -116,7 +118,7 @@ if canmove
 			}
 			break;
 		case 5:
-			subtitle = "ESCAPE MUSIC";
+			subtitle = "MUSIC THAT PLAYS DURING THE ESCAPE";
 			CursorY = 700;
 			optionsaved_mu_escape += (key_right2 + key_left2);
 			optionsaved_mu_escape = wrap(optionsaved_mu_escape, 0, 1);
@@ -136,6 +138,20 @@ if canmove
 				ini_write_real("Settings", "mu_escape", optionsaved_mu_escape);
 				ini_close();
 				global.muescape = optionsaved_mu_escape;
+			}
+			break;
+		case 6:
+			subtitle = "TOGGLE THE HEATMETER";
+			CursorY = 850;
+			optionsaved_heatmeter += (key_right2 + key_left2);
+			optionsaved_heatmeter = wrap(optionsaved_heatmeter, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "heatmeter", optionsaved_heatmeter);
+				ini_close();
+				global.heatmeter = optionsaved_heatmeter;
 			}
 			break;
 	}

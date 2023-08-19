@@ -4,6 +4,8 @@ function scr_savelevelDetails()
 	{
 		if (global.combolost == 0 && global.secretfound > 2 && global.lapcount >= 1 && global.treasure)
 			global.rank = "p";
+			if (global.lapcount >= 10 && global.hurtcounter == 0 && global.toppintotal == 5)
+				global.rank = "e";
 		else
 			global.rank = "s";
 	}
