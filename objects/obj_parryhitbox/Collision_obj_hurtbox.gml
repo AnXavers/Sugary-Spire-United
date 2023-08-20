@@ -36,6 +36,7 @@ with (obj_player)
 	image_index = 0;
 	movespeed = -8;
 	flash = 1;
+	instance_create(x, y, obj_sugarcoat)
 	with (instance_create(x, y, obj_bangeffect))
 		sprite_index = spr_parryeffect;
 }

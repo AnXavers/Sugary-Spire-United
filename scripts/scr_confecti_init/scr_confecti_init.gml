@@ -11,7 +11,10 @@ function scr_confecti_init()
 			spr_appear = spr_marshmallow_appear;
 			spr_taunt = spr_marshmellow_taunt;
 			global.mallowfollow = true;
-			scr_queue_tvanim(spr_pizzytv_confecti1, 100);
+			if obj_player.character == "N"
+				scr_queue_tvanim(spr_pizzanotv_confecti1, 100);
+			else
+				scr_queue_tvanim(spr_pizzytv_confecti1, 100);
 			break;
 		case obj_confectichoco:
 			spr_idle = spr_chocolate_idle;
@@ -21,7 +24,10 @@ function scr_confecti_init()
 			spr_appear = spr_chocolate_appear;
 			spr_taunt = spr_chocolate_taunt;
 			global.chocofollow = true;
-			scr_queue_tvanim(spr_pizzytv_confecti2, 100);
+			if obj_player.character == "N"
+				scr_queue_tvanim(spr_pizzanotv_confecti2, 100);
+			else
+				scr_queue_tvanim(spr_pizzytv_confecti2, 100);
 			break;
 		case obj_confecticrack:
 			spr_idle = spr_crack_idle;
@@ -31,7 +37,10 @@ function scr_confecti_init()
 			spr_appear = spr_crack_appear;
 			spr_taunt = spr_crack_taunt;
 			global.crackfollow = true;
-			scr_queue_tvanim(spr_pizzytv_confecti3, 100);
+			if obj_player.character == "N"
+				scr_queue_tvanim(spr_pizzanotv_confecti3, 100);
+			else
+				scr_queue_tvanim(spr_pizzytv_confecti3, 100);
 			break;
 		case obj_confectiworm:
 			spr_idle = spr_gummyworm_idle;
@@ -41,7 +50,10 @@ function scr_confecti_init()
 			spr_appear = spr_gummyworm_appear;
 			spr_taunt = spr_gummyworm_taunt;
 			global.wormfollow = true;
-			scr_queue_tvanim(spr_pizzytv_confecti4, 100);
+			if obj_player.character == "N"
+				scr_queue_tvanim(spr_pizzanotv_confecti4, 100);
+			else
+				scr_queue_tvanim(spr_pizzytv_confecti4, 100);
 			break;
 		case obj_confecticandy:
 			spr_idle = spr_candy_idle;
@@ -51,7 +63,10 @@ function scr_confecti_init()
 			spr_appear = spr_candy_appear;
 			spr_taunt = spr_candy_taunt;
 			global.candyfollow = true;
-			scr_queue_tvanim(spr_pizzytv_confecti5, 100);
+			if obj_player.character == "N"
+				scr_queue_tvanim(spr_pizzanotv_confecti5, 100);
+			else
+				scr_queue_tvanim(spr_pizzytv_confecti5, 100);
 			break;
 		case obj_rudejanitor:
 			spr_idle = spr_rudejanitor_idle;

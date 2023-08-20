@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6d1b6c06-8b0f-4ff1-803f-bd847e0a0ecc","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 4,
   "parent": {
     "name": "To Be Sorted",
     "path": "folders/Sprites/To Be Sorted.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 50,
-    "yorigin": 70,
+    "yorigin": 50,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

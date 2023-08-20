@@ -2,7 +2,7 @@ function scr_savelevelDetails()
 {
 	if (global.collect >= global.srank)
 	{
-		if (global.lapcount >= 10 && !global.hasbeenhurt && global.toppintotal == 5 && global.combolost == 0 && global.secretfound > 2 && global.treasure)
+		if (global.lapcount >= 10 && global.hurtcounter < 1 && global.hasallconfecti && global.combolost == 0 && global.secretfound > 2 && global.treasure)
 			global.rank = "e";
 		else if (global.combolost == 0 && global.secretfound > 2 && global.lapcount >= 1 && global.treasure)
 			global.rank = "p";

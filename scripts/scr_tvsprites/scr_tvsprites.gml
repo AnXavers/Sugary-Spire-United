@@ -23,6 +23,7 @@ function scr_tvsprites()
 	hooktvspr = spr_pizzytvhook;
 	marshdogspr = spr_pizzytvmarsh;
 	panictvspr = spr_pizzytvescape;
+	laptvspr = spr_pizzytv_rage;
 	secrettvspr = spr_pizzytv_secret;
 	switch (obj_player.character)
 	{
@@ -30,23 +31,23 @@ function scr_tvsprites()
 			idletvspr = spr_pizzanotv;
 			combotvspr = spr_pizzanotv_combo;
 			happytvspr = spr_pizzanotv_happy;
-			escapetvspr = spr_pizzytv_escape1;
+			escapetvspr = spr_pizzanotv_escape1;
 			tvchange1 = spr_pizzanotv2;
 			tvchange2 = spr_pizzanotv2;
-			cottontvspr = spr_pizzytvcotton;
-			hurttvspr = spr_pizzytvhurt;
+			cottontvspr = spr_pizzanotv_cotton;
+			hurttvspr = spr_pizzanotv_hurt;
 			minecarttvspr = spr_pizzytvmine;
 			bombtvspr = spr_pizzytvbomb;
 			firetvspr = spr_pizzytvfire;
 			angrytvspr = spr_pizzytvangry;
-			orbtvspr = spr_pizzytv_croaked;
+			orbtvspr = spr_pizzanotv_croaked;
 			ufotvspr = spr_pizzytvufo;
 			mach1tvspr = spr_pizzanotvmach1;
 			mach2tvspr = spr_pizzanotvmach2;
 			mach3tvspr = spr_pizzanotvmach3;
 			mach4tvspr = spr_pizzanotvmach4;
 			machrolltvspr = spr_pizzytvmachroll;
-			frostburntvspr = spr_pizzytvflushed;
+			frostburntvspr = spr_pizzanotv_flushed;
 			hooktvspr = spr_pizzytvhook;
 			marshdogspr = spr_pizzytvmarsh;
 			panictvspr = spr_pizzytvescape;

@@ -71,7 +71,7 @@ cakedex = 0;
 countpoint = global.collect;
 if (countpoint >= global.srank)
 {
-	if (global.lapcount >= 10 && !global.hasbeenhurt && global.toppintotal == 5 && !global.combolost && global.secretfound > 2 && global.treasure)
+	if (global.lapcount >= 10 && global.hurtcounter < 1 && global.hasallconfecti && !global.combolost && global.secretfound > 2 && global.treasure)
 		dex = 6;
 	if (!global.combolost && global.secretfound > 2 && global.treasure && global.lapcount >= 2)
 		dex = 5;

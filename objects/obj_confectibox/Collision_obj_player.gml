@@ -21,6 +21,7 @@ if (sprite_index != spr_confectiboxopen)
 			scr_controlprompt("[spr_promptfont]You are missing " + string(5 - global.toppintotal) + " confecti!", -4, 200);
 		if (global.toppintotal == 5)
 			scr_controlprompt("[spr_promptfont]You have found all 5 confecti!", -4, 200);
+			global.hasallconfecti = 1
 		obj_tv.showtext = 1;
 		obj_tv.alarm[0] = 200;
 		global.toppintotal += 1;

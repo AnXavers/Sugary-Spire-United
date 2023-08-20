@@ -34,7 +34,6 @@ function scr_levelSet()
 	global.panic = 0;
 	global.style = 0;
 	global.stylethreshold = 0;
-	global.hasbeenhurt = 0
 	global.hurtcounter = 0;
 	global.hurtmilestone = 0;
 	global.minesProgress = false;
@@ -184,6 +183,7 @@ function scr_levelSet()
 		global.pizzacoin = 0;
 		global.roomsave = 0;
 		global.toppintotal = 1;
+		global.hasallconfecti = 0;
 		global.hit = 0;
 		in_water = 0;
 		key_particles = 0;

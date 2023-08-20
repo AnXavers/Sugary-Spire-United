@@ -1,3 +1,5 @@
+if room = mines_silver
+	instance_destroy()
 depth = -9999;
 
 isOpen = false;

@@ -30,6 +30,7 @@ if (global.hurtcounter >= global.hurtmilestone && global.hurtcounter >= 5)
 		character = "Peppino";
 	message = "You have hurt " + string(character) + " " + string(global.hurtmilestone) + " times..."
 	global.hurtmilestone += 5;
+	scr_queue_tvanim(spr_pizzytvhurtext1, 100);
 	alarm[0] = 150;
 }
 if (obj_player.state == 56)
@@ -53,6 +54,8 @@ switch (state)
 				idlespr = angrytvspr;
 			if (global.panic)
 				idlespr = panictvspr;
+			if (global.lapcount >= 5)
+				idlespr = laptvspr;
 		}
 		else
 			idlespr = secrettvspr;

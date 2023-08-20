@@ -27,7 +27,7 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": false,
+  "solid": true,
   "spriteId": {
     "name": "spr_bangeffect",
     "path": "sprites/spr_bangeffect/spr_bangeffect.yy",

@@ -165,6 +165,7 @@ global.roomsave = 0;
 global.combotime = 0;
 global.pizzacoin = 0;
 global.toppintotal = 1;
+global.hasallconfecti = 0;
 global.hit = 0;
 global.combofreeze = 0;
 global.combolost = 0;
