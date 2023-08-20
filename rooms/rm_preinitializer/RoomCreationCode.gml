@@ -134,7 +134,6 @@ enum states {
 	costumechuck,
 	bottlerocket,
 	holdbomb,
-	// Radix: Couldn't find them, so just pad the enum
 	unused_1, // 135
 	unused_2, // 136
 	donut,

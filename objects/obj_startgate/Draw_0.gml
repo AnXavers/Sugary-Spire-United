@@ -74,7 +74,7 @@ if (showtext)
 	switch (_rank)
 	{
 		case "e":
-			_rankspr = spr_rankbubble_efilled;
+			_rankspr = spr_rankbubble_e_empty;
 			break;
 		case "p":
 			_rankspr = spr_rankbubble_pfilled;
@@ -99,5 +99,11 @@ if (showtext)
 			break;
 	}
 	draw_sprite_ext(_rankspr, 0, x - 32, y - 218, 1, 1, 0, c_white, 1);
+	if (_rank == "e")
+	{
+		draw_set_font(global.rankfont);
+		draw_set_halign(1);
+		draw_text(x - 5, y - 216, string_repeat("E", (ini_read_string("ERankLength", string(level), 1))))
+	}
 	ini_close();
 }

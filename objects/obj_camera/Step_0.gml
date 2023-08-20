@@ -2,6 +2,16 @@ if (room == timesuproom || room == rank_room || room == rm_credits || room == rm
 	DrawHUD = 0;
 else
 	DrawHUD = 1;
+if !global.heatmeter
+{
+	var heatmetersprite = spr_null
+	var heatmeterundersprite = spr_null
+}
+else
+{
+	var heatmetersprite = spr_heatmeter
+	var heatmeterundersprite = spr_heatmeterunder
+}
 if (get_panic() && !global.freezeframe)
 {
 	if (global.fill > global.maxwave)

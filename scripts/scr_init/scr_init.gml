@@ -54,7 +54,7 @@ global.dialogfont = font_add_sprite_ext(spr_font_dialogue, "ABCDEFGHIJKLMNOPQRST
 global.buttonfont = font_add_sprite_ext(spr_buttonfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZ$%&*()/", 1, 0);
 global.promptfont = font_add_sprite_ext(spr_promptfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.:!0123456789?'\"ÁÉÍÓÚáéíóú_-[]▼()&#风雨廊桥전태양*яиБжидГзвбнль", 1, 0);
 global.npcfont = font_add_sprite_ext(spr_npcfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!,.:0123456789'?-", 1, 2);
-global.rankfont = font_add_sprite_ext(spr_rankbubble_e_font, "E", 1, 0);
+global.rankfont = font_add_sprite_ext(spr_rankbubble_e_font, "E", 1, -10);
 global.shellactivate = false;
 global.showcollisions = false;
 global.debugmode = false;
@@ -72,6 +72,7 @@ global.janitorRudefollow = false;
 global.janitorLapfollow = false;
 global.janitortype = 1;
 global.lapcount = 1;
+global.Eranklength = 1;
 
 ini_open("optionData.ini");
 global.fullscreen = ini_read_real("Settings", "fullscrn", 0);

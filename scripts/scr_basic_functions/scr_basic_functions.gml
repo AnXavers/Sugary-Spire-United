@@ -137,10 +137,6 @@ function draw_self_flash(argument0)
 	gpu_set_fog(false, 0, 0, 0);
 	exit;
 }
-
-// THESE ARE FROM PIZZA TOWER ONLINE'S SOURCE CODE.
-// https://github.com/loypoll/PizzaTowerOnline/blob/main/scripts/string_contains/string_contains.gml
-
 function string_contains(argument0, argument1)
 {
 	if (string_length(argument1) > string_length(argument0))

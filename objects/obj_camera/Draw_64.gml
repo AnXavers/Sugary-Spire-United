@@ -4,11 +4,10 @@ if (DrawHUD)
 	var shakeY = irandom_range(-Collectshake, Collectshake);
 	if (room != scootercutsceneidk && room != rm_credits && room != devroom && room != palroom && room != rank_room && room != rm_introVideo && room != realtitlescreen)
 	{
-		if !global.heatmeter
-			pal_swap_set(spr_heatpal, heatpal, 0);
-			draw_sprite_part_ext(spr_heatmeterunder, obj_stylebar.image_index, 0, 0, (global.style * 4.25) / 4, sprite_get_height(spr_heatmeterunder), -6 + shakeX, 8 + DrawY + shakeY, 1, 1, c_white, 1);
-			draw_sprite_ext(spr_heatmeter, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
-			draw_sprite_ext(spr_cakehud, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+		pal_swap_set(spr_heatpal, heatpal, 0);
+		draw_sprite_part_ext(heatmeterundersprite, obj_stylebar.image_index, 0, 0, (global.style * 4.25) / 4, sprite_get_height(spr_heatmeterunder), -6 + shakeX, 8 + DrawY + shakeY, 1, 1, c_white, 1);
+		draw_sprite_ext(heatmetersprite, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+		draw_sprite_ext(spr_cakehud, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		if (global.collect > global.crank)
 			draw_sprite_ext(spr_cranktopping, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		if (global.collect > global.brank)
@@ -113,7 +112,9 @@ if (global.levelname != "none" && !(room == timesuproom || room == rank_room || 
 		var bubbleHeight = sprite_get_height(bubblefilled);
 		var rankpercent = (global.collect - minus_moment) / (local_rank - minus_moment);
 		if (!surface_exists(rankbubblesurface))
+		{
 			rankbubblesurface = surface_create(96, 96);
+		}
 		else if (surface_exists(rankbubblesurface))
 		{
 			surface_set_target(rankbubblesurface);
@@ -121,7 +122,7 @@ if (global.levelname != "none" && !(room == timesuproom || room == rank_room || 
 			draw_sprite_ext(spr_rankbubble_bg, bubbleframe, surface_get_width(rankbubblesurface) / 2, (surface_get_height(rankbubblesurface) / 2) + DrawY, 1, 1, 0, c_white, 1);
 			if (global.currentrank == "E")
 			{
-				draw_sprite_ext(spr_rankbubble_efilled, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);
+				draw_sprite_ext(spr_rankbubble_e_empty, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);
 			}
 			else if (global.currentrank == "P")
 				draw_sprite_ext(spr_rankbubble_pfilled, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);
@@ -134,6 +135,13 @@ if (global.levelname != "none" && !(room == timesuproom || room == rank_room || 
 			}
 			surface_reset_target();
 			draw_surface_ext(rankbubblesurface, (200 - ((surface_get_width(rankbubblesurface) / 2) * bubblescale)) + 1, (5 - ((surface_get_height(rankbubblesurface) / 2) * bubblescale)) + 1, 1 + bubblescale, 1 + bubblescale, 0, c_white, alpha);
+			if (global.currentrank == "E")
+			{
+				global.Eranklength = global.lapcount - 9
+				draw_set_font(global.rankfont);
+				draw_set_halign(1);
+				draw_text(244, 24, string_repeat("E", global.Eranklength));
+			}
 		}
 	}
 }
@@ -148,9 +156,6 @@ if (global.debugmode == 1)
 	draw_text(100, 450, obj_player.y);
 	var roomname = string_upper(room_get_name(global.GMLIVE_realroom));
 	draw_text(150, 0, roomname);
-}
-if (global.debugmode == 1)
-{
 	draw_set_font(font_dev);
 	draw_set_halign(0);
 	draw_set_color(c_white);

@@ -31,7 +31,6 @@ if (gamepad_discovered == 1)
 	draw_text(480, 270 - _h, _txt);
 }
 
-// Radix: Fix this later
 exit;
 if (confirmspr >= 1 && confirmspr < 3)
 	draw_sprite_ext(cardspr, carddex, 480, 340, 1, 1, 0, c_white, 1);
