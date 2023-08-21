@@ -120,7 +120,10 @@ function state_player_normal()
 				sprite_index = spr_move;
 		}
 		if (key_taunt)
-			sprite_index = spr_player_breakdance;
+			if (character == "T")
+				sprite_index = spr_playerN_idledance
+			else
+				sprite_index = spr_player_breakdance;
 		if (move != 0)
 			xscale = move;
 	}

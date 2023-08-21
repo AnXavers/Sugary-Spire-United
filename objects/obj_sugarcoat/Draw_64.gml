@@ -1,8 +1,6 @@
-random_index = irandom_range(0,100);
-if random_index = 100
-{
-	audio_stop_sound(sound_parry);
-	draw_set_alpha(global.sugarcoatfade)
-	scr_sound(sound_sugarcoat)
-	global.sugarcoatfade -= 0.1
-}
+fadealpha -= 0.03
+draw_set_alpha(fadealpha);
+draw_sprite(spr_sugarcoat, 0, 0, 0)
+draw_set_alpha(1);
+if fadealpha == 0
+	instance_destroy()
