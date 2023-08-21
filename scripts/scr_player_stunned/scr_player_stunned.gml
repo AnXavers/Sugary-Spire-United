@@ -27,7 +27,7 @@ function state_player_stunned()
 	{
 		mask_index = spr_player_mask;
 		state = 1;
-		sprite_index = spr_player_idle;
+		sprite_index = spr_idle;
 		image_index = 0;
 	}
 	audio_sound_gain(sfx_hurt, 0.7, 0);

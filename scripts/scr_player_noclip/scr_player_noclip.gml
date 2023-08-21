@@ -7,7 +7,7 @@ function state_player_noclip()
 	hspCarry = 0;
 	vspCarry = 0;
 	move = key_left + key_right;
-	sprite_index = spr_player_idle;
+	sprite_index = spr_idle;
 	if (key_attack)
 		movespeed = 18;
 	else if (key_slap)

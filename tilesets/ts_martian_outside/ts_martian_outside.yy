@@ -12,8 +12,8 @@
   "out_tilehborder": 0,
   "out_tilevborder": 0,
   "parent": {
-    "name": "Unused or Unknown",
-    "path": "folders/Tile Sets/Unused or Unknown.yy",
+    "name": "Martian",
+    "path": "folders/Tile Sets/Levels/Martian.yy",
   },
   "spriteId": {
     "name": "ts_martian_outside_sprite",

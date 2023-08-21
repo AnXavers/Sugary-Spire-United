@@ -43,7 +43,7 @@ function state_player_pistolaim()
 	}
 	if (!grounded)
 	{
-		sprite_index = spr_player_fall;
+		sprite_index = spr_fall;
 		state = 60;
 	}
 	if (move != 0)

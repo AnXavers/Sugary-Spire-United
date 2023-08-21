@@ -33,8 +33,8 @@
   "out_tilehborder": 0,
   "out_tilevborder": 0,
   "parent": {
-    "name": "Unused or Unknown",
-    "path": "folders/Tile Sets/Unused or Unknown.yy",
+    "name": "Hub",
+    "path": "folders/Tile Sets/Spire/Hub.yy",
   },
   "spriteId": {
     "name": "ts_cavern2_sprite",

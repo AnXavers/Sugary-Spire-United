@@ -119,7 +119,7 @@ function state_player_slap()
 			state = 1;
 		else if (!grounded)
 		{
-			sprite_index = spr_player_fall;
+			sprite_index = spr_fall;
 			state = 60;
 		}
 	}

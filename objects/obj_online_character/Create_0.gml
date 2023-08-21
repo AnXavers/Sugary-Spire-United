@@ -19,7 +19,7 @@ held_move_y = 0
 trace("array format: character letter, name, sprite, palette sprite (middle click helps)")
 trace("variables to set to 1 (can be global.), character to send, mach color 1, mach color 2")
 trace("stuff after the palette sprite is optional")
-add_character(["P", "PEPPINO", spr_player_idle, spr_peppalette, ["ispeppino"]])
+add_character(["P", "PEPPINO", spr_idle, spr_peppalette, ["ispeppino"]])
 add_character(["P", "THE NOISE", spr_playerN_idle, spr_noisepalette, [], "N"])
 add_character(["N", "POGO NOISE", spr_playerN_pogofall, spr_noisepalette, [], "N"])
 add_character(["BN", "BO NOISE", spr_playerBN_idle, spr_bnpal])

@@ -9,6 +9,7 @@ image_speed = 0;
 alpha = 3;
 seq = 0;
 type = 0;
+global.dotruly = 0
 var num = floor(global.combo / 25);
 num = clamp(num, 0, 3);
 type = num;

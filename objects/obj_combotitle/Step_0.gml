@@ -1,3 +1,7 @@
+if global.combo >= 125
+	global.dotruly = 1
+else
+	global.dotruly = 0
 if (alpha > 0)
 	alpha -= 0.05;
 else

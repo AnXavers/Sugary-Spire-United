@@ -275,6 +275,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tower","folderPath":"folders/Tile Sets/Tower.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Unused or Unknown","folderPath":"folders/Tile Sets/Unused or Unknown.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Martian","folderPath":"folders/Tile Sets/Levels/Martian.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Martian","folderPath":"folders/Rooms/Levels/Martian.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"intro.mp4","CopyToMask":-1,"filePath":"datafiles/gamedata",},
@@ -4275,6 +4277,7 @@
     {"id":{"name":"spr_rankE","path":"sprites/spr_rankE/spr_rankE.yy",},},
     {"id":{"name":"bg_exitwaycity","path":"sprites/bg_exitwaycity/bg_exitwaycity.yy",},},
     {"id":{"name":"spr_pizzanotv_escape4","path":"sprites/spr_pizzanotv_escape4/spr_pizzanotv_escape4.yy",},},
+    {"id":{"name":"martian_1","path":"rooms/martian_1/martian_1.yy",},},
     {"id":{"name":"spr_minesdestroyablewall","path":"sprites/spr_minesdestroyablewall/spr_minesdestroyablewall.yy",},},
     {"id":{"name":"spr_snowclouddead","path":"sprites/spr_snowclouddead/spr_snowclouddead.yy",},},
     {"id":{"name":"spr_Noise_mach1","path":"sprites/spr_Noise_mach1/spr_Noise_mach1.yy",},},
@@ -4706,6 +4709,7 @@
     {"roomId":{"name":"silver_4","path":"rooms/silver_4/silver_4.yy",},},
     {"roomId":{"name":"silver_3","path":"rooms/silver_3/silver_3.yy",},},
     {"roomId":{"name":"mines_silver","path":"rooms/mines_silver/mines_silver.yy",},},
+    {"roomId":{"name":"martian_1","path":"rooms/martian_1/martian_1.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Backgrounds","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
