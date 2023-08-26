@@ -39,16 +39,7 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 		if global.levelname == "finale"
 			_new_song = mu_finale;
 		else if !global.defaultlapmusic
-			if (obj_player.character != "P" || "T" || "S" )
-                if (global.lapcount >= 10)
-                    _new_song = mu_sucrose;
-                else if (global.lapcount >= 5)
-                    _new_song = mu_pizzanodespairy;
-                else if (global.lapcount >= 2)
-                    _new_song = mu_pizzanolap;
-                else 
-                    _new_song = mu_pizzanoescape;
-            else if (obj_player.character == "P")
+            if (obj_player.character == "P")
                 if (global.lapcount >= 10)
                     _new_song = mu_sucrose;
                 else if (global.lapcount >= 5)
@@ -66,7 +57,7 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
                     _new_song = mu_noiselap;
                 else 
                     _new_song = mu_noiseescape;
-            else
+            else if (obj_player.character == "S")
                 if (global.lapcount >= 10)
                     _new_song = mu_10peppino;
                 else if (global.lapcount >= 5)
@@ -75,6 +66,15 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
                     _new_song = mu_peppinolap;
                 else 
                     _new_song = mu_peppinoescape;
+			else
+                if (global.lapcount >= 10)
+                    _new_song = mu_sucrose;
+                else if (global.lapcount >= 5)
+                    _new_song = mu_pizzanodespairy;
+                else if (global.lapcount >= 2)
+                    _new_song = mu_pizzanolap;
+                else 
+                    _new_song = mu_pizzanoescape;
 		else
 			if (global.lapcount >= 10)
 				_new_song = global.lap10song

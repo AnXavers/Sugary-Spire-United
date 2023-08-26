@@ -162,6 +162,9 @@ function scr_exitlevellocation()
 		global.entergateroom = hub_outside
 		global.entergatedoor = "Z"
 	}
+	else
+		global.entergateroom = realtitlescreen
+		global.entergatedoor = "A"
 }
 function scr_musiccorrection()
 {

@@ -1,4 +1,4 @@
-targetRoom = martian_3;
+targetRoom = martian_1;
 targetDoor = "A";
 level = "martian";
 details = [gate_createlayer(spr_bee_startgate, 0), gate_createlayer(spr_bee_startgate, 1), gate_createlayer(spr_bee_startgate, 2)];

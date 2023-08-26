@@ -1,7 +1,10 @@
 if canmove
 {
 	scr_getinput();
-	ScrollY = lerp(ScrollY, (optionselected / 10) * -500, 0.15);
+	if optionselected == 0
+		ScrollY = lerp(ScrollY, (optionselected / 10) * -500, 0.15);
+	else
+		ScrollY = lerp(ScrollY, (CursorY / 600) * -500, 0.15);
 	if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > 0)
 	{
 		optionselected -= 1;

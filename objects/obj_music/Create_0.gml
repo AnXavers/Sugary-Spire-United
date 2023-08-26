@@ -98,7 +98,6 @@ add_music(estate_6, mu_estate, mu_estatesecret, true);
 add_music(estate_dog, mu_danger, mu_estatesecret, true);
 add_music(bee_1, mu_bee, mu_what, false);
 add_music(martian_1, mu_martian, mu_what, false);
-add_music(room, global.setmusic, global.setmusic, false);
 audio_sound_loop_start(mu_waffle, 34.9);
 audio_sound_loop_end(mu_waffle, 218.18);
 audio_sound_loop_start(mu_steamy, 8);
