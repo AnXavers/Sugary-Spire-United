@@ -39,7 +39,7 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 		if global.levelname == "finale"
 			_new_song = mu_finale;
 		else if !global.defaultlapmusic
-			if (obj_player.character != "P")
+			if (obj_player.character != "P" || "T" || "S" )
                 if (global.lapcount >= 10)
                     _new_song = mu_sucrose;
                 else if (global.lapcount >= 5)
@@ -48,7 +48,7 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
                     _new_song = mu_pizzanolap;
                 else 
                     _new_song = mu_pizzanoescape;
-            else
+            else if (obj_player.character == "P")
                 if (global.lapcount >= 10)
                     _new_song = mu_sucrose;
                 else if (global.lapcount >= 5)
@@ -57,6 +57,24 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
                     _new_song = mu_lap;
                 else 
                     _new_song = mu_escape;
+            else if (obj_player.character == "T")
+                if (global.lapcount >= 10)
+                    _new_song = mu_10peppino;
+                else if (global.lapcount >= 5)
+                    _new_song = mu_despairypeppino;
+                else if (global.lapcount >= 2)
+                    _new_song = mu_noiselap;
+                else 
+                    _new_song = mu_noiseescape;
+            else
+                if (global.lapcount >= 10)
+                    _new_song = mu_10peppino;
+                else if (global.lapcount >= 5)
+                    _new_song = mu_despairypeppino;
+                else if (global.lapcount >= 2)
+                    _new_song = mu_peppinolap;
+                else 
+                    _new_song = mu_peppinoescape;
 		else
 			if (global.lapcount >= 10)
 				_new_song = global.lap10song
@@ -70,7 +88,7 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 	}
 	if (_new_song != -4 && music != _new_song && music != mu_sucrose)
 	{
-		music = _new_song;
+		obj_music.music = _new_song;
 		prevmuID = global.music;
 		var cur_mus_pos = audio_sound_get_track_position(prevmuID) / audio_sound_length(prevmuID);
 		global.music = scr_music(music);

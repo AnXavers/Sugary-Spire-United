@@ -172,8 +172,8 @@
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Backgrounds_far","animationFPS":1.0,"animationSpeedType":1,"colour":4294967295,"depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"bg_hub1","path":"sprites/bg_hub1/bg_hub1.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":true,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "Old",
-    "path": "folders/Rooms/Spire/Old.yy",
+    "name": "Spire",
+    "path": "folders/Rooms/Spire.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

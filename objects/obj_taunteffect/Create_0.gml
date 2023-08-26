@@ -10,7 +10,7 @@ if (obj_player.character == "P")
 	tauntsound = choose(sound_taunt1, sound_taunt2, sound_taunt3, sound_taunt4, sound_taunt5, sound_taunt6, sound_taunt7);
 else if (obj_player.character == "N")
 	tauntsound = choose(sound_tauntpizzano1, sound_tauntpizzano2, sound_tauntpizzano3, sound_tauntpizzano4, sound_tauntpizzano5, sound_tauntpizzano6, sound_tauntpizzano7, sound_tauntpizzano8);
-else if (obj_player.character == "T")
+else if (obj_player.character == "T" || "S")
 	tauntsound = sound_tauntpeppino
 else
 	tauntsound = choose(sound_tauntextra1, sound_tauntextra2)

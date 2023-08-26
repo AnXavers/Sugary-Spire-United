@@ -1,7 +1,7 @@
 if canmove
 {
 	scr_getinput();
-	ScrollY = lerp(ScrollY, (optionselected / 6) * -500, 0.15);
+	ScrollY = lerp(ScrollY, (optionselected / 10) * -500, 0.15);
 	if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > 0)
 	{
 		optionselected -= 1;
@@ -60,7 +60,7 @@ if canmove
 			subtitle = "MUSIC THAT PLAYS DURING LAP 10 ONWARD";
 			CursorY = 250;
 			optionsaved_mu_lap10 += (key_right2 + key_left2);
-			optionsaved_mu_lap10 = wrap(optionsaved_mu_lap10, 0, 1);
+			optionsaved_mu_lap10 = wrap(optionsaved_mu_lap10, 0, 2);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);
@@ -72,6 +72,9 @@ if canmove
 					case 1:
 						global.lap10song = mu_finale;
 						break;
+					case 2:
+						global.lap10song = mu_10peppino
+						break;
 				}
 				ini_open("optionData.ini");
 				ini_write_real("Settings", "mu_lap10", optionsaved_mu_lap10);
@@ -81,9 +84,9 @@ if canmove
 			break;
 		case 3:
 			subtitle = "MUSIC THAT PLAYS DURING LAP 5 TO 9";
-			CursorY = 400;
+			CursorY = 450;
 			optionsaved_mu_lap5 += (key_right2 + key_left2);
-			optionsaved_mu_lap5 = wrap(optionsaved_mu_lap5, 0, 1);
+			optionsaved_mu_lap5 = wrap(optionsaved_mu_lap5, 0, 2);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);
@@ -95,6 +98,9 @@ if canmove
 					case 1:
 						global.lap5song = mu_pizzanodespairy;
 						break;
+					case 2:
+						global.lap5song = mu_despairypeppino;
+						break;
 				}
 				ini_open("optionData.ini");
 				ini_write_real("Settings", "mu_lap5", optionsaved_mu_lap5);
@@ -104,9 +110,9 @@ if canmove
 			break;
 		case 4:
 			subtitle = "MUSIC THAT PLAYS DURING LAP 2 TO 4";
-			CursorY = 550;
+			CursorY = 650;
 			optionsaved_mu_lap2 += (key_right2 + key_left2);
-			optionsaved_mu_lap2 = wrap(optionsaved_mu_lap2, 0, 1);
+			optionsaved_mu_lap2 = wrap(optionsaved_mu_lap2, 0, 3);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);
@@ -118,6 +124,12 @@ if canmove
 					case 1:
 						global.lap2song = mu_pizzanolap;
 						break;
+					case 2:
+						global.lap2song = mu_noiselap;
+						break;
+					case 3:
+						global.lap2song = mu_peppinolap;
+						break;
 				}
 				ini_open("optionData.ini");
 				ini_write_real("Settings", "mu_lap2", optionsaved_mu_lap2);
@@ -127,9 +139,9 @@ if canmove
 			break;
 		case 5:
 			subtitle = "MUSIC THAT PLAYS DURING THE ESCAPE";
-			CursorY = 700;
+			CursorY = 900;
 			optionsaved_mu_escape += (key_right2 + key_left2);
-			optionsaved_mu_escape = wrap(optionsaved_mu_escape, 0, 1);
+			optionsaved_mu_escape = wrap(optionsaved_mu_escape, 0, 3);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);
@@ -141,6 +153,12 @@ if canmove
 					case 1:
 						global.escapesong = mu_pizzanoescape;
 						break;
+					case 2:
+						global.escapesong = mu_noiseescape;
+						break;
+					case 3:
+						global.escapesong = mu_peppinoescape;
+						break;
 				}
 				ini_open("optionData.ini");
 				ini_write_real("Settings", "mu_escape", optionsaved_mu_escape);
@@ -150,7 +168,7 @@ if canmove
 			break;
 		case 6:
 			subtitle = "TOGGLE THE HEATMETER";
-			CursorY = 850;
+			CursorY = 1150;
 			optionsaved_heatmeter += (key_right2 + key_left2);
 			optionsaved_heatmeter = wrap(optionsaved_heatmeter, 0, 1);
 			if (key_jump)
@@ -164,7 +182,7 @@ if canmove
 			break;
 		case 7:
 			subtitle = "TOGGLES THE NEW SCORE FONT SEEN IN SS DEV STREAMS";
-			CursorY = 1000;
+			CursorY = 1300;
 			optionsaved_newscorefont += (key_right2 + key_left2);
 			optionsaved_newscorefont = wrap(optionsaved_newscorefont, 0, 1);
 			if (key_jump)
@@ -178,7 +196,7 @@ if canmove
 			break;
 		case 8:
 			subtitle = "TOGGLES THE NEW PLAYER ANIMATIONS SEEN IN SS DEV STREAMS";
-			CursorY = 1150;
+			CursorY = 1450;
 			optionsaved_newplayeranim += (key_right2 + key_left2);
 			optionsaved_newplayeranim = wrap(optionsaved_newplayeranim, 0, 1);
 			if (key_jump)
@@ -192,7 +210,7 @@ if canmove
 			break;
 		case 9:
 			subtitle = "TOGGLES THE NEW LEVEL DESIGNS SEEN IN SS DEV STREAMS";
-			CursorY = 1300;
+			CursorY = 1600;
 			optionsaved_newlvldesign += (key_right2 + key_left2);
 			optionsaved_newlvldesign = wrap(optionsaved_newlvldesign, 0, 1);
 			if (key_jump)
@@ -206,7 +224,7 @@ if canmove
 			break;
 		case 10:
 			subtitle = "CAUSES E RANK TO STACK INSTEAD OF OVERLAYING IT ACROSS THE SCREEN";
-			CursorY = 1450;
+			CursorY = 1750;
 			optionsaved_erankstack += (key_right2 + key_left2);
 			optionsaved_erankstack = wrap(optionsaved_erankstack, 0, 1);
 			if (key_jump)

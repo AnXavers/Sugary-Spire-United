@@ -20,7 +20,7 @@ function scr_levelcorrection()
 		global.levelname = "dance"
 	else if room == bee_1 || bee_2 || bee_3 || bee_4 || bee_5 || bee_6 || bee_7 || bee_8 || bee_9 || bee_10 || bee_11 || bee_11B || bee_12 || bee_escape1 || bee_escape2 || bee_secret_1 || bee_secret_2 || bee_secret_3 || bee_treasure
 		global.levelname = "bee"
-	else if room == martian_1 || martian_2 || martian_3 || martian_portal
+	else if room == martian_1 || martian_2 || martian_3 || martian_4 || martian_portal
 		global.levelname = "martian"
 	else if room == exitway_1 || exitway_2 || exitway_3 || exitway_4 || exitway_secret_1
 		global.levelname = "exitway"
@@ -35,12 +35,12 @@ function scr_levelcorrection()
 }
 function scr_exitlevellocation()
 {
-	if global.levelname = "tutorial"
+	if global.levelname == "tutorial"
 	{
 		global.entergateroom = hub_hallway
 		global.entergatedoor = "Z"
 	}
-	else if global.levelname = "entryway"
+	else if global.levelname == "entryway"
 	{
 		if !global.isoldw1
 			global.entergateroom = hub_w1
@@ -48,7 +48,7 @@ function scr_exitlevellocation()
 			global.entergateroom = hub_w1old
 		global.entergatedoor = "W"
 	}
-	else if global.levelname = "steamy"
+	else if global.levelname == "steamy"
 	{
 		if !global.isoldw1
 			global.entergateroom = hub_w1
@@ -56,7 +56,7 @@ function scr_exitlevellocation()
 			global.entergateroom = hub_w1old
 		global.entergatedoor = "X"
 	}
-	else if global.levelname = "molasses"
+	else if global.levelname == "molasses"
 	{
 		if !global.isoldw1
 			global.entergateroom = hub_w1
@@ -64,7 +64,7 @@ function scr_exitlevellocation()
 			global.entergateroom = hub_w1old
 		global.entergatedoor = "Y"
 	}
-	else if global.levelname = "mines"
+	else if global.levelname == "mines"
 	{
 		if !global.isoldw1
 			global.entergateroom = hub_w1
@@ -72,94 +72,222 @@ function scr_exitlevellocation()
 			global.entergateroom = hub_w1old
 		global.entergatedoor = "Z"
 	}
-	else if global.levelname = "souractive"
+	else if global.levelname == "souractive"
 	{
 		global.entergateroom = hub_w2
 		global.entergatedoor = "U"
 	}
-	else if global.levelname = "martian"
+	else if global.levelname == "martian"
 	{
 		global.entergateroom = hub_w2
 		global.entergatedoor = "U"
 	}
-	else if global.levelname = "fudge"
+	else if global.levelname == "fudge"
 	{
 		global.entergateroom = hub_w2
 		global.entergatedoor = "V"
 	}
-	else if global.levelname = "estate"
+	else if global.levelname == "estate"
 	{
 		global.entergateroom = hub_w2
 		global.entergatedoor = "W"
 	}
-	else if global.levelname = "sucrose"
+	else if global.levelname == "sucrose"
 	{
 		global.entergateroom = hub_w2
 		global.entergatedoor = "X"
 	}
-	else if global.levelname = "dance"
+	else if global.levelname == "dance"
 	{
 		global.entergateroom = hub_w2
 		global.entergatedoor = "Y"
 	}
-	else if global.levelname = "bee"
+	else if global.levelname == "bee"
 	{
 		global.entergateroom = hub_w2
 		global.entergatedoor = "Z"
 	}
-	else if global.levelname = "entrance"
+	else if global.levelname == "entrance"
 	{
 		global.entergateroom = tower_johngutterhall
 		global.entergatedoor = "Z"
 	}
-	else if global.levelname = "pizzascape"
+	else if global.levelname == "pizzascape"
 	{
 		global.entergateroom = tower_1
 		global.entergatedoor = "X"
 	}
-	else if global.levelname = "ancient"
+	else if global.levelname == "ancient"
 	{
 		global.entergateroom = tower_1
 		global.entergatedoor = "Y"
 	}
-	else if global.levelname = "bloodsauce"
+	else if global.levelname == "bloodsauce"
 	{
 		global.entergateroom = tower_1
 		global.entergatedoor = "Z"
 	}
-	else if global.levelname = "exitway"
+	else if global.levelname == "exitway"
 	{
 		global.entergateroom = hub_basement
 		global.entergatedoor = "X"
 	}
-	else if global.levelname = "dragonlair"
+	else if global.levelname == "dragonlair"
 	{
 		global.entergateroom = hub_basement
 		global.entergatedoor = "Y"
 	}
-	else if global.levelname = "walls"
+	else if global.levelname == "walls"
 	{
 		global.entergateroom = hub_basement
 		global.entergatedoor = "Z"
 	}
-	else if global.levelname = "soursweet"
+	else if global.levelname == "soursweet"
 	{
 		global.entergateroom = hub_basement
 		global.entergatedoor = "Z"
 	}
-	else if global.levelname = "themepark"
+	else if global.levelname == "themepark"
 	{
 		global.entergateroom = hub_basement
 		global.entergatedoor = "Z"
 	}
-	else if global.levelname = "catacomb"
+	else if global.levelname == "catacomb"
 	{
 		global.entergateroom = hub_basement
 		global.entergatedoor = "Z"
 	}
-	else if global.levelname = "finale"
+	else if global.levelname == "finale"
 	{
 		global.entergateroom = hub_outside
 		global.entergatedoor = "Z"
 	}
+}
+function scr_musiccorrection()
+{
+	if is_hub()
+	{
+		if room == silver_0 || silver_1 || silver_2 || silver_3 || silver_4
+			add_music(room, mu_silver, mu_silver, true)
+		else if room == rm_painter || rm_pizzano || hub_outside || outer_room1 || outer_room2 || tower_outside
+			add_music(room, mu_top, mu_top, true)
+		else if room == hub_basement || hub_w3 || hub_top
+			add_music(room, mu_hubw0, mu_hubw0, true)
+		else if room == hub_w1 || hub_hallway || hub_w1old
+			add_music(room, mu_hubw1, mu_hubw1, true)
+		else if room == hub_w2
+			add_music(room, mu_hubw2, mu_hubw2, true)
+		else if room == rm_coneball
+			add_music(room, mu_danger, mu_danger, true)
+		else if room == tower_1 || tower_entrancehall || tower_johngutterhall
+			add_music(room, mu_tower1, mu_tower1, true)
+		else if room == tower_2
+			add_music(room, mu_tower2, mu_tower2, true)
+		else if room == tower_3
+			add_music(room, mu_tower3, mu_tower3, true)
+		else if room == tower_4
+			add_music(room, mu_tower4, mu_tower4, true)
+		else if room == tower_5
+			add_music(room, mu_tower5, mu_tower5, true)
+		else if room == hub_shop1
+			add_music(room, mu_hubshop1, mu_hubshop1, true)
+		else if room == hub_shop2
+			add_music(room, mu_hubshop2, mu_hubshop2, true)
+		else if room == hub_shop3
+			add_music(room, mu_hubshop2, mu_hubshop2, true)
+		else
+			add_music(room, mu_void, mu_void, true)
+	}
+	else if global.levelname == "entryway"
+	{
+		add_music(room, mu_waffle, mu_wafflesecret, true)
+	}
+	else if global.levelname == "steamy"
+	{
+		if room == steamy_1 || steamy_2 || steamy_3 || steamy_4 || steamy_5 || steamy_6 || steamy_7 || steamy_portal
+			add_music(room, mu_steamy, mu_steamysecret, true)
+		else 
+			add_music(room, mu_steamyinner, mu_steamysecret, true)
+	}
+	else if global.levelname == "molasses"
+	{
+		if room == molasses_1 || molasses_2 || molasses_3 || molasses_4 || molasses_5 || molasses_6
+			add_music(room, mu_swamp1, mu_swampsecret, true)
+		else 
+			add_music(room, mu_swamp2, mu_swampsecret, true)
+	}
+	else if global.levelname == "mines"
+	{
+		if !global.minesProgress
+			add_music(room, mu_mineshaft1, mu_minessecret, true)
+		else 
+			add_music(room, mu_mineshaft2, mu_minessecret, true)
+	}
+	else if global.levelname == "tutorial"
+	{
+		add_music(room, mu_tutorial, mu_tutorial, true)
+	}
+	else if global.levelname == "martian"
+	{
+		add_music(room, mu_martian, mu_martian, true)
+	}
+	else if global.levelname == "fudge"
+	{
+		if room == mountain_intro || mountain_1 || mountain_2 || mountain_3 || mountain_3b || mountain_4 || mountain_5 || mountain_6 || mountain_7 || mountain_treasure
+			add_music(room, mu_mountain1, mu_mountainsecret, true)
+		else 
+			add_music(room, mu_mountain2, mu_mountainsecret, true)
+	}
+	else if global.levelname == "estate"
+	{
+		if room == estate_dog
+			add_music(room, mu_danger, mu_estatesecret, true)
+		else
+			add_music(room, mu_estate, mu_estatesecret, true)
+	}
+	else if global.levelname == "dance"
+	{
+		if room == dance_1 || dance_2 || dance_3 || dance_4 || dance_5 || dance_6 || dance_7 || dance_8 || dance_portal || dance_treasure
+			add_music(room, mu_dance2, mu_dancesecret, true)
+		else
+			add_music(room, mu_dance, mu_dancesecret, true)
+	}
+	else if global.levelname == "sucrose"
+	{
+		add_music(room, mu_sucrose, mu_sucrosesecret, true)
+	}
+	else if global.levelname == "bee"
+	{
+		add_music(room, mu_bee, mu_bee, true)
+	}
+	else if global.levelname == "entrance"
+	{
+		add_music(room, mu_entrance, mu_entrancesecret, true)
+	}
+	else if global.levelname == "bloodsauce"
+	{
+		add_music(room, mu_bloodsauce, mu_bloodsaucesecret, true)
+	}
+	else if global.levelname == "exitway"
+	{
+		add_music(room, mu_exitway, mu_exitway, true)
+	}
+	else if room == rm_credits
+		add_music(room, mu_credits, mu_credits, true)
+	else if room == rm_painterarena
+		add_music(room, mu_painter, mu_painter, true)
+	else if room == rm_pizzanoarena
+		add_music(room, mu_pizzanothemetune, mu_pizzanothemetune, true)
+	else if room == rm_coneballarena
+		add_music(room, mu_coneball1, mu_coneball1, true)
+	else if room == realtitlescreen
+		add_music(room, mu_title, mu_title, true)
+	else if room == devroom || options_room || options_sound
+		add_music(room, mu_pizzanosecret, mu_pizzanosecret, true)
+	else if room == rm_introVideo
+		add_music(room, -4, -4, true)
+	else if room == rm_disclaimer || palroom || rm_verify
+		add_music(room, mu_paletteselect, mu_paletteselect, true)
+	else
+		add_music(room, mu_void, mu_void, true)
 }

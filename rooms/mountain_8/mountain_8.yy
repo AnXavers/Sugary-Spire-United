@@ -402,7 +402,7 @@
   "layers": [
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_1","depth":-900,"effectEnabled":true,"effectType":"_filter_tintfilter","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_TintCol","type":1,"value":"#FFF2F2FF",},
-      ],"userdefinedDepth":true,"visible":false,},
+      ],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_Snow","depth":-800,"effectEnabled":true,"effectType":"_effect_windblown_particles","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"param_sprite","type":2,"value":"spr_hailparticles",},
         {"name":"param_num_particles","type":0,"value":"10",},
@@ -478,7 +478,7 @@
         {"name":"param_dragcoeff","type":0,"value":"2",},
         {"name":"param_grav_accel","type":0,"value":"1227",},
         {"name":"param_debug_grid","type":0,"value":"0",},
-      ],"userdefinedDepth":true,"visible":false,},
+      ],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Backgrounds_foreground","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":-700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.5,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"bg_fudgetop3_foreground","path":"sprites/bg_fudgetop3_foreground/bg_fudgetop3_foreground.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":true,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_Secret1","depth":-600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":129,"SerialiseWidth":172,"TileCompressedData":[
 -15150,0,1,872,-2401,0,2,841,842,-170,0,2,873,874,-4462,0,],"TileDataFormat":1,},"tilesetId":{"name":"ts_mountain1_day","path":"tilesets/ts_mountain1_day/ts_mountain1_day.yy",},"userdefinedDepth":true,"visible":true,"x":0,"y":0,},

@@ -71,6 +71,4 @@ timer_in = 180;
 timer_y = 100;
 painterdex = 0;
 pizdex = 0;
-heatmetersprite = spr_heatmeter
-heatmeterundersprite = spr_heatmeterunder
 global.Eranklength = 0

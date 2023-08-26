@@ -537,7 +537,7 @@ function scr_characterspr()
 			spr_piledriver = spr_player_piledriver;
 			spr_piledriverland = spr_player_piledriverland;
 			spr_charge = spr_player_charge;
-			spr_taunt = spr_pizzelle_taunt;
+			spr_taunt = spr_playerN_taunt;
 			spr_selectpal = spr_pizzelleselectpal;
 			spr_palette = spr_pal;
 			spr_caneidle = spr_player_caneidle;

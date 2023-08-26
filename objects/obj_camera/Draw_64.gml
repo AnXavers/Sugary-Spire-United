@@ -2,11 +2,11 @@ if (DrawHUD)
 {
 	var shakeX = irandom_range(-Collectshake, Collectshake);
 	var shakeY = irandom_range(-Collectshake, Collectshake);
-	if (room != scootercutsceneidk && room != rm_credits && room != devroom && room != palroom && room != rank_room && room != rm_introVideo && room != realtitlescreen)
+	if !(room == scootercutsceneidk && room == rm_credits && room == devroom && room == palroom && room == rank_room && room == rm_introVideo && room == realtitlescreen)
 	{
 		pal_swap_set(spr_heatpal, heatpal, 0);
-		draw_sprite_part_ext(heatmeterundersprite, obj_stylebar.image_index, 0, 0, (global.style * 4.25) / 4, sprite_get_height(spr_heatmeterunder), -6 + shakeX, 8 + DrawY + shakeY, 1, 1, c_white, 1);
-		draw_sprite_ext(heatmetersprite, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+		draw_sprite_part_ext(spr_heatmeterunder, obj_stylebar.image_index, 0, 0, (global.style * 4.25) / 4, sprite_get_height(spr_heatmeterunder), -6 + shakeX, 8 + DrawY + shakeY, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heatmeter, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		draw_sprite_ext(spr_cakehud, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		if (global.collect > global.crank)
 			draw_sprite_ext(spr_cranktopping, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
@@ -33,7 +33,7 @@ if (DrawHUD)
 	draw_set_halign(0);
 	draw_set_color(c_white);
 }
-if (global.levelname != "none" && global.showplaytimer && room != hub_w1 && room != hub_w2 && room != timesuproom && !instance_exists(obj_endlevelfade) && !instance_exists(obj_titlecard) && room != rm_titlecard)
+if !(global.levelname == "none" && global.showplaytimer && is_hub() && room = timesuproom && instance_exists(obj_endlevelfade) && instance_exists(obj_titlecard) && room == rm_titlecard)
 {
 	var tiny = ":";
 	var tinier = ":";
@@ -49,7 +49,7 @@ if (global.levelname != "none" && global.showplaytimer && room != hub_w1 && room
 	draw_set_font(global.smallfont);
 	draw_text(823, 512, string_hash_to_newline(string(global.playhour) + string(tinyish) + string(global.playminutes) + string(tiny) + string(global.playseconds) + string(tinier) + string(global.playmiliseconds)));
 }
-if (global.levelname != "none" && !(room == timesuproom || room == rank_room || room == timesuproom || room == hub_w1 || room == hub_w2 || room == hub_basement || instance_exists(obj_bosscontroller)))
+if !(global.levelname == "none" && room == timesuproom || room == rank_room || room == timesuproom || is_hub() || instance_exists(obj_bosscontroller))
 {
 	if (!instance_exists(obj_startgate))
 	{

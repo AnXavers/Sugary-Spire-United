@@ -144,6 +144,9 @@ switch (ini_read_real("Settings", "mu_lap10", 0))
 	case 1:
 		global.lap10song = mu_finale;
 		break;
+	case 2:
+		global.lap10song = mu_10peppino;
+		break;
 }
 switch (ini_read_real("Settings", "mu_lap5", 0))
 {
@@ -152,6 +155,9 @@ switch (ini_read_real("Settings", "mu_lap5", 0))
 		break;
 	case 1:
 		global.lap5song = mu_pizzanodespairy;
+		break;
+	case 2:
+		global.lap5song = mu_despairypeppino;
 		break;
 }
 switch (ini_read_real("Settings", "mu_lap2", 0))
@@ -162,14 +168,26 @@ switch (ini_read_real("Settings", "mu_lap2", 0))
 	case 1:
 		global.lap2song = mu_pizzanolap;
 		break;
+	case 2:
+		global.lap2song = mu_noiselap;
+		break;
+	case 3:
+		global.lap2song = mu_peppinolap;
+		break;
 }
 switch (ini_read_real("Settings", "mu_escape", 0))
 {
 	case 0:
-		global.escapesong = mu_escape
+		global.escapesong = mu_escape;
 		break;
 	case 1:
 		global.escapesong = mu_pizzanoescape;
+		break;
+	case 2:
+		global.escapesong = mu_noiseescape;
+		break;
+	case 3:
+		global.escapesong = mu_peppinoescape;
 		break;
 }
 window_set_fullscreen(ini_read_real("Settings", "fullscrn", 0));

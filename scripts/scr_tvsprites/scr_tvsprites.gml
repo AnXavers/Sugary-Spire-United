@@ -36,7 +36,7 @@ function scr_tvsprites()
 			tvchange2 = spr_pizzanotv2;
 			cottontvspr = spr_pizzanotv_cotton;
 			hurttvspr = spr_pizzanotv_hurt;
-			minecarttvspr = spr_pizzytvmine;
+			minecarttvspr = spr_pizzanotvmine;
 			bombtvspr = spr_pizzytvbomb;
 			firetvspr = spr_pizzytvfire;
 			angrytvspr = spr_pizzytvangry;

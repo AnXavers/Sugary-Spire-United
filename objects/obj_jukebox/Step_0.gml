@@ -11,4 +11,8 @@ if (active == 1)
 		audio_stop_all_music();
 		global.music = scr_music(_song);
 	}
+	if (key_attack)
+	{
+		active = 0
+	}
 }
