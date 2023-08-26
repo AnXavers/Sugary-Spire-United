@@ -1,53 +1,76 @@
-function scr_escapetimes(argument0 = room)
+function scr_escapetimes(argument0 = global.levelname)
 {
 	var seconds = 0;
 	var minutes = 0;
 	switch (argument0)
 	{
-		case 35:
+		case "steamy":
 			minutes = 4;
 			seconds = 0;
 			break;
-		case 20:
+		case "entryway":
 			minutes = 3;
 			seconds = 0;
 			break;
-		case 50:
+		case "molasses":
 			minutes = 5;
 			seconds = 0;
 			break;
-		case 84:
+		case "mines":
 			minutes = 4;
 			seconds = 50;
 			break;
-		case 95:
+		case "dragonlair":
 			minutes = 15;
 			seconds = 30;
 			break;
-		case 116:
+		case "fudge":
 			minutes = 5;
 			seconds = 0;
 			break;
-		case 11:
-			minutes = 5;
-			seconds = 0;
-			break;
-		case 134:
-			minutes = 7;
-			seconds = 30;
-			break;
-		case 208:
+		case "dance":
 			minutes = 4;
 			seconds = 0;
 			break;
-		case 209:
+		case "estate":
 			minutes = 4;
 			seconds = 55;
 			break;
-		case 231:
+		case "sucrose":
+			minutes = 0;
+			seconds = 0;
+			break;
+		case "bee":
 			minutes = 4;
 			seconds = 0;
 			break;
+		case "martian":
+			minutes = 4;
+			seconds = 0;
+			break;
+		case "exitway":
+			minutes = 4;
+			seconds = 0;
+			break;
+		case "entrance":
+			minutes = 2;
+			seconds = 35;
+			break;
+		case "pizzascape":
+			minutes = 2;
+			seconds = 50;
+			break;
+		case "ancient":
+			minutes = 2;
+			seconds = 50;
+			break;
+		case "bloodsauce":
+			minutes = 3;
+			seconds = 25;
+			break;
+		case "finale":
+			minutes = 8;
+			seconds = 0;
 		default:
 			minutes = 99124871759815;
 			seconds = 59;
@@ -59,35 +82,82 @@ function scr_escapetimes(argument0 = room)
 	time_array[1] = seconds;
 	return time_array;
 }
-function scr_laptimes(argument0 = room)
+function scr_laptimes(argument0 = global.levelname)
 {
 	var seconds = 0;
 	var minutes = 0;
 	switch (argument0)
 	{
-		case 153:
-			minutes = 0;
-			seconds = 45;
+		case "steamy":
+			minutes = 1;
+			seconds = 15;
 			break;
-		case 155:
+		case "entryway":
+			minutes = 1;
+			seconds = 10;
+			break;
+		case "molasses":
+			minutes = 1;
+			seconds = 35;
+			break;
+		case "mines":
+			minutes = 1;
+			seconds = 30;
+			break;
+		case "dragonlair":
+			minutes = 8;
+			seconds = 30;
+			break;
+		case "fudge":
+			minutes = 2;
+			seconds = 10;
+			break;
+		case "dance":
+			minutes = 1;
+			seconds = 30;
+			break;
+		case "estate":
+			minutes = 2;
+			seconds = 15;
+			break;
+		case "sucrose":
+			minutes = 0;
+			seconds = 0;
+			break;
+		case "bee":
+			minutes = 1;
+			seconds = 30;
+			break;
+		case "martian":
+			minutes = 1;
+			seconds = 30;
+			break;
+		case "exitway":
+			minutes = 1;
+			seconds = 30;
+			break;
+		case "entrance":
 			minutes = 1;
 			seconds = 0;
 			break;
-		case 42:
+		case "pizzascape":
 			minutes = 1;
-			seconds = 20;
+			seconds = 0;
 			break;
-		case 67:
+		case "ancient":
 			minutes = 1;
-			seconds = 45;
+			seconds = 0;
 			break;
-		case 164:
-			minutes = 2;
-			seconds = 30;
+		case "bloodsauce":
+			minutes = 1;
+			seconds = 0;
 			break;
+		case "finale":
+			minutes = 5;
+			seconds = 0;
 		default:
-			minutes = 0;
-			seconds = 45;
+			minutes = 99124871759815;
+			seconds = 59;
 			break;
 	}
 	

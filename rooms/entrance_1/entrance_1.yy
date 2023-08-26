@@ -53,6 +53,7 @@
     {"name":"inst_5B13A664","path":"rooms/entrance_1/entrance_1.yy",},
     {"name":"inst_6CF3C1A8","path":"rooms/entrance_1/entrance_1.yy",},
     {"name":"inst_2E94BE24","path":"rooms/entrance_1/entrance_1.yy",},
+    {"name":"inst_6522CB29","path":"rooms/entrance_1/entrance_1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -108,6 +109,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2E94BE24","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_googlyjuice","path":"objects/obj_googlyjuice/obj_googlyjuice.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_baddie","path":"objects/obj_baddie/obj_baddie.yy",},"propertyId":{"name":"panicEscape","path":"objects/obj_baddie/obj_baddie.yy",},"value":"true",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1984.0,"y":480.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6522CB29","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_doorC","path":"objects/obj_doorC/obj_doorC.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-160.0,"y":512.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":21,"SerialiseWidth":88,"TileCompressedData":[
 2,66,67,-78,0,2,44,45,-6,0,2,86,87,-80,0,2,66,67,-86,0,2,86,87,-309,0,2,24,25,-39,0,2,60,61,-45,0,2,44,45,-39,0,2,80,81,-84,0,4,24,25,66,67,-84,0,4,44,45,86,87,-363,0,10,460,461,462,463,464,0,466,467,468,469,-8,0,2,24,25,-68,0,10,480,481,482,483,484,485,486,487,488,489,

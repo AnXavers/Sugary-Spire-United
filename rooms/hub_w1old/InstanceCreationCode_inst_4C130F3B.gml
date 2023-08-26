@@ -1,1 +1,1 @@
-sprite_index = spr_doorP_large
+global.isoldw1 = 1

@@ -15,7 +15,8 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	obj_tv.target_fill = global.fill;
 	global.wave = 0;
 	global.maxwave = global.fill;
-	instance_create(x, y, obj_panicchanger);
+	if !instance_exists(obj_panicchanger)
+		instance_create(x, y, obj_panicchanger);
 	switch (global.combo)
 	{
 		case 0:

@@ -5,7 +5,7 @@
   "bbox_bottom": 95,
   "bbox_left": 11,
   "bbox_right": 69,
-  "bbox_top": 49,
+  "bbox_top": 46,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -15,6 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4f200a96-749d-45f5-a882-01abcdbf2192",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7beb43af-c496-4f74-83b9-dbc8ae07f1ac",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9b1b45f7-a2ce-422d-901f-661317736c6a",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -26,8 +27,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Confecti",
+    "path": "folders/Sprites/Objects/Collectibles/Confecti.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -44,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -57,6 +58,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4f200a96-749d-45f5-a882-01abcdbf2192","path":"sprites/spr_crack_taunt/spr_crack_taunt.yy",},},},"Disabled":false,"id":"b0f803f3-e59a-488c-9dfd-f14f9465586f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7beb43af-c496-4f74-83b9-dbc8ae07f1ac","path":"sprites/spr_crack_taunt/spr_crack_taunt.yy",},},},"Disabled":false,"id":"31af1f82-7047-41e0-8082-a2130a5954f1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9b1b45f7-a2ce-422d-901f-661317736c6a","path":"sprites/spr_crack_taunt/spr_crack_taunt.yy",},},},"Disabled":false,"id":"021d0279-bb70-48ee-8d97-b4e35b238a7e","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

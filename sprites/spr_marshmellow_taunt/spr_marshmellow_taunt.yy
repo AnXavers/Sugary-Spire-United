@@ -4,8 +4,8 @@
   "name": "spr_marshmellow_taunt",
   "bbox_bottom": 95,
   "bbox_left": 30,
-  "bbox_right": 65,
-  "bbox_top": 47,
+  "bbox_right": 69,
+  "bbox_top": 42,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -15,6 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"73b193bd-8f9b-43d6-a9f2-fcab01a0caf5",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"132fa033-b8e9-4e2d-a928-f9c1af63fad8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b640a5bd-9661-403d-92d6-6ebcf4a0b616",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -26,8 +27,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Confecti",
+    "path": "folders/Sprites/Objects/Collectibles/Confecti.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -44,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -57,6 +58,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"73b193bd-8f9b-43d6-a9f2-fcab01a0caf5","path":"sprites/spr_marshmellow_taunt/spr_marshmellow_taunt.yy",},},},"Disabled":false,"id":"23c6d8ce-da14-401a-87f5-2ba17e154080","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"132fa033-b8e9-4e2d-a928-f9c1af63fad8","path":"sprites/spr_marshmellow_taunt/spr_marshmellow_taunt.yy",},},},"Disabled":false,"id":"5157df1b-e76b-4af4-9709-5a3cdc245979","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b640a5bd-9661-403d-92d6-6ebcf4a0b616","path":"sprites/spr_marshmellow_taunt/spr_marshmellow_taunt.yy",},},},"Disabled":false,"id":"3d6982c0-cc8b-40b5-a380-093cefc3f2f2","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

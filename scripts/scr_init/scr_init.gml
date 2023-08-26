@@ -73,6 +73,7 @@ global.janitorLapfollow = false;
 global.janitortype = 1;
 global.lapcount = 1;
 global.Eranklength = 1;
+global.isoldw1 = 0;
 
 ini_open("optionData.ini");
 global.fullscreen = ini_read_real("Settings", "fullscrn", 0);
@@ -95,6 +96,10 @@ global.mulap2 = ini_read_real("Settings", "mu_lap2", 0);
 global.muescape = ini_read_real("Settings", "mu_escape", 0);
 global.heatmeter = ini_read_real("Settings", "heatmeter", 0);
 global.tvmessages = ini_read_real("Settings", "tvmsg", 1);
+global.newscorefont = ini_read_real("Settings", "newscorefont", 0);
+global.newplayeranim = ini_read_real("Settings", "newplayeranim", 0);
+global.newlvldesign = ini_read_real("Settings", "newlvldesign", 0);
+global.erankstack = ini_read_real("Settings", "erankstack", 0);
 ini_close();
 
 audio_master_gain(global.masterVolume);

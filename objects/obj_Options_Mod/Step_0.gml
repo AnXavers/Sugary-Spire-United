@@ -11,8 +11,12 @@ if canmove
 		optionsaved_mu_lap5 = global.mulap5;
 		optionsaved_mu_lap2 = global.mulap2;
 		optionsaved_mu_escape = global.muescape;
+		optionsaved_heatmeter = global.heatmeter;
+		optionsaved_newscorefont = global.newscorefont;
+		optionsaved_newplayeranim = global.newplayeranim;
+		optionsaved_newlvldesign = global.newlvldesign;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 6)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 10)
 	{
 		optionselected += 1;
 		scr_sound(sound_step);
@@ -21,7 +25,11 @@ if canmove
 		optionsaved_mu_lap5 = global.mulap5;
 		optionsaved_mu_lap2 = global.mulap2;
 		optionsaved_mu_escape = global.muescape;
-		optionsaved_heatmeter = global.heatmeter
+		optionsaved_heatmeter = global.heatmeter;
+		optionsaved_newscorefont = global.newscorefont;
+		optionsaved_newplayeranim = global.newplayeranim;
+		optionsaved_newlvldesign = global.newlvldesign;
+		optionsaved_erankstack = global.erankstack;
 	}
 	switch (optionselected)
 	{
@@ -152,6 +160,62 @@ if canmove
 				ini_write_real("Settings", "heatmeter", optionsaved_heatmeter);
 				ini_close();
 				global.heatmeter = optionsaved_heatmeter;
+			}
+			break;
+		case 7:
+			subtitle = "TOGGLES THE NEW SCORE FONT SEEN IN SS DEV STREAMS";
+			CursorY = 1000;
+			optionsaved_newscorefont += (key_right2 + key_left2);
+			optionsaved_newscorefont = wrap(optionsaved_newscorefont, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "newscorefont", optionsaved_newscorefont);
+				ini_close();
+				global.newscorefont = optionsaved_newscorefont;
+			}
+			break;
+		case 8:
+			subtitle = "TOGGLES THE NEW PLAYER ANIMATIONS SEEN IN SS DEV STREAMS";
+			CursorY = 1150;
+			optionsaved_newplayeranim += (key_right2 + key_left2);
+			optionsaved_newplayeranim = wrap(optionsaved_newplayeranim, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "newplayeranim", optionsaved_newplayeranim);
+				ini_close();
+				global.newplayeranim = optionsaved_newplayeranim;
+			}
+			break;
+		case 9:
+			subtitle = "TOGGLES THE NEW LEVEL DESIGNS SEEN IN SS DEV STREAMS";
+			CursorY = 1300;
+			optionsaved_newlvldesign += (key_right2 + key_left2);
+			optionsaved_newlvldesign = wrap(optionsaved_newlvldesign, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "newlvldesign", optionsaved_newlvldesign);
+				ini_close();
+				global.newlvldesign = optionsaved_newlvldesign;
+			}
+			break;
+		case 10:
+			subtitle = "CAUSES E RANK TO STACK INSTEAD OF OVERLAYING IT ACROSS THE SCREEN";
+			CursorY = 1450;
+			optionsaved_erankstack += (key_right2 + key_left2);
+			optionsaved_erankstack = wrap(optionsaved_erankstack, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "erankstack", optionsaved_erankstack);
+				ini_close();
+				global.erankstack = optionsaved_erankstack;
 			}
 			break;
 	}
