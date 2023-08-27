@@ -1,5 +1,9 @@
 function scr_slopeangle(argument0 = x, argument1 = y, argument2 = 2)
 {
+	if !global.slopeangle
+	{
+		return 0;
+	}
 	var array = 0;
 	var checkside = -1;
 	var height = sprite_get_bbox_bottom(mask_index) - sprite_get_bbox_top(mask_index);
@@ -38,6 +42,10 @@ function scr_slopeangle(argument0 = x, argument1 = y, argument2 = 2)
 }
 function scr_slopeanglenonplayer(argument0, argument1, argument2 = 1)
 {
+	if !global.slopeangle
+	{
+		return 0;
+	}
 	var array = 0;
 	var checkside = -1;
 	var height = sprite_get_bbox_bottom(mask_index) - sprite_get_bbox_top(mask_index);

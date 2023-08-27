@@ -60,7 +60,7 @@ if (character == "P")
 if ((angry == 1 || global.stylethreshold > 3) && sprite_index == spr_idle)
 	sprite_index = spr_angryidle;
 scr_playersounds();
-if (sprite_index == spr_player_winding && state != 1)
+if (sprite_index == spr_winding && state != 1)
 	windingAnim = 0;
 else
 	audio_stop_sound(sound_superjumpcharge2);
@@ -71,9 +71,9 @@ if (suplexmove == 1 && grounded)
 }
 if (obj_player.state != 17)
 	grav = 0.5;
-if (sprite_index == spr_player_idlevomit && image_index > 28 && image_index < 43)
+if (sprite_index == spr_idlevomit && image_index > 28 && image_index < 43)
 	instance_create(x + random_range(-5, obj_snowgustfridge), y + 46, obj_vomit);
-if (sprite_index == spr_player_idlevomitblood && image_index > 28 && image_index < 43)
+if (sprite_index == spr_idlevomitblood && image_index > 28 && image_index < 43)
 {
 	with (instance_create(x + random_range(-5, obj_snowgustfridge), y + 46, obj_vomit))
 		sprite_index = spr_vomit2;
@@ -114,7 +114,7 @@ if (state == 35 || state == 41 || state == 42 || state == 44 || state == 43)
 else
 	grabbing = 0;
 var _machslideCheck = sprite_index == spr_machslideboost3 || sprite_index == spr_machslideboost3FallStart || sprite_index == spr_machslideboost3Fall;
-if ((state == 70 || (state == 71 && _machslideCheck) || state == 58 || state == 149 || state == 148 || (state == 150 && vsp > 0) || (state == 96 && sprite_index != spr_tumblestart && sprite_index != spr_tumbleend) || (state == 11 && (verticalMovespeed > 8 || mach2 >= 100)) || (state == 139 && (movespeed > 8 || mach2 >= 100)) || (state == 12 && (verticalMovespeed > 8 || mach2 >= 100)) || state == 142 || state == 106 || (state == 98 && movespeed > 8) || state == 133 || state == 103 || state == 101 || state == 108 || state == 95 || state == 3 || state == 38 || state == 28 || state == 74 || state == 63 || (state == 31 && movespeed >= 12) || state == 34 || state == 5 || (state == 36 && sprite_index == spr_piledriver) || (state == 36 && sprite_index == spr_player_piledriverstart) || state == 19 || state == 20 || state == 13 || state == 9 || state == 6 || state == 7) || state == 89 || state == 105 || state == 49)
+if ((state == 70 || (state == 71 && _machslideCheck) || state == 58 || state == 149 || state == 148 || (state == 150 && vsp > 0) || (state == 96 && sprite_index != spr_tumblestart && sprite_index != spr_tumbleend) || (state == 11 && (verticalMovespeed > 8 || mach2 >= 100)) || (state == 139 && (movespeed > 8 || mach2 >= 100)) || (state == 12 && (verticalMovespeed > 8 || mach2 >= 100)) || state == 142 || state == 106 || (state == 98 && movespeed > 8) || state == 133 || state == 103 || state == 101 || state == 108 || state == 95 || state == 3 || state == 38 || state == 28 || state == 74 || state == 63 || (state == 31 && movespeed >= 12) || state == 34 || state == 5 || (state == 36 && sprite_index == spr_piledriver) || (state == 36 && sprite_index == spr_piledriverstart) || state == 19 || state == 20 || state == 13 || state == 9 || state == 6 || state == 7) || state == 89 || state == 105 || state == 49)
 	instakillmove = 1;
 else
 	instakillmove = 0;
@@ -160,7 +160,7 @@ if (state == 70 || state == 3 || state == 69 || state == 5 || (state == 71 && ma
 }
 else
 	mach_aftimg = 0;
-if (state != 72 && state != 98 && state != 65 && state != 9 && state != 32 && state != 96 && sprite_index != spr_player_crouchshoot && sprite_index != spr_player_skatecrouch && state != 64 && state != 28 && state != 31 && state != 73 && state != 67 && state != 66 && sprite_index != spr_pizzano_crouchslide)
+if (state != 72 && state != 98 && state != 65 && state != 9 && state != 32 && state != 96 && sprite_index != spr_crouchshoot && sprite_index != spr_skatecrouch && state != 64 && state != 28 && state != 31 && state != 73 && state != 67 && state != 66 && sprite_index != spr_pizzano_crouchslide)
 	mask_index = spr_player_mask;
 else
 	mask_index = spr_crouchmask;
@@ -270,9 +270,9 @@ if (state == 77 || place_meeting(x, y, obj_hallway) || state == 61)
 	global.roomsave = 0;
 if (Dashpad_buffer > 0)
 	Dashpad_buffer = max(Dashpad_buffer - 1, 0);
-if (sprite_index == spr_player_machpunch1 && floor(image_index) == (image_number - 1))
+if (sprite_index == spr_machpunch1 && floor(image_index) == (image_number - 1))
 	sprite_index = spr_mach2;
-if (sprite_index == spr_player_machpunch2 && floor(image_index) == (image_number - 1))
+if (sprite_index == spr_machpunch2 && floor(image_index) == (image_number - 1))
 	sprite_index = spr_mach2;
 if (global.combo > global.highestcombo)
 	global.highestcombo = global.combo;

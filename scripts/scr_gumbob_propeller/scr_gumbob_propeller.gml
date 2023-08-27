@@ -37,6 +37,6 @@ function scr_gumbob_propeller()
 	if (scr_solid(x, y - 1) && !place_meeting(x, y - 1, obj_destructibles) && !place_meeting(x + sign(hsp), y, obj_slope) && !place_meeting(x - sign(hsp), y, obj_slope))
 	{
 		state = states.Sjumpland;
-		sprite_index = spr_player_superjumpland;
+		sprite_index = spr_superjumpland;
 	}
 }

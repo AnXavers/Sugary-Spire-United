@@ -1,5 +1,7 @@
 for (var i = 0; room_exists(i); i++)
 	global.roomlist[i] = room_get_name(i);
+for (var i = 0; room_exists(i); i++)
+	global.objectlist[i] = object_get_name(i);
 function sh_escape()
 {
 	var arg0 = string(argument0[1]);
@@ -32,7 +34,7 @@ function meta_escape()
 {
 	return 
 	{
-		description: "activates escape and sets escape time",
+		description: "Activates escape and sets escape time.",
 		arguments: ["<bool>", "<min>", "<sec>"],
 		suggestions: [["true", "false"], [], []],
 		argumentDescriptions: ["activate/deactivate escape", "set minutes", "set seconds"]
@@ -62,7 +64,7 @@ function meta_toggle_collisions()
 {
 	return 
 	{
-		description: "toggles collision object visibility",
+		description: "Toggles collision object visibility.",
 		arguments: ["<bool>"],
 		suggestions: [["true", "false"]],
 		argumentDescriptions: ["toggles visibility"]
@@ -148,7 +150,7 @@ function meta_toggle_debugmode()
 {
 	return 
 	{
-		description: "toggles debugmode",
+		description: "Toggles debugmode.",
 		arguments: ["<bool>"],
 		suggestions: [["true", "false"]],
 		argumentDescriptions: ["toggles debugmode"]
@@ -171,7 +173,7 @@ function meta_room_goto()
 {
 	return 
 	{
-		description: "allows you to go to another room",
+		description: "Allows you to go to another room.",
 		arguments: ["<room>", "<door>"],
 		suggestions: [global.roomlist, ["N/A", "A", "B", "C", "D", "E", "P", "S"]],
 		argumentDescriptions: ["sets targetRoom", "sets targetDoor"]
@@ -185,10 +187,38 @@ function meta_instance_create()
 {
 	return 
 	{
-		description: "create an object",
+		description: "Create an object.",
 		arguments: ["<x>", "<y>", "<object>"],
-		suggestions: [0, 1, []],
+		suggestions: [0, 1, global.objectlist],
 		argumentDescriptions: ["the X coordinate to create the object at", "the Y coordinate to create the object at", "the object to create"]
+	};
+}
+function sh_instance_destroy()
+{
+	instance_destroy(asset_get_index(argument0[1]));
+}
+function meta_instance_destroy()
+{
+	return 
+	{
+		description: "Destroy an object.",
+		arguments: ["<object>"],
+		suggestions: [global.objectlist],
+		argumentDescriptions: ["the object to destroy"]
+	};
+}
+function sh_change_variable()
+{
+	variable_global_set(argument0[1], argument0[2]);
+}
+function meta_change_variable()
+{
+	return 
+	{
+		description: "Changes a global variable.",
+		arguments: ["<global_variable>", "<value>"],
+		suggestions: [0, 1],
+		argumentDescriptions: ["the name of the global variable to change", "the value you want to change the variable to"]
 	};
 }
 function sh_noclip()
@@ -202,7 +232,7 @@ function meta_noclip()
 {
 	return 
 	{
-		description: "toggle noclip",
+		description: "Toggle noclip.",
 		arguments: [],
 		suggestions: [],
 		argumentDescriptions: []
@@ -261,6 +291,34 @@ function meta_give_all()
 	return 
 	{
 		description: "Gives you all 5 confecti, 3 secrets, secret treasure, and S rank score.",
+		arguments: [],
+		suggestions: [],
+		argumentDescriptions: []
+	};
+}
+function sh_play_sound()
+{
+	scr_sound(argument0[1])
+}
+function meta_play_sound()
+{
+	return 
+	{
+		description: "Plays a selected sound.",
+		arguments: ["<sound>"],
+		suggestions: [0],
+		argumentDescriptions: ["The name of the sound to play."]
+	};
+}
+function sh_game_end()
+{
+	game_end()
+}
+function meta_game_end()
+{
+	return 
+	{
+		description: "Ends the current game session.",
 		arguments: [],
 		suggestions: [],
 		argumentDescriptions: []

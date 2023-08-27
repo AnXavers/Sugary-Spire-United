@@ -1,170 +1,179 @@
 function scr_levelcorrection()
 {
-	if room == entryway_treasure || entryway_portal || entryway_secret_1 || entryway_secret_2 || entryway_secret_3 || entryway_1 || entryway_2 || entryway_3 || entryway_4 || entryway_5 || entryway_6 || entryway_7 || entryway_8 || entryway_9 || entryway_10 || entryway_11
-		global.levelname = "entryway"
+	if room == entryway_treasure || entryway_portal || entryway_secret_1 || entryway_secret_2 || entryway_secret_3 || entryway_1 || entryway_2 || entryway_3 || entryway_4 || entryway_5 || entryway_6 || entryway_7 || entryway_8 || entryway_9 || entryway_10_new || entryway_11_new
+	{
+		global.levelname = "entryway";
+	}
 	else if room == steamy_treasure || steamy_portal || steamy_secret_1 || steamy_secret_2 || steamy_secret_3 || steamy_secret_4 || steamy_1 || steamy_2 || steamy_3 || steamy_4 || steamy_5 || steamy_6 || steamy_7 || steamy_8 || steamy_9 || steamy_10 || steamy_11 || steamy_11_1 || steamy_12 || steamy_13 || steamy_14 || steamy_sideroom
-		global.levelname = "steamy"
+	{
+		global.levelname = "steamy";
+	}
 	else if room == molasses_treasure || molasses_secret_1 || molasses_secret_2 || molasses_secret_3 || molasses_1 || molasses_2 || molasses_2b || molasses_3 || molasses_4 || molasses_5 || molasses_6 || molasses_6b || molasses_6c || molasses_6d || molasses_7 || molasses_8 || molasses_8b | molasses_9 || molasses_10 || molasses_11 || molasses_12 || molasses_13
-		global.levelname = "molasses"
+	{
+		global.levelname = "molasses";
+	}
 	else if room == mine_1 || mine_2 || mineshaft_1 || mineshaft_3 || mines_silver || mines_treasure || mines_secret_1 || mines_secret_2 || mines_secret_3 || mines_1 || mines_2 || mines_3 || mines_4 || mines_5 || mines_6 || mines_7 || mines_8 || mines_8B || mines_9 || mines_10 || mines_11 || mines_12 || mines_13 || mines_14
-		global.levelname = "mines"
+	{
+		global.levelname = "mines";
+	}
 	else if room == tutorial_portal || tutorial_1 || tutorial_2 || tutorial_3 || tutorial_4
-		global.levelname = "tutorial"
+	{
+		global.levelname = "tutorial";
+	}
 	else if room == fudge_1 || fudge_2 || fudge_3 || fudge_4 || fudge_5 || mountain_treasure || mountain_secret_1 || mountain_secret_2 || mountain_secret_3 || mountain_1 || mountain_2 || mountain_3 || mountain_3b || mountain_4 || mountain_5 || mountain_6 || mountain_7 || mountain_8 || mountain_9 || mountain_10 || mountain_11 || mountain_secret_plaza2
-		global.levelname = "fudge"
+	{
+		global.levelname = "fudge";
+	}
 	else if room == estate_1 || estate_2 || estate_3 || estate_4 || estate_4B || estate_4C || estate_5 || estate_6 || estate_6B || estate_6C || estate_7 || estate_8 || estate_8B || estate_9 || estate_dog || estate_secret1 || estate_secret2 || estate_secret3 || estate_treasure
-		global.levelname = "estate"
+	{
+		global.levelname = "estate";
+	}
 	else if room == sucrose_1 || sucrose_2 || sucrose_2_1 || sucrose_3 || sucrose_4 || sucrose_5 || sucrose_6 || sucrose_6_1 || sucrose_7 || sucrose_8 || sucrose_8_1 || sucrose_9 || sucrose_10 || sucrose_10_1 || sucrose_11 || sucrose_portal || sucrose_secret1 || sucrose_secret2 || sucrose_secret3 || sucrose_treasure
-		global.levelname = "sucrose"
+	{
+		global.levelname = "sucrose";
+	}
 	else if room == dance_1 || dance_2 || dance_3 || dance_4 || dance_5 || dance_6 || dance_7 || dance_8 || dance_9 || dance_10 || dance_11 || dance_pillar || dance_escape1 || dance_escape2 || dance_escape3 || dance_portal || dance_secret1 || dance_secret2 || dance_secret3 || dance_treasure
-		global.levelname = "dance"
+	{
+		global.levelname = "dance";
+	}
 	else if room == bee_1 || bee_2 || bee_3 || bee_4 || bee_5 || bee_6 || bee_7 || bee_8 || bee_9 || bee_10 || bee_11 || bee_11B || bee_12 || bee_escape1 || bee_escape2 || bee_secret_1 || bee_secret_2 || bee_secret_3 || bee_treasure
-		global.levelname = "bee"
+	{
+		global.levelname = "bee";
+	}
 	else if room == martian_1 || martian_2 || martian_3 || martian_4 || martian_portal
-		global.levelname = "martian"
+	{
+		global.levelname = "martian";
+	}
 	else if room == exitway_1 || exitway_2 || exitway_3 || exitway_4 || exitway_secret_1
-		global.levelname = "exitway"
+	{
+		global.levelname = "exitway";
+	}
 	else if room == dragonlair_1 || dragonlair_2 || dragonlair_3 || dragonlair_4 || dragonlair_5 || dragonlair_6 || dragonlair_7 || dragonlair_8 || dragonlair_9
-		global.levelname = "dragonlair"
+	{
+		global.levelname = "dragonlair";
+	}
 	else if room == finale_pre || finale_0 || finale_1
-		global.levelname = "finale"
+	{
+		global.levelname = "finale";
+	}
 	else if room == entrance_1 || entrance_2 || entrance_3 || entrance_4 || entrance_5 || entrance_6 || entrance_6c || entrance_7 || entrance_8 || entrance_9 || entrance_10 || entrance_portal || entrance_secret3 || entrance_secret4 || entrance_secret5 || entrance_treasure
-		global.levelname = "entrance"
+	{
+		global.levelname = "entrance";
+	}
 	else if room == dungeon_1 || dungeon_2 || dungeon_3 || dungeon_4 || dungeon_5 || dungeon_6 || dungeon_7 || dungeon_8 || dungeon_9 || dungeon_10 || dungeon_pizzamart || dungeon_secret1 || dungeon_secret2 || dungeon_secret3 || dungeon_secret4 || dungeon_secret5 || dungeon_secret6 || dungeon_treasure
-		global.levelname = "bloodsauce"
+	{
+		global.levelname = "bloodsauce";
+	}
 }
-function scr_exitlevellocation()
+function scr_exitlevellocation(argument0 = global.levelname)
 {
-	if global.levelname == "tutorial"
+	switch (argument0)
 	{
-		global.entergateroom = hub_hallway
-		global.entergatedoor = "Z"
+		case "tutorial":
+			global.entergateroom = hub_hallway;
+			global.entergatedoor = "Z";
+			break;
+		case "entryway":
+			if !global.isoldw1
+				global.entergateroom = hub_w1;
+			else
+				global.entergateroom = hub_w1old;
+			global.entergatedoor = "W";
+			break;
+		case "steamy":
+			if !global.isoldw1
+				global.entergateroom = hub_w1;
+			else
+				global.entergateroom = hub_w1old;
+			global.entergatedoor = "X";
+			break;
+		case "molasses":
+			if !global.isoldw1
+				global.entergateroom = hub_w1;
+			else
+				global.entergateroom = hub_w1old;
+			global.entergatedoor = "Y";
+			break;
+		case "mines":
+			if !global.isoldw1
+				global.entergateroom = hub_w1;
+			else
+				global.entergateroom = hub_w1old;
+			global.entergatedoor = "Z";
+			break;
+		case "souractive":
+			global.entergateroom = hub_w2;
+			global.entergatedoor = "U";
+			break;
+		case "sucrose":
+			global.entergateroom = hub_w3;
+			global.entergatedoor = "Z";
+			break;
+		case "fudge":
+			global.entergateroom = hub_w2
+			global.entergatedoor = "V"
+			break;
+		case "estate":
+			global.entergateroom = hub_w2
+			global.entergatedoor = "W"
+			break;
+		case "martian":
+			global.entergateroom = hub_w2
+			global.entergatedoor = "X"
+			break;
+		case "dance":
+			global.entergateroom = hub_w2
+			global.entergatedoor = "Y"
+			break;
+		case "bee":
+			global.entergateroom = hub_w2
+			global.entergatedoor = "Z"
+			break;
+		case "entrance":
+			global.entergateroom = tower_johngutterhall
+			global.entergatedoor = "Z"
+			break;
+		case "pizzascape":
+			global.entergateroom = tower_1
+			global.entergatedoor = "X"
+			break;
+		case "ancient":
+			global.entergateroom = tower_1
+			global.entergatedoor = "Y"
+			break;
+		case "bloodsauce":
+			global.entergateroom = tower_1
+			global.entergatedoor = "Z"
+			break;
+		case "exitway":
+			global.entergateroom = hub_basement
+			global.entergatedoor = "X"
+			break;
+		case "dragonlair":
+			global.entergateroom = hub_basement
+			global.entergatedoor = "Y"
+			break;
+		case "walls":
+			global.entergateroom = hub_basement
+			global.entergatedoor = "Z"
+			break;
+		case "soursweet":
+			global.entergateroom = hub_basement
+			global.entergatedoor = "Z"
+			break;
+		case "themepark":
+			global.entergateroom = hub_basement
+			global.entergatedoor = "Z"
+			break;
+		case "catacomb":
+			global.entergateroom = hub_basement
+			global.entergatedoor = "Z"
+			break;
+		case "finale":
+			global.entergateroom = hub_outside
+			global.entergatedoor = "Z"
+			break;
 	}
-	else if global.levelname == "entryway"
-	{
-		if !global.isoldw1
-			global.entergateroom = hub_w1
-		else
-			global.entergateroom = hub_w1old
-		global.entergatedoor = "W"
-	}
-	else if global.levelname == "steamy"
-	{
-		if !global.isoldw1
-			global.entergateroom = hub_w1
-		else
-			global.entergateroom = hub_w1old
-		global.entergatedoor = "X"
-	}
-	else if global.levelname == "molasses"
-	{
-		if !global.isoldw1
-			global.entergateroom = hub_w1
-		else
-			global.entergateroom = hub_w1old
-		global.entergatedoor = "Y"
-	}
-	else if global.levelname == "mines"
-	{
-		if !global.isoldw1
-			global.entergateroom = hub_w1
-		else
-			global.entergateroom = hub_w1old
-		global.entergatedoor = "Z"
-	}
-	else if global.levelname == "souractive"
-	{
-		global.entergateroom = hub_w2
-		global.entergatedoor = "U"
-	}
-	else if global.levelname == "martian"
-	{
-		global.entergateroom = hub_w2
-		global.entergatedoor = "U"
-	}
-	else if global.levelname == "fudge"
-	{
-		global.entergateroom = hub_w2
-		global.entergatedoor = "V"
-	}
-	else if global.levelname == "estate"
-	{
-		global.entergateroom = hub_w2
-		global.entergatedoor = "W"
-	}
-	else if global.levelname == "sucrose"
-	{
-		global.entergateroom = hub_w2
-		global.entergatedoor = "X"
-	}
-	else if global.levelname == "dance"
-	{
-		global.entergateroom = hub_w2
-		global.entergatedoor = "Y"
-	}
-	else if global.levelname == "bee"
-	{
-		global.entergateroom = hub_w2
-		global.entergatedoor = "Z"
-	}
-	else if global.levelname == "entrance"
-	{
-		global.entergateroom = tower_johngutterhall
-		global.entergatedoor = "Z"
-	}
-	else if global.levelname == "pizzascape"
-	{
-		global.entergateroom = tower_1
-		global.entergatedoor = "X"
-	}
-	else if global.levelname == "ancient"
-	{
-		global.entergateroom = tower_1
-		global.entergatedoor = "Y"
-	}
-	else if global.levelname == "bloodsauce"
-	{
-		global.entergateroom = tower_1
-		global.entergatedoor = "Z"
-	}
-	else if global.levelname == "exitway"
-	{
-		global.entergateroom = hub_basement
-		global.entergatedoor = "X"
-	}
-	else if global.levelname == "dragonlair"
-	{
-		global.entergateroom = hub_basement
-		global.entergatedoor = "Y"
-	}
-	else if global.levelname == "walls"
-	{
-		global.entergateroom = hub_basement
-		global.entergatedoor = "Z"
-	}
-	else if global.levelname == "soursweet"
-	{
-		global.entergateroom = hub_basement
-		global.entergatedoor = "Z"
-	}
-	else if global.levelname == "themepark"
-	{
-		global.entergateroom = hub_basement
-		global.entergatedoor = "Z"
-	}
-	else if global.levelname == "catacomb"
-	{
-		global.entergateroom = hub_basement
-		global.entergatedoor = "Z"
-	}
-	else if global.levelname == "finale"
-	{
-		global.entergateroom = hub_outside
-		global.entergatedoor = "Z"
-	}
-	else
-		global.entergateroom = realtitlescreen
-		global.entergatedoor = "A"
 }
 function scr_musiccorrection()
 {

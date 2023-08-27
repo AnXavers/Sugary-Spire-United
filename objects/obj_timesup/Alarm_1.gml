@@ -1,5 +1,5 @@
-targetRoom = hub_w1;
-targetDoor = "A";
+targetRoom = global.entergateroom;
+targetDoor = global.entergatedoor;
 global.levelname = "none";
-room_goto(hub_w1);
+room_goto(global.entergateroom);
 scr_levelSet();

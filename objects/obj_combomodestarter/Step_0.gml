@@ -4,7 +4,7 @@ if (place_meeting(x + obj_player.hsp, y, obj_player) && obj_player.state == 17 &
 	{
 		state = 87;
 		image_index = 0;
-		sprite_index = choose(spr_player_suplexmash1, spr_player_suplexmash2, spr_player_suplexmash3, spr_player_suplexmash4);
+		sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4);
 	}
 	if (obj_player.state == 87)
 	{
@@ -24,7 +24,7 @@ if (place_meeting(x + obj_player.hsp, y, obj_player) && obj_player.state == 17 &
 	{
 		state = 87;
 		image_index = 0;
-		sprite_index = choose(spr_player_suplexmash1, spr_player_suplexmash2, spr_player_suplexmash3, spr_player_suplexmash4);
+		sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4);
 	}
 	if (obj_player.state == 87)
 	{

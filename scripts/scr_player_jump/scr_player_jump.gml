@@ -45,7 +45,7 @@ function state_player_jump()
 		vsp = grav;
 		jumpstop = 1;
 	}
-	if (grounded && input_buffer_jump < 8 && !key_down && !key_attack && vsp > 0 && !(sprite_index == spr_player_facestomp || sprite_index == spr_player_freefall))
+	if (grounded && input_buffer_jump < 8 && !key_down && !key_attack && vsp > 0 && !(sprite_index == spr_facestomp || sprite_index == spr_freefall))
 	{
 		scr_sound(sound_jump);
 		sprite_index = spr_jump;
@@ -63,7 +63,7 @@ function state_player_jump()
 	}
 	if (key_attack && character == "N" && charged)
 	{
-		sprite_index = spr_pizzano_sjumpprepside;
+		sprite_index = spr_superjump_cancelprep;
 		image_index = 0;
 		movespeed = 0;
 		mach2 = 0;
@@ -73,7 +73,7 @@ function state_player_jump()
 	if (key_up && character == "N" && charged)
 	{
 		alarm[0] = 240;
-		sprite_index = spr_pizzano_sjumpprep;
+		sprite_index = spr_superjump;
 		image_index = 0;
 		movespeed = 0;
 		mach2 = 0;
@@ -108,16 +108,16 @@ function state_player_jump()
 	{
 		if (vsp > 5)
 			fallinganimation++;
-		if ((fallinganimation >= 40 && fallinganimation < 80) && sprite_index != spr_player_candyup)
-			sprite_index = spr_player_freefall;
-		if ((fallinganimation >= 40 && fallinganimation < 80) && sprite_index == spr_player_candyup)
+		if ((fallinganimation >= 40 && fallinganimation < 80) && sprite_index != spr_candyup)
+			sprite_index = spr_freefall;
+		if ((fallinganimation >= 40 && fallinganimation < 80) && sprite_index == spr_candyup)
 		{
-			sprite_index = spr_player_freefall;
+			sprite_index = spr_freefall;
 			if (!instance_exists(obj_candifiedeffect1))
 				instance_create(x, y, obj_candifiedeffect1);
 		}
 		if (fallinganimation >= 80)
-			sprite_index = spr_player_freefall2;
+			sprite_index = spr_freefall2;
 	}
 	if (stompAnim == 0)
 	{
@@ -130,7 +130,7 @@ function state_player_jump()
 		{
 			if (sprite_index == spr_airdash1)
 				sprite_index = spr_airdash2;
-			if (sprite_index == spr_player_suplexdashCancel)
+			if (sprite_index == spr_suplexdashCancel)
 				sprite_index = spr_fall;
 			if (sprite_index == spr_jump)
 				sprite_index = spr_fall;
@@ -149,7 +149,7 @@ function state_player_jump()
 		vsp = -5;
 		state = 137;
 		image_index = 0;
-		sprite_index = spr_player_throwDonut;
+		sprite_index = spr_throwDonut;
 		with (instance_create(x, y + 16, obj_donutThrowable))
 		{
 			image_xscale = other.xscale;
@@ -166,7 +166,7 @@ function state_player_jump()
 		}
 	}
 	do_grab();
-	if (grounded && (sprite_index == spr_player_facestomp || sprite_index == spr_player_freefall || sprite_index == spr_player_freefall2))
+	if (grounded && (sprite_index == spr_facestomp || sprite_index == spr_freefall || sprite_index == spr_freefall2))
 	{
 		scr_sound(sound_maximumspeedland);
 		with (obj_baddie)
@@ -183,7 +183,7 @@ function state_player_jump()
 			shake_mag_acc = 30 / room_speed;
 		}
 		image_index = 0;
-		sprite_index = spr_player_freefallland;
+		sprite_index = spr_freefallland;
 		state = 75;
 		doublejumped = 0;
 	}
@@ -196,7 +196,7 @@ function state_player_jump()
 		if (global.treat)
 		{
 			vsp = -10;
-			sprite_index = spr_player_donutSlam_intro;
+			sprite_index = spr_donutSlam_intro;
 			instance_create(x, y, obj_donutSlammable);
 		}
 		state = 53;
@@ -235,7 +235,7 @@ function state_player_jump()
 	if (key_jump && character == "G" && !grounded && gumbobpropellercooldown == 0)
 	{
 		state = 117;
-		sprite_index = spr_gumbob_propeller_start;
+		sprite_index = spr_propeller_start;
 		movespeed = 0;
 		vsp = 0;
 	}
@@ -243,19 +243,19 @@ function state_player_jump()
 	{
 		doublejumped = 1;
 		vsp = -10;
-		sprite_index = spr_pizzano_djump;
+		sprite_index = spr_djump;
 	}
-	if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_candytransitionup)
-		sprite_index = spr_player_candyup;
+	if (floor(image_index) == (image_number - 1) && sprite_index == spr_candytransitionup)
+		sprite_index = spr_candyup;
 	if (character == "C" && inhalingenemy == 1 && key_slap && !grounded)
 	{
-		sprite_index = spr_coneboy_spitair;
+		sprite_index = spr_spitair;
 		with (instance_create(x, y, obj_coneboyprojectile))
 			directionthing = 1;
 		inhalingenemy = false;
 		vsp -= 4;
 	}
-	if (sprite_index == spr_coneboy_spitair)
+	if (sprite_index == spr_spitair)
 	{
 		hsp = xscale * movespeed;
 		hsp = -5 * xscale;

@@ -4,7 +4,7 @@ function state_player_grab()
 	move = key_left + key_right;
 	if (grounded)
 	{
-		if (dir != xscale && sprite_index != spr_player_swingding)
+		if (dir != xscale && sprite_index != spr_swingding)
 		{
 			dir = xscale;
 			movespeed = 2;
@@ -29,7 +29,7 @@ function state_player_grab()
 			movespeed = 0;
 		if (movespeed > 6)
 			movespeed -= 0.1;
-		if (move != 0 && sprite_index != spr_player_swingding)
+		if (move != 0 && sprite_index != spr_swingding)
 			xscale = move;
 		if (move != 0)
 		{
@@ -45,7 +45,7 @@ function state_player_grab()
 	}
 	if (!grounded)
 	{
-		if (dir != xscale && sprite_index != spr_player_swingding)
+		if (dir != xscale && sprite_index != spr_swingding)
 		{
 			dir = xscale;
 			movespeed = 2;
@@ -67,7 +67,7 @@ function state_player_grab()
 			movespeed -= 0.5;
 		if ((scr_solid(x + 1, y) && move == 1) || (scr_solid(x - 1, y) && move == -1))
 			movespeed = 0;
-		if (dir != xscale && sprite_index != spr_player_swingding)
+		if (dir != xscale && sprite_index != spr_swingding)
 		{
 			dir = xscale;
 			movespeed = 2;
@@ -91,34 +91,34 @@ function state_player_grab()
 			vsp = grav;
 			jumpstop = 1;
 		}
-		if (move != 0 && sprite_index != spr_player_swingding)
+		if (move != 0 && sprite_index != spr_swingding)
 			xscale = move;
 	}
 	if (key_jump)
 		input_buffer_jump = 0;
-	if (grounded && input_buffer_jump < 8 && !key_down && !key_attack && vsp > 0 && sprite_index != spr_player_swingding)
+	if (grounded && input_buffer_jump < 8 && !key_down && !key_attack && vsp > 0 && sprite_index != spr_swingding)
 	{
 		scr_sound(sound_jump);
-		sprite_index = spr_player_haulingjump;
+		sprite_index = spr_haulingjump;
 		instance_create(x, y, obj_highjumpcloud2);
 		vsp = -11;
 		image_index = 0;
 	}
 	if (grounded && move != 0)
-		sprite_index = spr_player_haulingwalk;
+		sprite_index = spr_haulingwalk;
 	else if (grounded && move == 0)
-		sprite_index = spr_player_haulingidle;
-	if (sprite_index == spr_player_haulingstart && floor(image_index) == (image_number - 1))
-		sprite_index = spr_player_haulingidle;
-	if ((sprite_index == spr_player_haulingjump && floor(image_index) == (image_number - 1)) || (!grounded && (sprite_index == spr_player_haulingwalk || sprite_index == spr_player_haulingidle)))
-		sprite_index = spr_player_haulingfall;
-	if (grounded && vsp > 0 && (sprite_index == spr_player_haulingfall || sprite_index == spr_player_haulingjump))
+		sprite_index = spr_haulingidle;
+	if (sprite_index == spr_haulingstart && floor(image_index) == (image_number - 1))
+		sprite_index = spr_haulingidle;
+	if ((sprite_index == spr_haulingjump && floor(image_index) == (image_number - 1)) || (!grounded && (sprite_index == spr_haulingwalk || sprite_index == spr_haulingidle)))
+		sprite_index = spr_haulingfall;
+	if (grounded && vsp > 0 && (sprite_index == spr_haulingfall || sprite_index == spr_haulingjump))
 	{
-		sprite_index = spr_player_haulingland;
+		sprite_index = spr_haulingland;
 		movespeed = 2;
 	}
-	if (sprite_index == spr_player_haulingland && floor(image_index) == (image_number - 1))
-		sprite_index = spr_player_haulingidle;
+	if (sprite_index == spr_haulingland && floor(image_index) == (image_number - 1))
+		sprite_index = spr_haulingidle;
 	if (move != 0 && move != lastmove && swingdingbuffer < 300)
 	{
 		lastmove = move;
@@ -132,17 +132,17 @@ function state_player_grab()
 			move = xscale;
 		movespeed = clamp(movespeed, 0, 6);
 		state = 87;
-		if (sprite_index == spr_player_swingding)
-			sprite_index = spr_player_swingdingend;
+		if (sprite_index == spr_swingding)
+			sprite_index = spr_swingdingend;
 		else if (!key_up)
 			sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4);
 		else if (key_up)
-			sprite_index = spr_player_uppercutfinishingblow;
+			sprite_index = spr_uppercutfinishingblow;
 		image_index = 0;
 	}
 	if (key_attack)
 	{
-		sprite_index = spr_player_swingding;
+		sprite_index = spr_swingding;
 		if (movespeed < 10)
 			movespeed = 10;
 		state = 5;
@@ -150,7 +150,7 @@ function state_player_grab()
 	}
 	if (key_down && !grounded)
 	{
-		sprite_index = spr_player_piledriverstart;
+		sprite_index = spr_piledriverstart;
 		vsp = -6;
 		state = 36;
 		image_index = 0;
@@ -180,7 +180,7 @@ function state_player_grab()
 		steppy = 1;
 	if (move != 0 && floor(image_index) != 3 && floor(image_index) != 8)
 		steppy = 0;
-	if (sprite_index != spr_player_swingding)
+	if (sprite_index != spr_swingding)
 		image_speed = 0.35;
 	else
 		image_speed = swingdingbuffer / 600;

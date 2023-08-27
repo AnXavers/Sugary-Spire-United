@@ -16,7 +16,7 @@ if (other.Dashpad_buffer <= 0)
 		{
 			movespeed += 0.25;
 			movespeed = clamp(movespeed, 12, 24);
-			if (character == "P")
+			if (character == "P" || character == "T")
 			{
 				Dashpad_buffer = 25;
 				state = 70;

@@ -75,7 +75,7 @@ function state_player_climbwall()
 	}
 	if ((scr_solid(x, y - 1, true) && vsp <= 0 && !place_meeting(x, y - 1, obj_destructibles)) && !scr_slope_ext(x + xscale, y))
 	{
-		sprite_index = spr_player_ceilingcrash;
+		sprite_index = spr_ceilingcrash;
 		scr_sound(sound_maximumspeedland);
 		image_index = 0;
 		state = 52;

@@ -2,8 +2,16 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 {
 	repeat (7)
 	{
-		with (instance_create(x + 32, y + 32, obj_debris))
-			sprite_index = spr_bigdebris;
+		if sprite_index = (spr_deadjohn1 || spr_deadjohn2 || spr_deadjohn3)
+		{
+			with (instance_create(x + 32, y + 32, obj_debris))
+				sprite_index = spr_deadjohn_debris;
+		}
+		else
+		{
+			with (instance_create(x + 32, y + 32, obj_debris))
+				sprite_index = spr_bigdebris;
+		}
 	}
 	audio_stop_sound(sound_destroyblock1);
 	audio_stop_sound(sound_destroyblock2);

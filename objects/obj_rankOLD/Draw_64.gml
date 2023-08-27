@@ -3,7 +3,7 @@ draw_rectangle(-64, -64, 1024, 604, false);
 pal_swap_set(obj_player.spr_palette, obj_player.paletteselect, 0);
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 shader_reset();
-if (global.levelname != "none" && global.showplaytimer && room != hub_w1 && room != timesuproom)
+if (global.levelname != "none" && global.showplaytimer && !is_hub() && room != timesuproom)
 {
 	var tiny = ":";
 	var tinier = ":";

@@ -28,7 +28,7 @@ function state_player_handstandjump()
 	{
 		state = 60;
 		image_index = 0;
-		sprite_index = spr_player_suplexdashCancel;
+		sprite_index = spr_suplexdashCancel;
 		jumpAnim = true;
 		momemtum = 0;
 		mach2 = 0;
@@ -107,7 +107,7 @@ function state_player_handstandjump()
 	}
 	if (key_slap2 && !key_down)
 	{
-		sprite_index = spr_player_machtumble;
+		sprite_index = spr_machtumble;
 		image_index = 0;
 		image_speed = 0.2;
 		state = 103;

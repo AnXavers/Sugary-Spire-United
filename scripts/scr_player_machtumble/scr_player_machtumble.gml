@@ -80,7 +80,7 @@ function state_player_machtumble()
 		}
 		else if (!key_attack && bufferslap < 8)
 		{
-			sprite_index = spr_player_machtumble;
+			sprite_index = spr_machtumble;
 			image_index = 0;
 			with (instance_create(x, y, obj_jumpdust))
 				image_xscale = other.xscale;

@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Dungeon",
-    "path": "folders/Sprites/Tilesets/Dungeon.yy",
+    "path": "folders/Sprites/Tilesets/Level/Dungeon.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

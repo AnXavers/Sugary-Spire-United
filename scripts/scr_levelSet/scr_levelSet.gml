@@ -37,6 +37,7 @@ function scr_levelSet()
 	global.hurtcounter = 0;
 	global.hurtmilestone = 0;
 	global.minesProgress = false;
+	global.exitgatetaunt = 0
 	obj_tv.image_index = 0;
 	obj_tv.tvsprite = spr_tvturnon;
 	obj_player.visible = true;

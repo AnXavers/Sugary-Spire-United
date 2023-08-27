@@ -71,6 +71,7 @@ add_music(dungeon_1, mu_bloodsauce, mu_bloodsauce, false);
 add_music(rm_credits, mu_credits, mu_painter, false);
 add_music(tutorial_1, mu_tutorial, mu_painter, false);
 add_music(entryway_1, mu_waffle, mu_wafflesecret, false);
+add_music(entryway_1_new, mu_waffle, mu_wafflesecret, false);
 add_music(steamy_1, mu_steamy, mu_steamysecret, false);
 add_music(steamy_7, mu_steamy, mu_steamysecret, true);
 add_music(steamy_8, mu_steamyinner, mu_steamysecret, true);

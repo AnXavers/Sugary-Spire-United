@@ -60,9 +60,9 @@ function state_player_normal()
 								{
 									sprite_index = spr_idle;
 									if (global.levelname == "fudge")
-										sprite_index = spr_player_fudgeidle;
+										sprite_index = spr_fudgeidle;
 									if (global.levelname == "dance")
-										sprite_index = spr_player_danceidle;
+										sprite_index = spr_danceidle;
 								}
 							}
 							else if (character == "N")
@@ -74,7 +74,7 @@ function state_player_normal()
 						{
 							idle = 0;
 							windingAnim--;
-							sprite_index = spr_player_winding;
+							sprite_index = spr_winding;
 						}
 					}
 					if (character == "T")
@@ -85,18 +85,18 @@ function state_player_normal()
 								{
 									sprite_index = spr_idle;
 									if (global.levelname == "fudge")
-										sprite_index = spr_player_fudgeidle;
+										sprite_index = spr_fudgeidle;
 									if (global.levelname == "dance")
-										sprite_index = spr_player_danceidle;
+										sprite_index = spr_danceidle;
 								}
 							}
 					else if (facehurt == 1 && character == "P" || character == "T")
 					{
 						windingAnim = 0;
-						if (sprite_index != spr_player_facehurtup && sprite_index != spr_player_facehurt)
-							sprite_index = spr_player_facehurtup;
-						if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_facehurtup)
-							sprite_index = spr_player_facehurt;
+						if (sprite_index != spr_facehurtup && sprite_index != spr_facehurt)
+							sprite_index = spr_facehurtup;
+						if (floor(image_index) == (image_number - 1) && sprite_index == spr_facehurtup)
+							sprite_index = spr_facehurt;
 					}
 				}
 			}
@@ -115,15 +115,12 @@ function state_player_normal()
 			else if (global.cane == 1)
 				sprite_index = spr_canewalk;
 			else if (global.levelname == "dance")
-				sprite_index = spr_player_dancewalk;
+				sprite_index = spr_dancewalk;
 			else
 				sprite_index = spr_move;
 		}
 		if (key_taunt)
-			if (character == "T")
-				sprite_index = spr_playerN_idledance
-			else
-				sprite_index = spr_player_breakdance;
+			sprite_index = spr_breakdance;
 		if (move != 0)
 			xscale = move;
 	}
@@ -172,13 +169,13 @@ function state_player_normal()
 		if (floor(image_index) == (image_number - 1) && sprite_index == spr_machslideend)
 			machslideAnim = 0;
 	}
-	if (sprite_index == spr_player_shotgun && floor(image_index) == (image_number - 1))
+	if (sprite_index == spr_shotgun && floor(image_index) == (image_number - 1))
 		sprite_index = spr_shotgun_idle;
 	if (landAnim == 0)
 	{
-		if (shotgunAnim == 1 && move == 0 && sprite_index != spr_player_shotgun)
+		if (shotgunAnim == 1 && move == 0 && sprite_index != spr_shotgun)
 			sprite_index = spr_shotgun_idle;
-		else if (shotgunAnim == 1 && sprite_index != spr_player_shotgun)
+		else if (shotgunAnim == 1 && sprite_index != spr_shotgun)
 			sprite_index = spr_shotgun_walk;
 	}
 	if (scr_solid(x + move, y, true))
@@ -284,7 +281,7 @@ function state_player_normal()
 	if (key_slap2 && shotgunAnim == 1 && !instance_exists(obj_cutscene_upstairs))
 	{
 		global.ammo -= 1;
-		sprite_index = spr_player_shotgun;
+		sprite_index = spr_shotgun;
 		state = 33;
 		image_index = 0;
 	}
@@ -322,7 +319,7 @@ function state_player_normal()
 	}
 	if (!instance_exists(obj_cloudeffect) && grounded && move != 0 && (floor(image_index) == 4 || floor(image_index) == 10))
 		instance_create(x, y + 43, obj_cloudeffect);
-	if (!instance_exists(obj_cloudeffect) && grounded && move != 0 && (sprite_index == spr_player_downslopes || sprite_index == spr_player_upslopes))
+	if (!instance_exists(obj_cloudeffect) && grounded && move != 0 && (sprite_index == spr_downslopes || sprite_index == spr_upslopes))
 		instance_create(x, y + 43, obj_cloudeffect);
 	do_taunt();
 	do_grab();
@@ -334,7 +331,7 @@ function state_player_normal()
 			movespeed = 0;
 		if (key_jump2 && grounded && canrebound == 0)
 		{
-			sprite_index = spr_player_canefall;
+			sprite_index = spr_canefall;
 			vsp = -15;
 			canrebound = 1;
 			state = 60;
@@ -356,7 +353,7 @@ function state_player_normal()
 	if (key_shoot2 && key_up && breakdanceammo > 0)
 	{
 		state = 100;
-		sprite_index = spr_player_breakdancebeach;
+		sprite_index = spr_breakdancebeach;
 		image_index = 0;
 		breakdanceammo -= 1;
 	}

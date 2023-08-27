@@ -18,8 +18,11 @@ if canmove
 		optionsaved_newscorefont = global.newscorefont;
 		optionsaved_newplayeranim = global.newplayeranim;
 		optionsaved_newlvldesign = global.newlvldesign;
+		optionsaved_erankstack = global.erankstack;
+		optionsaved_slopeangle = global.slopeangle;
+		optionsaved_inflapping = global.inflapping;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 10)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 13)
 	{
 		optionselected += 1;
 		scr_sound(sound_step);
@@ -33,6 +36,11 @@ if canmove
 		optionsaved_newplayeranim = global.newplayeranim;
 		optionsaved_newlvldesign = global.newlvldesign;
 		optionsaved_erankstack = global.erankstack;
+		optionsaved_erankstack = global.erankstack;
+		optionsaved_slopeangle = global.slopeangle;
+		optionsaved_inflapping = global.inflapping;
+		optionsaved_enablejerald = global.enablejerald;
+		
 	}
 	switch (optionselected)
 	{
@@ -198,10 +206,10 @@ if canmove
 			}
 			break;
 		case 8:
-			subtitle = "TOGGLES THE NEW PLAYER ANIMATIONS SEEN IN SS DEV STREAMS";
+			subtitle = "CHANES THE PLAYER ANIMATIONS";
 			CursorY = 1450;
 			optionsaved_newplayeranim += (key_right2 + key_left2);
-			optionsaved_newplayeranim = wrap(optionsaved_newplayeranim, 0, 1);
+			optionsaved_newplayeranim = wrap(optionsaved_newplayeranim, 0, 3);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);
@@ -213,7 +221,7 @@ if canmove
 			break;
 		case 9:
 			subtitle = "TOGGLES THE NEW LEVEL DESIGNS SEEN IN SS DEV STREAMS";
-			CursorY = 1600;
+			CursorY = 1700;
 			optionsaved_newlvldesign += (key_right2 + key_left2);
 			optionsaved_newlvldesign = wrap(optionsaved_newlvldesign, 0, 1);
 			if (key_jump)
@@ -227,7 +235,7 @@ if canmove
 			break;
 		case 10:
 			subtitle = "CAUSES E RANK TO STACK INSTEAD OF OVERLAYING IT ACROSS THE SCREEN";
-			CursorY = 1750;
+			CursorY = 1850;
 			optionsaved_erankstack += (key_right2 + key_left2);
 			optionsaved_erankstack = wrap(optionsaved_erankstack, 0, 1);
 			if (key_jump)
@@ -237,6 +245,48 @@ if canmove
 				ini_write_real("Settings", "erankstack", optionsaved_erankstack);
 				ini_close();
 				global.erankstack = optionsaved_erankstack;
+			}
+			break;
+		case 11:
+			subtitle = "CAUSES THE PLAYER SPRITE TO TILT WHILE RUNNING ON SLOPES";
+			CursorY = 2000;
+			optionsaved_slopeangle += (key_right2 + key_left2);
+			optionsaved_slopeangle = wrap(optionsaved_slopeangle, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "slopeangle", optionsaved_slopeangle);
+				ini_close();
+				global.slopeangle = optionsaved_slopeangle;
+			}
+			break;
+		case 12:
+			subtitle = "CAUSES LAPS TO BE INFINITE INSTEAD OF ONLY HAVING ONE";
+			CursorY = 2150;
+			optionsaved_inflapping += (key_right2 + key_left2);
+			optionsaved_inflapping = wrap(optionsaved_inflapping, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "inflapping", optionsaved_inflapping);
+				ini_close();
+				global.inflapping = optionsaved_inflapping;
+			}
+			break;
+		case 13:
+			subtitle = "REENABLES JERALD WHO YOU WILL REQUIRE FOR THE LAP PORTALS WITH THIS";
+			CursorY = 2300;
+			optionsaved_enablejerald += (key_right2 + key_left2);
+			optionsaved_enablejerald = wrap(optionsaved_enablejerald, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "enablejerald", optionsaved_enablejerald);
+				ini_close();
+				global.enablejerald = optionsaved_enablejerald;
 			}
 			break;
 	}

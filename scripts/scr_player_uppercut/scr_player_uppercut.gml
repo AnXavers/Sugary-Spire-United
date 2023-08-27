@@ -2,9 +2,9 @@ function state_player_uppercut()
 {
 	static attack_afterimagetimer = 6;
 	image_speed = 0.35;
-	if (sprite_index == spr_player_uppercutbegin && floor(image_index) == (image_number - 1))
+	if (sprite_index == spr_uppercutbegin && floor(image_index) == (image_number - 1))
 	{
-		sprite_index = spr_player_uppercutend;
+		sprite_index = spr_uppercutend;
 		image_index = 0;
 	}
 	if (scr_solid(x + sign(hsp), y) && !scr_slope_ext(x + xscale, y) && move != 0)

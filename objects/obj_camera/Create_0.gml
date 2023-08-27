@@ -72,3 +72,4 @@ timer_y = 100;
 painterdex = 0;
 pizdex = 0;
 global.Eranklength = 0
+collected = -1

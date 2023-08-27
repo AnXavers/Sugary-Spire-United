@@ -5,7 +5,7 @@ for (var i = 2; i < image_number; i++)
 	bg_y[ri] += bg_yscroll[ri];
 }
 fade = (distance_to_object(obj_player) - 50) / 250;
-if (room == hub_w1)
+if (is_hub())
 {
 	with (obj_player)
 		var d = distance_to_object(obj_startgate);

@@ -61,7 +61,7 @@ function scr_boss_vunerable()
 				else
 				{
 					state = 36;
-					sprite_index = spr_player_piledriverstart;
+					sprite_index = spr_piledriverstart;
 					if (grounded)
 						vsp = -12;
 					else

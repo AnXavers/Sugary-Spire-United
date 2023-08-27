@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Entrance",
-    "path": "folders/Sprites/Tilesets/Entrance.yy",
+    "path": "folders/Sprites/Tilesets/Level/Entrance.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

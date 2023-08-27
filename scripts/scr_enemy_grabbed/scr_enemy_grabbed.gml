@@ -7,7 +7,7 @@ function scr_enemy_grabbed()
 	{
 		depth = 0;
 		x = obj_player.x;
-		if (obj_player.sprite_index != spr_player_haulingstart)
+		if (obj_player.sprite_index != obj_player.spr_haulingstart)
 			y = obj_player.y - 40;
 		else if (floor(obj_player.image_index) == 0)
 			y = obj_player.y;

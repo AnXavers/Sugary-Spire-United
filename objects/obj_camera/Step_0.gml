@@ -53,7 +53,7 @@ if (frozen == 1 && global.freezeframe == 0)
 		alarm_set(i, frozenalarm[i]);
 	frozen = false;
 }
-if (room != realtitlescreen && room != rm_introVideo && !instance_exists(obj_startgate) && room != scootercutsceneidk && room != outer_room1 && room != outer_room2 && room != hub_w1 && room != hub_w2 && room != palroom && room != rm_titlecard)
+if (!is_hub() && room != realtitlescreen && room != rm_introVideo && !instance_exists(obj_startgate) && room != palroom && room != rm_titlecard)
 {
 	if (!global.freezeframe && obj_player.state != 0 && obj_player.state != 18 && room != rank_room && !instance_exists(obj_endlevelfade))
 	{
@@ -205,11 +205,20 @@ switch (room)
 	case devroom:
 		window_set_caption("Developer's party in the Sugary Spire");
 		break;
+	case hub_basement:
+		window_set_caption("The forgotten floor of the Sugary Spire");
+		break;
 	case hub_w1:
 		window_set_caption("Inside of the fabled Sugary Spire");
 		break;
 	case hub_w2:
 		window_set_caption("The alienated floor of the Sugary Spire");
+		break;
+	case hub_w3:
+		window_set_caption("The spooky floor of the Sugary Spire");
+		break;
+	case hub_top:
+		window_set_caption("The final floor of the Sugary Spire");
 		break;
 	case entryway_1:
 		window_set_caption("Construction underway at the Sugary Spire");

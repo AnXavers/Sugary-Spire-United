@@ -1,6 +1,6 @@
 targetRoom = martian_1;
 targetDoor = "A";
-level = "martian";
+level = "souractive";
 details = [gate_createlayer(spr_bee_startgate, 0), gate_createlayer(spr_bee_startgate, 1), gate_createlayer(spr_bee_startgate, 2)];
 info = 
 {

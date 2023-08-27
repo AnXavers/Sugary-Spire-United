@@ -285,13 +285,13 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				else if (!key_up)
 				{
 					state = 40;
-					sprite_index = spr_player_haulingstart;
+					sprite_index = spr_haulingstart;
 					image_index = 0;
 				}
 				else
 				{
 					state = 36;
-					sprite_index = spr_player_piledriverstart;
+					sprite_index = spr_piledriverstart;
 					if (grounded)
 						vsp = -12;
 					else

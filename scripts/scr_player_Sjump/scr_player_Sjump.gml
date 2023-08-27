@@ -14,23 +14,22 @@ function state_player_Sjump()
 	move = key_left + key_right;
 	if (move != 0)
 		xscale = move;
-	if (sprite_index == spr_player_superjump || sprite_index == spr_player_outofcontrolfall || sprite_index == spr_pizzano_sjump)
+	if (sprite_index == spr_superjump || sprite_index == spr_outofcontrolfall)
 	{
 		vsp = -movespeed;
 		movespeed = approach(movespeed, 18, 1);
 	}
-	if (sprite_index == spr_pizzano_sjumpprep || sprite_index == spr_player_superjump_cancelprep)
+	if (sprite_index == spr_pizzano_sjumpprep || sprite_index == spr_superjump_cancelprep)
 		vsp = 0;
 	if (sprite_index == spr_pizzano_sjumpprep && floor(image_index) == (image_number - 1))
 	{
-		sprite_index = spr_pizzano_sjump;
 		scr_sound(sound_superjumprelease);
 		vsp = -10;
 	}
-	if (scr_solid(x, y + vsp) && !place_meeting(x, y + vsp, obj_boxofpizza) && !place_meeting(x, y + vsp, obj_metalblock) && !place_meeting(x, y + vsp, obj_destructibles) && sprite_index != spr_player_superjump_cancelprep)
+	if (scr_solid(x, y + vsp) && !place_meeting(x, y + vsp, obj_boxofpizza) && !place_meeting(x, y + vsp, obj_metalblock) && !place_meeting(x, y + vsp, obj_destructibles) && sprite_index != spr_superjump_cancelprep)
 	{
 		scr_sound(sound_maximumspeedland);
-		sprite_index = spr_player_superjumpland;
+		sprite_index = spr_superjumpland;
 		with (obj_camera)
 		{
 			shake_mag = 10;
@@ -51,15 +50,15 @@ function state_player_Sjump()
 		machhitAnim = 0;
 		movespeed = 0;
 	}
-	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && ((character == "P" || character == "T") && sprite_index != spr_player_superjump_cancelprep))
+	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && character == "P" && sprite_index != spr_superjump_cancelprep)
 	{
 		scr_sound(sound_superjumpcancel);
 		image_index = 0;
 		image_speed = 0.5;
 		vsp = 0;
-		sprite_index = spr_player_superjump_cancelprep;
+		sprite_index = spr_superjump_cancelprep;
 	}
-	if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_superjump_cancelprep)
+	if (floor(image_index) == (image_number - 1) && sprite_index == spr_superjump_cancelprep)
 	{
 		if (move != 0)
 			xscale = move;
@@ -69,16 +68,16 @@ function state_player_Sjump()
 		flash = 1;
 		vsp = -4;
 		image_index = 0;
-		sprite_index = spr_player_superjump_cancel;
+		sprite_index = spr_superjump_cancel;
 		with (instance_create(x, y, obj_jumpdust))
 			image_xscale = other.xscale;
 	}
-	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && character == "N")
+	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && character == "N" || character == "T")
 	{
 		scr_sound(sound_superjumpcancel);
 		flash = 1;
 		charged = 0;
-		sprite_index = spr_pizzano_sjumpprepside;
+		sprite_index = spr_superjump_cancelprep;
 		image_index = 0;
 		movespeed = 0;
 		vsp = 0;
@@ -86,7 +85,5 @@ function state_player_Sjump()
 		state = 104;
 	}
 	image_speed = 0.5;
-	if (sprite_index == spr_player_superjump_cancelprep)
-		image_speed = 0.5;
 	scr_collision();
 }

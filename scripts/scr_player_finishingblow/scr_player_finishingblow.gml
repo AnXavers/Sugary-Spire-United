@@ -43,7 +43,7 @@ function state_player_finishingblow()
 				alarm[1] = 5;
 				thrown = true;
 				grounded = false;
-				if (other.sprite_index != spr_player_uppercutfinishingblow)
+				if (other.sprite_index != obj_player.spr_uppercutfinishingblow)
 				{
 					hithsp = obj_player.xscale * 25;
 					hitvsp = 0;

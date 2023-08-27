@@ -25,12 +25,12 @@ function state_player_superslam()
 	vsp = min(vsp, 40);
 	freefallsmash += (vsp / 15);
 	mach2 = 0;
-	if (sprite_index == spr_player_piledriverstart && animation_end())
+	if (sprite_index == spr_piledriverstart && animation_end())
 	{
 		sprite_index = spr_piledriver;
 		image_index = 0;
 	}
-	if (sprite_index == spr_player_piledriverstart || sprite_index == spr_piledriver)
+	if (sprite_index == spr_piledriverstart || sprite_index == spr_piledriver)
 	{
 		move = key_left + key_right;
 		hsp = move * movespeed;
@@ -40,7 +40,7 @@ function state_player_superslam()
 		move = 0;
 		hsp = 0;
 	}
-	if ((sprite_index == spr_piledriver || sprite_index == spr_player_piledriverstart) && (grounded && !place_meeting(x, y + 1, obj_destructibles) && vsp > 0))
+	if ((sprite_index == spr_piledriver || sprite_index == spr_piledriverstart) && (grounded && !place_meeting(x, y + 1, obj_destructibles) && vsp > 0))
 	{
 		sprite_index = spr_piledriverland;
 		scr_sound(sound_maximumspeedland);

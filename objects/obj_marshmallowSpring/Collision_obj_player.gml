@@ -9,14 +9,14 @@ with (other)
 		if (state == states.rupertjump || state == states.rupertstick || state == states.rupertjump)
 		{
 			image_index = 0;
-			sprite_index = spr_player_skatejumpstart;
+			sprite_index = spr_skatejumpstart;
 			state = states.rupertjump;
 		}
 		if (state == states.climbwall || state == states.climbdownwall || state == states.climbceiling || state == states.machroll)
 			state = states.mach2;
 		if (state == states.jump || state == states.normal)
 		{
-			sprite_index = spr_player_outofcontrolfall;
+			sprite_index = spr_outofcontrolfall;
 			image_index = 0;
 		}
 		with (other)

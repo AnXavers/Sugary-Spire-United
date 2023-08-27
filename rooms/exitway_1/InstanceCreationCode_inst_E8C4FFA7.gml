@@ -1,1 +1,0 @@
-targetRoom = entryway_11;

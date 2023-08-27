@@ -31,7 +31,6 @@ if (sprite_index != spr_exitgateclosed)
 				{
 					with (instance_create(x, y, obj_titlecard))
 						info = instance_nearest(x, y, obj_startgate).info;
-					global.entergateroom = room;
 				}
 			}
 		}

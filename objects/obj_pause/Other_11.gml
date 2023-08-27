@@ -4,7 +4,7 @@ if (global.levelname != "none")
 	audio_stop_sound(mu_pause);
 	instance_activate_all();
 	scr_levelSet();
-	room = global.firstlvlRoom;
+	room = global.firstlvlRoom
 	global.gamePauseState = 0;
 	with (obj_player)
 		targetDoor = "A";

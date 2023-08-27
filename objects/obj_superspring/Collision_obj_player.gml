@@ -8,7 +8,7 @@ with (obj_player)
 		x = other.x;
 		if (other.image_yscale == 1)
 		{
-			sprite_index = spr_player_superjump;
+			sprite_index = spr_superjump;
 			state = 63;
 			vsp = -12;
 			movespeed = 12;
@@ -19,7 +19,7 @@ with (obj_player)
 			state = 74;
 			verticalMovespeed = 10;
 			freefallsmash = 0;
-			sprite_index = spr_player_outofcontrolfall;
+			sprite_index = spr_outofcontrolfall;
 		}
 	}
 }

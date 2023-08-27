@@ -65,7 +65,7 @@ function state_player_mach3()
 	}
 	if (sprite_index == spr_mach3jump && floor(image_index) == (image_number - 1))
 		sprite_index = spr_mach3player;
-	if (sprite_index == spr_player_superjump_cancel && grounded)
+	if (sprite_index == spr_superjump_cancel && grounded)
 		sprite_index = spr_mach3player;
 	if (animation_end() && (sprite_index == spr_rollgetup || sprite_index == spr_machdashpad))
 		sprite_index = spr_mach3player;
@@ -87,7 +87,7 @@ function state_player_mach3()
 	if (key_up && sprite_index != spr_machdashpad && sprite_index != spr_dive)
 	{
 		scr_sound(sound_superjumpcharge1);
-		sprite_index = spr_player_superjumpprep;
+		sprite_index = spr_superjumpprep;
 		state = 64;
 		hsp = 0;
 		image_index = 0;
@@ -113,7 +113,7 @@ function state_player_mach3()
 		vsp = -5;
 		state = 137;
 		image_index = 0;
-		sprite_index = spr_player_throwDonut;
+		sprite_index = spr_throwDonut;
 		with (instance_create(x, y + 16, obj_donutThrowable))
 		{
 			image_xscale = other.xscale;

@@ -12,4 +12,3 @@ if (global.GMLIVE_prevroom != global.GMLIVE_realroom)
 	global.GMLIVE_prevroom = global.GMLIVE_realroom;
 }
 global.GMLIVE_roomstart = false;
-scr_levelcorrection()
