@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Level Structure",
-    "path": "folders/Sprites/Level Structure.yy",
+    "name": "Unsure",
+    "path": "folders/Sprites/Layer Assets/Unsure.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

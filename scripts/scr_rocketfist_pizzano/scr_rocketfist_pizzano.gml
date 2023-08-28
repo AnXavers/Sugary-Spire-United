@@ -7,24 +7,24 @@ function scr_rocketfist_pizzano()
 	vsp = 0;
 	hsp = xscale * movespeed;
 	mach2++;
-	if (sprite_index == spr_pizzano_sjumpprepside && floor(image_index) == (image_number - 1))
+	if (sprite_index == spr_superjump_cancelprep && floor(image_index) == (image_number - 1))
 	{
 		image_index = 0;
 		if (grounded)
 		{
 			if (movespeed > 16)
-				sprite_index = spr_pizzano_sjumpsidemach4grounded;
+				sprite_index = spr_superjump_cancelgrounded;
 			else if (movespeed <= 16)
-				sprite_index = spr_pizzano_mach3;
+				sprite_index = spr_mach3player;
 		}
 		else if (movespeed > 16)
-			sprite_index = spr_pizzano_sjumpsidemach4;
+			sprite_index = spr_superjump_cancel_mach4;
 		else if (movespeed <= 16)
-			sprite_index = spr_pizzano_sjumpside;
+			sprite_index = spr_superjump_cancel;
 		movespeed *= 1.5;
 		flash = 1;
 	}
-	else if (sprite_index != spr_pizzano_sjumpprepside)
+	else if (sprite_index != spr_superjump_cancelprep)
 	{
 		if (!key_up && !key_down)
 			vsp = 0;
@@ -46,27 +46,27 @@ function scr_rocketfist_pizzano()
 					movespeed += 0.15;
 			}
 		}
-		if (movespeed > 16 && !mach4mode && sprite_index != spr_pizzano_sjumpsidemach4 && sprite_index != spr_pizzano_sjumpsidemach4grounded && sprite_index != spr_pizzano_crouchslide)
+		if (movespeed > 16 && !mach4mode && sprite_index != spr_superjump_cancel_mach4 && sprite_index != spr_superjump_cancelgrounded && sprite_index != spr_crouchslide)
 		{
 			mach4mode = true;
 			flash = 1;
 			if (!grounded)
-				sprite_index = spr_pizzano_sjumpsidemach4;
+				sprite_index = spr_superjump_cancel_mach4;
 			else
-				sprite_index = spr_pizzano_sjumpsidemach4grounded;
+				sprite_index = spr_superjump_cancelgrounded;
 			with (instance_create(x, y, obj_slapstar))
 			{
 				hsp = random_range(-5, 5);
 				vsp = random_range(-10, 10);
 			}
 		}
-		else if ((movespeed <= 16 && sprite_index == spr_pizzano_sjumpsidemach4) || sprite_index == spr_pizzano_sjumpsidemach4grounded)
+		else if ((movespeed <= 16 && sprite_index == spr_superjump_cancel_mach4) || sprite_index == spr_superjump_cancelgrounded)
 		{
 			mach4mode = false;
 			if (!grounded)
-				sprite_index = spr_pizzano_sjumpside;
+				sprite_index = spr_superjump_cancel;
 			else
-				sprite_index = spr_pizzano_mach3;
+				sprite_index = spr_mach3player;
 		}
 		if (key_jump && grounded)
 			state = states.pizzano_machtwirl;
@@ -78,29 +78,29 @@ function scr_rocketfist_pizzano()
 		{
 			vsp = -6;
 			movespeed = -6;
-			sprite_index = spr_player_mach3hitwall;
+			sprite_index = spr_mach3hitwall;
 			state = states.bump;
 		}
-		if (!grounded && hsp != 0 && sprite_index != spr_pizzano_sjumpside)
-			sprite_index = spr_pizzano_sjumpside;
+		if (!grounded && hsp != 0 && sprite_index != spr_superjump_cancel)
+			sprite_index = spr_superjump_cancel;
 		if (key_slap2 && key_up && charged)
 		{
 			flash = 1;
 			alarm[0] = 240;
 			image_index = 0;
 			state = states.bump;
-			sprite_index = spr_pizzano_sjumpprep;
+			sprite_index = spr_superjumpprep;
 		}
 		if (key_down && grounded)
-			sprite_index = spr_pizzano_crouchslide;
+			sprite_index = spr_crouchslide;
 		else if (!key_down && grounded && hsp != 0)
-			sprite_index = spr_pizzano_mach3;
+			sprite_index = spr_mach3player;
 		if (key_jump2)
 		{
 			state = states.mach2;
 			doublejumped = 1;
 			vsp = -10;
-			sprite_index = spr_pizzano_djump;
+			sprite_index = spr_djump;
 		}
 		if (key_slap2)
 		{
@@ -113,7 +113,7 @@ function scr_rocketfist_pizzano()
 		{
 			image_index = 0;
 			state = states.mach2;
-			sprite_index = spr_pizzano_mach2;
+			sprite_index = spr_mach2;
 			vsp = -5;
 		}
 		if (!instance_exists(obj_crazyrunothereffect) && sprite_index == spr_crazyrun)

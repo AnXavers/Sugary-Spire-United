@@ -91,7 +91,6 @@
     {"name":"inst_A84DBDFD","path":"rooms/tower_4/tower_4.yy",},
     {"name":"inst_619F6D1D","path":"rooms/tower_4/tower_4.yy",},
     {"name":"inst_3B0739CC","path":"rooms/tower_4/tower_4.yy",},
-    {"name":"inst_1E100C50","path":"rooms/tower_4/tower_4.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -180,7 +179,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_A84DBDFD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_destroyable3","path":"objects/obj_destroyable3/obj_destroyable3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1216.0,"y":1088.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_619F6D1D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_minipillarwoke","path":"objects/obj_minipillarwoke/obj_minipillarwoke.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":4.0,"x":1184.0,"y":1376.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3B0739CC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_minipillarwoke","path":"objects/obj_minipillarwoke/obj_minipillarwoke.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":4.0,"x":4160.0,"y":2048.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1E100C50","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_hubelevator_tower","path":"objects/obj_hubelevator_tower/obj_hubelevator_tower.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2208.0,"y":2048.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[],"depth":-350,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":-250,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":120,"SerialiseWidth":141,"TileCompressedData":[

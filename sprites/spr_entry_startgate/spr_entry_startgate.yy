@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Start Gates",
-    "path": "folders/Sprites/Start Gates.yy",
+    "name": "Entryway",
+    "path": "folders/Sprites/Start Gates/Entryway.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

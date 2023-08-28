@@ -61,7 +61,7 @@ function state_player_jump()
 		freefallstart = 0;
 		instance_create_depth(x, y, 0, obj_landcloud);
 	}
-	if (key_attack && character == "N" && charged)
+	if (key_attack && (character == "N" || character == "T") && charged)
 	{
 		sprite_index = spr_superjump_cancelprep;
 		image_index = 0;
@@ -70,7 +70,7 @@ function state_player_jump()
 		charged = 0;
 		state = 104;
 	}
-	if (key_up && character == "N" && charged)
+	if (key_up && (character == "N" || character == "T") && charged)
 	{
 		alarm[0] = 240;
 		sprite_index = spr_superjump;

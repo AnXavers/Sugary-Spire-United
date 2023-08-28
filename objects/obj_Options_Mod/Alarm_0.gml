@@ -1,1 +1,1 @@
-canmove = true;
+selected = false;

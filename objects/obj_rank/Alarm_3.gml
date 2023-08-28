@@ -32,8 +32,10 @@ if (obj_player.character == "P")
 		sprite_index = spr_rankD;
 	}
 	if (global.rank == "e")
+	{
 		setcolors(109, 121, 134, 84, 87, 99);
 		sprite_index = spr_rankP;
+	}
 }
 else
 {
@@ -68,8 +70,10 @@ else
 		sprite_index = spr_pizzano_rankD;
 	}
 	if (global.rank == "e")
+	{
 		setcolors(109, 121, 134, 84, 87, 99);
 		sprite_index = spr_pizzano_rankP;
+	}
 }
 alarm[7] = 120;
 image_speed = 0.45;

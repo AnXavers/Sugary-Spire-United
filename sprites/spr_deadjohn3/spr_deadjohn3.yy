@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8037154b-555a-41cd-927e-5a12caa17531","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 3,
   "parent": {
     "name": "Entrance",
     "path": "folders/Sprites/Layer Assets/Levels/Entrance.yy",
@@ -59,7 +59,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 32,
+    "xorigin": 0,
     "yorigin": 64,
   },
   "swatchColours": null,

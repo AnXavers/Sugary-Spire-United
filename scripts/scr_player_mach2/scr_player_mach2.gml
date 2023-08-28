@@ -35,7 +35,7 @@ function state_player_mach2()
 		if (key_jump && grounded)
 		{
 			state = 119;
-			sprite_index = spr_pizzano_twirl;
+			sprite_index = spr_twirl;
 			vsp = -12;
 		}
 	}
@@ -174,7 +174,7 @@ function state_player_mach2()
 		vsp = -5;
 		state = 137;
 		image_index = 0;
-		sprite_index = spr_player_throwDonut;
+		sprite_index = spr_throwDonut;
 		with (instance_create(x, y + 16, obj_donutThrowable))
 		{
 			image_xscale = other.xscale;
@@ -225,6 +225,6 @@ function state_player_mach2()
 		alarm[0] = 240;
 		image_index = 0;
 		state = 63;
-		sprite_index = spr_pizzano_sjumpprep;
+		sprite_index = spr_superjumpprep;
 	}
 }

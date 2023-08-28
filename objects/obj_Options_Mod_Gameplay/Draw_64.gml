@@ -1,0 +1,21 @@
+draw_set_font(global.font);
+draw_set_halign(1);
+draw_option(150, 30 + ScrollY, "BACK", optionselected == 0);
+draw_option(480, 100 + ScrollY, "HEATMETER", optionselected == 1);
+draw_option(280, 150 + ScrollY, "ON", optionsaved_heatmeter);
+draw_option(680, 150 + ScrollY, "OFF", !optionsaved_heatmeter);
+draw_option(480, 200 + ScrollY, "NEW LEVEL DESIGN", optionselected == 2);
+draw_option(280, 250 + ScrollY, "ON", optionsaved_newlvldesign);
+draw_option(680, 250 + ScrollY, "OFF", !optionsaved_newlvldesign);
+draw_option(480, 300 + ScrollY, "INFINITE LAPPING", optionselected == 3);
+draw_option(280, 350 + ScrollY, "ON", optionsaved_inflapping);
+draw_option(680, 350 + ScrollY, "OFF", !optionsaved_inflapping);
+draw_option(480, 400 + ScrollY, "ENABLE JERALD", optionselected == 4);
+draw_option(280, 450 + ScrollY, "ON", optionsaved_enablejerald);
+draw_option(680, 450 + ScrollY, "OFF", !optionsaved_enablejerald);
+draw_set_font(global.smallfont);
+draw_set_halign(1);
+var _string_width = string_width(subtitle) + 32;
+if (subtitle != "")
+	draw_sprite_ext(spr_optionSubtitle, 0, 480, 521, _string_width / 32, 1, 0, c_white, 1);
+draw_text(480, 512, subtitle);

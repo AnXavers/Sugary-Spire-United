@@ -43,7 +43,7 @@ function scr_pizzano_twirl()
 		{
 			flash = 1;
 			state = 104;
-			sprite_index = spr_pizzano_sjumpprepside;
+			sprite_index = spr_superjumpprep;
 			image_index = 0;
 			movespeed /= 1.5;
 			mach2 = 0;
@@ -56,7 +56,7 @@ function scr_pizzano_twirl()
 			alarm[0] = 240;
 			image_index = 0;
 			state = 63;
-			sprite_index = spr_pizzano_sjumpprep;
+			sprite_index = spr_superjumpprep;
 			scr_sound(sound_superjumpcharge1);
 		}
 		else

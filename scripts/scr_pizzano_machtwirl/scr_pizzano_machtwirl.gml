@@ -43,7 +43,7 @@ function scr_pizzano_machtwirl()
 		{
 			flash = 1;
 			state = 104;
-			sprite_index = spr_pizzano_sjumpprepside;
+			sprite_index = spr_superjumpprep;
 			image_index = 0;
 			movespeed /= 1.5;
 			mach2 = 0;
@@ -56,7 +56,7 @@ function scr_pizzano_machtwirl()
 			alarm[0] = 240;
 			image_index = 0;
 			state = 63;
-			sprite_index = spr_pizzano_sjumpprep;
+			sprite_index = spr_superjumpprep;
 			scr_sound(sound_superjumpcharge1);
 		}
 		else
@@ -71,10 +71,10 @@ function scr_pizzano_machtwirl()
 			if (!grounded)
 			{
 				airkung = 1;
-				sprite_index = choose(spr_pizzano_kungfuair1start, spr_pizzano_kungfuair2start, spr_pizzano_kungfuair3start);
+				sprite_index = choose(spr_kungfuair1start, spr_kungfuair2start, spr_kungfuair3start);
 			}
 			else
-				sprite_index = choose(spr_pizzano_kungfu1, spr_pizzano_kungfu2, spr_pizzano_kungfu3, spr_pizzano_kungfu4, spr_pizzano_kungfu5);
+				sprite_index = choose(spr_kungfu1, spr_kungfu2, spr_kungfu3, spr_kungfu4, spr_kungfu5);
 			instance_create(x, y, obj_crazyrunothereffect);
 			if (!instance_exists(obj_superdashcloud) && grounded)
 				instance_create(x, y, 451, 

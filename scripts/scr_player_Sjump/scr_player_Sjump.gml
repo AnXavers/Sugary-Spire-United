@@ -19,9 +19,9 @@ function state_player_Sjump()
 		vsp = -movespeed;
 		movespeed = approach(movespeed, 18, 1);
 	}
-	if (sprite_index == spr_pizzano_sjumpprep || sprite_index == spr_superjump_cancelprep)
+	if ((sprite_index == spr_superjumpprep && player.character == "N") || sprite_index == spr_superjump_cancelprep)
 		vsp = 0;
-	if (sprite_index == spr_pizzano_sjumpprep && floor(image_index) == (image_number - 1))
+	if ((sprite_index == spr_superjumpprep && player.character == "N") && floor(image_index) == (image_number - 1))
 	{
 		scr_sound(sound_superjumprelease);
 		vsp = -10;

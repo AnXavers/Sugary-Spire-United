@@ -29,8 +29,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Start Gates",
-    "path": "folders/Sprites/Start Gates.yy",
+    "name": "Dance",
+    "path": "folders/Sprites/Start Gates/Dance.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

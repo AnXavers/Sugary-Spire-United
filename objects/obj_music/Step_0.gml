@@ -50,7 +50,7 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
                     _new_song = mu_escape;
             else if (obj_player.character == "T")
                 if (global.lapcount >= 10)
-                    _new_song = mu_10peppino;
+                    _new_song = mu_mayhem;
                 else if (global.lapcount >= 5)
                     _new_song = mu_despairypeppino;
                 else if (global.lapcount >= 2)
@@ -59,7 +59,7 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
                     _new_song = mu_noiseescape;
             else if (obj_player.character == "S")
                 if (global.lapcount >= 10)
-                    _new_song = mu_10peppino;
+                    _new_song = mu_mayhem;
                 else if (global.lapcount >= 5)
                     _new_song = mu_despairypeppino;
                 else if (global.lapcount >= 2)

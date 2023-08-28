@@ -150,7 +150,7 @@ switch (ini_read_real("Settings", "mu_lap10", 0))
 		global.lap10song = mu_finale;
 		break;
 	case 2:
-		global.lap10song = mu_10peppino;
+		global.lap10song = mu_mayhem;
 		break;
 }
 switch (ini_read_real("Settings", "mu_lap5", 0))

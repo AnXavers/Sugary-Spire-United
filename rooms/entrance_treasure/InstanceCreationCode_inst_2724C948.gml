@@ -1,2 +1,2 @@
 targetRoom = entrance_7;
-TrueVisible = false;
+depth = 200

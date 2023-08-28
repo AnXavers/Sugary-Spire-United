@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Cottontown",
+    "path": "folders/Sprites/Titlecards/Cottontown.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -1,7 +1,7 @@
 draw_set_halign(1);
 draw_set_font(global.font);
 draw_sprite_tiled(bg_options, 0, bgx, bgy);
-if !instance_exists(obj_Options_Mod)
+if !instance_exists(obj_Options_Mod_Music)
 	draw_sprite_ext(spr_arrow, -1, 250, CursorY + 24, 1, 1, 0, c_white, 1);
 else
 	draw_sprite_ext(spr_arrow, -1, 150, CursorY + 24, 1, 1, 0, c_white, 1);

@@ -162,6 +162,7 @@ function scr_characterspr()
 			spr_superjumpleft = spr_player_superjumpleft
 			spr_superjump = spr_player_superjump
 			spr_superjump_cancel = spr_player_superjump_cancel
+			spr_superjump_cancelgrounded = spr_pizzano_sjumpsidemach4grounded
 			spr_superjump_cancelprep = spr_player_superjump_cancelprep
 			spr_superjumpland = spr_player_superjumpland
 			spr_suplexdashCancel = spr_player_suplexdashCancel
@@ -185,6 +186,8 @@ function scr_characterspr()
 			spr_kungfu3 = spr_pizzano_kungfu3
 			spr_kungfu4 = spr_pizzano_kungfu4
 			spr_kungfu5 = spr_pizzano_kungfu5
+			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4
+			spr_twirl = spr_pizzano_twirl
 			if global.newplayeranim == 1
 			{
 				spr_mach1 = spr_player_mach1_new;
@@ -335,6 +338,10 @@ function scr_characterspr()
 			spr_kungfu3 = spr_pizzano_kungfu3
 			spr_kungfu4 = spr_pizzano_kungfu4
 			spr_kungfu5 = spr_pizzano_kungfu5
+			spr_superjump_cancel = spr_pizzano_sjumpside
+			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4
+			spr_superjump_cancelgrounded = spr_pizzano_sjumpsidemach4grounded
+			spr_twirl = spr_pizzano_twirl
 			break;
 		case "G":
 			spr_idle = spr_gumbob_idle;

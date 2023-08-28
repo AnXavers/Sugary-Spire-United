@@ -2,7 +2,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 {
 	repeat (7)
 	{
-		if sprite_index = (spr_deadjohn1 || spr_deadjohn2 || spr_deadjohn3)
+		if start_spr_index = (spr_deadjohn1 || spr_deadjohn2 || spr_deadjohn3)
 		{
 			with (instance_create(x + 32, y + 32, obj_debris))
 				sprite_index = spr_deadjohn_debris;

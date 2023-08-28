@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Start Gates",
-    "path": "folders/Sprites/Start Gates.yy",
+    "name": "Bee",
+    "path": "folders/Sprites/Start Gates/Bee.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

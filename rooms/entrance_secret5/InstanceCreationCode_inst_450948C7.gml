@@ -1,1 +1,1 @@
-targetDoor = "A"
+targetDoor = "C"

@@ -1,0 +1,22 @@
+draw_set_font(global.font);
+draw_set_halign(1);
+draw_option(150, 30 + ScrollY, "BACK", optionselected == 0);
+draw_option(480, 100 + ScrollY, "NEW SCORE FONT", optionselected == 1);
+draw_option(280, 150 + ScrollY, "ON", optionsaved_newscorefont);
+draw_option(680, 150 + ScrollY, "OFF", !optionsaved_newscorefont);
+draw_option(480, 200 + ScrollY, "PLAYER ANIMATIONS", optionselected == 2);
+draw_option(280, 250 + ScrollY, "DEFAULT", optionsaved_newplayeranim == 0);
+draw_option(680, 250 + ScrollY, "NEW", optionsaved_newplayeranim == 1);
+draw_option(280, 300 + ScrollY, "ALT", optionsaved_newplayeranim == 2);
+draw_option(680, 300 + ScrollY, "CLASSIC", optionsaved_newplayeranim == 3);
+draw_option(480, 350 + ScrollY, "E RANK STACKING", optionselected == 3);
+draw_option(280, 400 + ScrollY, "ON", optionsaved_erankstack);
+draw_option(680, 400 + ScrollY, "OFF", !optionsaved_erankstack);
+draw_option(480, 450 + ScrollY, "SLOPE ANGLE", optionselected == 4);
+draw_option(280, 500 + ScrollY, "ON", optionsaved_slopeangle);
+draw_option(680, 500 + ScrollY, "OFF", !optionsaved_slopeangle);
+draw_set_font(global.smallfont);
+var _string_width = string_width(subtitle) + 32;
+if (subtitle != "")
+	draw_sprite_ext(spr_optionSubtitle, 0, 480, 521, _string_width / 32, 1, 0, c_white, 1);
+draw_text(480, 512, subtitle);

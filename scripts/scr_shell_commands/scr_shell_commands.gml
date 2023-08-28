@@ -207,11 +207,11 @@ function meta_instance_destroy()
 		argumentDescriptions: ["the object to destroy"]
 	};
 }
-function sh_change_variable()
+function sh_set_global_variable()
 {
 	variable_global_set(argument0[1], argument0[2]);
 }
-function meta_change_variable()
+function meta_set_global_variable()
 {
 	return 
 	{
@@ -219,6 +219,34 @@ function meta_change_variable()
 		arguments: ["<global_variable>", "<value>"],
 		suggestions: [0, 1],
 		argumentDescriptions: ["the name of the global variable to change", "the value you want to change the variable to"]
+	};
+}
+function sh_set_instance_variable()
+{
+	variable_instance_set(argument0[1], argument0[2], argument0[3]);
+}
+function meta_set_instance_variable()
+{
+	return 
+	{
+		description: "Changes an instance variable.",
+		arguments: ["<object>", "<instance_variable>", "<value>"],
+		suggestions: [global.objectlist, 1, 2],
+		argumentDescriptions: ["the object which variable you want to change", "the name of the instance variable to change", "the value you want to change the variable to"]
+	};
+}
+function sh_set_struct_variable()
+{
+	variable_struct_set(argument0[1], argument0[2], argument0[3]);
+}
+function meta_set_struct_variable()
+{
+	return 
+	{
+		description: "Changes a struct variable.",
+		arguments: ["<struct>", "<struct_variable>", "<value>"],
+		suggestions: [0, 1, 2],
+		argumentDescriptions: ["the struct which variable you want to change", "the name of the struct variable to change", "the value you want to change the variable to"]
 	};
 }
 function sh_noclip()
@@ -308,6 +336,20 @@ function meta_play_sound()
 		arguments: ["<sound>"],
 		suggestions: [0],
 		argumentDescriptions: ["The name of the sound to play."]
+	};
+}
+function sh_full_data_wipe()
+{
+	instance_create(x, y, obj_full_wipe_conformation)
+}
+function meta__full_data_wipe()
+{
+	return 
+	{
+		description: "Initiates a full game data wipe.",
+		arguments: [],
+		suggestions: [],
+		argumentDescriptions: []
 	};
 }
 function sh_game_end()
