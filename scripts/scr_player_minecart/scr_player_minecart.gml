@@ -28,7 +28,7 @@ function state_player_minecart()
 	movespeed = clamp(movespeed, 0, 15);
 	hsp = xscale * movespeed;
 	if (movespeed >= 14 && !instance_exists(obj_chargeeffect))
-		instance_create(x + (32 * xscale), y, 455, 
+		instance_create(x + (32 * xscale), y, obj_chargeeffect, 
 		{
 			playerID: id
 		});

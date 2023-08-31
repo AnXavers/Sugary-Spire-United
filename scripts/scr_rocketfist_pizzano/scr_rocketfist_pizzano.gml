@@ -117,22 +117,22 @@ function scr_rocketfist_pizzano()
 			vsp = -5;
 		}
 		if (!instance_exists(obj_crazyrunothereffect) && sprite_index == spr_crazyrun)
-			instance_create(x, y, 412, 
+			instance_create(x, y, obj_crazyrunothereffect, 
 			{
 				playerID: id
 			});
 		if (!instance_exists(obj_crazyruneffect))
-			instance_create(x, y, 430, 
+			instance_create(x, y, obj_crazyruneffect, 
 			{
 				playerID: id
 			});
 		if (!instance_exists(obj_chargeeffect) && sprite_index != spr_dive)
-			instance_create(x, y, 455, 
+			instance_create(x, y, obj_chargeeffect, 
 			{
 				playerID: id
 			});
 		if (!instance_exists(obj_superdashcloud) && grounded)
-			instance_create(x, y, 451, 
+			instance_create(x, y, obj_superdashcloud, 
 			{
 				playerID: id
 			});

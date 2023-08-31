@@ -12,7 +12,7 @@ function scr_enemy_rage()
 					sprite_index = spr_badmarsh_rage;
 					hsp = image_xscale * 5;
 					lunged = 50;
-					with (instance_create(x, y, 394, 
+					with (instance_create(x, y, obj_forkhitbox, 
 					{
 						ID: other.id
 					}))

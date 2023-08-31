@@ -16,7 +16,7 @@ if (state == 3)
 	movespeed = 4;
 if (boundbox == 0 && state != 14)
 {
-	with (instance_create(x, y, 382, 
+	with (instance_create(x, y, obj_baddiecollisionbox, 
 	{
 		baddieID: other.id
 	}))

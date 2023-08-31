@@ -5,3 +5,4 @@ depth = 2;
 ShakeBuffer = 5;
 set_theme = -4;
 spr_palette = pal_harry;
+sprite_index = obj_player.spr_gummyharry_idle

@@ -1,2 +1,2 @@
 event_inherited();
-start_spr_index = sprite_index
+sprite_index = obj_player.spr_large_destroyable

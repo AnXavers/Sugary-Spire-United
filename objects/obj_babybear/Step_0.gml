@@ -35,7 +35,7 @@ if (point_in_rectangle(obj_player.x, obj_player.y, x - 200, y - 50, x + 200, y +
 }
 if (boundbox == 0 && state != 14)
 {
-	with (instance_create(x, y, 382, 
+	with (instance_create(x, y, obj_baddiecollisionbox, 
 	{
 		baddieID: other.id
 	}))
@@ -49,7 +49,7 @@ if (boundbox == 0 && state != 14)
 if (hitboxcreate == 0 && animation_end(undefined, 10) && state == 26)
 {
 	hitboxcreate = 1;
-	with (instance_create(x, y, 394, 
+	with (instance_create(x, y, obj_forkhitbox, 
 	{
 		ID: other.id
 	}))

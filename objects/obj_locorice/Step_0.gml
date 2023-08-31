@@ -13,7 +13,7 @@ if (flash == 1 && alarm[2] <= 0)
 if (hitboxcreate == 0 && active)
 {
 	hitboxcreate = 1;
-	with (instance_create(x, y, 394, 
+	with (instance_create(x, y, obj_forkhitbox, 
 	{
 		ID: other.id
 	}))

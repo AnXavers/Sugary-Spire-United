@@ -83,7 +83,7 @@ function do_grab()
 					sprite_index = choose(spr_kungfu1, spr_kungfu2, spr_kungfu3, spr_kungfu4, spr_kungfu5);
 				instance_create(x, y, obj_crazyrunothereffect);
 				if (!instance_exists(obj_superdashcloud) && grounded)
-					instance_create(x, y, 451, 
+					instance_create(x, y, obj_superdashcloud, 
 					{
 						playerID: id
 					});

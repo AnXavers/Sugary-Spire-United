@@ -8,3 +8,4 @@ spr_palette = pal_harry;
 paletteselect = 0;
 if (x != obj_player.x)
 	image_xscale = -sign(x - obj_player.x);
+sprite_index = obj_player.spr_gummyharry_dead

@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "sucrose_6",
-  "creationCodeFile": "${project_dir}/rooms/sucrose_6/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/sucrose_6/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

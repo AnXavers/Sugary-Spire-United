@@ -19,9 +19,9 @@ function state_player_Sjump()
 		vsp = -movespeed;
 		movespeed = approach(movespeed, 18, 1);
 	}
-	if ((sprite_index == spr_superjumpprep && player.character == "N") || sprite_index == spr_superjump_cancelprep)
+	if ((sprite_index == spr_superjumpprep && (player.character == "N" || player.character == "T")) || sprite_index == spr_superjump_cancelprep)
 		vsp = 0;
-	if ((sprite_index == spr_superjumpprep && player.character == "N") && floor(image_index) == (image_number - 1))
+	if ((sprite_index == spr_superjumpprep && (player.character == "N" || player.character == "T")) && floor(image_index) == (image_number - 1))
 	{
 		scr_sound(sound_superjumprelease);
 		vsp = -10;
@@ -72,7 +72,7 @@ function state_player_Sjump()
 		with (instance_create(x, y, obj_jumpdust))
 			image_xscale = other.xscale;
 	}
-	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && character == "N" || character == "T")
+	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && (character == "N" || character == "T"))
 	{
 		scr_sound(sound_superjumpcancel);
 		flash = 1;

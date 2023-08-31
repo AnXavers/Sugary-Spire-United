@@ -72,7 +72,7 @@ function state_player_machslide()
 	}
 	if (!instance_exists(dashCloudID) && grounded)
 	{
-		with (instance_create(x, y, 439, 
+		with (instance_create(x, y, obj_dashcloud, 
 		{
 			playerID: id
 		}))

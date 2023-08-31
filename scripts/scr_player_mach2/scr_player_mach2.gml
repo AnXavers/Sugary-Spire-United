@@ -84,7 +84,7 @@ function state_player_mach2()
 			flash = 1;
 			if (sprite_index != spr_rollgetup)
 				sprite_index = spr_mach3player;
-			instance_create(x, y, 417, 
+			instance_create(x, y, obj_jumpdust, 
 			{
 				playerID: id
 			});
@@ -193,7 +193,7 @@ function state_player_mach2()
 	}
 	if (!instance_exists(dashCloudID) && grounded)
 	{
-		with (instance_create(x, y, 439, 
+		with (instance_create(x, y, obj_dashcloud, 
 		{
 			playerID: id
 		}))
@@ -219,7 +219,7 @@ function state_player_mach2()
 		image_speed = abs(movespeed) / 15;
 	if (grounded)
 		upsideDownJump = false;
-	if (character == "N" && key_up && key_slap2 && charged)
+	if ((character == "N" || character == "T") && key_up && key_slap2 && charged)
 	{
 		flash = 1;
 		alarm[0] = 240;

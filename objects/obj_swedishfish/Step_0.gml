@@ -27,7 +27,7 @@ if (obj_player.x > (x - 400) && obj_player.x < (x + 400) && y <= (obj_player.y +
 if (hitboxcreate == 0 && state == enemystates.charge && sprite_index == spr_swed_charge)
 {
 	hitboxcreate = 1;
-	with (instance_create(x, y, 394, 
+	with (instance_create(x, y, obj_forkhitbox, 
 	{
 		ID: other.id
 	}))
@@ -70,7 +70,7 @@ if (state != enemystates.stun && state != enemystates.frozen)
 	thrown = 0;
 if (boundbox == 0)
 {
-	with (instance_create(x, y, 382, 
+	with (instance_create(x, y, obj_baddiecollisionbox, 
 	{
 		baddieID: other.id
 	}))

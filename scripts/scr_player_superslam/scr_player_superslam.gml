@@ -17,7 +17,7 @@ function state_player_superslam()
 	{
 		vsp += 0.5;
 		if (vsp > 17 && !instance_exists(obj_piledrivereffect))
-			instance_create(x, y, 277, 
+			instance_create(x, y, obj_piledrivereffect, 
 			{
 				playerID: id
 			});

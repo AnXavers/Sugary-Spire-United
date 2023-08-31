@@ -16,7 +16,7 @@ if (state != 6 && state != 10 && state != 8)
 	thrown = 0;
 if (boundbox == 0 && state != 14)
 {
-	with (instance_create(x, y, 382, 
+	with (instance_create(x, y, obj_baddiecollisionbox, 
 	{
 		baddieID: other.id
 	}))

@@ -146,7 +146,7 @@ function scr_characterspr()
 			spr_facehurtup = spr_player_facehurtup
 			spr_facehurt = spr_player_facehurt
 			spr_breakdance = spr_player_breakdance
-			spr_shotgun = spr_player_shotgun
+			spr_shotgun_player = spr_player_shotgun
 			spr_canefall = spr_player_canefall
 			spr_breakdancebeach = spr_player_breakdancebeach
 			spr_swingding = spr_player_swingding
@@ -188,6 +188,40 @@ function scr_characterspr()
 			spr_kungfu5 = spr_pizzano_kungfu5
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4
 			spr_twirl = spr_pizzano_twirl
+			spr_small_destroyable = spr_smallbreak
+			spr_large_destroyable = spr_bigbreak
+			spr_large_destroyable_hard = spr_bigbreakhard
+			spr_small_destroyable_collect = spr_smallbreak2
+			spr_large_destroyable_collect = spr_bigbreak2
+			spr_metal_destroyable = spr_metalblock
+			spr_small_destroyable_escape = spr_smallbreakEscape
+			spr_large_destroyable_escape = spr_bigbreakEscape
+			spr_small_destroyable_collect_escape = spr_smallbreak2Escape
+			spr_large_destroyable_collect_escape = spr_bigbreak2Escape
+			spr_metal_destroyable_escape = spr_metalblockEscape
+			spr_smallcollect1 = spr_collect1
+			spr_smallcollect2 = spr_collect2
+			spr_smallcollect3 = spr_collect3
+			spr_smallcollect4 = spr_collect4
+			spr_smallcollect5 = spr_collect5
+			spr_bigcollect1 = spr_bigcollect1P
+			spr_bigcollect2 = spr_bigcollect2P
+			spr_bigcollect3 = spr_bigcollect3P
+			spr_bigcollect4 = spr_bigcollect4P
+			spr_bigcollect5 = spr_bigcollect5P
+			spr_bigcollect6 = spr_bigcollect6P
+			spr_massivecollect1 = spr_giantcollect1
+			spr_massivecollect2 = spr_giantcollect2
+			spr_massivecollect3 = spr_giantcollect3
+			spr_massivecollect4 = spr_giantcollect4
+			spr_smallcollectescape1 = spr_collectescape
+			spr_bigcollectescape1 = spr_bigcollectescape
+			spr_collectslice1 = spr_collectslice
+			spr_confectcage = spr_confecticage
+			spr_confectcage_hop = spr_confecticage_hop
+			spr_confectcage_help = spr_confecticage_help
+			spr_gummyharry_idle = spr_harryNEW
+			spr_gummyharry_dead = spr_harrydeadNEW
 			if global.newplayeranim == 1
 			{
 				spr_mach1 = spr_player_mach1_new;
@@ -342,6 +376,12 @@ function scr_characterspr()
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4
 			spr_superjump_cancelgrounded = spr_pizzano_sjumpsidemach4grounded
 			spr_twirl = spr_pizzano_twirl
+			spr_bigcollect1 = spr_bigcollect1N
+			spr_bigcollect2 = spr_bigcollect2N
+			spr_bigcollect3 = spr_bigcollect3N
+			spr_bigcollect4 = spr_bigcollect1N
+			spr_bigcollect5 = spr_bigcollect2N
+			spr_bigcollect6 = spr_bigcollect3N
 			break;
 		case "G":
 			spr_idle = spr_gumbob_idle;
@@ -701,7 +741,7 @@ function scr_characterspr()
 			spr_skatecrouch = spr_playerN_clowncrouch
 			spr_facehurtup = spr_playerN_facehurtup
 			spr_facehurt = spr_playerN_facehurt
-			spr_shotgun = spr_player_shotgun
+			spr_shotgun_player = spr_player_shotgun
 			spr_canefall = spr_player_canefall
 			spr_breakdancebeach = spr_player_breakdancebeach
 			spr_swingding = spr_playerN_swingding
@@ -712,6 +752,39 @@ function scr_characterspr()
 			spr_machfreefall = spr_player_machfreefall
 			spr_throwDonut = spr_player_throwDonut
 			spr_machtumble = spr_playerN_spin
+			spr_small_destroyable = spr_towerblocksmall
+			spr_large_destroyable = spr_towerblock
+			spr_large_destroyable_hard = sprite387
+			spr_small_destroyable_collect = spr_destroyable2
+			spr_large_destroyable_collect = spr_bigbreakable
+			spr_metal_destroyable = spr_metaltowerblock
+			spr_small_destroyable_escape = spr_johndestructible2
+			spr_large_destroyable_escape = spr_johndestructible
+			spr_small_destroyable_collect_escape = spr_destroyable21
+			spr_large_destroyable_collect_escape = spr_bigbreakableescape
+			spr_metal_destroyable_escape = spr_metalblockEscape
+			spr_smallcollect1 = spr_shroomcollect
+			spr_smallcollect2 = spr_cheesecollect
+			spr_smallcollect3 = spr_tomatocollect
+			spr_smallcollect4 = spr_sausagecollect
+			spr_smallcollect5 = spr_pineapplecollect
+			spr_bigcollect1 = spr_pizzacollect1
+			spr_bigcollect2 = spr_pizzacollect2
+			spr_bigcollect3 = spr_pizzacollect3
+			spr_bigcollect4 = spr_pizzacollect4
+			spr_bigcollect5 = spr_pizzacollect5
+			spr_massivecollect1 = spr_giantpizza
+			spr_massivecollect2 = spr_giantpizza
+			spr_massivecollect3 = spr_giantpizza
+			spr_massivecollect4 = spr_giantpizza
+			spr_smallcollectescape1 = spr_escapecollect
+			spr_bigcollectescape1 = spr_escapecollectbig
+			spr_collectslice1 = spr_pizzaslice
+			spr_confectcage = spr_pizzaboxunopen
+			spr_confectcage_hop = spr_pizzaboxunopenhop
+			spr_confectcage_help = spr_toppinhelp
+			spr_gummyharry_idle = spr_hungrypillar
+			spr_gummyharry_dead = spr_hungrypillar_dead
 			break;
 	}
 }

@@ -2,6 +2,10 @@ for (var i = 0; room_exists(i); i++)
 	global.roomlist[i] = room_get_name(i);
 for (var i = 0; room_exists(i); i++)
 	global.objectlist[i] = object_get_name(i);
+for (var i = 0; room_exists(i); i++)
+	global.scriptlist[i] = script_get_name(i);
+for (var i = 0; room_exists(i); i++)
+	global.spritelist[i] = sprite_get_name(i);
 function sh_escape()
 {
 	var arg0 = string(argument0[1]);
@@ -189,8 +193,31 @@ function meta_instance_create()
 	{
 		description: "Create an object.",
 		arguments: ["<x>", "<y>", "<object>"],
-		suggestions: [0, 1, global.objectlist],
+		suggestions: [obj_player.x, obj_player.y, global.objectlist],
 		argumentDescriptions: ["the X coordinate to create the object at", "the Y coordinate to create the object at", "the object to create"]
+	};
+}
+function sh_instance_create_ext()
+{
+	with (instance_create(argument0[1], argument0[2], asset_get_index(argument0[12])))
+		image_xscale = argument0[3]
+		image_yscale = argument0[4]
+		phy_rotation = argument0[5]
+		sprite_index = argument0[6]
+		image_index = argument0[7]
+		image_alpha = argument0[8]
+		image_blend = argument0[9]
+		image_speed = argument0[10]
+		depth = argument0[11]
+}
+function meta_instance_create_ext()
+{
+	return 
+	{
+		description: "Create an object with arguments.",
+		arguments: ["<x>", "<y>", "<xscale>", "<yscale>", "<rotation>", "<sprite>", "<frame>", "<alpha>", "<color>", "<depth>", "<sprite_speed>", "<object>"],
+		suggestions: [obj_player.x, obj_player.y, 3, 4, 5, global.spritelist, 6, 7, 8, c_white, 10, global.objectlist],
+		argumentDescriptions: ["The X coordinate to create the object at.", "The Y coordinate to create the object at.", "The width the object will be created with.", "The height the object will be created with.", "The rotation the object will be created with.", "The sprite the object will be created with.", "The starting frame the object will be created at.", "The transparency the object will be created with.", "The color the object will be created with.", "The depth the object will be created at.", "The image speed the object will be created with.", "The object to create."]
 	};
 }
 function sh_instance_destroy()
@@ -364,5 +391,33 @@ function meta_game_end()
 		arguments: [],
 		suggestions: [],
 		argumentDescriptions: []
+	};
+}
+function sh_script_execute()
+{
+	script_execute(argument0[1])
+}
+function meta_script_execute()
+{
+	return 
+	{
+		description: "Executes the specified script.",
+		arguments: ["<script>"],
+		suggestions: [global.scriptlist],
+		argumentDescriptions: ["The script to execute."]
+	};
+}
+function sh_draw_sprite()
+{
+	draw_sprite(argument0[1], argument0[2], argument0[3], argument0[4])
+}
+function meta_draw_sprite()
+{
+	return 
+	{
+		description: "Draws the specified sprite in the room.",
+		arguments: ["<sprite>", "<frame>", "<x>", "<y>"],
+		suggestions: [global.spritelist, 1, obj_player.x, obj_player.y],
+		argumentDescriptions: ["The sprite to draw.", "The frame you want to draw and/or start at.", "The X coordinate to draw the sprite at.", "The Y coordinate to draw the sprite at."]
 	};
 }

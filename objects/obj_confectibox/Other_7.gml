@@ -1,2 +1,2 @@
-if (sprite_index == spr_confecticage_hop)
-	sprite_index = spr_confecticage;
+if (sprite_index == obj_player.spr_confectcage_help)
+	sprite_index = obj_player.spr_confectcage;

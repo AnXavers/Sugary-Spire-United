@@ -16,7 +16,7 @@ if (state != 6 && state != 10)
 	thrown = 0;
 if (boundbox == 0)
 {
-	with (instance_create(x, y, 382, 
+	with (instance_create(x, y, obj_baddiecollisionbox, 
 	{
 		baddieID: other.id
 	}))
@@ -30,7 +30,7 @@ if (boundbox == 0)
 if (hitboxcreate == 0 && (state == 20 || state == 26))
 {
 	hitboxcreate = 1;
-	with (instance_create(x, y, 394, 
+	with (instance_create(x, y, obj_forkhitbox, 
 	{
 		ID: other.id
 	}))

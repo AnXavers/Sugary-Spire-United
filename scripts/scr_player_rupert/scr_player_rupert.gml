@@ -162,7 +162,7 @@ function state_player_rupertjump()
 		vsp += 0.5;
 		vsp = min(vsp, 40);
 		if (!instance_exists(groundpoundEffect))
-			groundpoundEffect = instance_create(x, y, 472, 
+			groundpoundEffect = instance_create(x, y, obj_groundpoundeffect, 
 			{
 				playerID: id
 			});

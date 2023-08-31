@@ -6,7 +6,7 @@ if (sprite_index == spr_donutShitterEating)
 		scr_sound(sound_points);
 		global.collect += 50;
 		create_small_number(x, y, "50");
-		instance_create(x, y, 280, 
+		instance_create(x, y, obj_collecteffect, 
 		{
 			choosed: true,
 			sprite_index: spr_donut_boil

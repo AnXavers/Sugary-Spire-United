@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Collectibles",
+    "path": "folders/Objects/Room Structure/Collectibles.yy",
   },
   "parentObjectId": null,
   "persistent": false,

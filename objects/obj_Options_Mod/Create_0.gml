@@ -1,9 +1,4 @@
-CursorX = 0;
-CursorY = 0;
-bgx = 0;
-bgy = 0;
-depth = -99;
-PauseMusic = -4;
+depth = -100;
 subtitle = "GO BACK TO MAIN OPTIONS";
 optionselected = 0;
 selected = false;

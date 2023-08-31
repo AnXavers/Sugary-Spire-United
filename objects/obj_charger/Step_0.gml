@@ -14,7 +14,7 @@ if (state != 6 && state != 10)
 	thrown = 0;
 if (boundbox == 0)
 {
-	with (instance_create(x, y, 382, 
+	with (instance_create(x, y, obj_baddiecollisionbox, 
 	{
 		baddieID: other.id
 	}))
@@ -49,7 +49,7 @@ if (sprite_index == spr_banana_chargestart && floor(image_index) == (image_numbe
 if (hitboxcreate == 0 && state == 1 && sprite_index == spr_banana_charge)
 {
 	hitboxcreate = 1;
-	with (instance_create(x, y, 394, 
+	with (instance_create(x, y, obj_forkhitbox, 
 	{
 		ID: other.id
 	}))

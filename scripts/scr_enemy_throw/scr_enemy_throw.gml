@@ -183,7 +183,7 @@ function scr_enemy_throw()
 			case obj_crackerkicker:
 				if (!audio_is_playing(sound_enemythrow))
 					scr_sound(sound_enemythrow);
-				instance_create(x + (image_xscale * 50), y, 584, 
+				instance_create(x + (image_xscale * 50), y, obj_crackerkicker_kickhitbox, 
 				{
 					image_xscale: image_xscale,
 					baddieID: id

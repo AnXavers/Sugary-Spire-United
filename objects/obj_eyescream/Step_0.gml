@@ -18,7 +18,7 @@ if (state == 3)
 	state = 25;
 if (boundbox == 0 && state != 24 && cancollide)
 {
-	with (instance_create(x, y, 382, 
+	with (instance_create(x, y, obj_baddiecollisionbox, 
 	{
 		baddieID: other.id
 	}))
