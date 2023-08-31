@@ -1,3 +1,7 @@
+if global.newlvldesign == 2
+	targetRoom = steamy_1_old;
+else
+	targetRoom = steamy_1;
 targetRoom = steamy_1;
 targetDoor = "A";
 level = "steamy";

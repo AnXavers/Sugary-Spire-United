@@ -49,10 +49,10 @@ if canmove
 			}
 			break;
 		case 2:
-			subtitle = "TOGGLES THE NEW LEVEL DESIGNS SEEN IN SS DEV STREAMS";
+			subtitle = "TOGGLES WHAT DESIGNS OF LEVELS ARE USED";
 			CursorY = 200;
 			optionsaved_newlvldesign += (key_right2 + key_left2);
-			optionsaved_newlvldesign = wrap(optionsaved_newlvldesign, 0, 1);
+			optionsaved_newlvldesign = wrap(optionsaved_newlvldesign, 0, 2);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);

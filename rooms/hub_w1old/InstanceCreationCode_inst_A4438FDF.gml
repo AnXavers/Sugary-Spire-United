@@ -1,4 +1,7 @@
-targetRoom = mines_1;
+if global.newlvldesign == 2
+	targetRoom = mines_1_old;
+else
+	targetRoom = mines_1;
 targetDoor = "A";
 level = "mines";
 details = [gate_createlayer(spr_mines_startgate, 0), gate_createlayer(spr_mines_startgate, 1), gate_createlayer(spr_mines_startgate, 2, 1), gate_createlayer(spr_mines_startgate, 3, 0.66), gate_createlayer(spr_mines_startgate, 4, 0.33)];
