@@ -7,7 +7,7 @@ scr_palette_as_player();
 if (goup)
 {
 	afterimagesetup();
-	if (sprite_index == spr_rankP || sprite_index == spr_pizzano_rankP)
+	if (sprite_index == obj_player.spr_player_rankP)
 		draw_rectangle(0, 0, 960, 540, false);
 }
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, 1);

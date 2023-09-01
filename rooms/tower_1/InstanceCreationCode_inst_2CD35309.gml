@@ -1,10 +1,10 @@
 targetRoom = dungeon_1;
 targetDoor = "A";
 level = "bloodsauce";
-details = [gate_createlayer(spr_gate_entrance, 0), gate_createlayer(spr_gate_entrance, 1), gate_createlayer(spr_gate_entranceBG, 2, 0.5), gate_createlayer(spr_gate_entranceBG, 3, 0.35), gate_createlayer(spr_gate_entranceBG, 4, 0.15)];
+details = [gate_createlayer(spr_gate_dungeon, 0), gate_createlayer(spr_gate_dungeon, 1), gate_createlayer(spr_gate_dungeonBG, 0, 0.5), gate_createlayer(spr_gate_dungeonBG, 1, 0.35)];
 info = 
 {
-	bginfo: [spr_titlecards, 2, 4, 8, 0, 0],
-	titleinfo: [spr_titlecards_title, 0, 5, 6, 0, 0],
-	song: mu_entrance_title
+	bginfo: [spr_bloodsaucecard_bg, 2, 4, 8, 0, 0],
+	titleinfo: [spr_bloodsaucecard_title, 0, 5, 6, 0, 0],
+	song: mu_dungeon_title
 };

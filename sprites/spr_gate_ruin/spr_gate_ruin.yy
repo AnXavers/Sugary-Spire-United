@@ -3,9 +3,9 @@
   "resourceVersion": "1.0",
   "name": "spr_gate_ruin",
   "bbox_bottom": 287,
-  "bbox_left": 22,
-  "bbox_right": 186,
-  "bbox_top": 34,
+  "bbox_left": 0,
+  "bbox_right": 191,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Level Gates",
-    "path": "folders/Sprites/Level Structure/Tower/Level Gates.yy",
+    "name": "Ruin",
+    "path": "folders/Sprites/Start Gates/Ruin.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

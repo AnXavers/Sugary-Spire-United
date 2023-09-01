@@ -3,9 +3,9 @@
   "resourceVersion": "1.0",
   "name": "spr_gate_medieval",
   "bbox_bottom": 287,
-  "bbox_left": 14,
-  "bbox_right": 174,
-  "bbox_top": 21,
+  "bbox_left": 0,
+  "bbox_right": 191,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Level Gates",
-    "path": "folders/Sprites/Level Structure/Tower/Level Gates.yy",
+    "name": "Pizzascape",
+    "path": "folders/Sprites/Start Gates/Pizzascape.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

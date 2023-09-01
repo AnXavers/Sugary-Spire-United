@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Level Gates",
-    "path": "folders/Sprites/Level Structure/Tower/Level Gates.yy",
+    "name": "Ruin",
+    "path": "folders/Sprites/Start Gates/Ruin.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

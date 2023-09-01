@@ -81,56 +81,56 @@ if !(global.levelname == "none" && room == timesuproom || room == rank_room || r
 {
 	if (!instance_exists(obj_startgate))
 	{
-		var bubbleempty = spr_rankbubble_d;
-		var bubblefilled = spr_rankbubble_dfilled;
+		var bubbleempty = obj_player.spr_rankbubble_D;
+		var bubblefilled = obj_player.spr_rankbubble_Dfilled;
 		var local_rank = global.crank;
 		var minus_moment = 0;
 		var bubbleframe = 0;
 		switch (global.currentrank)
 		{
 			case "E":
-				bubbleempty = spr_rankbubble_e;
-				bubblefilled = spr_rankbubble_e_empty;
+				bubbleempty = obj_player.spr_rankbubble_E;
+				bubblefilled = obj_player.spr_rankbubble_Eempty;
 				local_rank = global.srank;
 				minus_moment = global.srank;
 				bubbleframe = 0;
 			case "P":
-				bubbleempty = spr_rankbubble_p;
-				bubblefilled = spr_rankbubble_pfilled;
+				bubbleempty = obj_player.spr_rankbubble_P;
+				bubblefilled = obj_player.spr_rankbubble_Pfilled;
 				local_rank = global.srank;
 				minus_moment = global.srank;
 				bubbleframe = 0;
 			case "S":
-				bubbleempty = spr_rankbubble_s;
-				bubblefilled = spr_rankbubble_sfilled;
+				bubbleempty = obj_player.spr_rankbubble_S;
+				bubblefilled = obj_player.spr_rankbubble_Sfilled;
 				local_rank = global.srank;
 				minus_moment = global.arank;
 				bubbleframe = 0;
 				break;
 			case "A":
-				bubbleempty = spr_rankbubble_a;
-				bubblefilled = spr_rankbubble_afilled;
+				bubbleempty = obj_player.spr_rankbubble_A;
+				bubblefilled = obj_player.spr_rankbubble_Afilled;
 				local_rank = global.srank;
 				minus_moment = global.arank;
 				bubbleframe = 1;
 				break;
 			case "B":
-				bubbleempty = spr_rankbubble_b;
-				bubblefilled = spr_rankbubble_bfilled;
+				bubbleempty = obj_player.spr_rankbubble_B;
+				bubblefilled = obj_player.spr_rankbubble_Bfilled;
 				local_rank = global.arank;
 				minus_moment = global.brank;
 				bubbleframe = 2;
 				break;
 			case "C":
-				bubbleempty = spr_rankbubble_c;
-				bubblefilled = spr_rankbubble_cfilled;
+				bubbleempty = obj_player.spr_rankbubble_C;
+				bubblefilled = obj_player.spr_rankbubble_Cfilled;
 				local_rank = global.brank;
 				minus_moment = global.crank;
 				bubbleframe = 3;
 				break;
 			default:
-				bubbleempty = spr_rankbubble_d;
-				bubblefilled = spr_rankbubble_dfilled;
+				bubbleempty = obj_player.spr_rankbubble_D;
+				bubblefilled = obj_player.spr_rankbubble_Dfilled;
 				local_rank = global.crank;
 				minus_moment = 0;
 				bubbleframe = 4;
@@ -147,15 +147,14 @@ if !(global.levelname == "none" && room == timesuproom || room == rank_room || r
 		{
 			surface_set_target(rankbubblesurface);
 			draw_clear_alpha(c_white, 0);
-			draw_sprite_ext(spr_rankbubble_bg, bubbleframe, surface_get_width(rankbubblesurface) / 2, (surface_get_height(rankbubblesurface) / 2) + DrawY, 1, 1, 0, c_white, 1);
 			if (global.currentrank == "E")
 			{
-				draw_sprite_ext(spr_rankbubble_e_empty, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);
+				draw_sprite_ext(obj_player.spr_rankbubble_Eempty, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);
 			}
 			else if (global.currentrank == "P")
-				draw_sprite_ext(spr_rankbubble_pfilled, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);
+				draw_sprite_ext(obj_player.spr_rankbubble_Pfilled, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);
 			else if (global.currentrank == "S")
-				draw_sprite_ext(spr_rankbubble_sfilled, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);
+				draw_sprite_ext(obj_player.spr_rankbubble_Sfilled, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);
 			else
 			{
 				draw_sprite_ext(bubbleempty, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);

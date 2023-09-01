@@ -90,6 +90,20 @@ if canmove
 				global.enablejerald = optionsaved_enablejerald;
 			}
 			break;
+		case 5:
+			subtitle = "MAKES THE LAPPING WORK SIMILAR TO THE SS LAP 3 MOD";
+			CursorY = 500;
+			optionsaved_challengelaps += (key_right2 + key_left2);
+			optionsaved_challengelaps = wrap(optionsaved_challengelaps, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "challengelaps", optionsaved_challengelaps);
+				ini_close();
+				global.challengelaps = optionsaved_challengelaps;
+			}
+			break;
 	}
 	if (key_slap2 || key_start)
 	{

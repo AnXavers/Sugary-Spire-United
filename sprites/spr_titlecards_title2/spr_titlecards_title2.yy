@@ -34,8 +34,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Level Titlecards",
-    "path": "folders/Sprites/HUD/Level Titlecards.yy",
+    "name": "Tower",
+    "path": "folders/Sprites/Titlecards/Tower.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

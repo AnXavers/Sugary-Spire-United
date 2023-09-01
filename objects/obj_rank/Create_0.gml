@@ -1,10 +1,7 @@
 accel = 0;
 canleave = 0;
 image_speed = 0;
-if (obj_player.character == "P")
-	sprite_index = spr_player_rankwait;
-else
-	sprite_index = spr_pizzano_rankwait;
+sprite_index = obj_player.spr_rankwait;
 alarm[3] = 180;
 depth = -6;
 totalalpha = 0;

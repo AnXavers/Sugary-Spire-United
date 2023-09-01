@@ -199,6 +199,7 @@ function scr_characterspr()
 			spr_small_destroyable_collect_escape = spr_smallbreak2Escape
 			spr_large_destroyable_collect_escape = spr_bigbreak2Escape
 			spr_metal_destroyable_escape = spr_metalblockEscape
+			spr_metal_destroyable_hard = spr_metalblockhard
 			spr_smallcollect1 = spr_collect1
 			spr_smallcollect2 = spr_collect2
 			spr_smallcollect3 = spr_collect3
@@ -222,6 +223,30 @@ function scr_characterspr()
 			spr_confectcage_help = spr_confecticage_help
 			spr_gummyharry_idle = spr_harryNEW
 			spr_gummyharry_dead = spr_harrydeadNEW
+			spr_player_rankE = spr_rankP
+			spr_player_rankP = spr_rankP
+			spr_player_rankS = spr_rankS
+			spr_player_rankA = spr_rankA
+			spr_player_rankB = spr_rankB
+			spr_player_rankC = spr_rankC
+			spr_player_rankD = spr_rankD
+			spr_rankwait = spr_player_rankwait
+			spr_rankbubble_E = spr_rankbubble_e
+			spr_rankbubble_Efilled = spr_rankbubble_efilled
+			spr_rankbubble_Eempty = spr_rankbubble_e_empty
+			spr_rankbubble_Efont = spr_rankbubble_e_font
+			spr_rankbubble_P = spr_rankbubble_p
+			spr_rankbubble_Pfilled = spr_rankbubble_pfilled
+			spr_rankbubble_S = spr_rankbubble_s
+			spr_rankbubble_Sfilled = spr_rankbubble_sfilled
+			spr_rankbubble_A = spr_rankbubble_a
+			spr_rankbubble_Afilled = spr_rankbubble_afilled
+			spr_rankbubble_B = spr_rankbubble_b
+			spr_rankbubble_Bfilled = spr_rankbubble_bfilled
+			spr_rankbubble_C = spr_rankbubble_c
+			spr_rankbubble_Cfilled = spr_rankbubble_cfilled
+			spr_rankbubble_D = spr_rankbubble_d
+			spr_rankbubble_Dfilled = spr_rankbubble_dfilled
 			if global.newplayeranim == 1
 			{
 				spr_mach1 = spr_player_mach1_new;
@@ -382,6 +407,14 @@ function scr_characterspr()
 			spr_bigcollect4 = spr_bigcollect1N
 			spr_bigcollect5 = spr_bigcollect2N
 			spr_bigcollect6 = spr_bigcollect3N
+			spr_player_rankE = spr_pizzano_rankP
+			spr_player_rankP = spr_pizzano_rankP
+			spr_player_rankS = spr_pizzano_rankS
+			spr_player_rankA = spr_pizzano_rankA
+			spr_player_rankB = spr_pizzano_rankB
+			spr_player_rankC = spr_pizzano_rankC
+			spr_player_rankD = spr_pizzano_rankD
+			spr_rankwait = spr_pizzano_rankwait
 			break;
 		case "G":
 			spr_idle = spr_gumbob_idle;
@@ -754,7 +787,7 @@ function scr_characterspr()
 			spr_machtumble = spr_playerN_spin
 			spr_small_destroyable = spr_towerblocksmall
 			spr_large_destroyable = spr_towerblock
-			spr_large_destroyable_hard = sprite387
+			spr_large_destroyable_hard = spr_harddestroyable
 			spr_small_destroyable_collect = spr_destroyable2
 			spr_large_destroyable_collect = spr_bigbreakable
 			spr_metal_destroyable = spr_metaltowerblock
@@ -762,7 +795,8 @@ function scr_characterspr()
 			spr_large_destroyable_escape = spr_johndestructible
 			spr_small_destroyable_collect_escape = spr_destroyable21
 			spr_large_destroyable_collect_escape = spr_bigbreakableescape
-			spr_metal_destroyable_escape = spr_metalblockEscape
+			spr_metal_destroyable_escape = spr_metaltowerescape
+			spr_metal_destroyable_hard = spr_metalb
 			spr_smallcollect1 = spr_shroomcollect
 			spr_smallcollect2 = spr_cheesecollect
 			spr_smallcollect3 = spr_tomatocollect
@@ -785,6 +819,30 @@ function scr_characterspr()
 			spr_confectcage_help = spr_toppinhelp
 			spr_gummyharry_idle = spr_hungrypillar
 			spr_gummyharry_dead = spr_hungrypillar_dead
+			spr_player_rankE = spr_rankP
+			spr_player_rankP = spr_rankP
+			spr_player_rankS = spr_noise_rankS
+			spr_player_rankA = spr_noise_rankA
+			spr_player_rankB = spr_noise_rankB
+			spr_player_rankC = spr_noise_rankC
+			spr_player_rankD = spr_noise_rankD
+			spr_rankwait = spr_noise_rankwait
+			spr_rankbubble_E = spr_rankbubble_e
+			spr_rankbubble_Efilled = spr_rankbubble_e
+			spr_rankbubble_Eempty = spr_rankbubble_e_empty
+			spr_rankbubble_Efont = spr_rankbubble_e_font
+			spr_rankbubble_P = spr_rankbubblepep_P
+			spr_rankbubble_Pfilled = spr_rankbubblepep_Pfill
+			spr_rankbubble_S = spr_rankbubblepep_S
+			spr_rankbubble_Sfilled = spr_rankbubblepep_Sfill
+			spr_rankbubble_A = spr_rankbubblepep_A
+			spr_rankbubble_Afilled = spr_rankbubblepep_Afill
+			spr_rankbubble_B = spr_rankbubblepep_B
+			spr_rankbubble_Bfilled = spr_rankbubblepep_Bfill
+			spr_rankbubble_C = spr_rankbubblepep_C
+			spr_rankbubble_Cfilled = spr_rankbubblepep_Cfill
+			spr_rankbubble_D = spr_rankbubblepep_D
+			spr_rankbubble_Dfilled = spr_rankbubblepep_Dfill
 			break;
 	}
 }

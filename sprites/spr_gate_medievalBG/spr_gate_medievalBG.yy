@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Level Gates",
-    "path": "folders/Sprites/Level Structure/Tower/Level Gates.yy",
+    "name": "Pizzascape",
+    "path": "folders/Sprites/Start Gates/Pizzascape.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
