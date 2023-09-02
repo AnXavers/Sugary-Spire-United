@@ -247,6 +247,7 @@ function scr_characterspr()
 			spr_rankbubble_Cfilled = spr_rankbubble_cfilled
 			spr_rankbubble_D = spr_rankbubble_d
 			spr_rankbubble_Dfilled = spr_rankbubble_dfilled
+			spr_lungehit = spr_player_lungehit
 			if global.newplayeranim == 1
 			{
 				spr_mach1 = spr_player_mach1_new;
@@ -703,10 +704,10 @@ function scr_characterspr()
 			spr_bossintro = spr_playerN_bossintro;
 			spr_hurtidle = spr_playerN_hurtidle;
 			spr_hurtwalk = spr_playerN_hurtwalk;
-			spr_suplexmash1 = spr_playerN_suplexmash1;
-			spr_suplexmash2 = spr_playerN_suplexmash2;
-			spr_suplexmash3 = spr_playerN_suplexmash3;
-			spr_suplexmash4 = spr_playerN_suplexmash4;
+			spr_suplexmash1 = spr_playerN_finishingblow1;
+			spr_suplexmash2 = spr_playerN_finishingblow2;
+			spr_suplexmash3 = spr_playerN_finishingblow3;
+			spr_suplexmash4 = spr_playerN_finishingblow4;
 			spr_tackle = spr_playerN_tackle;
 			spr_airdash1 = spr_Noise_airdash1;
 			spr_airdash2 = spr_Noise_airdash2;

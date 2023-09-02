@@ -17,5 +17,6 @@ ScrollY = 0;
 depth = -100;
 selecting = -1;
 obj_Options_Mod.CursorY = -999;
+obj_Options_Main.CursorX = 150;
 canmove = false;
 alarm[0] = 1;

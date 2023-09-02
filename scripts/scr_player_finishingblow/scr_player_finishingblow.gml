@@ -4,7 +4,7 @@ function state_player_finishingblow()
 	move = key_right + key_left;
 	hsp = movespeed;
 	backto = approach(backto, 0, 0.25);
-	if (floor(image_index) < 5 && sprite_index != spr_player_swingdingend)
+	if (floor(image_index) < 5 && sprite_index != obj_player.spr_swingdingend)
 		movespeed = approach(movespeed, 0, 0.25);
 	else
 		movespeed = approach(movespeed, move * 8, 0.5);
@@ -15,11 +15,11 @@ function state_player_finishingblow()
 		movespeed = abs(movespeed);
 	}
 	var throw_frame = 6;
-	if (sprite_index == spr_pizzano_lungehit)
+	if (sprite_index == (spr_pizzano_lungehit))
 		throw_frame = 4;
-	if (sprite_index == spr_player_lungehit)
+	if (sprite_index == obj_player.spr_lungehit)
 		throw_frame = 2;
-	if (sprite_index == spr_player_swingdingend)
+	if (sprite_index == obj_player.spr_swingdingend)
 		throw_frame = 0;
 	if (animation_end(undefined, throw_frame) && !instance_exists(obj_swordhitbox))
 	{
@@ -62,7 +62,7 @@ function state_player_finishingblow()
 		}
 		global.combotime = 60;
 		global.hit += 1;
-		if (sprite_index == spr_player_lungehit)
+		if (sprite_index == obj_player.spr_lungehit)
 		{
 			state = 154;
 			movespeed = -xscale * 8;

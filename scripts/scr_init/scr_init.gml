@@ -105,7 +105,6 @@ global.erankstack = ini_read_real("Settings", "erankstack", 0);
 global.slopeangle = ini_read_real("Settings", "slopeangle", 1);
 global.inflapping = ini_read_real("Settings", "inflapping", 1);
 global.enablejerald = ini_read_real("Settings", "enablejerald", 1);
-global.challengelaps = ini_read_real("Settings", "challengelaps", 1);
 ini_close();
 
 audio_master_gain(global.masterVolume);

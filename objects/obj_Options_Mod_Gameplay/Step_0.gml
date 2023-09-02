@@ -63,10 +63,10 @@ if canmove
 			}
 			break;
 		case 3:
-			subtitle = "ALLOWS AN INFINITE AMOUNT OF LAPS";
+			subtitle = "TOGGLES WHAT LAPPING MODE TO USE";
 			CursorY = 300;
 			optionsaved_inflapping += (key_right2 + key_left2);
-			optionsaved_inflapping = wrap(optionsaved_inflapping, 0, 1);
+			optionsaved_inflapping = wrap(optionsaved_inflapping, 0, 2);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);
@@ -88,20 +88,6 @@ if canmove
 				ini_write_real("Settings", "enablejerald", optionsaved_enablejerald);
 				ini_close();
 				global.enablejerald = optionsaved_enablejerald;
-			}
-			break;
-		case 5:
-			subtitle = "MAKES THE LAPPING WORK SIMILAR TO THE SS LAP 3 MOD";
-			CursorY = 500;
-			optionsaved_challengelaps += (key_right2 + key_left2);
-			optionsaved_challengelaps = wrap(optionsaved_challengelaps, 0, 1);
-			if (key_jump)
-			{
-				scr_sound(sound_enemythrow);
-				ini_open("optionData.ini");
-				ini_write_real("Settings", "challengelaps", optionsaved_challengelaps);
-				ini_close();
-				global.challengelaps = optionsaved_challengelaps;
 			}
 			break;
 	}
