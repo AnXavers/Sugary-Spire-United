@@ -45,6 +45,25 @@ if (!shown)
                 titleY = 0
                 titleX = 1280
                 break
+		}
+        switch info.featuringinfo[0]
+        {
+            case (0 << 0):
+                featuringY = -750
+                featuringX = 0
+                break
+            case (1 << 0):
+                featuringY = 750
+                featuringX = 0
+                break
+            case (2 << 0):
+                featuringY = 0
+                featuringX = -1280
+                break
+            case (3 << 0):
+                featuringY = 0
+                featuringX = 1280
+                break
         }
 
     }
@@ -73,6 +92,16 @@ else
         {
             titleX = (approach(titleX, info.titleinfo[4], 40) + (info.titleinfo[3] == (7 << 0) ? irandom_range(-2, 2) : 0))
             titleY = ((approach(titleY, info.titleinfo[5], 40) + (info.titleinfo[3] == (6 << 0) ? wave(2, -2, 5, 0) : 0)) + (info.titleinfo[3] == (7 << 0) ? irandom_range(-2, 2) : 0))
+        }
+        if (info.featuringinfo[1] == (5 << 0))
+        {
+            featuringX = (lerp(featuringX, info.featuringinfo[3], 0.1) + (info.featuringinfo[2] == (7 << 0) ? irandom_range(-2, 2) : 0))
+            featuringY = ((lerp(featuringY, info.featuringinfo[4], 0.1) + (info.featuringinfo[2] == (6 << 0) ? wave(2, -2, 5, 0) : 0)) + (info.featuringinfo[2] == (7 << 0) ? irandom_range(-2, 2) : 0))
+        }
+        else
+        {
+            featuringX = (approach(featuringX, info.featuringinfo[3], 40) + (info.featuringinfo[2] == (7 << 0) ? irandom_range(-2, 2) : 0))
+            featuringY = ((approach(featuringY, info.featuringinfo[4], 40) + (info.featuringinfo[2] == (6 << 0) ? wave(2, -2, 5, 0) : 0)) + (info.featuringinfo[2] == (7 << 0) ? irandom_range(-2, 2) : 0))
         }
     }
     if ((!audio_is_playing(info.song)) && round(step) > 3)

@@ -32,8 +32,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Confecti",
+    "path": "folders/Sprites/Objects/Collectibles/Confecti.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -7,5 +7,6 @@ info =
 {
 	bginfo: [spr_chocoacard_bg, 2, 4, 8, 0, 0],
 	titleinfo: [spr_chocoacard_title, 0, 5, 6, 764, 100],
+	featuringinfo: [0, 5, 6, 200, 350],
 	song: mu_entryway_title
 };

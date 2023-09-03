@@ -120,7 +120,7 @@ if (global.lapcount > 1)
 	draw_sprite(spr_lapbg, 0, 480 + x_shk, lap_y + y_shk);
 	draw_text(480 + x_shk, lap_y + y_shk, global.lapcount);
 }
-if (global.lapcount >= 2)
+if (global.lapcount >= 2 && global.inflapping != 0)
 {
 	draw_set_halign(fa_left);
 	draw_sprite(spr_harrylap, image_index, 70, 485);

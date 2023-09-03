@@ -4,12 +4,12 @@ function scr_confecti_init()
 	switch (object_index)
 	{
 		default:
-			spr_idle = spr_marshmellow_idle;
-			spr_run = spr_marshemellow_run;
-			spr_runpanic = spr_marshmellow_panicWalk;
-			spr_panic = spr_marshmellow_panic;
-			spr_appear = spr_marshmallow_appear;
-			spr_taunt = spr_marshmellow_taunt;
+			spr_idle = obj_player.spr_confecti1_idle;
+			spr_run = obj_player.spr_confecti1_walk;
+			spr_runpanic = obj_player.spr_confecti1_panicWalk;
+			spr_panic = obj_player.spr_confecti1_panic;
+			spr_appear = obj_player.spr_confecti1_appear;
+			spr_taunt = obj_player.spr_confecti1_taunt;
 			global.mallowfollow = true;
 			if obj_player.character == "N"
 				scr_queue_tvanim(spr_pizzanotv_confecti1, 100);
@@ -17,12 +17,12 @@ function scr_confecti_init()
 				scr_queue_tvanim(spr_pizzytv_confecti1, 100);
 			break;
 		case obj_confectichoco:
-			spr_idle = spr_chocolate_idle;
-			spr_run = spr_chocolate_walk;
-			spr_runpanic = spr_chocolate_panicWalk;
-			spr_panic = spr_chocolate_panic;
-			spr_appear = spr_chocolate_appear;
-			spr_taunt = spr_chocolate_taunt;
+			spr_idle = obj_player.spr_confecti2_idle;
+			spr_run = obj_player.spr_confecti2_walk;
+			spr_runpanic = obj_player.spr_confecti2_panicWalk;
+			spr_panic = obj_player.spr_confecti2_panic;
+			spr_appear = obj_player.spr_confecti2_appear;
+			spr_taunt = obj_player.spr_confecti2_taunt;
 			global.chocofollow = true;
 			if obj_player.character == "N"
 				scr_queue_tvanim(spr_pizzanotv_confecti2, 100);
@@ -30,12 +30,12 @@ function scr_confecti_init()
 				scr_queue_tvanim(spr_pizzytv_confecti2, 100);
 			break;
 		case obj_confecticrack:
-			spr_idle = spr_crack_idle;
-			spr_run = spr_crack_run;
-			spr_runpanic = spr_crack_panicWalk;
-			spr_panic = spr_crack_panic;
-			spr_appear = spr_crack_appear;
-			spr_taunt = spr_crack_taunt;
+			spr_idle = obj_player.spr_confecti3_idle;
+			spr_run = obj_player.spr_confecti3_walk;
+			spr_runpanic = obj_player.spr_confecti3_panicWalk;
+			spr_panic = obj_player.spr_confecti3_panic;
+			spr_appear = obj_player.spr_confecti3_appear;
+			spr_taunt = obj_player.spr_confecti3_taunt;
 			global.crackfollow = true;
 			if obj_player.character == "N"
 				scr_queue_tvanim(spr_pizzanotv_confecti3, 100);
@@ -43,12 +43,12 @@ function scr_confecti_init()
 				scr_queue_tvanim(spr_pizzytv_confecti3, 100);
 			break;
 		case obj_confectiworm:
-			spr_idle = spr_gummyworm_idle;
-			spr_run = spr_gummyworm_walk;
-			spr_runpanic = spr_gummyworm_panicWalk;
-			spr_panic = spr_gummyworm_panic;
-			spr_appear = spr_gummyworm_appear;
-			spr_taunt = spr_gummyworm_taunt;
+			spr_idle = obj_player.spr_confecti4_idle;
+			spr_run = obj_player.spr_confecti4_walk;
+			spr_runpanic = obj_player.spr_confecti4_panicWalk;
+			spr_panic = obj_player.spr_confecti4_panic;
+			spr_appear = obj_player.spr_confecti4_appear;
+			spr_taunt = obj_player.spr_confecti4_taunt;
 			global.wormfollow = true;
 			if obj_player.character == "N"
 				scr_queue_tvanim(spr_pizzanotv_confecti4, 100);
@@ -56,12 +56,12 @@ function scr_confecti_init()
 				scr_queue_tvanim(spr_pizzytv_confecti4, 100);
 			break;
 		case obj_confecticandy:
-			spr_idle = spr_candy_idle;
-			spr_run = spr_candy_walk;
-			spr_runpanic = spr_candy_panicWalk;
-			spr_panic = spr_candy_panic;
-			spr_appear = spr_candy_appear;
-			spr_taunt = spr_candy_taunt;
+			spr_idle = obj_player.spr_confecti5_idle;
+			spr_run = obj_player.spr_confecti5_walk;
+			spr_runpanic = obj_player.spr_confecti5_panicWalk;
+			spr_panic = obj_player.spr_confecti5_panic;
+			spr_appear = obj_player.spr_confecti5_appear;
+			spr_taunt = obj_player.spr_confecti5_taunt;
 			global.candyfollow = true;
 			if obj_player.character == "N"
 				scr_queue_tvanim(spr_pizzanotv_confecti5, 100);
@@ -69,21 +69,21 @@ function scr_confecti_init()
 				scr_queue_tvanim(spr_pizzytv_confecti5, 100);
 			break;
 		case obj_rudejanitor:
-			spr_idle = spr_rudejanitor_idle;
-			spr_run = spr_rudejanitor_walk;
-			spr_runpanic = spr_rudejanitor_panicwalk;
-			spr_panic = spr_rudejanitor_panicidle;
-			spr_appear = spr_rudejanitor_appear;
-			spr_taunt = spr_rudejanitor_taunt;
+			spr_idle = obj_player.spr_janitor_idle;
+			spr_run = obj_player.spr_janitor_walk;
+			spr_runpanic = obj_player.spr_janitor_panicWalk;
+			spr_panic = obj_player.spr_janitor_panic;
+			spr_appear = obj_player.spr_janitor_appear;
+			spr_taunt = obj_player.spr_janitor_taunt;
 			global.janitorRudefollow = true;
 			break;
 		case obj_lapjanitor:
-			spr_idle = spr_janitor2_idle;
-			spr_run = spr_janitor2_run;
-			spr_runpanic = spr_janitor2_run;
-			spr_panic = spr_janitor2_idle;
-			spr_appear = spr_janitor2_jump;
-			spr_taunt = spr_janitor2_taunt;
+			spr_idle = obj_player.spr_lapjanitor_idle;
+			spr_run = obj_player.spr_lapjanitor_walk;
+			spr_runpanic = obj_player.spr_lapjanitor_panicWalk;
+			spr_panic = obj_player.spr_lapjanitor_panic;
+			spr_appear = obj_player.spr_lapjanitor_appear;
+			spr_taunt = obj_player.spr_lapjanitor_taunt;
 			global.janitorLapfollow = true;
 			break;
 	}

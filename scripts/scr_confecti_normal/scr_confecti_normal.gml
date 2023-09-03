@@ -52,6 +52,6 @@ function scr_confecti_normal()
 	{
 		instance_create(x, y, obj_confectitaunt);
 		state = 1;
-		image_index = choose(0, 1);
+		image_index = choose(0, 1, 2);
 	}
 }

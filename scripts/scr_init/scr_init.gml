@@ -74,8 +74,9 @@ global.janitortype = 1;
 global.lapcount = 1;
 global.Eranklength = 1;
 global.isoldw1 = 0;
-global.entergateroom = hub_hallway
-global.entergatedoor = "A"
+global.entergateroom = hub_hallway;
+global.entergatedoor = "A";
+global.coneballaggro = 0;
 
 ini_open("optionData.ini");
 global.fullscreen = ini_read_real("Settings", "fullscrn", 0);
@@ -105,6 +106,7 @@ global.erankstack = ini_read_real("Settings", "erankstack", 0);
 global.slopeangle = ini_read_real("Settings", "slopeangle", 1);
 global.inflapping = ini_read_real("Settings", "inflapping", 1);
 global.enablejerald = ini_read_real("Settings", "enablejerald", 1);
+global.richpresense = ini_read_real("Settings", "richpresense", 0);
 ini_close();
 
 audio_master_gain(global.masterVolume);

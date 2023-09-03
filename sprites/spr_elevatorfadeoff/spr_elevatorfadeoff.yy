@@ -4,7 +4,7 @@
   "name": "spr_elevatorfadeoff",
   "bbox_bottom": 239,
   "bbox_left": 0,
-  "bbox_right": 479,
+  "bbox_right": 397,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,

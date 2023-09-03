@@ -7,7 +7,7 @@ if (state == 1)
 	draw_set_halign(1);
 	draw_set_font(global.font);
 	if (!surface_exists(surface2))
-		surface2 = surface_create(480, 240);
+		surface2 = surface_create(100, 240);
 	surface_set_target(surface2);
 	draw_sprite_tiled(bg_menuTile, -1, drawx++, drawy++);
 	yy = 40;
@@ -15,14 +15,12 @@ if (state == 1)
 	{
 		txt = hub_array[i][1];
 		var c = (selected == i) ? c_white : 8421504;
-		draw_text_color(240, yy + ScrollY, txt, c, c, c, c, 1);
+		draw_text_color(50, yy + ScrollY, txt, c, c, c, c, 1);
 		yy += 60;
 	}
-	draw_set_blend_mode(3);
-	draw_sprite(spr_elevatorfadeoff, -1, 0, 0);
 	draw_set_blend_mode(0);
 	surface_reset_target();
-	draw_surface(surface2, 240, 150);
+	draw_surface(surface2, 200, 150);
 }
 else if (state == 2)
 {

@@ -15,6 +15,7 @@ function scr_levelSet()
 	instance_destroy(obj_discoball);
 	instance_destroy(obj_discoball);
 	instance_destroy(obj_danceoffprank);
+	instance_destroy(obj_lap2visual);
 	global.cutsceneManager = -4;
 	if (instance_exists(obj_cutsceneManager))
 		instance_destroy(obj_cutsceneManager);
@@ -37,7 +38,8 @@ function scr_levelSet()
 	global.hurtcounter = 0;
 	global.hurtmilestone = 0;
 	global.minesProgress = false;
-	global.exitgatetaunt = 0
+	global.exitgatetaunt = 0;
+	global.coneballaggro = 0;
 	obj_tv.image_index = 0;
 	obj_tv.tvsprite = spr_tvturnon;
 	obj_player.visible = true;

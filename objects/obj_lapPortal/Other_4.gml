@@ -3,5 +3,6 @@ with (instance_place(x, y, obj_doortrigger_parent))
 image_alpha = 0.5;
 if (global.panic && (instance_exists(obj_lapjanitor) || !global.enablejerald))
 	image_alpha = 1;
-if ((ds_list_find_index(global.saveroom, id) != -1) && !global.inflapping)
+if ((global.lapcount >= 2 && global.inflapping == 0) || (global.lapcount >= 4 && global.inflapping == 2))
 	instance_destroy()
+	

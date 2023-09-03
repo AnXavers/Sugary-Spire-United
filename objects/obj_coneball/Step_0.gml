@@ -3,8 +3,24 @@ if (image_alpha == 1)
 	var dir = point_direction(x, y, obj_player.x, obj_player.y);
 	if (!global.freezeframe)
 	{
-		x = approach(x, obj_player.x, lengthdir_x(8, dir));
-		y = approach(y, obj_player.y, lengthdir_y(8, dir));
+		if room = entryway_6b_new
+		{
+			x = approach(x, obj_player.x, lengthdir_x(4, dir));
+			y = approach(y, obj_player.y, lengthdir_y(4, dir));
+			sprite_index = spr_coneball_melting
+		}
+		else if global.coneballaggro != 1
+		{
+			x = approach(x, obj_player.x, lengthdir_x(8, dir));
+			y = approach(y, obj_player.y, lengthdir_y(8, dir));
+			sprite_index = spr_coneball_new
+		}
+		else
+		{
+			x = approach(x, obj_player.x, lengthdir_x(12, dir));
+			y = approach(y, obj_player.y, lengthdir_y(12, dir));
+			sprite_index = spr_coneball_aggro
+		}
 	}
 }
 else

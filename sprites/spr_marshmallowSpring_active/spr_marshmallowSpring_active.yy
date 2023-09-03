@@ -34,8 +34,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Objects",
+    "path": "folders/Sprites/Objects.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
