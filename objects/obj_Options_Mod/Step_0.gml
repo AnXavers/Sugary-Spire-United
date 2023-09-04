@@ -6,7 +6,7 @@ if (selected == 0)
 		optionselected -= 1;
 		scr_sound(sound_step);
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 4)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 3)
 	{
 		optionselected += 1;
 		scr_sound(sound_step);

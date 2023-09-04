@@ -56,7 +56,7 @@ function scr_enemy_stun()
 			hithsp = 5 * -_hh;
 		}
 	}
-	if ((vsp < 0 || hitvsp < 0) && place_meeting_collision(x, y - 1) && !place_meeting(x, y + hitvsp, obj_destructibles) && throw_hit && shoulderbashed <= 0)
+	if ((vsp < 0 || hitvsp < 0) && place_meeting_collision(x, y - 1) && !place_meeting(x, y + hitvsp, obj_destructibles) && throw_hit)
 	{
 		vsp = 5;
 		throw_hit = false;

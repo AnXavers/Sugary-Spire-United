@@ -72,7 +72,22 @@ add_music(rm_credits, mu_credits, mu_painter, false);
 add_music(tutorial_1, mu_tutorial, mu_painter, false);
 add_music(entryway_1, mu_waffle, mu_wafflesecret, false);
 add_music(entryway_1_new, mu_waffle, mu_wafflesecret, false);
+add_music(entryway_1_old, mu_waffle, mu_wafflesecret, false);
 add_music(steamy_1, mu_steamy, mu_steamysecret, false);
+add_music(steamy_1_old, mu_steamy, mu_steamysecret, false);
+add_music(steamy_7_old, mu_steamy, mu_steamysecret, true);
+add_music(steamy_8_old, mu_steamyinner, mu_steamysecret, true);
+add_music(molasses_1_old, mu_swamp1, mu_swampsecret, false);
+add_music(molasses_6_old, mu_swamp1, mu_swampsecret, true);
+add_music(molasses_6b_old, mu_swamp2, mu_swampsecret, true);
+add_music(mines_1_old, mu_mineshaft1, mu_minessecret, false, function()
+{
+	if (global.minesProgress)
+		return mu_mineshaft2;
+	else
+		return mu_mineshaft1;
+});
+add_music(mines_6_old, mu_mineshaft2, mu_minessecret, false);
 add_music(steamy_7, mu_steamy, mu_steamysecret, true);
 add_music(steamy_8, mu_steamyinner, mu_steamysecret, true);
 add_music(molasses_1, mu_swamp1, mu_swampsecret, false);

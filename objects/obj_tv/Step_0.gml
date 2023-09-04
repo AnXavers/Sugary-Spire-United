@@ -16,6 +16,7 @@ else
 if (global.hurtcounter >= global.hurtmilestone && global.hurtcounter >= 5)
 {
 	showtext = 1;
+	global.hurtmilestone += 5;
 	if (obj_player.character == "P")
 		character = "Pizzelle";
 	else if (obj_player.character == "N")
@@ -28,10 +29,8 @@ if (global.hurtcounter >= global.hurtmilestone && global.hurtcounter >= 5)
 		character = "The Noise";
 	else if (obj_player.character == "S")
 		character = "Peppino";
-	message = "You have hurt " + string(character) + " " + string(global.hurtmilestone) + " times..."
-	global.hurtmilestone += 5;
+	scr_controlprompt("[spr_promptfont]You have hurt " + string(character) + " " + string(global.hurtmilestone) + " times...", -4, 200);
 	scr_queue_tvanim(spr_pizzytvhurtext1, 100);
-	alarm[0] = 150;
 }
 if (obj_player.state == 56)
 {

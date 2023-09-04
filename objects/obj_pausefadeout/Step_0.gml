@@ -21,7 +21,6 @@ if (fadealpha >= 1)
 		instance_activate_object(obj_pause);
 		instance_activate_object(obj_parallax);
 		instance_activate_object(obj_screen);
-		instance_activate_object(obj_rpc);
 		instance_destroy();
 	}
 }

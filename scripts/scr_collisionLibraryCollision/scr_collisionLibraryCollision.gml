@@ -361,7 +361,7 @@ function instance_place_list_slope(argument0, argument1, argument2 = obj_slope, 
     return 0;
 }
 
-function place_meeting_slope(argument0, argument1, argument2 = obj_minedummycart, argument3 = 473) //place_meeting_slope
+function place_meeting_slope(argument0, argument1, argument2 = obj_minedummycart, argument3 = obj_slope) //place_meeting_slope
 {
     _check2 = (argument2 ? place_meeting_slopePlatform(argument0, argument1) : 0)
     return (instance_place_list_slope(argument0, argument1, argument3) > 0 || _check2);
@@ -410,12 +410,12 @@ function instance_place_list_slopeSolid(argument0, argument1, argument2 = obj_sl
     return 0;
 }
 
-function place_meeting_slopeSolid(argument0, argument1, argument2 = 473) //place_meeting_slopeSolid
+function place_meeting_slopeSolid(argument0, argument1, argument2 = obj_slope) //place_meeting_slopeSolid
 {
     return instance_place_list_slopeSolid(argument0, argument1, argument2) > 0;
 }
 
-function position_meeting_slopeSolid(argument0, argument1, argument2 = 473) //position_meeting_slopeSolid
+function position_meeting_slopeSolid(argument0, argument1, argument2 = obj_slope) //position_meeting_slopeSolid
 {
     old_mask = mask_index
     mask_index = spr_pixel

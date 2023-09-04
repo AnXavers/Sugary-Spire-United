@@ -298,6 +298,8 @@ function scr_characterspr()
 			spr_lapjanitor_panic = spr_janitor2_idle;
 			spr_lapjanitor_panicWalk = spr_janitor2_run;
 			spr_lapjanitor_taunt = spr_janitor2_taunt;
+			spr_large_destroyable_oneway = spr_onewayblock;
+			spr_dancewalk = spr_player_dancewalk
 			if global.newplayeranim == 1
 			{
 				spr_mach1 = spr_player_mach1_new;
@@ -725,7 +727,7 @@ function scr_characterspr()
 			spr_machslideboost = spr_playerN_machslideboost;
 			spr_machslideboostFallStart = spr_player_machslideboostFallStart;
 			spr_machslideboostFall = spr_player_machslideboostFall;
-			spr_machslideboost3 = spr_playerN_machslideboost;
+			spr_machslideboost3 = spr_playerN_mach3boost;
 			spr_machslideboost3FallStart = spr_player_machslideboost3FallStart;
 			spr_machslideboost3Fall = spr_player_machslideboost3Fall;
 			spr_land2 = spr_playerN_land2;
@@ -937,6 +939,7 @@ function scr_characterspr()
 			spr_lapjanitor_panic = spr_janitor2_idle;
 			spr_lapjanitor_panicWalk = spr_janitor2_run;
 			spr_lapjanitor_taunt = spr_janitor2_taunt;
+			spr_large_destroyable_oneway = spr_onewaybigblock;
 			break;
 	}
 }

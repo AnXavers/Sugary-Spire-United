@@ -6,3 +6,9 @@ if (!alarm[0])
 	alarm[0] = 5;
 drawx = x;
 drawy = y;
+if (sprite_index == spr_explosiveBarrel_destroyed && place_meeting_collision(x, y))
+{
+	instance_destroy()
+	instance_create(x, y, obj_explosioneffect)
+	scr_sound(sound_explosion)
+}

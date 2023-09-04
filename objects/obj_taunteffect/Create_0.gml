@@ -17,7 +17,9 @@ else
 random_index = irandom_range(0,100);
 if random_index = 100
 	tauntsound = sfx_goofytaunt
-scr_sound(tauntsound);
+	scr_sound(tauntsound);
+if (obj_player.character == "T" || obj_player.character == "S")
+	audio_sound_pitch(tauntsound, irandom_range(0,2));
 image_speed = 0.5;
 if (global.panic = 1 && global.exitgatetaunt < 10 && place_meeting(x, y, obj_exitgate))
 {

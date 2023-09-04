@@ -1,5 +1,8 @@
 audio_stop_sound(sound_parry);
 scr_sound(sound_parry);
+var random_index = irandom_range(0,100);
+if random_index = 100
+	instance_create(x, y, obj_sugarcoat)
 with (other.id)
 {
 	if (object_index == obj_eskimoprojectile)
@@ -36,9 +39,6 @@ with (obj_player)
 	image_index = 0;
 	movespeed = -8;
 	flash = 1;
-	random_index = irandom_range(0,100);
-	if random_index = 100
-		instance_create(x, y, obj_sugarcoat)
 	with (instance_create(x, y, obj_bangeffect))
 		sprite_index = spr_parryeffect;
 }

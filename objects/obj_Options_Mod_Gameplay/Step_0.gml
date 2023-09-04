@@ -55,11 +55,16 @@ if canmove
 			optionsaved_newlvldesign = wrap(optionsaved_newlvldesign, 0, 2);
 			if (key_jump)
 			{
-				scr_sound(sound_enemythrow);
-				ini_open("optionData.ini");
-				ini_write_real("Settings", "newlvldesign", optionsaved_newlvldesign);
-				ini_close();
-				global.newlvldesign = optionsaved_newlvldesign;
+				if global.levelname != "none"
+				{
+					scr_sound(sound_enemythrow);
+					ini_open("optionData.ini");
+					ini_write_real("Settings", "newlvldesign", optionsaved_newlvldesign);
+					ini_close();
+					global.newlvldesign = optionsaved_newlvldesign;
+				}
+				else
+					scr_sound(sound_enemyslap);
 			}
 			break;
 		case 3:

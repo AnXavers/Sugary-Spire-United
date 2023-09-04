@@ -1,5 +1,6 @@
 event_inherited();
 solidid = -4;
+sprite_index = obj_player.spr_large_destroyable_oneway
 if (!(ds_list_find_index(global.saveroom, id) != -1))
 {
 	with (instance_create(x, y, obj_solid))

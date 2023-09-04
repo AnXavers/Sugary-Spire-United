@@ -10,7 +10,7 @@ function state_player_barrelcrouch()
 			movespeed = approach(movespeed, xscale * 16, 0.65);
 		else
 			movespeed = approach(movespeed, 0, 0.45);
-		if (movespeed != 0 && place_meeting_solid(x + sign(xscale), y, 367) && (!place_meeting_slope(x + sign(xscale), y + 1) && (!place_meeting(x + sign(xscale), y, obj_destructibles) && !place_meeting(x + sign(xscale), y, obj_chocofrog))))
+		if (movespeed != 0 && place_meeting_solid(x + sign(xscale), y, obj_solid) && (!place_meeting_slope(x + sign(xscale), y + 1) && (!place_meeting(x + sign(xscale), y, obj_destructibles) && !place_meeting(x + sign(xscale), y, obj_chocofrog))))
 		{
 			input_buffer = 5;
 			movespeed = -(movespeed - (movespeed / 1.5));

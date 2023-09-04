@@ -1,7 +1,7 @@
 var i = 0;
-showcollisionarray[i++] = 367;
-showcollisionarray[i++] = 473;
-showcollisionarray[i++] = 510;
+showcollisionarray[i++] = obj_solid;
+showcollisionarray[i++] = obj_slope;
+showcollisionarray[i++] = obj_platform;
 showcollisionarray[i++] = obj_platformside;
 showcollisionarray[i++] = obj_movingplatformtrigger;
 showcollisionarray[i++] = obj_pitcollider;
