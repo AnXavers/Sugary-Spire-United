@@ -21,6 +21,8 @@ function scr_getinput()
 	key_shoot2 = false;
 	key_start = false;
 	key_start2 = false;
+	key_special = false;
+	key_special2 = false;
 	key_escape = false;
 	stickpressed = false;
 	if (global.shellactivate)

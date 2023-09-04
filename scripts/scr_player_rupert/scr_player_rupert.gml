@@ -164,12 +164,12 @@ function state_player_rupertjump()
 		if (!instance_exists(groundpoundEffect))
 			groundpoundEffect = instance_create(x, y, obj_groundpoundeffect, 
 			{
-				playerID: id
+				obj_player: id
 			});
 		if (vsp > 17 && !instance_exists(obj_piledrivereffect))
 			instance_create(x, y, obj_piledrivereffect, 
 			{
-				playerID: id
+				obj_player: id
 			});
 		blue_aft++;
 		if (blue_aft >= 6)

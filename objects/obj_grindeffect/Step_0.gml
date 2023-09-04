@@ -1,4 +1,4 @@
-x = playerID.x;
-y = playerID.y;
-if ((playerID.state != 39 && playerID.state != 101) || !playerID.grounded)
+x = obj_player.x;
+y = obj_player.y;
+if ((obj_player.state != 39 && obj_player.state != 101) || !obj_player.grounded)
 	instance_destroy();

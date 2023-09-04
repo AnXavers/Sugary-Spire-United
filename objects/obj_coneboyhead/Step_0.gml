@@ -2,7 +2,7 @@ hsp = image_xscale * movespeed;
 if (afterimagebuffer > 0)
 	afterimagebuffer--;
 squishscale = approach(squishscale, 1, 0.1);
-if ((scr_solid(x + sign(hsp), y) && !(scr_slope() && !scr_solid(x + sign(hsp), y - 2)) && !place_meeting(x + hsp, y, obj_destructibles)) || movespeed <= 0 || distance_to_object(playerID) > 500)
+if ((scr_solid(x + sign(hsp), y) && !(scr_slope() && !scr_solid(x + sign(hsp), y - 2)) && !place_meeting(x + hsp, y, obj_destructibles)) || movespeed <= 0 || distance_to_object(obj_player) > 500)
 {
 }
 if (afterimagebuffer <= 0)

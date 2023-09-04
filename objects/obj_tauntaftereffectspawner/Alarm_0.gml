@@ -1,4 +1,4 @@
-with (playerID)
+with (obj_player)
 {
 	with (create_afterimage(choose(1, 2), xscale))
 	{

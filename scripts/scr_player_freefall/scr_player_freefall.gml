@@ -7,7 +7,7 @@ function state_player_freefall()
 		if (verticalMovespeed > 17 && !instance_exists(obj_piledrivereffect))
 			instance_create(x, y, obj_piledrivereffect, 
 			{
-				playerID: id
+				obj_player: id
 			});
 	}
 	verticalMovespeed += grav;
@@ -113,7 +113,7 @@ function state_player_freefall()
 		if (!instance_exists(groundpoundEffect))
 			groundpoundEffect = instance_create(x, y, obj_groundpoundeffect, 
 			{
-				playerID: id
+				obj_player: id
 			});
 	}
 }

@@ -1,7 +1,6 @@
 audio_stop_sound(sound_parry);
 scr_sound(sound_parry);
-var random_index = irandom_range(0,100);
-if random_index = 100
+if chance(0.01)
 	instance_create(x, y, obj_sugarcoat)
 with (other.id)
 {

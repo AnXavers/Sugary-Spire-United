@@ -79,7 +79,7 @@ function scr_pizzano_machtwirl()
 			if (!instance_exists(obj_superdashcloud) && grounded)
 				instance_create(x, y, 451, 
 				{
-					playerID: id
+					obj_player: id
 				});
 			p1Vibration(30, 5);
 			image_index = 0;

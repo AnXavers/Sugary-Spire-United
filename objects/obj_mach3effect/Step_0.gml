@@ -1,4 +1,4 @@
-if (playerID.state != 70 && playerID.state != 3 && playerID.state != 5 && playerID.state != 69 && playerID.state != 17 && playerID.state != 71 && playerID.state != 37 && playerID.state != 28 && playerID.state != 34 && playerID.state != 36 && playerID.state != 101 && playerID.state != 31 && playerID.state != 28 && playerID.state != 63 && playerID.state != 93 && playerID.state != 96 && playerID.state != 125 && (playerID.state != 60 && playerID.state != 89 && playerID.state != 103 && global.cane == 0 && playerID.state != 104 && playerID.state != 121 && playerID.state != 68))
+if (obj_player.state != 70 && obj_player.state != 3 && obj_player.state != 5 && obj_player.state != 69 && obj_player.state != 17 && obj_player.state != 71 && obj_player.state != 37 && obj_player.state != 28 && obj_player.state != 34 && obj_player.state != 36 && obj_player.state != 101 && obj_player.state != 31 && obj_player.state != 28 && obj_player.state != 63 && obj_player.state != 93 && obj_player.state != 96 && obj_player.state != 125 && (obj_player.state != 60 && obj_player.state != 89 && obj_player.state != 103 && global.cane == 0 && obj_player.state != 104 && obj_player.state != 121 && obj_player.state != 68))
 	vanish = 1;
 if (vanish == 1)
 {
@@ -7,7 +7,7 @@ if (vanish == 1)
 	else if (gonealpha <= 0)
 		instance_destroy();
 }
-visible = playerID.visible;
+visible = obj_player.visible;
 if (obj_player.state != 0)
 	image_alpha = obj_player.movespeed / 16;
 else

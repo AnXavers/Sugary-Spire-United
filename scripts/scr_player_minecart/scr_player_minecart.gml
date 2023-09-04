@@ -30,7 +30,7 @@ function state_player_minecart()
 	if (movespeed >= 14 && !instance_exists(obj_chargeeffect))
 		instance_create(x + (32 * xscale), y, obj_chargeeffect, 
 		{
-			playerID: id
+			obj_player: id
 		});
 	if (scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles) && !place_meeting(x + xscale, y, obj_metalblock) && !place_meeting(x + xscale, y, obj_chocofrog))
 	{

@@ -119,22 +119,22 @@ function scr_rocketfist_pizzano()
 		if (!instance_exists(obj_crazyrunothereffect) && sprite_index == spr_crazyrun)
 			instance_create(x, y, obj_crazyrunothereffect, 
 			{
-				playerID: id
+				obj_player: id
 			});
 		if (!instance_exists(obj_crazyruneffect))
 			instance_create(x, y, obj_crazyruneffect, 
 			{
-				playerID: id
+				obj_player: id
 			});
 		if (!instance_exists(obj_chargeeffect) && sprite_index != spr_dive)
 			instance_create(x, y, obj_chargeeffect, 
 			{
-				playerID: id
+				obj_player: id
 			});
 		if (!instance_exists(obj_superdashcloud) && grounded)
 			instance_create(x, y, obj_superdashcloud, 
 			{
-				playerID: id
+				obj_player: id
 			});
 	}
 	image_speed = 0.35;

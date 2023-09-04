@@ -47,6 +47,6 @@ function state_player_grind()
 	if (!instance_exists(obj_grindeffect))
 		instance_create(x, y, obj_grindeffect, 
 		{
-			playerID: id
+			obj_player: id
 		});
 }

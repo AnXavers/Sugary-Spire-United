@@ -4,13 +4,13 @@ switch (state)
 		if (!instance_exists(obj_fadeout))
 		{
 			var length = array_length(hub_array) - 1;
-			if (playerID.key_up2)
+			if (obj_player.key_up2)
 				selected--;
-			if (playerID.key_down2)
+			if (obj_player.key_down2)
 				selected++;
 			ScrollY = lerp(ScrollY, (selected / length) * -(48 * length), 0.15);
 			selected = clamp(selected, 0, length);
-			if (playerID.key_jump2)
+			if (obj_player.key_jump2)
 			{
 				if (hub_array[selected][0] != room)
 				{
@@ -33,6 +33,6 @@ switch (state)
 		}
 		break;
 	case 2:
-		if (playerID.key_jump && alarm[0] != -1)
+		if (obj_player.key_jump && alarm[0] != -1)
 			alarm[0] = 1;
 }

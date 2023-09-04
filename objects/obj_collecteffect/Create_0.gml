@@ -14,8 +14,7 @@ targetx = 128;
 targety = 96;
 if (choosed == 0)
 {
-	playerID = obj_player;
-	switch (playerID.character)
+	switch (obj_player.character)
 	{
 		default:
 			sprite_index = choose(spr_collect1, spr_collect2, spr_collect3, spr_collect4, spr_collect5);

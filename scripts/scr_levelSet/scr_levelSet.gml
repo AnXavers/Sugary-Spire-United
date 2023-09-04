@@ -40,6 +40,7 @@ function scr_levelSet()
 	global.minesProgress = false;
 	global.exitgatetaunt = 0;
 	global.coneballaggro = 0;
+	global.dolap10fg = 0;
 	obj_tv.image_index = 0;
 	obj_tv.tvsprite = spr_tvturnon;
 	obj_player.visible = true;

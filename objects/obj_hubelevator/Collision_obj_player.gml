@@ -3,7 +3,6 @@ if (state == 0 && other.state != 62 && other.hsp == 0 && other.grounded && other
 	if selected != 6
 	{
 		state = 1;
-		playerID = other.id;
 		other.state = 110;
 		other.key_up2 = 0;
 		other.movespeed = 0;

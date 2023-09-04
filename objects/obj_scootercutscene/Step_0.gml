@@ -3,7 +3,7 @@ if (hit)
 if (sprite_index == spr_file3 && !instance_exists(obj_superdashcloud))
 	instance_create(x - 100, y, obj_superdashcloud, 
 	{
-		playerID: id
+		obj_player: id
 	});
 if (x >= 960 && !instance_exists(obj_fadeout))
 {

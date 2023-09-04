@@ -1,6 +1,5 @@
 image_speed = 0.35;
-playerID = obj_player;
-image_xscale = playerID.xscale;
-x = playerID.x;
-y = playerID.y;
+image_xscale = obj_player.xscale;
+x = obj_player.x;
+y = obj_player.y;
 depth = 0;

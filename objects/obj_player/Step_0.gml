@@ -171,7 +171,7 @@ if (((place_meeting(x, y, obj_door) && !place_meeting(x, y, obj_doorblocked)) ||
 if (((state == 69 && sprite_index != spr_mach1) || state == 70) && !instance_exists(obj_speedlines))
 	instance_create(x, y, obj_speedlines, 
 	{
-		playerID: id
+		obj_player: id
 	});
 if (state == 106)
 {
@@ -204,7 +204,7 @@ if (state != 45)
 		if (!instance_exists(supertaunteffect))
 			supertaunteffect = instance_create(x, y, 65, 
 			{
-				playerID: other.id
+				obj_player: other.id
 			});
 	}
 }

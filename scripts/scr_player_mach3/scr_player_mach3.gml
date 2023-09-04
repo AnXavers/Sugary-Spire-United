@@ -208,22 +208,22 @@ function state_player_mach3()
 	if (sprite_index == spr_crazyrun && !instance_exists(obj_crazyrunothereffect))
 		instance_create(x, y, obj_crazyrunothereffect, 
 		{
-			playerID: id
+			obj_player: id
 		});
 	if (!instance_exists(obj_crazyruneffect))
 		instance_create(x, y, obj_crazyruneffect, 
 		{
-			playerID: id
+			obj_player: id
 		});
 	if (!instance_exists(obj_chargeeffect) && sprite_index != spr_dive)
 		instance_create(x, y, obj_chargeeffect, 
 		{
-			playerID: id
+			obj_player: id
 		});
 	if (!instance_exists(obj_superdashcloud) && grounded)
 		instance_create(x, y, obj_superdashcloud, 
 		{
-			playerID: id
+			obj_player: id
 		});
 	if (sprite_index == spr_mach3player)
 		image_speed = 0.4;

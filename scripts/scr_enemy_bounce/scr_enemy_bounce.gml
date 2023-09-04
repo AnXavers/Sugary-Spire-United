@@ -71,27 +71,27 @@ function scr_enemy_bounce()
 	}
 	if (sprite_index == landspr && floor(image_index) == (image_number - 1))
 	{
-		if (global.bosshealth == 8 && !instance_exists(obj_noisey))
-			instance_create(room_width - (room_width / 4), 60, obj_noisey);
-		else if (global.bosshealth == 7 && !instance_exists(obj_noisey))
+		if (global.bosshealth == 8 && !instance_exists(obj_noisebomb))
+			instance_create(room_width - (room_width / 4), 60, obj_noisebomb);
+		else if (global.bosshealth == 7 && !instance_exists(obj_noisebomb))
 		{
-			instance_create(room_width - (room_width / 4), 60, obj_noisey);
-			instance_create(room_width / 4, 60, obj_noisey);
+			instance_create(room_width - (room_width / 4), 60, obj_noisebomb);
+			instance_create(room_width / 4, 60, obj_noisebomb);
 		}
-		else if (global.bosshealth == 6 && !instance_exists(obj_noisey))
+		else if (global.bosshealth == 6 && !instance_exists(obj_noisebomb))
 		{
-			instance_create(room_width - (room_width / 4), 60, obj_noisey);
-			instance_create(room_width / 4, 60, obj_noisey);
+			instance_create(room_width - (room_width / 4), 60, obj_noisebomb);
+			instance_create(room_width / 4, 60, obj_noisebomb);
 		}
-		else if (global.bosshealth == 5 && !instance_exists(obj_noisey))
+		else if (global.bosshealth == 5 && !instance_exists(obj_noisebomb))
 		{
-			instance_create(room_width - (room_width / 4), 60, obj_noisey);
-			instance_create(room_width / 4, 60, obj_noisey);
+			instance_create(room_width - (room_width / 4), 60, obj_noisebomb);
+			instance_create(room_width / 4, 60, obj_noisebomb);
 		}
 		else if (global.bosshealth == 4)
 		{
-			if (!instance_exists(obj_noisey))
-				instance_create(room_width / 4, 60, obj_noisey);
+			if (!instance_exists(obj_noisebomb))
+				instance_create(room_width / 4, 60, obj_noisebomb);
 		}
 		else if (global.bosshealth == 3)
 		{
@@ -101,8 +101,8 @@ function scr_enemy_bounce()
 				movespeed = -3;
 				image_xscale = -1;
 			}
-			if (!instance_exists(obj_noisey))
-				instance_create(room_width - (room_width / 4), 60, obj_noisey);
+			if (!instance_exists(obj_noisebomb))
+				instance_create(room_width - (room_width / 4), 60, obj_noisebomb);
 		}
 		if (global.bosshealth == 2)
 		{
@@ -112,10 +112,10 @@ function scr_enemy_bounce()
 				movespeed = -3;
 				image_xscale = -1;
 			}
-			if (!instance_exists(obj_noisey))
+			if (!instance_exists(obj_noisebomb))
 			{
-				instance_create(room_width - (room_width / 4), 60, obj_noisey);
-				instance_create(room_width / 4, 60, obj_noisey);
+				instance_create(room_width - (room_width / 4), 60, obj_noisebomb);
+				instance_create(room_width / 4, 60, obj_noisebomb);
 			}
 		}
 		if (global.bosshealth == 1)
@@ -126,10 +126,10 @@ function scr_enemy_bounce()
 				movespeed = -3;
 				image_xscale = -1;
 			}
-			if (!instance_exists(obj_noisey))
+			if (!instance_exists(obj_noisebomb))
 			{
-				instance_create(room_width - (room_width / 4), 60, obj_noisey);
-				instance_create(room_width / 4, 60, obj_noisey);
+				instance_create(room_width - (room_width / 4), 60, obj_noisebomb);
+				instance_create(room_width / 4, 60, obj_noisebomb);
 			}
 		}
 		image_index = 0;

@@ -32,7 +32,7 @@ switch (state)
 		y += lengthdir_y(movespeed, _target_dir);
 		var _hsp = x - xprevious;
 		var _vsp = y - yprevious;
-		with (playerID)
+		with (obj_player)
 		{
 			if (state == states.hooks)
 			{
@@ -54,7 +54,7 @@ switch (state)
 			y = hookStopID.y;
 			state = 1;
 			visible = true;
-			with (playerID)
+			with (obj_player)
 			{
 				x = other.hookStopID.x;
 				y = other.hookStopID.y - 14;

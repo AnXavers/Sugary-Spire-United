@@ -1,3 +1,3 @@
-image_xscale = playerID.xscale;
-if (playerID.movespeed <= 12)
+image_xscale = obj_player.xscale;
+if (obj_player.movespeed <= 12)
 	instance_destroy();

@@ -87,8 +87,6 @@ function state_player_cottondrill()
 		cotton_afterimagetimer--;
 	if (cotton_afterimagetimer <= 0)
 	{
-		with (instance_create(x, y, obj_cotton_aftereffect))
-			playerID = other.id;
 		cotton_afterimagetimer = 6;
 	}
 }

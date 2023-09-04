@@ -8,7 +8,6 @@ if (state == 0)
 			other.y = other.ystart;
 			scr_taunt_storeVariables();
 			state = states.hooks;
-			other.playerID = id;
 		}
 		state = 2;
 	}

@@ -7,6 +7,5 @@ with (other)
 		sprite_index = spr_grab;
 		image_index = 0;
 		other.state = states.grab;
-		other.playerID = id;
 	}
 }

@@ -86,7 +86,7 @@ function state_player_mach2()
 				sprite_index = spr_mach3player;
 			instance_create(x, y, obj_jumpdust, 
 			{
-				playerID: id
+				obj_player: id
 			});
 		}
 	}
@@ -195,11 +195,11 @@ function state_player_mach2()
 	{
 		with (instance_create(x, y, obj_dashcloud, 
 		{
-			playerID: id
+			obj_player: id
 		}))
 		{
-			playerID.dashCloudID = id;
-			if (playerID.movespeed >= 8)
+			obj_player.dashCloudID = id;
+			if (obj_player.movespeed >= 8)
 				sprite_index = spr_dashcloud2;
 			else
 				sprite_index = spr_dashcloud;

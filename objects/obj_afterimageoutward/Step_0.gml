@@ -7,7 +7,7 @@ if (!global.freezeframe)
 		else if (gonealpha <= 0)
 			instance_destroy();
 	}
-	visible = playerID.visible;
+	visible = obj_player.visible;
 	with (realcol)
 	{
 		switch (other.color)

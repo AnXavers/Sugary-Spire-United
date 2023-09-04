@@ -1,5 +1,5 @@
-if (playerID.state != 74 && !(playerID.state == 150))
+if (obj_player.state != 74 && !(obj_player.state == 150))
 	instance_destroy();
-x = playerID.x;
-y = playerID.y + 32;
-depth = playerID.depth - 6;
+x = obj_player.x;
+y = obj_player.y + 32;
+depth = obj_player.depth - 6;

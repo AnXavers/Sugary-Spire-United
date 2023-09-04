@@ -1,5 +1,4 @@
 event_inherited();
-playerID = obj_player;
 image_speed = 0;
 image_alpha = 1;
 sprite_index = obj_player.sprite_index;

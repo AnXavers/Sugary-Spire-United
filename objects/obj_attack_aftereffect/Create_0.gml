@@ -5,4 +5,3 @@ sprite_index = obj_player.sprite_index;
 image_index = obj_player.image_index;
 image_speed = 0;
 image_xscale = obj_player.xscale;
-playerID = obj_player;

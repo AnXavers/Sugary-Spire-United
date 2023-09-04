@@ -21,3 +21,12 @@ else if global.inflapping == 2
 			instance_create(x, y, obj_panicchanger);
 	}
 }
+if (global.lapcount = 10)
+{
+	global.lap10fg = layer_create(-20, "Backgrounds_foreground");
+	global.lap10bgspr = layer_background_create(global.lap10fg, bg_collapsing);
+	layer_background_htiled(global.lap10bgspr, true);
+	layer_background_vtiled(global.lap10bgspr, true);
+    layer_vspeed(global.lap10fg, 3);
+	global.dolap10fg = 1;
+}

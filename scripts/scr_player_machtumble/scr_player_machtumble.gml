@@ -91,8 +91,6 @@ function state_player_machtumble()
 		attack_afterimagetimer--;
 	if (attack_afterimagetimer <= 0 && vsp <= 0)
 	{
-		with (instance_create(x, y, obj_attack_aftereffect))
-			playerID = other.id;
 		attack_afterimagetimer = 6;
 	}
 }

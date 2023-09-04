@@ -74,7 +74,7 @@ function state_player_machslide()
 	{
 		with (instance_create(x, y, obj_dashcloud, 
 		{
-			playerID: id
+			obj_player: id
 		}))
 			other.dashCloudID = id;
 	}

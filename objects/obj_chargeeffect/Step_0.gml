@@ -1,11 +1,11 @@
-image_xscale = playerID.xscale;
-if (playerID.state != 70 && playerID.state != 101)
+image_xscale = obj_player.xscale;
+if (obj_player.state != 70 && obj_player.state != 101)
 	instance_destroy();
-if (playerID.state != 101)
-	x = playerID.x + (16 * playerID.xscale);
-else if (playerID.state == 101)
-	x = playerID.x + (32 * playerID.xscale);
-y = playerID.y;
-depth = playerID.depth - 6;
-if (playerID.state == 31 || playerID.sprite_index == playerID.spr_dive || (playerID.state == 101 && playerID.movespeed < 12))
+if (obj_player.state != 101)
+	x = obj_player.x + (16 * obj_player.xscale);
+else if (obj_player.state == 101)
+	x = obj_player.x + (32 * obj_player.xscale);
+y = obj_player.y;
+depth = obj_player.depth - 6;
+if (obj_player.state == 31 || obj_player.sprite_index == obj_player.spr_dive || (obj_player.state == 101 && obj_player.movespeed < 12))
 	instance_destroy();

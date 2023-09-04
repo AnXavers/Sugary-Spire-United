@@ -226,10 +226,9 @@ function state_player_normal()
 		headless = true;
 		with (instance_create(x, y, obj_coneboyhead))
 		{
-			playerID = other.id;
 			image_xscale = other.xscale;
 			movespeed = 10;
-			if (!playerID.key_up)
+			if (!obj_player.key_up)
 				vsp = -6;
 			else
 				vsp = -12;
