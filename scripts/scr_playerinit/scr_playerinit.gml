@@ -52,7 +52,7 @@ function scr_playerrespawn(argument0 = true)
 			vsp = -3;
 		}
 	}
-	else if (room != timesuproom && !instance_exists(obj_techdiff))
+	else if (room != timesuproom && !instance_exists(obj_techdiff) && !instance_exists(obj_fadeout))
 		instance_create(x, y, obj_techdiff);
 }
 function scr_playerstate()

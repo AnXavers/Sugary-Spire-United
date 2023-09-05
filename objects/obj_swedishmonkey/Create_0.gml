@@ -1,0 +1,12 @@
+event_inherited();
+landspr = spr_swedishmonkey_walk;
+idlespr = spr_swedishmonkey_stun;
+fallspr = spr_swedishmonkey_walk;
+stunfallspr = spr_swedishmonkey_stun;
+walkspr = spr_swedishmonkey_walk;
+turnspr = spr_swedishmonkey_walk;
+recoveryspr = spr_swedishmonkey_walk;
+grabbedspr = spr_swedishmonkey_stun;
+scaredspr = spr_swedishmonkey_scared;
+deadspr = spr_swedishmonkey_dead;
+spr_throw = spr_swedishmonkey_eat;

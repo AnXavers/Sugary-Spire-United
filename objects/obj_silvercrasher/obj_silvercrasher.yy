@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Baddie",
-    "path": "folders/Objects/Baddie.yy",
+    "name": "Enemie",
+    "path": "folders/Objects/Baddie/Enemie.yy",
   },
   "parentObjectId": {
     "name": "obj_coneboy",

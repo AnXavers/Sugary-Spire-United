@@ -26,6 +26,7 @@
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"targetRoom","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"63","varType":4,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"ResetMusic","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"false","varType":4,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"targetDoor","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"\"A\"","varType":4,},
   ],
   "solid": false,
   "spriteId": null,

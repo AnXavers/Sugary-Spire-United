@@ -23,7 +23,7 @@ else if global.inflapping == 2
 }
 if (global.lapcount = 10)
 {
-	global.lap10fg = layer_create(-20, "Backgrounds_foreground");
+	global.lap10fg = layer_create(-50, "Backgrounds_foreground");
 	global.lap10bgspr = layer_background_create(global.lap10fg, bg_collapsing);
 	layer_background_htiled(global.lap10bgspr, true);
 	layer_background_vtiled(global.lap10bgspr, true);

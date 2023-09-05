@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Estate",
+    "path": "folders/Sprites/Backgrounds/World 2/Estate.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

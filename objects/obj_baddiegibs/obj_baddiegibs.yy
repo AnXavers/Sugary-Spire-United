@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Projectiles & Effects",
+    "path": "folders/Objects/Baddie/Projectiles & Effects.yy",
   },
   "parentObjectId": {
     "name": "obj_parentparticle",
