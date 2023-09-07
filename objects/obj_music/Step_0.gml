@@ -38,8 +38,12 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 	{
 		if global.levelname == "finale"
 			_new_song = mu_finale;
+		else if global.levelname == "yogurt"
+			_new_song = mu_lap4;
 		else if !global.defaultlapmusic
+		{
             if (obj_player.character == "P")
+			{
                 if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
                     _new_song = mu_sucrose;
                 else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
@@ -48,7 +52,9 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
                     _new_song = mu_lap;
                 else 
                     _new_song = mu_escape;
+			}
             else if (obj_player.character == "T")
+			{
                 if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
                     _new_song = mu_mayhem;
                 else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
@@ -57,7 +63,9 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
                     _new_song = mu_noiselap;
                 else 
                     _new_song = mu_noiseescape;
+			}
             else if (obj_player.character == "S")
+			{
                 if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
                     _new_song = mu_mayhem;
                 else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
@@ -66,7 +74,9 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
                     _new_song = mu_peppinolap;
                 else 
                     _new_song = mu_peppinoescape;
+			}
 			else
+			{
                 if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
                     _new_song = mu_sucrose;
                 else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
@@ -75,7 +85,10 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
                     _new_song = mu_pizzanolap;
                 else 
                     _new_song = mu_pizzanoescape;
+			}
+		}
 		else
+		{
 			if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
 				_new_song = global.lap10song
 			else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
@@ -84,6 +97,7 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 				_new_song = global.lap2song
 			else 
 				_new_song = global.escapesong
+		}
 		unforce_cont = true;
 	}
 	if (_new_song != -4 && music != _new_song && music != mu_sucrose)

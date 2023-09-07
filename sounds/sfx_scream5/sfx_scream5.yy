@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 3.06,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Baddie",
+    "path": "folders/Sounds/Sounds/Baddie.yy",
   },
   "preload": true,
   "sampleRate": 44100,

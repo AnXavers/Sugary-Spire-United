@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.957,
+  "duration": 0.957729,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Baddie",
+    "path": "folders/Sounds/Sounds/Baddie.yy",
   },
   "preload": true,
   "sampleRate": 48000,

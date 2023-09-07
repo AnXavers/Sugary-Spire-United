@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 6.602062,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "HUD",
+    "path": "folders/Sounds/Sounds/HUD.yy",
   },
   "preload": true,
   "sampleRate": 48000,

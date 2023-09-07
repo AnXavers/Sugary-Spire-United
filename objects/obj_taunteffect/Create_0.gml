@@ -9,7 +9,7 @@ audio_stop_sound(sound_taunt8);
 if (obj_player.character == "P")
 	tauntsound = choose(sound_taunt1, sound_taunt2, sound_taunt3, sound_taunt4, sound_taunt5, sound_taunt6, sound_taunt7);
 else if (obj_player.character == "N")
-	tauntsound = choose(sound_tauntpizzano1, sound_tauntpizzano2, sound_tauntpizzano3, sound_tauntpizzano4, sound_tauntpizzano5, sound_tauntpizzano6, sound_tauntpizzano7, sound_tauntpizzano8);
+	tauntsound = choose(sfx_tauntpizzano1, sfx_tauntpizzano2, sfx_tauntpizzano3, sfx_tauntpizzano4, sfx_tauntpizzano5, sfx_tauntpizzano6, sfx_tauntpizzano7, sfx_tauntpizzano8);
 else if (obj_player.character == "T")
 	tauntsound = sound_tauntpeppino
 else

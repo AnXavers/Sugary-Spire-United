@@ -293,24 +293,6 @@ function meta_noclip()
 		argumentDescriptions: []
 	};
 }
-function sh_fuckyou()
-{
-	audio_stop_sound(sound_youfuckindick);
-	audio_stop_sound(sound_BITCH);
-	scr_sound(sound_youfuckindick, sound_BITCH);
-}
-function meta_fuckyou()
-{
-	return 
-	{
-		description: "fuck you",
-		arguments: [],
-		suggestions: [],
-		argumentDescriptions: [],
-		hidden: true,
-		deferred: false
-	};
-}
 function sh_give_all()
 {
 	for (var numb = 1; numb < 6; numb++)

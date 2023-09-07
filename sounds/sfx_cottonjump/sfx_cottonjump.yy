@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.409977,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Cotton",
+    "path": "folders/Sounds/Sounds/Player/Cotton.yy",
   },
   "preload": true,
   "sampleRate": 44100,

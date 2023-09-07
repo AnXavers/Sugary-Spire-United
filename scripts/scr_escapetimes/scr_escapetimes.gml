@@ -71,6 +71,11 @@ function scr_escapetimes(argument0 = global.levelname)
 		case "finale":
 			minutes = 8;
 			seconds = 0;
+			break;
+		case "yogurt":
+			minutes = 8;
+			seconds = 0;
+			break;
 		default:
 			minutes = 99124871759815;
 			seconds = 59;

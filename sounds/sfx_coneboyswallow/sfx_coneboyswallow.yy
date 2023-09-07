@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.266,
+  "duration": 0.266349,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Coneboy",
+    "path": "folders/Sounds/Sounds/Player/Coneboy.yy",
   },
   "preload": true,
   "sampleRate": 44100,

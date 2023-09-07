@@ -44,12 +44,12 @@ if (jandraw == 1)
 		draw_sprite_ext(lapjanspr, 0, 510, 88 + clipy, janscale, janscale, 0, c_white, 1);
 	}
 }
-draw_sprite_ext(spr_confecti1rank, global.mallowfollow, 514 + (shake1 ? irandom_range(-2, 2) : 0), 190 + (shake1 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
-draw_sprite_ext(spr_confecti2rank, global.chocofollow, 594 + (shake2 ? irandom_range(-2, 2) : 0), 186 + (shake2 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
-draw_sprite_ext(spr_confecti3rank, global.crackfollow, 677 + (shake3 ? irandom_range(-2, 2) : 0), 187 + (shake3 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
-draw_sprite_ext(spr_confecti4rank, global.wormfollow, 754 + (shake4 ? irandom_range(-2, 2) : 0), 195 + (shake4 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
-draw_sprite_ext(spr_confecti5rank, global.candyfollow, 828 + (shake5 ? irandom_range(-2, 2) : 0), 199 + (shake5 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
-draw_sprite_ext(spr_rankcake, cakedex, 499 + (pshake ? irandom_range(-4, 4) : 0), 430 + (pshake ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
+draw_sprite_ext(obj_player.spr_confecti1_rank, global.mallowfollow, 514 + (shake1 ? irandom_range(-2, 2) : 0), 190 + (shake1 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
+draw_sprite_ext(obj_player.spr_confecti2_rank, global.chocofollow, 594 + (shake2 ? irandom_range(-2, 2) : 0), 186 + (shake2 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
+draw_sprite_ext(obj_player.spr_confecti3_rank, global.crackfollow, 677 + (shake3 ? irandom_range(-2, 2) : 0), 187 + (shake3 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
+draw_sprite_ext(obj_player.spr_confecti4_rank, global.wormfollow, 754 + (shake4 ? irandom_range(-2, 2) : 0), 195 + (shake4 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
+draw_sprite_ext(obj_player.spr_confecti5_rank, global.candyfollow, 828 + (shake5 ? irandom_range(-2, 2) : 0), 199 + (shake5 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
+draw_sprite_ext(obj_player.spr_cakerank, cakedex, 499 + (pshake ? irandom_range(-4, 4) : 0), 430 + (pshake ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
 i = 0;
 _string = round(string(countpoint));
 _string_length = string_length(_string);

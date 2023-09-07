@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.004,
+  "duration": 1.004422,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Cotton",
+    "path": "folders/Sounds/Sounds/Player/Cotton.yy",
   },
   "preload": true,
   "sampleRate": 44100,

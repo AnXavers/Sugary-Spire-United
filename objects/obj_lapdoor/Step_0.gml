@@ -14,7 +14,7 @@ with (obj_player)
 		}
 		else if (global.janitorRudefollow == 1)
 		{
-			scr_sound(sound_unlockingdoor);
+			scr_sound(sfx_unlockingdoor);
 			state = 61;
 			image_index = 0;
 			obj_camera.chargecamera = 0;

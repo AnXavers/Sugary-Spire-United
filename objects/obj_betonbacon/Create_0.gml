@@ -1,0 +1,13 @@
+event_inherited();
+landspr = spr_betonplaceholder;
+idlespr = spr_betonplaceholder;
+fallspr = spr_betonplaceholder;
+stunfallspr = spr_betonplaceholder;
+walkspr = spr_betonplaceholder;
+turnspr = spr_betonplaceholder;
+recoveryspr = spr_betonplaceholder;
+grabbedspr = spr_betonplaceholder;
+scaredspr = spr_betonplaceholder;
+deadspr = spr_betonplaceholder;
+spr_palette = spr_gumslimePalette;
+spr_throw = spr_betonplaceholder;

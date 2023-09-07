@@ -26,11 +26,6 @@ if (global.challengemode == 2 && global.playminutes < 2)
 	scr_sound(sound_parry);
 	global.challengemode = 0;
 }
-mallowspr = spr_confecti1rank;
-chocospr = spr_confecti2rank;
-crackspr = spr_confecti3rank;
-wormspr = spr_confecti4rank;
-candyspr = spr_confecti5rank;
 drawmallow = false;
 drawchoco = false;
 drawcrack = false;

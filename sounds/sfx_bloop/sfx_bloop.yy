@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 1.42746,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Frog",
+    "path": "folders/Sounds/Sounds/Player/Frog.yy",
   },
   "preload": true,
   "sampleRate": 44100,

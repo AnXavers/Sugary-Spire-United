@@ -6,8 +6,8 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 		sprite_index = spr_bigbreak2_dead;
 	}
 	audio_stop_sound(sound_destroyblock1);
-	audio_stop_sound(sound_destroyblock2);
-	scr_sound(choose(sound_destroyblock1, sound_destroyblock2));
+	audio_stop_sound(sfx_destroyblock2);
+	scr_sound(choose(sound_destroyblock1, sfx_destroyblock2));
 	audio_stop_sound(sound_points);
 	scr_sound(sound_points);
 	global.collect += 50;

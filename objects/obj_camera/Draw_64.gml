@@ -152,9 +152,15 @@ if !(global.levelname == "none" && room == timesuproom || room == rank_room || r
 				draw_sprite_ext(obj_player.spr_rankbubble_Eempty, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);
 			}
 			else if (global.currentrank == "P")
+			{
 				draw_sprite_ext(obj_player.spr_rankbubble_Pfilled, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);
+				global.Eranklength = 0;
+			}
 			else if (global.currentrank == "S")
+			{
 				draw_sprite_ext(obj_player.spr_rankbubble_Sfilled, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);
+				global.Eranklength = 0;
+			}
 			else
 			{
 				draw_sprite_ext(bubbleempty, -1, 16, 16 + DrawY, 1, 1, 0, c_white, 1);

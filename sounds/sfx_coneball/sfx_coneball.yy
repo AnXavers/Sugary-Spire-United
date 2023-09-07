@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 3.082449,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Coneball",
+    "path": "folders/Sounds/Sounds/Baddie/Coneball.yy",
   },
   "preload": true,
   "sampleRate": 44100,

@@ -8,7 +8,7 @@ if (sprite_index != spr_confectiboxopen)
 		sprite_index = spr_creamthief_lose;
 	}
 	var _content = instance_create(x + (sprite_width / 2), y + (sprite_height / 2), BoxContent);
-	if (object_get_parent(_content.object_index) == 296)
+	if (object_get_parent(_content.object_index) == par_confecti)
 	{
 		with (instance_create(x + (sprite_width / 2), y + (sprite_height / 2), obj_explosioneffect))
 		{

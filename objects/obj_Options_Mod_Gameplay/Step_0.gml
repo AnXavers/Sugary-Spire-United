@@ -55,7 +55,7 @@ if canmove
 			optionsaved_newlvldesign = wrap(optionsaved_newlvldesign, 0, 2);
 			if (key_jump)
 			{
-				if global.levelname != "none"
+				if (global.levelname == "none" || is_hub())
 				{
 					scr_sound(sound_enemythrow);
 					ini_open("optionData.ini");
@@ -74,11 +74,16 @@ if canmove
 			optionsaved_inflapping = wrap(optionsaved_inflapping, 0, 2);
 			if (key_jump)
 			{
-				scr_sound(sound_enemythrow);
-				ini_open("optionData.ini");
-				ini_write_real("Settings", "inflapping", optionsaved_inflapping);
-				ini_close();
-				global.inflapping = optionsaved_inflapping;
+				if (global.levelname == "none" || is_hub())
+				{
+					scr_sound(sound_enemythrow);
+					ini_open("optionData.ini");
+					ini_write_real("Settings", "inflapping", optionsaved_inflapping);
+					ini_close();
+					global.inflapping = optionsaved_inflapping;
+				}
+				else
+					scr_sound(sound_enemyslap);
 			}
 			break;
 		case 4:

@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_mask_1",
-    "path": "sprites/spr_player_mask_1/spr_player_mask_1.yy",
+    "name": "spr_trainsoundtrigger",
+    "path": "sprites/spr_trainsoundtrigger/spr_trainsoundtrigger.yy",
   },
   "spriteMaskId": null,
   "visible": true,

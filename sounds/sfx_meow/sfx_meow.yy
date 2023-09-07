@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.277483,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Dialouge",
+    "path": "folders/Sounds/Sounds/Dialouge.yy",
   },
   "preload": true,
   "sampleRate": 44100,

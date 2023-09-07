@@ -14,6 +14,7 @@
     {"name":"inst_262B6F37_1","path":"rooms/hub_shop3/hub_shop3.yy",},
     {"name":"inst_2F925B17_1","path":"rooms/hub_shop3/hub_shop3.yy",},
     {"name":"inst_38F93708_1","path":"rooms/hub_shop3/hub_shop3.yy",},
+    {"name":"inst_75011712","path":"rooms/hub_shop3/hub_shop3.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -27,6 +28,7 @@
           ],"rotation":0.0,"scaleX":-2.0,"scaleY":2.0,"x":-32.0,"y":256.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F925B17_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_costumerdoor","path":"objects/obj_costumerdoor/obj_costumerdoor.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":863.0,"y":338.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_38F93708_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_doorA","path":"objects/obj_doorA/obj_doorA.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-64.0,"y":352.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_75011712","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":320.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":35,"TileCompressedData":[
 -358,0,9,304,305,306,304,305,306,304,305,306,-26,0,9,364,365,366,364,365,366,364,365,366,-193,0,],"TileDataFormat":1,},"tilesetId":{"name":"ts_devroom","path":"tilesets/ts_devroom/ts_devroom.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},

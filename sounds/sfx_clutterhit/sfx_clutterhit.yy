@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.519229,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Clutter",
+    "path": "folders/Sounds/Sounds/Destroyable/Clutter.yy",
   },
   "preload": true,
   "sampleRate": 44100,

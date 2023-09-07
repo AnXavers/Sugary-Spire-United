@@ -86,7 +86,7 @@ global.smoothcam = ini_read_real("Settings", "smthcam", 1);
 global.hitstunEnabled = ini_read_real("Settings", "hitstun", 1);
 global.screentilt = ini_read_real("Settings", "scrntilt", 1);
 global.screenmelt = ini_read_real("Settings", "screenmelt", 1);
-global.lowperformance = ini_read_real("Settings", "lowperf", 1);
+global.lowperformance = ini_read_real("Settings", "lowperf", 0);
 global.smoothscale = ini_read_real("Settings", "smoothscale", 0);
 global.playerrotate = ini_read_real("Settings", "playrot", 1);
 global.musicVolume = ini_read_real("Settings", "musicvol", 0.6);
@@ -98,6 +98,8 @@ global.mulap10 = ini_read_real("Settings", "mu_lap10", 0);
 global.mulap5 = ini_read_real("Settings", "mu_lap5", 0);
 global.mulap2 = ini_read_real("Settings", "mu_lap2", 0);
 global.muescape = ini_read_real("Settings", "mu_escape", 0);
+global.muoverdose = ini_read_real("Settings", "mu_lap2", 0);
+global.mulowface = ini_read_real("Settings", "mu_escape", 0);
 global.heatmeter = ini_read_real("Settings", "heatmeter", 0);
 global.tvmessages = ini_read_real("Settings", "tvmsg", 1);
 global.newscorefont = ini_read_real("Settings", "newscorefont", 0);
@@ -108,6 +110,8 @@ global.slopeangle = ini_read_real("Settings", "slopeangle", 1);
 global.inflapping = ini_read_real("Settings", "inflapping", 1);
 global.enablejerald = ini_read_real("Settings", "enablejerald", 1);
 global.richpresense = ini_read_real("Settings", "richpresense", 0);
+global.richpresensetype = ini_read_real("Settings", "richpresensetype", 0);
+global.coneballparry = ini_read_real("Settings", "coneballparry", 0);
 ini_close();
 
 audio_master_gain(global.masterVolume);
@@ -155,6 +159,9 @@ switch (ini_read_real("Settings", "mu_lap10", 0))
 	case 2:
 		global.lap10song = mu_mayhem;
 		break;
+	case 3:
+		global.lap10song = mu_lap4;
+		break;
 }
 switch (ini_read_real("Settings", "mu_lap5", 0))
 {
@@ -166,6 +173,9 @@ switch (ini_read_real("Settings", "mu_lap5", 0))
 		break;
 	case 2:
 		global.lap5song = mu_despairypeppino;
+		break;
+	case 3:
+		global.lap5song = mu_overdose;
 		break;
 }
 switch (ini_read_real("Settings", "mu_lap2", 0))
@@ -196,6 +206,24 @@ switch (ini_read_real("Settings", "mu_escape", 0))
 		break;
 	case 3:
 		global.escapesong = mu_peppinoescape;
+		break;
+}
+switch (ini_read_real("Settings", "mu_overdose", 0))
+{
+	case 0:
+		global.escapesong = mu_overdose;
+		break;
+	case 1:
+		global.escapesong = mu_finale;
+		break;
+}
+switch (ini_read_real("Settings", "mu_lowface", 0))
+{
+	case 0:
+		global.escapesong = mu_lowface;
+		break;
+	case 1:
+		global.escapesong = mu_expurgation;
 		break;
 }
 window_set_fullscreen(ini_read_real("Settings", "fullscrn", 0));

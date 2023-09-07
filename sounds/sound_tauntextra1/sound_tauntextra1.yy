@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.879025,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Taunt",
+    "path": "folders/Sounds/Sounds/Player/Taunt.yy",
   },
   "preload": false,
   "sampleRate": 44100,

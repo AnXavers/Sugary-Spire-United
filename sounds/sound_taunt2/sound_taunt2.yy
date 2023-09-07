@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.69805,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Pizzelle",
+    "path": "folders/Sounds/Sounds/Player/Taunt/Pizzelle.yy",
   },
   "preload": true,
   "sampleRate": 44100,

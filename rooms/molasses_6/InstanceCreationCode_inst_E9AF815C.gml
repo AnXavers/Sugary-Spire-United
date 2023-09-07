@@ -11,7 +11,7 @@ output = function()
 		if (!(ds_list_find_index(other.flags.saveroom, other.id) != -1))
 		{
 			camera_shake(20, 40);
-			scr_sound(sound_destroyblock1, sound_destroyblock2);
+			scr_sound(sound_destroyblock1, sfx_destroyblock2);
 			scr_sound(sound_metaldestroy);
 			with (instance_place(x, ystart - 1, obj_player))
 				y = other.y - 46;

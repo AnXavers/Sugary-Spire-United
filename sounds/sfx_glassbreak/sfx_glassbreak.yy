@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.433152,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Destroyable",
+    "path": "folders/Sounds/Sounds/Destroyable.yy",
   },
   "preload": true,
   "sampleRate": 44100,

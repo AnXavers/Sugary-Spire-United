@@ -41,7 +41,6 @@
 854,-7,855,11,689,1470,1471,1218,1219,1220,1221,991,992,993,1234,-14,0,-2,-2147483648,3,914,915,915,-5,855,1,689,-3,1222,7,1279,1280,1281,1051,1052,
 1053,1294,-14,0,-2,-2147483648,3,0,975,976,-5,855,1,689,-3,1222,7,1339,1340,1341,1111,1112,1113,1354,-14,0,-3,-2147483648,2,1035,1036,-5,855,30,244,
 624,625,626,627,628,623,624,625,626,627,628,623,624,625,626,627,628,623,624,625,626,627,628,623,624,625,626,627,628,-140,855,],"TileDataFormat":1,},"tilesetId":{"name":"ts_devroom","path":"tilesets/ts_devroom/ts_devroom.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[],"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":true,"visible":false,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Backgrounds_1","animationFPS":15.0,"animationSpeedType":0,"colour":4294967295,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"bg_palswap","path":"sprites/bg_palswap/bg_palswap.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":true,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
   "parent": {

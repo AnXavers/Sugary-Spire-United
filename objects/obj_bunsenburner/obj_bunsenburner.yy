@@ -9,7 +9,10 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_hotcaramel",
+    "path": "objects/obj_hotcaramel/obj_hotcaramel.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -25,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_Fire",
+    "path": "sprites/spr_Fire/spr_Fire.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

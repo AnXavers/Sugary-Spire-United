@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.602,
+  "duration": 0.602268,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Frog",
+    "path": "folders/Sounds/Sounds/Baddie/Frog.yy",
   },
   "preload": true,
   "sampleRate": 44100,

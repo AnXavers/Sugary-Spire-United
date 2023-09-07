@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.416508,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Frog",
+    "path": "folders/Sounds/Sounds/Baddie/Frog.yy",
   },
   "preload": true,
   "sampleRate": 44100,
