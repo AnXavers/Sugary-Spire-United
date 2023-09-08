@@ -154,7 +154,8 @@ if (state == 70 || state == 3 || state == 69 || state == 5 || (state == 71 && ma
 	mach_aftimg--;
 	if (mach_aftimg <= 0)
 	{
-		create_afterimage(choose(1, 2), xscale, true);
+		if !instance_exists(obj_petersprite)
+			create_afterimage(choose(1, 2), xscale, true);
 		mach_aftimg = 6;
 	}
 }
@@ -178,7 +179,8 @@ if (state == 106)
 	blue_aftimg--;
 	if (blue_aftimg <= 0)
 	{
-		create_afterimage(choose(4, 5), xscale, true);
+		if !instance_exists(obj_petersprite)
+			create_afterimage(choose(4, 5), xscale, true);
 		blue_aftimg = 6;
 	}
 }

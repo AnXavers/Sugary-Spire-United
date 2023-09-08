@@ -276,6 +276,22 @@ function meta_set_struct_variable()
 		argumentDescriptions: ["the struct which variable you want to change", "the name of the struct variable to change", "the value you want to change the variable to"]
 	};
 }
+function sh_petersprite()
+{
+	global.petersprite = argument0[1]
+	if !instance_exists(obj_petersprite)
+		instance_create(obj_player.x, obj_player.y, obj_petersprite)
+}
+function meta_petersprite()
+{
+	return 
+	{
+		description: "Draws a sprite over the player's, set to 0 to reset.",
+		arguments: ["<sprite>"],
+		suggestions: [global.spritelist],
+		argumentDescriptions: ["the sprite to draw over the player"]
+	};
+}
 function sh_noclip()
 {
 	if (obj_player.state != 128)

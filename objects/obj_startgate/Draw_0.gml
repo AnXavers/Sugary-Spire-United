@@ -55,48 +55,9 @@ if (surface_exists(surf))
 if (showtext)
 {
 	ini_open(global.fileselect);
-	draw_set_font(global.candlefont);
-	draw_set_halign(1);
-	i = 0;
-	Collectshake = 0;
-	collected = -1;
-	Collectshake = approach(Collectshake, 0, 20 / room_speed);
-	shakeX = irandom_range(-Collectshake, Collectshake);
-	shakeY = irandom_range(-Collectshake, Collectshake);
-	_string = ini_read_string("Highscore", string(level), 0)
-	var _string_length = string_length(_string);
-	if (collected != _string)
-	{
-		for (i = 0; i < _string_length; i++)
-			colors[i] = choose(0, 1, 2, 3, 4, 5, 6);
-		collected = _string;
-	}
-	for (var i = 0; i < _string_length; i++)
-	{
-		var _xx = (-(string_width(_string) / 2) + ((string_width(_string) / _string_length) * i));
-		var _yyoffset = ((i % 2) == 0) ? -4 : 0;
-		pal = colors[i]
-		pal_swap_set(spr_palcandle, pal, false);
-		draw_text(x + _xx + shakeX, y + _yyoffset + shakeY - 100, string_char_at(_string, i + 1));
-		shader_reset();
-	}
 	draw_set_font(global.smallfont);
+	draw_set_halign(1);
 	draw_set_color(c_white);
-	var card1spr = (ini_read_string("Secret", string(level), 0) > 0 ? spr_rankcardflipped : spr_rankcard);
-	var card2spr = (ini_read_string("Secret", string(level), 0) > 1 ? spr_rankcardflipped : spr_rankcard);
-	var card3spr = (ini_read_string("Secret", string(level), 0) > 2 ? spr_rankcardflipped : spr_rankcard);
-	draw_sprite(card1spr, 0, x - 62, y - 250);
-	draw_sprite(card2spr, 0, x, y - 250);
-	draw_sprite(card3spr, 0, x + 62, y - 250);
-	for (i = 0; i < 5; i++)
-	{
-		var x_pos = -100 + (50 * i);
-		var collected = ini_read_string("Confecti", string(level) + string(i + 1), 0);
-		if (!collected)
-			draw_sprite_ext_flash(confecti_sprs[i].sprite, confecti_sprs[i].image, x + x_pos, y - 328, 1, 1, 0, 0, 1);
-		else
-			draw_sprite_ext(confecti_sprs[i].sprite, confecti_sprs[i].image, x + x_pos, y - 328, 1, 1, 0, c_white, 1);
-	}
 	var _rank = ini_read_string("Ranks", string(level), 0);
 	var _rankspr = spr_null;
 	var _cakespr = 0
@@ -157,6 +118,23 @@ if (showtext)
 			draw_text(x - 5, y - 216, string_repeat("E", (ini_read_string("ERankLength", string(level), 1))))
 		}
 	}
-	draw_sprite(spr_gatecake, _cakespr, x, y - 150);
+	draw_sprite(spr_gatecake, _cakespr, x, y - 250);
+	i = 0;
+	collected = "-1";
+	_string = ini_read_string("Highscore", string(level), 0)
+	_string_length = string_length(_string);
+	var pal = colors[i];
+	draw_set_font(global.candlefont);
+	draw_set_alpha(1);
+	for (i = 0; i < _string_length; i++)
+	{
+		_xx = (pshake ? irandom_range(-4, 4) : 0) + (-(string_width(_string) / 2) + ((string_width(_string) / _string_length) * i));
+		var _yy = (pshake ? irandom_range(-4, 4) : 0);
+		pal = colors[i];
+		_yyoffset = ((i % 2) == 0) ? -4 : 0;
+		pal_swap_set(spr_palcandle, pal, false);
+		draw_text(x + _xx + 20, y + _yy + _yyoffset - 320, string_char_at(_string, i + 1));
+		shader_reset();
+	}
 	ini_close();
 }

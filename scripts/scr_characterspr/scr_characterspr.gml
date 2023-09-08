@@ -342,7 +342,6 @@ function scr_characterspr()
 			spr_angryidle = spr_pizzano_3hpidle;
 			spr_angrywalk = spr_pizzano_3hpwalk;
 			spr_crawl = spr_pizzano_crawl;
-			spr_idle = spr_pizzano_idle;
 			spr_hurt = spr_pizzano_hurt;
 			spr_jump = spr_pizzano_jump;
 			spr_jump2 = spr_pizzano_jump;
@@ -474,7 +473,6 @@ function scr_characterspr()
 			spr_idle = spr_gumbob_idle;
 			spr_move = spr_gumbob_walk;
 			spr_crawl = spr_player_crawl;
-			spr_idle = spr_gumbob_idle;
 			spr_hurt = spr_gumbob_hurt;
 			spr_jump = spr_gumbob_jump;
 			spr_jump2 = spr_gumbob_jump;

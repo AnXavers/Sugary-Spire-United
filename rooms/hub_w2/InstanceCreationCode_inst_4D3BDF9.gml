@@ -1,5 +1,7 @@
-depth = 400
-targetRoom = mountain_intro;
+if global.newlvldesign == 2
+	targetRoom = fudge_1;
+else
+	targetRoom = mountain_intro;
 targetDoor = "A";
 level = "fudge";
 var a = gate_createlayer(spr_fudge_startgate, 5, 0, 0);
