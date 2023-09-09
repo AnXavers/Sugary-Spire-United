@@ -16,9 +16,9 @@ function scr_levelSet()
 	instance_destroy(obj_discoball);
 	instance_destroy(obj_danceoffprank);
 	instance_destroy(obj_lap2visual);
+	instance_destroy(obj_yogurtexe);
 	global.cutsceneManager = -4;
-	if (instance_exists(obj_cutsceneManager))
-		instance_destroy(obj_cutsceneManager);
+	instance_destroy(obj_cutsceneManager)
 	global.martian_alarmed = false;
 	global.freezeframe = false;
 	global.greyscalefade = 0;
@@ -41,6 +41,7 @@ function scr_levelSet()
 	global.exitgatetaunt = 0;
 	global.coneballaggro = 0;
 	global.dolap10fg = 0;
+	global.clutterhit = 0;
 	obj_tv.image_index = 0;
 	obj_tv.tvsprite = spr_tvturnon;
 	obj_player.visible = true;

@@ -250,8 +250,8 @@ function scr_characterspr()
 			spr_lungehit = spr_player_lungehit;
 			spr_confecti5_rank = spr_confecti5rank;
 			spr_confecti4_rank = spr_confecti4rank;
-			spr_rankcrack = spr_confecti3rank;
-			spr_rankchoco = spr_confecti2rank;
+			spr_confecti3_rank = spr_confecti3rank;
+			spr_confecti2_rank = spr_confecti2rank;
 			spr_confecti1_rank = spr_confecti1rank;
 			spr_lapjanitorrank = spr_rankotherjanitor;
 			spr_rudejanitorrank = spr_rankrudejanitor;
@@ -605,8 +605,10 @@ function scr_characterspr()
 			spr_ladderdown = spr_player_ladderdown;
 			spr_keyget = spr_player_keyget;
 			spr_crouchslip = spr_player_crouchslide;
-			spr_mach1 = spr_player_mach1;
-			spr_mach2 = spr_player_mach2;
+			spr_mach1 = spr_coneboy_dash;
+			spr_mach2 = spr_coneboy_dash;
+			spr_mach3player = spr_coneboy_dash;
+			spr_crazyrun = spr_coneboy_dash;
 			spr_secondjump1 = spr_player_secondjump1;
 			spr_secondjump2 = spr_player_secondjump2;
 			spr_machslidestart = spr_player_machslidestart;

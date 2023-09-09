@@ -29,10 +29,55 @@ function scr_hatScript()
 		ini_write_real("HatsUnlock", "World1", true);
 	ini_close();
 }
-function scr_normalAchievments()
+function scr_normalAchievments(argument0 = global.levelname)
 {
-	ini_open("optionData.ini");
-	if (global.kungairtime == 0 && kungairtime >= 50)
-		global.kungairtime = 1;
+	ini_open(global.fileselect);
+	if (global.rank = "e" && instance_exists(obj_rank))
+		ini_write_real("Achievements", string(global.levelname) + "erank", true);
+	switch argument0
+	{
+		case "entryway":
+			if (global.clutterhit == 56)
+				ini_write_real("Achievements", "entrywayclutter", true);
+			if (global.clutterhit == 30)
+				ini_write_real("Achievements", "entrywayclutter", true);
+			if (global.clutterhit == 30)
+				ini_write_real("Achievements", "entrywayclutter", true);
+			break;
+		case "steamy":
+			break;
+		case "molasses":
+			break;
+		case "mines":
+			break;
+		case "dragonlair":
+			break;
+		case "fudge":
+			break;
+		case "dance":
+			break;
+		case "estate":
+			break;
+		case "sucrose":
+			break;
+		case "bee":
+			break;
+		case "martian":
+			break;
+		case "exitway":
+			break;
+		case "entrance":
+			break;
+		case "pizzascape":
+			break;
+		case "ancient":
+			break;
+		case "bloodsauce":
+			break;
+		case "finale":
+			break;
+		case "yogurt":
+			break;
+	}
 	ini_close();
 }

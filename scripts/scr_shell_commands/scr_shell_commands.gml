@@ -197,29 +197,6 @@ function meta_instance_create()
 		argumentDescriptions: ["the X coordinate to create the object at", "the Y coordinate to create the object at", "the object to create"]
 	};
 }
-function sh_instance_create_ext()
-{
-	with (instance_create(argument0[1], argument0[2], asset_get_index(argument0[12])))
-		image_xscale = argument0[3]
-		image_yscale = argument0[4]
-		phy_rotation = argument0[5]
-		sprite_index = argument0[6]
-		image_index = argument0[7]
-		image_alpha = argument0[8]
-		image_blend = argument0[9]
-		image_speed = argument0[10]
-		depth = argument0[11]
-}
-function meta_instance_create_ext()
-{
-	return 
-	{
-		description: "Create an object with arguments.",
-		arguments: ["<x>", "<y>", "<xscale>", "<yscale>", "<rotation>", "<sprite>", "<frame>", "<alpha>", "<color>", "<depth>", "<sprite_speed>", "<object>"],
-		suggestions: [obj_player.x, obj_player.y, 3, 4, 5, global.spritelist, 6, 7, 8, c_white, 10, global.objectlist],
-		argumentDescriptions: ["The X coordinate to create the object at.", "The Y coordinate to create the object at.", "The width the object will be created with.", "The height the object will be created with.", "The rotation the object will be created with.", "The sprite the object will be created with.", "The starting frame the object will be created at.", "The transparency the object will be created with.", "The color the object will be created with.", "The depth the object will be created at.", "The image speed the object will be created with.", "The object to create."]
-	};
-}
 function sh_instance_destroy()
 {
 	instance_destroy(asset_get_index(argument0[1]));
@@ -276,9 +253,52 @@ function meta_set_struct_variable()
 		argumentDescriptions: ["the struct which variable you want to change", "the name of the struct variable to change", "the value you want to change the variable to"]
 	};
 }
+function sh_print_global_variable()
+{
+	return string(variable_global_get(argument0[1]));
+}
+function meta_print_global_variable()
+{
+	return 
+	{
+		description: "Prints a global variable.",
+		arguments: ["<global_variable>"],
+		suggestions: [0],
+		argumentDescriptions: ["the name of the global variable to print"]
+	};
+}
+function sh_print_instance_variable()
+{
+	return string(variable_instance_get(argument0[1], argument0[2]));
+}
+function meta_print_instance_variable()
+{
+	return 
+	{
+		description: "Prints an instance variable.",
+		arguments: ["<object>", "<instance_variable>"],
+		suggestions: [global.objectlist, 1],
+		argumentDescriptions: ["the object which variable you want to print", "the name of the instance variable to change"]
+	};
+}
+function sh_print_struct_variable()
+{
+	return string(variable_struct_get(argument0[1], argument0[2]));
+}
+function meta_print_struct_variable()
+{
+	return 
+	{
+		description: "Prints a struct variable.",
+		arguments: ["<struct>", "<struct_variable>"],
+		suggestions: [0, 1],
+		argumentDescriptions: ["the struct which variable you want to print", "the name of the struct variable to print"]
+	};
+}
 function sh_petersprite()
 {
 	global.petersprite = argument0[1]
+	global.peterspeed = argument0[2]
 	if !instance_exists(obj_petersprite)
 		instance_create(obj_player.x, obj_player.y, obj_petersprite)
 }
@@ -286,10 +306,25 @@ function meta_petersprite()
 {
 	return 
 	{
-		description: "Draws a sprite over the player's, set to 0 to reset.",
-		arguments: ["<sprite>"],
-		suggestions: [global.spritelist],
-		argumentDescriptions: ["the sprite to draw over the player"]
+		description: "Draws a sprite over the player's.",
+		arguments: ["<sprite>", "<image_speed>"],
+		suggestions: [global.spritelist, 1],
+		argumentDescriptions: ["the sprite to draw over the player.", "the speed at which the sprite will play at."]
+	};
+}
+function sh_petersprite_reset()
+{
+	instance_destroy(obj_petersprite)
+	obj_player.visible = true
+}
+function meta_petersprite_reset()
+{
+	return 
+	{
+		description: "Stops using petersprite and returns the player back to normal.",
+		arguments: [],
+		suggestions: [],
+		argumentDescriptions: []
 	};
 }
 function sh_noclip()

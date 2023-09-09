@@ -86,6 +86,10 @@ function scr_exitlevellocation(argument0 = global.levelname)
 			global.entergateroom = hub_basement
 			global.entergatedoor = "Y"
 			break;
+		case "yogurt":
+			global.entergateroom = hub_basement
+			global.entergatedoor = "Z"
+			break;
 		case "walls":
 			global.entergateroom = hub_basement
 			global.entergatedoor = "Z"

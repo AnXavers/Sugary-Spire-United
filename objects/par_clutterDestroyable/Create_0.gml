@@ -8,7 +8,7 @@ grav = 0.5;
 dhsp = 0;
 dvsp = 0;
 spinspeed = 0;
-if (sprite_index == (spr_clutterBarrel_destroyed || spr_explosiveBarrel_destroyed || spr_clutterTrash_destroyed))
+if (sprite_index == (spr_clutterBarrel || spr_explosiveBarrel || spr_clutterTrash))
 	hitsound = sfx_metalclutterhit
 else
 	hitsound = sfx_clutterhit

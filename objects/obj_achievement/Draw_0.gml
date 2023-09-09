@@ -1,4 +1,2 @@
-if achievement_id == "null"
-	draw_sprite(spr_achieve_null, 0, x, y)
-else
-	draw_sprite(spr_achieve_unknown, 0, x, y)
+draw_sprite(achievementSprite, achievementUnlocked, x, y)
+draw_self()

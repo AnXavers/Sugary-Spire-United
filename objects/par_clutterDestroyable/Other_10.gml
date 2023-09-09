@@ -5,4 +5,5 @@ scr_sound(hitsound);
 dvsp = random_range(-7, -10);
 dhsp = random_range(5, 10) * DestroyedBy.image_xscale;
 spinspeed = random_range(5, 10) * DestroyedBy.image_xscale;
+global.clutterhit += 1
 instance_destroy();
