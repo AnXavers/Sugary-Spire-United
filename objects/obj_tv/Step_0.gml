@@ -46,7 +46,11 @@ var allstate = global.freezeframe ? obj_player.frozenstate : obj_player.state;
 switch (state)
 {
 	case 1:
-		if (!instance_exists(obj_secretfound))
+		if instance_exists(obj_secretfound)
+		{
+			idlespr = secrettvspr;
+		}
+		else
 		{
 			idlespr = idletvspr;
 			if (obj_player.angry)
@@ -56,8 +60,6 @@ switch (state)
 			if (global.lapcount >= 5)
 				idlespr = laptvspr;
 		}
-		else
-			idlespr = secrettvspr;
 		var _transfo = true;
 		switch (allstate)
 		{

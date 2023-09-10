@@ -351,19 +351,19 @@ function sh_give_all()
 		switch (numb)
 		{
 			case 1:
-				var spawn = 485;
+				spawn = obj_confectimallow;
 				break;
 			case 2:
-				spawn = 486;
+				spawn = obj_confectichoco;
 				break;
 			case 3:
-				spawn = 487;
+				spawn = obj_confecticrack;
 				break;
 			case 4:
-				spawn = 489;
+				spawn = obj_confectiworm;
 				break;
 			case 5:
-				spawn = 488;
+				spawn = obj_confecticandy;
 				break;
 			default:
 				break;

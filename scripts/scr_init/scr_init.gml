@@ -80,6 +80,7 @@ global.coneballaggro = 0;
 global.dolap10fg = 0;
 global.petersprite = 0;
 global.clutterhit = 0;
+global.enableportal = 0;
 
 ini_open("optionData.ini");
 global.fullscreen = ini_read_real("Settings", "fullscrn", 0);

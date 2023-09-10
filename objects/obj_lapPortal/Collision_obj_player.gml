@@ -1,4 +1,4 @@
-if (other.state != 110 && sprite_index == spr_lappingportal_idle && global.panic && (instance_exists(obj_lapjanitor) || !global.enablejerald))
+if (other.state != 110 && sprite_index == spr_lappingportal_idle && global.panic && (global.enableportal = 2 || !global.enablejerald))
 {
 	with (other)
 	{

@@ -42,6 +42,7 @@ function scr_levelSet()
 	global.coneballaggro = 0;
 	global.dolap10fg = 0;
 	global.clutterhit = 0;
+	global.enableportal = 0;
 	obj_tv.image_index = 0;
 	obj_tv.tvsprite = spr_tvturnon;
 	obj_player.visible = true;

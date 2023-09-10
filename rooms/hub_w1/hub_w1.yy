@@ -124,6 +124,10 @@
     {"name":"inst_1BDB39B9","path":"rooms/hub_w1/hub_w1.yy",},
     {"name":"inst_6BB936E9","path":"rooms/hub_w1/hub_w1.yy",},
     {"name":"inst_116079D8","path":"rooms/hub_w1/hub_w1.yy",},
+    {"name":"inst_1F73DDA2","path":"rooms/hub_w1/hub_w1.yy",},
+    {"name":"inst_7A97DDC8","path":"rooms/hub_w1/hub_w1.yy",},
+    {"name":"inst_56A1318","path":"rooms/hub_w1/hub_w1.yy",},
+    {"name":"inst_3D1C3A04","path":"rooms/hub_w1/hub_w1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -267,6 +271,10 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1BDB39B9","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_gatetreasure","path":"objects/obj_gatetreasure/obj_gatetreasure.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2144.0,"y":1120.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6BB936E9","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_gatetreasure","path":"objects/obj_gatetreasure/obj_gatetreasure.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3744.0,"y":1184.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_116079D8","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_gatetreasure","path":"objects/obj_gatetreasure/obj_gatetreasure.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2272.0,"y":672.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1F73DDA2","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":1586.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7A97DDC8","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2432.0,"y":1138.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_56A1318","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3456.0,"y":1202.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D1C3A04","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1824.0,"y":562.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":57,"SerialiseWidth":144,"TileCompressedData":[
 -2638,0,2,336,337,-142,0,2,368,369,-5424,0,],"TileDataFormat":1,},"tilesetId":{"name":"ts_newhub","path":"tilesets/ts_newhub/ts_newhub.yy",},"userdefinedDepth":true,"visible":true,"x":0,"y":0,},

@@ -2,7 +2,7 @@
   "resourceType": "GMExtension",
   "resourceVersion": "1.2",
   "name": "NekoPresence",
-  "androidactivityinject": null,
+  "androidactivityinject": "",
   "androidclassname": "",
   "androidcodeinjection": "",
   "androidinject": "",

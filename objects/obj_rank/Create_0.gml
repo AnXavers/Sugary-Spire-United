@@ -97,16 +97,11 @@ hatmsgy = 600;
 stampsnd = false;
 inicollect = global.collect / 30;
 collected = "0";
-colors[0] = choose(0, 1, 2, 3, 4, 5, 6);
-colors[1] = choose(0, 1, 2, 3, 4, 5, 6);
-colors[2] = choose(0, 1, 2, 3, 4, 5, 6);
-colors[3] = choose(0, 1, 2, 3, 4, 5, 6);
-colors[4] = choose(0, 1, 2, 3, 4, 5, 6);
-colors[5] = choose(0, 1, 2, 3, 4, 5, 6);
-colors[6] = choose(0, 1, 2, 3, 4, 5, 6);
-colors[7] = choose(0, 1, 2, 3, 4, 5, 6);
-colors[8] = choose(0, 1, 2, 3, 4, 5, 6);
-colors[9] = choose(0, 1, 2, 3, 4, 5, 6);
+var i = 0;
+var _string = round(string(countpoint));
+var _string_length = string_length(_string) + 1;
+for (i = 0; i < _string_length; i++)
+	colors[i] = choose(0, 1, 2, 3, 4, 5, 6);
 bgx = 0;
 bgy = 0;
 bgspr = bg_rank;
@@ -123,7 +118,7 @@ if (global.treasure == 1)
 	janspr = spr_rankrudejanitor;
 else
 	janspr = spr_null;
-if (global.lapcount >= 2)
+if (global.lapcount >= 2 && global.enablejerald)
 	lapjanspr = spr_rankotherjanitor;
 else
 	lapjanspr = spr_null;

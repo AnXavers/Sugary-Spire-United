@@ -408,7 +408,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.4.0.84",
   },
   "resources": [
     {"id":{"name":"obj_talisman","path":"objects/obj_talisman/obj_talisman.yy",},},
@@ -746,6 +746,7 @@
     {"id":{"name":"obj_snowpoofeffect","path":"objects/obj_snowpoofeffect/obj_snowpoofeffect.yy",},},
     {"id":{"name":"obj_creamThiefLoseTrigger","path":"objects/obj_creamThiefLoseTrigger/obj_creamThiefLoseTrigger.yy",},},
     {"id":{"name":"tower_1","path":"rooms/tower_1/tower_1.yy",},},
+    {"id":{"name":"spr_itsthembg","path":"sprites/spr_itsthembg/spr_itsthembg.yy",},},
     {"id":{"name":"spr_pepgoblindance","path":"sprites/spr_pepgoblindance/spr_pepgoblindance.yy",},},
     {"id":{"name":"obj_icescreamer","path":"objects/obj_icescreamer/obj_icescreamer.yy",},},
     {"id":{"name":"obj_rudejanitor_collect","path":"objects/obj_rudejanitor_collect/obj_rudejanitor_collect.yy",},},
@@ -2393,7 +2394,7 @@
     {"id":{"name":"cafe_10","path":"rooms/cafe_10/cafe_10.yy",},},
     {"id":{"name":"sfx_switchback","path":"sounds/sfx_switchback/sfx_switchback.yy",},},
     {"id":{"name":"sfx_whistle","path":"sounds/sfx_whistle/sfx_whistle.yy",},},
-    {"id":{"name":"spr_itsthembg","path":"sprites/spr_itsthembg/spr_itsthembg.yy",},},
+    {"id":{"name":"spr_funnybg","path":"sprites/spr_funnybg/spr_funnybg.yy",},},
     {"id":{"name":"sound_train","path":"sounds/sound_train/sound_train.yy",},},
     {"id":{"name":"sfx_coneballspike","path":"sounds/sfx_coneballspike/sfx_coneballspike.yy",},},
     {"id":{"name":"sound_coneswitch1","path":"sounds/sound_coneswitch1/sound_coneswitch1.yy",},},
@@ -4977,6 +4978,7 @@
     {"id":{"name":"spr_gushurt","path":"sprites/spr_gushurt/spr_gushurt.yy",},},
     {"id":{"name":"spr_8Recordsbackground1dance","path":"sprites/spr_8Recordsbackground1dance/spr_8Recordsbackground1dance.yy",},},
     {"id":{"name":"spr_theif_snatch","path":"sprites/spr_theif_snatch/spr_theif_snatch.yy",},},
+    {"id":{"name":"spr_lapjanitorbg","path":"sprites/spr_lapjanitorbg/spr_lapjanitorbg.yy",},},
     {"id":{"name":"spr_rosehouse","path":"sprites/spr_rosehouse/spr_rosehouse.yy",},},
     {"id":{"name":"spr_donutbubble","path":"sprites/spr_donutbubble/spr_donutbubble.yy",},},
     {"id":{"name":"spr_toppintomato_panic","path":"sprites/spr_toppintomato_panic/spr_toppintomato_panic.yy",},},
