@@ -13,7 +13,7 @@
   "out_tilevborder": 2,
   "parent": {
     "name": "Ruin",
-    "path": "folders/Tile Sets/Ruin.yy",
+    "path": "folders/Tile Sets/Levels/Ruin.yy",
   },
   "spriteId": {
     "name": "spr_ruinend",

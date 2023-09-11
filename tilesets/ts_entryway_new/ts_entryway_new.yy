@@ -21,8 +21,8 @@
   },
   "spriteNoExport": true,
   "textureGroupId": {
-    "name": "Backgrounds",
-    "path": "texturegroups/Backgrounds",
+    "name": "Tiles",
+    "path": "texturegroups/Tiles",
   },
   "tile_count": 1024,
   "tileAnimation": {

@@ -13,7 +13,7 @@
   "out_tilevborder": 2,
   "parent": {
     "name": "Medieval",
-    "path": "folders/Tile Sets/Medieval.yy",
+    "path": "folders/Tile Sets/Levels/Medieval.yy",
   },
   "spriteId": null,
   "spriteNoExport": false,

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "ts_newhub",
+  "name": "ts_hub3",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
@@ -16,8 +16,8 @@
     "path": "folders/Tile Sets/Spire/Hub.yy",
   },
   "spriteId": {
-    "name": "ts_newhub_sprite",
-    "path": "sprites/ts_newhub_sprite/ts_newhub_sprite.yy",
+    "name": "ts_hub3_sprite",
+    "path": "sprites/ts_hub3_sprite/ts_hub3_sprite.yy",
   },
   "spriteNoExport": true,
   "textureGroupId": {
