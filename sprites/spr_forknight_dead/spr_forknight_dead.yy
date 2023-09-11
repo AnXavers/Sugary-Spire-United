@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b6e99fad-16d7-436b-928a-1f0cbd1d3120","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 4,
   "parent": {
     "name": "Forknight",
     "path": "folders/Sprites/Baddie/Forknight.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 50,
-    "yorigin": 75,
+    "yorigin": 50,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

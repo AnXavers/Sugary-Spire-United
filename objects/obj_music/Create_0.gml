@@ -110,6 +110,7 @@ add_music(dance_1, mu_dance2, mu_dancesecret, false);
 add_music(dance_8, mu_dance2, mu_dancesecret, true);
 add_music(dance_9, mu_dance, mu_dancesecret, true);
 add_music(sucrose_1, mu_sucrose, mu_sucrosesecret, false);
+add_music(cafe_1, mu_estate, mu_estatesecret, false);
 add_music(estate_1, mu_estate, mu_estatesecret, false);
 add_music(estate_6, mu_estate, mu_estatesecret, true);
 add_music(estate_dog, mu_danger, mu_estatesecret, true);

@@ -34,7 +34,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2eb2fd81-4ebf-49aa-b9e9-f3ef0d615410","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Mini John",
     "path": "folders/Sprites/Baddie/Mini John.yy",
@@ -82,7 +82,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 50,
-    "yorigin": 50,
+    "yorigin": 68,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

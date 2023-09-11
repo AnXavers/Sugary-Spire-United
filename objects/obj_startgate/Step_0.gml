@@ -110,7 +110,7 @@ if (distance_to_object(obj_player) < 50)
 				alarm[0] = 2;
 			}
 			break;
-		case "stormy":
+		case "exitway":
 			with (obj_tv)
 			{
 				message = "COTTONSTORM";

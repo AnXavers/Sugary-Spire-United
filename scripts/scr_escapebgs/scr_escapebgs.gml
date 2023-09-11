@@ -89,5 +89,6 @@ function scr_escapebgs()
         layer_change_background(bg_estate1sun, bg_estate1sunE)
         layer_change_background(bg_lab, bg_labEscape)
         layer_change_background(bg_labpipes, bg_labpipesEscape)
+        layer_change_tileset(ts_mountain1_night, ts_mountain1_day)
 	}
 }

@@ -44,4 +44,8 @@ with instance_create(x, y, obj_gatesecret)
 	cardspr = (ini_read_string("Secret", string(obj_startgate.level), 0) >= 3 ? spr_rankcardflipped : spr_rankcard);
 	dorigin = obj_startgate.depth
 }
+var i = 0;
+var _string_length = string_length(ini_read_string("Highscore", string(level), 0)) + 1;
+for (i = 0; i < _string_length; i++)
+	colors[i] = choose(0, 1, 2, 3, 4, 5, 6);
 ini_close();

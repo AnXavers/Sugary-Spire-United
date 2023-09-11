@@ -65,7 +65,7 @@ if (countpoint >= global.srank)
 {
 	if (global.lapcount >= 10 && global.hurtcounter < 1 && global.hasallconfecti && !global.combolost && global.secretfound > 2 && global.treasure)
 		dex = 6;
-	if (!global.combolost && global.secretfound > 2 && global.treasure && global.lapcount >= 2)
+	else if (!global.combolost && global.secretfound > 2 && global.treasure && global.lapcount >= 2)
 		dex = 5;
 	else
 		dex = 4;

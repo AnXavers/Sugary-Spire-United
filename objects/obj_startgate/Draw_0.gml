@@ -119,18 +119,20 @@ if (showtext)
 		}
 	}
 	draw_sprite(spr_gatecake, _cakespr, x, y - 250);
+	i = 0;
 	collected = "-1";
-	_string = round(ini_read_string("Highscore", string(level), 0))
-	var i = 0;
-	var _string_length = string_length(_string) + 10;
+	_string = ini_read_string("Highscore", string(level), 0)
+	_string_length = string_length(_string);
+	var pal = colors[i];
 	draw_set_font(global.candlefont);
 	draw_set_alpha(1);
 	for (i = 0; i < _string_length; i++)
 	{
 		_xx = (pshake ? irandom_range(-4, 4) : 0) + (-(string_width(_string) / 2) + ((string_width(_string) / _string_length) * i));
 		var _yy = (pshake ? irandom_range(-4, 4) : 0);
+		pal = colors[i];
 		_yyoffset = ((i % 2) == 0) ? -4 : 0;
-		pal_swap_set(spr_palcandle, colors[i], false);
+		pal_swap_set(spr_palcandle, pal, false);
 		draw_text(x + _xx + 20, y + _yy + _yyoffset - 320, string_char_at(_string, i + 1));
 		shader_reset();
 	}
