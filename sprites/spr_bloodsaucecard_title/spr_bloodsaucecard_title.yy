@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_bloodsaucecard_title",
-  "bbox_bottom": 215,
-  "bbox_left": 21,
-  "bbox_right": 262,
-  "bbox_top": 16,
+  "bbox_bottom": 236,
+  "bbox_left": 18,
+  "bbox_right": 259,
+  "bbox_top": 37,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"26562a08-0aaf-4d5b-be42-815f15e283b6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"49b4b8f3-9ecc-4e04-8d73-44521ccd4dc0",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 300,
+  "height": 540,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2f524414-1c8a-4013-b6c2-88e260855b93","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8f180356-0810-40f0-8b20-dca5d4dc2573","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"26562a08-0aaf-4d5b-be42-815f15e283b6","path":"sprites/spr_bloodsaucecard_title/spr_bloodsaucecard_title.yy",},},},"Disabled":false,"id":"01570950-f29a-4be3-972b-978e4f3ec298","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"49b4b8f3-9ecc-4e04-8d73-44521ccd4dc0","path":"sprites/spr_bloodsaucecard_title/spr_bloodsaucecard_title.yy",},},},"Disabled":false,"id":"7a7a180b-5982-45f9-aec9-c082a121f2f2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 488,
+  "width": 960,
 }

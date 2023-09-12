@@ -115,6 +115,7 @@ global.enablejerald = ini_read_real("Settings", "enablejerald", 1);
 global.richpresense = ini_read_real("Settings", "richpresense", 0);
 global.richpresensetype = ini_read_real("Settings", "richpresensetype", 0);
 global.coneballparry = ini_read_real("Settings", "coneballparry", 0);
+global.language = ini_read_real("Settings", "language", 0);
 ini_close();
 
 audio_master_gain(global.masterVolume);

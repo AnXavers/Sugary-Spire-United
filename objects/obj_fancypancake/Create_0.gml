@@ -1,0 +1,13 @@
+event_inherited();
+landspr = spr_pancakeplaceholder;
+idlespr = spr_pancakeplaceholder;
+fallspr = spr_pancakeplaceholder;
+stunfallspr = spr_pancakeplaceholder;
+walkspr = spr_pancakeplaceholder;
+turnspr = spr_pancakeplaceholder;
+recoveryspr = spr_pancakeplaceholder;
+grabbedspr = spr_pancakeplaceholder;
+scaredspr = spr_pancakeplaceholder;
+deadspr = spr_pancakeplaceholder;
+spr_palette = spr_gumslimePalette;
+spr_throw = spr_pancakeplaceholder;

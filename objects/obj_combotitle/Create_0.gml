@@ -33,3 +33,9 @@ switch (type)
 		image_yscale = 0;
 		break;
 }
+if global.language == 2
+	sprite_index = spr_combotitles_BR
+else if global.language == 1
+	sprite_index = spr_combotitles_ES
+else
+	sprite_index = spr_combotitles

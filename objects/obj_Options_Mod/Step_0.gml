@@ -6,7 +6,7 @@ if (selected == 0)
 		optionselected -= 1;
 		scr_sound(sound_step);
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 4)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 5)
 	{
 		optionselected += 1;
 		scr_sound(sound_step);
@@ -53,8 +53,18 @@ if (selected == 0)
 			}
 			break;
 		case 4:
-			subtitle = "ENABLE ONLINE - UNSTABLE";
+			subtitle = "ADJUST IN-GAME LANGUAGE";
 			CursorY = 400;
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				selected = true;
+				instance_create(0, 0, obj_online_manager);
+			}
+			break;
+		case 5:
+			subtitle = "ENABLE ONLINE - UNSTABLE";
+			CursorY = 500;
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);

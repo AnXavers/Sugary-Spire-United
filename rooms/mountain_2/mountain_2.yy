@@ -126,7 +126,7 @@
   "layers": [
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_1","depth":-1000,"effectEnabled":true,"effectType":"_filter_tintfilter","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_TintCol","type":1,"value":"#FFFFE6CC",},
-      ],"userdefinedDepth":true,"visible":false,},
+      ],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_Snow","depth":-900,"effectEnabled":true,"effectType":"_effect_windblown_particles","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"param_sprite","type":2,"value":"spr_hailparticles",},
         {"name":"param_num_particles","type":0,"value":"99",},
@@ -202,7 +202,7 @@
         {"name":"param_dragcoeff","type":0,"value":"3.5",},
         {"name":"param_grav_accel","type":0,"value":"300",},
         {"name":"param_debug_grid","type":0,"value":"0",},
-      ],"userdefinedDepth":true,"visible":false,},
+      ],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_36462D8E","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_dangersign","path":"sprites/spr_dangersign/spr_dangersign.yy",},"x":1039.0,"y":672.0,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_761A0CD0","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_dangersign","path":"sprites/spr_dangersign/spr_dangersign.yy",},"x":1696.0,"y":672.0,},
