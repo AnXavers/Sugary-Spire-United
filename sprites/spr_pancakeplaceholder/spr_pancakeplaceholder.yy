@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "SugarySpire",
-    "path": "SugarySpire.yyp",
+    "name": "Baddie",
+    "path": "folders/Sprites/Baddie.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
