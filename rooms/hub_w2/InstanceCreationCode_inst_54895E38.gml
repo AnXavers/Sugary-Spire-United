@@ -1,4 +1,7 @@
-targetRoom = bee_1;
+if global.newlvldesign == 2
+	targetRoom = bee_1_old;
+else
+	targetRoom = bee_1;
 targetDoor = "A";
 level = "bee";
 details = [gate_createlayer(spr_bee_startgate, 0), gate_createlayer(spr_bee_startgate, 1), gate_createlayer(spr_bee_startgate, 2)];

@@ -1,4 +1,6 @@
-if global.newlvldesign == 1
+if global.newlvldesign == 2
+	targetRoom = estate_1_old;
+else if global.newlvldesign == 1
 	targetRoom = cafe_1;
 else
 	targetRoom = estate_1;
