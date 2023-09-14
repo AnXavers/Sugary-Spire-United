@@ -147,7 +147,6 @@
     {"name":"inst_CB3BDD71","path":"rooms/dance_4_old/dance_4_old.yy",},
     {"name":"inst_50EE4BE9","path":"rooms/dance_4_old/dance_4_old.yy",},
     {"name":"inst_D5A2B951","path":"rooms/dance_4_old/dance_4_old.yy",},
-    {"name":"inst_595537C9","path":"rooms/dance_4_old/dance_4_old.yy",},
     {"name":"inst_EE09A531","path":"rooms/dance_4_old/dance_4_old.yy",},
     {"name":"inst_63BC13B9","path":"rooms/dance_4_old/dance_4_old.yy",},
     {"name":"inst_F76F8121","path":"rooms/dance_4_old/dance_4_old.yy",},
@@ -299,7 +298,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_CB3BDD71","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_collectEscape","path":"objects/obj_collectEscape/obj_collectEscape.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1856.0,"y":288.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_50EE4BE9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_collectEscape","path":"objects/obj_collectEscape/obj_collectEscape.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1888.0,"y":288.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D5A2B951","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_collectEscape","path":"objects/obj_collectEscape/obj_collectEscape.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1920.0,"y":288.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_595537C9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":5.0,"x":6272.0,"y":608.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_EE09A531","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_babybear","path":"objects/obj_babybear/obj_babybear.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":null,"propertyId":null,"value":"1",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4928.0,"y":608.0,},

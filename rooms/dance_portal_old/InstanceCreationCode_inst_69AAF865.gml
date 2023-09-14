@@ -1,1 +1,1 @@
-targetRoom = 208
+targetRoom = dance_pillar_old
