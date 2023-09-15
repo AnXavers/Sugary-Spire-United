@@ -81,6 +81,7 @@ global.dolap10fg = 0;
 global.petersprite = 0;
 global.clutterhit = 0;
 global.enableportal = 0;
+global.peterimage = -1;
 
 ini_open("optionData.ini");
 global.fullscreen = ini_read_real("Settings", "fullscrn", 0);
@@ -215,19 +216,19 @@ switch (ini_read_real("Settings", "mu_escape", 0))
 switch (ini_read_real("Settings", "mu_overdose", 0))
 {
 	case 0:
-		global.escapesong = mu_overdose;
+		global.overdosesong = mu_overdose;
 		break;
 	case 1:
-		global.escapesong = mu_finale;
+		global.overdosesong = mu_finale;
 		break;
 }
 switch (ini_read_real("Settings", "mu_lowface", 0))
 {
 	case 0:
-		global.escapesong = mu_lowface;
+		global.lowfacesong = mu_lowface;
 		break;
 	case 1:
-		global.escapesong = mu_expurgation;
+		global.lowfacesong = mu_expurgation;
 		break;
 }
 window_set_fullscreen(ini_read_real("Settings", "fullscrn", 0));

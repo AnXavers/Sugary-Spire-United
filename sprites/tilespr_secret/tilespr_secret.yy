@@ -48,8 +48,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "GMS2 TileSets",
-    "path": "folders/Sprites/GMS2 TileSets.yy",
+    "name": "Level",
+    "path": "folders/Sprites/Tilesets/Level.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

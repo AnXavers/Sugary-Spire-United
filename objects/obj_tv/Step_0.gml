@@ -17,9 +17,8 @@ if (global.hurtcounter >= global.hurtmilestone && global.hurtcounter >= 5)
 {
 	showtext = 1;
 	global.hurtmilestone += 5;
-	if (obj_player.character == "P")
-		character = "Pizzelle";
-	else if (obj_player.character == "N")
+	character = "Pizzelle";
+	if (obj_player.character == "N")
 		character = "Pizzano";
 	else if (obj_player.character == "G")
 		character = "Gumbob";

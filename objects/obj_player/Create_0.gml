@@ -1,6 +1,14 @@
 scr_collision_init();
 scr_playersounds_init();
 global.testbuild = 1
+ini_open("Custom/Pizzelle_1_palettes.ini")
+global.custompal_1_col_0 = (65536 * ini_read_real("PizzelleColors10", "Red", 0) + (256 * ini_read_real("PizzelleColors10", "Green", 0) + ini_read_real("PizzelleColors10", "Blue", 0)))
+global.custompal_1_col_1 = (65536 * ini_read_real("PizzelleColors9", "Red", 0) + (256 * ini_read_real("PizzelleColors9", "Green", 0) + ini_read_real("PizzelleColors9", "Blue", 0)))
+global.custompal_1_col_2 = (65536 * ini_read_real("PizzelleColors8", "Red", 0) + (256 * ini_read_real("PizzelleColors8", "Green", 0) + ini_read_real("PizzelleColors8", "Blue", 0)))
+global.custompal_1_col_3 = (65536 * ini_read_real("PizzelleColors7", "Red", 0) + (256 * ini_read_real("PizzelleColors7", "Green", 0) + ini_read_real("PizzelleColors7", "Blue", 0)))
+global.custompal_1_col_4 = (65536 * ini_read_real("PizzelleColors6", "Red", 0) + (256 * ini_read_real("PizzelleColors6", "Green", 0) + ini_read_real("PizzelleColors6", "Blue", 0)))
+global.custompal_1_col_5 = (65536 * ini_read_real("PizzelleColors5", "Red", 0) + (256 * ini_read_real("PizzelleColors5", "Green", 0) + ini_read_real("PizzelleColors5", "Blue", 0)))
+ini_close()
 lastroom = -4;
 upsideDownJump = false;
 terminalVelocity = 20;
@@ -20,24 +28,28 @@ my_pal_surface = -4;
 my_pal_buffer = -4;
 global.doortaunt = 0
 my_palettes = [];
-new_palette("Default", c_white, 13150344);
-new_palette("Sugar", 8441896, 6066975);
-new_palette("Gremlin", 8446200, 1607896);
-new_palette("Golden", 1489391, 25527, 1489391, 25527, 25527, 1489391);
-new_palette("Purple", 16273560, 16273560);
-new_palette("Gum", 16737753, 9984923);
-new_palette("Cream n' Chips", spr_pattern0, 13150344);
-new_palette("Valiant Hero", spr_pattern1, 13150344);
-new_palette("Dead Man's Treats", spr_pattern2, 13150344);
-new_palette("Candy Cane", spr_pattern3, 13150344);
-new_palette("Sweet Apple", spr_pattern4, 13150344);
-new_palette("Space Cream", spr_pattern5, 13150344);
-new_palette("Sourness", spr_pattern6, 13150344);
-new_palette("Neapolitan", spr_pattern7, 13150344);
-new_palette("Cookie Cutter", spr_pattern8, 13150344);
-new_palette("MissingTexture", spr_pattern9, 13150344);
-new_palette("Solid", spr_pattern10, 13150344);
-new_palette("Cotton Candy", spr_pattern12, 13150344);
+new_palette("Default", 0, c_white, 13150344);
+new_palette("Sugar", 0, 8441896, 6066975);
+new_palette("Gremlin", 0, 8446200, 1607896);
+new_palette("Golden", 0, 1489391, 25527, 1489391, 25527, 25527, 1489391);
+new_palette("Purple", 0, 16273560, 16273560);
+new_palette("A Sad Gum", 0, 16737753, 9984923);
+new_palette("Cream n' Chips", 1, spr_pattern0, 13150344);
+new_palette("Valiant Hero", 1, spr_pattern1, 13150344);
+new_palette("Dead Man's Treats", 1, spr_pattern2, 13150344);
+new_palette("Candy Cane", 1, spr_pattern3, 13150344);
+new_palette("Sweet Apple", 1, spr_pattern4, 13150344);
+new_palette("Space Cream", 1, spr_pattern5, 13150344);
+new_palette("Sourness", 1, spr_pattern6, 13150344);
+new_palette("Neapolitan", 1, spr_pattern7, 13150344);
+new_palette("Cookie Cutter", 1, spr_pattern8, 13150344);
+new_palette("MissingTexture", 1, spr_pattern9, 13150344);
+new_palette("Solid", 1, spr_pattern10, 13150344);
+new_palette("Choco Squares", 1, spr_pattern11, 13150344);
+new_palette("Cotton Candy", 1, spr_pattern12, 13150344);
+ini_open("Custom/Pizzelle_1_palettes.ini")
+new_palette("Custom Test", 0, global.custompal_1_col_0, global.custompal_1_col_1, global.custompal_1_col_2, global.custompal_1_col_3, global.custompal_1_col_4, global.custompal_1_col_5);
+ini_close()
 combo_title = -4;
 scr_initinput();
 scr_getinput();

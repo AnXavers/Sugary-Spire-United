@@ -12,8 +12,9 @@ if canmove
 		optionsaved_heatmeter = global.heatmeter;
 		optionsaved_newlvldesign = global.newlvldesign;
 		optionsaved_inflapping = global.inflapping;
+		optionsaved_enablejerald = global.enablejerald;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 4)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 5)
 	{
 		optionselected += 1;
 		scr_sound(sound_step);
@@ -21,6 +22,7 @@ if canmove
 		optionsaved_newlvldesign = global.newlvldesign;
 		optionsaved_inflapping = global.inflapping;
 		optionsaved_enablejerald = global.enablejerald;
+		optionsaved_coneballparry = global.coneballparry;
 		
 	}
 	switch (optionselected)
@@ -98,6 +100,20 @@ if canmove
 				ini_write_real("Settings", "enablejerald", optionsaved_enablejerald);
 				ini_close();
 				global.enablejerald = optionsaved_enablejerald;
+			}
+			break;
+		case 5:
+			subtitle = "ALLOWS YOU TO PARRY AND SUPERTAUNT CONEBALL";
+			CursorY = 500;
+			optionsaved_coneballparry += (key_right2 + key_left2);
+			optionsaved_coneballparry = wrap(optionsaved_coneballparry, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "coneballparry", optionsaved_coneballparry);
+				ini_close();
+				global.coneballparry = optionsaved_coneballparry;
 			}
 			break;
 	}

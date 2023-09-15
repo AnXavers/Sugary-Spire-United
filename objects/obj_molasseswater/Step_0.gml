@@ -8,9 +8,7 @@ if (place_meeting(x, y, obj_player))
 			{
 				if (vsp >= 0)
 				{
-					if (state == states.cotton || state == states.cottondrill)
-						instance_create(x, y, obj_poofeffect);
-					scr_playerrespawn(false);
+					instance_create(x, y, obj_backtostart)
 				}
 			}
 		}

@@ -16,3 +16,10 @@ with (obj_baddie)
 		}
 	}
 }
+with (obj_coneball)
+{
+	if (bbox_in_camera(view_camera[0]) && global.coneballparry)
+	{
+		instance_destroy();
+	}
+}

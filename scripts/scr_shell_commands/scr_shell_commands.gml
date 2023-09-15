@@ -298,7 +298,9 @@ function meta_print_struct_variable()
 function sh_petersprite()
 {
 	global.petersprite = argument0[1]
-	global.peterspeed = argument0[2]
+	global.peterimage = argument0[2]
+	global.peterspeed = argument0[3]
+	global.peterupdate = 1
 	if !instance_exists(obj_petersprite)
 		instance_create(obj_player.x, obj_player.y, obj_petersprite)
 }
@@ -307,9 +309,9 @@ function meta_petersprite()
 	return 
 	{
 		description: "Draws a sprite over the player's.",
-		arguments: ["<sprite>", "<image_speed>"],
-		suggestions: [global.spritelist, 1],
-		argumentDescriptions: ["the sprite to draw over the player.", "the speed at which the sprite will play at."]
+		arguments: ["<sprite>", "<image>", "<image_speed>"],
+		suggestions: [global.spritelist, 1, "0.35"],
+		argumentDescriptions: ["the sprite to draw over the player.", "the sprite frame petersprite will start playing at.", "the speed at which the sprite will play at."]
 	};
 }
 function sh_petersprite_reset()
@@ -398,20 +400,6 @@ function meta_play_sound()
 		argumentDescriptions: ["The name of the sound to play."]
 	};
 }
-function sh_full_data_wipe()
-{
-	instance_create(x, y, obj_full_wipe_conformation)
-}
-function meta__full_data_wipe()
-{
-	return 
-	{
-		description: "Initiates a full game data wipe.",
-		arguments: [],
-		suggestions: [],
-		argumentDescriptions: []
-	};
-}
 function sh_game_end()
 {
 	game_end()
@@ -452,5 +440,35 @@ function meta_draw_sprite()
 		arguments: ["<sprite>", "<frame>", "<x>", "<y>"],
 		suggestions: [global.spritelist, 1, obj_player.x, obj_player.y],
 		argumentDescriptions: ["The sprite to draw.", "The frame you want to draw and/or start at.", "The X coordinate to draw the sprite at.", "The Y coordinate to draw the sprite at."]
+	};
+}
+function sh_set_combo()
+{
+	global.combo = argument0[1]
+	global.combotime = argument0[2]
+	global.combofreeze =argument0[3]
+}
+function meta_set_combo()
+{
+	return 
+	{
+		description: "Sets the combo amount.",
+		arguments: ["<combo>", "<combo_time>", "<combo_freeze>"],
+		suggestions: [0, 1, 2],
+		argumentDescriptions: ["the amount to change the combo to.", "the amount of time the combo will last for", "the amount of time the combo will be frozen for"]
+	};
+}
+function sh_set_lap()
+{
+	global.lapcount = argument0[1]
+}
+function meta_set_lap()
+{
+	return 
+	{
+		description: "Sets the lap amount.",
+		arguments: ["<lap>"],
+		suggestions: [0],
+		argumentDescriptions: ["the lap amount to change to."]
 	};
 }

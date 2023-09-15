@@ -29,9 +29,15 @@ function scr_palette_as_player(argument0 = sprite_index, argument1 = image_index
 		shader_set_uniform_f(u_texel, texture_get_texel_width(tex), texture_get_texel_height(tex), texture_get_texel_width(tex2), texture_get_texel_height(tex2));
 	}
 }
-function new_palette(argument0, argument1, argument2, argument3 = 8628991, argument4 = 14496, argument5 = 13773959, argument6 = 9988216)
+function new_palette(argument0, argument1, argument2, argument3, argument4 = 8628991, argument5 = 14496, argument6 = 13773959, argument7 = 9988216)
 {
-	var is_a_pattern = sprite_exists(argument1);
-	var q = [0, c_white, argument1, argument2, argument3, argument4, argument5, argument6];
+	var is_a_pattern = argument1;
+	var q = [0, c_white, argument2, argument3, argument4, argument5, argument6, argument7];
 	array_push(my_palettes, [argument0, 1, q]);
+}
+function update_palette(argument0, argument1, argument2, argument3, argument4 = 8628991, argument5 = 14496, argument6 = 13773959, argument7 = 9988216)
+{
+	var is_a_pattern = argument1;
+	var q = [0, c_white, argument2, argument3, argument4, argument5, argument6, argument7];
+	array_set(my_palettes, argument0, q);
 }
