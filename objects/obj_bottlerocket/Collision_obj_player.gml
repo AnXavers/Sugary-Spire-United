@@ -10,7 +10,7 @@ if (visible)
 			state = states.bottlerocket;
 			xscale = other.image_xscale;
 			image_index = 0;
-			sprite_index = spr_player_bottlerocketstart;
+			sprite_index = spr_bottlerocketstart;
 		}
 	}
 }

@@ -4,7 +4,7 @@ function state_player_fireass()
 	image_speed = 0.35;
 	if (scr_solid(x + xscale, y, false) && !place_meeting(x + xscale, y, obj_chocofrog))
 		xscale *= -1;
-	if (sprite_index == spr_player_fireass)
+	if (sprite_index == obj_player.spr_fireass)
 	{
 		move = key_left + key_right;
 		if (move != 0)

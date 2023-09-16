@@ -299,7 +299,20 @@ function scr_characterspr()
 			spr_lapjanitor_panicWalk = spr_janitor2_run;
 			spr_lapjanitor_taunt = spr_janitor2_taunt;
 			spr_large_destroyable_oneway = spr_onewayblock;
-			spr_dancewalk = spr_player_dancewalk
+			spr_dancewalk = spr_player_dancewalk;
+			spr_minecart_player = spr_player_minecart;
+			spr_minecartfast = spr_player_minecartfast;
+			spr_minecartfastland = spr_player_minecartfastland;
+			spr_minecartland = spr_player_minecartland;
+			spr_minecartjump = spr_player_minecartjump;
+			spr_minecartfall = spr_player_minecartfall;
+			spr_mask = spr_player_mask;
+			spr_fireass = spr_player_fireass;
+			spr_candyidle = spr_player_candyidle;
+			spr_candybegin = spr_player_candybegin;
+			spr_bottlerocketstart = spr_player_bottlerocketstart;
+			spr_hookvert = spr_player_hookvert
+			spr_hookhoriz = spr_player_hookhoriz
 			if global.newplayeranim == 1
 			{
 				spr_mach1 = spr_player_mach1_new;

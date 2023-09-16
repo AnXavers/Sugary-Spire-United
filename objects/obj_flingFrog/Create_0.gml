@@ -9,6 +9,6 @@ hsp = 0;
 vsp = 0;
 grav = 0;
 farBuffer = 0;
-mask_index = spr_player_mask;
+mask_index = obj_player.spr_mask;
 candyindex = 0;
 isReady = false;

@@ -1,6 +1,6 @@
 function state_player_barrelfloat()
 {
-	mask_index = spr_player_mask;
+	mask_index = obj_player.spr_mask;
 	move = key_left + key_right;
 	hsp = move * movespeed;
 	vsp = 0;

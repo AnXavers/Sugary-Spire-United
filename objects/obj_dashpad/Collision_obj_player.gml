@@ -72,7 +72,7 @@ if (other.Dashpad_buffer <= 0)
 			flash = 1;
 			Dashpad_buffer = 50;
 			image_index = 0;
-			sprite_index = spr_player_minecartfastland;
+			sprite_index = obj_player.spr_minecartfastland;
 		}
 		else if ((state == 144 || state == 145 || state == 146) && sprite_get_bbox_bottom(mask_index) <= other.bbox_bottom)
 		{

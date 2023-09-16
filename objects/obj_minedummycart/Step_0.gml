@@ -1,21 +1,20 @@
 hsp = sign(image_xscale) * movespeed;
 if (Dashpad_buffer > 0)
 	Dashpad_buffer = max(Dashpad_buffer - 1, 0);
-var _player = instance_nearest(x, y, obj_player);
 if (sprite_index == spr_minecart)
 {
-	if (place_meeting(x, y - 4, _player) && _player.vsp > 0 && _player.state != states.minecart)
+	if (place_meeting(x, y - 4, obj_player) && obj_player.vsp > 0 && obj_player.state != states.minecart)
 	{
-		_player.state = states.minecart;
-		if (_player.xscale == image_xscale)
-			_player.movespeed = clamp(_player.movespeed, 3, 12);
+		obj_player.state = states.minecart;
+		if (obj_player.xscale == image_xscale)
+			obj_player.movespeed = clamp(obj_player.movespeed, 3, 12);
 		else
-			_player.movespeed = clamp(_player.movespeed / 4, 3, 12);
-		_player.vsp = vsp;
-		_player.sprite_index = spr_player_minecart;
-		_player.x = x;
-		_player.y = y;
-		_player.xscale = image_xscale;
+			obj_player.movespeed = clamp(obj_player.movespeed / 4, 3, 12);
+		obj_player.vsp = vsp;
+		obj_player.sprite_index = obj_player.spr_minecart_player;
+		obj_player.x = x;
+		obj_player.y = y;
+		obj_player.xscale = image_xscale;
 		if (!instance_exists(obj_poofeffect))
 			instance_create(x, y, obj_poofeffect);
 		instance_destroy(id, false);

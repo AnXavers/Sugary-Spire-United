@@ -8,6 +8,11 @@ global.custompal_1_col_2 = (65536 * ini_read_real("PizzelleColors2", "Blue", 0) 
 global.custompal_1_col_3 = (65536 * ini_read_real("PizzelleColors3", "Blue", 0) + (256 * ini_read_real("PizzelleColors3", "Green", 0) + ini_read_real("PizzelleColors3", "Red", 0)))
 global.custompal_1_col_4 = (65536 * ini_read_real("PizzelleColors4", "Blue", 0) + (256 * ini_read_real("PizzelleColors4", "Green", 0) + ini_read_real("PizzelleColors4", "Red", 0)))
 global.custompal_1_col_5 = (65536 * ini_read_real("PizzelleColors5", "Blue", 0) + (256 * ini_read_real("PizzelleColors5", "Green", 0) + ini_read_real("PizzelleColors5", "Red", 0)))
+global.custompal_1_col_6 = (65536 * ini_read_real("PizzelleColors6", "Blue", 0) + (256 * ini_read_real("PizzelleColors6", "Green", 0) + ini_read_real("PizzelleColors6", "Red", 0)))
+global.custompal_1_col_7 = (65536 * ini_read_real("PizzelleColors7", "Blue", 0) + (256 * ini_read_real("PizzelleColors7", "Green", 0) + ini_read_real("PizzelleColors7", "Red", 0)))
+global.custompal_1_col_8 = (65536 * ini_read_real("PizzelleColors8", "Blue", 0) + (256 * ini_read_real("PizzelleColors8", "Green", 0) + ini_read_real("PizzelleColors8", "Red", 0)))
+global.custompal_1_col_9 = (65536 * ini_read_real("PizzelleColors9", "Blue", 0) + (256 * ini_read_real("PizzelleColors9", "Green", 0) + ini_read_real("PizzelleColors9", "Red", 0)))
+global.custompal_1_col_10 = (65536 * ini_read_real("PizzelleColors10", "Blue", 0) + (256 * ini_read_real("PizzelleColors10", "Green", 0) + ini_read_real("PizzelleColors10", "Red", 0)))
 ini_close()
 ini_open("Custom/Pizzelle_2_palettes.ini")
 global.custompal_2_col_0 = (65536 * ini_read_real("PizzelleColors0", "Blue", 0) + (256 * ini_read_real("PizzelleColors0", "Green", 0) + ini_read_real("PizzelleColors0", "Red", 0)))
@@ -16,6 +21,11 @@ global.custompal_2_col_2 = (65536 * ini_read_real("PizzelleColors2", "Blue", 0) 
 global.custompal_2_col_3 = (65536 * ini_read_real("PizzelleColors3", "Blue", 0) + (256 * ini_read_real("PizzelleColors3", "Green", 0) + ini_read_real("PizzelleColors3", "Red", 0)))
 global.custompal_2_col_4 = (65536 * ini_read_real("PizzelleColors4", "Blue", 0) + (256 * ini_read_real("PizzelleColors4", "Green", 0) + ini_read_real("PizzelleColors4", "Red", 0)))
 global.custompal_2_col_5 = (65536 * ini_read_real("PizzelleColors5", "Blue", 0) + (256 * ini_read_real("PizzelleColors5", "Green", 0) + ini_read_real("PizzelleColors5", "Red", 0)))
+global.custompal_2_col_6 = (65536 * ini_read_real("PizzelleColors6", "Blue", 0) + (256 * ini_read_real("PizzelleColors6", "Green", 0) + ini_read_real("PizzelleColors6", "Red", 0)))
+global.custompal_2_col_7 = (65536 * ini_read_real("PizzelleColors7", "Blue", 0) + (256 * ini_read_real("PizzelleColors7", "Green", 0) + ini_read_real("PizzelleColors7", "Red", 0)))
+global.custompal_2_col_8 = (65536 * ini_read_real("PizzelleColors8", "Blue", 0) + (256 * ini_read_real("PizzelleColors8", "Green", 0) + ini_read_real("PizzelleColors8", "Red", 0)))
+global.custompal_2_col_9 = (65536 * ini_read_real("PizzelleColors9", "Blue", 0) + (256 * ini_read_real("PizzelleColors9", "Green", 0) + ini_read_real("PizzelleColors9", "Red", 0)))
+global.custompal_2_col_10 = (65536 * ini_read_real("PizzelleColors10", "Blue", 0) + (256 * ini_read_real("PizzelleColors10", "Green", 0) + ini_read_real("PizzelleColors10", "Red", 0)))
 ini_close()
 ini_open("Custom/Pizzelle_3_palettes.ini")
 global.custompal_3_col_0 = (65536 * ini_read_real("PizzelleColors0", "Blue", 0) + (256 * ini_read_real("PizzelleColors0", "Green", 0) + ini_read_real("PizzelleColors0", "Red", 0)))
@@ -24,6 +34,11 @@ global.custompal_3_col_2 = (65536 * ini_read_real("PizzelleColors2", "Blue", 0) 
 global.custompal_3_col_3 = (65536 * ini_read_real("PizzelleColors3", "Blue", 0) + (256 * ini_read_real("PizzelleColors3", "Green", 0) + ini_read_real("PizzelleColors3", "Red", 0)))
 global.custompal_3_col_4 = (65536 * ini_read_real("PizzelleColors4", "Blue", 0) + (256 * ini_read_real("PizzelleColors4", "Green", 0) + ini_read_real("PizzelleColors4", "Red", 0)))
 global.custompal_3_col_5 = (65536 * ini_read_real("PizzelleColors5", "Blue", 0) + (256 * ini_read_real("PizzelleColors5", "Green", 0) + ini_read_real("PizzelleColors5", "Red", 0)))
+global.custompal_3_col_6 = (65536 * ini_read_real("PizzelleColors6", "Blue", 0) + (256 * ini_read_real("PizzelleColors6", "Green", 0) + ini_read_real("PizzelleColors6", "Red", 0)))
+global.custompal_3_col_7 = (65536 * ini_read_real("PizzelleColors7", "Blue", 0) + (256 * ini_read_real("PizzelleColors7", "Green", 0) + ini_read_real("PizzelleColors7", "Red", 0)))
+global.custompal_3_col_8 = (65536 * ini_read_real("PizzelleColors8", "Blue", 0) + (256 * ini_read_real("PizzelleColors8", "Green", 0) + ini_read_real("PizzelleColors8", "Red", 0)))
+global.custompal_3_col_9 = (65536 * ini_read_real("PizzelleColors9", "Blue", 0) + (256 * ini_read_real("PizzelleColors9", "Green", 0) + ini_read_real("PizzelleColors9", "Red", 0)))
+global.custompal_3_col_10 = (65536 * ini_read_real("PizzelleColors10", "Blue", 0) + (256 * ini_read_real("PizzelleColors10", "Green", 0) + ini_read_real("PizzelleColors10", "Red", 0)))
 ini_close()
 lastroom = -4;
 upsideDownJump = false;
@@ -63,9 +78,9 @@ new_palette("MissingTexture", 1, spr_pattern9, 13150344);
 new_palette("Solid", 1, spr_pattern10, 13150344);
 new_palette("Choco Squares", 1, spr_pattern11, 13150344);
 new_palette("Cotton Candy", 1, spr_pattern12, 13150344);
-new_palette("Custom 1", 0, global.custompal_1_col_1, global.custompal_1_col_0, global.custompal_1_col_3, global.custompal_1_col_2, global.custompal_1_col_4, global.custompal_1_col_5);
-new_palette("Custom 2", 0, global.custompal_2_col_1, global.custompal_2_col_0, global.custompal_2_col_3, global.custompal_2_col_2, global.custompal_2_col_4, global.custompal_2_col_5);
-new_palette("Custom 3", 0, global.custompal_3_col_1, global.custompal_3_col_0, global.custompal_3_col_3, global.custompal_3_col_2, global.custompal_3_col_4, global.custompal_3_col_5);
+new_palette("Custom 1", 0, global.custompal_1_col_1, global.custompal_1_col_9, global.custompal_1_col_3, global.custompal_1_col_2, global.custompal_1_col_7, global.custompal_1_col_8, global.custompal_1_col_0, global.custompal_1_col_2);
+new_palette("Custom 2", 0, global.custompal_2_col_1, global.custompal_2_col_9, global.custompal_2_col_3, global.custompal_2_col_2, global.custompal_2_col_7, global.custompal_2_col_8, global.custompal_2_col_0, global.custompal_2_col_2);
+new_palette("Custom 3", 0, global.custompal_3_col_1, global.custompal_3_col_9, global.custompal_3_col_3, global.custompal_3_col_2, global.custompal_3_col_7, global.custompal_3_col_8, global.custompal_3_col_0, global.custompal_3_col_2);
 combo_title = -4;
 scr_initinput();
 scr_getinput();

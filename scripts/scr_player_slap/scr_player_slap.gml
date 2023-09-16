@@ -5,7 +5,7 @@ function state_player_slap()
 		fallinganimation++;
 		if (fallinganimation >= 40 && fallinganimation < 80)
 		{
-			sprite_index = spr_player_facestomp;
+			sprite_index = spr_facestomp;
 			state = 60;
 		}
 	}

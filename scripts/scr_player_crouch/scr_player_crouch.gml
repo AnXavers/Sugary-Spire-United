@@ -60,7 +60,7 @@ function state_player_crouch()
 		crouchAnim = 1;
 		jumpAnim = 1;
 		image_index = 0;
-		mask_index = spr_player_mask;
+		mask_index = obj_player.spr_mask;
 	}
 	if (crouchAnim == 0 && sprite_index != spr_coneboy_slidekick)
 	{

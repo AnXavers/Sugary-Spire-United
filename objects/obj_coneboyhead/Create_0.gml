@@ -10,5 +10,5 @@ palspr = obj_player.spr_palette;
 palsel = obj_player.paletteselect;
 image_speed = 0.35;
 depth = -10;
-mask_index = spr_player_mask;
+mask_index = obj_player.spr_mask;
 alarm[0] = 1;

@@ -3,7 +3,7 @@ function state_player_bombpep()
 	if (sprite_index == spr_bombpep_intro || sprite_index == spr_bombpep_end)
 		mask_index = spr_crouchmask;
 	else
-		mask_index = spr_player_mask;
+		mask_index = obj_player.spr_mask;
 	if (place_meeting(x, y, obj_watertop))
 		bombpeptimer = 0;
 	if (key_jump)

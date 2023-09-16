@@ -25,7 +25,7 @@ function state_player_stunned()
 	image_speed = 0.35;
 	if (floor(image_index) == 53)
 	{
-		mask_index = spr_player_mask;
+		mask_index = obj_player.spr_mask;
 		state = 1;
 		sprite_index = spr_idle;
 		image_index = 0;

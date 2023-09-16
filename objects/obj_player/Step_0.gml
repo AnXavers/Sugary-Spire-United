@@ -162,7 +162,7 @@ if (state == 70 || state == 3 || state == 69 || state == 5 || (state == 71 && ma
 else
 	mach_aftimg = 0;
 if (state != 72 && state != 98 && state != 65 && state != 9 && state != 32 && state != 96 && sprite_index != spr_crouchshoot && sprite_index != spr_skatecrouch && state != 64 && state != 28 && state != 31 && state != 73 && state != 67 && state != 66 && sprite_index != spr_pizzano_crouchslide)
-	mask_index = spr_player_mask;
+	mask_index = obj_player.spr_mask;
 else
 	mask_index = spr_crouchmask;
 if (state != 73)

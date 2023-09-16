@@ -1,6 +1,6 @@
 function state_player_barrelfall()
 {
-	mask_index = spr_player_mask;
+	mask_index = obj_player.spr_mask;
 	if (vsp < 12)
 		vsp += grav;
 	if (place_meeting(x, y, obj_water2))

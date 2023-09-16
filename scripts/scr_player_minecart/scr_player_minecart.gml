@@ -69,7 +69,7 @@ function state_player_minecart()
 	{
 		vsp = -10;
 		image_index = 0;
-		sprite_index = spr_player_minecartjump;
+		sprite_index = obj_player.spr_minecartjump;
 	}
 	if (grounded && !place_meeting(x, y + 1, obj_minecartRail) && !place_meeting(x, y + 1, obj_minecartRail_Slope))
 	{
@@ -89,28 +89,28 @@ function state_player_minecart()
 			sprite_index = spr_player_hurtroll;
 		}
 	}
-	var groundedlandsprite = (movespeed >= 12) ? spr_player_minecartfastland : spr_player_minecartland;
-	var groundedsprite = (movespeed >= 12) ? spr_player_minecartfast : spr_player_minecart;
+	var groundedlandsprite = (movespeed >= 12) ? obj_player.spr_minecartfastland : obj_player.spr_minecartland;
+	var groundedsprite = (movespeed >= 12) ? obj_player.spr_minecartfast : obj_player.spr_minecart_player;
 	if (!grounded)
 	{
-		if (sprite_index != spr_player_minecartjump)
-			sprite_index = spr_player_minecartfall;
-		if (sprite_index == spr_player_minecartjump && animation_end())
-			sprite_index = spr_player_minecartfall;
+		if (sprite_index != obj_player.spr_minecartjump)
+			sprite_index = obj_player.spr_minecartfall;
+		if (sprite_index == obj_player.spr_minecartjump && animation_end())
+			sprite_index = obj_player.spr_minecartfall;
 	}
 	if (grounded)
 	{
-		if (sprite_index != groundedlandsprite && (sprite_index == spr_player_minecartfall || sprite_index == spr_player_minecartjump))
+		if (sprite_index != groundedlandsprite && (sprite_index == obj_player.spr_minecartfall || sprite_index == obj_player.spr_minecartjump))
 		{
 			sprite_index = groundedlandsprite;
 			image_index = 0;
 		}
 		if (sprite_index == groundedlandsprite && animation_end())
 			sprite_index = groundedsprite;
-		if (sprite_index != groundedsprite && (sprite_index == spr_player_minecartfast || sprite_index == spr_player_minecart))
+		if (sprite_index != groundedsprite && (sprite_index == obj_player.spr_minecartfast || sprite_index == obj_player.spr_minecart_player))
 			sprite_index = groundedsprite;
 	}
-	if (sprite_index == spr_player_minecartfast || sprite_index == spr_player_minecart)
+	if (sprite_index == obj_player.spr_minecartfast || sprite_index == obj_player.spr_minecart_player)
 		image_speed = clamp(0.5 * (movespeed / 12), 0.35, 0.6);
 	else
 		image_speed = 0.35;

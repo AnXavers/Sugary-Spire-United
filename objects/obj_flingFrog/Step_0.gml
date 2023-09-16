@@ -55,8 +55,8 @@ if (grabbedPlayer != -4)
 	{
 		x = other.x;
 		y = other.y;
-		if (sprite_index != spr_player_candyidle)
-			sprite_index = spr_player_candybegin;
+		if (sprite_index != obj_player.spr_candyidle)
+			sprite_index = obj_player.spr_candybegin;
 		state = states.fling;
 		if (!instance_exists(obj_candifiedeffect2))
 			instance_create(x, y, obj_candifiedeffect2);
@@ -99,7 +99,7 @@ if (grabbedPlayer != -4)
 			hsp = other.hsp;
 			movespeed = abs(hsp);
 			vsp = other.max_vsp;
-			sprite_index = spr_player_candytransitionup;
+			sprite_index = obj_player.spr_candytransitionup;
 			if (sign(hsp) != 0)
 				xscale = sign(hsp);
 		}
@@ -116,7 +116,7 @@ if (grabbedPlayer != -4)
 			hsp = other.hsp;
 			movespeed = abs(hsp);
 			vsp = -6;
-			sprite_index = spr_player_candytransitionup;
+			sprite_index = obj_player.spr_candytransitionup;
 			if (sign(hsp) != 0)
 				xscale = sign(hsp);
 		}

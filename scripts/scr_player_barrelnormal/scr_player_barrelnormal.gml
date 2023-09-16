@@ -1,6 +1,6 @@
 function state_player_barrelnormal()
 {
-	mask_index = spr_player_mask;
+	mask_index = obj_player.spr_mask;
 	move = key_left + key_right;
 	hsp = move * movespeed;
 	if (vsp < 12)

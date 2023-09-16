@@ -2,7 +2,7 @@ if (place_meeting(x, y, obj_player))
 {
 	with (obj_player)
 	{
-		sprite_index = spr_player_fireass;
+		sprite_index = obj_player.spr_fireass;
 		state = states.fireass;
 		image_index = 0;
 		vsp = -20;

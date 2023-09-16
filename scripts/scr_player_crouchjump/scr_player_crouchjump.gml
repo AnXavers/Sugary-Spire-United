@@ -37,7 +37,7 @@ function state_player_crouchjump()
 		crouchAnim = 1;
 		image_index = 0;
 		jumpstop = 0;
-		mask_index = spr_player_mask;
+		mask_index = obj_player.spr_mask;
 	}
 	if (grounded)
 	{

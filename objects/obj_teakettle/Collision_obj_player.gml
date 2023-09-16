@@ -5,7 +5,7 @@ with (other)
 	if (state == states.machslide)
 	{
 		state = states.normal;
-		sprite_index = spr_player_outofcontrolfall;
+		sprite_index = obj_player.spr_outofcontrolfall;
 		image_index = 0;
 	}
 }

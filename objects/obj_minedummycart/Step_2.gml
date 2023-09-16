@@ -1,4 +1,4 @@
-mask_index = spr_player_mask;
+mask_index = obj_player.spr_mask;
 if (scr_solid(x + sign(image_xscale), y, true) && !place_meeting(x + sign(image_xscale), y, obj_destructibles) && !place_meeting(x + sign(image_xscale), y, obj_metalblock) && !place_meeting(x + sign(image_xscale), y, obj_chocofrog))
 {
 	for (var i = 0; i < (sprite_get_number(spr_minecartdebris) - 1); i++)

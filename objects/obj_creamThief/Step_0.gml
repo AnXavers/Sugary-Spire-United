@@ -30,7 +30,7 @@ switch (state)
 		if (grounded)
 		{
 			sprite_index = spr_creamthief_walk;
-			mask_index = spr_player_mask;
+			mask_index = obj_player.spr_mask;
 			var check1 = place_meeting_collision(x, y);
 			mask_index = spr_crouchmask;
 			var check2 = !place_meeting_collision(x, y);

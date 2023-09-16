@@ -29,8 +29,8 @@ function scr_palette_as_player(argument0 = sprite_index, argument1 = image_index
 		shader_set_uniform_f(u_texel, texture_get_texel_width(tex), texture_get_texel_height(tex), texture_get_texel_width(tex2), texture_get_texel_height(tex2));
 	}
 }
-function new_palette(argument0, argument1, argument2, argument3, argument4 = 8628991, argument5 = 14496, argument6 = 13773959, argument7 = 9988216)
+function new_palette(argument0, argument1, argument2, argument3, argument4 = 8628991, argument5 = 14496, argument6 = 13773959, argument7 = 9988216, argument8 = 0, argument9 = c_white)
 {
-	var q = [0, c_white, argument2, argument3, argument4, argument5, argument6, argument7];
+	var q = [argument8, argument9, argument2, argument3, argument4, argument5, argument6, argument7, argument8];
 	array_push(my_palettes, [argument0, argument1, q]);
 }

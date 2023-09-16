@@ -1,4 +1,4 @@
-mask_index = spr_player_mask;
+mask_index = obj_player.spr_mask;
 if (obj_player.state == states.backbreaker && state != states.backbreaker)
 {
 	storedstate = state;

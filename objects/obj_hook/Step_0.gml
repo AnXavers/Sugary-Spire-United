@@ -42,9 +42,9 @@ switch (state)
 				y = other.y - 14;
 				xscale = sign(other.image_xscale);
 				if (abs(_hsp) >= abs(_vsp))
-					sprite_index = spr_player_hookhoriz;
+					sprite_index = spr_hookhoriz;
 				else
-					sprite_index = spr_player_hookvert;
+					sprite_index = spr_hookvert;
 			}
 		}
 		visible = false;

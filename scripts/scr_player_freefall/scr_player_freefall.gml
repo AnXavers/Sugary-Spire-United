@@ -17,7 +17,7 @@ function state_player_freefall()
 	move = key_left + key_right;
 	if (!grounded)
 	{
-		if (sprite_index != spr_player_outofcontrolfall)
+		if (sprite_index != obj_player.spr_outofcontrolfall)
 			hsp = move * movespeed;
 		else
 			hsp = 0;
@@ -51,7 +51,7 @@ function state_player_freefall()
 		if (move != 0)
 			xscale = move;
 	}
-	if (sprite_index != spr_player_outofcontrolfall)
+	if (sprite_index != obj_player.spr_outofcontrolfall)
 	{
 		if (sprite_index == spr_bodyslamstart)
 			sprite_index = spr_bodyslamfall;

@@ -1,6 +1,6 @@
 function state_player_barrelslipnslide()
 {
-	mask_index = spr_player_mask;
+	mask_index = obj_player.spr_mask;
 	hsp = image_xscale * movespeed;
 	if (movespeed <= 8)
 		movespeed += 0.2;
