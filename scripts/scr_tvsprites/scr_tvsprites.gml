@@ -25,6 +25,7 @@ function scr_tvsprites()
 	panictvspr = spr_pizzytvescape;
 	laptvspr = spr_pizzytv_rage;
 	secrettvspr = spr_pizzytv_secret;
+	crashtvspr = spr_pizzytv_ouchiecrash
 	switch (obj_player.character)
 	{
 		case "N":
@@ -74,5 +75,30 @@ function scr_tvsprites()
 			marshdogspr = spr_pizzytvmarsh;
 			panictvspr = spr_pizzytvescape;
 			break;
+		case "T":
+			idletvspr = spr_tv_idleN;
+			combotvspr = spr_tv_exprcomboN;
+			happytvspr = spr_tv_exprcollectN;
+			escapetvspr = spr_pizzanotv_escape1;
+			tvchange1 = spr_tv_idleanim1N;
+			tvchange2 = spr_tv_idleanim2N;
+			cottontvspr = spr_pizzanotv_cotton;
+			hurttvspr = spr_tv_exprhurtN;
+			minecarttvspr = spr_pizzanotvmine;
+			bombtvspr = spr_pizzytvbomb;
+			firetvspr = spr_tv_fireassN;
+			angrytvspr = spr_pizzytvangry;
+			orbtvspr = spr_pizzanotv_croaked;
+			ufotvspr = spr_pizzytvufo;
+			mach1tvspr = spr_tv_exprmach3N;
+			mach2tvspr = spr_tv_exprmach3N;
+			mach3tvspr = spr_tv_exprmach3N;
+			mach4tvspr = spr_tv_exprmach4N;
+			machrolltvspr = spr_pizzytvmachroll;
+			frostburntvspr = spr_pizzanotv_flushed;
+			hooktvspr = spr_pizzytvhook;
+			marshdogspr = spr_pizzytvmarsh;
+			panictvspr = spr_tv_exprpanicN;
+			laptvspr = spr_tv_exprheatN;
 	}
 }

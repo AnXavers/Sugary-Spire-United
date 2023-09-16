@@ -55,6 +55,7 @@ global.buttonfont = font_add_sprite_ext(spr_buttonfont, "ABCDEFGHIJKLMNOPQRSTUVW
 global.promptfont = font_add_sprite_ext(spr_promptfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.:!0123456789?'\"ÁÉÍÓÚáéíóú_-[]▼()&#风雨廊桥전태양*яиБжидГзвбнль", 1, 0);
 global.npcfont = font_add_sprite_ext(spr_npcfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!,.:0123456789'?-", 1, 2);
 global.rankfont = font_add_sprite_ext(spr_rankbubble_e_font, "E", 1, -10);
+global.lapcountpepfont = font_add_sprite_ext(spr_lapcount_font_pep, "0123456789", 1, 2);
 global.shellactivate = false;
 global.showcollisions = false;
 global.debugmode = false;

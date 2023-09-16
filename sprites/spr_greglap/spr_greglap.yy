@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Lap",
+    "path": "folders/Sprites/UI/Lap.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

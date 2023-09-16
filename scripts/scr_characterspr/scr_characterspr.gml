@@ -313,6 +313,9 @@ function scr_characterspr()
 			spr_bottlerocketstart = spr_player_bottlerocketstart;
 			spr_hookvert = spr_player_hookvert
 			spr_hookhoriz = spr_player_hookhoriz
+			spr_lapvisual_player = spr_lapvisual
+			spr_lapbg_player = spr_lapbg
+			lapfont_choose = global.lapcountfont
 			if global.newplayeranim == 1
 			{
 				spr_mach1 = spr_player_mach1_new;
@@ -953,6 +956,9 @@ function scr_characterspr()
 			spr_lapjanitor_panicWalk = spr_janitor2_run;
 			spr_lapjanitor_taunt = spr_janitor2_taunt;
 			spr_large_destroyable_oneway = spr_onewaybigblock;
+			spr_lapvisual_player = spr_lapvisual_pep
+			spr_lapbg_player = spr_lapbg_pep
+			lapfont_choose = global.lapcountpepfont
 			break;
 	}
 }
