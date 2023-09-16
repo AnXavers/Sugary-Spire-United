@@ -31,13 +31,6 @@ function scr_palette_as_player(argument0 = sprite_index, argument1 = image_index
 }
 function new_palette(argument0, argument1, argument2, argument3, argument4 = 8628991, argument5 = 14496, argument6 = 13773959, argument7 = 9988216)
 {
-	var is_a_pattern = argument1;
 	var q = [0, c_white, argument2, argument3, argument4, argument5, argument6, argument7];
-	array_push(my_palettes, [argument0, 1, q]);
-}
-function update_palette(argument0, argument1, argument2, argument3, argument4 = 8628991, argument5 = 14496, argument6 = 13773959, argument7 = 9988216)
-{
-	var is_a_pattern = argument1;
-	var q = [0, c_white, argument2, argument3, argument4, argument5, argument6, argument7];
-	array_set(my_palettes, argument0, q);
+	array_push(my_palettes, [argument0, argument1, q]);
 }

@@ -1,13 +1,4 @@
 scr_exitlevellocation()
-ini_open("Custom/Pizzelle_1_palettes.ini")
-global.custompal_1_col_0 = (65536 * ini_read_real("PizzelleColors10", "Red", 0) + (256 * ini_read_real("PizzelleColors10", "Green", 0) + ini_read_real("PizzelleColors10", "Blue", 0)))
-global.custompal_1_col_1 = (65536 * ini_read_real("PizzelleColors9", "Red", 0) + (256 * ini_read_real("PizzelleColors9", "Green", 0) + ini_read_real("PizzelleColors9", "Blue", 0)))
-global.custompal_1_col_2 = (65536 * ini_read_real("PizzelleColors8", "Red", 0) + (256 * ini_read_real("PizzelleColors8", "Green", 0) + ini_read_real("PizzelleColors8", "Blue", 0)))
-global.custompal_1_col_3 = (65536 * ini_read_real("PizzelleColors7", "Red", 0) + (256 * ini_read_real("PizzelleColors7", "Green", 0) + ini_read_real("PizzelleColors7", "Blue", 0)))
-global.custompal_1_col_4 = (65536 * ini_read_real("PizzelleColors6", "Red", 0) + (256 * ini_read_real("PizzelleColors6", "Green", 0) + ini_read_real("PizzelleColors6", "Blue", 0)))
-global.custompal_1_col_5 = (65536 * ini_read_real("PizzelleColors5", "Red", 0) + (256 * ini_read_real("PizzelleColors5", "Green", 0) + ini_read_real("PizzelleColors5", "Blue", 0)))
-ini_close()
-update_palette("Custom Test", 0, global.custompal_1_col_0, global.custompal_1_col_1, global.custompal_1_col_2, global.custompal_1_col_3, global.custompal_1_col_4, global.custompal_1_col_5);
 audio_emitter_position(playerSound, x, y, 0);
 audio_emitter_gain(playerSound, global.soundVolume);
 var a = instance_place(x, y, obj_secret_tiles);
