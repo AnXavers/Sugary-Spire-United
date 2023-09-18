@@ -187,13 +187,11 @@ if (global.debugmode == 1)
 	draw_text(325, 450, angledir);
 	draw_text(100, 400, obj_player.x);
 	draw_text(100, 450, obj_player.y);
-	var roomname = string_upper(room_get_name(global.GMLIVE_realroom));
-	draw_text(150, 0, roomname);
 	draw_set_font(font_dev);
 	draw_set_halign(0);
 	draw_set_color(c_white);
 	draw_text(0, 50, fps_real);
-	roomname = string_upper(room_get_name(room));
+	var roomname = string_upper(room_get_name(room));
 	draw_text(0, 100, roomname);
 	var spritename = string_upper(sprite_get_name(obj_player.sprite_index));
 	draw_text(0, 150, spritename);

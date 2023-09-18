@@ -85,6 +85,7 @@
     {"name":"inst_1593C697","path":"rooms/exitway_secret_1/exitway_secret_1.yy",},
     {"name":"inst_AA46340F","path":"rooms/exitway_secret_1/exitway_secret_1.yy",},
     {"name":"inst_2F0AA277","path":"rooms/exitway_secret_1/exitway_secret_1.yy",},
+    {"name":"inst_11A5379E","path":"rooms/exitway_secret_1/exitway_secret_1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -167,6 +168,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1593C697","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_secretdestroyable","path":"objects/obj_secretdestroyable/obj_secretdestroyable.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":384.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_AA46340F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_secretdestroyable","path":"objects/obj_secretdestroyable/obj_secretdestroyable.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":384.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F0AA277","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_doorS","path":"objects/obj_doorS/obj_doorS.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":1376.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_11A5379E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_secretPortal","path":"objects/obj_secretPortal/obj_secretPortal.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_secretPortal","path":"objects/obj_secretPortal/obj_secretPortal.yy",},"propertyId":{"name":"targetRoom","path":"objects/obj_secretPortal/obj_secretPortal.yy",},"value":"exitway_1",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":128.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":52,"SerialiseWidth":30,"TileCompressedData":[
 -211,0,2,444,445,-9,0,2,394,395,-5,0,4,374,375,376,377,-8,0,2,460,461,-9,0,2,410,411,-5,0,7,

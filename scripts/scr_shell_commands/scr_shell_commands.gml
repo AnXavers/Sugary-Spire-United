@@ -1,10 +1,10 @@
 for (var i = 0; room_exists(i); i++)
 	global.roomlist[i] = room_get_name(i);
-for (var i = 0; room_exists(i); i++)
+for (var i = 0; object_exists(i); i++)
 	global.objectlist[i] = object_get_name(i);
-for (var i = 0; room_exists(i); i++)
+for (var i = 0; script_exists(i); i++)
 	global.scriptlist[i] = script_get_name(i);
-for (var i = 0; room_exists(i); i++)
+for (var i = 0; sprite_exists(i); i++)
 	global.spritelist[i] = sprite_get_name(i);
 function sh_escape()
 {
@@ -470,5 +470,22 @@ function meta_set_lap()
 		arguments: ["<lap>"],
 		suggestions: [0],
 		argumentDescriptions: ["the lap amount to change to."]
+	};
+}
+function sh_room_live()
+{
+	if (asset_get_type(argument0[1]) == 3)
+		room_set_live(asset_get_index(argument0[1]), true)
+	else
+		return "Can't find room " + string(argument0[1]);
+}
+function meta_room_live()
+{
+	return 
+	{
+		description: "Allows you to make a room live with GMLive.",
+		arguments: ["<room>"],
+		suggestions: [global.roomlist],
+		argumentDescriptions: ["Room to turn live."]
 	};
 }

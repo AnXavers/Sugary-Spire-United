@@ -9,9 +9,13 @@ with (inst_6DA06790)
 {
 	if (instance_exists(obj_waterfaucet) && obj_waterfaucet.sprite_index == spr_onoffswitch_blue)
 		text = "Oh.";
-}
-with (inst_6DA06790)
-{
-	if (!instance_exists(obj_waterfaucet))
+	else if (!instance_exists(obj_waterfaucet))
 		text = "That was the only gadget he left behind...";
+}
+with (inst_78702139)
+{
+	if ((obj_player.sprite_index == spr_pizzelle_taunt) && (obj_player.image_index == 16))
+		visible = false
+	else if obj_player.sprite_index != spr_pizzelle_taunt
+		visible = true
 }

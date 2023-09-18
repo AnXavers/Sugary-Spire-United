@@ -33,9 +33,6 @@ global.MinesFlags[3] = false;
 global.MinesFlags[4] = false;
 global.MinesFlags[5] = false;
 global.MinesFlags[6] = false;
-global.GMLIVE_roomstart = false;
-global.GMLIVE_prevroom = 0;
-global.GMLIVE_realroom = 0;
 global.cutsceneManager = -4;
 global.combomode = false;
 global.font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.0123456789:- ", 1, 0);
@@ -83,6 +80,16 @@ global.petersprite = 0;
 global.clutterhit = 0;
 global.enableportal = 0;
 global.peterimage = -1;
+ini_open("silversave.ini")
+global.keypieces = ini_read_real("Unlocks", "keypieces", 0);
+global.unlockshell = ini_read_real("Unlocks", "shell", 0);
+global.unlockmusic = ini_read_real("Unlocks", "custommusic", 0);
+global.unlocklvldesign = ini_read_real("Unlocks", "leveldesign", 0);
+global.unlockplayeranim = ini_read_real("Unlocks", "playeranim", 0);
+global.unlockinflapping = ini_read_real("Unlocks", "inflapping", 0);
+global.unlockheatmeter = ini_read_real("Unlocks", "heatmeter", 0);
+global.unlockjerald = ini_read_real("Unlocks", "jerald", 0);
+global.unlockweakcone = ini_read_real("Unlocks", "weakcone", 0);
 
 ini_open("optionData.ini");
 global.fullscreen = ini_read_real("Settings", "fullscrn", 0);

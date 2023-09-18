@@ -15,8 +15,6 @@
     {"name":"inst_1799CC51","path":"rooms/hub_shop2/hub_shop2.yy",},
     {"name":"inst_9C5C3AC9","path":"rooms/hub_shop2/hub_shop2.yy",},
     {"name":"inst_78702139","path":"rooms/hub_shop2/hub_shop2.yy",},
-    {"name":"inst_5A22544D","path":"rooms/hub_shop2/hub_shop2.yy",},
-    {"name":"inst_14F964E1","path":"rooms/hub_shop2/hub_shop2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -31,8 +29,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1799CC51","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_doorC","path":"objects/obj_doorC/obj_doorC.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1152.0,"y":352.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_9C5C3AC9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_costumerdoor","path":"objects/obj_costumerdoor/obj_costumerdoor.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":338.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_78702139","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":320.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A22544D","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_eventtrigger","path":"objects/obj_eventtrigger/obj_eventtrigger.yy",},"properties":[],"rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":0.0,"y":0.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_14F964E1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_eventtrigger","path":"objects/obj_eventtrigger/obj_eventtrigger.yy",},"properties":[],"rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":96.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":35,"TileCompressedData":[
 -30,0,-5,-2147483648,-30,0,-5,-2147483648,-30,0,-5,-2147483648,-30,0,-5,-2147483648,-30,0,-5,-2147483648,-30,0,-5,-2147483648,-30,0,-5,-2147483648,-30,0,-5,-2147483648,-27,0,3,

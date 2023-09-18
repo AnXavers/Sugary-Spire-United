@@ -4,15 +4,9 @@ if (fadealpha > 1 && !place_meeting(obj_player.x, obj_player.y, obj_startgate))
 	if (instance_exists(obj_player) && !place_meeting(x, y, obj_startgate))
 	{
 		if (room_exists(obj_player.targetRoom))
-		{
-			global.GMLIVE_roomstart = false;
 			room_goto(obj_player.targetRoom);
-		}
 		else
-		{
-			global.GMLIVE_roomstart = false;
 			room_goto(rm_missing);
-		}
 	}
 }
 if (fadein == 0)

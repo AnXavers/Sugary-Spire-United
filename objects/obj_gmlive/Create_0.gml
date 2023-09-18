@@ -13,3 +13,5 @@ if (asset_get_index("live_init") == -1) show_error("live_init is missing!\nEithe
 // change the IP/port here if gmlive-server isn't running on the same device as the game
 // (e.g. when running on mobile platforms):
 live_init(1, "http://localhost:5100", "");
+live_blank_object = obj_gmliveblank;
+live_blank_room = room_gmliveblank;

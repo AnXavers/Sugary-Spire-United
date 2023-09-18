@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Script391",
+  "name": "scr_silverdialog",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

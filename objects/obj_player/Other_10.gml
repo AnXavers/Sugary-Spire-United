@@ -1,4 +1,3 @@
-global.GMLIVE_realroom = room;
 var yoffset = 160;
 var _door = obj_doortrigger_parent;
 with (obj_doortrigger_parent)

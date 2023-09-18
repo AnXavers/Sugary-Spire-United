@@ -1,4 +1,6 @@
 event_inherited();
+if (live_call()) return live_result;
 idle = spr_silverconeboy;
 mytex = spr_silverconeboybg;
-text = "I'll give you my cigar, if I can have yours!";
+text = "What did you do?";
+dialogline = 0;
