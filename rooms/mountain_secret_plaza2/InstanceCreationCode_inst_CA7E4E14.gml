@@ -1,2 +1,2 @@
-targetRoom = mountain_3;
+targetRoom = fudge_3;
 targetDoor = "C";

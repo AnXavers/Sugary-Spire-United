@@ -103,6 +103,7 @@ add_music(mines_1, mu_mineshaft1, mu_minessecret, false, function()
 });
 add_music(mines_6, mu_mineshaft2, mu_minessecret, false);
 add_music(mineshaft_1, mu_mineshaft1, mu_minessecret, false);
+add_music(fudge_1, mu_mountain1, mu_mountainsecret, false);
 add_music(mountain_intro, mu_mountain1, mu_mountainsecret, false);
 add_music(mountain_5, mu_mountain1, mu_mountainsecret, true);
 add_music(mountain_6, mu_mountain2, mu_mountainsecret, true);

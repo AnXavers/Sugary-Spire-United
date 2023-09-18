@@ -44,6 +44,82 @@ function meta_escape()
 		argumentDescriptions: ["activate/deactivate escape", "set minutes", "set seconds"]
 	};
 }
+function sh_panic()
+{
+	var arg0 = string(argument0[1]);
+	var arg1 = argument0[2];
+	var arg2 = argument0[3];
+	switch (arg0)
+	{
+		case "true":
+		case "1":
+			arg0 = true;
+			break;
+		case "false":
+		case "0":
+			arg0 = false;
+			break;
+		default:
+			arg0 = !global.panic;
+			break;
+	}
+	global.panic = arg0;
+	var _minutes = real(string_digits(arg1));
+	var _seconds = real(string_digits(arg2));
+	global.fill = ((_minutes * 60) + _seconds) * 60;
+	global.wave = 0;
+	global.maxwave = global.fill;
+	if (!instance_exists(obj_panicchanger))
+		instance_create(x, y, obj_panicchanger);
+}
+function meta_panic()
+{
+	return 
+	{
+		description: "Activates escape and sets escape time.",
+		arguments: ["<bool>", "<min>", "<sec>"],
+		suggestions: [["true", "false"], [], []],
+		argumentDescriptions: ["activate/deactivate escape", "set minutes", "set seconds"]
+	};
+}
+function sh_sugarrush()
+{
+	var arg0 = string(argument0[1]);
+	var arg1 = argument0[2];
+	var arg2 = argument0[3];
+	switch (arg0)
+	{
+		case "true":
+		case "1":
+			arg0 = true;
+			break;
+		case "false":
+		case "0":
+			arg0 = false;
+			break;
+		default:
+			arg0 = !global.panic;
+			break;
+	}
+	global.panic = arg0;
+	var _minutes = real(string_digits(arg1));
+	var _seconds = real(string_digits(arg2));
+	global.fill = ((_minutes * 60) + _seconds) * 60;
+	global.wave = 0;
+	global.maxwave = global.fill;
+	if (!instance_exists(obj_panicchanger))
+		instance_create(x, y, obj_panicchanger);
+}
+function meta_sugarrush()
+{
+	return 
+	{
+		description: "Activates escape and sets escape time.",
+		arguments: ["<bool>", "<min>", "<sec>"],
+		suggestions: [["true", "false"], [], []],
+		argumentDescriptions: ["activate/deactivate escape", "set minutes", "set seconds"]
+	};
+}
 function sh_toggle_collisions()
 {
 	var arg1 = argument0[1];
@@ -65,6 +141,36 @@ function sh_toggle_collisions()
 	toggle_collision_function();
 }
 function meta_toggle_collisions()
+{
+	return 
+	{
+		description: "Toggles collision object visibility.",
+		arguments: ["<bool>"],
+		suggestions: [["true", "false"]],
+		argumentDescriptions: ["toggles visibility"]
+	};
+}
+function sh_show_collisions()
+{
+	var arg1 = argument0[1];
+	switch (arg1)
+	{
+		case "true":
+		case "1":
+			arg1 = true;
+			break;
+		case "false":
+		case "0":
+			arg1 = false;
+			break;
+		default:
+			arg1 = !global.showcollisions;
+			break;
+	}
+	global.showcollisions = arg1;
+	toggle_collision_function();
+}
+function meta_show_collisions()
 {
 	return 
 	{
@@ -174,6 +280,29 @@ function sh_room_goto()
 	}
 }
 function meta_room_goto()
+{
+	return 
+	{
+		description: "Allows you to go to another room.",
+		arguments: ["<room>", "<door>"],
+		suggestions: [global.roomlist, ["N/A", "A", "B", "C", "D", "E", "P", "S"]],
+		argumentDescriptions: ["sets targetRoom", "sets targetDoor"]
+	};
+}
+function sh_player_room()
+{
+	var arg1 = asset_get_index(argument0[1]);
+	var arg2 = argument0[2];
+	if (asset_get_type(argument0[1]) != 3)
+		return "Can't find room " + string(argument0[1]);
+	if (asset_get_type(argument0[1]) == 3)
+	{
+		obj_player.targetRoom = arg1;
+		obj_player.targetDoor = arg2;
+		instance_create(0, 0, obj_fadeout);
+	}
+}
+function meta_player_room()
 {
 	return 
 	{
@@ -487,5 +616,48 @@ function meta_room_live()
 		arguments: ["<room>"],
 		suggestions: [global.roomlist],
 		argumentDescriptions: ["Room to turn live."]
+	};
+}
+function sh_set_transformation()
+{
+	var _transfo = argument0[1];
+	switch (_transfo)
+	{
+		case "Cottoncoated":
+			obj_player.state = 98
+			break;
+		case "Rupert":
+			obj_player.state = 151
+			break;
+		case "UFO":
+			obj_player.state = 48
+			break;
+		case "SeaCream":
+			obj_player.state = 146
+			break;
+	}
+}
+function meta_set_transformation()
+{
+	return 
+	{
+		description: "Sets the player's transformation.",
+		arguments: ["<transformation>"],
+		suggestions: [0],
+		argumentDescriptions: ["the transformation to change to."]
+	};
+}
+function sh_set_player_state()
+{
+	obj_player.state = argument0[1];
+}
+function meta_set_player_state()
+{
+	return 
+	{
+		description: "Sets the player's state.",
+		arguments: ["<state>"],
+		suggestions: [0],
+		argumentDescriptions: ["the state to change to."]
 	};
 }
