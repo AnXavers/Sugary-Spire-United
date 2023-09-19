@@ -1,1 +1,0 @@
-sprite_index = spr_deadjohn3

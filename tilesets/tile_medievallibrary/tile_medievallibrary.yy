@@ -13,9 +13,12 @@
   "out_tilevborder": 2,
   "parent": {
     "name": "Medieval",
-    "path": "folders/Tile Sets/Levels/Medieval.yy",
+    "path": "folders/Tile Sets/Medieval.yy",
   },
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_medievallibrary",
+    "path": "sprites/spr_medievallibrary/spr_medievallibrary.yy",
+  },
   "spriteNoExport": false,
   "textureGroupId": {
     "name": "Backgrounds",

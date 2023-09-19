@@ -1,1 +1,0 @@
-targetDoor = "A"

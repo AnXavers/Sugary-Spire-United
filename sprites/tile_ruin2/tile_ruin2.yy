@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Ruin",
-    "path": "folders/Sprites/Tilesets/Level/Ruin.yy",
+    "path": "folders/Sprites/Tilesets/Ruin.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

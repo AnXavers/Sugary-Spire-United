@@ -9,11 +9,11 @@
     "TileSerialiseData": [],
   },
   "out_columns": 26,
-  "out_tilehborder": 0,
-  "out_tilevborder": 0,
+  "out_tilehborder": 2,
+  "out_tilevborder": 2,
   "parent": {
     "name": "Entrance",
-    "path": "folders/Tile Sets/Levels/Entrance.yy",
+    "path": "folders/Tile Sets/Entrance.yy",
   },
   "spriteId": {
     "name": "spr_entrancedeco",
