@@ -1,1 +1,1 @@
-image_index = 2;
+sprite_index = spr_treasure_ruin

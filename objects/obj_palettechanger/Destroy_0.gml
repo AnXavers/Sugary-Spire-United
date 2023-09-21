@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 if instance_exists(obj_palettechangerscrollbar)
 	instance_destroy(obj_palettechangerscrollbar);
 with obj_player
@@ -44,7 +45,7 @@ with obj_player
 	global.custompal_3_col_9 = (65536 * ini_read_real("PizzelleColors9", "Blue", 0) + (256 * ini_read_real("PizzelleColors9", "Green", 0) + ini_read_real("PizzelleColors9", "Red", 0)))
 	global.custompal_3_col_10 = (65536 * ini_read_real("PizzelleColors10", "Blue", 0) + (256 * ini_read_real("PizzelleColors10", "Green", 0) + ini_read_real("PizzelleColors10", "Red", 0)))
 	ini_close()
-	new_palette("Custom 1", 0, global.custompal_1_col_1, global.custompal_1_col_10, global.custompal_1_col_3, global.custompal_1_col_2, global.custompal_1_col_4, global.custompal_1_col_5, global.custompal_1_col_0, global.custompal_1_col_2);
-	new_palette("Custom 2", 0, global.custompal_2_col_1, global.custompal_2_col_10, global.custompal_2_col_3, global.custompal_2_col_2, global.custompal_2_col_4, global.custompal_2_col_5, global.custompal_2_col_0, global.custompal_2_col_2);
-	new_palette("Custom 3", 0, global.custompal_3_col_1, global.custompal_3_col_10, global.custompal_3_col_3, global.custompal_3_col_2, global.custompal_3_col_4, global.custompal_3_col_5, global.custompal_3_col_0, global.custompal_3_col_2);
+	new_palette("Custom 1", 0, global.custompal_1_col_1, global.custompal_1_col_9, global.custompal_1_col_3, global.custompal_1_col_4, global.custompal_1_col_7, global.custompal_1_col_8, global.custompal_1_col_0, global.custompal_1_col_2);
+	new_palette("Custom 2", 0, global.custompal_2_col_1, global.custompal_2_col_9, global.custompal_2_col_3, global.custompal_2_col_4, global.custompal_2_col_7, global.custompal_2_col_8, global.custompal_2_col_0, global.custompal_2_col_2);
+	new_palette("Custom 3", 0, global.custompal_3_col_1, global.custompal_3_col_9, global.custompal_3_col_3, global.custompal_3_col_4, global.custompal_3_col_7, global.custompal_3_col_8, global.custompal_3_col_0, global.custompal_3_col_2);
 }

@@ -643,7 +643,7 @@ function meta_set_transformation()
 	{
 		description: "Sets the player's transformation.",
 		arguments: ["<transformation>"],
-		suggestions: [0],
+		suggestions: [["Cottoncoated", "Rupert", "UFO", "SeaCream", "Fireass", "Minecart", "Tumble", "Dog"]],
 		argumentDescriptions: ["the transformation to change to."]
 	};
 }
@@ -659,5 +659,32 @@ function meta_set_player_state()
 		arguments: ["<state>"],
 		suggestions: [0],
 		argumentDescriptions: ["the state to change to."]
+	};
+}
+function sh_solidfellow()
+{
+	if (argument0[1] && obj_solid.sprite_index == spr_wall)
+	{
+		with obj_solid
+		{
+			sprite_index = spr_wallfellow;
+		}
+	}
+	else if (!argument0[1] && obj_solid.sprite_index == spr_wallfellow)
+	{
+		with obj_solid
+		{
+			sprite_index = spr_wall;
+		}
+	}
+}
+function meta_solidfellow()
+{
+	return 
+	{
+		description: "Solidfellow.",
+		arguments: ["<solidfellow>"],
+		suggestions: [["0", "1"]],
+		argumentDescriptions: ["solidfellow."]
 	};
 }
