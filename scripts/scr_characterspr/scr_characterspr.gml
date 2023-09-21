@@ -316,6 +316,7 @@ function scr_characterspr()
 			spr_lapvisual_player = spr_lapvisual
 			spr_lapbg_player = spr_lapbg
 			lapfont_choose = global.lapcountfont
+			img_featuringme = 0;
 			if global.newplayeranim == 1
 			{
 				spr_mach1 = spr_player_mach1_new;
@@ -483,7 +484,6 @@ function scr_characterspr()
 			spr_player_rankC = spr_pizzano_rankC;
 			spr_player_rankD = spr_pizzano_rankD;
 			spr_rankwait = spr_pizzano_rankwait;
-			spr_featuringme = spr_card_featuringme;
 			break;
 		case "G":
 			spr_idle = spr_gumbob_idle;
@@ -575,6 +575,7 @@ function scr_characterspr()
 			spr_dive = spr_player_dive;
 			spr_cottonidle = spr_gumbob_cotton_idle;
 			spr_propeller_start = spr_gumbob_propeller_start;
+			img_featuringme = 1;
 			break;
 		case "C":
 			if (inhalingenemy == 0 && headless == 0)
@@ -689,6 +690,7 @@ function scr_characterspr()
 			spr_dive = spr_player_dive;
 			spr_cottonidle = spr_gumbob_cotton_idle;
 			spr_spitair = spr_coneboy_spitair;
+			img_featuringme = 0;
 			break;
 		case "T":
 			spr_idle = spr_Noise_idle;

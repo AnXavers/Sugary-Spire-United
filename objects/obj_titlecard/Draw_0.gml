@@ -8,5 +8,5 @@ if (shown)
 	draw_sprite(info.bginfo[0], 0, bgX, bgY);
 	draw_sprite(info.titleinfo[0], 0, titleX, titleY);
 	if (obj_player.character != "P")
-		draw_sprite(obj_player.spr_featuringme, 0, featuringX, featuringY)
+		draw_sprite(spr_card_featuringme, obj_player.img_featuringme, featuringX, featuringY)
 }

@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_costumerdoor",
-    "path": "sprites/spr_costumerdoor/spr_costumerdoor.yy",
+    "name": "spr_dresser",
+    "path": "sprites/spr_dresser/spr_dresser.yy",
   },
   "spriteMaskId": null,
   "visible": true,

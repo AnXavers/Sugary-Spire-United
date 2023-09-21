@@ -8,6 +8,7 @@ draw_option(480, 200 + ScrollY, "LEVEL DESIGN", optionselected == 2);
 draw_option(180, 250 + ScrollY, "DEFAULT", optionsaved_newlvldesign == 0);
 draw_option(480, 250 + ScrollY, "NEW", optionsaved_newlvldesign == 1);
 draw_option(780, 250 + ScrollY, "OLD", optionsaved_newlvldesign == 2);
+draw_option(780, 250 + ScrollY, "CUSTOM", optionsaved_newlvldesign == 3);
 draw_option(480, 300 + ScrollY, "LAPPING MODE", optionselected == 3);
 draw_option(180, 350 + ScrollY, "DEFAULT", optionsaved_inflapping == 0);
 draw_option(480, 350 + ScrollY, "INFINITE", optionsaved_inflapping == 1);

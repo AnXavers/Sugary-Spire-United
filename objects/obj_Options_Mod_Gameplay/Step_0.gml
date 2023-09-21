@@ -54,7 +54,7 @@ if canmove
 			subtitle = "TOGGLES WHAT DESIGNS OF LEVELS ARE USED";
 			CursorY = 200;
 			optionsaved_newlvldesign += (key_right2 + key_left2);
-			optionsaved_newlvldesign = wrap(optionsaved_newlvldesign, 0, 2);
+			optionsaved_newlvldesign = wrap(optionsaved_newlvldesign, 0, 3);
 			if (key_jump)
 			{
 				if (global.levelname == "none" || is_hub())
