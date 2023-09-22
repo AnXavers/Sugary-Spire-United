@@ -45,7 +45,7 @@
   "origin": 4,
   "parent": {
     "name": "TV",
-    "path": "folders/Sprites/HUD/TV.yy",
+    "path": "folders/Sprites/UI/TV.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

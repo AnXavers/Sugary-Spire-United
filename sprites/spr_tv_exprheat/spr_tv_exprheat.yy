@@ -44,7 +44,7 @@
   "origin": 4,
   "parent": {
     "name": "Peppino",
-    "path": "folders/Sprites/HUD/TV/Peppino.yy",
+    "path": "folders/Sprites/UI/TV/Peppino.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

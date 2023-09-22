@@ -32,7 +32,7 @@
   "origin": 4,
   "parent": {
     "name": "Flushed",
-    "path": "folders/Sprites/Objects/Player/Pizzelle/Unused/Flushed.yy",
+    "path": "folders/Sprites/Player/Pizzelle/Unused/Flushed.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

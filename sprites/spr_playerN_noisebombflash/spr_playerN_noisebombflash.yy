@@ -41,7 +41,7 @@
   "origin": 4,
   "parent": {
     "name": "Noise",
-    "path": "folders/Sprites/Objects/Player/Noise.yy",
+    "path": "folders/Sprites/Player/Noise.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

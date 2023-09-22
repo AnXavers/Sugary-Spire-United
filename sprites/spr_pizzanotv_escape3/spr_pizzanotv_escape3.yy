@@ -49,7 +49,7 @@
   "origin": 4,
   "parent": {
     "name": "Pizzano",
-    "path": "folders/Sprites/Objects/TV/Pizzano.yy",
+    "path": "folders/Sprites/UI/TV/Pizzano.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

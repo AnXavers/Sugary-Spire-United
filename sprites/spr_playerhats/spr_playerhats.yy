@@ -32,7 +32,7 @@
   "origin": 4,
   "parent": {
     "name": "Unsorted",
-    "path": "folders/Sprites/Objects/Player/Unsorted.yy",
+    "path": "folders/Sprites/Player/Unsorted.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

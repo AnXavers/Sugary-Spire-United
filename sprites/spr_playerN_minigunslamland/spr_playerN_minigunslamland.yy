@@ -32,7 +32,7 @@
   "origin": 4,
   "parent": {
     "name": "Minigun",
-    "path": "folders/Sprites/Objects/Player/Noise/Minigun.yy",
+    "path": "folders/Sprites/Player/Noise/Minigun.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

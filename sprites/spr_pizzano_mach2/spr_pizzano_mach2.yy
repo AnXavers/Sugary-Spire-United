@@ -31,7 +31,7 @@
   "origin": 9,
   "parent": {
     "name": "Pizzano",
-    "path": "folders/Sprites/Objects/Player/Pizzano.yy",
+    "path": "folders/Sprites/Player/Pizzano.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

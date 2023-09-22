@@ -37,7 +37,7 @@
   "origin": 4,
   "parent": {
     "name": "Tumble",
-    "path": "folders/Sprites/Objects/Player/Noise/Tumble.yy",
+    "path": "folders/Sprites/Player/Noise/Tumble.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

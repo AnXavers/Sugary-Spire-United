@@ -28,7 +28,7 @@
   "origin": 4,
   "parent": {
     "name": "Clown",
-    "path": "folders/Sprites/Objects/Player/Noise/Clown.yy",
+    "path": "folders/Sprites/Player/Noise/Clown.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -37,7 +37,7 @@
   "origin": 4,
   "parent": {
     "name": "Fireass",
-    "path": "folders/Sprites/Objects/Player/Pizzelle/Fireass.yy",
+    "path": "folders/Sprites/Player/Pizzelle/Fireass.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

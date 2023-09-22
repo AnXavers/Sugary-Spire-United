@@ -27,7 +27,7 @@
   "origin": 9,
   "parent": {
     "name": "Pizzelle",
-    "path": "folders/Sprites/Objects/Player/Pizzelle.yy",
+    "path": "folders/Sprites/Player/Pizzelle.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

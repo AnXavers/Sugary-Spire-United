@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Rosette and Marble",
-    "path": "folders/Sprites/Objects/Player/Rosette and Marble.yy",
+    "path": "folders/Sprites/Player/Rosette and Marble.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

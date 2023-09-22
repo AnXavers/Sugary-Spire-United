@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Coneboy",
+    "path": "folders/Sprites/UI/TV/Coneboy.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -29,7 +29,7 @@
   "origin": 4,
   "parent": {
     "name": "Boxxed",
-    "path": "folders/Sprites/Objects/Player/Noise/Boxxed.yy",
+    "path": "folders/Sprites/Player/Noise/Boxxed.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

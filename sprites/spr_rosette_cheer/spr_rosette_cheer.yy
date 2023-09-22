@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Rosette",
-    "path": "folders/Sprites/Objects/Player/Rosette.yy",
+    "path": "folders/Sprites/Player/Rosette.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -1,8 +1,11 @@
 targetRoom = medieval_1;
-level = "medieval";
-sprite_index = spr_gate_medieval;
-bgsprite = spr_gate_medievalBG;
-title_index = 1;
-titlecard_index = 1;
-title_music = "event:/music/w1/medievaltitle";
-group_arr = ["medievalgroup"];
+targetDoor = "A";
+level = "pizzascape";
+details = [gate_createlayer(spr_gate_medieval, 0), gate_createlayer(spr_gate_medieval, 1), gate_createlayer(spr_gate_medievalBG, 2, 0.5), gate_createlayer(spr_gate_medievalBG, 1, 0.35), gate_createlayer(spr_gate_medievalBG, 0, 0.2)];
+info = 
+{
+	bginfo: [spr_pizzascapecard_bg, 2, 4, 8, 0, 0],
+	titleinfo: [spr_pizzascapecard_title, 0, 5, 6, 672, 160],
+	featuringinfo: [0, 5, 6, 200, 350],
+	song: mu_entrance_title
+};

@@ -61,7 +61,7 @@
   "origin": 4,
   "parent": {
     "name": "New",
-    "path": "folders/Sprites/Objects/Player/Pizzelle/New.yy",
+    "path": "folders/Sprites/Player/Pizzelle/New.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

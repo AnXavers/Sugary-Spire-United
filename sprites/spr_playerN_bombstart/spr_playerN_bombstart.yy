@@ -40,7 +40,7 @@
   "origin": 4,
   "parent": {
     "name": "Bomb",
-    "path": "folders/Sprites/Objects/Player/Noise/Bomb.yy",
+    "path": "folders/Sprites/Player/Noise/Bomb.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

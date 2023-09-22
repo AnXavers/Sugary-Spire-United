@@ -28,7 +28,7 @@
   "origin": 4,
   "parent": {
     "name": "Bomb",
-    "path": "folders/Sprites/Objects/Player/Pizzelle/Unused/Bomb.yy",
+    "path": "folders/Sprites/Player/Pizzelle/Unused/Bomb.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -56,8 +56,20 @@ switch (state)
 				idlespr = angrytvspr;
 			if (global.panic)
 				idlespr = panictvspr;
-			if (global.lapcount >= 5)
+			if (global.inflapping == 2)
+			{
+				if (global.lapcount >= 4)
+					idlespr = lap4tvspr;
+				else if (global.lapcount >= 3)
+					idlespr = lap3tvspr;
+			}
+			else if (global.lapcount >= 5)
 				idlespr = laptvspr;
+            with (obj_gummyharry)
+            {
+                if (obj_player.character == "N" && distance_to_object(obj_player) < 400 && (!global.panic))
+                    other.idlespr = other.harrytvspr
+            }
 		}
 		var _transfo = true;
 		switch (allstate)

@@ -37,7 +37,7 @@
   "origin": 4,
   "parent": {
     "name": "Coneboy",
-    "path": "folders/Sprites/Objects/Player/Coneboy.yy",
+    "path": "folders/Sprites/Player/Coneboy.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

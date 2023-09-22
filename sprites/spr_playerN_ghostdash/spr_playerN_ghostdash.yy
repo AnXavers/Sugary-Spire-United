@@ -31,7 +31,7 @@
   "origin": 4,
   "parent": {
     "name": "Ghost",
-    "path": "folders/Sprites/Objects/Player/Noise/Ghost.yy",
+    "path": "folders/Sprites/Player/Noise/Ghost.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

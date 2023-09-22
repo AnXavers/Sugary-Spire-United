@@ -1,6 +1,6 @@
 var old = draw_get_font();
 var wave_x = wave(-5, 5, 5, 20);
-draw_set_font(global.npcfont);
+draw_set_font(font);
 var msg = text;
 var textheight = string_height_scribble_ext("[spr_npcfont]" + text, 800);
 var total_lines = floor(textheight / 32);

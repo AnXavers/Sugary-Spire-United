@@ -35,7 +35,7 @@
   "origin": 4,
   "parent": {
     "name": "Mort",
-    "path": "folders/Sprites/Objects/Player/Noise/Mort.yy",
+    "path": "folders/Sprites/Player/Noise/Mort.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

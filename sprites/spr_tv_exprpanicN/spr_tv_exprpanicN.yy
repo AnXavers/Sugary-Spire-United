@@ -33,7 +33,7 @@
   "origin": 4,
   "parent": {
     "name": "Noise",
-    "path": "folders/Sprites/HUD/TV/Noise.yy",
+    "path": "folders/Sprites/UI/TV/Noise.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

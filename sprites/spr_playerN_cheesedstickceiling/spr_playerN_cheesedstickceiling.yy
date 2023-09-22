@@ -30,7 +30,7 @@
   "origin": 9,
   "parent": {
     "name": "Cheesed",
-    "path": "folders/Sprites/Objects/Player/Noise/Cheesed.yy",
+    "path": "folders/Sprites/Player/Noise/Cheesed.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

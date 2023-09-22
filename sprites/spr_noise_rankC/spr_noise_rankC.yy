@@ -40,7 +40,7 @@
   "origin": 9,
   "parent": {
     "name": "Rank",
-    "path": "folders/Sprites/Objects/Player/Noise/Rank.yy",
+    "path": "folders/Sprites/Player/Noise/Rank.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

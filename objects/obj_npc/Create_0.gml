@@ -14,3 +14,4 @@ mytex_y = 0;
 mysurf = -4;
 mycut = -4;
 propdex = 0;
+font = global.npcfont

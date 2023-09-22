@@ -1,7 +1,7 @@
-targetRoom = entryway_1_old;
+targetRoom = tower_tutorial1;
 targetDoor = "A";
-level = "entryway";
-details = [gate_createlayer(spr_entry_startgate, 0), gate_createlayer(spr_entry_startgate, 1), gate_createlayer(spr_entry_startgate, 2, 0.5), gate_createlayer(spr_entry_startgate, 3, 0.35), gate_createlayer(spr_entry_startgate, 4, 0.15), gate_createlayer(spr_entry_startgate, 5, 0)];
+level = "tutorial";
+details = [gate_createlayer(spr_gate_tutorial, 0), gate_createlayer(spr_gate_tutorial, 1), gate_createlayer(spr_gate_tutorialBG, 0, 0.5), gate_createlayer(spr_gate_tutorialBG, 1, 0.35)];
 info = 
 {
 	bginfo: [spr_entrycard_bg, 2, 4, 8, 0, 0],

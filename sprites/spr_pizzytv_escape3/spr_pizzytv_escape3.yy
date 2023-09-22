@@ -49,7 +49,7 @@
   "origin": 4,
   "parent": {
     "name": "Pizzelle",
-    "path": "folders/Sprites/Objects/TV/Pizzelle.yy",
+    "path": "folders/Sprites/UI/TV/Pizzelle.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

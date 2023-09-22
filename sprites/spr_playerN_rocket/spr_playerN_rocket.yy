@@ -28,7 +28,7 @@
   "origin": 4,
   "parent": {
     "name": "Rocket",
-    "path": "folders/Sprites/Objects/Player/Noise/Rocket.yy",
+    "path": "folders/Sprites/Player/Noise/Rocket.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

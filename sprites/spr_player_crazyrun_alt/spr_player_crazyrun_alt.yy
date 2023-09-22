@@ -29,7 +29,7 @@
   "origin": 4,
   "parent": {
     "name": "Alt",
-    "path": "folders/Sprites/Objects/Player/Pizzelle/Alt.yy",
+    "path": "folders/Sprites/Player/Pizzelle/Alt.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

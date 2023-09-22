@@ -5,7 +5,7 @@
   "bbox_bottom": 208,
   "bbox_left": 48,
   "bbox_right": 237,
-  "bbox_top": 40,
+  "bbox_top": 31,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Pizzano",
+    "path": "folders/Sprites/UI/TV/Pizzano.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

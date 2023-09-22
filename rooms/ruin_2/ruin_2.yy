@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "ruin_2",
-  "creationCodeFile": "${project_dir}/rooms/ruin_2/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/ruin_2/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

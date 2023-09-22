@@ -40,7 +40,7 @@
   "origin": 4,
   "parent": {
     "name": "Firemouth",
-    "path": "folders/Sprites/Objects/Player/Noise/Firemouth.yy",
+    "path": "folders/Sprites/Player/Noise/Firemouth.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

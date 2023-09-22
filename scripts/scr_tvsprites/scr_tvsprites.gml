@@ -22,10 +22,13 @@ function scr_tvsprites()
 	frostburntvspr = spr_pizzytvflushed;
 	hooktvspr = spr_pizzytvhook;
 	marshdogspr = spr_pizzytvmarsh;
-	panictvspr = spr_pizzytvescape;
+	panictvspr = spr_pizzanotv_panic;
 	laptvspr = spr_pizzytv_rage;
 	secrettvspr = spr_pizzytv_secret;
-	crashtvspr = spr_pizzytv_ouchiecrash
+	crashtvspr = spr_pizzytv_ouchiecrash;
+	harrytvspr = spr_pizzanotv_harry;
+	lap3tvspr = spr_pizzytvlap3;
+	lap4tvspr = spr_pizzytvlap4;
 	switch (obj_player.character)
 	{
 		case "N":
@@ -51,7 +54,11 @@ function scr_tvsprites()
 			frostburntvspr = spr_pizzanotv_flushed;
 			hooktvspr = spr_pizzytvhook;
 			marshdogspr = spr_pizzytvmarsh;
-			panictvspr = spr_pizzytvescape;
+			panictvspr = spr_pizzanotv_panic;
+			laptvspr = spr_pizzanotv_lap3;
+			lap3tvspr = spr_pizzanotv_lap3;
+			lap4tvspr = spr_pizzanotv_lap4;
+			harrytvspr = spr_pizzanotv_harry;
 			break;
 		case "C":
 			idletvspr = spr_coneboytv;
@@ -99,6 +106,7 @@ function scr_tvsprites()
 			hooktvspr = spr_pizzytvhook;
 			marshdogspr = spr_pizzytvmarsh;
 			panictvspr = spr_tv_exprpanicN;
+			secrettvspr = spr_tv_secretN
 			laptvspr = spr_tv_exprheatN;
 	}
 }

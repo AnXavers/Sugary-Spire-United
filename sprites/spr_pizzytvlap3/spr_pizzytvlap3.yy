@@ -40,8 +40,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Pizzelle",
+    "path": "folders/Sprites/UI/TV/Pizzelle.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

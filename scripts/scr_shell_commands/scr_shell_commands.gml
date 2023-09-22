@@ -626,14 +626,32 @@ function sh_set_transformation()
 		case "Cottoncoated":
 			obj_player.state = 98
 			break;
-		case "Rupert":
+		case "Frostburn":
 			obj_player.state = 151
 			break;
 		case "UFO":
 			obj_player.state = 48
 			break;
-		case "SeaCream":
+		case "Seacream":
 			obj_player.state = 146
+			break;
+		case "Fireass":
+			obj_player.state = 108
+			break;
+		case "Bomb":
+			obj_player.state = 22
+			break;
+		case "Marshdog":
+			obj_player.state = 83
+			break;
+		case "Minecart":
+			obj_player.state = 101
+			break;
+		case "Hook":
+			obj_player.state = 126
+			break;
+		case "Orb":
+			obj_player.state = 99
 			break;
 	}
 }
@@ -643,7 +661,7 @@ function meta_set_transformation()
 	{
 		description: "Sets the player's transformation.",
 		arguments: ["<transformation>"],
-		suggestions: [["Cottoncoated", "Rupert", "UFO", "SeaCream", "Fireass", "Minecart", "Tumble", "Dog"]],
+		suggestions: [["Cottoncoated", "Frostburn", "UFO", "SeaCream", "Fireass", "Minecart", "Tumble", "Marshdog", "Hook", "Bomb", "Orb"]],
 		argumentDescriptions: ["the transformation to change to."]
 	};
 }

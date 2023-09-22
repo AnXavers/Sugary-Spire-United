@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "medieval_secret5",
-  "creationCodeFile": "${project_dir}/rooms/medieval_secret5/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/medieval_secret5/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

@@ -32,7 +32,7 @@
   "origin": 4,
   "parent": {
     "name": "Classic",
-    "path": "folders/Sprites/Objects/Player/Pizzelle/Classic.yy",
+    "path": "folders/Sprites/Player/Pizzelle/Classic.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
