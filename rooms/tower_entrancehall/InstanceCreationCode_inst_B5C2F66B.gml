@@ -1,7 +1,7 @@
 targetRoom = tower_tutorial1;
 targetDoor = "A";
-level = "tutorial";
-details = [gate_createlayer(spr_gate_tutorial, 0), gate_createlayer(spr_gate_tutorial, 1), gate_createlayer(spr_gate_tutorialBG, 0, 0.5), gate_createlayer(spr_gate_tutorialBG, 1, 0.35)];
+level = "towertutorial";
+details = [gate_createlayer(spr_gate_tutorial, 0), gate_createlayer(spr_gate_tutorial, 1), gate_createlayer(spr_gate_tutorialBG, 1, 0.5), gate_createlayer(spr_gate_tutorialBG, 0, 0.35)];
 info = 
 {
 	bginfo: [spr_entrycard_bg, 2, 4, 8, 0, 0],

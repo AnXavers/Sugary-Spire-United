@@ -1,5 +1,4 @@
-font = global.fellowfont
-text = "A"
+text = ":)"
 idle = spr_fellow;
 speak = spr_fellow;
 mytex = spr_icepopbg;

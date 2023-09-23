@@ -9,6 +9,6 @@ drawy = y;
 if (sprite_index == spr_explosiveBarrel_destroyed && place_meeting_collision(x, y))
 {
 	instance_destroy()
-	instance_create(x, y, obj_explosioneffect)
+	instance_create(x, y - 10, obj_explosioneffect)
 	scr_sound(sound_explosion)
 }

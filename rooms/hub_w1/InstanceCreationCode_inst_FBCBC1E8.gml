@@ -1,4 +1,6 @@
-if global.newlvldesign == 2
+if global.newlvldesign == 3
+	targetRoom = entryway_1_custom;
+else if global.newlvldesign == 2
 	targetRoom = entryway_1_old;
 else if global.newlvldesign == 1
 	targetRoom = entryway_1_new;
