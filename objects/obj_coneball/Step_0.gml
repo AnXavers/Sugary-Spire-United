@@ -9,17 +9,11 @@ if (image_alpha == 1)
 			y = approach(y, obj_player.y, lengthdir_y(4, dir));
 			sprite_index = spr_coneball_melting
 		}
-		else if global.coneballaggro != 1
+		else
 		{
 			x = approach(x, obj_player.x, lengthdir_x(8, dir));
 			y = approach(y, obj_player.y, lengthdir_y(8, dir));
 			sprite_index = spr_coneball_new
-		}
-		else
-		{
-			x = approach(x, obj_player.x, lengthdir_x(12, dir));
-			y = approach(y, obj_player.y, lengthdir_y(12, dir));
-			sprite_index = spr_coneball_aggro
 		}
 	}
 }

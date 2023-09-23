@@ -1,7 +1,7 @@
 if (aggro == 1)
-    aggro = 2
+	aggro = 2
 if (aggro == 2)
-    return;
+	return;
 var hit = 0
 switch other.state
 {
@@ -38,34 +38,34 @@ switch other.state
     case (96 << 0):
     case (97 << 0):
     case (98 << 0):
-    case (99 << 0):
-    case (101 << 0):
-    case (108 << 0):
-    case (103 << 0):
-    case (104 << 0):
-    case (105 << 0):
-    case (106 << 0):
-    case (107 << 0):
-    case (120 << 0):
-    case (121 << 0):
-    case (130 << 0):
-    case (133 << 0):
-    case (154 << 0):
-        hit = 1
-        break
-    default:
-        hit = 0
-        break
+	case (99 << 0):
+	case (101 << 0):
+	case (108 << 0):
+	case (103 << 0):
+	case (104 << 0):
+	case (105 << 0):
+	case (106 << 0):
+	case (107 << 0):
+	case (120 << 0):
+	case (121 << 0):
+	case (130 << 0):
+	case (133 << 0):
+	case (154 << 0):
+		hit = 1
+		break
+	default:
+		hit = 0
+		break
 }
 
 if (hit == 1)
 {
-    repeat (3)
-        instance_create(x, y, obj_slapstar)
-    x = (room_width / 2)
-    y = -60
-    if (room == molasses_9)
-        y = -1600
+	repeat (3)
+		instance_create(x, y, obj_slapstar)
+	x = (room_width / 2)
+	y = -60
+	if (room == molasses_9)
+		y = -1600
 }
 else
-    scr_hurtplayer(other)
+	scr_hurtplayer(other)

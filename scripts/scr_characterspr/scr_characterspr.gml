@@ -576,6 +576,12 @@ function scr_characterspr()
 			spr_cottonidle = spr_gumbob_cotton_idle;
 			spr_propeller_start = spr_gumbob_propeller_start;
 			img_featuringme = 1;
+			spr_mach1 = spr_gumbob_mach3;
+			spr_mach2 = spr_gumbob_mach3;
+			spr_mach3player = spr_gumbob_mach3;
+			spr_mach3jump = spr_pizzano_mach3jump;
+			spr_mach3hitwall = spr_pizzano_mach3hitwall;
+			spr_crazyrun = spr_gumbob_mach3;
 			break;
 		case "C":
 			if (inhalingenemy == 0 && headless == 0)

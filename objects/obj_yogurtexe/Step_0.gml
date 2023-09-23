@@ -16,6 +16,11 @@ else
             x = median((x - (movespd * 2)), obj_player.x, (x + (movespd * 2)))
             y = median((y - (movespd * 2)), obj_player.y, (y + (movespd * 2)))
         }
+        if (global.fill_4 <= 0)
+        {
+            aggro = 1
+            movespd = 8
+        }
     }
     if (aggro == 1)
     {
@@ -61,10 +66,13 @@ else
             y = -40
             dist = point_distance(obj_player.x, obj_player.y, x, y)
         }
-    }
-    if (x > obj_player.x)
-        image_xscale = -1
-    if (x < obj_player.x)
-        image_xscale = 1
+	}
+	if (x > obj_player.x)
+		image_xscale = -1
+	if (x < obj_player.x)
+		image_xscale = 1
+	if (x > (obj_player.x - 32) && x < (obj_player.x + 32) && (!global.GregMode))
+		image_index = 1
 }
 y_timer += 1
+global.fill_4 -= 1

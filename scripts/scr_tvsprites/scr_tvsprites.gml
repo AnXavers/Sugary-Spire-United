@@ -22,7 +22,7 @@ function scr_tvsprites()
 	frostburntvspr = spr_pizzytvflushed;
 	hooktvspr = spr_pizzytvhook;
 	marshdogspr = spr_pizzytvmarsh;
-	panictvspr = spr_pizzanotv_panic;
+	panictvspr = spr_pizzytvescape;
 	laptvspr = spr_pizzytv_rage;
 	secrettvspr = spr_pizzytv_secret;
 	crashtvspr = spr_pizzytv_ouchiecrash;

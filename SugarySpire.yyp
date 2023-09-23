@@ -426,6 +426,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tower","folderPath":"folders/Tile Sets/Tower.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Unused or Unknown","folderPath":"folders/Tile Sets/Unused or Unknown.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Gumbob","folderPath":"folders/Sprites/Player/Gumbob.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"intro.mp4","CopyToMask":-1,"filePath":"datafiles/gamedata",},
@@ -2440,6 +2441,7 @@
     {"id":{"name":"spr_playerN_haulingfall","path":"sprites/spr_playerN_haulingfall/spr_playerN_haulingfall.yy",},},
     {"id":{"name":"spr_tinyslime_idle","path":"sprites/spr_tinyslime_idle/spr_tinyslime_idle.yy",},},
     {"id":{"name":"spr_greglap4tv","path":"sprites/spr_greglap4tv/spr_greglap4tv.yy",},},
+    {"id":{"name":"spr_gumbob_mach3","path":"sprites/spr_gumbob_mach3/spr_gumbob_mach3.yy",},},
     {"id":{"name":"sfx_glassbreak","path":"sounds/sfx_glassbreak/sfx_glassbreak.yy",},},
     {"id":{"name":"sfx_tauntpizzano1","path":"sounds/sfx_tauntpizzano1/sfx_tauntpizzano1.yy",},},
     {"id":{"name":"entryway_portal_new","path":"rooms/entryway_portal_new/entryway_portal_new.yy",},},
