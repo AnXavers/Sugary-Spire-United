@@ -38,31 +38,31 @@ alarm[7] = 120
 image_speed = 0.45
 switch dex
 {
-    case 5:
-        cakedex = 4
-        bgdex = 0
-        break
-    case 4:
-        cakedex = 4
-        bgdex = 5
-        break
-    case 3:
-        cakedex = 3
-        bgdex = 4
-        break
-    case 2:
-        cakedex = 2
-        bgdex = 3
-        break
-    case 1:
-        cakedex = 1
-        bgdex = 2
-        break
-    case 0:
-        cakedex = 0
-        bgdex = 1
-        break
+	case 5:
+		cakedex = 4
+		bgdex = 0
+		break
+	case 4:
+		cakedex = 4
+		bgdex = 5
+		break
+	case 3:
+		cakedex = 3
+		bgdex = 4
+		break
+	case 2:
+		cakedex = 2
+		bgdex = 3
+		break
+	case 1:
+		cakedex = 1
+		bgdex = 2
+		break
+	case 0:
+		cakedex = 0
+		bgdex = 1
+		break
 }
 if (global.rank != "p" || global.rank != "e")
-    flash = 1
+	flash = 1
 alarm[3] = -1

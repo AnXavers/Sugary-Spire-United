@@ -68,13 +68,17 @@ function cutscene_lapPortal_middle()
 			else
 			{
 				visible = true;
-				if (floor(_portal.image_index) >= 4)
+				obj_player.visible = false;
+				if (floor(_portal.image_index) >= 16)
 					_finished = true;
 			}
 		}
 	}
 	if (_finished)
+	{
 		cutscene_event_end();
+		obj_player.visible = true;
+	}
 }
 function cutscene_lapPortal_end()
 {

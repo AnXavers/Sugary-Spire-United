@@ -446,30 +446,30 @@ function _input_string_split(_input) {
 	var inQuotes = false;
 	
 	for (var i = 1; i < (string_length(_input) + 1); i++) {
-	    var currStr = string_char_at(_input, i);
+		var currStr = string_char_at(_input, i);
 		// Ignore spaces as a delimiter if we are currently inside of quotes
 		if (!inQuotes) {
 			if (currStr == "\"") {
 				inQuotes = true;
 				continue;
 			}
-		    if (currStr == " ") {
+			if (currStr == " ") {
 				if (str2 != "") { // Make sure we don't include the space
-			        splits[slot] = str2; //add this split to the array of all splits
-			        slot++;
+					splits[slot] = str2; //add this split to the array of all splits
+					slot++;
 				}
-		        str2 = "";
-		    } else {
-		        str2 = str2 + currStr;
-		        splits[slot] = str2;
-		    }
+				str2 = "";
+			} else {
+				str2 = str2 + currStr;
+				splits[slot] = str2;
+			}
 		} else {
 			if (currStr == "\"") {
 				inQuotes = false;
 				splits[slot] = str2;
 				continue;
 			}
-		    str2 = str2 + currStr;
+			str2 = str2 + currStr;
 		}
 	}
 	// If we ended on our delimiter character, include an empty string as the final split

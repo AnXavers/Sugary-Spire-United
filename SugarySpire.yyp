@@ -287,6 +287,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Palettes","folderPath":"folders/Sprites/Palettes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Sprites/Player.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Coneboy","folderPath":"folders/Sprites/Player/Coneboy.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Gumbob","folderPath":"folders/Sprites/Player/Gumbob.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Noise","folderPath":"folders/Sprites/Player/Noise.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bomb","folderPath":"folders/Sprites/Player/Noise/Bomb.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Boxxed","folderPath":"folders/Sprites/Player/Noise/Boxxed.yy",},
@@ -426,7 +427,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tower","folderPath":"folders/Tile Sets/Tower.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Unused or Unknown","folderPath":"folders/Tile Sets/Unused or Unknown.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Gumbob","folderPath":"folders/Sprites/Player/Gumbob.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"intro.mp4","CopyToMask":-1,"filePath":"datafiles/gamedata",},
@@ -3447,6 +3447,7 @@
     {"id":{"name":"frontpara","path":"sprites/frontpara/frontpara.yy",},},
     {"id":{"name":"spr_spray","path":"sprites/spr_spray/spr_spray.yy",},},
     {"id":{"name":"spr_player_bottlerocket_grounded","path":"sprites/spr_player_bottlerocket_grounded/spr_player_bottlerocket_grounded.yy",},},
+    {"id":{"name":"spr_greaseshaker","path":"sprites/spr_greaseshaker/spr_greaseshaker.yy",},},
     {"id":{"name":"spr_cotton_attack","path":"sprites/spr_cotton_attack/spr_cotton_attack.yy",},},
     {"id":{"name":"spr_pepinoHUDhappy","path":"sprites/spr_pepinoHUDhappy/spr_pepinoHUDhappy.yy",},},
     {"id":{"name":"spr_fudge_startgate","path":"sprites/spr_fudge_startgate/spr_fudge_startgate.yy",},},

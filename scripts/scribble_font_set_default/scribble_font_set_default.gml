@@ -4,20 +4,20 @@
 
 function scribble_font_set_default(_font)
 {
-    //Ensure we're initialised
-    __scribble_system();
-    
-    //Check if the default font parameter is the correct datatype
-    if (!is_string(_font))
-    {
-        __scribble_error("The default font should be defined using its name as a string.\n(Input was an invalid datatype)");
-        return undefined;
-    }
-    
-    if (SCRIBBLE_VERBOSE && (global.__scribble_default_font == undefined))
-    {
-        __scribble_trace("Setting default font to \"" + string(_font) + "\"");
-    }
-    
-    global.__scribble_default_font = _font;
+	//Ensure we're initialised
+	__scribble_system();
+	
+	//Check if the default font parameter is the correct datatype
+	if (!is_string(_font))
+	{
+		__scribble_error("The default font should be defined using its name as a string.\n(Input was an invalid datatype)");
+		return undefined;
+	}
+	
+	if (SCRIBBLE_VERBOSE && (global.__scribble_default_font == undefined))
+	{
+		__scribble_trace("Setting default font to \"" + string(_font) + "\"");
+	}
+	
+	global.__scribble_default_font = _font;
 }

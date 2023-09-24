@@ -23,8 +23,8 @@ if keyboard_check_pressed(vk_escape)
 }
 if scrolling
 {
-    if (obj_player.key_up && texty < 0)
-        texty += 3;
-    else if (obj_player.key_down && texty > (-((textHeight - 100))))
-        texty -= 3;
+	if (obj_player.key_up && texty < 0)
+		texty += 3;
+	else if (obj_player.key_down && texty > (-((textHeight - 100))))
+		texty -= 3;
 }

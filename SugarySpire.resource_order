@@ -251,6 +251,7 @@
     {"name":"Palettes","order":2,"path":"folders/Sprites/Palettes.yy",},
     {"name":"Player","order":18,"path":"folders/Sprites/Player.yy",},
     {"name":"Coneboy","order":3,"path":"folders/Sprites/Player/Coneboy.yy",},
+    {"name":"Gumbob","order":9,"path":"folders/Sprites/Player/Gumbob.yy",},
     {"name":"Noise","order":7,"path":"folders/Sprites/Player/Noise.yy",},
     {"name":"Bomb","order":15,"path":"folders/Sprites/Player/Noise/Bomb.yy",},
     {"name":"Boxxed","order":14,"path":"folders/Sprites/Player/Noise/Boxxed.yy",},
@@ -380,7 +381,6 @@
     {"name":"Tower","order":3,"path":"folders/Tile Sets/Tower.yy",},
     {"name":"Unused or Unknown","order":2,"path":"folders/Tile Sets/Unused or Unknown.yy",},
     {"name":"Timelines","order":20,"path":"folders/Timelines.yy",},
-    {"name":"Gumbob","order":9,"path":"folders/Sprites/Player/Gumbob.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_minedummycart","order":1,"path":"objects/obj_minedummycart/obj_minedummycart.yy",},
@@ -3217,6 +3217,7 @@
     {"name":"frontpara","order":10,"path":"sprites/frontpara/frontpara.yy",},
     {"name":"spr_spray","order":717,"path":"sprites/spr_spray/spr_spray.yy",},
     {"name":"spr_player_bottlerocket_grounded","order":17,"path":"sprites/spr_player_bottlerocket_grounded/spr_player_bottlerocket_grounded.yy",},
+    {"name":"spr_greaseshaker","order":25,"path":"sprites/spr_greaseshaker/spr_greaseshaker.yy",},
     {"name":"spr_cotton_attack","order":104,"path":"sprites/spr_cotton_attack/spr_cotton_attack.yy",},
     {"name":"spr_pepinoHUDhappy","order":5,"path":"sprites/spr_pepinoHUDhappy/spr_pepinoHUDhappy.yy",},
     {"name":"bg_mines1para1_escape","order":3,"path":"sprites/bg_mines1para1_escape/bg_mines1para1_escape.yy",},

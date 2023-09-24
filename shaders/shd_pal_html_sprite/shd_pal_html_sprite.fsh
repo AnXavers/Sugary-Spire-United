@@ -29,14 +29,14 @@ vec4 findAltColor(vec4 inCol, vec2 corner)
   vec4 leftCol;
   for(float i=0.; i < PalHeight; i+=PixelSize)
   {
-    testPos = vec2(corner.x,corner.y+i);
-    leftCol = texture2D( u_palTexture, testPos);
-    dist = distance(leftCol,inCol);
-    if(dist <= Tolerance)
-    {
+	testPos = vec2(corner.x,corner.y+i);
+	leftCol = texture2D( u_palTexture, testPos);
+	dist = distance(leftCol,inCol);
+	if(dist <= Tolerance)
+	{
 			testPos = vec2(corner.x + u_pixelSize.x * floor(u_paletteId + 1.0), corner.y + i);
-            return mix(texture2D(u_palTexture, vec2(testPos.x - u_pixelSize.x, testPos.y)), texture2D(u_palTexture, testPos), fract(u_paletteId));
-    }
+			return mix(texture2D(u_palTexture, vec2(testPos.x - u_pixelSize.x, testPos.y)), texture2D(u_palTexture, testPos), fract(u_paletteId));
+	}
   }
   return inCol;
 }

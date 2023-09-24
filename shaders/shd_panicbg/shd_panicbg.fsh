@@ -13,18 +13,18 @@ uniform float panic;
 uniform float fade;
 
 void main() {
-    // Wobble back and forth more with time.
+	// Wobble back and forth more with time.
 	vec2 uv = v_vTexcoord;
-    uv.x += sin(WAVELENGTH * uv.y + 3.0 * time ) * AMPLITUDE * panic;
+	uv.x += sin(WAVELENGTH * uv.y + 3.0 * time ) * AMPLITUDE * panic;
 
-    // Tint background more with time.
-    vec4 texel = texture2D(gm_BaseTexture, uv);
-    texel.r += (0.5 + 0.5 * sin(TINTSPEED * time )) * TINTAMOUNT * panic;
+	// Tint background more with time.
+	vec4 texel = texture2D(gm_BaseTexture, uv);
+	texel.r += (0.5 + 0.5 * sin(TINTSPEED * time )) * TINTAMOUNT * panic;
 	
 	// Make it Greyscale after 
-    float gray = dot(texel.rgb, vec3(0.21, 0.71, 0.07));
+	float gray = dot(texel.rgb, vec3(0.21, 0.71, 0.07));
 
-    gl_FragColor = vec4(mix(texel.rgb,vec3(gray),fade), texel.a);	
+	gl_FragColor = vec4(mix(texel.rgb,vec3(gray),fade), texel.a);	
 	
-    //gl_FragColor = texel;
+	//gl_FragColor = texel;
 }

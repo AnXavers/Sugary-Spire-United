@@ -1,5 +1,5 @@
 if (cursor == "|")
-    cursor = ""
+	cursor = ""
 else
-    cursor = "|"
+	cursor = "|"
 alarm[0] = delay

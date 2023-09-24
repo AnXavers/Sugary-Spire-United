@@ -26,18 +26,18 @@ function add_secrettiles()
 	}
 	global.secret_layers = [];
 	for (i = 0; i < argument_count; i++)
-    {
-        arg = argument[i];
-        layerid = layer_get_id(arg);
-        layer_set_visible(layerid, false);
-        var name = layer_get_name(layerid);
-        array_push(global.secret_layers, 
-        {
-            nm: name,
-            alpha: 1,
-            surf: -4
-        });
-    };
+	{
+		arg = argument[i];
+		layerid = layer_get_id(arg);
+		layer_set_visible(layerid, false);
+		var name = layer_get_name(layerid);
+		array_push(global.secret_layers, 
+		{
+			nm: name,
+			alpha: 1,
+			surf: -4
+		});
+	};
 	var _f = function() {
 		return -(layer_get_depth(argument0.nm) - layer_get_depth(argument1.nm));
 	};

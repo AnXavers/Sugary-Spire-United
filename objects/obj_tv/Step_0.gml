@@ -65,11 +65,11 @@ switch (state)
 			}
 			else if (global.lapcount >= 5)
 				idlespr = laptvspr;
-            with (obj_gummyharry)
-            {
-                if (obj_player.character == "N" && distance_to_object(obj_player) < 400 && (!global.panic))
-                    other.idlespr = other.harrytvspr
-            }
+			with (obj_gummyharry)
+			{
+				if (obj_player.character == "N" && distance_to_object(obj_player) < 400 && (!global.panic))
+					other.idlespr = other.harrytvspr
+			}
 		}
 		var _transfo = true;
 		switch (allstate)

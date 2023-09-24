@@ -46,16 +46,16 @@ delay = 20
 alarm[2] = delay
 ImportButton = 
 {
-    xpos: 63,
-    ypos: 495,
-    activated: 0,
-    buffertimer: 0
+	xpos: 63,
+	ypos: 495,
+	activated: 0,
+	buffertimer: 0
 }
 
 ExportButton = 
 {
-    xpos: 140,
-    ypos: 495,
-    activated: 0,
-    buffertimer: 0
+	xpos: 140,
+	ypos: 495,
+	activated: 0,
+	buffertimer: 0
 }

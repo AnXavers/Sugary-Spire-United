@@ -1,4 +1,4 @@
-depth = 10;
+depth = -95;
 image_speed = 0.35;
 image_index = 0;
 if global.inflapping == 1
@@ -27,6 +27,6 @@ if (global.lapcount = 10)
 	global.lap10bgspr = layer_background_create(global.lap10fg, bg_collapsing_spire);
 	layer_background_htiled(global.lap10bgspr, true);
 	layer_background_vtiled(global.lap10bgspr, true);
-    layer_vspeed(global.lap10fg, 3);
+	layer_vspeed(global.lap10fg, 3);
 	global.dolap10fg = 1;
 }

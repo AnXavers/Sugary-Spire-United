@@ -681,20 +681,7 @@ function meta_set_player_state()
 }
 function sh_solidfellow()
 {
-	if (argument0[1] && obj_solid.sprite_index == spr_wall)
-	{
-		with obj_solid
-		{
-			sprite_index = spr_wallfellow;
-		}
-	}
-	else if (!argument0[1] && obj_solid.sprite_index == spr_wallfellow)
-	{
-		with obj_solid
-		{
-			sprite_index = spr_wall;
-		}
-	}
+	global.solidfellow = wrap(global.solidfellow, 0, 1)
 }
 function meta_solidfellow()
 {

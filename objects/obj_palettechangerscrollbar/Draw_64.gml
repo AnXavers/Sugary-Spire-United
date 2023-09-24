@@ -10,9 +10,9 @@ draw_set_font(global.smallfont)
 draw_set_halign(fa_center)
 if (input_text == 1)
 {
-    var length = ((-((string_width(string(input)) / 2))) + string_width(string(input)))
-    draw_text(((bottom_x + 8) + sprite_get_xoffset(spr_palettechanger_textbox)), (draw_y - 5), string(input))
-    draw_text(((((bottom_x + 8) + sprite_get_xoffset(spr_palettechanger_textbox)) + length) + 5), (draw_y - 5), cursor)
+	var length = ((-((string_width(string(input)) / 2))) + string_width(string(input)))
+	draw_text(((bottom_x + 8) + sprite_get_xoffset(spr_palettechanger_textbox)), (draw_y - 5), string(input))
+	draw_text(((((bottom_x + 8) + sprite_get_xoffset(spr_palettechanger_textbox)) + length) + 5), (draw_y - 5), cursor)
 }
 else
-    draw_text(((bottom_x + 8) + sprite_get_xoffset(spr_palettechanger_textbox)), (draw_y - 5), string(round((colorvalue * 255))))
+	draw_text(((bottom_x + 8) + sprite_get_xoffset(spr_palettechanger_textbox)), (draw_y - 5), string(round((colorvalue * 255))))

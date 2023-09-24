@@ -1,4 +1,5 @@
-speaking = place_meeting(x, y, obj_player);
+if !place_meeting(x, y, obj_player)
+	speaking = false;
 sprite_index = speaking ? speak : idle;
 mytex_x -= 0.5;
 mytex_x %= sprite_get_width(mytex);

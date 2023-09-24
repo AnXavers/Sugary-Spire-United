@@ -81,6 +81,8 @@ global.petersprite = 0;
 global.clutterhit = 0;
 global.enableportal = 0;
 global.peterimage = -1;
+global.solidfellow = 0;
+sprite_set_bbox(spr_wallfellow, 0, 0, 32, 32)
 ini_open("silversave.ini")
 global.keypieces = ini_read_real("Unlocks", "keypieces", 0);
 global.unlockshell = ini_read_real("Unlocks", "shell", 0);

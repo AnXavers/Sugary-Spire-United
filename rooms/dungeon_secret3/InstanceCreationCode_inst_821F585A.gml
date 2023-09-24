@@ -1,1 +1,1 @@
-secret = true;
+targetDoor = "C"
