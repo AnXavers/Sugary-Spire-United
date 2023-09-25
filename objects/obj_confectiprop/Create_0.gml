@@ -11,6 +11,5 @@ platformid = -4;
 idlespr = spr_marshmellow_idle;
 movespr = spr_marshemellow_run;
 tauntspr = spr_marshmellow_taunt;
-depth = 1;
 while (scr_solid(x, y))
 	y--;

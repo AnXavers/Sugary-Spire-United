@@ -24,7 +24,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"06b7d43b-bfed-483c-a000-25f55a87c3de","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 7,
   "parent": {
     "name": "Pizzascape",
     "path": "folders/Sprites/Start Gates/Pizzascape.yy",
@@ -62,7 +62,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 96,
-    "yorigin": 144,
+    "yorigin": 288,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

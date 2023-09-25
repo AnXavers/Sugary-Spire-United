@@ -24,7 +24,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f1e8ebb9-6370-4711-beb9-243e6e80b167","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 7,
   "parent": {
     "name": "Entrance",
     "path": "folders/Sprites/Start Gates/Entrance.yy",
@@ -62,7 +62,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 96,
-    "yorigin": 144,
+    "yorigin": 288,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

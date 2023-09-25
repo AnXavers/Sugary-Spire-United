@@ -18,6 +18,7 @@ if chance(0.01)
 	tauntsound = sfx_goofytaunt
 scr_sound(tauntsound);
 image_speed = 0.5;
+depth = -1
 if (global.panic = 1 && global.exitgatetaunt < 10 && place_meeting(x, y, obj_exitgate))
 {
 	instance_create(x, y, obj_20)

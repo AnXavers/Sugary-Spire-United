@@ -24,7 +24,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"74b37403-9980-41fa-b94e-95318775a3ac","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 7,
   "parent": {
     "name": "Level Gates",
     "path": "folders/Sprites/Level Structure/Tower/Level Gates.yy",
@@ -62,7 +62,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 96,
-    "yorigin": 144,
+    "yorigin": 288,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

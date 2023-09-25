@@ -681,15 +681,15 @@ function meta_set_player_state()
 }
 function sh_solidfellow()
 {
-	global.solidfellow = wrap(global.solidfellow, 0, 1)
+	global.solidfellow = 1
 }
 function meta_solidfellow()
 {
 	return 
 	{
 		description: "Solidfellow.",
-		arguments: ["<solidfellow>"],
-		suggestions: [["0", "1"]],
-		argumentDescriptions: ["solidfellow."]
+		arguments: [],
+		suggestions: [],
+		argumentDescriptions: []
 	};
 }

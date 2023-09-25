@@ -4,7 +4,7 @@ if (obj_player.state == states.backbreaker && state != states.backbreaker)
 	storedstate = state;
 	storedsprite = sprite_index;
 	state = states.backbreaker;
-	instance_create_depth(x, y, depth + 10, obj_confectitaunt)
+	instance_create_depth(x, y, depth + 1, obj_confectitaunt)
 	sprite_index = tauntspr;
 	image_index = irandom(sprite_get_number(tauntspr) - 1);
 }

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "ts_hubOLD",
+  "name": "ts_hubOLDOLD",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
@@ -16,8 +16,8 @@
     "path": "folders/Tile Sets/Unused or Unknown.yy",
   },
   "spriteId": {
-    "name": "ts_hubOLD_sprite",
-    "path": "sprites/ts_hubOLD_sprite/ts_hubOLD_sprite.yy",
+    "name": "ts_hubOLDOLD_sprite",
+    "path": "sprites/ts_hubOLDOLD_sprite/ts_hubOLDOLD_sprite.yy",
   },
   "spriteNoExport": true,
   "textureGroupId": {

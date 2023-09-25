@@ -24,7 +24,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"821f74c9-03a2-4d56-a76b-71f1fdcff3e1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 7,
   "parent": {
     "name": "Ruin",
     "path": "folders/Sprites/Start Gates/Ruin.yy",
@@ -62,7 +62,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 96,
-    "yorigin": 144,
+    "yorigin": 288,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

@@ -24,7 +24,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e465c139-0f8f-46b8-80e8-aca55e4eced2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 7,
   "parent": {
     "name": "Bloodsauce",
     "path": "folders/Sprites/Start Gates/Bloodsauce.yy",
@@ -62,7 +62,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 96,
-    "yorigin": 144,
+    "yorigin": 288,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

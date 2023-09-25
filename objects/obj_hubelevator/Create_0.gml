@@ -1,15 +1,14 @@
 depth = 10;
 state = 0;
 var i = 0;
-hub_array[i++] = [hub_top, "T"];
-hub_array[i++] = [hub_w3, "3"];
-hub_array[i++] = [hub_w2, "2"];
-random_index = irandom_range(0,100);
-if random_index = 100
-	hub_array[i++] = [hub_w1old, "1"];
+hub_array[i++] = [hub_top, "THE TOP"];
+hub_array[i++] = [hub_w3, "FLOOR 3"];
+hub_array[i++] = [hub_w2, "FLOOR 2"];
+if random(0.01)
+	hub_array[i++] = [hub_w1old, "FLOOR 1"];
 else
-	hub_array[i++] = [hub_w1, "1"];
-hub_array[i++] = [hub_basement, "B"];
+	hub_array[i++] = [hub_w1, "FLOOR 1"];
+hub_array[i++] = [hub_basement, "THE BASEMENT"];
 drawx = 0;
 drawy = 0;
 surface2 = -4;

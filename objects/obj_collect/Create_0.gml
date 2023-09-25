@@ -2,7 +2,6 @@ collectvanish = false;
 collectboxid = -4;
 use_palette = true;
 in_the_void = false;
-depth = 2;
 sprite_index = choose(obj_player.spr_smallcollect1, obj_player.spr_smallcollect2, obj_player.spr_smallcollect3, obj_player.spr_smallcollect4, obj_player.spr_smallcollect5);
 image_index = irandom(image_number - 1);
 image_speed = 0.35;

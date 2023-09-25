@@ -21,6 +21,7 @@ for (var i = 0; i < array_length(_confectispr); i++)
 			tauntspr = b[2];
 			movespr = b[1];
 			idlespr = b[0];
+			depth = other.depth - 5
 			if (place_meeting(x, y, obj_platform))
 				y -= 2;
 		}
@@ -30,19 +31,19 @@ with instance_create(x, y, obj_gatesecret)
 {
 	cardtimer = 750;
 	cardspr = (ini_read_string("Secret", string(obj_startgate.level), 0) >= 1 ? spr_rankcardflipped : spr_rankcard);
-	dorigin = obj_startgate.depth
+	dorigin = other.depth
 }
 with instance_create(x, y, obj_gatesecret)
 {
 	cardtimer = 0;
 	cardspr = (ini_read_string("Secret", string(obj_startgate.level), 0) >= 2 ? spr_rankcardflipped : spr_rankcard);
-	dorigin = obj_startgate.depth
+	dorigin = other.depth
 }
 with instance_create(x, y, obj_gatesecret)
 {
 	cardtimer = -750;
 	cardspr = (ini_read_string("Secret", string(obj_startgate.level), 0) >= 3 ? spr_rankcardflipped : spr_rankcard);
-	dorigin = obj_startgate.depth
+	dorigin = other.depth
 }
 var i = 0;
 var _string_length = string_length(ini_read_string("Highscore", string(level), 0)) + 1;
