@@ -37,5 +37,5 @@
     "path": "sprites/spr_elevator/spr_elevator.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

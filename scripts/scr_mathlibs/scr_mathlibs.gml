@@ -8,7 +8,7 @@ function scr_mathlibs()
 			result += delta;
 		return result + argument1;
 	}
-	function angle_rotate()
+	function angle_rotate(argument0, argument1, argument2)
 	{
 		var diff = cycle(argument1 - argument0, -180, 180);
 		if (diff < -argument2)

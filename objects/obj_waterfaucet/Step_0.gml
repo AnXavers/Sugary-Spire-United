@@ -31,6 +31,7 @@ if (player.state == 17 && place_meeting(x, y, player))
 					sprite_index = spr_onoffswitch_redtoblue;
 					timesturned += 1;
 				}
+				scr_sound(sound_switch)
 				can_switch = false;
 				alarm[0] = 50;
 			}
@@ -41,4 +42,5 @@ if (timesturned >= 10)
 {
 	instance_destroy();
 	instance_create(x, y, obj_bombexplosioncherry);
+	audio_stop_sound(sound_switch)
 }

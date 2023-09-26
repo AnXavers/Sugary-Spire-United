@@ -2,10 +2,6 @@ var y_shk = random_range(-1, 1);
 if (state == 1)
 {
 	draw_sprite(spr_elevatorGUI, selected, 300, 140)
-	draw_set_font(global.smallfont);
-	draw_set_halign(1);
-	var hubmsg = hub_array[selected][1]
-	draw_text(300, 300, hubmsg);
 }
 else if (state == 2)
 {

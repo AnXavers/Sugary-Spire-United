@@ -12,8 +12,9 @@ if canmove
 		optionsaved_newscorefont = global.newscorefont;
 		optionsaved_newplayeranim = global.newplayeranim;
 		optionsaved_erankstack = global.erankstack;
+		optionsaved_slopeangle = global.slopeangle;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 4)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 5)
 	{
 		optionselected += 1;
 		scr_sound(sound_step);
@@ -21,6 +22,7 @@ if canmove
 		optionsaved_newplayeranim = global.newplayeranim;
 		optionsaved_erankstack = global.erankstack;
 		optionsaved_slopeangle = global.slopeangle;
+		optionsaved_machsfx = global.machsfx;
 		
 	}
 	switch (optionselected)
@@ -41,7 +43,7 @@ if canmove
 			optionsaved_newscorefont = wrap(optionsaved_newscorefont, 0, 1);
 			if (key_jump)
 			{
-				scr_sound(sound_enemythrow);
+				scr_sound(sound_enemythrow)
 				ini_open("optionData.ini");
 				ini_write_real("Settings", "newscorefont", optionsaved_newscorefont);
 				ini_close();
@@ -88,6 +90,35 @@ if canmove
 				ini_write_real("Settings", "slopeangle", optionsaved_slopeangle);
 				ini_close();
 				global.slopeangle = optionsaved_slopeangle;
+			}
+			break;
+		case 5:
+			subtitle = "TOGGLES MACH SOUND EFFECTS";
+			CursorY = 550;
+			optionsaved_machsfx += (key_right2 + key_left2);
+			optionsaved_machsfx = wrap(optionsaved_machsfx, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow)
+				switch (optionsaved_machsfx)
+				{
+					case 0:
+						global.sfxdash1 = sound_dash1
+						global.sfxdash2 = sound_dash2
+						global.sfxdash3 = sound_dash3
+						global.sfxdash4 = sound_dash4
+						break;
+					case 1:
+						global.sfxdash1 = sound_dash1old
+						global.sfxdash2 = sound_dash2old
+						global.sfxdash3 = sound_dash3old
+						global.sfxdash4 = sound_dash4old
+						break;
+				}
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "machsfx", optionsaved_machsfx);
+				ini_close();
+				global.machsfx = optionsaved_machsfx;
 			}
 			break;
 	}

@@ -128,6 +128,7 @@ global.richpresense = ini_read_real("Settings", "richpresense", 0);
 global.richpresensetype = ini_read_real("Settings", "richpresensetype", 0);
 global.coneballparry = ini_read_real("Settings", "coneballparry", 0);
 global.language = ini_read_real("Settings", "language", 0);
+global.machsfx = ini_read_real("Settings", "machsfx", 0);
 ini_close();
 
 audio_master_gain(global.masterVolume);
@@ -162,6 +163,21 @@ switch (ini_read_real("Settings", "resolution", 1))
 		window_set_size(3840, 1080);
 		window_set_min_width(3840)
 		window_set_min_height(1080)
+		break;
+}
+switch (ini_read_real("Settings", "machsfx", 0))
+{
+	case 0:
+		global.sfxdash1 = sound_dash1
+		global.sfxdash2 = sound_dash2
+		global.sfxdash3 = sound_dash3
+		global.sfxdash4 = sound_dash4
+		break;
+	case 1:
+		global.sfxdash1 = sound_dash1old
+		global.sfxdash2 = sound_dash2old
+		global.sfxdash3 = sound_dash3old
+		global.sfxdash4 = sound_dash4old
 		break;
 }
 switch (ini_read_real("Settings", "mu_lap10", 0))

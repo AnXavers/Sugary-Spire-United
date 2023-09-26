@@ -15,6 +15,9 @@ draw_option(680, 400 + ScrollY, "OFF", !optionsaved_erankstack);
 draw_option(480, 450 + ScrollY, "SLOPE ANGLE", optionselected == 4);
 draw_option(280, 500 + ScrollY, "ON", optionsaved_slopeangle);
 draw_option(680, 500 + ScrollY, "OFF", !optionsaved_slopeangle);
+draw_option(480, 550 + ScrollY, "MACH SFX", optionselected == 5);
+draw_option(280, 600 + ScrollY, "DEFAULT", !optionsaved_machsfx);
+draw_option(680, 600 + ScrollY, "CLASSIC", optionsaved_machsfx);
 draw_set_font(global.smallfont);
 var _string_width = string_width(subtitle) + 32;
 if (subtitle != "")

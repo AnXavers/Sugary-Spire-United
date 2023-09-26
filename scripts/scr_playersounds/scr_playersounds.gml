@@ -36,13 +36,13 @@ function scr_playersounds()
 	{
 		var machsnd = -4;
 		if (state == states.mach2 && sprite_index == spr_mach1 && grounded)
-			machsnd = sound_dash1;
+			machsnd = global.sfxdash1;
 		else if ((state == states.mach2 && sprite_index == spr_mach2) || (state == states.climbwall || state == states.climbceiling || state == states.climbdownwall))
-			machsnd = sound_dash2;
+			machsnd = global.sfxdash2;
 		else if (state == states.mach3 && sprite_index != spr_crazyrun)
-			machsnd = sound_dash3;
+			machsnd = global.sfxdash3;
 		else if (sprite_index == spr_crazyrun)
-			machsnd = sound_dash4;
+			machsnd = global.sfxdash4;
 		if (!audio_is_playing(machsnd))
 		{
 			audio_stop_sound(machSound);

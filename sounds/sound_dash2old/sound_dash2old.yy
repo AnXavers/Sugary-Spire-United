@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sound_dash2old.ogg",
+  "soundFile": "sound_dash2old.wav",
   "type": 0,
   "volume": 1.0,
 }
