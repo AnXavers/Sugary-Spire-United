@@ -27,8 +27,6 @@ function scr_getinput()
 	stickpressed = false;
 	if (global.shellactivate)
 		exit;
-	if (keyboard_check_pressed(vk_f1))
-		scr_resetinput();
 	var _dvc = global.player_input_device;
 	gamepad_set_axis_deadzone(_dvc, 0.4);
 	key_up = keyboard_check(global.key_up) || gamepad_button_check(_dvc, global.key_upC) || gamepad_axis_value(_dvc, gp_axislv) < 0;

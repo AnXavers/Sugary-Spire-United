@@ -59,17 +59,7 @@ if (selected == 0)
 			{
 				scr_sound(sound_enemythrow);
 				selected = true;
-				instance_create(0, 0, obj_online_manager);
-			}
-			break;
-		case 5:
-			subtitle = "ENABLE ONLINE - UNSTABLE";
-			CursorY = 500;
-			if (key_jump)
-			{
-				scr_sound(sound_enemythrow);
-				selected = true;
-				instance_create(0, 0, obj_online_manager);
+				instance_create(0, 0, obj_Options_Mod_Language);
 			}
 			break;
 	}
