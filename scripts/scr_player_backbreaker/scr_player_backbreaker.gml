@@ -113,6 +113,10 @@ function state_player_backbreaker()
 				paletteselect = 1;
 				break;
 			case "T":
+				character = "S";
+				paletteselect = 0;
+				break;
+				case "S":
 				character = "P";
 				paletteselect = 0;
 				break;

@@ -4,6 +4,9 @@ function state_player_mach1()
 	{
 		case "P":
 		case "T":
+		case "G":
+		case "C":
+		case "S":
 			dir = xscale;
 			move = key_left + key_right;
 			landAnim = 0;

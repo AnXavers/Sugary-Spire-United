@@ -50,7 +50,7 @@ function do_grab()
 		}
 		else if (!key_up)
 		{
-			if (character == "P" || character == "T")
+			if (character == "P" || character == "T" || character == "S")
 			{
 				scr_sound(sound_suplex1);
 				instance_create(x, y, obj_slaphitbox);

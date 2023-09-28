@@ -77,7 +77,7 @@ function state_player_normal()
 							sprite_index = spr_winding;
 						}
 					}
-					if (character == "T")
+					if (character == "T" || character == "S")
 							{
 								if (global.cane == 1)
 									sprite_index = spr_caneidle;
@@ -90,7 +90,7 @@ function state_player_normal()
 										sprite_index = spr_danceidle;
 								}
 							}
-					else if (facehurt == 1 && character == "P" || character == "T")
+					else if (facehurt == 1 && character == "P" || character == "T" || character == "S")
 					{
 						windingAnim = 0;
 						if (sprite_index != spr_facehurtup && sprite_index != spr_facehurt)

@@ -71,7 +71,7 @@ if canmove
 			break;
 		case 3:
 			subtitle = "TOGGLES WHAT LAPPING MODE TO USE";
-			CursorY = 300;
+			CursorY = 350;
 			optionsaved_inflapping += (key_right2 + key_left2);
 			optionsaved_inflapping = wrap(optionsaved_inflapping, 0, 2);
 			if (key_jump)
@@ -90,7 +90,7 @@ if canmove
 			break;
 		case 4:
 			subtitle = "REENABLES JERALD WHICH MAKES YOU REQUIRE HIM FOR THE LAP PORTALS";
-			CursorY = 400;
+			CursorY = 450;
 			optionsaved_enablejerald += (key_right2 + key_left2);
 			optionsaved_enablejerald = wrap(optionsaved_enablejerald, 0, 1);
 			if (key_jump)
@@ -104,7 +104,7 @@ if canmove
 			break;
 		case 5:
 			subtitle = "ALLOWS YOU TO PARRY AND SUPERTAUNT CONEBALL";
-			CursorY = 500;
+			CursorY = 550;
 			optionsaved_coneballparry += (key_right2 + key_left2);
 			optionsaved_coneballparry = wrap(optionsaved_coneballparry, 0, 1);
 			if (key_jump)

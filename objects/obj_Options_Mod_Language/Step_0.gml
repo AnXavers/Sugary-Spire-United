@@ -30,9 +30,9 @@ if canmove
 			break;
 		case 1:
 			subtitle = "TOGGLE THE LANGUAGE SHOWN IN-GAME";
-			CursorY = 100;
 			optionsaved_language += (key_right2 + key_left2);
-			optionsaved_language = wrap(optionsaved_language, 0, 2);
+			optionsaved_language = wrap(optionsaved_language, 0, 3);
+			CursorY = 150 + (optionsaved_language * 50);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);
