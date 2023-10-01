@@ -3,6 +3,7 @@ with (obj_player)
 	if (state != 63 && state != 74)
 	{
 		scr_sound(sound_superjumprelease);
+		scr_sound(sfx_coneballspike);
 		other.image_index = 0;
 		other.image_speed = 0.35;
 		x = other.x;

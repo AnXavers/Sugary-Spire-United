@@ -28,7 +28,7 @@ if (global.hurtcounter >= global.hurtmilestone && global.hurtcounter >= 5)
 		character = "The Noise";
 	else if (obj_player.character == "S")
 		character = "Peppino";
-	scr_controlprompt("[spr_promptfont]You have hurt " + string(character) + " " + string(global.hurtmilestone) + " times...", -4, 200);
+	scr_controlprompt("[spr_promptfont]You have hurt " + string(character) + " " + string(global.hurtmilestone) + " times...");
 	scr_queue_tvanim(spr_pizzytvhurtext1, 100);
 }
 if (obj_player.state == 56)
@@ -243,36 +243,36 @@ switch (obj_player.state)
 	case 98:
 		if (ds_list_find_index(global.saveroom, "cotton") == -1)
 		{
-			scr_queue_message("Mmmph!! MMMPH!! MMPPH! (This cotton is quite a delicacy, isn't it?)");
+			scr_queue_text("Mmmph!! MMMPH!! MMPPH! (This cotton is quite a delicacy, isn't it?)")
 			ds_list_add(global.saveroom, "cotton");
 		}
 		break;
 	case 101:
 		if (ds_list_find_index(global.saveroom, "minecart") == -1)
 		{
-			scr_queue_message("Easy... easy... hold on to your hats... hard hats, rather.");
+			scr_queue_text("Easy... easy... hold on to your hats... hard hats, rather.")
 			ds_list_add(global.saveroom, "minecart");
 		}
 		break;
 	case 108:
 		if (ds_list_find_index(global.saveroom, "fireass") == -1)
 		{
-			scr_queue_message("Breaking news... local candy maker finds himself burned by caramel.");
-			scr_queue_message("What an idiot. How does that even happen?");
+			scr_queue_text("Breaking news... local candy maker finds himself burned by caramel.");
+			scr_queue_text("What an idiot. How does that even happen?");
 			ds_list_add(global.saveroom, "fireass");
 		}
 		break;
 	case 99:
 		if (ds_list_find_index(global.saveroom, "fling") == -1)
 		{
-			scr_queue_message("Aughh!! What kind of black magic has this flying frog casted upon me?! Feels kinda nice.");
+			scr_queue_text("Aughh!! What kind of black magic has this flying frog casted upon me?! Feels kinda nice.");
 			ds_list_add(global.saveroom, "fling");
 		}
 		break;
 	case 125:
 		if (ds_list_find_index(global.saveroom, "flushed") == -1)
 		{
-			scr_queue_message("Incredibly cold temperatures are causing random individuals to be frozen solid. We recommend you stay inside during these chilly times.");
+			scr_queue_text("Incredibly cold temperatures are causing random individuals to be frozen solid. We recommend you stay inside during these chilly times.");
 			ds_list_add(global.saveroom, "flushed");
 		}
 		break;

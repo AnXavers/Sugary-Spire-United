@@ -76,7 +76,7 @@ with (instance_nearest(x, y, obj_player))
 			instance_destroy();
 	}
 }
-if (place_meeting(x, y, obj_bombexplosionconeboy) && instance_place(x, y, obj_bombexplosionconeboy).frog)
+if (place_meeting(x, y, obj_bombexplosionconeboy))
 	instance_destroy();
 with (instance_nearest(x, y, obj_minedummycart))
 {

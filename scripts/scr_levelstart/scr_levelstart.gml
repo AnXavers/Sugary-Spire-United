@@ -22,6 +22,7 @@ function scr_levelstart()
 			break;
 		case "sucrose":
 			global.srank = 30000;
+			break;
 		case "estate":
 			global.srank = 26500;
 			break;
@@ -34,7 +35,7 @@ function scr_levelstart()
 		case "exitway":
 			global.srank = 19500;
 			break;
-		case "dungeon":
+		case "bloodsauce":
 			global.srank = 18500;
 			break;
 		case "entrance":

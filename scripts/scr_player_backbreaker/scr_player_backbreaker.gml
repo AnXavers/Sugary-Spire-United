@@ -124,7 +124,7 @@ function state_player_backbreaker()
 		scr_characterspr();
 		tauntStored.sprite_index = spr_idle;
 		tauntStored.state = 1;
-		scr_sound(choose(sound_taunt1, sound_taunt2, sound_taunt3, sound_taunt4, sound_taunt5, sound_taunt6, sound_taunt7, sound_taunt8));
+		scr_sound(choose(sound_taunt1, sound_taunt2, sound_taunt3, sound_taunt4, sound_taunt5, sound_taunt6, sound_taunt7));
 		taunttimer = 20;
 		image_index = irandom_range(0, sprite_get_number(spr_taunt));
 		sprite_index = spr_taunt;

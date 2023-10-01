@@ -7,5 +7,5 @@ info =
 	bginfo: [spr_sucrosecard_bg, (2 << 0), (4 << 0), (8 << 0), 0, 0],
 	titleinfo: [spr_sucrosecard_title, (0 << 0), (5 << 0), (6 << 0), 0, 0],
 	featuringinfo: [0, 5, 6, 200, 350],
-	song: mu_bee_title
+	song: mu_sucrosetitle
 }

@@ -4,7 +4,6 @@ Camera_width = room_width;
 Camera_height = room_height;
 Camera_xorigin = 0;
 Camera_yorigin = 0;
-cam_lzoom = 1;
 cam_langle = 0;
 var _region = -4;
 with (obj_cameraRegion)

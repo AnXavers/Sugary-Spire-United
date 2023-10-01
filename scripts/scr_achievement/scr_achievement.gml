@@ -40,7 +40,7 @@ function scr_normalAchievments(argument0 = global.levelname)
 			if (global.clutterhit == 56)
 				ini_write_real("Achievements", "entrywayclutter", true);
 			if (global.clutterhit == 30)
-				ini_write_real("Achievements", "entrywayclutter", true);
+				ini_write_real("Achievements", "waferracers", true);
 			if (global.clutterhit == 30)
 				ini_write_real("Achievements", "entrywayclutter", true);
 			break;

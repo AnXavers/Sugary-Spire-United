@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Pizzano",
-    "path": "folders/Sprites/Player/Pizzano.yy",
+    "name": "Rank",
+    "path": "folders/Sprites/Player/Pizzano/Rank.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

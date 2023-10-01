@@ -13,8 +13,9 @@ if canmove
 		optionsaved_newplayeranim = global.newplayeranim;
 		optionsaved_erankstack = global.erankstack;
 		optionsaved_slopeangle = global.slopeangle;
+		optionsaved_machsfx = global.machsfx;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 5)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 6)
 	{
 		optionselected += 1;
 		scr_sound(sound_step);
@@ -23,6 +24,7 @@ if canmove
 		optionsaved_erankstack = global.erankstack;
 		optionsaved_slopeangle = global.slopeangle;
 		optionsaved_machsfx = global.machsfx;
+		optionsaved_eggplantcombo = global.eggplantcombo;
 		
 	}
 	switch (optionselected)
@@ -119,6 +121,20 @@ if canmove
 				ini_write_real("Settings", "machsfx", optionsaved_machsfx);
 				ini_close();
 				global.machsfx = optionsaved_machsfx;
+			}
+			break;
+		case 6:
+			subtitle = "MAKES COMBOS APPEAR AS THEY DO IN THE EGGPLANT BUILD OF PT";
+			CursorY = 550;
+			optionsaved_eggplantcombo += (key_right2 + key_left2);
+			optionsaved_eggplantcombo = wrap(optionsaved_eggplantcombo, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "eggplantcombo", optionsaved_eggplantcombo);
+				ini_close();
+				global.eggplantcombo = optionsaved_eggplantcombo;
 			}
 			break;
 	}

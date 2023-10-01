@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.037,
+  "duration": 1.037642,
   "parent": {
     "name": "Coneball",
     "path": "folders/Sounds/Sounds/Baddie/Coneball.yy",

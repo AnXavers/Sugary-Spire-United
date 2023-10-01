@@ -8,7 +8,7 @@ if ((global.panic == 1 && panicmode == 1) || panicmode == 0)
 				can_activate = true;
 		}
 		activated = true;
-		scr_queue_message(_message, _message_tvspr);
+		scr_queue_text(_message);
 		ds_list_add(global.saveroom, id);
 		instance_destroy();
 	}
@@ -23,9 +23,9 @@ if ((global.panic == 1 && panicmode == 1) || panicmode == 0)
 		for (var i = 0; i < array_length(_message_array); i++)
 		{
 			if (array_length(_message_array[i]) > 1)
-				scr_queue_message(_message_array[i][0], _message_array[i][1]);
+				scr_queue_text(_message_array[i][0]);
 			else
-				scr_queue_message(_message_array[i][0]);
+				scr_queue_text(_message_array[i][0]);
 		}
 		ds_list_add(global.saveroom, id);
 		instance_destroy();

@@ -129,6 +129,7 @@ global.richpresensetype = ini_read_real("Settings", "richpresensetype", 0);
 global.coneballparry = ini_read_real("Settings", "coneballparry", 0);
 global.language = ini_read_real("Settings", "language", 0);
 global.machsfx = ini_read_real("Settings", "machsfx", 0);
+global.eggplantcombo = ini_read_real("Settings", "eggplantcombo", 0);
 ini_close();
 
 audio_master_gain(global.masterVolume);

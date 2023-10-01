@@ -82,44 +82,6 @@ function meta_panic()
 		argumentDescriptions: ["activate/deactivate escape", "set minutes", "set seconds"]
 	};
 }
-function sh_sugarrush()
-{
-	var arg0 = string(argument0[1]);
-	var arg1 = argument0[2];
-	var arg2 = argument0[3];
-	switch (arg0)
-	{
-		case "true":
-		case "1":
-			arg0 = true;
-			break;
-		case "false":
-		case "0":
-			arg0 = false;
-			break;
-		default:
-			arg0 = !global.panic;
-			break;
-	}
-	global.panic = arg0;
-	var _minutes = real(string_digits(arg1));
-	var _seconds = real(string_digits(arg2));
-	global.fill = ((_minutes * 60) + _seconds) * 60;
-	global.wave = 0;
-	global.maxwave = global.fill;
-	if (!instance_exists(obj_panicchanger))
-		instance_create(x, y, obj_panicchanger);
-}
-function meta_sugarrush()
-{
-	return 
-	{
-		description: "Activates escape and sets escape time.",
-		arguments: ["<bool>", "<min>", "<sec>"],
-		suggestions: [["true", "false"], [], []],
-		argumentDescriptions: ["activate/deactivate escape", "set minutes", "set seconds"]
-	};
-}
 function sh_toggle_collisions()
 {
 	var arg1 = argument0[1];
@@ -257,6 +219,35 @@ function sh_toggle_debugmode()
 	global.debugmode = arg1;
 }
 function meta_toggle_debugmode()
+{
+	return 
+	{
+		description: "Toggles debugmode.",
+		arguments: ["<bool>"],
+		suggestions: [["true", "false"]],
+		argumentDescriptions: ["toggles debugmode"]
+	};
+}
+function sh_debugmode()
+{
+	var arg1 = argument0[1];
+	switch (arg1)
+	{
+		case "true":
+		case "1":
+			arg1 = true;
+			break;
+		case "false":
+		case "0":
+			arg1 = false;
+			break;
+		default:
+			arg1 = !global.debugmode;
+			break;
+	}
+	global.debugmode = arg1;
+}
+function meta_debugmode()
 {
 	return 
 	{
@@ -517,7 +508,7 @@ function meta_give_all()
 }
 function sh_play_sound()
 {
-	scr_sound(argument0[1])
+	scr_sound(asset_get_index(argument0[1]))
 }
 function meta_play_sound()
 {
@@ -567,7 +558,7 @@ function meta_draw_sprite()
 	{
 		description: "Draws the specified sprite in the room.",
 		arguments: ["<sprite>", "<frame>", "<x>", "<y>"],
-		suggestions: [global.spritelist, 1, obj_player.x, obj_player.y],
+		suggestions: [global.spritelist, 1, [string(obj_player.x)], [string(obj_player.y)]],
 		argumentDescriptions: ["The sprite to draw.", "The frame you want to draw and/or start at.", "The X coordinate to draw the sprite at.", "The Y coordinate to draw the sprite at."]
 	};
 }
@@ -575,7 +566,7 @@ function sh_set_combo()
 {
 	global.combo = argument0[1]
 	global.combotime = argument0[2]
-	global.combofreeze =argument0[3]
+	global.combofreeze = argument0[3]
 }
 function meta_set_combo()
 {

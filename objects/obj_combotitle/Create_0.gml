@@ -19,18 +19,26 @@ switch (type)
 	case 0:
 		image_xscale = 0;
 		image_yscale = 0;
+		if global.eggplantcombo
+			scr_sound(sfx_combotitle1)
 		break;
 	case 1:
 		image_xscale = 3;
 		image_yscale = 0;
+		if global.eggplantcombo
+			scr_sound(sfx_combotitle2)
 		break;
 	case 2:
 		image_xscale = 0;
 		image_yscale = 3;
+		if global.eggplantcombo
+			scr_sound(sfx_combotitle3)
 		break;
 	case 3:
 		image_xscale = 0;
 		image_yscale = 0;
+		if global.eggplantcombo
+			scr_sound(sfx_combotitle3)
 		break;
 }
 if global.language == 2

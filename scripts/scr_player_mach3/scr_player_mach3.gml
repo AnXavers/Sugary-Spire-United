@@ -15,38 +15,38 @@ function state_player_mach3()
 		vsp /= 20;
 		jumpstop = 1;
 	}
-	if (character == "P" || character == "T" || character == "C" || character == "S")
+	switch (character)
 	{
-		if (grounded && vsp > 0)
-			jumpstop = 0;
-		if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1) && key_attack)
-		{
-			image_index = 0;
-			sprite_index = spr_mach3jump;
-			if (!playedjumpsound)
+		case "N":
+		case "G":
+			if (grounded && vsp > 0)
+				jumpstop = 0;
+			if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1) && key_attack)
 			{
-				scr_sound(sound_jump);
-				playedjumpsound = mu_rankd;
+				image_index = 0;
+				state = 120;
+				sprite_index = spr_twirl;
+				if (!playedjumpsound)
+				{
+					scr_sound(sound_jump);
+					playedjumpsound = mu_rankd;
+				}
+				vsp = -12;
 			}
-			vsp = -11;
-		}
-	}
-	else if (character == "N" || character == "G")
-	{
-		if (grounded && vsp > 0)
-			jumpstop = 0;
-		if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1) && key_attack)
-		{
-			image_index = 0;
-			state = 120;
-			sprite_index = spr_pizzano_machtwirl;
-			if (!playedjumpsound)
+		default:
+			if (grounded && vsp > 0)
+				jumpstop = 0;
+			if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1) && key_attack)
 			{
-				scr_sound(sound_jump);
-				playedjumpsound = mu_rankd;
+				image_index = 0;
+				sprite_index = spr_mach3jump;
+				if (!playedjumpsound)
+				{
+					scr_sound(sound_jump);
+					playedjumpsound = mu_rankd;
+				}
+				vsp = -11;
 			}
-			vsp = -12;
-		}
 	}
 	if (grounded)
 	{

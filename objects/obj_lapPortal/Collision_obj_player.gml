@@ -9,6 +9,8 @@ if (other.state != 110 && sprite_index == spr_lappingportal_idle && global.panic
 		image_index = 0;
 		sprite_index = spr_lappingportal_enter;
 	}
+	obj_camera.cam_lzoom = 0.6
+	scr_sound(sfx_lapenter)
 	cutscene_create([cutscene_lapPortal_start, cutscene_lapPortal_middle, cutscene_lapPortal_end]);
 	instance_destroy();
 }

@@ -137,7 +137,7 @@ if (shownewtext == 1)
 	draw_set_font(global.bubblefont);
 	draw_set_halign(0);
 	draw_set_color(c_white);
-	_new_message = new_message;
+	textbubblesprites = spr_tv_bubbleopen
 	if (textbubblesprites == spr_tv_bubble)
 	{
 		var _length = -(floor(string_width(_new_message)) + 5);
@@ -154,10 +154,7 @@ if (shownewtext == 1)
 	if (textbubblesprites == spr_tv_bubble)
 		draw_sprite(spr_tv_bubblefade, -1, 448, 45);
 }
-if (global.panic)
-	var promptY = 425;
-else
-	promptY = 500;
 draw_set_alpha(promptalpha);
-draw_text_scribble(480, promptY, "[fa_middle][shake]" + controlprompt);
+draw_set_halign(1)
+draw_text_scribble(480, 400, "[shake]" + controlprompt);
 draw_set_alpha(1);

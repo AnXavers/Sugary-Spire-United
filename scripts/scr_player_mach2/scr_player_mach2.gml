@@ -14,30 +14,30 @@ function state_player_mach2()
 		vsp /= 20;
 		jumpstop = 1;
 	}
-	if (character == "P" || character == "T" || character == "S" || character == "C")
+	switch (character)
 	{
-		if (grounded && vsp > 0)
-			jumpstop = 0;
-		if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1) && key_attack)
-		{
-			image_index = 0;
-			sprite_index = spr_secondjump1;
-			if (!playedjumpsound)
+		case "N":
+		case "G":
+			if (key_jump && grounded)
 			{
-				scr_sound(sound_jump);
-				playedjumpsound = mu_rankd;
+				state = 119;
+				sprite_index = spr_twirl;
+				vsp = -12;
 			}
-			vsp = -11;
-		}
-	}
-	else if (character == "N" || character == "G")
-	{
-		if (key_jump && grounded)
-		{
-			state = 119;
-			sprite_index = spr_twirl;
-			vsp = -12;
-		}
+		default:
+			if (grounded && vsp > 0)
+				jumpstop = 0;
+			if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1) && key_attack)
+			{
+				image_index = 0;
+				sprite_index = spr_secondjump1;
+				if (!playedjumpsound)
+				{
+					scr_sound(sound_jump);
+					playedjumpsound = mu_rankd;
+				}
+				vsp = -11;
+			}
 	}
 	var mach_sprite = (movespeed >= 8) ? spr_mach2 : spr_mach1;
 	if (grounded)

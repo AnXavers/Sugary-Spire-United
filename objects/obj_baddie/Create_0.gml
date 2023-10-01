@@ -3,7 +3,6 @@ boss_enemy = false;
 pizzano = false;
 hithsp = 0;
 hitvsp = 0;
-spr_palette = -4;
 paletteselect = -4;
 invtime = 0;
 ScareBuffer = 0;

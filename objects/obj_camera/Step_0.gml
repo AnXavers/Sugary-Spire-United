@@ -208,9 +208,16 @@ switch (room)
 	case hub_basement:
 		window_set_caption("The forgotten floor of the Sugary Spire");
 		break;
+	case hub_w1oldoldold:
+	case hub_w1oldold:
+	case hub_w1old:
 	case hub_w1:
+		window_set_caption("The sweet floor of the Sugary Spire");
+		break;
+	case hub_hallway:
 		window_set_caption("Inside of the fabled Sugary Spire");
 		break;
+	case hub_w2old:
 	case hub_w2:
 		window_set_caption("The alienated floor of the Sugary Spire");
 		break;
@@ -220,15 +227,23 @@ switch (room)
 	case hub_top:
 		window_set_caption("The final floor of the Sugary Spire");
 		break;
+	case entryway_1_custom:
+	case entryway_1_new:
+	case entryway_1_old:
 	case entryway_1:
 		window_set_caption("Construction underway at the Sugary Spire");
 		break;
+	case steamy_1_old:
 	case steamy_1:
 		window_set_caption("Downtown Sugary Spire");
 		break;
+	case molasses_1_old:
 	case molasses_1:
 		window_set_caption("Sugary Spire's natural habitat");
 		break;
+	case mine_1:
+	case mineshaft_1:
+	case mines_1_old:
 	case mines_1:
 		window_set_caption("Hard at work underneath the Sugary Spire");
 		break;
@@ -238,8 +253,24 @@ switch (room)
 	case rm_painterarena:
 		window_set_caption("Artist's representation of the Sugary Spire");
 		break;
+	case cafe_1:
+	case estate_1_old:
 	case estate_1:
 		window_set_caption("Property of the Sugary Spire");
+		break;
+	case bee_1_old:
+	case bee_1:
+		window_set_caption("Buzzing cities in the Sugary Spire.");
+		break;
+	case sucrose_1:
+		window_set_caption("Wastelands hidden within the Sugary Spire");
+		break;
+	case silver_0:
+	case silver_1:
+	case silver_2:
+	case silver_3:
+	case silver_4:
+		window_set_caption("");
 		break;
 }
 audio_listener_position(Cam_x, Cam_y, 0);

@@ -83,6 +83,7 @@ add_music(tutorial_1, mu_tutorial, mu_painter, false);
 add_music(entryway_1, mu_waffle, mu_wafflesecret, false);
 add_music(entryway_1_new, mu_waffle, mu_wafflesecret, false);
 add_music(entryway_1_old, mu_waffle, mu_wafflesecret, false);
+add_music(entryway_1_custom, mu_waffle, mu_wafflesecret, false);
 add_music(steamy_1, mu_steamy, mu_steamysecret, false);
 add_music(steamy_1_old, mu_steamy, mu_steamysecret, false);
 add_music(steamy_7_old, mu_steamy, mu_steamysecret, true);

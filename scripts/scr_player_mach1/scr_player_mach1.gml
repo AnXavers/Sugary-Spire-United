@@ -2,11 +2,13 @@ function state_player_mach1()
 {
 	switch (character)
 	{
-		case "P":
-		case "T":
-		case "G":
-		case "C":
-		case "S":
+		case "N":
+			sprite_index = spr_pizzano_mach2;
+			if (movespeed < 6)
+				movespeed = 6;
+			state = 69;
+			break;
+		default:
 			dir = xscale;
 			move = key_left + key_right;
 			landAnim = 0;
@@ -118,12 +120,6 @@ function state_player_mach1()
 				sprite_index = spr_suplexdash;
 				state = 17;
 			}
-			break;
-		case "N":
-			sprite_index = spr_pizzano_mach2;
-			if (movespeed < 6)
-				movespeed = 6;
-			state = 69;
 			break;
 	}
 }

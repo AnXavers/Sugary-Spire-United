@@ -21,7 +21,7 @@ else if global.inflapping == 2
 			instance_create(x, y, obj_panicchanger);
 	}
 }
-if (global.lapcount = 10)
+if (global.lapcount == 10)
 {
 	global.lap10fg = layer_create(-50, "Backgrounds_foreground");
 	global.lap10bgspr = layer_background_create(global.lap10fg, bg_collapsing_spire);
@@ -30,3 +30,9 @@ if (global.lapcount = 10)
 	layer_vspeed(global.lap10fg, 3);
 	global.dolap10fg = 1;
 }
+if (global.lapcount == 3 && global.inflapping == 1)
+	scr_controlprompt("[spr_promptfont]The heat is rising...")
+else if global.lapcount == 5
+	scr_controlprompt("[spr_promptfont]Enemies are getting stronger...")
+scr_sound(sfx_lapexit)
+cam_lzoom = 0.7

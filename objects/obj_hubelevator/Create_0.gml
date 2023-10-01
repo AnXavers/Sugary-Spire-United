@@ -26,15 +26,15 @@ selected = 0
 var c = 1
 while (c < array_length(hub_array))
 {
-    if (room == hub_array[c][0])
-    {
-        selected = c
-        break
-    }
-    else
-    {
-        c++
-        continue
-    }
+	if (room == hub_array[c][0])
+	{
+		selected = c
+		break
+	}
+	else
+	{
+		c++
+		continue
+	}
 }
 image_index = selected

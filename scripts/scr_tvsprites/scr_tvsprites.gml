@@ -60,6 +60,35 @@ function scr_tvsprites()
 			lap4tvspr = spr_pizzanotv_lap4;
 			harrytvspr = spr_pizzanotv_harry;
 			break;
+		case "S":
+			idletvspr = spr_tv_idle;
+			combotvspr = spr_tv_exprcombo;
+			happytvspr = spr_tv_exprcollect;
+			escapetvspr = spr_pizzanotv_escape1;
+			tvchange1 = spr_tv_idleanim1;
+			tvchange2 = spr_tv_idleanim2;
+			cottontvspr = spr_pizzanotv_cotton;
+			hurttvspr = spr_tv_exprhurt;
+			minecarttvspr = spr_pizzanotvmine;
+			bombtvspr = spr_tv_bombpep;
+			firetvspr = spr_tv_fireass;
+			angrytvspr = spr_tv_exprheat;
+			orbtvspr = spr_pizzanotv_croaked;
+			ufotvspr = spr_pizzytvufo;
+			mach1tvspr = spr_tv_exprmach3;
+			mach2tvspr = spr_tv_exprmach3;
+			mach3tvspr = spr_tv_exprmach3;
+			mach4tvspr = spr_tv_exprmach4;
+			machrolltvspr = spr_pizzytvmachroll;
+			frostburntvspr = spr_tv_knight;
+			hooktvspr = spr_pizzytvhook;
+			marshdogspr = spr_tv_weenie;
+			panictvspr = spr_tv_exprpanic;
+			laptvspr = spr_tv_exprheat;
+			lap3tvspr = spr_tv_exprheat;
+			lap4tvspr = spr_tv_exprheat;
+			harrytvspr = spr_tv_exprhurt3;
+			break;
 		case "C":
 			idletvspr = spr_coneboytv;
 			escapetvspr = spr_coneboytv;

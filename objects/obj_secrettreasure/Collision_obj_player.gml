@@ -1,9 +1,6 @@
-audio_stop_sound(sound_points);
-audio_stop_sound(sound_pizzagot);
-scr_sound(sound_pizzagot);
-scr_sound(sound_points);
+audio_stop_sound(sound_treasuregot);
+scr_sound(sound_treasuregot);
 scr_ghostcollectible();
-global.collectsound = mu_entryway_title;
 scr_queue_tvanim(obj_tv.happytvspr, 200);
 global.collect += 3000;
 global.pizzameter += 5;

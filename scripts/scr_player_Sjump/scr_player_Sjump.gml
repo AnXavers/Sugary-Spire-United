@@ -11,6 +11,9 @@ function state_player_Sjump()
 	crouchslideAnim = 1;
 	crouchAnim = 0;
 	machhitAnim = 0;
+	charactersjump = 0
+	if (character == "N" || character == "T")
+		charactersjump = 1
 	move = key_left + key_right;
 	if (move != 0)
 		xscale = move;
@@ -19,9 +22,9 @@ function state_player_Sjump()
 		vsp = -movespeed;
 		movespeed = approach(movespeed, 18, 1);
 	}
-	if ((sprite_index == spr_superjumpprep && (character == "N" || character == "T" || character == "S")) || sprite_index == spr_superjump_cancelprep)
+	if ((sprite_index == spr_superjumpprep && charactersjump) || sprite_index == spr_superjump_cancelprep)
 		vsp = 0;
-	if ((sprite_index == spr_superjumpprep && (character == "N" || character == "T" || character == "S")) && floor(image_index) == (image_number - 1))
+	if ((sprite_index == spr_superjumpprep && charactersjump) && floor(image_index) == (image_number - 1))
 	{
 		scr_sound(sound_superjumprelease);
 		vsp = -10;
@@ -50,7 +53,7 @@ function state_player_Sjump()
 		machhitAnim = 0;
 		movespeed = 0;
 	}
-	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && (character == "P" || character == "S") && (sprite_index != spr_superjump_cancelprep))
+	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && !charactersjump && (sprite_index != spr_superjump_cancelprep))
 	{
 		scr_sound(sound_superjumpcancel);
 		image_index = 0;
@@ -72,7 +75,7 @@ function state_player_Sjump()
 		with (instance_create(x, y, obj_jumpdust))
 			image_xscale = other.xscale;
 	}
-	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && (character == "N" || character == "T"))
+	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && charactersjump)
 	{
 		scr_sound(sound_superjumpcancel);
 		flash = 1;

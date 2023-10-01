@@ -78,6 +78,7 @@ function cutscene_lapPortal_middle()
 	{
 		cutscene_event_end();
 		obj_player.visible = true;
+		obj_camera.cam_lzoom = 1
 	}
 }
 function cutscene_lapPortal_end()
