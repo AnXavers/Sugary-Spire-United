@@ -6,7 +6,7 @@ if ((ds_list_find_index(global.saveroom, id) == -1) || (global.levelname != "yog
 		instance_create(x, y, obj_bangeffect);
 		instance_create(x, y, obj_slapstar);
 	}
-	with (instance_create(x, y, obj_harrydead))
+	with (instance_create(x, y, obj_harryfreeze))
 		paletteselect = other.paletteselect;
 	instance_create(0, 0, obj_sugarrush);
 	global.panic = 1;

@@ -2399,6 +2399,7 @@
     {"name":"spr_pizzasona9trans","order":162,"path":"sprites/spr_pizzasona9trans/spr_pizzasona9trans.yy",},
     {"name":"spr_player_Sjumpcancel_pep","order":262,"path":"sprites/spr_player_Sjumpcancel_pep/spr_player_Sjumpcancel_pep.yy",},
     {"name":"spr_player_punchprep_pep","order":242,"path":"sprites/spr_player_punchprep_pep/spr_player_punchprep_pep.yy",},
+    {"name":"obj_harryfreeze","order":507,"path":"objects/obj_harryfreeze/obj_harryfreeze.yy",},
     {"name":"sound_swordswing","order":68,"path":"sounds/sound_swordswing/sound_swordswing.yy",},
     {"name":"sound_tackleenemy","order":69,"path":"sounds/sound_tackleenemy/sound_tackleenemy.yy",},
     {"name":"spr_pepinoHUDmach3","order":10,"path":"sprites/spr_pepinoHUDmach3/spr_pepinoHUDmach3.yy",},

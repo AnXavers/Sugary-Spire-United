@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 if coneballspeed < -0.05
 {
 	coneballspeed = lerp(coneballspeed, 0, 0.6)

@@ -2,7 +2,7 @@ if (key_jump)
 	playedjumpsound = 0;
 scr_getinput();
 scr_characterspr();
-if (state == states.gottreasure || sprite_index == spr_knightpep_start || sprite_index == spr_knightpep_thunder || state == states.keyget || state == states.door || state == states.victory || state == states.comingoutdoor || state == states.gameover)
+if (state == states.gottreasure || sprite_index == spr_knightpep_start || sprite_index == spr_knightpep_thunder || state == states.keyget || state == states.door || state == states.victory || state == states.comingoutdoor || state == states.gameover || instance_exists(obj_harryfreeze))
 	cutscene = 1;
 else
 	cutscene = 0;

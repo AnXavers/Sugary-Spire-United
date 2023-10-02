@@ -92,7 +92,8 @@ if (global.hitstunEnabled != 0)
 			alarm[1] = -1;
 			frozen = true;
 		}
-		global.freezeframe = true;
+		if !instance_exists(obj_harryfreeze)
+			global.freezeframe = true;
 	}
 }
 p1Vibration(30, 25);

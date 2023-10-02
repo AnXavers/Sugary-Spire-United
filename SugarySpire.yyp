@@ -2576,6 +2576,7 @@
     {"id":{"name":"spr_pizzasona9trans","path":"sprites/spr_pizzasona9trans/spr_pizzasona9trans.yy",},},
     {"id":{"name":"spr_player_Sjumpcancel_pep","path":"sprites/spr_player_Sjumpcancel_pep/spr_player_Sjumpcancel_pep.yy",},},
     {"id":{"name":"spr_player_punchprep_pep","path":"sprites/spr_player_punchprep_pep/spr_player_punchprep_pep.yy",},},
+    {"id":{"name":"obj_harryfreeze","path":"objects/obj_harryfreeze/obj_harryfreeze.yy",},},
     {"id":{"name":"sound_swordswing","path":"sounds/sound_swordswing/sound_swordswing.yy",},},
     {"id":{"name":"sound_tackleenemy","path":"sounds/sound_tackleenemy/sound_tackleenemy.yy",},},
     {"id":{"name":"mu_swamp_title","path":"sounds/mu_swamp_title/mu_swamp_title.yy",},},

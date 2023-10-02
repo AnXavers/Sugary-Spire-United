@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 if instance_exists(obj_palettechangerscrollbar)
 	instance_destroy(obj_palettechangerscrollbar);
 with obj_player
