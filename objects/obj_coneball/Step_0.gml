@@ -5,14 +5,14 @@ if (image_alpha == 1)
 	{
 		if room = entryway_6b_new
 		{
-			x = approach(x, obj_player.x, lengthdir_x(4, dir));
-			y = approach(y, obj_player.y, lengthdir_y(4, dir));
+			x = approach(x, obj_player.x, lengthdir_x(4 * coneballspeed, dir));
+			y = approach(y, obj_player.y, lengthdir_y(4 * coneballspeed, dir));
 			sprite_index = spr_coneball_melting
 		}
 		else
 		{
-			x = approach(x, obj_player.x, lengthdir_x(8, dir));
-			y = approach(y, obj_player.y, lengthdir_y(8, dir));
+			x = approach(x, obj_player.x, lengthdir_x(8 * coneballspeed, dir));
+			y = approach(y, obj_player.y, lengthdir_y(8 * coneballspeed, dir));
 			sprite_index = spr_coneball_new
 		}
 	}
