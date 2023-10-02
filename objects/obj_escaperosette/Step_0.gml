@@ -1,7 +1,7 @@
 switch (state)
 {
 	case 3:
-		if (obj_player.sprite_index != obj_player.spr_player_taunt)
+		if (obj_player.sprite_index != obj_player.spr_taunt)
 		{
 			state = 0;
 			sprite_index = spr_rosette_exitsign;
@@ -44,7 +44,7 @@ switch (state)
 		}
 		break;
 	case 0:
-		if (obj_player.sprite_index == obj_player.spr_player_taunt && dulltimer != 0)
+		if (obj_player.sprite_index == obj_player.spr_taunt && dulltimer != 0)
 		{
 			state = 3;
 			if (lap)

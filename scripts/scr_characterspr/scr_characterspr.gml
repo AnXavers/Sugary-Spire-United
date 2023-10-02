@@ -120,7 +120,6 @@ function scr_characterspr()
 			spr_tumblestart = spr_player_tumblestart;
 			spr_tumble = spr_player_tumble;
 			spr_tumbleend = spr_player_tumbleend;
-			spr_player_taunt = spr_pizzelle_taunt;
 			spr_machroll =  spr_player_machroll;
 			spr_dive = spr_player_dive;
 			spr_cottonidle = spr_cotton_idle;
@@ -452,7 +451,6 @@ function scr_characterspr()
 			spr_canewalk = spr_player_canewalk;
 			spr_canesuplex = spr_player_canesuplex;
 			spr_canehit = spr_player_canehit;
-			spr_player_taunt = spr_pizzano_taunt;
 			spr_machroll = spr_pizzano_crouchslide;
 			spr_superjump = spr_pizzano_sjump;
 			spr_superjumpprep = spr_pizzano_sjumpprep;
@@ -570,7 +568,6 @@ function scr_characterspr()
 			spr_tumblestart = spr_player_tumblestart;
 			spr_tumble = spr_player_tumble;
 			spr_tumbleend = spr_player_tumbleend;
-			spr_player_taunt = spr_gumbob_taunt;
 			spr_machroll = spr_player_machroll;
 			spr_dive = spr_player_dive;
 			spr_cottonidle = spr_gumbob_cotton_idle;
@@ -691,7 +688,6 @@ function scr_characterspr()
 			spr_tumblestart = spr_player_tumblestart;
 			spr_tumble = spr_player_tumble;
 			spr_tumbleend = spr_player_tumbleend;
-			spr_player_taunt = spr_coneboy_taunt;
 			spr_machroll = spr_player_machroll;
 			spr_dive = spr_player_dive;
 			spr_cottonidle = spr_gumbob_cotton_idle;
@@ -816,7 +812,6 @@ function scr_characterspr()
 			spr_tumblestart = spr_Noise_tumblestart;
 			spr_tumble = spr_Noise_tumble;
 			spr_tumbleend = spr_Noise_tumbleend;
-			spr_player_taunt = spr_playerN_taunt;
 			spr_machroll = spr_Noise_machroll;
 			spr_dive = spr_Noise_dive;
 			spr_cottonidle = spr_cotton_idle;
@@ -1073,7 +1068,6 @@ function scr_characterspr()
 			spr_piledriver = spr_player_piledriver_pep;
 			spr_piledriverland = spr_player_piledriverland_pep;
 			spr_charge = spr_player_charge_pep;
-			spr_taunt = spr_player_taunt_pep;
 			spr_selectpal = spr_pizzelleselectpal;
 			spr_palette = spr_pal;
 			spr_caneidle = spr_player_caneidle;
@@ -1086,7 +1080,7 @@ function scr_characterspr()
 			spr_tumblestart = spr_player_tumblestart_pep;
 			spr_tumble = spr_player_tumble;
 			spr_tumbleend = spr_player_tumbleend;
-			spr_player_taunt = spr_player_taunt_pep;
+			spr_taunt = spr_player_taunt_pep;
 			spr_machroll =  spr_player_machroll_pep;
 			spr_dive = spr_player_dive_pep;
 			spr_cottonidle = spr_cotton_idle;

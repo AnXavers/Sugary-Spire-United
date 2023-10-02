@@ -16,7 +16,26 @@ if (other.Dashpad_buffer <= 0)
 		{
 			movespeed += 0.25;
 			movespeed = clamp(movespeed, 12, 24);
-			if (character == "P" || character == "T")
+			if (character == "N")
+			{
+				state = 70;
+				Dashpad_buffer = 25;
+				xscale = sign(other.image_xscale);
+				try_y = 0;
+				while (try_y <= 16)
+				{
+					if (scr_solid(x, other.y - try_y))
+						try_y++;
+					else
+					{
+						y = other.y - try_y;
+						break;
+					}
+				}
+				image_index = 0;
+				flash = 1;
+			}
+			else
 			{
 				Dashpad_buffer = 25;
 				state = 70;
@@ -40,25 +59,6 @@ if (other.Dashpad_buffer <= 0)
 				if (state != 11 && !scr_solid(other.x, y))
 					x = other.x;
 				vsp = 3;
-				flash = 1;
-			}
-			if (character == "N")
-			{
-				state = 70;
-				Dashpad_buffer = 25;
-				xscale = sign(other.image_xscale);
-				try_y = 0;
-				while (try_y <= 16)
-				{
-					if (scr_solid(x, other.y - try_y))
-						try_y++;
-					else
-					{
-						y = other.y - try_y;
-						break;
-					}
-				}
-				image_index = 0;
 				flash = 1;
 			}
 		}

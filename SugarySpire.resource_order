@@ -2967,6 +2967,7 @@
     {"name":"spr_minijohn_undergroundout","order":10,"path":"sprites/spr_minijohn_undergroundout/spr_minijohn_undergroundout.yy",},
     {"name":"spr_wtfcombo_intro","order":24,"path":"sprites/spr_wtfcombo_intro/spr_wtfcombo_intro.yy",},
     {"name":"spr_player_shotgunjump3","order":3,"path":"sprites/spr_player_shotgunjump3/spr_player_shotgunjump3.yy",},
+    {"name":"sfx_harrypause","order":143,"path":"sounds/sfx_harrypause/sfx_harrypause.yy",},
     {"name":"spr_player_lookdoor","order":129,"path":"sprites/spr_player_lookdoor/spr_player_lookdoor.yy",},
     {"name":"bg_fudgetop3_1","order":23,"path":"sprites/bg_fudgetop3_1/bg_fudgetop3_1.yy",},
     {"name":"spr_peppino_duel_pep","order":22,"path":"sprites/spr_peppino_duel_pep/spr_peppino_duel_pep.yy",},

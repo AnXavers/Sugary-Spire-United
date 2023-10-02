@@ -2,7 +2,7 @@ if (freezetype == 0)
 	global.hitstunalarm = round(global.freezeframetimer);
 if (freezetype == 1)
 	global.hitstunalarm = round(freezeval);
-if (global.hitstunEnabled != 0)
+if (global.hitstunEnabled != 0 || instance_exists(obj_harryfreeze))
 {
 	if (global.freezeframe == 0)
 	{
@@ -92,8 +92,7 @@ if (global.hitstunEnabled != 0)
 			alarm[1] = -1;
 			frozen = true;
 		}
-		if !instance_exists(obj_harryfreeze)
-			global.freezeframe = true;
+		global.freezeframe = true;
 	}
 }
 p1Vibration(30, 25);

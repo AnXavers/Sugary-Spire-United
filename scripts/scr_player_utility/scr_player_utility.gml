@@ -13,8 +13,8 @@ function do_taunt()
 		}
 		else
 		{
-			image_index = irandom_range(0, sprite_get_number(spr_player_taunt));
-			sprite_index = spr_player_taunt;
+			image_index = irandom_range(0, sprite_get_number(spr_taunt));
+			sprite_index = spr_taunt;
 		}
 		instance_create(x, y, obj_taunteffect);
 		with (obj_baddie)

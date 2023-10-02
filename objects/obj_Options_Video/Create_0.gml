@@ -26,3 +26,5 @@ selecting = -1;
 obj_Options_Main.CursorY = -999;
 canmove = false;
 alarm[0] = 1;
+win_w = 960
+win_h = 540

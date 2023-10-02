@@ -93,8 +93,8 @@ var lspd = 0.25;
 cam_angle = lerp(cam_angle, cam_langle, lspd);
 cam_zoom = lerp(cam_zoom, cam_lzoom, lspd);
 camera_set_view_angle(view_camera[0], cam_angle + camera_get_view_angle(view_camera[0]));
-var vw = cam_w * cam_zoom;
-var vh = cam_h * cam_zoom;
+var vw = global.cam_w * cam_zoom
+var vh = global.cam_h * cam_zoom
 camera_set_view_size(view_camera[0], vw, vh);
 if (instance_exists(obj_player) && (obj_player.state != 30 && obj_player.state != 51))
 {
@@ -191,7 +191,7 @@ if (oldranklol != global.currentrank)
 }
 bubblescale = approach(bubblescale, 0, 0.1);
 global.screenflash -= 1;
-audio_listener_position(camera_get_view_x(view_camera[0]) + (cam_w / 2), camera_get_view_y(view_camera[0]) + (cam_h / 2), 0);
+audio_listener_position(camera_get_view_x(view_camera[0]) + (global.cam_w / 2), camera_get_view_y(view_camera[0]) + (global.cam_h / 2), 0);
 if (painterdex < sprite_get_number(spr_painterhp))
 	painterdex += 0.35;
 else

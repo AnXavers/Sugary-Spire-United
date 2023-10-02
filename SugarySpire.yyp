@@ -3173,6 +3173,7 @@
     {"id":{"name":"spr_minijohn_undergroundout","path":"sprites/spr_minijohn_undergroundout/spr_minijohn_undergroundout.yy",},},
     {"id":{"name":"spr_wtfcombo_intro","path":"sprites/spr_wtfcombo_intro/spr_wtfcombo_intro.yy",},},
     {"id":{"name":"spr_player_shotgunjump3","path":"sprites/spr_player_shotgunjump3/spr_player_shotgunjump3.yy",},},
+    {"id":{"name":"sfx_harrypause","path":"sounds/sfx_harrypause/sfx_harrypause.yy",},},
     {"id":{"name":"spr_player_lookdoor","path":"sprites/spr_player_lookdoor/spr_player_lookdoor.yy",},},
     {"id":{"name":"bg_fudgetop3_1","path":"sprites/bg_fudgetop3_1/bg_fudgetop3_1.yy",},},
     {"id":{"name":"spr_peppino_duel_pep","path":"sprites/spr_peppino_duel_pep/spr_peppino_duel_pep.yy",},},
