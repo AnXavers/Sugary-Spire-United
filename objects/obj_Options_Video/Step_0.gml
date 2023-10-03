@@ -87,6 +87,7 @@ if (canmove == 1)
 						break;
 				}
 				window_set_size(win_w, win_h);
+				surface_resize(application_surface, global.cam_w, 540)
 				ini_open("optionData.ini");
 				ini_write_real("Settings", "resolution", optionsaved_resolution);
 				ini_close();

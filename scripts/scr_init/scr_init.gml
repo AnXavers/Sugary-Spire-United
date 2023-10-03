@@ -82,6 +82,7 @@ global.clutterhit = 0;
 global.enableportal = 0;
 global.peterimage = -1;
 global.solidfellow = 0;
+global.cam_w = 960;
 sprite_set_bbox(spr_wallfellow, 0, 0, 32, 32)
 ini_open("silversave.ini")
 global.keypieces = ini_read_real("Unlocks", "keypieces", 0);
