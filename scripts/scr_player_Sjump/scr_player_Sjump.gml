@@ -57,7 +57,6 @@ function state_player_Sjump()
 	{
 		scr_sound(sound_superjumpcancel);
 		image_index = 0;
-		image_speed = 0.5;
 		vsp = 0;
 		sprite_index = spr_superjump_cancelprep;
 	}

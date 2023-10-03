@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 182.38693,
+  "duration": 233.74455,
   "parent": {
     "name": "Bee",
     "path": "folders/Sounds/Music/Levels/Bee.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "mu_bee.mp3",
+  "soundFile": "mu_bee.wav",
   "type": 1,
   "volume": 1.0,
 }
