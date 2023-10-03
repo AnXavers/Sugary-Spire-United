@@ -36,4 +36,5 @@ audio_pause_all()
 scr_sound(sound_explosion)
 screen_flash(1)
 layer_destroy(global.harryeffect)
+global.freezeframetimer = 5
 instance_destroy()

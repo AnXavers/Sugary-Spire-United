@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 depth = -2
 grav = 0;
 cigar = 0;

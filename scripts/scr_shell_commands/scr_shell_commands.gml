@@ -331,88 +331,35 @@ function meta_instance_destroy()
 		argumentDescriptions: ["the object to destroy"]
 	};
 }
-function sh_set_global_variable()
+function sh_set_variable()
 {
-	variable_global_set(argument0[1], argument0[2]);
+	if is_undefined(argument0[3])
+		variable_global_set(argument0[1], argument0[2]);
+	else
+		variable_instance_set(argument0[3], argument0[1], argument0[2]);
 }
-function meta_set_global_variable()
+function meta_set_variable()
 {
 	return 
 	{
-		description: "Changes a global variable.",
-		arguments: ["<global_variable>", "<value>"],
-		suggestions: [0, 1],
-		argumentDescriptions: ["the name of the global variable to change", "the value you want to change the variable to"]
-	};
-}
-function sh_set_instance_variable()
-{
-	variable_instance_set(argument0[1], argument0[2], argument0[3]);
-}
-function meta_set_instance_variable()
-{
-	return 
-	{
-		description: "Changes an instance variable.",
-		arguments: ["<object>", "<instance_variable>", "<value>"],
-		suggestions: [global.objectlist, 1, 2],
-		argumentDescriptions: ["the object which variable you want to change", "the name of the instance variable to change", "the value you want to change the variable to"]
-	};
-}
-function sh_set_struct_variable()
-{
-	variable_struct_set(argument0[1], argument0[2], argument0[3]);
-}
-function meta_set_struct_variable()
-{
-	return 
-	{
-		description: "Changes a struct variable.",
-		arguments: ["<struct>", "<struct_variable>", "<value>"],
+		description: "Changes a variable.",
+		arguments: ["<variable>", "<value>", "<instance>"],
 		suggestions: [0, 1, 2],
-		argumentDescriptions: ["the struct which variable you want to change", "the name of the struct variable to change", "the value you want to change the variable to"]
+		argumentDescriptions: ["name of the variable to change", "value you want to change the variable to", "instance the variable resides in (ignore if global)"]
 	};
 }
-function sh_print_global_variable()
+function sh_print_variable()
 {
-	return string(variable_global_get(argument0[1]));
+	return string(argument0[1]);
 }
-function meta_print_global_variable()
+function meta_print_variable()
 {
 	return 
 	{
-		description: "Prints a global variable.",
-		arguments: ["<global_variable>"],
+		description: "Prints a variable.",
+		arguments: ["<variable>"],
 		suggestions: [0],
-		argumentDescriptions: ["the name of the global variable to print"]
-	};
-}
-function sh_print_instance_variable()
-{
-	return string(variable_instance_get(argument0[1], argument0[2]));
-}
-function meta_print_instance_variable()
-{
-	return 
-	{
-		description: "Prints an instance variable.",
-		arguments: ["<object>", "<instance_variable>"],
-		suggestions: [global.objectlist, 1],
-		argumentDescriptions: ["the object which variable you want to print", "the name of the instance variable to change"]
-	};
-}
-function sh_print_struct_variable()
-{
-	return string(variable_struct_get(argument0[1], argument0[2]));
-}
-function meta_print_struct_variable()
-{
-	return 
-	{
-		description: "Prints a struct variable.",
-		arguments: ["<struct>", "<struct_variable>"],
-		suggestions: [0, 1],
-		argumentDescriptions: ["the struct which variable you want to print", "the name of the struct variable to print"]
+		argumentDescriptions: ["the name of the variable to print"]
 	};
 }
 function sh_petersprite()
@@ -532,20 +479,6 @@ function meta_game_end()
 		arguments: [],
 		suggestions: [],
 		argumentDescriptions: []
-	};
-}
-function sh_script_execute()
-{
-	script_execute(argument0[1])
-}
-function meta_script_execute()
-{
-	return 
-	{
-		description: "Executes the specified script.",
-		arguments: ["<script>"],
-		suggestions: [global.scriptlist],
-		argumentDescriptions: ["The script to execute."]
 	};
 }
 function sh_draw_sprite()
