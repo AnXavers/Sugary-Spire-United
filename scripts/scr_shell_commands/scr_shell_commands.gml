@@ -333,7 +333,7 @@ function meta_instance_destroy()
 }
 function sh_set_variable()
 {
-	if is_undefined(argument0[3])
+	if argument0[3] = "global"
 		variable_global_set(argument0[1], argument0[2]);
 	else
 		variable_instance_set(argument0[3], argument0[1], argument0[2]);
@@ -345,21 +345,24 @@ function meta_set_variable()
 		description: "Changes a variable.",
 		arguments: ["<variable>", "<value>", "<instance>"],
 		suggestions: [0, 1, 2],
-		argumentDescriptions: ["name of the variable to change", "value you want to change the variable to", "instance the variable resides in (ignore if global)"]
+		argumentDescriptions: ["name of the variable to change", "value you want to change the variable to", "instance the variable resides in, set to global if global."]
 	};
 }
 function sh_print_variable()
 {
-	return string(argument0[1]);
+	if argument0[2] = "global"
+		return variable_global_get(argument0[1]);
+	else
+		return variable_instance_get(argument0[2], argument0[1]);
 }
 function meta_print_variable()
 {
 	return 
 	{
 		description: "Prints a variable.",
-		arguments: ["<variable>"],
-		suggestions: [0],
-		argumentDescriptions: ["the name of the variable to print"]
+		arguments: ["<variable>", "<instance>"],
+		suggestions: [0, 1],
+		argumentDescriptions: ["the name of the variable to print", "instance the variable resides in, set to global if global."]
 	};
 }
 function sh_petersprite()

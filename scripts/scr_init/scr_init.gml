@@ -83,6 +83,7 @@ global.enableportal = 0;
 global.peterimage = -1;
 global.solidfellow = 0;
 global.cam_w = 960;
+global.cam_h = 540;
 sprite_set_bbox(spr_wallfellow, 0, 0, 32, 32)
 ini_open("silversave.ini")
 global.keypieces = ini_read_real("Unlocks", "keypieces", 0);
@@ -142,31 +143,29 @@ ini_open("optionData.ini");
 switch (ini_read_real("Settings", "resolution", 1))
 {
 	case 0:
-		window_set_size(480, 260);
-		window_set_min_width(480)
-		window_set_min_height(260)
+		win_w = 480
+		win_h = 260
 		break;
 	case 1:
-		window_set_size(960, 540);
-		window_set_min_width(960)
-		window_set_min_height(540)
+		win_w = 960
+		win_h = 540
 		break;
 	case 2:
-		window_set_size(1280, 720);
-		window_set_min_width(1280)
-		window_set_min_height(720)
+		win_w = 1280
+		win_h = 720
 		break;
 	case 3:
-		window_set_size(1920, 1080);
-		window_set_min_width(1920)
-		window_set_min_height(1080)
+		win_w = 1920
+		win_h = 1080
 		break;
 	case 4:
-		window_set_size(3840, 1080);
-		window_set_min_width(3840)
-		window_set_min_height(1080)
+		win_w = 3840
+		win_h = 1080
+		global.cam_w = 1920
 		break;
 }
+window_set_size(win_w, win_h);
+surface_resize(application_surface, global.cam_w, global.cam_h)
 switch (ini_read_real("Settings", "machsfx", 0))
 {
 	case 0:
