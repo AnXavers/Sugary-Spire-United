@@ -237,6 +237,25 @@ function state_player_normal()
 		audio_sound_pitch(sfx_coneboykick, 1.2);
 		headless = 1;
 	}
+	if (character == "T" && substate == 0 && key_shoot2 && !instance_exists(obj_noisebomb))
+	{
+		if (move == 0)
+			movespeed = 0;
+		else
+			movespeed = 3;
+		image_index = 0;
+		with (instance_create(x, y, obj_noisebomb))
+		{
+			image_xscale = other.xscale;
+			hspeed = other.xscale * 9;
+			movespeed = 10;
+			if (!obj_player.key_up)
+				vspeed = -8;
+			else
+				vspeed = -10;
+		}
+		scr_sound(sound_enemythrow);
+	}
 	if (sprite_index == spr_coneboy_spit && animation_end())
 		sprite_index = spr_idle;
 	if (key_jump && grounded && !key_down)
