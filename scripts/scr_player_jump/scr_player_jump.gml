@@ -188,6 +188,7 @@ function state_player_jump()
 		doublejumped = 0;
 	}
 	do_taunt();
+	scr_noise_abilities();
 	if (key_down2)
 	{
 		image_index = 0;

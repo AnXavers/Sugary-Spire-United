@@ -235,6 +235,7 @@ function state_player_mach3()
 		image_speed = 0.3;
 	if (sprite_index != spr_dive)
 	{
+		scr_noise_abilities();
 		do_taunt();
 		do_grab();
 	}
