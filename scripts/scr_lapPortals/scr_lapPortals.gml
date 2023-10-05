@@ -15,7 +15,7 @@ function cutscene_lapPortal_start()
 	if (_finished)
 	{
 		if (room != sucrose_11 && obj_player.character == "P")
-			obj_music.escapemusic = mu_lap;
+			obj_music.escapemusic = mu_pizzelle_lap;
 		global.lapcount++;
 		global.collect += 3000;
 		global.combotime = 60;

@@ -190,22 +190,22 @@ switch (ini_read_real("Settings", "mu_lap10", 0))
 		global.lap10song = mu_finale;
 		break;
 	case 2:
-		global.lap10song = mu_mayhem;
+		global.lap10song = mu_peppino_death;
 		break;
 	case 3:
-		global.lap10song = mu_lap4;
+		global.lap10song = mu_pizzelle_death;
 		break;
 }
 switch (ini_read_real("Settings", "mu_lap5", 0))
 {
 	case 0:
-		global.lap5song = mu_despairy;
+		global.lap5song = mu_pizzelle_despairy;
 		break;
 	case 1:
-		global.lap5song = mu_pizzanodespairy;
+		global.lap5song = mu_pizzano_despairy;
 		break;
 	case 2:
-		global.lap5song = mu_despairypeppino;
+		global.lap5song = mu_peppino_despairy;
 		break;
 	case 3:
 		global.lap5song = mu_overdose;
@@ -214,31 +214,31 @@ switch (ini_read_real("Settings", "mu_lap5", 0))
 switch (ini_read_real("Settings", "mu_lap2", 0))
 {
 	case 0:
-		global.lap2song = mu_lap;
+		global.lap2song = mu_pizzelle_lap;
 		break;
 	case 1:
-		global.lap2song = mu_pizzanolap;
+		global.lap2song = mu_pizzano_lap;
 		break;
 	case 2:
-		global.lap2song = mu_noiselap;
+		global.lap2song = mu_noise_lap;
 		break;
 	case 3:
-		global.lap2song = mu_peppinolap;
+		global.lap2song = mu_peppino_lap;
 		break;
 }
 switch (ini_read_real("Settings", "mu_escape", 0))
 {
 	case 0:
-		global.escapesong = mu_escape;
+		global.escapesong = mu_pizzelle_escape;
 		break;
 	case 1:
-		global.escapesong = mu_pizzanoescape;
+		global.escapesong = mu_pizzano_escape;
 		break;
 	case 2:
-		global.escapesong = mu_noiseescape;
+		global.escapesong = mu_noise_escape;
 		break;
 	case 3:
-		global.escapesong = mu_peppinoescape;
+		global.escapesong = mu_peppino_escape;
 		break;
 }
 switch (ini_read_real("Settings", "mu_overdose", 0))

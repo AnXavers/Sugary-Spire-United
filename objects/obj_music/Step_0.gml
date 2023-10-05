@@ -39,7 +39,7 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 		if global.levelname == "finale"
 			_new_song = mu_finale;
 		else if global.levelname == "yogurt"
-			_new_song = mu_lap4;
+			_new_song = mu_pizzelle_death;
 		else if !global.defaultlapmusic
 		{
 			if (obj_player.character == "P")
@@ -47,44 +47,44 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 				if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
 					_new_song = mu_sucrose;
 				else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
-					_new_song = mu_despairy;
+					_new_song = mu_pizzelle_despairy;
 				else if (global.lapcount >= 2)
-					_new_song = mu_lap;
+					_new_song = mu_pizzelle_lap;
 				else 
-					_new_song = mu_escape;
+					_new_song = mu_pizzelle_escape;
 			}
 			else if (obj_player.character == "T")
 			{
 				if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
-					_new_song = mu_mayhem;
+					_new_song = mu_peppino_death;
 				else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
-					_new_song = mu_despairypeppino;
+					_new_song = mu_peppino_despairy;
 				else if (global.lapcount >= 2)
-					_new_song = mu_noiselap;
+					_new_song = mu_noise_lap;
 				else 
-					_new_song = mu_noiseescape;
+					_new_song = mu_noise_escape;
 			}
 			else if (obj_player.character == "S")
 			{
 				if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
-					_new_song = mu_mayhem;
+					_new_song = mu_peppino_death;
 				else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
-					_new_song = mu_despairypeppino;
+					_new_song = mu_peppino_despairy;
 				else if (global.lapcount >= 2)
-					_new_song = mu_peppinolap;
+					_new_song = mu_peppino_lap;
 				else 
-					_new_song = mu_peppinoescape;
+					_new_song = mu_peppino_escape;
 			}
 			else
 			{
 				if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
 					_new_song = mu_sucrose;
 				else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
-					_new_song = mu_pizzanodespairy;
+					_new_song = mu_pizzano_despairy;
 				else if (global.lapcount >= 2)
-					_new_song = mu_pizzanolap;
+					_new_song = mu_pizzano_lap;
 				else 
-					_new_song = mu_pizzanoescape;
+					_new_song = mu_pizzano_escape;
 			}
 		}
 		else
