@@ -14,7 +14,7 @@ if (optionselected == 1 && (key_jump || keyboard_check_pressed(vk_enter)))
 	with (obj_playerhat)
 		image_index = 0;
 	with (obj_player)
-		scr_characterspr();
+		scr_characterglobal();
 	file_delete(global.fileselect);
 	scr_sound(sound_destroyblock1);
 	scr_sound(sound_explosion);

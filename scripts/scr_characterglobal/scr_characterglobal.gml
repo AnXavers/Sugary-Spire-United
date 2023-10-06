@@ -1,4 +1,4 @@
-function scr_characterspr()
+function scr_characterglobal()
 {
 	switch (character)
 	{

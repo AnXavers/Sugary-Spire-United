@@ -121,7 +121,7 @@ function state_player_backbreaker()
 				paletteselect = 0;
 				break;
 		}
-		scr_characterspr();
+		scr_characterglobal();
 		tauntStored.sprite_index = spr_idle;
 		tauntStored.state = 1;
 		scr_sound(choose(sound_taunt1, sound_taunt2, sound_taunt3, sound_taunt4, sound_taunt5, sound_taunt6, sound_taunt7));

@@ -2,6 +2,13 @@ function state_player_fireass()
 {
 	static fire_afterimagetimer = 6;
 	image_speed = 0.35;
+	if keyboard_check_pressed(global.key_attack)
+	{
+		state = states.grabbing;
+		movespeed = 11;
+		sprite_index = spr_player_suplexdash
+	}
+
 	if (scr_solid(x + xscale, y, false) && !place_meeting(x + xscale, y, obj_chocofrog))
 		xscale *= -1;
 	if (sprite_index == obj_player.spr_fireass)

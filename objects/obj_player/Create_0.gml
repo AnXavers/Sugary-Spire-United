@@ -257,7 +257,7 @@ anger = 0;
 angry = 0;
 character = "P";
 baddiegrabbedID = -4;
-scr_characterspr();
+scr_characterglobal();
 paletteselect = 0;
 global.panic = 0;
 colorchange = 0;

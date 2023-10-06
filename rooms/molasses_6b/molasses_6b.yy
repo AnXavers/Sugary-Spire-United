@@ -126,7 +126,6 @@
     {"name":"inst_219CF55C","path":"rooms/molasses_6b/molasses_6b.yy",},
     {"name":"inst_A64F63C4","path":"rooms/molasses_6b/molasses_6b.yy",},
     {"name":"inst_0CDC11E1","path":"rooms/molasses_6b/molasses_6b.yy",},
-    {"name":"inst_7DFC56E9","path":"rooms/molasses_6b/molasses_6b.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -139,12 +138,6 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_cameraRegion","path":"objects/obj_cameraRegion/obj_cameraRegion.yy",},"propertyId":{"name":"ClampLeft","path":"objects/obj_cameraRegion/obj_cameraRegion.yy",},"value":"false",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_cameraRegion","path":"objects/obj_cameraRegion/obj_cameraRegion.yy",},"propertyId":{"name":"ClampTop","path":"objects/obj_cameraRegion/obj_cameraRegion.yy",},"value":"false",},
           ],"rotation":0.0,"scaleX":2.846497,"scaleY":1.4489276,"x":2144.0,"y":608.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7DFC56E9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_cameraRegion","path":"objects/obj_cameraRegion/obj_cameraRegion.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_cameraRegion","path":"objects/obj_cameraRegion/obj_cameraRegion.yy",},"propertyId":{"name":"ClampTop","path":"objects/obj_cameraRegion/obj_cameraRegion.yy",},"value":"false",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_cameraRegion","path":"objects/obj_cameraRegion/obj_cameraRegion.yy",},"propertyId":{"name":"ClampLeft","path":"objects/obj_cameraRegion/obj_cameraRegion.yy",},"value":"false",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_cameraRegion","path":"objects/obj_cameraRegion/obj_cameraRegion.yy",},"propertyId":{"name":"ClampBottom","path":"objects/obj_cameraRegion/obj_cameraRegion.yy",},"value":"false",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_cameraRegion","path":"objects/obj_cameraRegion/obj_cameraRegion.yy",},"propertyId":{"name":"ClampRight","path":"objects/obj_cameraRegion/obj_cameraRegion.yy",},"value":"false",},
-          ],"rotation":0.0,"scaleX":0.26666668,"scaleY":0.11111111,"x":2144.0,"y":548.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_81809F59","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"properties":[],"rotation":0.0,"scaleX":24.0,"scaleY":4.0,"x":-288.0,"y":256.0,},

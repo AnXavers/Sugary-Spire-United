@@ -134,7 +134,7 @@ function scr_levelSet()
 		supertauntbuffer = 300;
 		supertaunteffect = -4;
 		supertauntcharged = false;
-		scr_characterspr();
+		scr_characterglobal();
 		alarm[0] = -1;
 		alarm[1] = -1;
 		alarm[3] = -1;
