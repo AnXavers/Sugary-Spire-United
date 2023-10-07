@@ -42,50 +42,14 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 			_new_song = mu_pizzelle_death;
 		else if !global.defaultlapmusic
 		{
-			if (obj_player.character == "P")
-			{
-				if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
-					_new_song = mu_sucrose;
-				else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
-					_new_song = mu_pizzelle_despairy;
-				else if (global.lapcount >= 2)
-					_new_song = mu_pizzelle_lap;
-				else 
-					_new_song = mu_pizzelle_escape;
-			}
-			else if (obj_player.character == "T")
-			{
-				if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
-					_new_song = mu_peppino_death;
-				else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
-					_new_song = mu_peppino_despairy;
-				else if (global.lapcount >= 2)
-					_new_song = mu_noise_lap;
-				else 
-					_new_song = mu_noise_escape;
-			}
-			else if (obj_player.character == "S")
-			{
-				if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
-					_new_song = mu_peppino_death;
-				else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
-					_new_song = mu_peppino_despairy;
-				else if (global.lapcount >= 2)
-					_new_song = mu_peppino_lap;
-				else 
-					_new_song = mu_peppino_escape;
-			}
-			else
-			{
-				if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
-					_new_song = mu_sucrose;
-				else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
-					_new_song = mu_pizzano_despairy;
-				else if (global.lapcount >= 2)
-					_new_song = mu_pizzano_lap;
-				else 
-					_new_song = mu_pizzano_escape;
-			}
+			if (global.lapcount >= 10 || (global.lapcount == 4 && global.inflapping == 2))
+				_new_song = obj_player.mu_lap10song;
+			else if (global.lapcount >= 5 || (global.lapcount == 3 && global.inflapping == 2))
+				_new_song = obj_player.mu_lap5song;
+			else if (global.lapcount >= 2)
+				_new_song = obj_player.mu_lap2song;
+			else 
+				_new_song = obj_player.mu_escapesong;
 		}
 		else
 		{

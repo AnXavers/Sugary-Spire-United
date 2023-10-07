@@ -6,7 +6,7 @@ if (fadealpha > 1 && !place_meeting(obj_player.x, obj_player.y, obj_startgate))
 		if (room_exists(obj_player.targetRoom))
 			room_goto(obj_player.targetRoom);
 		else
-			room_goto(rm_missing);
+			room_goto(devroom);
 	}
 }
 if (fadein == 0)

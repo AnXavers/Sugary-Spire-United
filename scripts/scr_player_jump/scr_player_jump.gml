@@ -61,7 +61,7 @@ function state_player_jump()
 		freefallstart = 0;
 		instance_create_depth(x, y, 0, obj_landcloud);
 	}
-	if (key_attack && (character == "N" || character == "T") && charged)
+	if (key_attack && (do_pizzano_sjump) && charged)
 	{
 		sprite_index = spr_superjump_cancelprep;
 		image_index = 0;
@@ -70,7 +70,7 @@ function state_player_jump()
 		charged = 0;
 		state = 104;
 	}
-	if (key_up && (character == "N" || character == "T") && charged)
+	if (key_up && (do_pizzano_sjump) && charged)
 	{
 		alarm[0] = 240;
 		sprite_index = spr_superjump;
@@ -104,7 +104,7 @@ function state_player_jump()
 	}
 	if (key_jump)
 		input_buffer_jump = 0;
-	if (character == "P" || character == "S")
+	if (do_freefall_spr)
 	{
 		if (vsp > 5)
 			fallinganimation++;
@@ -233,14 +233,14 @@ function state_player_jump()
 		if (!instance_exists(obj_mach3effect))
 			instance_create(x, y - 32, obj_mach3effect);
 	}
-	if (key_jump && character == "G" && !grounded && gumbobpropellercooldown == 0)
+	if (key_jump && do_gumbob_propeller && !grounded && gumbobpropellercooldown == 0)
 	{
 		state = 117;
 		sprite_index = spr_propeller_start;
 		movespeed = 0;
 		vsp = 0;
 	}
-	if (key_jump && character == "N" && !grounded && doublejumped == 0 && !scr_solid(x + xscale, y, true))
+	if (key_jump && do_doublejump && !grounded && doublejumped == 0 && !scr_solid(x + xscale, y, true))
 	{
 		doublejumped = 1;
 		vsp = -10;

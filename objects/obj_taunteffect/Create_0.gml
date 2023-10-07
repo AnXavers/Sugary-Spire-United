@@ -14,7 +14,7 @@ if obj_player.character == "P"
 }
 else if obj_player.character == "N"
 	tauntsound = choose(sfx_tauntpizzano1, sfx_tauntpizzano2, sfx_tauntpizzano3, sfx_tauntpizzano4, sfx_tauntpizzano5, sfx_tauntpizzano6, sfx_tauntpizzano7, sfx_tauntpizzano8);
-else if (obj_player.character == "T" || obj_player.character == "S")
+else if (obj_player.character == "T" || obj_player.character == "S" || obj_player.character == "V" || obj_player.character == "M")
 	tauntsound = sound_tauntpeppino
 else
 	tauntsound = choose(sound_tauntextra1, sound_tauntextra2)

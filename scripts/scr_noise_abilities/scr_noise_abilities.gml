@@ -1,6 +1,6 @@
 function scr_noise_abilities()
 {
-	if (character == "T" && key_shoot2 && !instance_exists(obj_noisebomb) && !instance_exists(obj_bombexplosionnoise))
+	if (do_noise_bomb && key_shoot2 && !instance_exists(obj_noisebomb) && !instance_exists(obj_bombexplosionnoise))
 	{
 		with (instance_create(x, y, obj_noisebomb))
 		{

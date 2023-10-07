@@ -50,22 +50,7 @@ function do_grab()
 		}
 		else if (!key_up)
 		{
-			if (character == "P" || character == "T" || character == "S")
-			{
-				scr_sound(sound_suplex1);
-				instance_create(x, y, obj_slaphitbox);
-				suplexmove = 1;
-				vsp = 0;
-				instance_create(x, y, obj_jumpdust);
-				image_index = 0;
-				sprite_index = spr_suplexdash;
-				if (state == 1 || state == 60)
-					movespeed = 8;
-				else if (movespeed < 5)
-					movespeed = 5;
-				state = 17;
-			}
-			else if (character == "N")
+			if (do_pizzano_kungfu)
 			{
 				scr_sound(sfx_kungfuair);
 				if (movespeed < 9)
@@ -89,6 +74,21 @@ function do_grab()
 					});
 				p1Vibration(30, 5);
 				image_index = 0;
+			}
+			else if (character == "P" || character == "T" || character == "S")
+			{
+				scr_sound(sound_suplex1);
+				instance_create(x, y, obj_slaphitbox);
+				suplexmove = 1;
+				vsp = 0;
+				instance_create(x, y, obj_jumpdust);
+				image_index = 0;
+				sprite_index = spr_suplexdash;
+				if (state == 1 || state == 60)
+					movespeed = 8;
+				else if (movespeed < 5)
+					movespeed = 5;
+				state = 17;
 			}
 		}
 		else if (key_up)

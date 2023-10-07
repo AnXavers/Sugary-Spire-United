@@ -1,7 +1,7 @@
 scr_getinput();
 if (!global.gamePauseState && !instance_exists(obj_fadeout))
 {
-	if (global.shellactivate == 0 && key_start2 && room != rank_room && room != rm_introVideo && room != realtitlescreen && canmove && obj_gamepadder.gamepad_discovered == 0)
+	if (global.shellactivate == 0 && key_start2 && room != rank_room && room != rm_introVideo && room != realtitlescreen && room != rm_titlecard && !instance_exists(obj_titlecard) && canmove && obj_gamepadder.gamepad_discovered == 0)
 		event_user(4);
 	if (keyboard_check_pressed(vk_f12))
 	{

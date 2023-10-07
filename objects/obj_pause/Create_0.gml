@@ -1,7 +1,3 @@
-if (room == rank_room || room == rm_titlecard || instance_exists(obj_titlecard))
-{
-	instance_destroy();
-}
 canmove = true;
 global.gamePauseState = 0;
 i = 0;

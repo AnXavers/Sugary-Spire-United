@@ -37,6 +37,8 @@ trace(global.secret_room);
 if (global.secret_room == 1)
 {
 	global.secretmusic = scr_music(room_details.secret_music);
+	if global.panic
+		global.secretmusic = mu_escapesecret
 	var cur_pos = audio_sound_get_track_position(global.music) / audio_sound_length(global.music);
 	var set_secret_pos = cur_pos * audio_sound_length(global.secretmusic);
 	audio_sound_set_track_position(global.secretmusic, set_secret_pos);
