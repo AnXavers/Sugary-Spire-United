@@ -20,6 +20,11 @@ if (other.Dashpad_buffer <= 0)
 			{
 				state = 70;
 				Dashpad_buffer = 25;
+				if (sprite_index != spr_machdashpad)
+				{
+					sprite_index = spr_machdashpad;
+					image_index = 0;
+				}
 				xscale = sign(other.image_xscale);
 				try_y = 0;
 				while (try_y <= 16)

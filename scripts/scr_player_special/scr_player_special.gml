@@ -2,22 +2,6 @@ function do_special()
 {
 	if (key_special)
 	{
-		taunttimer = 20;
-		scr_taunt_storeVariables();
-		state = 45;
-		image_index = irandom_range(0, sprite_get_number(spr_taunt));
-		sprite_index = spr_taunt;
-		instance_create(x, y, obj_taunteffect);
-		with (obj_baddie)
-		{
-			if (point_in_rectangle(x, y, obj_player.x - 480, obj_player.y - 270, obj_player.x + 480, obj_player.y + 270))
-				tauntBuffer = true;
-		}
-		with obj_camera
-		{
-			freezetype = 0
-			event_user(0)
-		}
 		if (key_down2)
 		{
 			paletteselect++;
