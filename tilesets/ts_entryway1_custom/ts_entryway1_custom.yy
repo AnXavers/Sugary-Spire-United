@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "ts_entryway_new",
+  "name": "ts_entryway1_custom",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
@@ -16,8 +16,8 @@
     "path": "folders/Tile Sets/Levels/Entryway.yy",
   },
   "spriteId": {
-    "name": "ts_entryway1_sprite_new",
-    "path": "sprites/ts_entryway1_sprite_new/ts_entryway1_sprite_new.yy",
+    "name": "ts_entryway1_sprite_custom",
+    "path": "sprites/ts_entryway1_sprite_custom/ts_entryway1_sprite_custom.yy",
   },
   "spriteNoExport": true,
   "textureGroupId": {

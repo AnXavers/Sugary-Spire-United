@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "ts_entryway1_sprite_new",
+  "name": "ts_entryway1_sprite_custom",
   "bbox_bottom": 1023,
   "bbox_left": 0,
   "bbox_right": 1023,
@@ -13,17 +13,17 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c13fb5a4-c245-40c2-9573-ba57624dc6fd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"38229311-dd54-4c83-845d-bfa52f5be1fe",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 1024,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"84f1a317-d066-4423-967a-55846d682a25","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ef3259ab-0a57-487c-9148-4cf90c3d4088","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 4,
   "parent": {
     "name": "Entryway",
     "path": "folders/Sprites/Tilesets/Level/Entryway.yy",
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "ts_entryway1_sprite_new",
+    "name": "ts_entryway1_sprite_custom",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c13fb5a4-c245-40c2-9573-ba57624dc6fd","path":"sprites/ts_entryway1_sprite_new/ts_entryway1_sprite_new.yy",},},},"Disabled":false,"id":"8169a261-8398-42c3-95b0-f3ee85f9f443","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"38229311-dd54-4c83-845d-bfa52f5be1fe","path":"sprites/ts_entryway1_sprite_custom/ts_entryway1_sprite_custom.yy",},},},"Disabled":false,"id":"b70ec475-4f65-4280-adf5-5ec50af2077c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 512,
+    "yorigin": 512,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

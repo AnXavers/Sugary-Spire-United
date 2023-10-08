@@ -1,9 +1,15 @@
-depth = obj_player.depth
-x = obj_player.x
-y = obj_player.y
-image_xscale = obj_player.image_xscale
-image_yscale = obj_player.image_yscale
-image_angle = obj_player.draw_angle
+x = obj_player.x + global.peterxoffset
+y = obj_player.y + global.peteryoffset
+
+image_xscale = obj_player.image_xscale * real(global.peterxscale)
+image_yscale = obj_player.image_yscale * real(global.peteryscale)
+image_angle = obj_player.draw_angle + global.peterangle
+if global.peterdepth = 9999
+	depth = obj_player.depth
+else
+	depth = global.peterdepth
+if global.peterpalette
+	scr_palette_as_player()
 if global.peterupdate
 {
 	sprite_index = asset_get_index(global.petersprite)

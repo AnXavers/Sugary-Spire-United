@@ -367,12 +367,19 @@ function meta_print_variable()
 }
 function sh_petersprite()
 {
-	global.petersprite = argument0[1]
-	global.peterimage = argument0[2]
-	global.peterspeed = argument0[3]
-	global.peterupdate = 1
+	global.petersprite = argument0[1];
+	global.peterimage = argument0[2];
+	global.peterspeed = argument0[3];
+	global.peterxoffset = 0;
+	global.peteryoffset = 0;
+	global.peterxscale = 1;
+	global.peteryscale = 1;
+	global.peterangle = 0;
+	global.peterdepth = 9999;
+	global.peterpalette = false;
+	global.peterupdate = 1;
 	if !instance_exists(obj_petersprite)
-		instance_create(obj_player.x, obj_player.y, obj_petersprite)
+		instance_create(obj_player.x, obj_player.y, obj_petersprite);
 }
 function meta_petersprite()
 {
@@ -381,6 +388,32 @@ function meta_petersprite()
 		description: "Draws a sprite over the player's.",
 		arguments: ["<sprite>", "<image>", "<image_speed>"],
 		suggestions: [global.spritelist, 1, "0.35"],
+		argumentDescriptions: ["the sprite to draw over the player.", "the sprite frame petersprite will start playing at.", "the speed at which the sprite will play at."]
+	};
+}
+function sh_peterplus()
+{
+	global.petersprite = argument0[1];
+	global.peterimage = argument0[2];
+	global.peterspeed = argument0[3];
+	global.peterxscale = argument0[4];
+	global.peteryscale = argument0[5];
+	global.peterxoffset = argument0[6];
+	global.peteryoffset = argument0[7];
+	global.peterangle = argument0[8];
+	global.peterdepth = argument0[9];
+	global.peterpalette = argument0[10];
+	global.peterupdate = 1;
+	if !instance_exists(obj_petersprite)
+		instance_create(obj_player.x, obj_player.y, obj_petersprite);
+}
+function meta_peterplus()
+{
+	return 
+	{
+		description: "Draws a sprite over the player's.",
+		arguments: ["<sprite>", "<image>", "<image_speed>", "<xscale>", "<yscale>", "<xoffset>", "<yoffset>", "<angle>", "<depth>", "<pal_as_player>"],
+		suggestions: [global.spritelist, 1, ["0.35"], 3, 4, 5, 6, 7, 8, ["true", "false"]],
 		argumentDescriptions: ["the sprite to draw over the player.", "the sprite frame petersprite will start playing at.", "the speed at which the sprite will play at."]
 	};
 }
