@@ -13,7 +13,7 @@
   "duration": 0.546327,
   "parent": {
     "name": "Destroyable",
-    "path": "folders/Sounds/Sounds/Destroyable.yy",
+    "path": "folders/Sounds/Sounds/Environment/Destroyable.yy",
   },
   "preload": false,
   "sampleRate": 44100,

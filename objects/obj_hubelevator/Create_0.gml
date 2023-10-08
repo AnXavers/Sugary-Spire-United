@@ -17,6 +17,7 @@ hub_array[i++] = [hub_w3, "FLOOR 3"]
 hub_array[i++] = [w2target, "FLOOR 2"]
 hub_array[i++] = [w1target, "FLOOR 1"]
 hub_array[i++] = [hub_basement, "THE BASEMENT"]
+hub_array[i++] = [options_room, "THE OPTION ROOM"]
 drawx = 0
 drawy = 0
 surface2 = -4

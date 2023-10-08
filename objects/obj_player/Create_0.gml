@@ -255,7 +255,7 @@ suplexhavetomash = 0;
 breakdanceammo = 0;
 anger = 0;
 angry = 0;
-character = "P";
+character = "P"
 baddiegrabbedID = -4;
 scr_characterglobal();
 paletteselect = 0;

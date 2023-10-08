@@ -511,6 +511,7 @@ function scr_characterglobal()
 			spr_player_rankC = spr_pizzano_rankC;
 			spr_player_rankD = spr_pizzano_rankD;
 			spr_rankwait = spr_pizzano_rankwait;
+			img_featuringme = 1;
 			// fonts
 			font_lapcount = global.lapcountfont
 			// audio
@@ -628,7 +629,7 @@ function scr_characterglobal()
 			spr_dive = spr_player_dive;
 			spr_cottonidle = spr_gumbob_cotton_idle;
 			spr_propeller_start = spr_gumbob_propeller_start;
-			img_featuringme = 1;
+			img_featuringme = 2;
 			spr_mach1 = spr_gumbob_mach3;
 			spr_mach2 = spr_gumbob_mach3;
 			spr_mach3player = spr_gumbob_mach3;
@@ -775,7 +776,7 @@ function scr_characterglobal()
 			spr_dive = spr_player_dive;
 			spr_cottonidle = spr_gumbob_cotton_idle;
 			spr_spitair = spr_coneboy_spitair;
-			img_featuringme = 0;
+			img_featuringme = 3;
 			// fonts
 			font_lapcount = global.lapcountfont
 			// audio
@@ -1073,6 +1074,7 @@ function scr_characterglobal()
 			spr_lapbg_player = spr_lapbg_pep
 			spr_coneball_player = spr_pizzaface
 			spr_coneball_melting_player = spr_pizzahead_haywire
+			img_featuringme = 5;
 			// fonts
 			font_lapcount = global.lapcountpepfont
 			// audio
@@ -1398,7 +1400,7 @@ function scr_characterglobal()
 			spr_lapbg_player = spr_lapbg_pep
 			spr_coneball_player = spr_pizzaface
 			spr_coneball_melting_player = spr_pizzahead_haywire
-			img_featuringme = 0;
+			img_featuringme = 4;
 			// fonts
 			font_lapcount = global.lapcountpepfont
 			// audio
@@ -1726,7 +1728,7 @@ function scr_characterglobal()
 			spr_lapbg_player = spr_lapbg_pep
 			spr_coneball_player = spr_pizzaface
 			spr_coneball_melting_player = spr_pizzahead_haywire
-			img_featuringme = 0;
+			img_featuringme = 6;
 			// fonts
 			font_lapcount = global.lapcountpepfont
 			// audio
@@ -2052,7 +2054,7 @@ function scr_characterglobal()
 			spr_lapbg_player = spr_lapbg_pep
 			spr_coneball_player = spr_pizzaface
 			spr_coneball_melting_player = spr_pizzahead_haywire
-			img_featuringme = 0;
+			img_featuringme = 7;
 			// fonts
 			font_lapcount = global.lapcountpepfont
 			// audio

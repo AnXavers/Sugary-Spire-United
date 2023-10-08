@@ -1,2 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+image_speed = 0.35
+if character = obj_player.character
+	character = "P"

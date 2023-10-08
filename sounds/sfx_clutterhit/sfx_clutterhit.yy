@@ -13,7 +13,7 @@
   "duration": 0.519229,
   "parent": {
     "name": "Clutter",
-    "path": "folders/Sounds/Sounds/Destroyable/Clutter.yy",
+    "path": "folders/Sounds/Sounds/Environment/Destroyable/Clutter.yy",
   },
   "preload": true,
   "sampleRate": 44100,

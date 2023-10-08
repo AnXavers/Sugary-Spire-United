@@ -23,6 +23,7 @@ switch state
 					alarm[0] = 180
 					state = (2 << 0)
 					scr_sound(sound_enemythrow);
+					scr_sound(sfx_elevator_ding);
 					with (obj_player)
 					{
 						targetRoom = other.hub_array[other.selected][0]
