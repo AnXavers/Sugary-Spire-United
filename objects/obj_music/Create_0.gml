@@ -32,7 +32,7 @@ room_details =
 	music: -4,
 	secret_music: -4,
 	continuous: false,
-	my_func: undefined
+	my_func: undefined,
 };
 add_music(rm_disclaimer, mu_paletteselect, mu_painter, false);
 add_music(rm_verify, mu_paletteselect, mu_painter, false);

@@ -1,11 +1,3 @@
-for (var i = 0; room_exists(i); i++)
-	global.roomlist[i] = room_get_name(i);
-for (var i = 0; object_exists(i); i++)
-	global.objectlist[i] = object_get_name(i);
-for (var i = 0; script_exists(i); i++)
-	global.scriptlist[i] = script_get_name(i);
-for (var i = 0; sprite_exists(i); i++)
-	global.spritelist[i] = sprite_get_name(i);
 function sh_escape()
 {
 	var arg0 = string(argument0[1]);
@@ -499,7 +491,7 @@ function meta_play_sound()
 	{
 		description: "Plays a selected sound.",
 		arguments: ["<sound>"],
-		suggestions: [0],
+		suggestions: [global.audiolist],
 		argumentDescriptions: ["The name of the sound to play."]
 	};
 }

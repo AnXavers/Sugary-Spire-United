@@ -1,3 +1,5 @@
 active = 0;
-selected = 0;
-music = [[mu_title, "Titlescreen", "Jessie Productions"], [134, "Welcome Back!", "idk"], [135, "Down - To - Noise", "Rodmod"], [179, "there's a secret inside my breakfast?", "Rodmod"], [137, "Steamy Cotton Candy", "Rodmod"]];
+selectedy = 0;
+selectedx = 0;
+bgTileX = 0;
+bgTileY = 0;

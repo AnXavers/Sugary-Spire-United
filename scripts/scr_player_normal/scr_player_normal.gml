@@ -323,6 +323,7 @@ function state_player_normal()
 	scr_noise_abilities();
 	do_taunt();
 	do_grab();
+	do_special();
 	if (global.cane == 1)
 	{
 		if (scr_solid(x + sign(hsp), y) && (xscale == 1 && (move == 1 && !place_meeting(x + 1, y, obj_slope))))

@@ -316,6 +316,8 @@ function scr_characterglobal()
 			spr_lapvisual_player = spr_lapvisual
 			spr_lapbg_player = spr_lapbg
 			img_featuringme = 0;
+			spr_coneball_player = spr_coneball_new
+			spr_coneball_melting_player = spr_coneball_melting
 			if global.newplayeranim == 1
 			{
 				spr_mach1 = spr_player_mach1_new;
@@ -1069,6 +1071,8 @@ function scr_characterglobal()
 			spr_large_destroyable_oneway = spr_onewaybigblock;
 			spr_lapvisual_player = spr_lapvisual_pep
 			spr_lapbg_player = spr_lapbg_pep
+			spr_coneball_player = spr_pizzaface
+			spr_coneball_melting_player = spr_pizzahead_haywire
 			// fonts
 			font_lapcount = global.lapcountpepfont
 			// audio

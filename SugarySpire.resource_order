@@ -1688,6 +1688,7 @@
     {"name":"spr_pizzacuttersaw","order":22,"path":"sprites/spr_pizzacuttersaw/spr_pizzacuttersaw.yy",},
     {"name":"spr_player_hanstandjump_pep","order":131,"path":"sprites/spr_player_hanstandjump_pep/spr_player_hanstandjump_pep.yy",},
     {"name":"dance_5","order":13,"path":"rooms/dance_5/dance_5.yy",},
+    {"name":"scr_player_special","order":165,"path":"scripts/scr_player_special/scr_player_special.yy",},
     {"name":"spr_heatmeter_palette","order":1,"path":"sprites/spr_heatmeter_palette/spr_heatmeter_palette.yy",},
     {"name":"dance_6","order":14,"path":"rooms/dance_6/dance_6.yy",},
     {"name":"sucrose_9","order":18,"path":"rooms/sucrose_9/sucrose_9.yy",},

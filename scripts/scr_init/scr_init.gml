@@ -84,7 +84,26 @@ global.peterimage = -1;
 global.solidfellow = 0;
 global.cam_w = 960;
 global.cam_h = 540;
-sprite_set_bbox(spr_wallfellow, 0, 0, 32, 32)
+var i = 0
+var I = 0
+for (var i = 0; room_exists(i); i++)
+	global.roomlist[i] = room_get_name(i);
+for (var i = 0; object_exists(i); i++)
+	global.objectlist[i] = object_get_name(i);
+for (var i = 0; script_exists(i); i++)
+	global.scriptlist[i] = script_get_name(i);
+for (var i = 0; sprite_exists(i); i++)
+	global.spritelist[i] = sprite_get_name(i);
+for (var i = 0; audio_exists(i); i++)
+{
+	global.audiolist[i] = audio_get_name(i);
+	if audio_sound_length(i) <= 60
+	{
+		global.musiclist[I] = audio_get_name(i)
+		I += 1
+	}
+}
+global.musicreplace = ds_list_create()
 ini_open("silversave.ini")
 global.keypieces = ini_read_real("Unlocks", "keypieces", 0);
 global.unlockshell = ini_read_real("Unlocks", "shell", 0);

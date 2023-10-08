@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_trainsoundtrigger",
-    "path": "sprites/spr_trainsoundtrigger/spr_trainsoundtrigger.yy",
+    "name": "spr_beatbox",
+    "path": "sprites/spr_beatbox/spr_beatbox.yy",
   },
   "spriteMaskId": null,
   "visible": true,

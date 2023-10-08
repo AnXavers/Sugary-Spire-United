@@ -1810,6 +1810,7 @@
     {"id":{"name":"spr_pizzacuttersaw","path":"sprites/spr_pizzacuttersaw/spr_pizzacuttersaw.yy",},},
     {"id":{"name":"spr_player_hanstandjump_pep","path":"sprites/spr_player_hanstandjump_pep/spr_player_hanstandjump_pep.yy",},},
     {"id":{"name":"dance_5","path":"rooms/dance_5/dance_5.yy",},},
+    {"id":{"name":"scr_player_special","path":"scripts/scr_player_special/scr_player_special.yy",},},
     {"id":{"name":"spr_heatmeter_palette","path":"sprites/spr_heatmeter_palette/spr_heatmeter_palette.yy",},},
     {"id":{"name":"dance_6","path":"rooms/dance_6/dance_6.yy",},},
     {"id":{"name":"sucrose_9","path":"rooms/sucrose_9/sucrose_9.yy",},},

@@ -6,6 +6,8 @@ if (!global.panic && room != rank_room && room != timesuproom && !instance_exist
 	var _new_song = room_details.music;
 	if (!is_undefined(room_details.my_func))
 		_new_song = room_details.my_func();
+	if (!is_undefined(ds_map_find_value(global.musicreplace, _new_song)))
+		_new_song = ds_map_find_value(global.musicreplace, _new_song);
 	if (music != _new_song)
 	{
 		music = _new_song;

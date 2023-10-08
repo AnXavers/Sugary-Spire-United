@@ -3,17 +3,15 @@ if (image_alpha == 1)
 	var dir = point_direction(x, y, obj_player.x, obj_player.y);
 	if (!global.freezeframe)
 	{
-		if room = entryway_6b_new
+		if !coneballtype
 		{
-			x = approach(x, obj_player.x, lengthdir_x(4 * coneballspeed, dir));
-			y = approach(y, obj_player.y, lengthdir_y(4 * coneballspeed, dir));
-			sprite_index = spr_coneball_melting
+			x = approach(x, obj_player.x, lengthdir_x(8 * coneballspeed * parryspeed, dir));
+			y = approach(y, obj_player.y, lengthdir_y(8 * coneballspeed * parryspeed, dir));
 		}
 		else
 		{
-			x = approach(x, obj_player.x, lengthdir_x(8 * coneballspeed, dir));
-			y = approach(y, obj_player.y, lengthdir_y(8 * coneballspeed, dir));
-			sprite_index = spr_coneball_new
+			hspeed = lerp(hspeed, lengthdir_x(8 * coneballspeed * parryspeed, dir), 0.02)
+			vspeed = lerp(vspeed, lengthdir_y(8 * coneballspeed * parryspeed, dir), 0.02)
 		}
 	}
 }
@@ -34,4 +32,22 @@ if (pid > 0 && !pid.cutscene && !instance_exists(obj_fadeout) && !instance_exist
 		scr_sound(mu_timesup);
 	}
 	instance_destroy();
+}
+if (global.coneballparry == 1 && distance_to_object(obj_parryhitbox) <= 20)
+{
+	audio_stop_sound(sound_parry);
+	scr_sound(sound_parry);
+	with obj_coneball
+	coneballspeed = -2
+	alarm[1] = 10
+	with (obj_player)
+	{
+		state = 93;
+		sprite_index = choose(spr_parry1, spr_parry2, spr_parry3);
+		image_index = 0;
+		movespeed = -8;
+		flash = 1;
+		with (instance_create(x, y, obj_bangeffect))
+			sprite_index = spr_parryeffect;
+	}
 }

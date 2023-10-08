@@ -1,9 +1,12 @@
 depth = -100;
 scr_sound(sfx_coneball);
+sprite_index = obj_player.spr_coneball_player
 image_speed = 0.35;
 image_alpha = 0;
 alarm[0] = 10;
 coneballspeed = 1;
+parryspeed = 1;
+coneballtype = 1;
 x = obj_player.x;
 y = obj_player.y;
 dis = 800;

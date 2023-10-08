@@ -1,18 +1,12 @@
-if coneballspeed < -0.05
+if parryspeed < -0.05
+	parryspeed = lerp(parryspeed, 0, 0.6)
+else if parryspeed >= -0.05 && parryspeed < 0
+	parryspeed = 0
+else if parryspeed <= 0.95
+	parryspeed = lerp(parryspeed, 1, 0.2)
+else if parryspeed > 0.95
 {
-	coneballspeed = lerp(coneballspeed, 0, 0.6)
-}
-else if coneballspeed >= -0.05 && coneballspeed < 0
-{
-	coneballspeed = 0
-}
-else if coneballspeed <= 0.95
-{
-	coneballspeed = lerp(coneballspeed, 1, 0.2)
-}
-else if coneballspeed > 0.95
-{
-	coneballspeed = 1
+	parryspeed = 1
 	alarm[1] = -1
 	exit;
 }

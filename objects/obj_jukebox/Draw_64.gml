@@ -1,12 +1,14 @@
-var select = music[selected];
-var song = select[0];
-var name = select[1];
-var author = select[2];
 if (active == 1)
 {
-	draw_set_font(global.creditsfont);
-	draw_set_halign(1);
-	draw_set_color(c_white);
-	draw_text(480, 200, name);
-	draw_text(480, 250, author);
+	draw_sprite_tiled_ext(bg_options, 0, bgTileX, bgTileY, 1, 1, c_white, 0.75);
+	draw_set_font(global.smallfont);
+	draw_set_halign(fa_center);
+	i = 0
+	for (i = 0; i < (array_length(global.musiclist) - 1); i++)
+		draw_jukebox(660 + (selectedx * 50) + (i * 50), 270, global.musiclist[i], selectedx);
+	draw_set_font(global.font);
+	draw_set_halign(fa_left);
+	i = 0
+	for (i = 0; i < (array_length(global.musiclist) - 1); i++)
+		draw_jukebox(150, 270 + (selectedy * 50) + (i * 50), global.musiclist[i], selectedy);
 }
