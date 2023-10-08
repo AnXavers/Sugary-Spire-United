@@ -7,18 +7,18 @@ if (DrawHUD)
 		if global.heatmeter
 		{
 			pal_swap_set(spr_heatpal, heatpal, 0);
-			draw_sprite_part_ext(spr_heatmeterunder, obj_stylebar.image_index, 0, 0, (global.style * 4.25) / 4, sprite_get_height(spr_heatmeterunder), -6 + shakeX, 8 + DrawY + shakeY, 1, 1, c_white, 1);
-			draw_sprite_ext(spr_heatmeter, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+			draw_sprite_part_ext(spr_heatmeterunder, obj_stylebar.image_index, 0, 0, (global.style * 4.25) / 4, sprite_get_height(spr_heatmeterunder), -6 + shakeX + cakeX, 8 + DrawY + shakeY, 1, 1, c_white, 1);
+			draw_sprite_ext(spr_heatmeter, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		}
-		draw_sprite_ext(spr_cakehud, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+		draw_sprite_ext(spr_cakehud, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		if (global.collect > global.crank)
-			draw_sprite_ext(spr_cranktopping, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+			draw_sprite_ext(spr_cranktopping, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		if (global.collect > global.brank)
-			draw_sprite_ext(spr_branktopping, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+			draw_sprite_ext(spr_branktopping, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		if (global.collect > global.arank)
-			draw_sprite_ext(spr_aranktopping, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+			draw_sprite_ext(spr_aranktopping, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		if (global.collect > global.srank)
-			draw_sprite_ext(spr_sranktopping, obj_stylebar.image_index, 128 + shakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+			draw_sprite_ext(spr_sranktopping, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		shader_reset();
 		if !global.newscorefont
 		{
@@ -31,7 +31,7 @@ if (DrawHUD)
 			{
 				var _xx = 140 + (-(string_width(_string) / 2) + ((string_width(_string) / _string_length) * i));
 				var _yyoffset = ((i % 2) == 0) ? -4 : 0;
-				draw_text(_xx + shakeX, 29 + obj_stylebar.hudbounce + _yyoffset + DrawY + shakeY, string_char_at(_string, i + 1));
+				draw_text(_xx + shakeX + cakeX, 29 + obj_stylebar.hudbounce + _yyoffset + DrawY + shakeY, string_char_at(_string, i + 1));
 			}
 		}
 		else
@@ -52,7 +52,7 @@ if (DrawHUD)
 				var _yyoffset = ((i % 2) == 0) ? -4 : 0;
 				pal = colors[i]
 				pal_swap_set(spr_palcandle, pal, false);
-				draw_text(_xx + shakeX, 29 + obj_stylebar.hudbounce + _yyoffset + DrawY + shakeY, string_char_at(_string, i + 1));
+				draw_text(_xx + shakeX + cakeX, 29 + obj_stylebar.hudbounce + _yyoffset + DrawY + shakeY, string_char_at(_string, i + 1));
 				shader_reset();
 			}
 		}

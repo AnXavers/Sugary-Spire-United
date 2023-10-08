@@ -30,22 +30,25 @@ draw_sprite_ext(spr_combometer, -1, _cx + combo_x, 88 + combo_y, 1, 1, 0, c_whit
 draw_sprite_ext(spr_combometer_hand, -1, _cx + hand_x, _hy, 1, 1, 0, c_white, alpha);
 var _ct = string(global.combo) + "x";
 draw_text(_cx + combo_x, combo_y, _ct);
-draw_sprite_ext(tvbg, current_bg, 819, 83 + DrawY + bobbing, 1, 1, 0, c_white, 1);
-if (sprite_index != spr_tvturnon)
-	draw_sprite_ext(draw_static ? spr_tvpropellerstatic : spr_tvpropeller, propindex, 832, 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
-scr_palette_as_player();
-draw_sprite_ext(sprite_index, image_index, 832, 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
-pal_swap_reset();
-if (draw_static)
+if !global.oldhud
 {
-	static_index += 0.3;
-	draw_sprite_ext(spr_tv_newstatic, static_index, 832, 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
+	draw_sprite_ext(tvbg, current_bg, 819, 83 + DrawY + bobbing, 1, 1, 0, c_white, 1);
+	if (sprite_index != spr_tvturnon)
+		draw_sprite_ext(draw_static ? spr_tvpropellerstatic : spr_tvpropeller, propindex, 832, 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
 }
-if (tvsprite != spr_tvoff && tvsprite != spr_tvturnon && global.dialogueVolume <= 0)
-	draw_sprite_ext(spr_tvmuteicon, 0, 832, 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
-draw_set_font(global.promptfont);
-draw_set_halign(1);
-draw_set_color(c_white);
+scr_palette_as_player();
+draw_sprite_ext(sprite_index, image_index, 832 - DrawX, 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
+pal_swap_reset();
+if !global.oldhud
+{
+	if (draw_static)
+	{
+		static_index += 0.3;
+		draw_sprite_ext(spr_tv_newstatic, static_index, 832, 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
+	}
+	if (tvsprite != spr_tvoff && tvsprite != spr_tvturnon && global.dialogueVolume <= 0)
+		draw_sprite_ext(spr_tvmuteicon, 0, 832 + DrawX, 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
+}
 draw_set_font(global.promptfont);
 draw_set_halign(1);
 draw_set_color(c_white);

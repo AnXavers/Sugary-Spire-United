@@ -151,6 +151,7 @@ global.coneballparry = ini_read_real("Settings", "coneballparry", 0);
 global.language = ini_read_real("Settings", "language", 0);
 global.machsfx = ini_read_real("Settings", "machsfx", 0);
 global.eggplantcombo = ini_read_real("Settings", "eggplantcombo", 0);
+global.oldhud = ini_read_real("Settings", "oldhud", 0);
 ini_close();
 
 audio_master_gain(global.masterVolume);
@@ -258,24 +259,6 @@ switch (ini_read_real("Settings", "mu_escape", 0))
 		break;
 	case 3:
 		global.escapesong = mu_peppino_escape;
-		break;
-}
-switch (ini_read_real("Settings", "mu_overdose", 0))
-{
-	case 0:
-		global.overdosesong = mu_overdose;
-		break;
-	case 1:
-		global.overdosesong = mu_finale;
-		break;
-}
-switch (ini_read_real("Settings", "mu_lowface", 0))
-{
-	case 0:
-		global.lowfacesong = mu_lowface;
-		break;
-	case 1:
-		global.lowfacesong = mu_expurgation;
 		break;
 }
 window_set_fullscreen(ini_read_real("Settings", "fullscrn", 0));

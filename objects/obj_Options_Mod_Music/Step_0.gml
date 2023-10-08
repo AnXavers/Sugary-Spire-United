@@ -14,9 +14,8 @@ if canmove
 		optionsaved_mu_lap5 = global.mulap5;
 		optionsaved_mu_lap2 = global.mulap2;
 		optionsaved_mu_escape = global.muescape;
-		optionsaved_mu_overdose = global.muoverdose;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 7)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 5)
 	{
 		optionselected += 1;
 		scr_sound(sound_step);
@@ -25,8 +24,6 @@ if canmove
 		optionsaved_mu_lap5 = global.mulap5;
 		optionsaved_mu_lap2 = global.mulap2;
 		optionsaved_mu_escape = global.muescape;
-		optionsaved_mu_overdose = global.muoverdose;
-		optionsaved_mu_lowface = global.mulowface;
 		
 	}
 	switch (optionselected)
@@ -168,52 +165,6 @@ if canmove
 				ini_write_real("Settings", "mu_escape", optionsaved_mu_escape);
 				ini_close();
 				global.muescape = optionsaved_mu_escape;
-			}
-			break;
-		case 6:
-			subtitle = "MUSIC THAT PLAYS DURING SUGARY OVERDOSE";
-			CursorY = 1250;
-			optionsaved_mu_overdose += (key_right2 + key_left2);
-			optionsaved_mu_overdose = wrap(optionsaved_mu_overdose, 0, 1);
-			if (key_jump)
-			{
-				scr_sound(sound_enemythrow);
-				switch (optionsaved_mu_overdose)
-				{
-					case 0:
-						global.overdosesong = mu_overdose;
-						break;
-					case 1:
-						global.overdosesong = mu_pizzano_escape;
-						break;
-				}
-				ini_open("optionData.ini");
-				ini_write_real("Settings", "mu_overdose", optionsaved_mu_overdose);
-				ini_close();
-				global.muoverdose = optionsaved_mu_overdose;
-			}
-			break;
-		case 7:
-			subtitle = "MUSIC THAT PLAYS DURING LOWFACE MODE";
-			CursorY = 1400;
-			optionsaved_mu_lowface += (key_right2 + key_left2);
-			optionsaved_mu_lowface = wrap(optionsaved_mu_lowface, 0, 1);
-			if (key_jump)
-			{
-				scr_sound(sound_enemythrow);
-				switch (optionsaved_mu_lowface)
-				{
-					case 0:
-						global.lowfacesong = mu_lowface;
-						break;
-					case 1:
-						global.lowfacesong = mu_pizzano_escape;
-						break;
-				}
-				ini_open("optionData.ini");
-				ini_write_real("Settings", "mu_lowface", optionsaved_mu_lowface);
-				ini_close();
-				global.mulowface = optionsaved_mu_lowface;
 			}
 			break;
 	}

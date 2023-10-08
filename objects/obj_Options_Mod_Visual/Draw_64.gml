@@ -21,6 +21,9 @@ draw_option(680, 600 + ScrollY, "CLASSIC", optionsaved_machsfx);
 draw_option(480, 650 + ScrollY, "EGGPLANT COMBO TITLES", optionselected == 6);
 draw_option(280, 700 + ScrollY, "ON", optionsaved_eggplantcombo);
 draw_option(680, 700 + ScrollY, "OFF", !optionsaved_eggplantcombo);
+draw_option(480, 750 + ScrollY, "EGGPLANT COMBO TITLES", optionselected == 7);
+draw_option(280, 800 + ScrollY, "ON", optionsaved_oldhud);
+draw_option(680, 800 + ScrollY, "OFF", !optionsaved_oldhud);
 draw_set_font(global.smallfont);
 var _string_width = string_width(subtitle) + 32;
 if (subtitle != "")

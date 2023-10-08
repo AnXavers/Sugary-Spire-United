@@ -161,3 +161,5 @@ promptappeared = false;
 prompt_timer = 0;
 tvbg = spr_tvbgs;
 current_bg = 0;
+DrawX = 0;
+OldDrawY = 0;

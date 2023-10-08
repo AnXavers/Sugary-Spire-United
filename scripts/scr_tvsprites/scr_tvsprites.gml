@@ -29,6 +29,66 @@ function scr_tvsprites()
 	harrytvspr = spr_pizzanotv_harry;
 	lap3tvspr = spr_pizzytvlap3;
 	lap4tvspr = spr_pizzytvlap4;
+	confecti1tvspr = spr_pizzytv_confecti1
+	confecti2tvspr = spr_pizzytv_confecti2
+	confecti3tvspr = spr_pizzytv_confecti3
+	confecti4tvspr = spr_pizzytv_confecti4
+	confecti5tvspr = spr_pizzytv_confecti5
+	hurttext1tvspr = spr_pizzytvhurtext1
+	keytvspr = spr_pizzytvkey
+	janitor1tvspr = spr_pizzytvjanitor
+	janitor2tvspr = spr_pizzytvjanitor2
+	escape1tvspr = spr_pizzytv_escape1;
+	escape2tvspr = spr_pizzytv_escape2;
+	escape3tvspr = spr_pizzytv_escape3;
+	escape4tvspr = spr_pizzytv_escape4;
+	escape5tvspr = spr_pizzytv_escape5;
+	escape6tvspr = spr_pizzytv_escape6;
+	escape7tvspr = spr_pizzytv_escape7;
+	DrawX = 0
+	OldDrawY = 0
+	if global.oldhud
+	{
+		idletvspr = spr_playerPZ_normalHUD;
+		combotvspr = spr_playerPZ_menacingHUD;
+		happytvspr = spr_playerPZ_happyHUD;
+		escapetvspr = spr_playerPZ_explodedHUD;
+		tvchange1 = spr_playerPZ_normal1HUD;
+		tvchange2 = spr_playerPZ_normal2HUD;
+		cottontvspr = spr_playerPZ_cottonHUD;
+		hurttvspr = spr_playerPZ_hurtHUD;
+		minecarttvspr = spr_playerPZ_cottonHUD;
+		bombtvspr = spr_playerPZ_explodedHUD;
+		firetvspr = spr_playerPZ_explodedHUD;
+		angrytvspr = spr_playerPZ_menacingHUD;
+		orbtvspr = spr_playerPZ_cottonHUD;
+		ufotvspr = spr_playerPZ_cottonHUD;
+		mach1tvspr = spr_playerPZ_mach1HUD;
+		mach2tvspr = spr_playerPZ_mach2HUD;
+		mach3tvspr = spr_playerPZ_mach3HUD;
+		mach4tvspr = spr_playerPZ_mach4HUD;
+		machrolltvspr = spr_playerPZ_superjumpprepHUD;
+		frostburntvspr = spr_playerPZ_cottonHUD;
+		hooktvspr = spr_playerPZ_bumpHUD;
+		marshdogspr = spr_playerPZ_mach1HUD;
+		panictvspr = spr_playerPZ_hurtHUD;
+		laptvspr = spr_playerPZ_menacingHUD;
+		secrettvspr = spr_playerPZ_happyHUD;
+		crashtvspr = spr_playerPZ_slamHUD;
+		harrytvspr = spr_playerPZ_bumpHUD;
+		lap3tvspr = spr_playerPZ_hurtHUD;
+		lap4tvspr = spr_playerPZ_explodedHUD;
+		confecti1tvspr = spr_playerPZ_happyHUD
+		confecti2tvspr = spr_playerPZ_happyHUD
+		confecti3tvspr = spr_playerPZ_happyHUD
+		confecti4tvspr = spr_playerPZ_happyHUD
+		confecti5tvspr = spr_playerPZ_happyHUD
+		keytvspr = spr_playerPZ_happyHUD
+		janitor1tvspr = spr_playerPZ_happyHUD
+		janitor2tvspr = spr_playerPZ_happyHUD
+		DrawX = 715
+		OldDrawY = 10
+	}
 	switch (obj_player.character)
 	{
 		case "N":
@@ -36,6 +96,13 @@ function scr_tvsprites()
 			combotvspr = spr_pizzanotv_combo;
 			happytvspr = spr_pizzanotv_happy;
 			escapetvspr = spr_pizzanotv_escape1;
+			escape1tvspr = spr_pizzanotv_escape1;
+			escape2tvspr = spr_pizzanotv_escape2;
+			escape3tvspr = spr_pizzanotv_escape3;
+			escape4tvspr = spr_pizzanotv_escape4;
+			escape5tvspr = spr_pizzanotv_escape5;
+			escape6tvspr = spr_pizzanotv_escape6;
+			escape7tvspr = spr_pizzanotv_escape7;
 			tvchange1 = spr_pizzanotv2;
 			tvchange2 = spr_pizzanotv2;
 			cottontvspr = spr_pizzanotv_cotton;
@@ -59,6 +126,15 @@ function scr_tvsprites()
 			lap3tvspr = spr_pizzanotv_lap3;
 			lap4tvspr = spr_pizzanotv_lap4;
 			harrytvspr = spr_pizzanotv_harry;
+			confecti1tvspr = spr_pizzanotv_confecti1
+			confecti2tvspr = spr_pizzanotv_confecti2
+			confecti3tvspr = spr_pizzanotv_confecti3
+			confecti4tvspr = spr_pizzanotv_confecti4
+			confecti5tvspr = spr_pizzanotv_confecti4
+			hurttext1tvspr = spr_pizzytvhurtext1
+			keytvspr = spr_pizzytvkey
+			janitor1tvspr = spr_pizzanotvjanitor
+			janitor2tvspr = spr_pizzanotvjanitor2
 			break;
 		case "S":
 			idletvspr = spr_tv_idle;

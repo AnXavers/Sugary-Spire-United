@@ -29,7 +29,8 @@ if (global.hurtcounter >= global.hurtmilestone && global.hurtcounter >= 5)
 	else if (obj_player.character == "S")
 		character = "Peppino";
 	scr_controlprompt("[spr_promptfont]You have hurt " + string(character) + " " + string(global.hurtmilestone) + " times...");
-	scr_queue_tvanim(spr_pizzytvhurtext1, 100);
+	if !global.oldhud
+		scr_queue_tvanim(hurttext1tvspr, 100);
 }
 if (obj_player.state == 56)
 {
@@ -81,9 +82,6 @@ switch (state)
 			case 11:
 			case 31:
 			case 67:
-			default:
-				_transfo = false;
-				break;
 			case 70:
 				_transfo = false;
 				var my_mvsp = global.freezeframe ? abs(obj_player.frozenhsp) : abs(obj_player.hsp);
@@ -135,6 +133,9 @@ switch (state)
 				break;
 			case 83:
 				idlespr = marshdogspr;
+				break;
+			default:
+				_transfo = false;
 				break;
 		}
 		if (!_transfo)
@@ -188,7 +189,7 @@ switch (state)
 	case 155:
 		draw_static = true;
 		saved_tv_spr = idlespr;
-		if (floor(static_index) >= 4)
+		if (floor(static_index) >= 4 || global.oldhud)
 		{
 			if (expressionsprite != -4)
 			{

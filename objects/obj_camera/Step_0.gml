@@ -1,3 +1,6 @@
+cakeX = 0
+if global.oldhud
+	cakeX = 700
 if (room == timesuproom || room == rank_room || room == rm_credits || room == rm_titlecard || global.levelname == "none" || global.levelname == "tutorial" || is_hub() || instance_exists(obj_bosscontroller))
 	DrawHUD = 0;
 else

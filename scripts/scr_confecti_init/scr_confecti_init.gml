@@ -11,10 +11,7 @@ function scr_confecti_init()
 			spr_appear = obj_player.spr_confecti1_appear;
 			spr_taunt = obj_player.spr_confecti1_taunt;
 			global.mallowfollow = true;
-			if obj_player.character == "N"
-				scr_queue_tvanim(spr_pizzanotv_confecti1, 100);
-			else
-				scr_queue_tvanim(spr_pizzytv_confecti1, 100);
+			scr_queue_tvanim(obj_tv.confecti1tvspr, 100);
 			break;
 		case obj_confectichoco:
 			spr_idle = obj_player.spr_confecti2_idle;
@@ -24,10 +21,7 @@ function scr_confecti_init()
 			spr_appear = obj_player.spr_confecti2_appear;
 			spr_taunt = obj_player.spr_confecti2_taunt;
 			global.chocofollow = true;
-			if obj_player.character == "N"
-				scr_queue_tvanim(spr_pizzanotv_confecti2, 100);
-			else
-				scr_queue_tvanim(spr_pizzytv_confecti2, 100);
+			scr_queue_tvanim(obj_tv.confecti2tvspr, 100);
 			break;
 		case obj_confecticrack:
 			spr_idle = obj_player.spr_confecti3_idle;
@@ -37,10 +31,7 @@ function scr_confecti_init()
 			spr_appear = obj_player.spr_confecti3_appear;
 			spr_taunt = obj_player.spr_confecti3_taunt;
 			global.crackfollow = true;
-			if obj_player.character == "N"
-				scr_queue_tvanim(spr_pizzanotv_confecti3, 100);
-			else
-				scr_queue_tvanim(spr_pizzytv_confecti3, 100);
+			scr_queue_tvanim(obj_tv.confecti3tvspr, 100);
 			break;
 		case obj_confectiworm:
 			spr_idle = obj_player.spr_confecti4_idle;
@@ -50,10 +41,7 @@ function scr_confecti_init()
 			spr_appear = obj_player.spr_confecti4_appear;
 			spr_taunt = obj_player.spr_confecti4_taunt;
 			global.wormfollow = true;
-			if obj_player.character == "N"
-				scr_queue_tvanim(spr_pizzanotv_confecti4, 100);
-			else
-				scr_queue_tvanim(spr_pizzytv_confecti4, 100);
+			scr_queue_tvanim(obj_tv.confecti4tvspr, 100);
 			break;
 		case obj_confecticandy:
 			spr_idle = obj_player.spr_confecti5_idle;
@@ -63,10 +51,7 @@ function scr_confecti_init()
 			spr_appear = obj_player.spr_confecti5_appear;
 			spr_taunt = obj_player.spr_confecti5_taunt;
 			global.candyfollow = true;
-			if obj_player.character == "N"
-				scr_queue_tvanim(spr_pizzanotv_confecti5, 100);
-			else
-				scr_queue_tvanim(spr_pizzytv_confecti5, 100);
+			scr_queue_tvanim(obj_tv.confecti5tvspr, 100);
 			break;
 		case obj_rudejanitor:
 			spr_idle = obj_player.spr_janitor_idle;
@@ -76,6 +61,7 @@ function scr_confecti_init()
 			spr_appear = obj_player.spr_janitor_appear;
 			spr_taunt = obj_player.spr_janitor_taunt;
 			global.janitorRudefollow = true;
+			scr_queue_tvanim(obj_tv.janitor1tvspr, 150);
 			break;
 		case obj_lapjanitor:
 			spr_idle = obj_player.spr_lapjanitor_idle;
@@ -85,6 +71,7 @@ function scr_confecti_init()
 			spr_appear = obj_player.spr_lapjanitor_appear;
 			spr_taunt = obj_player.spr_lapjanitor_taunt;
 			global.janitorLapfollow = true;
+			scr_queue_tvanim(obj_tv.janitor2tvspr, 150);
 			break;
 	}
 }
