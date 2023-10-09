@@ -9,7 +9,7 @@ if global.peterdepth = 9999
 else
 	depth = global.peterdepth
 if global.peterpalette
-	scr_palette_as_player()
+	pal_swap_reset();
 if global.peterupdate
 {
 	sprite_index = asset_get_index(global.petersprite)

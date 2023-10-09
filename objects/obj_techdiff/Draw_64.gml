@@ -5,5 +5,5 @@ else
 	draw_sprite(spr_technicaldifficulty, 0, 0, 0);
 	scr_palette_as_player();
 	draw_sprite(spr_technicaldifficulty_pizzy, 0, 797, 328);
-	shader_reset();
+	pal_swap_reset();
 }

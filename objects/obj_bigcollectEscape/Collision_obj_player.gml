@@ -1,7 +1,7 @@
 if (global.panic)
 {
-	audio_stop_sound(sound_bigescapeclock);
-	scr_sound(sound_bigescapeclock);
+	audio_stop_sound(obj_player.sfx_escapecollectbig);
+	scr_sound(obj_player.sfx_escapecollectbig);
 	global.collect += 100;
 	global.pizzameter += 5;
 	scr_queue_tvanim(obj_tv.happytvspr, 50);

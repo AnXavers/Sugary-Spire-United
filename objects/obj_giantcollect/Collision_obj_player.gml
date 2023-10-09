@@ -1,7 +1,7 @@
-audio_stop_sound(sound_points);
-audio_stop_sound(sound_pizzagot);
-scr_sound(sound_pizzagot);
-scr_sound(sound_points);
+audio_stop_sound(obj_player.sfx_collect);
+audio_stop_sound(obj_player.sfx_collectmassive);
+scr_sound(obj_player.sfx_collectmassive);
+scr_sound(obj_player.sfx_collect);
 scr_ghostcollectible();
 global.collectsound = mu_entryway_title;
 scr_queue_tvanim(obj_tv.happytvspr, 200);

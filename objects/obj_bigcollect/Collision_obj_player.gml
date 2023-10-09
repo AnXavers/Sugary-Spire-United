@@ -1,5 +1,5 @@
-audio_stop_sound(sound_points);
-scr_sound(sound_points);
+audio_stop_sound(obj_player.sfx_collectlarge);
+scr_sound(obj_player.sfx_collectlarge);
 global.collect += 100;
 global.pizzameter += 5;
 scr_queue_tvanim(obj_tv.happytvspr, 50);

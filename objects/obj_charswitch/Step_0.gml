@@ -14,3 +14,4 @@ else if character == "V"
 	sprite_index = spr_playerV_idle
 else if character == "M"
 	sprite_index = spr_pepperman_idle
+scr_palette_as_player()

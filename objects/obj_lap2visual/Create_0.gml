@@ -4,7 +4,7 @@ down = 1;
 movespeed = 2;
 lapvisualimg = 0;
 depth = -100;
-b_snd = scr_soundloop(sfx_lapbells)
+b_snd = scr_soundloop(obj_player.sfx_lapbell)
 audio_sound_gain(b_snd, 0, 0)
 if global.inflapping != 1
 {

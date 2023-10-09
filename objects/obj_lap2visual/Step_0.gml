@@ -1,6 +1,6 @@
 if (!audio_is_playing(b_snd))
 {
-	b_snd = scr_soundloop(sfx_lapbells)
+	b_snd = scr_soundloop(obj_player.sfx_lapbell)
 }
 if down
 {

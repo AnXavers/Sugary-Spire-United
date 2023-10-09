@@ -1,1 +1,1 @@
-audio_stop_sound(sfx_lapbells)
+audio_stop_sound(obj_player.sfx_lapbell)

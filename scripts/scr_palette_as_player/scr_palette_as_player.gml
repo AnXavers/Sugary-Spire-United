@@ -1,12 +1,15 @@
 function scr_palette_as_player(argument0 = sprite_index, argument1 = image_index)
 {
-	with (obj_player)
+	if instance_exists(obj_player)
 	{
-		var my_color_array = my_palettes[paletteselect][2];
-		var using_pattern = sprite_exists(my_color_array[2]);
+		with (obj_player)
+		{
+			var my_color_array = my_palettes[paletteselect][2];
+			var using_pattern = sprite_exists(my_color_array[2]);
+		}
+		if (surface_exists(obj_player.my_pal_surface) && !using_pattern)
+			pal_swap_set(obj_player.my_pal_surface, 1, true);
 	}
-	if (surface_exists(obj_player.my_pal_surface) && !using_pattern)
-		pal_swap_set(obj_player.my_pal_surface, 1, true);
 	if (using_pattern && sprite_exists(argument0))
 	{
 		var s_pat = shader_get_sampler_index(5, "s_Pattern");

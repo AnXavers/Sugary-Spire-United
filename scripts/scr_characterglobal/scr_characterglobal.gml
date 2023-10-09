@@ -361,6 +361,11 @@ function scr_characterglobal()
 			mu_lap5song = mu_pizzelle_despairy
 			mu_lap10song = mu_pizzelle_death
 			sfx_lapbell = sfx_lapbells
+			sfx_escapecollectbig = sound_bigescapeclock
+			sfx_escapecollect = sound_escapeclock
+			sfx_collectmassive = sound_pizzagot
+			sfx_collectlarge = sound_points
+			sfx_collect = sound_points
 			// movesets
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
@@ -520,6 +525,11 @@ function scr_characterglobal()
 			mu_lap5song = mu_pizzano_despairy
 			mu_lap10song = mu_pizzano_death
 			sfx_lapbell = sfx_lapbells
+			sfx_escapecollectbig = sound_bigescapeclock
+			sfx_escapecollect = sound_escapeclock
+			sfx_collectmassive = sound_pizzagot
+			sfx_collectlarge = sound_points
+			sfx_collect = sound_points
 			// movesets
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
@@ -644,6 +654,11 @@ function scr_characterglobal()
 			mu_lap5song = mu_pizzano_despairy
 			mu_lap10song = mu_pizzano_death
 			sfx_lapbell = sfx_lapbells
+			sfx_escapecollectbig = sound_bigescapeclock
+			sfx_escapecollect = sound_escapeclock
+			sfx_collectmassive = sound_pizzagot
+			sfx_collectlarge = sound_points
+			sfx_collect = sound_points
 			// movesets
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
@@ -785,6 +800,11 @@ function scr_characterglobal()
 			mu_lap5song = mu_pizzano_despairy
 			mu_lap10song = mu_pizzano_death
 			sfx_lapbell = sfx_lapbells
+			sfx_escapecollectbig = sound_bigescapeclock
+			sfx_escapecollect = sound_escapeclock
+			sfx_collectmassive = sound_pizzagot
+			sfx_collectlarge = sound_points
+			sfx_collect = sound_points
 			// movesets
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
@@ -1082,7 +1102,12 @@ function scr_characterglobal()
 			mu_lap2song = mu_noise_lap
 			mu_lap5song = mu_peppino_despairy
 			mu_lap10song = mu_peppino_death
-			sfx_lapbell = sfx_lapbells
+			sfx_lapbell = sfx_lapbells_pep
+			sfx_escapecollectbig = sfx_bellcollectbig
+			sfx_escapecollect = sfx_bellcollectsmall
+			sfx_collectmassive = sfx_collectgiant
+			sfx_collectlarge = sfx_collectbig
+			sfx_collect = sfx_collectsmall
 			// movesets
 			do_sjump_cancel = true;
 			do_groundpound_cancel = true;
@@ -1408,7 +1433,12 @@ function scr_characterglobal()
 			mu_lap2song = mu_peppino_lap
 			mu_lap5song = mu_peppino_despairy
 			mu_lap10song = mu_peppino_death
-			sfx_lapbell = sfx_lapbells
+			sfx_lapbell = sfx_lapbells_pep
+			sfx_escapecollectbig = sfx_bellcollectbig
+			sfx_escapecollect = sfx_bellcollectsmall
+			sfx_collectmassive = sfx_collectgiant
+			sfx_collectlarge = sfx_collectbig
+			sfx_collect = sfx_collectsmall
 			// movesets
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
@@ -1736,7 +1766,12 @@ function scr_characterglobal()
 			mu_lap2song = mu_noise_lap
 			mu_lap5song = mu_peppino_despairy
 			mu_lap10song = mu_peppino_death
-			sfx_lapbell = sfx_lapbells
+			sfx_lapbell = sfx_lapbells_pep
+			sfx_escapecollectbig = sfx_bellcollectbig
+			sfx_escapecollect = sfx_bellcollectsmall
+			sfx_collectmassive = sfx_collectgiant
+			sfx_collectlarge = sfx_collectbig
+			sfx_collect = sfx_collectsmall
 			// movesets
 			do_groundpound_cancel = false;
 			do_sjump_cancel = true;
@@ -2055,6 +2090,12 @@ function scr_characterglobal()
 			spr_coneball_player = spr_pizzaface
 			spr_coneball_melting_player = spr_pizzahead_haywire
 			img_featuringme = 7;
+			spr_lapportal_create = spr_pizzaportal_appear
+			spr_lapportal_idle = spr_pizzaportal
+			spr_lapportal_enter = spr_pizzaportalend
+			spr_lapportal_exit = spr_pizzaportal_appear
+			spr_stylebar = spr_heatmeter_pep
+			spr_stylebarunder = spr_heatmeter_fill
 			// fonts
 			font_lapcount = global.lapcountpepfont
 			// audio
@@ -2062,7 +2103,12 @@ function scr_characterglobal()
 			mu_lap2song = mu_noise_lap
 			mu_lap5song = mu_peppino_despairy
 			mu_lap10song = mu_peppino_death
-			sfx_lapbell = sfx_lapbells
+			sfx_lapbell = sfx_lapbells_pep
+			sfx_escapecollectbig = sfx_bellcollectbig
+			sfx_escapecollect = sfx_bellcollectsmall
+			sfx_collectmassive = sfx_collectgiant
+			sfx_collectlarge = sfx_collectbig
+			sfx_collect = sfx_collectsmall
 			// movesets
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
