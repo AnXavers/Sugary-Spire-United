@@ -516,6 +516,8 @@ function scr_characterglobal()
 			spr_player_rankC = spr_pizzano_rankC;
 			spr_player_rankD = spr_pizzano_rankD;
 			spr_rankwait = spr_pizzano_rankwait;
+			spr_lapvisual_player = spr_lapvisual
+			spr_lapbg_player = spr_lapbg
 			img_featuringme = 1;
 			// fonts
 			font_lapcount = global.lapcountfont
@@ -646,6 +648,8 @@ function scr_characterglobal()
 			spr_mach3jump = spr_pizzano_mach3jump;
 			spr_mach3hitwall = spr_pizzano_mach3hitwall;
 			spr_crazyrun = spr_gumbob_mach3;
+			spr_lapvisual_player = spr_lapvisual
+			spr_lapbg_player = spr_lapbg
 			// fonts
 			font_lapcount = global.lapcountfont
 			// audio
@@ -792,6 +796,8 @@ function scr_characterglobal()
 			spr_cottonidle = spr_gumbob_cotton_idle;
 			spr_spitair = spr_coneboy_spitair;
 			img_featuringme = 3;
+			spr_lapvisual_player = spr_lapvisual
+			spr_lapbg_player = spr_lapbg
 			// fonts
 			font_lapcount = global.lapcountfont
 			// audio

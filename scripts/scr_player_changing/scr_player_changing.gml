@@ -8,7 +8,6 @@ function state_player_changing()
 	sprite_index = spr_idle;
 	image_speed = 0.35;
 	visible = false;
-	customupdate = true;
 	x = approach(x, obj_costumerdoor.x, 2);
 	y = approach(y, obj_costumerdoor.y, 16);
 }

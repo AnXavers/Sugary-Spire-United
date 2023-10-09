@@ -19,7 +19,6 @@ for (var i = 0; i < ds_list_size(global.afterimage_list); i++)
 				pal_swap_set(spr_palette, paletteselect, false);
 			draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, 1, image_angle, c_white, gonealpha * image_alpha);
 			pal_swap_reset();
-			shader_reset();
 		}
 	}
 }

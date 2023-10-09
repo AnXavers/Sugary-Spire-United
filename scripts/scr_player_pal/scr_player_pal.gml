@@ -7,7 +7,7 @@ function state_player_pal()
 		switch (character)
 		{
 			default:
-				paletteselect = wrap(paletteselect + move, 1, sprite_get_width(spr_palette) - 1);
+				paletteselect = wrap(paletteselect + move, 1, array_length(my_palettes) - 1);
 				break;
 		}
 		with (obj_palexample)

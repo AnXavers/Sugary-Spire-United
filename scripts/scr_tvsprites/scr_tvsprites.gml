@@ -47,48 +47,6 @@ function scr_tvsprites()
 	escape7tvspr = spr_pizzytv_escape7;
 	DrawX = 0
 	OldDrawY = 0
-	if global.oldhud
-	{
-		idletvspr = spr_playerPZ_normalHUD;
-		combotvspr = spr_playerPZ_menacingHUD;
-		happytvspr = spr_playerPZ_happyHUD;
-		escapetvspr = spr_playerPZ_explodedHUD;
-		tvchange1 = spr_playerPZ_normal1HUD;
-		tvchange2 = spr_playerPZ_normal2HUD;
-		cottontvspr = spr_playerPZ_cottonHUD;
-		hurttvspr = spr_playerPZ_hurtHUD;
-		minecarttvspr = spr_playerPZ_cottonHUD;
-		bombtvspr = spr_playerPZ_explodedHUD;
-		firetvspr = spr_playerPZ_explodedHUD;
-		angrytvspr = spr_playerPZ_menacingHUD;
-		orbtvspr = spr_playerPZ_cottonHUD;
-		ufotvspr = spr_playerPZ_cottonHUD;
-		mach1tvspr = spr_playerPZ_mach1HUD;
-		mach2tvspr = spr_playerPZ_mach2HUD;
-		mach3tvspr = spr_playerPZ_mach3HUD;
-		mach4tvspr = spr_playerPZ_mach4HUD;
-		machrolltvspr = spr_playerPZ_superjumpprepHUD;
-		frostburntvspr = spr_playerPZ_cottonHUD;
-		hooktvspr = spr_playerPZ_bumpHUD;
-		marshdogspr = spr_playerPZ_mach1HUD;
-		panictvspr = spr_playerPZ_hurtHUD;
-		laptvspr = spr_playerPZ_menacingHUD;
-		secrettvspr = spr_playerPZ_happyHUD;
-		crashtvspr = spr_playerPZ_slamHUD;
-		harrytvspr = spr_playerPZ_bumpHUD;
-		lap3tvspr = spr_playerPZ_hurtHUD;
-		lap4tvspr = spr_playerPZ_explodedHUD;
-		confecti1tvspr = spr_playerPZ_happyHUD
-		confecti2tvspr = spr_playerPZ_happyHUD
-		confecti3tvspr = spr_playerPZ_happyHUD
-		confecti4tvspr = spr_playerPZ_happyHUD
-		confecti5tvspr = spr_playerPZ_happyHUD
-		keytvspr = spr_playerPZ_happyHUD
-		janitor1tvspr = spr_playerPZ_happyHUD
-		janitor2tvspr = spr_playerPZ_happyHUD
-		DrawX = 715
-		OldDrawY = 10
-	}
 	switch (obj_player.character)
 	{
 		case "N":
@@ -213,5 +171,47 @@ function scr_tvsprites()
 			panictvspr = spr_tv_exprpanicN;
 			secrettvspr = spr_tv_secretN
 			laptvspr = spr_tv_exprheatN;
+	}
+	if global.oldhud
+	{
+		idletvspr = spr_playerPZ_normalHUD;
+		combotvspr = spr_playerPZ_menacingHUD;
+		happytvspr = spr_playerPZ_happyHUD;
+		escapetvspr = spr_playerPZ_explodedHUD;
+		tvchange1 = spr_playerPZ_normal1HUD;
+		tvchange2 = spr_playerPZ_normal2HUD;
+		cottontvspr = spr_playerPZ_cottonHUD;
+		hurttvspr = spr_playerPZ_hurtHUD;
+		minecarttvspr = spr_playerPZ_cottonHUD;
+		bombtvspr = spr_playerPZ_explodedHUD;
+		firetvspr = spr_playerPZ_explodedHUD;
+		angrytvspr = spr_playerPZ_menacingHUD;
+		orbtvspr = spr_playerPZ_cottonHUD;
+		ufotvspr = spr_playerPZ_cottonHUD;
+		mach1tvspr = spr_playerPZ_mach1HUD;
+		mach2tvspr = spr_playerPZ_mach2HUD;
+		mach3tvspr = spr_playerPZ_mach3HUD;
+		mach4tvspr = spr_playerPZ_mach4HUD;
+		machrolltvspr = spr_playerPZ_superjumpprepHUD;
+		frostburntvspr = spr_playerPZ_cottonHUD;
+		hooktvspr = spr_playerPZ_bumpHUD;
+		marshdogspr = spr_playerPZ_mach1HUD;
+		panictvspr = spr_playerPZ_hurtHUD;
+		laptvspr = spr_playerPZ_menacingHUD;
+		secrettvspr = spr_playerPZ_happyHUD;
+		crashtvspr = spr_playerPZ_slamHUD;
+		harrytvspr = spr_playerPZ_bumpHUD;
+		lap3tvspr = spr_playerPZ_hurtHUD;
+		lap4tvspr = spr_playerPZ_explodedHUD;
+		confecti1tvspr = spr_playerPZ_happyHUD
+		confecti2tvspr = spr_playerPZ_happyHUD
+		confecti3tvspr = spr_playerPZ_happyHUD
+		confecti4tvspr = spr_playerPZ_happyHUD
+		confecti5tvspr = spr_playerPZ_happyHUD
+		keytvspr = spr_playerPZ_happyHUD
+		janitor1tvspr = spr_playerPZ_happyHUD
+		janitor2tvspr = spr_playerPZ_happyHUD
+		DrawX = 715
+		OldDrawY = 10
 	}
 }

@@ -1,5 +1,6 @@
 scribble_anim_wave(0.5, 3, 0.5);
 pal_swap_init_system(10, 3, 12);
+global.testbuild = 1
 global.fileselect = "saveData.ini"
 global.levelname = "none";
 global.firstlvlRoom = 66;

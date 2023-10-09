@@ -1,44 +1,11 @@
 scr_collision_init();
 scr_playersounds_init();
-global.testbuild = 1
 ini_open("Custom/Pizzelle_1_palettes.ini")
-global.custompal_1_col_0 = (65536 * ini_read_real("PizzelleColors0", "Blue", 0) + (256 * ini_read_real("PizzelleColors0", "Green", 0) + ini_read_real("PizzelleColors0", "Red", 0)))
-global.custompal_1_col_1 = (65536 * ini_read_real("PizzelleColors1", "Blue", 0) + (256 * ini_read_real("PizzelleColors1", "Green", 0) + ini_read_real("PizzelleColors1", "Red", 0)))
-global.custompal_1_col_2 = (65536 * ini_read_real("PizzelleColors2", "Blue", 0) + (256 * ini_read_real("PizzelleColors2", "Green", 0) + ini_read_real("PizzelleColors2", "Red", 0)))
-global.custompal_1_col_3 = (65536 * ini_read_real("PizzelleColors3", "Blue", 0) + (256 * ini_read_real("PizzelleColors3", "Green", 0) + ini_read_real("PizzelleColors3", "Red", 0)))
-global.custompal_1_col_4 = (65536 * ini_read_real("PizzelleColors4", "Blue", 0) + (256 * ini_read_real("PizzelleColors4", "Green", 0) + ini_read_real("PizzelleColors4", "Red", 0)))
-global.custompal_1_col_5 = (65536 * ini_read_real("PizzelleColors5", "Blue", 0) + (256 * ini_read_real("PizzelleColors5", "Green", 0) + ini_read_real("PizzelleColors5", "Red", 0)))
-global.custompal_1_col_6 = (65536 * ini_read_real("PizzelleColors6", "Blue", 0) + (256 * ini_read_real("PizzelleColors6", "Green", 0) + ini_read_real("PizzelleColors6", "Red", 0)))
-global.custompal_1_col_7 = (65536 * ini_read_real("PizzelleColors7", "Blue", 0) + (256 * ini_read_real("PizzelleColors7", "Green", 0) + ini_read_real("PizzelleColors7", "Red", 0)))
-global.custompal_1_col_8 = (65536 * ini_read_real("PizzelleColors8", "Blue", 0) + (256 * ini_read_real("PizzelleColors8", "Green", 0) + ini_read_real("PizzelleColors8", "Red", 0)))
-global.custompal_1_col_9 = (65536 * ini_read_real("PizzelleColors9", "Blue", 0) + (256 * ini_read_real("PizzelleColors9", "Green", 0) + ini_read_real("PizzelleColors9", "Red", 0)))
-global.custompal_1_col_10 = (65536 * ini_read_real("PizzelleColors10", "Blue", 0) + (256 * ini_read_real("PizzelleColors10", "Green", 0) + ini_read_real("PizzelleColors10", "Red", 0)))
-ini_close()
-ini_open("Custom/Pizzelle_2_palettes.ini")
-global.custompal_2_col_0 = (65536 * ini_read_real("PizzelleColors0", "Blue", 0) + (256 * ini_read_real("PizzelleColors0", "Green", 0) + ini_read_real("PizzelleColors0", "Red", 0)))
-global.custompal_2_col_1 = (65536 * ini_read_real("PizzelleColors1", "Blue", 0) + (256 * ini_read_real("PizzelleColors1", "Green", 0) + ini_read_real("PizzelleColors1", "Red", 0)))
-global.custompal_2_col_2 = (65536 * ini_read_real("PizzelleColors2", "Blue", 0) + (256 * ini_read_real("PizzelleColors2", "Green", 0) + ini_read_real("PizzelleColors2", "Red", 0)))
-global.custompal_2_col_3 = (65536 * ini_read_real("PizzelleColors3", "Blue", 0) + (256 * ini_read_real("PizzelleColors3", "Green", 0) + ini_read_real("PizzelleColors3", "Red", 0)))
-global.custompal_2_col_4 = (65536 * ini_read_real("PizzelleColors4", "Blue", 0) + (256 * ini_read_real("PizzelleColors4", "Green", 0) + ini_read_real("PizzelleColors4", "Red", 0)))
-global.custompal_2_col_5 = (65536 * ini_read_real("PizzelleColors5", "Blue", 0) + (256 * ini_read_real("PizzelleColors5", "Green", 0) + ini_read_real("PizzelleColors5", "Red", 0)))
-global.custompal_2_col_6 = (65536 * ini_read_real("PizzelleColors6", "Blue", 0) + (256 * ini_read_real("PizzelleColors6", "Green", 0) + ini_read_real("PizzelleColors6", "Red", 0)))
-global.custompal_2_col_7 = (65536 * ini_read_real("PizzelleColors7", "Blue", 0) + (256 * ini_read_real("PizzelleColors7", "Green", 0) + ini_read_real("PizzelleColors7", "Red", 0)))
-global.custompal_2_col_8 = (65536 * ini_read_real("PizzelleColors8", "Blue", 0) + (256 * ini_read_real("PizzelleColors8", "Green", 0) + ini_read_real("PizzelleColors8", "Red", 0)))
-global.custompal_2_col_9 = (65536 * ini_read_real("PizzelleColors9", "Blue", 0) + (256 * ini_read_real("PizzelleColors9", "Green", 0) + ini_read_real("PizzelleColors9", "Red", 0)))
-global.custompal_2_col_10 = (65536 * ini_read_real("PizzelleColors10", "Blue", 0) + (256 * ini_read_real("PizzelleColors10", "Green", 0) + ini_read_real("PizzelleColors10", "Red", 0)))
-ini_close()
-ini_open("Custom/Pizzelle_3_palettes.ini")
-global.custompal_3_col_0 = (65536 * ini_read_real("PizzelleColors0", "Blue", 0) + (256 * ini_read_real("PizzelleColors0", "Green", 0) + ini_read_real("PizzelleColors0", "Red", 0)))
-global.custompal_3_col_1 = (65536 * ini_read_real("PizzelleColors1", "Blue", 0) + (256 * ini_read_real("PizzelleColors1", "Green", 0) + ini_read_real("PizzelleColors1", "Red", 0)))
-global.custompal_3_col_2 = (65536 * ini_read_real("PizzelleColors2", "Blue", 0) + (256 * ini_read_real("PizzelleColors2", "Green", 0) + ini_read_real("PizzelleColors2", "Red", 0)))
-global.custompal_3_col_3 = (65536 * ini_read_real("PizzelleColors3", "Blue", 0) + (256 * ini_read_real("PizzelleColors3", "Green", 0) + ini_read_real("PizzelleColors3", "Red", 0)))
-global.custompal_3_col_4 = (65536 * ini_read_real("PizzelleColors4", "Blue", 0) + (256 * ini_read_real("PizzelleColors4", "Green", 0) + ini_read_real("PizzelleColors4", "Red", 0)))
-global.custompal_3_col_5 = (65536 * ini_read_real("PizzelleColors5", "Blue", 0) + (256 * ini_read_real("PizzelleColors5", "Green", 0) + ini_read_real("PizzelleColors5", "Red", 0)))
-global.custompal_3_col_6 = (65536 * ini_read_real("PizzelleColors6", "Blue", 0) + (256 * ini_read_real("PizzelleColors6", "Green", 0) + ini_read_real("PizzelleColors6", "Red", 0)))
-global.custompal_3_col_7 = (65536 * ini_read_real("PizzelleColors7", "Blue", 0) + (256 * ini_read_real("PizzelleColors7", "Green", 0) + ini_read_real("PizzelleColors7", "Red", 0)))
-global.custompal_3_col_8 = (65536 * ini_read_real("PizzelleColors8", "Blue", 0) + (256 * ini_read_real("PizzelleColors8", "Green", 0) + ini_read_real("PizzelleColors8", "Red", 0)))
-global.custompal_3_col_9 = (65536 * ini_read_real("PizzelleColors9", "Blue", 0) + (256 * ini_read_real("PizzelleColors9", "Green", 0) + ini_read_real("PizzelleColors9", "Red", 0)))
-global.custompal_3_col_10 = (65536 * ini_read_real("PizzelleColors10", "Blue", 0) + (256 * ini_read_real("PizzelleColors10", "Green", 0) + ini_read_real("PizzelleColors10", "Red", 0)))
+character = "P"
+characters = "Pizzelle";
+var i = 0
+for (var i = 0; i <= 10 ; i++)
+	global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
 ini_close()
 lastroom = -4;
 upsideDownJump = false;
@@ -78,9 +45,7 @@ new_palette("MissingTexture", 1, spr_pattern9, 13150344);
 new_palette("Solid", 1, spr_pattern10, 13150344);
 new_palette("Choco Squares", 1, spr_pattern11, 13150344);
 new_palette("Cotton Candy", 1, spr_pattern12, 13150344);
-new_palette("Custom 1", 0, global.custompal_1_col_1, global.custompal_1_col_9, global.custompal_1_col_3, global.custompal_1_col_4, global.custompal_1_col_7, global.custompal_1_col_8, global.custompal_1_col_0, global.custompal_1_col_2);
-new_palette("Custom 2", 0, global.custompal_2_col_1, global.custompal_2_col_9, global.custompal_2_col_3, global.custompal_2_col_4, global.custompal_2_col_7, global.custompal_2_col_8, global.custompal_2_col_0, global.custompal_2_col_2);
-new_palette("Custom 3", 0, global.custompal_3_col_1, global.custompal_3_col_9, global.custompal_3_col_3, global.custompal_3_col_4, global.custompal_3_col_7, global.custompal_3_col_8, global.custompal_3_col_0, global.custompal_3_col_2);
+new_palette("Custom", 0, global.custompal_col[1], global.custompal_col[9], global.custompal_col[3], global.custompal_col[4], global.custompal_col[7], global.custompal_col[8], global.custompal_col[0], global.custompal_col[2]);
 combo_title = -4;
 scr_initinput();
 scr_getinput();
@@ -255,7 +220,6 @@ suplexhavetomash = 0;
 breakdanceammo = 0;
 anger = 0;
 angry = 0;
-character = "P"
 baddiegrabbedID = -4;
 scr_characterglobal();
 paletteselect = 0;
@@ -302,11 +266,9 @@ if (!surface_exists(surf_pallete))
 actor = false;
 customsavedpalette = 1;
 oldcustomsavedpalette = 1;
-characters = "Pizzelle";
 colorheight = 8;
 palettewave = false;
 custompalette = false;
-customupdate = true;
 inhaling = 0;
 inhalestrength = 0;
 freefallsmash = 0;

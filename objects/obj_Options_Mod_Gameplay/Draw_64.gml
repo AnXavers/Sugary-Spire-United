@@ -12,7 +12,7 @@ draw_option(680, 300 + ScrollY, "CUSTOM", optionsaved_newlvldesign == 3);
 draw_option(480, 350 + ScrollY, "LAPPING MODE", optionselected == 3);
 draw_option(180, 400 + ScrollY, "DEFAULT", optionsaved_inflapping == 0);
 draw_option(480, 400 + ScrollY, "INFINITE", optionsaved_inflapping == 1);
-draw_option(780, 400 + ScrollY, "CHALLENGE", optionsaved_inflapping == 2);
+draw_option(780, 400 + ScrollY, "CHASEDOWN", optionsaved_inflapping == 2);
 draw_option(480, 450 + ScrollY, "ENABLE JERALD", optionselected == 4);
 draw_option(280, 500 + ScrollY, "ON", optionsaved_enablejerald);
 draw_option(680, 500 + ScrollY, "OFF", !optionsaved_enablejerald);

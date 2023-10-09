@@ -11,7 +11,7 @@ if (goup)
 		draw_rectangle(0, 0, 960, 540, false);
 }
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, 1);
-shader_reset();
+pal_swap_reset();
 draw_set_alpha(flash);
 draw_rectangle(0, 0, 960, 540, false);
 draw_set_alpha(1);

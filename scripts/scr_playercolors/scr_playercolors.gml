@@ -18,6 +18,22 @@ function scr_playercolors()
 			characters = "Coneboy";
 			colorheight = 7;
 			break;
+		case "S":
+			characters = "Peppino";
+			colorheight = 11;
+			break;
+		case "T":
+			characters = "The Noise";
+			colorheight = 11;
+			break;
+		case "V":
+			characters = "Vigilante";
+			colorheight = 11;
+			break;
+		case "M":
+			characters = "Pepperman";
+			colorheight = 11;
+			break;
 		default:
 			characters = "BF";
 			colorheight = 0;

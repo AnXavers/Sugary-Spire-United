@@ -20,10 +20,7 @@ if (player.key_right2 && stop == 0)
 	ini_close()
 	player.customsavedpalette = clamp((player.customsavedpalette + 1), 1, 5)
 	with (player)
-	{
 		scr_playercolors()
-		customupdate = 1
-	}
 	ini_open((((("Custom/" + string(player.characters)) + "_") + string(player.customsavedpalette)) + "_palettes.ini"))
 	palettename = ini_read_string("General", "PaletteName", "Palette 1")
 	ini_close()
@@ -44,10 +41,7 @@ if ((-player.key_left2) && stop == 0)
 	ini_close()
 	player.customsavedpalette = clamp((player.customsavedpalette - 1), 1, 5)
 	with (player)
-	{
 		scr_playercolors()
-		customupdate = 1
-	}
 	ini_open((((("Custom/" + string(player.characters)) + "_") + string(player.customsavedpalette)) + "_palettes.ini"))
 	palettename = ini_read_string("General", "PaletteName", "Palette 1")
 	ini_close()
@@ -86,14 +80,18 @@ if ((player.key_slap2 || keyboard_check_pressed(vk_return)) && stop == 0 && has_
 	with (player)
 	{
 		scr_playercolors()
-		state = (62 << 0)
 		sprite_index = spr_walkfront
 		image_index = 0
-		blackblend = 0
-		image_blend = make_colour_hsv(0, 0, 0)
 		visible = true
 		xscale = -1
-		customupdate = 1
+		array_delete(my_palettes, (array_length(my_palettes) - 1), 10)
+		ini_open((((("Custom/" + string(characters)) + "_") + string(customsavedpalette)) + "_palettes.ini"))
+		var i = 0
+		for (var i = 0; i <= 10 ; i++)
+			global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
+		ini_close()
+		new_palette("Custom", 0, global.custompal_col[1], global.custompal_col[9], global.custompal_col[3], global.custompal_col[4], global.custompal_col[7], global.custompal_col[8], global.custompal_col[0], global.custompal_col[2]);
+		state = (62 << 0)
 	}
 	instance_destroy()
 }

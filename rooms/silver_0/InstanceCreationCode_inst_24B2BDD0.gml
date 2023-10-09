@@ -7,4 +7,5 @@ condition = function()
 output = function()
 {
 	obj_player.y -= 96
+	obj_camera.y -= 96
 };

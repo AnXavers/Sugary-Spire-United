@@ -15,6 +15,7 @@ switch (state)
 			if (showing_names)
 				draw_sprite_ext(spr_boss_pizzelleTitle, 0, 200 + random_range(name_shake, -name_shake), 70 + random_range(name_shake, -name_shake), 1, 1, 0, c_white, 1);
 			pal_swap_reset();
+			shader_reset();
 			surface_reset_target();
 			draw_surface(player_surface, 0, 0);
 		}

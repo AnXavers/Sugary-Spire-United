@@ -73,6 +73,6 @@ function scr_bosscontroller_draw_health(argument0 = spr_pizzellehp, argument1 = 
 		if (argument0 == spr_pizzellehp)
 			scr_palette_as_player();
 		draw_sprite_ext(argument0, argument9, real_x, real_y, 1, 1, 0, _color, 1);
-		shader_reset();
+		pal_swap_reset();
 	}
 }

@@ -279,8 +279,8 @@ if (sprite_index == spr_machpunch2 && floor(image_index) == (image_number - 1))
 if (global.combo > global.highestcombo)
 	global.highestcombo = global.combo;
 if (palettewave == 1)
-	paletteselect = wave(1, sprite_get_width(spr_palette) - 1, 0, 1);
-if (surface_exists(surf_pallete) && paletteselect >= (sprite_get_width(spr_palette) - 1))
+	paletteselect = wave(1, array_length(my_palettes) - 1, 0, 1);
+if (surface_exists(surf_pallete) && paletteselect >= (array_length(my_palettes) - 1))
 	custompalette = true;
 else if (paletteselect < (sprite_get_width(spr_palette) - 1))
 	custompalette = false;

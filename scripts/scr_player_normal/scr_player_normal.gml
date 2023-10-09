@@ -65,8 +65,6 @@ function state_player_normal()
 										sprite_index = spr_danceidle;
 								}
 							}
-							else if (character == "N")
-								sprite_index = spr_idle;
 							else
 								sprite_index = spr_idle;
 						}
@@ -77,26 +75,26 @@ function state_player_normal()
 							sprite_index = spr_winding;
 						}
 					}
-					if (character == "T" || character == "S")
-							{
-								if (global.cane == 1)
-									sprite_index = spr_caneidle;
-								else
-								{
-									sprite_index = spr_idle;
-									if (global.levelname == "fudge")
-										sprite_index = spr_fudgeidle;
-									if (global.levelname == "dance")
-										sprite_index = spr_danceidle;
-								}
-							}
-					else if (facehurt == 1 && character == "P" || character == "T" || character == "S")
+					else if (facehurt == 1 && character == "P")
 					{
 						windingAnim = 0;
 						if (sprite_index != spr_facehurtup && sprite_index != spr_facehurt)
 							sprite_index = spr_facehurtup;
 						if (floor(image_index) == (image_number - 1) && sprite_index == spr_facehurtup)
 							sprite_index = spr_facehurt;
+					}
+					if (character == "T" || character == "S")
+					{
+						if (global.cane == 1)
+							sprite_index = spr_caneidle;
+						else
+						{
+							sprite_index = spr_idle;
+							if (global.levelname == "fudge")
+								sprite_index = spr_fudgeidle;
+							if (global.levelname == "dance")
+								sprite_index = spr_danceidle;
+						}
 					}
 				}
 			}

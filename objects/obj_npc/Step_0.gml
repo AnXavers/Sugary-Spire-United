@@ -1,3 +1,4 @@
+speaking = true;
 if !place_meeting(x, y, obj_player)
 	speaking = false;
 sprite_index = speaking ? speak : idle;

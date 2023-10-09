@@ -43,11 +43,8 @@ if (other.key_up2 && (!instance_exists(obj_palettechanger)))
 		}
 	}
 	other.vsp = 20
-	other.state = (112 << 0)
 	other.visible = false
-	other.customupdate = 1
 	var _depth = (other.depth - 0.5)
-	other.paletteselect = (sprite_get_width(other.spr_palette) - 1)
 	with (instance_create((other.x + random_range(-5, 5)), (other.y + random_range(-5, 5)), obj_bangeffect))
 	{
 		depth = _depth

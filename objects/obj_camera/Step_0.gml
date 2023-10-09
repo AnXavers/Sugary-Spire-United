@@ -215,7 +215,7 @@ switch (room)
 	case hub_w1oldold:
 	case hub_w1old:
 	case hub_w1:
-		window_set_caption("The sweet floor of the Sugary Spire");
+		window_set_caption("The main floor of the Sugary Spire");
 		break;
 	case hub_hallway:
 		window_set_caption("Inside of the fabled Sugary Spire");

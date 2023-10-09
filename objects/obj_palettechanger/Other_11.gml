@@ -10,10 +10,7 @@ if (file != "")
 		var _original = (((("Custom/" + string(player.characters)) + "_") + string(player.customsavedpalette)) + "_palettes.ini")
 		file_copy(file, _original)
 		with (player)
-		{
 			scr_playercolors()
-			customupdate = 1
-		}
 		ini_open((((("Custom/" + string(player.characters)) + "_") + string(player.customsavedpalette)) + "_palettes.ini"))
 		palettename = ini_read_string("General", "PaletteName", "Palette 1")
 		ini_close()
