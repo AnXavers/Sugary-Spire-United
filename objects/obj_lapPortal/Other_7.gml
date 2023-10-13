@@ -1,5 +1,5 @@
-if (sprite_index == spr_lappingportal_create)
+if (sprite_index == obj_player.spr_lapportal_create)
 {
-	sprite_index = spr_lappingportal_idle;
+	sprite_index = obj_player.spr_lapportal_idle;
 	global.enableportal = 2
 }

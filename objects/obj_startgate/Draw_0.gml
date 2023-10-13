@@ -118,13 +118,13 @@ if (showtext)
 			draw_text(x - 5, y - 216, string_repeat("E", (ini_read_string("ERankLength", string(level), 1))))
 		}
 	}
-	draw_sprite(spr_gatecake, _cakespr, x, y - 250);
+	draw_sprite(obj_player.spr_gatehud, _cakespr, x, y - 250);
 	i = 0;
 	collected = "-1";
 	_string = ini_read_string("Highscore", string(level), 0)
 	_string_length = string_length(_string);
 	var pal = colors[i];
-	draw_set_font(global.candlefont);
+	draw_set_font(obj_player.font_collect);
 	draw_set_alpha(1);
 	for (i = 0; i < _string_length; i++)
 	{

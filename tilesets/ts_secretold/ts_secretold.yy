@@ -16,8 +16,8 @@
     "path": "folders/Tile Sets/Levels.yy",
   },
   "spriteId": {
-    "name": "tilespr_secret",
-    "path": "sprites/tilespr_secret/tilespr_secret.yy",
+    "name": "ts_secretold_sprite",
+    "path": "sprites/ts_secretold_sprite/ts_secretold_sprite.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

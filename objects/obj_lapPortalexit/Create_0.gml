@@ -1,6 +1,7 @@
 depth = -95;
 image_speed = 0.35;
 image_index = 0;
+sprite_index = obj_player.spr_lapportal_exit
 if global.inflapping == 1
 {
 	var time_array = scr_laptimes();
@@ -34,5 +35,7 @@ if (global.lapcount == 3 && global.inflapping == 1)
 	scr_controlprompt("[spr_promptfont]The heat is rising...")
 else if global.lapcount == 5
 	scr_controlprompt("[spr_promptfont]Enemies are getting stronger...")
+else if global.lapcount == 10
+	scr_controlprompt("[spr_promptfont]The enemies are starting to multiply...")
 scr_sound(sfx_lapexit)
 cam_lzoom = 0.7

@@ -60,7 +60,7 @@ if (collected != _string)
 	collected = _string;
 }
 var pal = colors[i];
-draw_set_font(global.candlefont);
+draw_set_font(obj_player.font_collect);
 draw_set_alpha(1);
 draw_set_halign(1);
 for (i = 0; i < _string_length; i++)

@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 if (is_hub() || !scr_roomcheck() || global.levelname == "none")
 	exit;
 bobbing = wave(2, -2, 3, 0);
@@ -15,7 +16,7 @@ if (!surface_exists(goo_surface))
 	draw_clear_alpha(0, 0);
 	surface_reset_target();
 }
-else
+else if !obj_player.do_combometer_type
 {
 	surface_set_target(goo_surface);
 	draw_clear_alpha(0, 0);
@@ -25,11 +26,20 @@ else
 	draw_set_blend_mode(0);
 	surface_reset_target();
 	draw_surface(goo_surface, (_cx + combo_x) - 50, (88 + combo_y) - 91);
+	draw_sprite_ext(spr_combometer, -1, _cx + combo_x, 88 + combo_y, 1, 1, 0, c_white, alpha);
+	draw_sprite_ext(spr_combometer_hand, -1, _cx + hand_x, _hy, 1, 1, 0, c_white, alpha);
+	var _ct = string(global.combo) + "x";
+	draw_text(_cx + combo_x, combo_y, _ct);
 }
-draw_sprite_ext(spr_combometer, -1, _cx + combo_x, 88 + combo_y, 1, 1, 0, c_white, alpha);
-draw_sprite_ext(spr_combometer_hand, -1, _cx + hand_x, _hy, 1, 1, 0, c_white, alpha);
-var _ct = string(global.combo) + "x";
-draw_text(_cx + combo_x, combo_y, _ct);
+else if obj_player.do_combometer_type
+{
+	draw_set_halign(fa_right);
+	draw_set_font(global.combopepfont);
+	draw_sprite_ext(spr_tv_combobubble, -1, _cx + combo_x + 160, 218 + combo_y, 1, 1, 0, c_white, alpha);
+	draw_sprite_ext(spr_tv_combobubblefill, -1, _cx - (hand_y * 2), _hy - hand_y, 1, 1, 0, c_white, alpha);
+	var _ct = string(global.combo) + "x";
+	draw_text(_cx + combo_x, combo_y, _ct);
+}
 if !global.oldhud
 {
 	draw_sprite_ext(tvbg, current_bg, 819, 83 + DrawY + bobbing, 1, 1, 0, c_white, 1);

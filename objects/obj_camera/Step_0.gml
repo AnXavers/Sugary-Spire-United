@@ -18,6 +18,8 @@ if (get_panic() && !global.freezeframe)
 			global.collect -= 5;
 			with (instance_create(obj_player.x, obj_player.y, obj_pizzaloss))
 				sprite_index = choose(spr_collect1, spr_collect2, spr_collect3, spr_collect4, spr_collect5);
+			if (global.levelname == "sucrose")
+				scr_sound(sfx_countdown)
 		}
 	}
 	if (global.panic && global.fill <= 0 && obj_tv.timer_out <= 0)
@@ -60,19 +62,19 @@ if (!is_hub() && room != realtitlescreen && room != rm_introVideo && !instance_e
 {
 	if (!global.freezeframe && obj_player.state != 0 && obj_player.state != 18 && room != rank_room && !instance_exists(obj_endlevelfade))
 	{
-		global.playmiliseconds += 1;
+		global.playmiliseconds ++;
 		if (global.playmiliseconds >= 60)
 		{
 			global.playmiliseconds = 0;
-			global.playseconds += 1;
+			global.playseconds ++;
 			if (global.playseconds >= 60)
 			{
 				global.playseconds = 0;
-				global.playminutes += 1;
+				global.playminutes ++;
 				if (global.playminutes >= 60)
 				{
 					global.playminutes = 0;
-					global.playhour += 1;
+					global.playhour ++;
 				}
 			}
 		}

@@ -1,3 +1,3 @@
 event_inherited();
 if global.levelname == "yogurt"
-	instance_destroy()
+	instance_destroy(self, false)

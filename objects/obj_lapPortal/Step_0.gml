@@ -1,5 +1,5 @@
 if global.enableportal == 1
 {
-	sprite_index = spr_lappingportal_create
+	sprite_index = obj_player.spr_lapportal_create
 	image_alpha = 1
 }

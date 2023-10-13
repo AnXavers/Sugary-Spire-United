@@ -41,9 +41,8 @@ switch (type)
 			scr_sound(sfx_combotitle3)
 		break;
 }
+sprite_index = obj_player.spr_combotitle
 if global.language == 2
-	sprite_index = spr_combotitles_BR
+	sprite_index = obj_player.spr_combotitle_BR
 else if global.language == 1
-	sprite_index = spr_combotitles_ES
-else
-	sprite_index = spr_combotitles
+	sprite_index = obj_player.spr_combotitle_ES

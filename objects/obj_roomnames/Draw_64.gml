@@ -4,7 +4,7 @@ if (_message != "NO ROOMNAME FOUND-1265")
 	draw_set_halign(1);
 	draw_set_color(c_white);
 	draw_set_alpha(alpha);
-	draw_sprite(spr_roomnamebg, 0, draw_x, newdraw_y);
+	draw_sprite(obj_player.spr_roomnamehud, 0, draw_x, newdraw_y);
 	draw_set_alpha(1);
 	if (string_width(string_upper(_message)) <= maxwidth)
 		draw_text(draw_x, newdraw_y, string_upper(_message));

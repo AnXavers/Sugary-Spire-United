@@ -6,23 +6,25 @@ if (DrawHUD)
 	{
 		if global.heatmeter
 		{
-			pal_swap_set(spr_heatpal, heatpal, 0);
-			draw_sprite_part_ext(spr_heatmeterunder, obj_stylebar.image_index, 0, 0, (global.style * 4.25) / 4, sprite_get_height(spr_heatmeterunder), -6 + shakeX + cakeX, 8 + DrawY + shakeY, 1, 1, c_white, 1);
-			draw_sprite_ext(spr_heatmeter, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+			pal_swap_set(obj_player.spr_heatmeterpal, heatpal, 0);
+			draw_sprite_part_ext(obj_player.spr_stylebarunder, obj_stylebar.image_index, 0, 0, (global.style * 4.25) / 4, sprite_get_height(obj_player.spr_stylebarunder), -6 + shakeX + cakeX, 8 + DrawY + shakeY, 1, 1, c_white, 1);
+			if (obj_player.character = "V" || obj_player.character = "M" || obj_player.character = "S" || obj_player.character = "T")
+				shader_reset()
+			draw_sprite_ext(obj_player.spr_stylebar, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		}
-		draw_sprite_ext(spr_cakehud, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+		draw_sprite_ext(obj_player.spr_collecthud, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		if (global.collect > global.crank)
-			draw_sprite_ext(spr_cranktopping, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+			draw_sprite_ext(obj_player.spr_crankhud, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		if (global.collect > global.brank)
-			draw_sprite_ext(spr_branktopping, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+			draw_sprite_ext(obj_player.spr_brankhud, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		if (global.collect > global.arank)
-			draw_sprite_ext(spr_aranktopping, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+			draw_sprite_ext(obj_player.spr_arankhud, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		if (global.collect > global.srank)
-			draw_sprite_ext(spr_sranktopping, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
+			draw_sprite_ext(obj_player.spr_srankhud, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		shader_reset();
 		if !global.newscorefont
 		{
-			draw_set_font(global.collectfont);
+			draw_set_font(obj_player.font_collect);
 			draw_set_halign(1);
 			draw_set_color(c_white);
 			var _string = string(global.collect);
@@ -36,7 +38,7 @@ if (DrawHUD)
 		}
 		else
 		{
-			draw_set_font(global.candlefont);
+			draw_set_font(obj_player.font_collect_new);
 			draw_set_halign(1);
 			var _string = string(global.collect);
 			var _string_length = string_length(_string);

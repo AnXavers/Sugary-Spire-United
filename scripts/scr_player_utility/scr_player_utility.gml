@@ -5,7 +5,7 @@ function do_taunt()
 		taunttimer = 20;
 		scr_taunt_storeVariables();
 		state = 45;
-		if (supertauntcharged == 1 && key_up)
+		if (supertauntcharged == 1 && key_up && tauntStored.state != states.trick)
 		{
 			scr_sound(sound_supertaunt1);
 			image_index = 0;
@@ -15,6 +15,13 @@ function do_taunt()
 		{
 			image_index = irandom_range(0, sprite_get_number(spr_taunt));
 			sprite_index = spr_taunt;
+			if tauntStored.state == states.trick
+			{
+				image_index = 0;
+				sprite_index = choose(spr_supertaunt1, spr_supertaunt2, spr_supertaunt3);
+				global.collect += (15 + (trickcount * 5))
+				trickcount += 1
+			}
 		}
 		instance_create(x, y, obj_taunteffect);
 		with (obj_baddie)

@@ -63,7 +63,7 @@ with (obj_player)
 		if (!using_pattern)
 		{
 			if (!surface_exists(my_pal_surface))
-				my_pal_surface = surface_create(sprite_get_width(spr_pal2), sprite_get_height(spr_pal2));
+				my_pal_surface = surface_create(sprite_get_width(spr_pal_Pizzelle), sprite_get_height(spr_pal_Pizzelle));
 			if (!buffer_exists(my_pal_buffer))
 			{
 				trace("buffer created");
@@ -71,13 +71,13 @@ with (obj_player)
 				{
 					surface_set_target(my_pal_surface);
 					draw_clear_alpha(c_white, 0);
-					pal_swap_draw_palette(spr_pal2, 0, 0, 0);
-					pal_swap_draw_palette(spr_pal2, 1, 1, 0);
+					pal_swap_draw_palette(spr_pal_Pizzelle, 0, 0, 0);
+					pal_swap_draw_palette(spr_pal_Pizzelle, 1, 1, 0);
 					for (var i = 0; i < array_length(my_color_array); i++)
 						draw_point_color(1, i, my_color_array[i]);
 					surface_reset_target();
 				}
-				my_pal_buffer = buffer_create(sprite_get_width(spr_pal2) * sprite_get_height(spr_pal2) * 4, 0, 1);
+				my_pal_buffer = buffer_create(sprite_get_width(spr_pal_Pizzelle) * sprite_get_height(spr_pal_Pizzelle) * 4, 0, 1);
 				buffer_get_surface(my_pal_buffer, my_pal_surface, 0);
 			}
 			if (buffer_exists(my_pal_buffer))

@@ -96,7 +96,7 @@ function scr_enemy_throw()
 				bombreset = 400;
 				if (!audio_is_playing(sound_enemythrow))
 					scr_sound(sound_enemythrow);
-				if (!painter)
+				if (!painter && important)
 				{
 					with (instance_create(x, y, obj_cottonwitchprojectile))
 						image_xscale = other.image_xscale;

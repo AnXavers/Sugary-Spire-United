@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_silverclone",
-    "path": "sprites/spr_silverclone/spr_silverclone.yy",
+    "name": "spr_crasher",
+    "path": "sprites/spr_crasher/spr_crasher.yy",
   },
   "spriteMaskId": null,
   "visible": true,

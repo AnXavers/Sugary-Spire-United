@@ -1,25 +1,21 @@
-audio_stop_sound(sound_taunt1);
-audio_stop_sound(sound_taunt2);
-audio_stop_sound(sound_taunt3);
-audio_stop_sound(sound_taunt4);
-audio_stop_sound(sound_taunt5);
-audio_stop_sound(sound_taunt6);
-audio_stop_sound(sound_taunt7);
-audio_stop_sound(sound_taunt8);
-if obj_player.character == "P"
+trickxpos = 50
+trickalpha = 0.5
+with obj_player
 {
-	tauntsound = choose(sound_taunt1, sound_taunt2, sound_taunt3, sound_taunt4, sound_taunt5, sound_taunt6, sound_taunt7);
-	if chance(0.01)
-		tauntsound = sfx_goofytaunt
+	if tauntStored.state != states.trick
+	{
+		tauntsound = asset_get_index(sfx_taunt + string(irandom_range(1, taunt_upperrange)))
+		if (character == "P" && chance(0.01))
+			tauntsound = sfx_goofytaunt1
+		scr_sound(tauntsound);
+	}
+	else
+	{
+		scr_sound(asset_get_index("sfx_trick" + string(clamp(trickcount, 1, 6))))
+	}
 }
-else if obj_player.character == "N"
-	tauntsound = choose(sfx_tauntpizzano1, sfx_tauntpizzano2, sfx_tauntpizzano3, sfx_tauntpizzano4, sfx_tauntpizzano5, sfx_tauntpizzano6, sfx_tauntpizzano7, sfx_tauntpizzano8);
-else if (obj_player.character == "T" || obj_player.character == "S" || obj_player.character == "V" || obj_player.character == "M")
-	tauntsound = sound_tauntpeppino
-else
-	tauntsound = choose(sound_tauntextra1, sound_tauntextra2)
-scr_sound(tauntsound);
 image_speed = 0.5;
+sprite_index = spr_taunteffect
 depth = -1
 if (global.panic = 1 && global.exitgatetaunt < 10 && place_meeting(x, y, obj_exitgate))
 {

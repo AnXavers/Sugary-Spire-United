@@ -318,6 +318,25 @@ function scr_characterglobal()
 			img_featuringme = 0;
 			spr_coneball_player = spr_coneball_new
 			spr_coneball_melting_player = spr_coneball_melting
+			spr_stylebar = spr_heatmeter
+			spr_stylebarunder = spr_heatmeterunder
+			spr_collecthud = spr_cakehud
+			spr_crankhud = spr_cranktopping
+			spr_brankhud = spr_branktopping
+			spr_arankhud = spr_aranktopping
+			spr_srankhud = spr_sranktopping
+			spr_gatehud = spr_gatecake
+			spr_combotitle = spr_combotitles
+			spr_combotitle_BR = spr_combotitles_BR
+			spr_combotitle_ES = spr_combotitles_ES
+			spr_combotitle_truly = spr_combotruly
+			spr_roomnamehud = spr_roomnamebg
+			spr_lapportal_create = spr_lappingportal_create
+			spr_lapportal_idle = spr_lappingportal_idle
+			spr_lapportal_enter = spr_lappingportal_enter
+			spr_lapportal_exit = spr_lappingportal_exit
+			spr_heatmeterpal = spr_heatpal
+			spr_escapepopup = spr_sugarrush
 			if global.newplayeranim == 1
 			{
 				spr_mach1 = spr_player_mach1_new;
@@ -355,6 +374,8 @@ function scr_characterglobal()
 			}
 			// fonts
 			font_lapcount = global.lapcountfont
+			font_collect_new = global.candlefont
+			font_collect = global.collectfont
 			// audio
 			mu_escapesong = mu_pizzelle_escape
 			mu_lap2song = mu_pizzelle_lap
@@ -366,7 +387,10 @@ function scr_characterglobal()
 			sfx_collectmassive = sound_pizzagot
 			sfx_collectlarge = sound_points
 			sfx_collect = sound_points
-			// movesets
+			sfx_taunt = "sound_taunt"
+			taunt_upperrange = 7
+			sfx_supertaunt = sound_supertaunt1
+			// toggles
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
 			do_pizzano_sjump = false;
@@ -385,6 +409,7 @@ function scr_characterglobal()
 			do_freefall_spr = true;
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
+			do_combometer_type = 0;
 			break;
 		case "N":
 			spr_idle = spr_pizzano_idle;
@@ -519,8 +544,31 @@ function scr_characterglobal()
 			spr_lapvisual_player = spr_lapvisual
 			spr_lapbg_player = spr_lapbg
 			img_featuringme = 1;
+			spr_stylebar = spr_heatmeter
+			spr_stylebarunder = spr_heatmeterunder
+			spr_collecthud = spr_cakehud
+			spr_crankhud = spr_cranktopping
+			spr_brankhud = spr_branktopping
+			spr_arankhud = spr_aranktopping
+			spr_srankhud = spr_sranktopping
+			spr_gatehud = spr_gatecake
+			spr_combotitle = spr_combotitles
+			spr_combotitle_BR = spr_combotitles_BR
+			spr_combotitle_ES = spr_combotitles_ES
+			spr_combotitle_truly = spr_combotruly
+			spr_coneball_player = spr_coneball_new
+			spr_coneball_melting_player = spr_coneball_melting
+			spr_roomnamehud = spr_roomnamebg
+			spr_lapportal_create = spr_lappingportal_create
+			spr_lapportal_idle = spr_lappingportal_idle
+			spr_lapportal_enter = spr_lappingportal_enter
+			spr_lapportal_exit = spr_lappingportal_exit
+			spr_heatmeterpal = spr_heatpal
+			spr_escapepopup = spr_sugarrush
 			// fonts
 			font_lapcount = global.lapcountfont
+			font_collect_new = global.candlefont
+			font_collect = global.collectfont
 			// audio
 			mu_escapesong = mu_pizzano_escape
 			mu_lap2song = mu_pizzano_lap
@@ -532,7 +580,10 @@ function scr_characterglobal()
 			sfx_collectmassive = sound_pizzagot
 			sfx_collectlarge = sound_points
 			sfx_collect = sound_points
-			// movesets
+			sfx_taunt = "sound_taunt"
+			taunt_upperrange = 7
+			sfx_supertaunt = sound_supertaunt1
+			// toggles
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
 			do_pizzano_sjump = true;
@@ -551,6 +602,7 @@ function scr_characterglobal()
 			do_freefall_spr = false;
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
+			do_combometer_type = 0;
 			break;
 		case "G":
 			spr_idle = spr_gumbob_idle;
@@ -650,8 +702,31 @@ function scr_characterglobal()
 			spr_crazyrun = spr_gumbob_mach3;
 			spr_lapvisual_player = spr_lapvisual
 			spr_lapbg_player = spr_lapbg
+			spr_stylebar = spr_heatmeter
+			spr_stylebarunder = spr_heatmeterunder
+			spr_collecthud = spr_cakehud
+			spr_crankhud = spr_cranktopping
+			spr_brankhud = spr_branktopping
+			spr_arankhud = spr_aranktopping
+			spr_srankhud = spr_sranktopping
+			spr_gatehud = spr_gatecake
+			spr_combotitle = spr_combotitles
+			spr_combotitle_BR = spr_combotitles_BR
+			spr_combotitle_ES = spr_combotitles_ES
+			spr_combotitle_truly = spr_combotruly
+			spr_coneball_player = spr_coneball_new
+			spr_coneball_melting_player = spr_coneball_melting
+			spr_roomnamehud = spr_roomnamebg
+			spr_lapportal_create = spr_lappingportal_create
+			spr_lapportal_idle = spr_lappingportal_idle
+			spr_lapportal_enter = spr_lappingportal_enter
+			spr_lapportal_exit = spr_lappingportal_exit
+			spr_heatmeterpal = spr_heatpal
+			spr_escapepopup = spr_sugarrush
 			// fonts
 			font_lapcount = global.lapcountfont
+			font_collect_new = global.candlefont
+			font_collect = global.collectfont
 			// audio
 			mu_escapesong = mu_coneboy_escape
 			mu_lap2song = mu_pizzano_lap
@@ -682,6 +757,7 @@ function scr_characterglobal()
 			do_freefall_spr = false;
 			do_gumbob_propeller = true;
 			do_noise_bomb = false;
+			do_combometer_type = 0;
 			break;
 		case "C":
 			if (inhalingenemy == 0 && headless == 0)
@@ -798,8 +874,31 @@ function scr_characterglobal()
 			img_featuringme = 3;
 			spr_lapvisual_player = spr_lapvisual
 			spr_lapbg_player = spr_lapbg
+			spr_stylebar = spr_heatmeter
+			spr_stylebarunder = spr_heatmeterunder
+			spr_collecthud = spr_cakehud
+			spr_crankhud = spr_cranktopping
+			spr_brankhud = spr_branktopping
+			spr_arankhud = spr_aranktopping
+			spr_srankhud = spr_sranktopping
+			spr_gatehud = spr_gatecake
+			spr_combotitle = spr_combotitles
+			spr_combotitle_BR = spr_combotitles_BR
+			spr_combotitle_ES = spr_combotitles_ES
+			spr_combotitle_truly = spr_combotruly
+			spr_coneball_player = spr_coneball_new
+			spr_coneball_melting_player = spr_coneball_melting
+			spr_roomnamehud = spr_roomnamebg
+			spr_lapportal_create = spr_lappingportal_create
+			spr_lapportal_idle = spr_lappingportal_idle
+			spr_lapportal_enter = spr_lappingportal_enter
+			spr_lapportal_exit = spr_lappingportal_exit
+			spr_heatmeterpal = spr_heatpal
+			spr_escapepopup = spr_sugarrush
 			// fonts
 			font_lapcount = global.lapcountfont
+			font_collect_new = global.candlefont
+			font_collect = global.collectfont
 			// audio
 			mu_escapesong = mu_coneboy_escape
 			mu_lap2song = mu_pizzano_lap
@@ -811,7 +910,7 @@ function scr_characterglobal()
 			sfx_collectmassive = sound_pizzagot
 			sfx_collectlarge = sound_points
 			sfx_collect = sound_points
-			// movesets
+			// toggles
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
 			do_pizzano_sjump = false;
@@ -830,6 +929,7 @@ function scr_characterglobal()
 			do_freefall_spr = false;
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
+			do_combometer_type = 0;
 			break;
 		case "T":
 			spr_idle = spr_Noise_idle;
@@ -1029,8 +1129,8 @@ function scr_characterglobal()
 			spr_confectcage_help = spr_toppinhelp;
 			spr_gummyharry_idle = spr_hungrypillar;
 			spr_gummyharry_dead = spr_hungrypillar_dead;
-			spr_player_rankE = spr_rankP;
-			spr_player_rankP = spr_rankP;
+			spr_player_rankE = spr_rankP_pep;
+			spr_player_rankP = spr_rankP_pep;
 			spr_player_rankS = spr_noise_rankS;
 			spr_player_rankA = spr_noise_rankA;
 			spr_player_rankB = spr_noise_rankB;
@@ -1101,8 +1201,29 @@ function scr_characterglobal()
 			spr_coneball_player = spr_pizzaface
 			spr_coneball_melting_player = spr_pizzahead_haywire
 			img_featuringme = 5;
+			spr_stylebar = spr_heatmeter_pep
+			spr_stylebarunder = spr_heatmeter_fill
+			spr_collecthud = spr_pizzascore
+			spr_crankhud = spr_pizzascore_olive
+			spr_brankhud = spr_pizzascore_pepper
+			spr_arankhud = spr_pizzascore_shroom
+			spr_srankhud = spr_pizzascore_pepperoni
+			spr_gatehud = spr_pizzascore
+			spr_combotitle = spr_comboend_title1
+			spr_combotitle_BR = spr_comboend_title1
+			spr_combotitle_ES = spr_comboend_title1
+			spr_combotitle_truly = spr_combovery
+			spr_roomnamehud = spr_roomnamebg_pep
+			spr_lapportal_create = spr_pizzaportal_appear
+			spr_lapportal_idle = spr_pizzaportal
+			spr_lapportal_enter = spr_pizzaportalend
+			spr_lapportal_exit = spr_pizzaportal_appear
+			spr_heatmeterpal = spr_heatmeter_palette
+			spr_escapepopup = spr_itspizzatime
 			// fonts
 			font_lapcount = global.lapcountpepfont
+			font_collect_new = global.collectpepfont
+			font_collect = global.collectpepfont
 			// audio
 			mu_escapesong = mu_noise_escape
 			mu_lap2song = mu_noise_lap
@@ -1114,7 +1235,7 @@ function scr_characterglobal()
 			sfx_collectmassive = sfx_collectgiant
 			sfx_collectlarge = sfx_collectbig
 			sfx_collect = sfx_collectsmall
-			// movesets
+			// toggles
 			do_sjump_cancel = true;
 			do_groundpound_cancel = true;
 			do_pizzano_sjump = true;
@@ -1133,6 +1254,7 @@ function scr_characterglobal()
 			do_freefall_spr = false;
 			do_gumbob_propeller = false;
 			do_noise_bomb = true;
+			do_combometer_type = 1;
 			break;
 		case "S":
 			spr_idle = spr_player_idle_pep;
@@ -1353,14 +1475,14 @@ function scr_characterglobal()
 			spr_confectcage_help = spr_toppinhelp;
 			spr_gummyharry_idle = spr_hungrypillar;
 			spr_gummyharry_dead = spr_hungrypillar_dead;
-			spr_player_rankE = spr_rankP;
-			spr_player_rankP = spr_rankP;
-			spr_player_rankS = spr_noise_rankS;
-			spr_player_rankA = spr_noise_rankA;
-			spr_player_rankB = spr_noise_rankB;
-			spr_player_rankC = spr_noise_rankC;
-			spr_player_rankD = spr_noise_rankD;
-			spr_rankwait = spr_noise_rankwait;
+			spr_player_rankE = spr_rankP_pep;
+			spr_player_rankP = spr_rankP_pep;
+			spr_player_rankS = spr_rankS_pep;
+			spr_player_rankA = spr_rankA_pep;
+			spr_player_rankB = spr_rankB_pep;
+			spr_player_rankC = spr_rankC_pep;
+			spr_player_rankD = spr_rankD_pep;
+			spr_rankwait = spr_player_rankwait;
 			spr_rankbubble_E = spr_rankbubble_e;
 			spr_rankbubble_Efilled = spr_rankbubble_e;
 			spr_rankbubble_Eempty = spr_rankbubble_e_empty;
@@ -1432,8 +1554,29 @@ function scr_characterglobal()
 			spr_coneball_player = spr_pizzaface
 			spr_coneball_melting_player = spr_pizzahead_haywire
 			img_featuringme = 4;
+			spr_stylebar = spr_heatmeter_pep
+			spr_stylebarunder = spr_heatmeter_fill
+			spr_collecthud = spr_pizzascore
+			spr_crankhud = spr_pizzascore_olive
+			spr_brankhud = spr_pizzascore_pepper
+			spr_arankhud = spr_pizzascore_shroom
+			spr_srankhud = spr_pizzascore_pepperoni
+			spr_gatehud = spr_pizzascore
+			spr_combotitle = spr_comboend_title1
+			spr_combotitle_BR = spr_comboend_title1
+			spr_combotitle_ES = spr_comboend_title1
+			spr_combotitle_truly = spr_combovery
+			spr_roomnamehud = spr_roomnamebg_pep
+			spr_lapportal_create = spr_pizzaportal_appear
+			spr_lapportal_idle = spr_pizzaportal
+			spr_lapportal_enter = spr_pizzaportalend
+			spr_lapportal_exit = spr_pizzaportal_appear
+			spr_heatmeterpal = spr_heatmeter_palette
+			spr_escapepopup = spr_itspizzatime
 			// fonts
 			font_lapcount = global.lapcountpepfont
+			font_collect_new = global.collectpepfont
+			font_collect = global.collectpepfont
 			// audio
 			mu_escapesong = mu_peppino_escape
 			mu_lap2song = mu_peppino_lap
@@ -1445,7 +1588,7 @@ function scr_characterglobal()
 			sfx_collectmassive = sfx_collectgiant
 			sfx_collectlarge = sfx_collectbig
 			sfx_collect = sfx_collectsmall
-			// movesets
+			// toggles
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
 			do_pizzano_sjump = false;
@@ -1464,6 +1607,7 @@ function scr_characterglobal()
 			do_freefall_spr = true;
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
+			do_combometer_type = 1;
 			break;
 		case "V":
 			spr_idle = spr_playerV_idle;
@@ -1765,8 +1909,29 @@ function scr_characterglobal()
 			spr_coneball_player = spr_pizzaface
 			spr_coneball_melting_player = spr_pizzahead_haywire
 			img_featuringme = 6;
+			spr_stylebar = spr_heatmeter_pep
+			spr_stylebarunder = spr_heatmeter_fill
+			spr_collecthud = spr_pizzascore
+			spr_crankhud = spr_pizzascore_olive
+			spr_brankhud = spr_pizzascore_pepper
+			spr_arankhud = spr_pizzascore_shroom
+			spr_srankhud = spr_pizzascore_pepperoni
+			spr_gatehud = spr_pizzascore
+			spr_combotitle = spr_comboend_title1
+			spr_combotitle_BR = spr_comboend_title1
+			spr_combotitle_ES = spr_comboend_title1
+			spr_combotitle_truly = spr_combovery
+			spr_roomnamehud = spr_roomnamebg_pep
+			spr_lapportal_create = spr_pizzaportal_appear
+			spr_lapportal_idle = spr_pizzaportal
+			spr_lapportal_enter = spr_pizzaportalend
+			spr_lapportal_exit = spr_pizzaportal_appear
+			spr_heatmeterpal = spr_heatmeter_palette
+			spr_escapepopup = spr_itspizzatime
 			// fonts
 			font_lapcount = global.lapcountpepfont
+			font_collect_new = global.collectpepfont
+			font_collect = global.collectpepfont
 			// audio
 			mu_escapesong = mu_vigilante_escape
 			mu_lap2song = mu_noise_lap
@@ -1778,7 +1943,7 @@ function scr_characterglobal()
 			sfx_collectmassive = sfx_collectgiant
 			sfx_collectlarge = sfx_collectbig
 			sfx_collect = sfx_collectsmall
-			// movesets
+			// toggles
 			do_groundpound_cancel = false;
 			do_sjump_cancel = true;
 			do_pizzano_sjump = false;
@@ -1797,6 +1962,7 @@ function scr_characterglobal()
 			do_freefall_spr = true;
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
+			do_combometer_type = 1;
 			break;
 		case "M":
 			spr_idle = spr_player_idle_pep;
@@ -2102,8 +2268,23 @@ function scr_characterglobal()
 			spr_lapportal_exit = spr_pizzaportal_appear
 			spr_stylebar = spr_heatmeter_pep
 			spr_stylebarunder = spr_heatmeter_fill
+			spr_collecthud = spr_pizzascore
+			spr_crankhud = spr_pizzascore_olive
+			spr_brankhud = spr_pizzascore_pepper
+			spr_arankhud = spr_pizzascore_shroom
+			spr_srankhud = spr_pizzascore_pepperoni
+			spr_gatehud = spr_pizzascore
+			spr_combotitle = spr_comboend_title1
+			spr_combotitle_BR = spr_comboend_title1
+			spr_combotitle_ES = spr_comboend_title1
+			spr_combotitle_truly = spr_combovery
+			spr_roomnamehud = spr_roomnamebg_pep
+			spr_heatmeterpal = spr_heatmeter_palette
+			spr_escapepopup = spr_itspizzatime
 			// fonts
 			font_lapcount = global.lapcountpepfont
+			font_collect_new = global.collectpepfont
+			font_collect = global.collectpepfont
 			// audio
 			mu_escapesong = mu_noise_escape
 			mu_lap2song = mu_noise_lap
@@ -2115,7 +2296,7 @@ function scr_characterglobal()
 			sfx_collectmassive = sfx_collectgiant
 			sfx_collectlarge = sfx_collectbig
 			sfx_collect = sfx_collectsmall
-			// movesets
+			// toggles
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
 			do_pizzano_sjump = false;
@@ -2134,6 +2315,7 @@ function scr_characterglobal()
 			do_freefall_spr = false;
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
+			do_combometer_type = 1;
 			break;
 	}
 }

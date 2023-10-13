@@ -34,4 +34,5 @@ function state_player_trick()
 	image_speed = 0.5;
 	if (image_index >= 11 && image_index < 12)
 		image_speed = 0;
+	do_taunt()
 }

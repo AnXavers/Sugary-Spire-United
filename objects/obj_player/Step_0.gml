@@ -294,7 +294,7 @@ if (state != 106 && state != 0)
 	kungairtime = 0;
 }
 var _cTitle = floor(global.combo / 5);
-_cTitle = wrap(_cTitle, 0, sprite_get_number(spr_combotitles) - 1);
+_cTitle = wrap(_cTitle, 0, sprite_get_number(obj_player.spr_combotitle) - 1);
 if (oldComboTitle != _cTitle && _cTitle != 0)
 {
 	oldComboTitle = _cTitle;

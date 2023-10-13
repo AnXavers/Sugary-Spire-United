@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.34,
+  "duration": 0.340907,
   "parent": {
     "name": "Cotton",
     "path": "folders/Sounds/Sounds/Player/Cotton.yy",

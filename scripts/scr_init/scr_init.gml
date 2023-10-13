@@ -53,8 +53,10 @@ global.buttonfont = font_add_sprite_ext(spr_buttonfont, "ABCDEFGHIJKLMNOPQRSTUVW
 global.promptfont = font_add_sprite_ext(spr_promptfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.:!0123456789?'\"ÁÉÍÓÚáéíóú_-[]▼()&#风雨廊桥전태양*яиБжидГзвбнль", 1, 0);
 global.npcfont = font_add_sprite_ext(spr_npcfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!,.:0123456789'?-", 1, 2);
 global.rankfont = font_add_sprite_ext(spr_rankbubble_e_font, "E", 1, -10);
-global.fellowfont = font_add_sprite_ext(spr_harddestroyable, "A", 1, -10);
 global.lapcountpepfont = font_add_sprite_ext(spr_lapcount_font_pep, "0123456789", 1, 2);
+global.collectpepfont = font_add_sprite_ext(spr_font_collect, "0123456789", 1, 0);
+global.timerpepfont = font_add_sprite_ext(spr_wartimer_font1, "1234567890", 0, 6);
+global.combopepfont = font_add_sprite_ext(spr_tv_combobubbletext, "1234567890", 1, 0);
 global.shellactivate = false;
 global.showcollisions = false;
 global.debugmode = false;
@@ -94,7 +96,17 @@ for (var i = 0; object_exists(i); i++)
 for (var i = 0; script_exists(i); i++)
 	global.scriptlist[i] = script_get_name(i);
 for (var i = 0; sprite_exists(i); i++)
+{
 	global.spritelist[i] = sprite_get_name(i);
+	if string_starts_with(sprite_get_name(i), "ts_")
+	{
+		global.tilesetlist[I] = sprite_get_name(i)
+		I += 1
+	}
+}
+I = 0
+for (var i = 0; room_exists(i); i++)
+	global.roomlist[i] = room_get_name(i);
 for (var i = 0; audio_exists(i); i++)
 {
 	global.audiolist[i] = audio_get_name(i);

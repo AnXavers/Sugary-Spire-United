@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 53.485737,
+  "duration": 50.4322,
   "parent": {
     "name": "Escape",
     "path": "folders/Sounds/Music/Levels/Global/Escape.yy",
@@ -18,6 +18,6 @@
   "preload": false,
   "sampleRate": 44100,
   "soundFile": "mu_escapesecret.ogg",
-  "type": 0,
+  "type": 1,
   "volume": 1.0,
 }

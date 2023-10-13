@@ -1,4 +1,4 @@
-if ((ds_list_find_index(global.saveroom, id) == -1) && (global.levelname != "yogurt"))
+if (ds_list_find_index(global.saveroom, id) == -1)
 {
 	repeat (2)
 	{
