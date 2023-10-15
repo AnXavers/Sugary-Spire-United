@@ -213,5 +213,63 @@ function scr_tvsprites()
 		janitor2tvspr = spr_playerPZ_happyHUD
 		DrawX = 715
 		OldDrawY = 10
+		switch (obj_player.character)
+		{
+			case "S":
+				idletvspr = spr_pepinoHUD;
+				combotvspr = spr_pepinoHUDmenacing;
+				happytvspr = spr_pepinoHUDhappy;
+				escapetvspr = spr_noiseHUD_panic;
+				tvchange1 = spr_pepinoHUD;
+				tvchange2 = spr_pepinoHUD;
+				cottontvspr = spr_pepinoHUDknight;
+				hurttvspr = spr_pepinoHUDhurt;
+				minecarttvspr = spr_pepinoHUDknight;
+				bombtvspr = spr_pepinoHUDbombend;
+				firetvspr = spr_pepinoHUDbombend;
+				angrytvspr = spr_pepinoHUDmenacing;
+				orbtvspr = spr_pepinoHUDstun;
+				ufotvspr = spr_pepinoHUDknight;
+				mach1tvspr = spr_pepinoHUDmach1;
+				mach2tvspr = spr_pepinoHUDmach2;
+				mach3tvspr = spr_pepinoHUDmach3;
+				mach4tvspr = spr_pepinoHUDmach4;
+				machrolltvspr = spr_pepinoHUDrolling;
+				frostburntvspr = spr_pepinoHUDknight;
+				hooktvspr = spr_pepinoHUDstun;
+				marshdogspr = spr_pepinoHUDknight;
+				panictvspr = spr_pepinoHUDpanic;
+				laptvspr = spr_pepinoHUDscream;
+				lap3tvspr = spr_pepinoHUD3hp;
+				lap4tvspr = spr_pepinoHUD1hp;
+				harrytvspr = spr_pepinoHUDmenacing;
+				break;
+			case "T":
+				idletvspr = spr_noiseHUD_idle;
+				combotvspr = spr_noiseHUD_menacing;
+				happytvspr = spr_noiseHUD_happy;
+				escapetvspr = spr_noiseHUD_panic;
+				tvchange1 = spr_noiseHUD_idle;
+				tvchange2 = spr_noiseHUD_idle;
+				cottontvspr = spr_noiseHUD_knight;
+				hurttvspr = spr_noiseHUD_hurt;
+				minecarttvspr = spr_noiseHUD_knight;
+				bombtvspr = spr_noiseHUD_knight;
+				firetvspr = spr_noiseHUD_angry;
+				angrytvspr = spr_noiseHUD_angry;
+				orbtvspr = spr_noiseHUD_knight;
+				ufotvspr = spr_noiseHUD_knight;
+				mach1tvspr = spr_noiseHUD_mach1;
+				mach2tvspr = spr_noiseHUD_mach2;
+				mach3tvspr = spr_noiseHUD_mach3;
+				mach4tvspr = spr_noiseHUD_crazyrun;
+				machrolltvspr = spr_pepinoHUDrolling;
+				frostburntvspr = spr_noiseHUD_knight;
+				hooktvspr = spr_noiseHUD_lowhealth;
+				marshdogspr = spr_noiseHUD_knight;
+				panictvspr = spr_noiseHUD_panic;
+				secrettvspr = spr_noiseHUD_happy
+				laptvspr = spr_noiseHUD_lowhealth;
+		}
 	}
 }

@@ -78,7 +78,8 @@ function cutscene_lapPortal_middle()
 	{
 		cutscene_event_end();
 		obj_player.visible = true;
-		obj_camera.cam_lzoom = 1
+		instance_destroy(obj_cameraRegion)
+		global.maintainzoom = 0;
 	}
 }
 function cutscene_lapPortal_end()
@@ -98,5 +99,39 @@ function cutscene_lapPortal_end()
 	{
 		instance_create(0, 0, obj_lap2visual);
 		cutscene_event_end();
+	}
+}
+function cutscene_harryFreeze()
+{
+	global.combofreeze = 30;
+	global.harryfxval = lerp(global.harryfxval, 0.6, 0.05)
+	fx_set_parameter(global.harryfx, "g_TintCol", [global.harryfxval, global.harryfxval, global.harryfxval, 1])
+	with obj_camera
+	{
+		freezetype = 0
+		event_user(0)
+	}
+	with (obj_harrydead)
+	{
+		depth = -2
+		hsp = 0;
+		vsp = 0;
+		x = horigin + random_range(-1, 1)
+		grav = 0;
+	}
+	with (obj_player)
+	{
+		state = 110;
+		hsp = 0;
+		vsp = 0;
+		image_speed = 0;
+	}
+	if obj_harrydead.alarm[1] <= 1
+	{
+		cutscene_event_end();
+		obj_player.hsp = obj_harrydead.freezehsp
+		obj_player.vsp = obj_harrydead.freezevsp
+		obj_player.state = obj_harrydead.freezestate
+		obj_player.image_speed = 0.35
 	}
 }

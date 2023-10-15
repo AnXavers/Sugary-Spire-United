@@ -25,11 +25,11 @@ function create_dialogue(argument0, argument1 = noone, argument2 = noone)
 {
 	return [argument0, argument1, argument2];
 }
-function create_choice()
+function create_choice(argument0, argument1)
 {
 	return [argument0, argument1];
 }
-function queue_choices()
+function queue_choices(argument0, argument1)
 {
 	reset_dialogue();
 	with (instance_create(x, y, obj_dialogue_choices))
@@ -37,7 +37,7 @@ function queue_choices()
 	global.dialogchoices = argument0;
 	show_debug_message(global.dialogchoices);
 }
-function text_wrap()
+function text_wrap(argument0, argument1, argument2, argument3)
 {
 	var pos_space = -1;
 	var pos_current = 1;
@@ -64,7 +64,7 @@ function text_wrap()
 				pos_space = -1;
 			}
 		}
-		pos_current += 1;
+		pos_current++;
 		if (string_char_at(text_current, pos_current) == " ")
 			pos_space = pos_current;
 	}

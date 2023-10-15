@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 audio_stop_sound(sfx_harrypause)
 with (instance_create(x, y, obj_harrydead))
 	paletteselect = other.paletteselect;
@@ -31,10 +30,10 @@ if (set_theme != -4)
 	obj_music.escapemusic = set_theme;
 global.combofreeze = 30;
 global.combotime = 60;
-obj_camera.cam_lzoom = 1;
+instance_destroy(obj_cameraRegion)
 audio_pause_all()
 scr_sound(sound_explosion)
 screen_flash(1)
 layer_destroy(global.harryeffect)
-global.freezeframetimer = 5
+obj_player.cutscene = 0
 instance_destroy()

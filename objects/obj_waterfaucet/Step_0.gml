@@ -23,13 +23,13 @@ if (player.state == 17 && place_meeting(x, y, player))
 			{
 				if (sprite_index == spr_onoffswitch_blue)
 				{
-					timesturned += 1;
+					timesturned++;
 					sprite_index = spr_onoffswitch_bluetored;
 				}
 				else
 				{
 					sprite_index = spr_onoffswitch_redtoblue;
-					timesturned += 1;
+					timesturned++;
 				}
 				scr_sound(sound_switch)
 				can_switch = false;

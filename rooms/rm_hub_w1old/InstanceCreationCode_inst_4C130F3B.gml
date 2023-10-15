@@ -1,0 +1,1 @@
+global.isoldw1 = 1

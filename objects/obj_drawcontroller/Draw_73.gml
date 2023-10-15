@@ -98,7 +98,7 @@ if (sucrose_lighting || bloodsauce_lighting || dance_lighting)
 		}
 		draw_set_blend_mode(3);
 		with (obj_lightsource)
-			draw_sprite_ext(sprite_index, image_index, x - cam_x, y - cam_y, 1, 1, 0, c_white, 1);
+			draw_sprite_ext(sprite_index, image_index, x - cam_x, y - cam_y, image_xscale, image_yscale, 0, c_white, 1);
 		with (obj_bombexplosion)
 		{
 			var set = abs((image_index / image_number) - 1);

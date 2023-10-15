@@ -60,7 +60,7 @@ function cutscene_wait_dialog()
 	if (finish)
 		cutscene_event_end();
 }
-function cutscene_lerp_actor()
+function cutscene_lerp_actor(argument0, argument1, argument2, argument3)
 {
 	var finish = false;
 	var _realActor = cutscene_get_actor(argument0);

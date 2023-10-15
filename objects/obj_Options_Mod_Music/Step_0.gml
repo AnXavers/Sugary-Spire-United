@@ -17,7 +17,7 @@ if canmove
 	}
 	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 5)
 	{
-		optionselected += 1;
+		optionselected++;
 		scr_sound(sound_step);
 		optionsaved_defaultlap = global.defaultlapmusic;
 		optionsaved_mu_lap10 = global.mulap10;

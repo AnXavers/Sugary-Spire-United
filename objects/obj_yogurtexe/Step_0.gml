@@ -74,5 +74,5 @@ else
 	if (x > (obj_player.x - 32) && x < (obj_player.x + 32) && (!global.GregMode))
 		image_index = 1
 }
-y_timer += 1
+y_timer++
 global.fill_4 -= 1

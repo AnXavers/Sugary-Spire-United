@@ -54,7 +54,7 @@ function state_player_frostburn()
 			sprite_index = spr_player_skatedive;
 			vsp = 14;
 			if (movespeed < 10)
-				movespeed += 1;
+				movespeed++;
 		}
 		else
 		{

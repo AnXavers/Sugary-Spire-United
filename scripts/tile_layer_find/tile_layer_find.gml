@@ -4,7 +4,7 @@ function tile_layer_find()
 	var __x = argument1;
 	var __y = argument2;
 	var __layers = layer_get_all();
-	var __numlayers = array_length_1d(__layers);
+	var __numlayers = array_length(__layers);
 	for (var __i = 0; __i < __numlayers; __i++)
 	{
 		if (layer_get_depth(__layers[__i]) != __depth)

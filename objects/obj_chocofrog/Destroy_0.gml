@@ -9,7 +9,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	else
 		scr_sound(sfx_frogDeath);
 	global.combo++;
-	global.hit += 1;
+	global.hit++;
 	var _score = 10 * power(2, global.combo - 1);
 	_score = clamp(_score, 10, 80);
 	create_small_number(x, y, string(_score));

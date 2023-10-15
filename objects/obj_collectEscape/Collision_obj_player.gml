@@ -4,7 +4,7 @@ if (global.panic)
 	var a = scr_sound(obj_player.sfx_escapecollect);
 	audio_sound_pitch(a, random_range(0.95, 1.1));
 	global.collect += 10;
-	global.pizzameter += 1;
+	global.pizzameter++;
 	create_small_number(x + 16, y + 16, "10");
 	global.combofreeze = clamp(global.combofreeze + 5, 0, 30);
 	global.combotime += 15;

@@ -1,3 +1,4 @@
+// Feather disable GM1049
 var curMsg = global.dialogmsg[current_message];
 var dialogLength = array_length(global.dialogmsg);
 var _text = curMsg[0];
@@ -58,7 +59,7 @@ switch (state)
 			{
 				if (whos_talkin != -4 && instance_exists(whos_talkin))
 				{
-					with (whos_talkin)
+					with whos_talkin
 						_func();
 				}
 				else

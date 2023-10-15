@@ -1,10 +1,10 @@
 if (DestroyedBy.object_index == obj_player)
 {
-	if (place_meeting(x - DestroyedBy.hsp, y, DestroyedBy))
+	if (place_meeting(x - obj_player.hsp, y, obj_player))
 	{
-		if (DestroyedBy.state == 68 || DestroyedBy.state == 69)
+		if (obj_player.state == 68 || obj_player.state == 69)
 		{
-			with (DestroyedBy)
+			with obj_player
 			{
 				with (other.id)
 				{
@@ -31,9 +31,9 @@ if (DestroyedBy.object_index == obj_player)
 				state = 57;
 			}
 		}
-		else if (DestroyedBy.state == 17)
+		else if (obj_player.state == 17)
 		{
-			with (DestroyedBy)
+			with (obj_player)
 			{
 				hsp = 0;
 				movespeed = 0;

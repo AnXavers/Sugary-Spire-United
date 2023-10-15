@@ -2,6 +2,7 @@
 // "unused variable" warnings, I present a script that
 // formally references the functions/variables while having
 // absolutely no effect.
+// Feather disable GM1021
 if (false) {
 	var v = undefined;
 	var f = undefined;

@@ -110,7 +110,7 @@ function scr_characterglobal()
 			spr_charge = spr_player_charge;
 			spr_taunt = spr_pizzelle_taunt;
 			spr_selectpal = spr_pizzelleselectpal;
-			spr_palette = spr_pal;
+			spr_palette = spr_pal_Pizzelle;
 			spr_caneidle = spr_player_caneidle;
 			spr_caneslam = spr_player_caneslam;
 			spr_canewalk = spr_player_canewalk;
@@ -410,6 +410,42 @@ function scr_characterglobal()
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
 			do_combometer_type = 0;
+			// palettes
+			palnum = 29
+			ini_open((("Custom/Pizzelle_") + string(customsavedpalette)) + "_palettes.ini")
+			var i = 0
+			for (var i = 0; i <= 10 ; i++)
+				global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
+			ini_close()
+			set_palette(0, "Default", 0, c_white, 13150344);
+			set_palette(1, "Sugar", 0, 8441896, 6066975, 8628991, 14496, 5579956, 144);
+			set_palette(2, "Familiar Gremlin", 0, 8446200, 1607896, 8628991, 14496, 8446200, 1607896);
+			set_palette(3, "Massacre", 0, c_white, 13150344, 11056895, 2639766, c_white, c_white);
+			set_palette(4, "Rivals", 0, 9394088, 7617665, 8628991, 14496, 7617665);
+			set_palette(5, "Gum", 0, 14247423, 10181528, 8628991, 14496, 8198303);
+			set_palette(6, "Old School", 0, c_white, 6974057, 11250603, 11250603, 6974057, 6974057, 11250603, 11250603);
+			set_palette(7, "Zombified", 0, 4932824, 96, 11784798, 10567090);
+			set_palette(8, "Forestation", 0, 3594902, 3625271, 10797823, 4079303, 52735, 29894);
+			set_palette(9, "Lamda", 0, 13985376, 6627355, 11130197, 10525952, 248, c_white);
+			set_palette(10, "Golden", 0, 1489391, 25527, 1489391, 25527, 25527, 1489391);
+			set_palette(11, "Gnome Wizard", 0, 16296056, 13660176, 4771936, 28672, 9988216, 6830208, 16296056, 16308408);
+			set_palette(12, "Watermelon", 0, 2967076, 2177560, 7327808, 3766554, 9340159, 9340159, 9340159, c_white);
+			set_palette(13, "Purple", 0, 16273560, 16273560);
+			set_palette(14, "Piss", 0, 4259839, 3979494);
+			set_palette(15, "Cream n' Chips", 1, spr_pattern0, 13150344);
+			set_palette(16, "Valiant Hero", 1, spr_pattern1, 13150344);
+			set_palette(17, "Dead Man's Treats", 1, spr_pattern2, 13150344);
+			set_palette(18, "Candy Cane", 1, spr_pattern3, 13150344);
+			set_palette(19, "Sweet Apple", 1, spr_pattern4, 13150344);
+			set_palette(20, "Space Cream", 1, spr_pattern5, 13150344);
+			set_palette(21, "Sourness", 1, spr_pattern6, 13150344);
+			set_palette(22, "Neapolitan", 1, spr_pattern7, 13150344);
+			set_palette(23, "Cookie Cutter", 1, spr_pattern8, 13150344);
+			set_palette(24, "MissingTexture", 1, spr_pattern9, 13150344);
+			set_palette(25, "Solid", 1, spr_pattern10, 13150344);
+			set_palette(26, "Choco Squares", 1, spr_pattern11, 13150344);
+			set_palette(27, "Cotton Candy", 1, spr_pattern12, 13150344);
+			set_palette(28, "Custom", 0, global.custompal_col[1], global.custompal_col[9], global.custompal_col[3], global.custompal_col[4], global.custompal_col[7], global.custompal_col[8], global.custompal_col[7], global.custompal_col[8], global.custompal_col[0], global.custompal_col[2]);
 			break;
 		case "N":
 			spr_idle = spr_pizzano_idle;
@@ -505,7 +541,7 @@ function scr_characterglobal()
 			spr_charge = spr_player_charge;
 			spr_taunt = spr_pizzano_taunt;
 			spr_selectpal = spr_pizzanoselectpal;
-			spr_palette = spr_palp;
+			spr_palette = spr_pal_Pizzano;
 			spr_caneidle = spr_player_caneidle;
 			spr_canewalk = spr_player_canewalk;
 			spr_canesuplex = spr_player_canesuplex;
@@ -580,8 +616,8 @@ function scr_characterglobal()
 			sfx_collectmassive = sound_pizzagot
 			sfx_collectlarge = sound_points
 			sfx_collect = sound_points
-			sfx_taunt = "sound_taunt"
-			taunt_upperrange = 7
+			sfx_taunt = "sfx_tauntpizzano"
+			taunt_upperrange = 8
 			sfx_supertaunt = sound_supertaunt1
 			// toggles
 			do_sjump_cancel = true;
@@ -603,6 +639,39 @@ function scr_characterglobal()
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
 			do_combometer_type = 0;
+			// palettes
+			palnum = 25
+			ini_open((("Custom/Pizzano_") + string(customsavedpalette)) + "_palettes.ini")
+			var i = 0
+			for (var i = 0; i <= 10 ; i++)
+				global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
+			ini_close()
+			set_palette(0, "Default", 0, c_white, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 13660176);
+			set_palette(1, "Familiar Gremlin", 1607896, 1529791, 8628991, 14496, 8446200, 5678550, 16295984, 13660176);
+			set_palette(2, "Familiar Chef", 0, 16571339, 13088161, 8628991, 14496, c_white, 9670034, 16295984, 13660176);
+			set_palette(3, "Lasagna", 0, 10607871, 6790614, 6984167, 10614, 881663, 2566034, 16295984, 13660176);
+			set_palette(4, "Spice", 0, 9670034, 7893878, 8628991, 2565782, c_red, 133, 16295984, 13660176);
+			set_palette(5, "Plumber", 0, 16295984, 13660176, 8628991, 14496, 12512, 88, 3700243, 13660176);
+			set_palette(6, "Green Apple", 0, 3700243, 2438912, 8559341, 21690, 458496, 3700243, 16295984, 13660176);
+			set_palette(7, "Grape Soda", 0, 4982461, 3212154, 15761362, 8388670, 14231934, 8388670, 16295984, 13660176);
+			set_palette(8, "Antipathic", 0, 10461182, 9733581, 14277081, 11974326, 6710886, 3355443, 16295984, 13660176);
+			set_palette(9, "Gummy Bear", 0, 5263592, 855491, 5263592, 855491, 855491, 128, 16295984, 13660176);
+			set_palette(10, "Lime", 0, 4759552, 2115584, 13695144, 4771936, 4771936, 28672, 16295984, 13660176);
+			set_palette(11, "Bear5", 0, 14994783, 5396057, 8543528, 5323032, 8879748, 6974057, 16295984, 13660176);
+			set_palette(12, "Cream n' Chips", 1, spr_pattern0, 13150344);
+			set_palette(13, "Valiant Hero", 1, spr_pattern1, 13150344);
+			set_palette(14, "Dead Man's Treats", 1, spr_pattern2, 13150344);
+			set_palette(15, "Candy Cane", 1, spr_pattern3, 13150344);
+			set_palette(16, "Sweet Apple", 1, spr_pattern4, 13150344);
+			set_palette(17, "Space Cream", 1, spr_pattern5, 13150344);
+			set_palette(18, "Sourness", 1, spr_pattern6, 13150344);
+			set_palette(19, "Neapolitan", 1, spr_pattern7, 13150344);
+			set_palette(20, "Cookie Cutter", 1, spr_pattern8, 13150344);
+			set_palette(21, "MissingTexture", 1, spr_pattern9, 13150344);
+			set_palette(22, "Solid", 1, spr_pattern10, 13150344);
+			set_palette(23, "Choco Squares", 1, spr_pattern11, 13150344);
+			set_palette(24, "Cotton Candy", 1, spr_pattern12, 13150344);
+			set_palette(25, "Custom", 0, global.custompal_col[1], global.custompal_col[9], global.custompal_col[3], global.custompal_col[4], global.custompal_col[7], global.custompal_col[8], global.custompal_col[5], global.custompal_col[6], global.custompal_col[0], global.custompal_col[2]);
 			break;
 		case "G":
 			spr_idle = spr_gumbob_idle;
@@ -678,7 +747,7 @@ function scr_characterglobal()
 			spr_piledriverland = spr_player_piledriverland;
 			spr_charge = spr_player_charge;
 			spr_taunt = spr_gumbob_taunt;
-			spr_palette = spr_palg;
+			spr_palette = spr_pal_Gumbob;
 			spr_caneidle = spr_player_caneidle;
 			spr_caneslam = spr_player_caneslam;
 			spr_canewalk = spr_player_canewalk;
@@ -738,6 +807,9 @@ function scr_characterglobal()
 			sfx_collectmassive = sound_pizzagot
 			sfx_collectlarge = sound_points
 			sfx_collect = sound_points
+			sfx_taunt = "sound_tauntextra"
+			taunt_upperrange = 2
+			sfx_supertaunt = sound_supertaunt1
 			// movesets
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
@@ -758,6 +830,37 @@ function scr_characterglobal()
 			do_gumbob_propeller = true;
 			do_noise_bomb = false;
 			do_combometer_type = 0;
+			// palettes
+			palnum = 24
+			ini_open((("Custom/Gumbob_") + string(customsavedpalette)) + "_palettes.ini")
+			var i = 0
+			for (var i = 0; i <= 10 ; i++)
+				global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
+			ini_close()
+			set_palette(0, "Default", 0, c_white, 11094670, 11565048, 5644188, 248);
+			set_palette(1, "Familiar Slime", c_white, 12464, 13150344, 8446200, 37088);
+			set_palette(2, "Rage", 0, 11583736, 88, 12512, 14464, 248);
+			set_palette(3, "Rat", 0, 8446200, 30928, 13150344, 7884848, 248);
+			set_palette(4, "Retro", 0, 26632, 11073736, 49240, 26632, 248, c_white, c_white, c_white, c_white, 11073736);
+			set_palette(5, "Cloudy Day", 0, 16316664, 13150344, 16316664, 13150344, 248);
+			set_palette(6, "Sadness", 0, 16300248, 9457744, 16285800, 13660176, 248);
+			set_palette(7, "Elite", 0, c_white, 11094670, 11461655, 9539840, 248);
+			set_palette(8, "Honey", 0, 63736, 4761616, 12444, 5644188, 248, c_white, c_white, c_white, 12444);
+			set_palette(9, "Doughy", 0, 14177822, 12466432, 6200319, 1861601, 248);
+			set_palette(10, "Cream n' Chips", 1, spr_pattern0, 13150344);
+			set_palette(11, "Valiant Hero", 1, spr_pattern1, 13150344);
+			set_palette(12, "Dead Man's Treats", 1, spr_pattern2, 13150344);
+			set_palette(13, "Candy Cane", 1, spr_pattern3, 13150344);
+			set_palette(14, "Sweet Apple", 1, spr_pattern4, 13150344);
+			set_palette(15, "Space Cream", 1, spr_pattern5, 13150344);
+			set_palette(16, "Sourness", 1, spr_pattern6, 13150344);
+			set_palette(17, "Neapolitan", 1, spr_pattern7, 13150344);
+			set_palette(18, "Cookie Cutter", 1, spr_pattern8, 13150344);
+			set_palette(19, "MissingTexture", 1, spr_pattern9, 13150344);
+			set_palette(20, "Solid", 1, spr_pattern10, 13150344);
+			set_palette(21, "Choco Squares", 1, spr_pattern11, 13150344);
+			set_palette(22, "Cotton Candy", 1, spr_pattern12, 13150344);
+			set_palette(23, "Custom", 0, global.custompal_col[1], global.custompal_col[9], global.custompal_col[3], global.custompal_col[4], global.custompal_col[7], global.custompal_col[8], global.custompal_col[5], global.custompal_col[6], global.custompal_col[0], global.custompal_col[2]);
 			break;
 		case "C":
 			if (inhalingenemy == 0 && headless == 0)
@@ -856,7 +959,7 @@ function scr_characterglobal()
 			spr_piledriverland = spr_player_piledriverland;
 			spr_charge = spr_player_charge;
 			spr_taunt = spr_coneboy_taunt;
-			spr_palette = spr_palc;
+			spr_palette = spr_pal_Coneboy;
 			spr_caneidle = spr_player_caneidle;
 			spr_caneslam = spr_player_caneslam;
 			spr_canewalk = spr_player_canewalk;
@@ -910,6 +1013,9 @@ function scr_characterglobal()
 			sfx_collectmassive = sound_pizzagot
 			sfx_collectlarge = sound_points
 			sfx_collect = sound_points
+			sfx_taunt = "sound_tauntextra"
+			taunt_upperrange = 2
+			sfx_supertaunt = sound_supertaunt1
 			// toggles
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
@@ -930,6 +1036,39 @@ function scr_characterglobal()
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
 			do_combometer_type = 0;
+			// palettes
+			palnum = 26
+			ini_open((("Custom/Coneboy_") + string(customsavedpalette)) + "_palettes.ini")
+			var i = 0
+			for (var i = 0; i <= 10 ; i++)
+				global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
+			ini_close()
+			set_palette(0, "Default", 0, 10921727, 2763501, 4751560, 2645925, 33279, 4259839, 9958399);
+			set_palette(1, "Familiar IceCream", 0, 11073784, 5802208, 11073784, 2577322, 33279, 4259839, 9958399);
+			set_palette(2, "Choco", 0, 14464, 4771936, 35016, 743327, 33279, 4259839, 16316664);
+			set_palette(3, "Blueberry", 0, 16296056, 15738880, 16296016, 13914657, 33279, 4259839, 16440779);
+			set_palette(4, "Butter Pecan", 0, 9691371, 2147815, 8442085, 4558266, 33279, 4259839, 3271652);
+			set_palette(5, "Coffee", 0, c_white, 4685773, 2647475, 2708103, 33279, 4259839, c_white);
+			set_palette(6, "Mint", 0, 12973962, 7911723, 4760264, 2654373, 33279, 4259839, 14547641);
+			set_palette(7, "Cherry", 0, 3421385, 2763501, 6624683, 2949204, 33279, 4259839, 13684984);
+			set_palette(8, "Caramel", 0, 1287919, 30928, 1007547, 1861601, 33279, 4259839, 12638456);
+			set_palette(9, "Old School", 0, 13882323, 8355711, 8947848, 6776679, 8355711, 13882323, 13355979);
+			set_palette(10, "Retro", 0, 1027211, 3170864, 1027211, 3170864, 3170864, 1027211, 1027211, c_white, 3170864, 1027211);
+			set_palette(11, "Silver", 0, 11575440, 12512, 11575440, 11575440, 228, 5787628, 12512);
+			set_palette(12, "Cream n' Chips", 1, spr_pattern0, 13150344);
+			set_palette(13, "Valiant Hero", 1, spr_pattern1, 13150344);
+			set_palette(14, "Dead Man's Treats", 1, spr_pattern2, 13150344);
+			set_palette(15, "Candy Cane", 1, spr_pattern3, 13150344);
+			set_palette(16, "Sweet Apple", 1, spr_pattern4, 13150344);
+			set_palette(17, "Space Cream", 1, spr_pattern5, 13150344);
+			set_palette(18, "Sourness", 1, spr_pattern6, 13150344);
+			set_palette(19, "Neapolitan", 1, spr_pattern7, 13150344);
+			set_palette(20, "Cookie Cutter", 1, spr_pattern8, 13150344);
+			set_palette(21, "MissingTexture", 1, spr_pattern9, 13150344);
+			set_palette(22, "Solid", 1, spr_pattern10, 13150344);
+			set_palette(23, "Choco Squares", 1, spr_pattern11, 13150344);
+			set_palette(24, "Cotton Candy", 1, spr_pattern12, 13150344);
+			set_palette(25, "Custom", 0, global.custompal_col[1], global.custompal_col[9], global.custompal_col[3], global.custompal_col[4], global.custompal_col[7], global.custompal_col[8], global.custompal_col[5], global.custompal_col[6], global.custompal_col[0], global.custompal_col[2]);
 			break;
 		case "T":
 			spr_idle = spr_Noise_idle;
@@ -1038,7 +1177,7 @@ function scr_characterglobal()
 			spr_charge = spr_playerN_charge;
 			spr_taunt = spr_playerN_taunt;
 			spr_selectpal = spr_pizzelleselectpal;
-			spr_palette = spr_pal;
+			spr_palette = spr_pal_Noise;
 			spr_caneidle = spr_player_caneidle;
 			spr_caneslam = spr_player_caneslam;
 			spr_canewalk = spr_player_canewalk;
@@ -1214,10 +1353,10 @@ function scr_characterglobal()
 			spr_combotitle_ES = spr_comboend_title1
 			spr_combotitle_truly = spr_combovery
 			spr_roomnamehud = spr_roomnamebg_pep
-			spr_lapportal_create = spr_pizzaportal_appear
+			spr_lapportal_create = spr_pizzaportal_exit
 			spr_lapportal_idle = spr_pizzaportal
-			spr_lapportal_enter = spr_pizzaportalend
-			spr_lapportal_exit = spr_pizzaportal_appear
+			spr_lapportal_enter = spr_pizzaportal_enter
+			spr_lapportal_exit = spr_pizzaportal_exit
 			spr_heatmeterpal = spr_heatmeter_palette
 			spr_escapepopup = spr_itspizzatime
 			// fonts
@@ -1235,6 +1374,9 @@ function scr_characterglobal()
 			sfx_collectmassive = sfx_collectgiant
 			sfx_collectlarge = sfx_collectbig
 			sfx_collect = sfx_collectsmall
+			sfx_taunt = "sound_tauntpeppino"
+			taunt_upperrange = 1
+			sfx_supertaunt = sound_supertaunt1
 			// toggles
 			do_sjump_cancel = true;
 			do_groundpound_cancel = true;
@@ -1362,7 +1504,7 @@ function scr_characterglobal()
 			spr_piledriverland = spr_player_piledriverland_pep;
 			spr_charge = spr_player_charge_pep;
 			spr_selectpal = spr_pizzelleselectpal;
-			spr_palette = spr_pal;
+			spr_palette = spr_pal_Peppino;
 			spr_caneidle = spr_player_caneidle;
 			spr_caneslam = spr_player_caneslam;
 			spr_canewalk = spr_player_canewalk;
@@ -1567,10 +1709,10 @@ function scr_characterglobal()
 			spr_combotitle_ES = spr_comboend_title1
 			spr_combotitle_truly = spr_combovery
 			spr_roomnamehud = spr_roomnamebg_pep
-			spr_lapportal_create = spr_pizzaportal_appear
+			spr_lapportal_create = spr_pizzaportal_exit
 			spr_lapportal_idle = spr_pizzaportal
-			spr_lapportal_enter = spr_pizzaportalend
-			spr_lapportal_exit = spr_pizzaportal_appear
+			spr_lapportal_enter = spr_pizzaportal_enter
+			spr_lapportal_exit = spr_pizzaportal_exit
 			spr_heatmeterpal = spr_heatmeter_palette
 			spr_escapepopup = spr_itspizzatime
 			// fonts
@@ -1588,6 +1730,9 @@ function scr_characterglobal()
 			sfx_collectmassive = sfx_collectgiant
 			sfx_collectlarge = sfx_collectbig
 			sfx_collect = sfx_collectsmall
+			sfx_taunt = "sound_tauntpeppino"
+			taunt_upperrange = 1
+			sfx_supertaunt = sound_supertaunt1
 			// toggles
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;
@@ -1717,7 +1862,7 @@ function scr_characterglobal()
 			spr_piledriverland = spr_player_piledriverland_pep;
 			spr_charge = spr_player_charge_pep;
 			spr_selectpal = spr_pizzelleselectpal;
-			spr_palette = spr_bossfight_vigipalette;
+			spr_palette = spr_pal_Vigilante;
 			spr_caneidle = spr_player_caneidle;
 			spr_caneslam = spr_player_caneslam;
 			spr_canewalk = spr_player_canewalk;
@@ -1922,10 +2067,10 @@ function scr_characterglobal()
 			spr_combotitle_ES = spr_comboend_title1
 			spr_combotitle_truly = spr_combovery
 			spr_roomnamehud = spr_roomnamebg_pep
-			spr_lapportal_create = spr_pizzaportal_appear
+			spr_lapportal_create = spr_pizzaportal_exit
 			spr_lapportal_idle = spr_pizzaportal
-			spr_lapportal_enter = spr_pizzaportalend
-			spr_lapportal_exit = spr_pizzaportal_appear
+			spr_lapportal_enter = spr_pizzaportal_enter
+			spr_lapportal_exit = spr_pizzaportal_exit
 			spr_heatmeterpal = spr_heatmeter_palette
 			spr_escapepopup = spr_itspizzatime
 			// fonts
@@ -1943,6 +2088,9 @@ function scr_characterglobal()
 			sfx_collectmassive = sfx_collectgiant
 			sfx_collectlarge = sfx_collectbig
 			sfx_collect = sfx_collectsmall
+			sfx_taunt = "sound_tauntpeppino"
+			taunt_upperrange = 1
+			sfx_supertaunt = sound_supertaunt1
 			// toggles
 			do_groundpound_cancel = false;
 			do_sjump_cancel = true;
@@ -2070,7 +2218,7 @@ function scr_characterglobal()
 			spr_piledriverland = spr_player_piledriverland_pep;
 			spr_charge = spr_player_charge_pep;
 			spr_selectpal = spr_pizzelleselectpal;
-			spr_palette = spr_pal;
+			spr_palette = spr_pal_Pepperman;
 			spr_caneidle = spr_player_caneidle;
 			spr_caneslam = spr_player_caneslam;
 			spr_canewalk = spr_player_canewalk;
@@ -2262,10 +2410,10 @@ function scr_characterglobal()
 			spr_coneball_player = spr_pizzaface
 			spr_coneball_melting_player = spr_pizzahead_haywire
 			img_featuringme = 7;
-			spr_lapportal_create = spr_pizzaportal_appear
+			spr_lapportal_create = spr_pizzaportal_exit
 			spr_lapportal_idle = spr_pizzaportal
-			spr_lapportal_enter = spr_pizzaportalend
-			spr_lapportal_exit = spr_pizzaportal_appear
+			spr_lapportal_enter = spr_pizzaportal_enter
+			spr_lapportal_exit = spr_pizzaportal_exit
 			spr_stylebar = spr_heatmeter_pep
 			spr_stylebarunder = spr_heatmeter_fill
 			spr_collecthud = spr_pizzascore
@@ -2296,6 +2444,9 @@ function scr_characterglobal()
 			sfx_collectmassive = sfx_collectgiant
 			sfx_collectlarge = sfx_collectbig
 			sfx_collect = sfx_collectsmall
+			sfx_taunt = "sound_tauntpeppino"
+			taunt_upperrange = 1
+			sfx_supertaunt = sound_supertaunt1
 			// toggles
 			do_sjump_cancel = true;
 			do_groundpound_cancel = false;

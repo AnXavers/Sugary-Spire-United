@@ -2,7 +2,7 @@ function scr_secrettiles_add()
 {
 	if (object_index != obj_secretwall)
 		return false;
-	if (is_undefined(argument0))
+	if (is_undefined(argument[0]))
 		return false;
 	for (var i = 0; i < argument_count; i++)
 	{
@@ -12,7 +12,7 @@ function scr_secrettiles_add()
 		array_push(layerArray, layerid);
 	}
 	var _f = function() {
-		return -(layer_get_depth(argument0) - layer_get_depth(argument1));
+		return -(layer_get_depth(argument[0]) - layer_get_depth(argument[1]));
 	};
 	array_sort(layerArray, _f);
 	return true;

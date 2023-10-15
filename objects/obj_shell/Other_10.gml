@@ -46,7 +46,7 @@ variable_global_set("sh_help", function(args) {
 			if (!is_undefined(metadata)) {
 				if (variable_struct_exists(metadata, "hidden")) {
 					hidden = metadata.hidden;
-					hiddenCount += 1;
+					hiddenCount++;
 				}
 			}
 			if (!hidden) {

@@ -11,7 +11,7 @@ if (canmove == 1)
 		}
 		if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 11)
 		{
-			optionselected += 1;
+			optionselected++;
 			scr_sound(sound_step);
 		}
 		if (key_slap2 || key_start)

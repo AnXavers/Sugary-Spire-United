@@ -76,7 +76,7 @@ function state_player_superslam()
 				instance_create(x, y, obj_baddiegibs);
 				flash = 1;
 				global.combotime = 60;
-				global.hit += 1;
+				global.hit++;
 				alarm[1] = 5;
 				thrown = 1;
 				x = obj_player.x;

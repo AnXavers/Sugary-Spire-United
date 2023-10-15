@@ -11,7 +11,7 @@ function state_player_charge()
 	if (!key_attack)
 		movespeed -= 0.5;
 	else if (movespeed < 10)
-		movespeed += 1;
+		movespeed++;
 	else if (movespeed > 10)
 		movespeed -= 0.15;
 	move2 = key_right2 + key_left2;

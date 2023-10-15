@@ -10,9 +10,9 @@ if (point_in_rectangle(x, y, camera_get_view_x(view_camera[0]) - 64, camera_get_
 		gpu_set_blendmode_ext(9, 6);
 		if (mode == 1)
 		{
-			for (var i = -1; i < 2; i += 1)
+			for (var i = -1; i < 2; i++)
 			{
-				for (var z = -1; z < 2; z += 1)
+				for (var z = -1; z < 2; z++)
 					draw_tile(tile_dataset, tile_dataid, 0, 0 + (32 * i), 0 + (32 * z));
 			}
 		}

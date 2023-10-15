@@ -22,7 +22,7 @@ if (sprite_index != spr_confectiboxopen)
 			obj_tv.message = "YOU GOT ALL CONFECTI!";
 		obj_tv.showtext = 1;
 		obj_tv.alarm[0] = 200;
-		global.toppintotal += 1;
+		global.toppintotal++;
 		global.collect += 1000;
 		global.combofreeze = 30;
 		global.combotime = 60;

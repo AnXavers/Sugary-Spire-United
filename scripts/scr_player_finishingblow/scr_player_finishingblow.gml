@@ -61,7 +61,7 @@ function state_player_finishingblow()
 			}
 		}
 		global.combotime = 60;
-		global.hit += 1;
+		global.hit++;
 		if (sprite_index == obj_player.spr_lungehit)
 		{
 			state = 154;

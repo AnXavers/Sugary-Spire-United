@@ -87,6 +87,7 @@ global.peterimage = -1;
 global.solidfellow = 0;
 global.cam_w = 960;
 global.cam_h = 540;
+global.maintainzoom = 0;
 var i = 0
 var I = 0
 for (var i = 0; room_exists(i); i++)
@@ -101,7 +102,7 @@ for (var i = 0; sprite_exists(i); i++)
 	if string_starts_with(sprite_get_name(i), "ts_")
 	{
 		global.tilesetlist[I] = sprite_get_name(i)
-		I += 1
+		I++
 	}
 }
 I = 0
@@ -113,7 +114,7 @@ for (var i = 0; audio_exists(i); i++)
 	if audio_sound_length(i) <= 60
 	{
 		global.musiclist[I] = audio_get_name(i)
-		I += 1
+		I++
 	}
 }
 global.musicreplace = ds_list_create()
@@ -165,6 +166,7 @@ global.language = ini_read_real("Settings", "language", 0);
 global.machsfx = ini_read_real("Settings", "machsfx", 0);
 global.eggplantcombo = ini_read_real("Settings", "eggplantcombo", 0);
 global.oldhud = ini_read_real("Settings", "oldhud", 0);
+global.harryfreeze = ini_read_real("Settings", "harryfreeze", 1);
 ini_close();
 
 audio_master_gain(global.masterVolume);

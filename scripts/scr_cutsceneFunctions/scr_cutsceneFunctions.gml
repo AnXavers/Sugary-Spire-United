@@ -26,7 +26,7 @@ function cutscene_event_end()
 	else
 		instance_destroy();
 }
-function cutscene_declare_actor()
+function cutscene_declare_actor(argument0, argument1)
 {
 	with (global.cutsceneManager)
 	{

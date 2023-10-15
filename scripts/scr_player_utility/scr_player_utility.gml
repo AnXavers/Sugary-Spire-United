@@ -20,7 +20,7 @@ function do_taunt()
 				image_index = 0;
 				sprite_index = choose(spr_supertaunt1, spr_supertaunt2, spr_supertaunt3);
 				global.collect += (15 + (trickcount * 5))
-				trickcount += 1
+				trickcount++
 			}
 		}
 		instance_create(x, y, obj_taunteffect);

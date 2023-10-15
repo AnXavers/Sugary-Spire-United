@@ -34,7 +34,7 @@ if (state == 17)
 		else if (state != 73 && hurted == 0 && cutscene == 0 && state != 72)
 		{
 			scr_sound(sfx_coneboyswallow);
-			global.hurtcounter += 1;
+			global.hurtcounter++;
 			alarm[8] = 60;
 			alarm[7] = 120;
 			hurted = 1;

@@ -1,11 +1,12 @@
-vsp = random_range(-5, -10);
-hsp = sign(x - obj_player.x) * random_range(5, 10);
-grav = 0.4;
-alarm[0] = 5;
+horigin = x;
+vsp = 0
+hsp = 0
+grav = 0
 cigar = 0;
 stomped = 0;
 spr_palette = pal_harry;
 paletteselect = 0;
+set_theme = -4
 if (x != obj_player.x)
 	image_xscale = -sign(x - obj_player.x);
 sprite_index = obj_player.spr_gummyharry_dead

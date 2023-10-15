@@ -28,7 +28,7 @@ if (global.gamePauseState)
 		scr_getinput();
 		if (key_down2 && selected < 3)
 		{
-			selected += 1;
+			selected++;
 			scr_sound(sound_land);
 		}
 		if (key_up2 && selected > 0)

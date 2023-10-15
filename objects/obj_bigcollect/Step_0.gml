@@ -10,4 +10,4 @@ if (collectvanish == 1 && collectboxid.activated == 1)
 }
 depth = (place_meeting(x, y, obj_destructibles) || place_meeting(x, y, obj_metalblock)) ? 102 : 2;
 if (global.collectsound < 10)
-	global.collectsound += 1;
+	global.collectsound++;

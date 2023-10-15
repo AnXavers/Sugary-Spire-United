@@ -8,7 +8,7 @@ function state_player_meteorpep()
 	if (sprite_index == spr_meteorpep_flying)
 	{
 		if (movespeed <= 20)
-			movespeed += 1;
+			movespeed++;
 		hsp = floor(-xscale * movespeed);
 	}
 	else

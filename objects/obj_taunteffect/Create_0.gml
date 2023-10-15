@@ -21,5 +21,5 @@ if (global.panic = 1 && global.exitgatetaunt < 10 && place_meeting(x, y, obj_exi
 {
 	create_small_number(x, y, "25");
 	global.collect += 25
-	global.exitgatetaunt += 1
+	global.exitgatetaunt++
 }

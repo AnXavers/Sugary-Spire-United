@@ -645,3 +645,43 @@ function meta_solidfellow()
 		argumentDescriptions: []
 	};
 }
+function sh_quick_load()
+{
+	var _lvl = argument0[1]
+	targetDoor = _lvl + "_1"
+	if _lvl = "mountain"
+	{
+		
+	}
+	with (obj_player)
+	{
+		if (!instance_exists(obj_fadeout))
+		{
+			global.levelname = _lvl;
+			scr_levelstart(global.levelname, other.targetRoom);
+			ini_open(global.fileselect);
+			var ranks = ini_read_string("Ranks", string(global.levelname), "none");
+			ini_close();
+			global.showplaytimer = ranks != "none";
+			mach2 = 0;
+			obj_camera.chargecamera = 0;
+			image_index = 0;
+			sprite_index = spr_entergate;
+			state = 61;
+			targetDoor = other.targetDoor;
+			targetRoom = other.targetRoom;
+			ds_queue_clear(global.newhudmessage);
+			audio_stop_all();
+		}
+	}
+}
+function meta_quick_load()
+{
+	return 
+	{
+		description: "Quick Loads a level.",
+		arguments: ["<room>", "<door>"],
+		suggestions: [["tutorial", "crunchy construction", "cottontown", "molasses", "sugarshack mines", "mt fudgetop", "danceoff", "chocoa cafe", "martian outpost", "sting operation", "sucrose snowstorm", "exitway"]],
+		argumentDescriptions: ["Level to load."]
+	};
+}

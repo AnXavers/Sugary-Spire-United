@@ -32,8 +32,14 @@ function scr_palette_as_player(argument0 = sprite_index, argument1 = image_index
 		shader_set_uniform_f(u_texel, texture_get_texel_width(tex), texture_get_texel_height(tex), texture_get_texel_width(tex2), texture_get_texel_height(tex2));
 	}
 }
-function new_palette(argument0, argument1, argument2, argument3, argument4 = 8628991, argument5 = 14496, argument6 = 13773959, argument7 = 9988216, argument8 = 0, argument9 = c_white, argument10 = c_red, argument11 = $FFDC00)
+function new_palette(argument0, argument1, argument2, argument3, argument4 = 8628991, argument5 = 14496, argument6 = 13773959, argument7 = 9988216, argument8 = 0, argument9 = c_white, argument10 = c_red, argument11 = $FFDC00, argument12 = $1070D0)
 {
-	var q = [argument8, argument9, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument10, argument11];
+	var q = [argument8, argument9, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument10, argument11, argument12];
 	array_push(my_palettes, [argument0, argument1, q]);
 }
+function set_palette(_arraynum, _palname, _ispattern, _clothcol, _clothshadecol, _skincol = 8628991, _skinshadecol = 14496, _scootcol = 13773959, _scootboostcol = 9988216, _boostoutercol = c_red, _boostinnercol = 56575, _outlinecol = c_black, _eyecol = c_white, _pizzanoetc = 855491)
+{
+	var _q = [_outlinecol, _eyecol, _clothcol, _clothshadecol, _skincol, _skinshadecol, _scootcol, _scootboostcol, _boostoutercol, _boostinnercol, _pizzanoetc];
+	my_palettes[_arraynum] = [_palname, _ispattern, _q]
+}
+

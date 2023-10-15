@@ -16,7 +16,7 @@ if (canmove == 1)
 	}
 	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 8)
 	{
-		optionselected += 1;
+		optionselected++;
 		scr_sound(sound_step);
 		optionsaved_fullscreen = global.fullscreen;
 		optionsaved_resolution = global.selectedResolution;

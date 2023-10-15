@@ -24,7 +24,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				other.baddieID.initialhsp = vdirection * (random_range(1, 7) + abs(floor(hsp * 1.2)));
 				with (instance_create(x, y, obj_bangeffect))
 					sprite_index = spr_enemypuncheffect;
-				global.hit += 1;
+				global.hit++;
 				global.combotime = 60;
 				if (x != bID.x)
 					bID.image_xscale = sign(bID.x - x);
@@ -85,7 +85,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				scr_sound(sound_enemyslap);
 				suplexmove = 0;
 				if (other.baddieID.object_index == obj_pizzaball)
-					global.golfhit += 1;
+					global.golfhit++;
 				if (vsp > 0)
 				{
 					other.baddieID.squashedx = true;
@@ -137,8 +137,8 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 			if (instance_exists(other.baddieID) && state == 68)
 			{
 				if (other.baddieID.object_index == obj_pizzaball)
-					global.golfhit += 1;
-				global.hit += 1;
+					global.golfhit++;
+				global.hit++;
 				global.combotime = 60;
 				instance_create(other.baddieID.x, other.baddieID.y, obj_slapstar);
 				instance_create(other.baddieID.x, other.baddieID.y, obj_baddiegibs);
@@ -174,8 +174,8 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 			if (instance_exists(other.baddieID) && !other.baddieID.throw_hit && bID.invtime <= 0 && (state == 69 || state == 31 || state == 104 || state == 121) && attacking && !instakillmove && other.baddieID.grounded == 1)
 			{
 				if (other.baddieID.object_index == obj_pizzaball)
-					global.golfhit += 1;
-				global.hit += 1;
+					global.golfhit++;
+				global.hit++;
 				global.combotime = 60;
 				instance_create(other.baddieID.x, other.baddieID.y, obj_slapstar);
 				instance_create(other.baddieID.x, other.baddieID.y, obj_baddiegibs);
@@ -251,7 +251,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				}
 				hsp = -xscale * 8;
 				if (other.baddieID.object_index == obj_pizzaball)
-					global.golfhit += 1;
+					global.golfhit++;
 				vsp = -4;
 				other.baddieID.image_xscale = -xscale;
 				other.baddieID.hsp = -other.baddieID.image_xscale * 4;

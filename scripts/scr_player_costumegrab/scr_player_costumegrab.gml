@@ -17,11 +17,11 @@ function state_player_costumegrab()
 		vsp /= 20;
 		jumpstop = 1;
 	}
-	if (costumeBlock != -4)
+	if costumeBlock != -4
 	{
 		if (key_slap2)
 		{
-			with (costumeBlock)
+			with self.costumeBlock
 			{
 				state = icestate.thrown;
 				x = other.x;
@@ -38,9 +38,9 @@ function state_player_costumegrab()
 			costumeBlockDetails = -4;
 			state = 129;
 		}
-		if (key_down2)
+		if key_down2
 		{
-			with (costumeBlock)
+			with self.costumeBlock
 			{
 				state = icestate.thrown;
 				if (!scr_solid(other.x + (other.xscale * 75), y, false))

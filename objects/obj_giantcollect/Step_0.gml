@@ -9,4 +9,4 @@ if (collectvanish == 1 && collectboxid.activated == 1)
 	in_the_void = false;
 }
 if (global.collectsound < 10)
-	global.collectsound += 1;
+	global.collectsound++;

@@ -15,10 +15,11 @@ if canmove
 		optionsaved_slopeangle = global.slopeangle;
 		optionsaved_machsfx = global.machsfx;
 		optionsaved_eggplantcombo = global.eggplantcombo;
+		optionsaved_oldhud = global.oldhud;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 7)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 8)
 	{
-		optionselected += 1;
+		optionselected++;
 		scr_sound(sound_step);
 		optionsaved_newscorefont = global.newscorefont;
 		optionsaved_newplayeranim = global.newplayeranim;
@@ -27,6 +28,7 @@ if canmove
 		optionsaved_machsfx = global.machsfx;
 		optionsaved_eggplantcombo = global.eggplantcombo;
 		optionsaved_oldhud = global.oldhud;
+		optionsaved_harryfreeze = global.harryfreeze;
 	}
 	switch (optionselected)
 	{
@@ -150,6 +152,20 @@ if canmove
 				ini_write_real("Settings", "oldhud", optionsaved_oldhud);
 				ini_close();
 				global.oldhud = optionsaved_oldhud;
+			}
+			break;
+		case 8:
+			subtitle = "FREEZES THE GAME FOR A TIME AFTER HITTING GUMMY HARRY";
+			CursorY = 850;
+			optionsaved_harryfreeze += (key_right2 + key_left2);
+			optionsaved_harryfreeze = wrap(optionsaved_harryfreeze, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "harryfreeze", optionsaved_harryfreeze);
+				ini_close();
+				global.harryfreeze = optionsaved_harryfreeze;
 			}
 			break;
 	}

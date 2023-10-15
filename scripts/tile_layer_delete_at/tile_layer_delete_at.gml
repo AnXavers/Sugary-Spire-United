@@ -5,5 +5,5 @@ function tile_layer_delete_at()
 	var __y = argument2;
 	var __tile_el = tile_layer_find(__depth, __x, __y);
 	if (__tile_el != -1)
-		layer_tile_destroy(__tile_el);
+		layer_tilemap_destroy(__tile_el);
 }

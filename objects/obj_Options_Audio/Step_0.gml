@@ -17,7 +17,7 @@ if (canmove == 1)
 	}
 	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 4)
 	{
-		optionselected += 1;
+		optionselected++;
 		scr_sound(sound_step);
 		optionsaved_masterVolume = global.masterVolume;
 		optionsaved_musicVolume = global.musicVolume;

@@ -11,5 +11,6 @@ with obj_player
 		ini_write_string("Carryover", "player", character)
 		ini_close();
 		scr_characterglobal();
+		paletteselect = clamp(paletteselect, 1, palnum)
 	}
 }

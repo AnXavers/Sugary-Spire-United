@@ -5,4 +5,4 @@ global.style += 10;
 global.combofreeze = 30;
 global.hasallconfecti = 1
 if (global.panic == 1)
-	global.lapcount += 1;
+	global.lapcount++;

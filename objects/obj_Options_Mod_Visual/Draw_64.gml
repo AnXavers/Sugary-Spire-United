@@ -24,6 +24,9 @@ draw_option(680, 700 + ScrollY, "OFF", !optionsaved_eggplantcombo);
 draw_option(480, 750 + ScrollY, "OLD HUD", optionselected == 7);
 draw_option(280, 800 + ScrollY, "ON", optionsaved_oldhud);
 draw_option(680, 800 + ScrollY, "OFF", !optionsaved_oldhud);
+draw_option(480, 850 + ScrollY, "HARRY FREEZE", optionselected == 8);
+draw_option(280, 900 + ScrollY, "ON", optionsaved_harryfreeze);
+draw_option(680, 900 + ScrollY, "OFF", !optionsaved_harryfreeze);
 draw_set_font(global.smallfont);
 var _string_width = string_width(subtitle) + 32;
 if (subtitle != "")

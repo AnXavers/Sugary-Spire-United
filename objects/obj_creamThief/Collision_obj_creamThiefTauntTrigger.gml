@@ -8,5 +8,5 @@ if (state == 1 && other.canTaunt)
 	state = 3;
 	hsp = 0;
 	vsp = 0;
-	instance_create_depth(x, y, obj_confectitaunt);
+	instance_create(x, y, obj_confectitaunt);
 }

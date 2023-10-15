@@ -3,6 +3,7 @@ scr_playersounds_init();
 ini_open("Custom/Pizzelle_1_palettes.ini")
 character = "P"
 characters = "Pizzelle";
+customsavedpalette = 1
 var i = 0
 for (var i = 0; i <= 10 ; i++)
 	global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))

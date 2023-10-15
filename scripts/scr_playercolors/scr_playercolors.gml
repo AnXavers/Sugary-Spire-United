@@ -4,7 +4,7 @@ function scr_playercolors()
 	{
 		case "P":
 			characters = "Pizzelle";
-			colorheight = 11;
+			colorheight = 10;
 			break;
 		case "N":
 			characters = "Pizzano";
@@ -16,22 +16,26 @@ function scr_playercolors()
 			break;
 		case "C":
 			characters = "Coneboy";
-			colorheight = 7;
+			colorheight = 9;
 			break;
 		case "S":
 			characters = "Peppino";
-			colorheight = 11;
+			colorheight = 6;
 			break;
 		case "T":
 			characters = "The Noise";
-			colorheight = 11;
+			colorheight = 6;
 			break;
 		case "V":
 			characters = "Vigilante";
-			colorheight = 11;
+			colorheight = 6;
 			break;
 		case "M":
 			characters = "Pepperman";
+			colorheight = 6;
+			break;
+		case "PN":
+			characters = "Pogo Pizzano";
 			colorheight = 11;
 			break;
 		default:
@@ -50,6 +54,7 @@ function scr_playercolors()
 	colorindex[8] = 8;
 	colorindex[9] = 9;
 	colorindex[10] = 10;
+	colorindex[11] = 11;
 	ini_open("Custom/" + string(characters) + "_" + string(customsavedpalette) + "_palettes.ini");
 	if (!ini_section_exists(string(characters) + "Colors" + string(colorindex[0])))
 	{

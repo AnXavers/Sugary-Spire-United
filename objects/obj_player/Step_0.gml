@@ -287,7 +287,7 @@ else if (paletteselect < (sprite_get_width(spr_palette) - 1))
 if (state != 115 && state != 0)
 	inhalestrength = 0;
 if (kungaircount == 1)
-	kungairtime += 1;
+	kungairtime++;
 if (state != 106 && state != 0)
 {
 	kungaircount = 0;
@@ -325,7 +325,7 @@ if (state != 124)
 if (obj_player.state != 144 && obj_player.state != 145 && obj_player.state != 146)
 	additionalspeedvar = 0;
 if (keyboard_check_pressed(vk_pageup))
-	patternnumb += 1;
+	patternnumb++;
 if (keyboard_check_pressed(vk_pagedown))
 	patternnumb -= 1;
 patternnumb %= 2;

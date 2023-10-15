@@ -50,7 +50,7 @@ function scr_hurtplayer(argument0 = obj_player)
 				if (state != 73 && state != 45 && hurted == 0 && cutscene == 0 && state != 72 && state != 96)
 				{
 					scr_sound(sound_touchspike);
-					global.hurtcounter += 1;
+					global.hurtcounter++;
 					state = 73;
 					alarm[8] = 60;
 					alarm[7] = 120;

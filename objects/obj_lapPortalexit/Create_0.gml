@@ -38,4 +38,11 @@ else if global.lapcount == 5
 else if global.lapcount == 10
 	scr_controlprompt("[spr_promptfont]The enemies are starting to multiply...")
 scr_sound(sfx_lapexit)
-cam_lzoom = 0.7
+with instance_create(x, y, obj_cameraRegion)
+{
+	zoom = 0.7
+	ClampTop = false
+	ClampBottom = false
+	ClampLeft = false
+	ClampRight = false
+}

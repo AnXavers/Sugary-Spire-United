@@ -61,14 +61,14 @@ if (DestroyedBy.object_index == obj_player)
 				}
 				if (instance_exists(baddiegrabbedID))
 				{
-					with (baddiegrabbedID)
+					with (self.baddiegrabbedID)
 					{
 						scr_sound(sound_killingblow);
 						instance_create(x, y, obj_slapstar);
 						instance_create(x, y, obj_baddiegibs);
 						flash = 1;
 						global.combotime = 60;
-						global.hit += 1;
+						global.hit++;
 						alarm[1] = 5;
 						thrown = 1;
 						x = obj_player.x;

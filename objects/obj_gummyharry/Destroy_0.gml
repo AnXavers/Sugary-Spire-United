@@ -7,6 +7,33 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	}
 	audio_pause_all()
 	ds_list_add(global.saveroom, id);
-	with (instance_create(x, y, obj_harryfreeze))
+	with (instance_create(x, y, obj_harrydead))
+	{
 		paletteselect = other.paletteselect;
+		if !global.harryfreeze
+			alarm[1] = 1;
+		else
+		{
+			global.harryfxval = 1
+			global.harryfx = fx_create("_filter_tintfilter")
+			fx_set_parameter(global.harryfx, "g_TintCol", [global.harryfxval, global.harryfxval, global.harryfxval, 1])
+			global.harryeffect = layer_create(-1, "Effect_Harry")
+			layer_set_fx(global.harryeffect, global.harryfx)
+			audio_pause_all()
+			scr_soundloop(sfx_harrypause)
+			with instance_create(obj_player.x - 100, obj_player.y - 100, obj_cameraRegion)
+			{
+				zoom = 0.6
+				ClampTop = false
+				ClampBottom = false
+				ClampLeft = false
+				ClampRight = false
+			}
+			alarm[1] = 65;
+			freezevsp = obj_player.vsp
+			freezehsp = obj_player.hsp
+			freezestate = obj_player.state
+			cutscene_create([cutscene_harryFreeze])
+		}
+	}
 }

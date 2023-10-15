@@ -27,7 +27,8 @@ with (obj_cameraRegion)
 	}
 }
 cam_angle = cam_langle;
-cam_zoom = cam_lzoom;
+if !global.maintainzoom
+	cam_zoom = cam_lzoom;
 camera_set_view_angle(view_camera[0], cam_angle + camera_get_view_angle(view_camera[0]));
 var vw = global.cam_w * cam_zoom;
 var vh = global.cam_h * cam_zoom;

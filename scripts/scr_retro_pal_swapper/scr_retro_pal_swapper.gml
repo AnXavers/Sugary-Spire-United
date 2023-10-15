@@ -109,7 +109,7 @@ function pal_swap_layer_init()
 	ds_priority_clear(global.retro_pal_swapper.layer_priority);
 	ds_priority_clear(global.retro_pal_swapper.layer_temp_priority);
 }
-function pal_swap_set_layer()
+function pal_swap_set_layer(argument0, argument1, argument2, argument3)
 {
 	var _data = ds_map_find_value(global.retro_pal_swapper.layer_map, argument2);
 	if (_data == undefined)
