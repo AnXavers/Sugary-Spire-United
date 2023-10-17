@@ -1,6 +1,5 @@
 depth = -999
 image_speed = 0.35
-player = 370
 has_selectedoption = 0
 slider[0] = -4
 slider[1] = -4

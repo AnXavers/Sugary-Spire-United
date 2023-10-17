@@ -5,11 +5,9 @@ if ((sprite_index == spr_onoffswitch_bluetored || sprite_index == spr_onoffswitc
 	else
 		sprite_index = spr_onoffswitch_blue;
 }
-var player = instance_nearest(x, y, obj_player);
-player = obj_player;
-if (player.state == 17 && place_meeting(x, y, player))
+if (obj_player.state == 17 && place_meeting(x, y, obj_player))
 {
-	with (player)
+	with obj_player
 	{
 		if (state == 17)
 		{

@@ -1,6 +1,6 @@
-if (DestroyedBy.object_index == obj_player)
+if DestroyedBy.object_index == obj_player
 {
-	with (DestroyedBy)
+	with obj_player
 	{
 		if (state == states.freefall || state == states.freefallland)
 		{
@@ -32,7 +32,7 @@ if (DestroyedBy.object_index == obj_player)
 			else
 				sprite_index = spr_player_donutSlam_land;
 		}
-		else if (state == states.superslam)
+		else if state == states.superslam
 		{
 			sprite_index = spr_piledriverland;
 			scr_sound(sound_maximumspeedland);
@@ -59,9 +59,9 @@ if (DestroyedBy.object_index == obj_player)
 					hsp = 0;
 				}
 			}
-			if (instance_exists(baddiegrabbedID))
+			if instance_exists(baddiegrabbedID)
 			{
-				with (baddiegrabbedID)
+				with baddiegrabbedID
 				{
 					scr_sound(sound_killingblow);
 					instance_create(x, y, obj_slapstar);

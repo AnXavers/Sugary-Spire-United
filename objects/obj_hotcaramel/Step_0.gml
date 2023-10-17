@@ -6,7 +6,9 @@ if (place_meeting(x, y - 1, obj_player))
 		{
 			if (state == 88 || state == 97)
 				instance_create(x, y, obj_poofeffect);
-			sprite_index = obj_player.spr_fireass;
+			sprite_index = spr_fireass;
+			if global.newplayeranim == 1
+				sprite_index = spr_fireassstart
 			state = 108;
 			image_index = 0;
 			vsp = -20;

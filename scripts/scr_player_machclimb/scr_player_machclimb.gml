@@ -101,7 +101,7 @@ function state_player_climbwall()
 	}
 	if (key_jump && key_attack)
 	{
-		if (movespeed >= 12 && !place_meeting(x + xscale, y, obj_molassesWall))
+		if (movespeed >= 12 && !place_meeting(x + xscale, y, obj_molassesWall) && character != "S")
 		{
 			image_index = 0;
 			sprite_index = spr_mach3jump;
@@ -254,7 +254,7 @@ function state_player_climbceiling()
 	}
 	if (key_jump && key_attack)
 	{
-		if (movespeed >= 12)
+		if (movespeed >= 12 && character != "S")
 		{
 			upsideDownJump = true;
 			image_index = 0;
@@ -391,7 +391,7 @@ function state_player_climbdownwall()
 	}
 	if (key_jump && key_attack)
 	{
-		if (movespeed >= 12 && !place_meeting(x - xscale, y, obj_molassesWall))
+		if (movespeed >= 12 && !place_meeting(x - xscale, y, obj_molassesWall) && character != "S")
 		{
 			upsideDownJump = true;
 			image_index = 0;

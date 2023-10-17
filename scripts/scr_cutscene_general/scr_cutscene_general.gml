@@ -40,7 +40,7 @@ function cutscene_with_actor(actor, func)
 	var finish = false;
 	var _realActor = cutscene_get_actor(actor);
 	cutscene_event_end();
-	with (_realActor)
+	with _realActor
 	{
 		return func();
 	}
@@ -64,7 +64,7 @@ function cutscene_lerp_actor(argument0, argument1, argument2, argument3)
 {
 	var finish = false;
 	var _realActor = cutscene_get_actor(argument0);
-	with (_realActor)
+	with _realActor
 	{
 		x = lerp(x, argument1, argument3);
 		y = lerp(y, argument2, argument3);
@@ -82,7 +82,7 @@ function cutscene_move_actor()
 {
 	var finish = false;
 	var _realActor = cutscene_get_actor(argument0);
-	with (_realActor)
+	with _realActor
 	{
 		var _angel = point_direction(x, y, argument1, argument2);
 		var _dirx = lengthdir_x(argument3, _angel);
@@ -99,7 +99,7 @@ function cutscene_new_actor()
 {
 	var _new_actor = instance_create(argument0, argument1, obj_actor);
 	_new_actor.sprite_index = argument2;
-	with (_new_actor)
+	with _new_actor
 		cutscene_declare_actor(id, argument3);
 	cutscene_event_end();
 	return _new_actor;
@@ -108,7 +108,7 @@ function cutscene_actor_animend()
 {
 	var finish = 0;
 	var _realActor = cutscene_get_actor(argument0);
-	with (_realActor)
+	with _realActor
 	{
 		if (animation_end())
 			finish = 1;

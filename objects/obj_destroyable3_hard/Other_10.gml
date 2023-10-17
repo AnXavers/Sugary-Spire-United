@@ -1,13 +1,13 @@
 if (DestroyedBy.object_index == obj_player)
 {
-	if ((place_meeting(x, y - DestroyedBy.vsp, DestroyedBy) || place_meeting(x, y - sign(DestroyedBy.vsp), DestroyedBy)) && DestroyedBy.vsp < 0 && DestroyedBy.state == 60)
+	if ((place_meeting(x, y - obj_player.vsp, obj_player) || place_meeting(x, y - sign(obj_player.vsp), obj_player)) && obj_player.vsp < 0 && obj_player.state == 60)
 	{
-		DestroyedBy.vsp = 0;
+		obj_player.vsp = 0;
 		instance_destroy();
 	}
-	else if (place_meeting(x - DestroyedBy.hsp, y, DestroyedBy) && DestroyedBy.state == 17)
+	else if (place_meeting(x - obj_player.hsp, y, obj_player) && obj_player.state == 17)
 	{
-		with (DestroyedBy)
+		with obj_player
 		{
 			with (other.id)
 				instance_destroy();
@@ -24,7 +24,7 @@ if (DestroyedBy.object_index == obj_player)
 	}
 	else
 	{
-		with (DestroyedBy)
+		with obj_player
 		{
 			if (state == 74 || state == 75)
 			{
@@ -61,7 +61,7 @@ if (DestroyedBy.object_index == obj_player)
 				}
 				if (instance_exists(baddiegrabbedID))
 				{
-					with (self.baddiegrabbedID)
+					with obj_player.baddiegrabbedID
 					{
 						scr_sound(sound_killingblow);
 						instance_create(x, y, obj_slapstar);

@@ -5,13 +5,13 @@ if (file != "")
 	ini_open(file)
 	var character = ini_read_string("General", "Character", "NULL")
 	ini_close()
-	if (character != "NULL" && character == string(player.characters))
+	if (character != "NULL" && character == string(obj_player.characters))
 	{
-		var _original = (((("Custom/" + string(player.characters)) + "_") + string(player.customsavedpalette)) + "_palettes.ini")
+		var _original = (((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini")
 		file_copy(file, _original)
-		with (player)
+		with obj_player
 			scr_playercolors()
-		ini_open((((("Custom/" + string(player.characters)) + "_") + string(player.customsavedpalette)) + "_palettes.ini"))
+		ini_open((((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
 		palettename = ini_read_string("General", "PaletteName", "Palette 1")
 		ini_close()
 		input = palettename
@@ -19,12 +19,12 @@ if (file != "")
 		global.colorchoosen = 0
 		with (obj_palettechangerscrollbar)
 			readcolor = 1
-		for (var i = 0; i < player.colorheight; i++)
-			color[i] = player.color[i]
+		for (var i = 0; i < obj_player.colorheight; i++)
+			color[i] = obj_player.color[i]
 	}
 	else
 	{
-		show_message((((("Error: Expected " + string(player.characters)) + " Got ") + character) + ". Aborting Import."))
+		show_message((((("Error: Expected " + string(obj_player.characters)) + " Got ") + character) + ". Aborting Import."))
 		show_debug_message("TODO: Add an in-game error thingy")
 	}
 }

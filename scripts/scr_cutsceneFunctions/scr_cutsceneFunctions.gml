@@ -28,7 +28,7 @@ function cutscene_event_end()
 }
 function cutscene_declare_actor(argument0, argument1)
 {
-	with (global.cutsceneManager)
+	with global.cutsceneManager
 	{
 		if (ds_exists(ActorMap, 1))
 			ds_map_set(ActorMap, argument1, argument0);

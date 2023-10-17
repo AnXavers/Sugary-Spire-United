@@ -2,17 +2,17 @@ while (readcolor == 1)
 {
 	selected = 0
 	input_text = 0
-	ini_open((((("Custom/" + string(player.characters)) + "_") + string(player.customsavedpalette)) + "_palettes.ini"))
+	ini_open((((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
 	switch colorchannel
 	{
 		case 0:
-			colorvalue = (ini_read_real(((string(player.characters) + "Colors") + string(global.colorchoosen)), "Red", 0) / 255)
+			colorvalue = (ini_read_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Red", 0) / 255)
 			break
 		case 1:
-			colorvalue = (ini_read_real(((string(player.characters) + "Colors") + string(global.colorchoosen)), "Green", 0) / 255)
+			colorvalue = (ini_read_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Green", 0) / 255)
 			break
 		case 2:
-			colorvalue = (ini_read_real(((string(player.characters) + "Colors") + string(global.colorchoosen)), "Blue", 0) / 255)
+			colorvalue = (ini_read_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Blue", 0) / 255)
 			break
 	}
 
@@ -40,7 +40,6 @@ switch colorchannel
 		break
 }
 
-player = obj_palettechanger.player
 var top_x = (draw_x - sprite_get_xoffset(spr_palettechanger_scrollbar))
 var top_y = (draw_y - sprite_get_yoffset(spr_palettechanger_scrollbar))
 var bottom_x = (draw_x + sprite_get_xoffset(spr_palettechanger_scrollbar))
@@ -73,10 +72,10 @@ if (mouse_check_button_pressed(mb_left) && obj_palettechanger.stop == 0 && selec
 		keyboard_lastchar = ""
 	}
 }
-if ((player.key_jump2 || keyboard_check_pressed(vk_return) || player.key_slap2) && selected == 0 && input_text == 1)
+if ((obj_player.key_jump2 || keyboard_check_pressed(vk_return) || obj_player.key_slap2) && selected == 0 && input_text == 1)
 {
 	input_text = 0
-	if (player.key_jump2 || keyboard_check_pressed(vk_return))
+	if (obj_player.key_jump2 || keyboard_check_pressed(vk_return))
 		colorvalue = (real(input) / 255)
 	else
 		input = string(finalvalue)

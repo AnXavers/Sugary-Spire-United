@@ -8,7 +8,7 @@ if (place_meeting(x, y - 1, obj_iceblock))
 			other.activated = true;
 	}
 }
-else if (player && place_meeting(x, y - 1, obj_player))
+else if (obj_player && place_meeting(x, y - 1, obj_player))
 	activated = true;
 else if (weighted)
 	activated = false;

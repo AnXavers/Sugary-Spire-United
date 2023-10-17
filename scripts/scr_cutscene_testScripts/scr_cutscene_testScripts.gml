@@ -1,7 +1,7 @@
 function cutscene_shake_actor()
 {
 	var _dump = cutscene_get_actor(argument0);
-	with (_dump)
+	with _dump
 	{
 		shake_magx = argument1;
 		shake_dir = 1;

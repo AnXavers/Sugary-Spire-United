@@ -7,7 +7,6 @@ draw_color = 255
 colorvalue = 1
 finalvalue = 0
 selected = 0
-player = obj_player
 input = "0"
 keyboard_string = "0"
 input_text = 0

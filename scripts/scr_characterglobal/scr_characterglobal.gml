@@ -337,6 +337,9 @@ function scr_characterglobal()
 			spr_lapportal_exit = spr_lappingportal_exit
 			spr_heatmeterpal = spr_heatpal
 			spr_escapepopup = spr_sugarrush
+			spr_fireassend = spr_player_fireassend
+			spr_fireassgrab = spr_player_outofcontrolfall
+			spr_fireassstart = spr_pizzelle_fireassstart
 			if global.newplayeranim == 1
 			{
 				spr_mach1 = spr_player_mach1_new;
@@ -344,6 +347,11 @@ function scr_characterglobal()
 				spr_mach3player = spr_player_mach3_new;
 				spr_angrywalk = spr_player_3hpwalk_new;
 				spr_splat = spr_player_splat_new;
+				spr_fireass = spr_pizzelle_fireass
+				spr_fireassgrab = spr_pizzelle_fireassgrab
+				spr_fireassstart = spr_pizzelle_fireassstart
+				spr_fireassend = spr_player_fireassend
+				spr_machslideboost3 = spr_player_mach3boost_new
 			}
 			else if global.newplayeranim == 2
 			{
@@ -371,6 +379,7 @@ function scr_characterglobal()
 				spr_haulingstart = spr_player_haulingstart_classic;
 				spr_uppercutbegin = spr_player_uppercutbegin_classic;
 				spr_uppercutend = spr_player_uppercutend_classic;
+				spr_fireass = spr_player_fireass_classic
 			}
 			// fonts
 			font_lapcount = global.lapcountfont
