@@ -2,8 +2,11 @@ function state_player_fireass()
 {
 	static fire_afterimagetimer = 6;
 	image_speed = 0.35;
+	var _dashvsp = -20;
 	if (scr_solid(x + xscale, y, false) && !place_meeting(x + xscale, y, obj_chocofrog))
-		xscale *= -1;
+		if sprite_index != spr_fireassgrab
+			xscale *= -1;
+		var _dashvsp = 0;
 	if (sprite_index == spr_fireass || sprite_index == spr_fireassstart)
 	{
 		move = key_left + key_right;
@@ -17,6 +20,7 @@ function state_player_fireass()
 			movespeed = 11;
 			hsp = xscale * movespeed
 			vsp = 0;
+			scr_sound(sfx_kungfuair)
 		}
 		if (sprite_index == spr_fireassstart && floor(image_index) == (image_number - 1))
 			sprite_index = spr_fireass
@@ -31,7 +35,7 @@ function state_player_fireass()
 	{
 		movespeed = 11;
 		hsp = xscale * movespeed
-		vsp = 0;
+		vsp = _dashvsp;
 		if (floor(image_index) == (image_number - 1))
 		{
 			state = 1;

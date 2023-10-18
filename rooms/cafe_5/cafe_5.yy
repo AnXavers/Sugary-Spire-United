@@ -96,6 +96,7 @@
     {"name":"inst_21166ECB","path":"rooms/cafe_5/cafe_5.yy",},
     {"name":"inst_3687F079","path":"rooms/cafe_5/cafe_5.yy",},
     {"name":"inst_497F8186","path":"rooms/cafe_5/cafe_5.yy",},
+    {"name":"inst_550E8CDA","path":"rooms/cafe_5/cafe_5.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -194,6 +195,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"par_door","path":"objects/par_door/par_door.yy",},"propertyId":{"name":"targetRoom","path":"objects/par_door/par_door.yy",},"value":"cafe_6",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":576.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3687F079","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_doorA","path":"objects/obj_doorA/obj_doorA.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":960.0,"y":640.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_550E8CDA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_cookiemount","path":"objects/obj_cookiemount/obj_cookiemount.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":4672.0,"y":1696.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_Escape","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[],"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
