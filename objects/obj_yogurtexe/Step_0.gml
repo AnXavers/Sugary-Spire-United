@@ -71,7 +71,7 @@ else
 		image_xscale = -1
 	if (x < obj_player.x)
 		image_xscale = 1
-	if (x > (obj_player.x - 32) && x < (obj_player.x + 32) && (!global.GregMode))
+	if (x > (obj_player.x - 32) && x < (obj_player.x + 32) )
 		image_index = 1
 }
 y_timer++

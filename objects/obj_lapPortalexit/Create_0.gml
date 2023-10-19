@@ -13,7 +13,50 @@ else if global.inflapping == 2
 {
 	if global.lapcount >= 4
 	{
-		global.coneballaggro = 1
+		switch global.levelname
+		{
+			case "entryway":
+				global.fill_4 = time_in_frames(1, 0)
+				break
+			case "steamy":
+				global.fill_4 = time_in_frames(1, 0)
+				break
+			case "molasses":
+				global.fill_4 = time_in_frames(1, 10)
+				break
+			case "mines":
+				global.fill_4 = time_in_frames(1, 0)
+				break
+			case "fudge":
+				global.fill_4 = time_in_frames(1, 15)
+				break
+			case "dance":
+				global.fill_4 = time_in_frames(2, 15)
+				break
+			case "estate":
+				global.fill_4 = time_in_frames(1, 10)
+				break
+			case "sucrose":
+				global.fill_4 = time_in_frames(1, 30)
+				break
+			case "bee":
+				global.fill_4 = time_in_frames(1, 40)
+				break
+			default:
+				global.fill_4 = time_in_frames(3, 0)
+				break
+		}
+		global.fill_4 += time_in_frames(0, 2)
+		instance_create(0, 0, obj_yogurtexe)
+		with (obj_tv)
+		{
+			timer_y = 150
+			timer_out = 220
+			timer_in = 60
+			oldBall_sprite = spr_timeryogurt_idle
+			sucroseTimer = 1
+			target_fill = global.fill_4
+		}
 	}
 	else if global.lapcount >= 3
 	{

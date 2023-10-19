@@ -342,6 +342,13 @@ if (global.panic)
 			oldBall_sprite = spr_timer_coneball;
 			oldBall_index = 0;
 		}
+        if (oldBall_sprite == spr_timeryogurt_idle)
+        {
+            oldBall_sprite = spr_timeryogurt_agr
+            oldBall_index = 0
+        }
+        if (oldBall_sprite == spr_timeryogurt_agr)
+            timer_out = 999
 		if (coneball_sprite == spr_bartimer_normalFront)
 		{
 			coneball_sprite = spr_bartimer_showtime;

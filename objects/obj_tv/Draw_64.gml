@@ -78,7 +78,11 @@ if (global.panic == 1 || global.starrmode == 1)
 	if (!sucroseTimer)
 		target_fill = lerp(target_fill, global.fill, 0.03);
 	else
-		target_fill = approach(target_fill, global.fill, 10);
+		draw_set_color(c_white)
+		if instance_exists(obj_yogurtexe)
+			target_fill = approach(target_fill, global.fill_4, 10)
+		else
+			target_fill = approach(target_fill, global.fill, 10);
 	var gaining_time = global.fill > target_fill;
 	var display_mins = string(abs(mins));
 	var display_secs = string(abs(secs));
@@ -94,6 +98,29 @@ if (global.panic == 1 || global.starrmode == 1)
 		}
 		draw_sprite_ext(coneball_sprite, floor(coneball_index), timerx, timery, 1, 1, 0, c_white, 1);
 		draw_text(timerx, timery - 50, display_mins + ":" + display_secs);
+	}
+	else if instance_exists(obj_yogurtexe)
+	{
+		var c_alpha = random_range(0.35, 0.78)
+		draw_set_font(global.timerfont)
+		draw_set_halign(fa_left)
+		var _tmr_spr = oldTimer_sprite
+		if (_tmr_spr == spr_timer && gaining_time)
+			_tmr_spr = spr_timer_gain
+		draw_sprite_ext(oldBall_sprite, oldBall_index, timerx, timery, 1, 1, 0, c_white, 1)
+		draw_sprite_ext(_tmr_spr, 1, timerx, timery, 1, 1, 0, c_white, 1)
+		if (mins < 10)
+			display_mins = ("0" + display_mins)
+		if (oldTimer_sprite != spr_timeryogurt_agr)
+		{
+			draw_set_color((gaining_time ? c_blue : c_blue))
+			draw_set_alpha(c_alpha)
+			draw_text(minsx, minsy, display_mins)
+			draw_text(secx, (minsy + 1), display_secs)
+			draw_set_alpha(1)
+			draw_set_color(c_white)
+		}
+		draw_sprite_ext(spr_timer_lap4c, 0, timerx, timery, 1, 1, 0, c_white, 1)
 	}
 	else
 	{

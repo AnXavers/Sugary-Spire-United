@@ -1,3 +1,2 @@
-targetRoom = molasses_11;
-targetDoor = "B"
+targetRoom = molasses_9;
 visible = false;

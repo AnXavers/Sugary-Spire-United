@@ -18,8 +18,6 @@ function state_player_barrelcrouch()
 			scr_sound(sound_bump);
 			repeat (4)
 				instance_create(x, y, obj_slapstar);
-			if sprite_index == spr_player_cookiemount_dash
-				xscale *= -1;
 		}
 		if (abs(movespeed) < 3 && move != 0)
 			image_speed = 0.35;
@@ -33,7 +31,7 @@ function state_player_barrelcrouch()
 		if (input_buffer == 0)
 			movespeed = approach(movespeed, 0, 0.75);
 	}
-	if (key_jump)
+	if (key_attack2)
 	{
 		movespeed = abs(hsp);
 		if (movespeed < 6)
@@ -51,18 +49,16 @@ function state_player_barrelcrouch()
 			sprite_index = spr_cookiemountkick;
 		}
 	}
-	if (move == 0 && input_buffer == 0 && sprite_index != spr_player_cookiemount_skid)
+	if (key_jump2 && grounded)
+		vsp = -6
+	if (move == 0 && input_buffer == 0 && sprite_index != spr_player_cookiemount_skid && sprite_index != spr_player_cookiemount_dash)
 	{
 		image_speed = 0.35;
 		sprite_index = spr_player_cookiemount_idle;
 	}
-	if (move != 0 && sprite_index != spr_player_cookiemount_skid)
-	{
+	if (move != 0 && sprite_index != spr_player_cookiemount_skid && sprite_index != spr_player_cookiemount_dash)
 		sprite_index = spr_player_cookiemount;
-		if ((sprite_index == spr_player_cookiemount_dash || sprite_index == spr_player_cookiemount_dashend) && floor(image_index) != (image_number - 1))
-			sprite_index = spr_player_cookiemount_dashend
-	}
-	if (move != 0 && xscale != move)
+	if (move != 0 && xscale != move  && sprite_index != spr_player_cookiemount_dash)
 	{
 		xscale = move;
 		image_speed = 0.35;
@@ -71,19 +67,22 @@ function state_player_barrelcrouch()
 	}
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_cookiemount_skid)
 		sprite_index = spr_player_cookiemount;
-	if key_slap
+	if sprite_index == spr_player_cookiemount_dash
 	{
 		movespeed = 11;
 		hsp = xscale * movespeed
-		vsp = 0
+		vsp = lerp(vsp, 0, 0.2)
 		image_speed = 0.35
-		if (sprite_index != spr_player_cookiemount_dash)
-		{
-			sprite_index = spr_player_cookiemount_dashstart
-			if floor(image_index) == (image_number - 1)
-				sprite_index = spr_player_cookiemount_dash
-		}
-		else
-			sprite_index = spr_player_cookiemount_dash
+		if floor(image_index) == (image_number - 1)
+			sprite_index = spr_player_cookiemount;
+	}
+	if (key_slap2 && (sprite_index != spr_player_cookiemount_dash))
+	{
+		movespeed = 16;
+		hsp = xscale * movespeed
+		image_speed = 0.35
+		sprite_index = spr_player_cookiemount_dash
+		if grounded
+			vsp = 4
 	}
 }

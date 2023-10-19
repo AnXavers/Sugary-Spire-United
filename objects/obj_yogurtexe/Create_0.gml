@@ -12,9 +12,3 @@ if (global.fill_4 <= 0)
 	dist = point_distance(obj_player.x, obj_player.y, x, y)
 }
 y_timer = 0
-if global.GregMode
-{
-	sprite_index = spr_yogreg
-	image_index = 0
-	image_speed = 0.2
-}
