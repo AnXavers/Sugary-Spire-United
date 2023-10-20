@@ -235,7 +235,7 @@ function scr_collide_destructibles()
 					vsp = -4;
 					mach2 = 0;
 					image_index = 0;
-					sprite_index = choose(spr_player_blockbreak1, spr_player_blockbreak2, spr_player_blockbreak3, spr_player_blockbreak4, spr_player_blockbreak5, spr_player_blockbreak6, spr_player_blockbreak7);
+					sprite_index = choose(spr_blockbreak1, spr_blockbreak2, spr_blockbreak3, spr_blockbreak4, spr_blockbreak5, spr_blockbreak6, spr_blockbreak7);
 					state = 57;
 				}
 				DestroyedBy = other.id;
