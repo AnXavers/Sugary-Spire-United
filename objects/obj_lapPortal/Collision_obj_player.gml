@@ -1,4 +1,4 @@
-if (other.state != 110 && sprite_index == spr_lappingportal_idle && global.panic && (global.enableportal = 2 || !global.enablejerald))
+if (other.state != 110 && sprite_index == obj_player.spr_lapportal_idle && global.panic && (global.enableportal = 2 || !global.enablejerald))
 {
 	with (other)
 	{

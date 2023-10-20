@@ -7,7 +7,7 @@ function cutscene_lapPortal_start()
 		state = 110;
 		hsp = 0;
 		vsp = 0;
-		sprite_index = spr_lappingportal_enter;
+		sprite_index = spr_lapportal_enter;
 		image_speed = 0.35;
 		if (animation_end())
 			_finished = true;
