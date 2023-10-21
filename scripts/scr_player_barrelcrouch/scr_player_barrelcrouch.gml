@@ -50,7 +50,7 @@ function state_player_barrelcrouch()
 		}
 	}
 	if (key_jump2 && grounded)
-		vsp = -6
+		vsp = -14
 	if (move == 0 && input_buffer == 0 && sprite_index != spr_player_cookiemount_skid && sprite_index != spr_player_cookiemount_dash)
 	{
 		image_speed = 0.35;
@@ -71,7 +71,7 @@ function state_player_barrelcrouch()
 	{
 		movespeed = 11;
 		hsp = xscale * movespeed
-		vsp = lerp(vsp, 0, 0.2)
+		vsp = approach(vsp, 0, 4)
 		image_speed = 0.35
 		if floor(image_index) == (image_number - 1)
 			sprite_index = spr_player_cookiemount;
@@ -83,6 +83,31 @@ function state_player_barrelcrouch()
 		image_speed = 0.35
 		sprite_index = spr_player_cookiemount_dash
 		if grounded
-			vsp = 4
+			vsp = -10
+		else
+			vsp = -5
+	}
+	if ((sprite_index == spr_player_cookiemountfireass) || (sprite_index == spr_player_cookiemountfireassstart && floor(image_index) == (image_number - 1)))
+	{
+		image_speed = 0.35
+		vsp = 4
+		sprite_index = spr_player_cookiemountfireass
+		if (key_jump2)
+		{
+			sprite_index = spr_player_cookiemountfireassend
+			vsp = 20
+			instance_create(x, y, obj_cloudeffect)
+		}
+	}
+	if sprite_index == spr_player_cookiemountfireassend
+	{
+		vsp = approach(vsp, 10, 0.1)
+	}
+	if place_meeting(x, y, obj_hotcaramel)
+	{
+		vsp = -20
+		if sprite_index != spr_player_cookiemountfireass
+			sprite_index = spr_player_cookiemountfireassstart
+		image_speed = 0.35
 	}
 }

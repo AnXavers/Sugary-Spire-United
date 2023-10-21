@@ -43,7 +43,7 @@ function scr_pizzano_kungfu()
 			if (scr_solid(x + hsp, y, true))
 			{
 				state = 72;
-				sprite_index = spr_pizzano_djump;
+				sprite_index = spr_djump;
 				vsp = -8;
 				movespeed = -4;
 			}

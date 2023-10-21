@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fdd2e7f5-1c7f-496d-ba85-00f3884b9f0c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6a9a5418-546c-4aa6-913b-b156c65a36bb",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"acc38552-97cc-4515-a6a1-f82bb84d1cb7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ebf645f3-a62e-480c-b246-fb62aa79e5c3","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Demo Events",
-    "path": "folders/Sprites/Unused/Demo Events.yy",
+    "name": "Collectibles",
+    "path": "folders/Sprites/Objects/Collectibles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fdd2e7f5-1c7f-496d-ba85-00f3884b9f0c","path":"sprites/spr_halloweensmallblockescape/spr_halloweensmallblockescape.yy",},},},"Disabled":false,"id":"5e6457bb-ab18-41b0-8b71-607eda3d6882","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6a9a5418-546c-4aa6-913b-b156c65a36bb","path":"sprites/spr_halloweensmallblockescape/spr_halloweensmallblockescape.yy",},},},"Disabled":false,"id":"6e7a952f-2b51-4452-991f-315eea9ff9fe","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

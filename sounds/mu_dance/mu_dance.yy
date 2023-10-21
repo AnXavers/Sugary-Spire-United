@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 136.7442,
+  "duration": 126.249794,
   "parent": {
     "name": "Danceoff",
     "path": "folders/Sounds/Music/Levels/Danceoff.yy",

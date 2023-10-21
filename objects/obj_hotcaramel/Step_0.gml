@@ -2,7 +2,7 @@ if (place_meeting(x, y - 1, obj_player))
 {
 	with (obj_player)
 	{
-		if (state != 128 && !global.freezeframe)
+		if (state != 128 && !global.freezeframe && state != states.barrelcrouch)
 		{
 			if (state == 88 || state == 97)
 				instance_create(x, y, obj_poofeffect);

@@ -18,3 +18,9 @@ if !coneballtype
 else
 {
 }
+with instance_create(x, y, obj_icontracker)
+{
+	target = other
+	sprite_index = spr_icon_coneball
+	image_speed = 0.35
+}

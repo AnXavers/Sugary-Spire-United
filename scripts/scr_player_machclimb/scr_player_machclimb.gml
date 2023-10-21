@@ -112,6 +112,8 @@ function state_player_climbwall()
 		}
 		else if (movespeed >= 6 && !place_meeting(x + xscale, y, obj_molassesWall))
 		{
+			if character == "S"
+				movespeed = clamp(movespeed, 0, 8)
 			image_index = 0;
 			sprite_index = spr_secondjump1;
 			vsp = -9;

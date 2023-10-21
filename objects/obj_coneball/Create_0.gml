@@ -19,3 +19,9 @@ projcool = 5;
 fading = false;
 alpha = 1;
 attack = 1;
+with instance_create(x, y, obj_icontracker)
+{
+	target = other
+	sprite_index = spr_icon_coneball
+	image_speed = 0.35
+}
