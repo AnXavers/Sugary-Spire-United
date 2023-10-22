@@ -4,7 +4,7 @@
   "name": "pal_harry",
   "bbox_bottom": 4,
   "bbox_left": 0,
-  "bbox_right": 2,
+  "bbox_right": 5,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 3,
+  "width": 6,
 }

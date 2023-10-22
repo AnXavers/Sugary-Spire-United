@@ -1,4 +1,4 @@
-if (global.panic)
+if global.panic
 {
 	audio_stop_sound(obj_player.sfx_escapecollect);
 	var a = scr_sound(obj_player.sfx_escapecollect);

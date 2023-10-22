@@ -9,7 +9,6 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	ds_list_add(global.saveroom, id);
 	with (instance_create(x, y, obj_harrydead))
 	{
-		paletteselect = other.paletteselect;
 		if !global.harryfreeze
 			alarm[1] = 1;
 		else

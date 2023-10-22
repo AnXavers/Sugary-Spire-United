@@ -88,6 +88,7 @@ global.solidfellow = 0;
 global.cam_w = 960;
 global.cam_h = 540;
 global.maintainzoom = 0;
+global.harrycolor = 0;
 var i = 0
 var I = 0
 for (var i = 0; room_exists(i); i++)
@@ -111,7 +112,7 @@ for (var i = 0; room_exists(i); i++)
 for (var i = 0; audio_exists(i); i++)
 {
 	global.audiolist[i] = audio_get_name(i);
-	if audio_sound_length(i) <= 60
+	if string_starts_with(audio_get_name(i), "mu_")
 	{
 		global.musiclist[I] = audio_get_name(i)
 		I++

@@ -35,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_harryalive",
-    "path": "sprites/spr_harryalive/spr_harryalive.yy",
+    "name": "spr_harryNEW",
+    "path": "sprites/spr_harryNEW/spr_harryNEW.yy",
   },
   "spriteMaskId": {
     "name": "spr_harryalive",

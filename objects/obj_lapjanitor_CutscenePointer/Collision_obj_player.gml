@@ -1,4 +1,4 @@
-if (cutscenestart == 1 && instance_exists(obj_lapjanitor) && global.panic == 1)
+if (cutscenestart && instance_exists(obj_lapjanitor) && global.panic)
 {
 	global.combofreeze = 30;
 	instance_destroy(obj_lapjanitor)

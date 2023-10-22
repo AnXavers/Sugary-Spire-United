@@ -14,27 +14,27 @@ details = [gate_createlayer(spr_default_startgate, 0), gate_createlayer(spr_defa
 confecti_sprs[0] = 
 {
 	sprite: obj_player.spr_confecti1_taunt,
-	image: choose(0, 1, 2)
+	image: irandom(sprite_get_number(obj_player.spr_confecti1_taunt))
 };
 confecti_sprs[1] = 
 {
 	sprite: obj_player.spr_confecti2_taunt,
-	image: choose(0, 1, 2)
+	image: irandom(sprite_get_number(obj_player.spr_confecti2_taunt))
 };
 confecti_sprs[2] = 
 {
 	sprite: obj_player.spr_confecti3_taunt,
-	image: choose(0, 1, 2)
+	image: irandom(sprite_get_number(obj_player.spr_confecti3_taunt))
 };
 confecti_sprs[3] = 
 {
 	sprite: obj_player.spr_confecti4_taunt,
-	image: choose(0, 1, 2)
+	image: irandom(sprite_get_number(obj_player.spr_confecti4_taunt))
 };
 confecti_sprs[4] = 
 {
 	sprite: obj_player.spr_confecti5_taunt,
-	image: choose(0, 1, 2)
+	image: irandom(sprite_get_number(obj_player.spr_confecti5_taunt))
 };
 
 info = 

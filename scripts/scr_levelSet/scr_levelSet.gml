@@ -70,6 +70,7 @@ function scr_levelSet()
 	global.treasure = 0;
 	global.lapcount = 1;
 	global.lapmusic = false;
+	global.harrycolor = 0;
 	ini_open(global.fileselect);
 	var ranks = ini_read_string("Ranks", string(global.levelname), "none");
 	ini_close();

@@ -1,4 +1,4 @@
-if (collectvanish == 1 && collectboxid.activated == 1)
+if (collectvanish && collectboxid.activated)
 {
 	x = xstart;
 	y = ystart;
@@ -10,12 +10,12 @@ if (collectvanish == 1 && collectboxid.activated == 1)
 }
 if (global.collectsound < 10)
 	global.collectsound++;
-if (collectvanish == 0 && global.panic)
+if (!collectvanish && global.panic)
 {
 	if (distance_to_object(obj_player) < 26 && gotowardsPlayer == 0)
 		gotowardsPlayer = true;
 }
-if (gotowardsPlayer == 1)
+if (gotowardsPlayer)
 {
 	move_towards_point(obj_player.x, obj_player.y, movespeed);
 	movespeed++;

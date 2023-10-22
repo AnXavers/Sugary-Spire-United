@@ -681,7 +681,7 @@ function meta_quick_load()
 	{
 		description: "Quick Loads a level.",
 		arguments: ["<room>", "<door>"],
-		suggestions: [["tutorial", "crunchy construction", "cottontown", "molasses", "sugarshack mines", "mt fudgetop", "danceoff", "chocoa cafe", "martian outpost", "sting operation", "sucrose snowstorm", "exitway"]],
+		suggestions: [["tutorial", "crunchy construction", "cottontown", "molasses", "sugarshack mines", "mt fudgetop", "danceoff", "chocoa cafe", "martian outpost", "sting operation", "sucrose snowstorm", "cottonstorm"]],
 		argumentDescriptions: ["Level to load."]
 	};
 }

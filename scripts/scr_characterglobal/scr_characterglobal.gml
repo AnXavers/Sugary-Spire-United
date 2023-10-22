@@ -2510,5 +2510,425 @@ function scr_characterglobal()
 			do_noise_bomb = false;
 			do_combometer_type = 1;
 			break;
+		case "RM":
+			// sprites
+			spr_idle = spr_rosmar_idle;
+			spr_move = spr_player_walk;
+			spr_angryidle = spr_player_3hpidle;
+			spr_angrywalk = spr_player_3hpwalk;
+			spr_crawl = spr_player_crawl;
+			spr_hurt = spr_player_hurt;
+			spr_jump = spr_player_jump;
+			spr_jump2 = spr_player_jump;
+			spr_fall = spr_player_fall;
+			spr_fall2 = spr_player_fall;
+			spr_bodyslamstart = spr_player_groundpoundprep;
+			spr_bodyslamfall = spr_player_groundpound;
+			spr_bodyslamland = spr_player_groundpoundland;
+			spr_bombdropstart = spr_player_bodyslamstart;
+			spr_bombdropfall = spr_player_bodyslamfall;
+			spr_bombdropland = spr_player_bodyslamland;
+			spr_crouch = spr_player_crouch;
+			spr_crouchjump = spr_player_crouchjump;
+			spr_crouchfall = spr_player_crouchfall;
+			spr_couchstart = spr_player_crouchstart;
+			spr_splat = spr_player_splat;
+			spr_bump = spr_player_bump;
+			spr_land = spr_player_land;
+			spr_land2 = spr_player_land2;
+			spr_lookdoor = spr_player_lookdoor;
+			spr_walkfront = spr_player_walkfront;
+			spr_victory = spr_player_entergate;
+			spr_Ladder = spr_player_ladder;
+			spr_laddermove = spr_player_ladderup;
+			spr_ladderdown = spr_player_ladderdown;
+			spr_keyget = spr_player_keyget;
+			spr_crouchslip = spr_player_machslide;
+			spr_slippingonice = spr_player_slippingonice;
+			spr_mach1 = spr_player_mach1;
+			spr_mach2 = spr_player_mach2;
+			spr_mach3player = spr_player_mach3;
+			spr_mach2ceiling = spr_player_climbceilingmach2;
+			spr_mach3ceiling = spr_player_climbceilingmach3;
+			spr_machdashpad = spr_player_dashpad;
+			spr_rollgetup = spr_player_rollgetup;
+			spr_mach3jump = spr_player_mach3jump;
+			spr_mach3hitwall = spr_player_mach3hitwall;
+			spr_crazyrun = spr_player_crazyrun;
+			spr_secondjump1 = spr_player_secondjump1;
+			spr_secondjump2 = spr_player_secondjump2;
+			spr_machslidestart = spr_player_machslidestart;
+			spr_machslide = spr_player_machsliding;
+			spr_machslideend = spr_player_machslideend;
+			spr_grindrail = spr_player_grindrail;
+			spr_machslideboost = spr_player_machslideboost;
+			spr_machslideboostFallStart = spr_player_machslideboostFallStart;
+			spr_machslideboostFall = spr_player_machslideboostFall;
+			spr_machslideboost3 = spr_player_machslideboost3;
+			spr_machslideboost3FallStart = spr_player_machslideboost3FallStart;
+			spr_machslideboost3Fall = spr_player_machslideboost3Fall;
+			spr_land2 = spr_player_land2;
+			spr_punch = spr_player_punch;
+			spr_backkick = spr_player_backkick;
+			spr_shoulder = spr_player_shoulder;
+			spr_uppunch = spr_player_uppunch;
+			spr_stomp = spr_player_stomp;
+			spr_stompprep = spr_player_stompprep;
+			spr_crouchslide = spr_player_machslide;
+			spr_crouch = spr_player_crouch;
+			spr_bump = spr_player_bump;
+			spr_victory = spr_player_entergate;
+			spr_hurt = spr_player_hurt;
+			spr_climbwall = spr_player_climbwall;
+			spr_climbdownwall = spr_player_climbdownwall;
+			spr_grab = spr_player_grab;
+			spr_mach2jump = spr_player_mach2jump;
+			spr_Timesup = spr_player_timeup;
+			spr_deathstart = spr_player_deathstart;
+			spr_deathend = spr_player_deathend;
+			spr_machpunch1 = spr_player_machpunch1;
+			spr_machpunch2 = spr_player_machpunch2;
+			spr_hurtjump = spr_player_hurt;
+			spr_entergate = spr_player_entergate;
+			spr_gottreasure = spr_player_entergate;
+			spr_bossintro = spr_player_bossintro;
+			spr_hurtidle = spr_player_hurtidle;
+			spr_hurtwalk = spr_player_hurtwalk;
+			spr_suplexmash1 = spr_player_suplexmash1;
+			spr_suplexmash2 = spr_player_suplexmash2;
+			spr_suplexmash3 = spr_player_suplexmash3;
+			spr_suplexmash4 = spr_player_suplexmash4;
+			spr_blockbreak1 = spr_player_blockbreak1
+			spr_blockbreak2 = spr_player_blockbreak2
+			spr_blockbreak3 = spr_player_blockbreak3
+			spr_blockbreak4 = spr_player_blockbreak4
+			spr_blockbreak5 = spr_player_blockbreak5
+			spr_blockbreak6 = spr_player_blockbreak6
+			spr_blockbreak7 = spr_player_blockbreak7
+			spr_tackle = spr_player_tackle;
+			spr_airdash1 = spr_player_airdash1;
+			spr_airdash2 = spr_player_airdash2;
+			spr_keyget = spr_player_keyget;
+			spr_idle1 = spr_player_idleanim1;
+			spr_idle2 = spr_player_idleanim2;
+			spr_idle3 = spr_player_idleanim3;
+			spr_idle4 = spr_player_idleanim4;
+			spr_parry1 = spr_player_parry1;
+			spr_parry2 = spr_player_parry2;
+			spr_parry3 = spr_player_parry3;
+			spr_supertaunt1 = spr_player_supertaunt1;
+			spr_supertaunt2 = spr_player_supertaunt2;
+			spr_supertaunt3 = spr_player_supertaunt3;
+			spr_suplexdash = spr_player_suplexdash;
+			spr_piledriver = spr_player_piledriver;
+			spr_piledriverland = spr_player_piledriverland;
+			spr_charge = spr_player_charge;
+			spr_taunt = spr_rosmar_taunt;
+			spr_selectpal = spr_pizzelleselectpal;
+			spr_palette = spr_pal_RosMar;
+			spr_caneidle = spr_player_caneidle;
+			spr_caneslam = spr_player_caneslam;
+			spr_canewalk = spr_player_canewalk;
+			spr_canesuplex = spr_player_canesuplex;
+			spr_canehit = spr_player_canehit;
+			spr_uppizzabox = spr_player_uppizzabox;
+			spr_downpizzabox = spr_player_downpizzabox;
+			spr_tumblestart = spr_player_tumblestart;
+			spr_tumble = spr_player_tumble;
+			spr_tumbleend = spr_player_tumbleend;
+			spr_machroll =  spr_player_machroll;
+			spr_dive = spr_player_dive;
+			spr_cottonidle = spr_cotton_idle;
+			spr_escapeidle = spr_player_escapeidle;
+			spr_timesupidle = spr_player_timesupidle;
+			spr_piledriverstart = spr_player_piledriverstart;
+			spr_haulingstart = spr_player_haulingstart;
+			spr_haulingidle = spr_player_haulingidle;
+			spr_haulingfall = spr_player_haulingfall;
+			spr_haulingjump = spr_player_haulingjump;
+			spr_haulingland = spr_player_haulingland;
+			spr_haulingwalk = spr_player_haulingwalk;
+			spr_winding = spr_player_winding;
+			spr_fudgeidle = spr_player_fudgeidle;
+			spr_danceidle = spr_player_danceidle;
+			spr_uppercutbegin = spr_player_uppercutbegin;
+			spr_uppercutend = spr_player_uppercutend;
+			spr_uppercutfinishingblow = spr_player_uppercutfinishingblow;
+			spr_idlevomit = spr_player_idlevomit;
+			spr_idlevomitblood = spr_player_idlevomitblood;
+			spr_crouchshoot = spr_player_crouchshoot;
+			spr_skatecrouch = spr_player_skatecrouch;
+			spr_facehurtup = spr_player_facehurtup;
+			spr_facehurt = spr_player_facehurt;
+			spr_breakdance = spr_player_breakdance;
+			spr_shotgun_player = spr_player_shotgun;
+			spr_canefall = spr_player_canefall;
+			spr_breakdancebeach = spr_player_breakdancebeach;
+			spr_swingding = spr_player_swingding;
+			spr_swingdingend = spr_player_swingdingend;
+			spr_downslopes = spr_player_downslopes;
+			spr_upslopes = spr_player_upslopes;
+			spr_ceilingcrash = spr_player_ceilingcrash;
+			spr_machfreefall = spr_player_machfreefall;
+			spr_throwDonut = spr_player_throwDonut;
+			spr_superjumpprep = spr_player_superjumpprep;
+			spr_superjumppreplight = spr_player_superjumppreplight;
+			spr_superjumpright = spr_player_superjumpright;
+			spr_superjumpleft = spr_player_superjumpleft;
+			spr_superjump = spr_player_superjump;
+			spr_superjump_cancel = spr_player_superjump_cancel;
+			spr_superjump_cancelgrounded = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancelprep = spr_player_superjump_cancelprep;
+			spr_superjumpland = spr_player_superjumpland;
+			spr_suplexdashCancel = spr_player_suplexdashCancel;
+			spr_outofcontrolfall = spr_player_outofcontrolfall;
+			spr_machtumble = spr_player_machtumble;
+			spr_skatejumpstart = spr_player_skatejumpstart;
+			spr_facestomp = spr_player_facestomp;
+			spr_freefall =  spr_player_freefall;
+			spr_freefall2 = spr_player_freefall2;
+			spr_freefallland = spr_player_freefallland;
+			spr_donutSlam_intro = spr_player_donutSlam_intro;
+			spr_candytransitionup = spr_player_candytransitionup;
+			spr_candyup = spr_player_candyup;
+			spr_spitair = spr_coneboy_spitair;
+			spr_djump = spr_pizzano_djump;
+			spr_kungfuair1start = spr_pizzano_kungfuair1start;
+			spr_kungfuair2start = spr_pizzano_kungfuair2start;
+			spr_kungfuair3start = spr_pizzano_kungfuair3start;
+			spr_kungfu1 = spr_pizzano_kungfu1;
+			spr_kungfu2 = spr_pizzano_kungfu2;
+			spr_kungfu3 = spr_pizzano_kungfu3;
+			spr_kungfu4 = spr_pizzano_kungfu4;
+			spr_kungfu5 = spr_pizzano_kungfu5;
+			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
+			spr_twirl = spr_pizzano_twirl;
+			spr_small_destroyable = spr_smallbreak;
+			spr_large_destroyable = spr_bigbreak;
+			spr_large_destroyable_hard = spr_bigbreakhard;
+			spr_small_destroyable_collect = spr_smallbreak2;
+			spr_large_destroyable_collect = spr_bigbreak2;
+			spr_metal_destroyable = spr_metalblock;
+			spr_small_destroyable_escape = spr_smallbreakEscape;
+			spr_large_destroyable_escape = spr_bigbreakEscape;
+			spr_small_destroyable_collect_escape = spr_smallbreak2Escape;
+			spr_large_destroyable_collect_escape = spr_bigbreak2Escape;
+			spr_metal_destroyable_escape = spr_metalblockEscape;
+			spr_metal_destroyable_hard = spr_metalblockhard;
+			spr_smallcollect1 = spr_collect1;
+			spr_smallcollect2 = spr_collect2;
+			spr_smallcollect3 = spr_collect3;
+			spr_smallcollect4 = spr_collect4;
+			spr_smallcollect5 = spr_collect5;
+			spr_bigcollect1 = spr_bigcollect1P;
+			spr_bigcollect2 = spr_bigcollect2P;
+			spr_bigcollect3 = spr_bigcollect3P;
+			spr_bigcollect4 = spr_bigcollect4P;
+			spr_bigcollect5 = spr_bigcollect5P;
+			spr_bigcollect6 = spr_bigcollect6P;
+			spr_massivecollect1 = spr_giantcollect1;
+			spr_massivecollect2 = spr_giantcollect2;
+			spr_massivecollect3 = spr_giantcollect3;
+			spr_massivecollect4 = spr_giantcollect4;
+			spr_smallcollectescape1 = spr_collectescape;
+			spr_bigcollectescape1 = spr_bigcollectescape;
+			spr_collectslice1 = spr_collectslice;
+			spr_confectcage = spr_confecticage;
+			spr_confectcage_hop = spr_confecticage_hop;
+			spr_confectcage_help = spr_confecticage_help;
+			spr_gummyharry_idle = spr_harryNEW;
+			spr_gummyharry_dead = spr_harrydeadNEW;
+			spr_player_rankE = spr_rankP;
+			spr_player_rankP = spr_rankP;
+			spr_player_rankS = spr_rankS;
+			spr_player_rankA = spr_rankA;
+			spr_player_rankB = spr_rankB;
+			spr_player_rankC = spr_rankC;
+			spr_player_rankD = spr_rankD;
+			spr_rankwait = spr_player_rankwait;
+			spr_rankbubble_E = spr_rankbubble_e;
+			spr_rankbubble_Efilled = spr_rankbubble_efilled;
+			spr_rankbubble_Eempty = spr_rankbubble_e_empty;
+			spr_rankbubble_Efont = spr_rankbubble_e_font;
+			spr_rankbubble_P = spr_rankbubble_p;
+			spr_rankbubble_Pfilled = spr_rankbubble_pfilled;
+			spr_rankbubble_S = spr_rankbubble_s;
+			spr_rankbubble_Sfilled = spr_rankbubble_sfilled;
+			spr_rankbubble_A = spr_rankbubble_a;
+			spr_rankbubble_Afilled = spr_rankbubble_afilled;
+			spr_rankbubble_B = spr_rankbubble_b;
+			spr_rankbubble_Bfilled = spr_rankbubble_bfilled;
+			spr_rankbubble_C = spr_rankbubble_c;
+			spr_rankbubble_Cfilled = spr_rankbubble_cfilled;
+			spr_rankbubble_D = spr_rankbubble_d;
+			spr_rankbubble_Dfilled = spr_rankbubble_dfilled;
+			spr_lungehit = spr_player_lungehit;
+			spr_confecti5_rank = spr_confecti5rank;
+			spr_confecti4_rank = spr_confecti4rank;
+			spr_confecti3_rank = spr_confecti3rank;
+			spr_confecti2_rank = spr_confecti2rank;
+			spr_confecti1_rank = spr_confecti1rank;
+			spr_lapjanitorrank = spr_rankotherjanitor;
+			spr_rudejanitorrank = spr_rankrudejanitor;
+			spr_cakerank = spr_rankcake;
+			spr_confecti5_appear = spr_candy_appear;
+			spr_confecti5_idle = spr_candy_idle;
+			spr_confecti5_walk = spr_candy_walk;
+			spr_confecti5_panic = spr_candy_panic;
+			spr_confecti5_panicWalk = spr_candy_panicWalk;
+			spr_confecti5_taunt = spr_candy_taunt;
+			spr_confecti4_appear = spr_gummyworm_appear;
+			spr_confecti4_idle = spr_gummyworm_idle;
+			spr_confecti4_walk = spr_gummyworm_walk;
+			spr_confecti4_panic = spr_gummyworm_panic;
+			spr_confecti4_panicWalk = spr_gummyworm_panicWalk;
+			spr_confecti4_taunt = spr_gummyworm_taunt;
+			spr_confecti3_appear = spr_crack_appear;
+			spr_confecti3_idle = spr_crack_idle;
+			spr_confecti3_walk = spr_crack_run;
+			spr_confecti3_panic = spr_crack_panic;
+			spr_confecti3_panicWalk = spr_crack_panicWalk;
+			spr_confecti3_taunt = spr_crack_taunt;
+			spr_confecti2_appear = spr_chocolate_appear;
+			spr_confecti2_idle = spr_chocolate_idle;
+			spr_confecti2_walk = spr_chocolate_walk;
+			spr_confecti2_panic = spr_chocolate_panic;
+			spr_confecti2_panicWalk = spr_chocolate_panicWalk;
+			spr_confecti2_taunt = spr_chocolate_taunt;
+			spr_confecti1_appear = spr_marshmallow_appear;
+			spr_confecti1_idle = spr_marshmellow_idle;
+			spr_confecti1_walk = spr_marshemellow_run;
+			spr_confecti1_panic = spr_marshmellow_panic;
+			spr_confecti1_panicWalk = spr_marshmellow_panicWalk;
+			spr_confecti1_taunt = spr_marshmellow_taunt;
+			spr_janitor_appear = spr_rudejanitor_appear;
+			spr_janitor_idle = spr_rudejanitor_idle;
+			spr_janitor_walk = spr_rudejanitor_walk;
+			spr_janitor_panic = spr_rudejanitor_panicidle;
+			spr_janitor_panicWalk = spr_rudejanitor_panicwalk;
+			spr_janitor_taunt = spr_rudejanitor_taunt;
+			spr_lapjanitor_appear = spr_janitor2_jump;
+			spr_lapjanitor_idle = spr_janitor2_idle;
+			spr_lapjanitor_walk = spr_janitor2_run;
+			spr_lapjanitor_panic = spr_janitor2_idle;
+			spr_lapjanitor_panicWalk = spr_janitor2_run;
+			spr_lapjanitor_taunt = spr_janitor2_taunt;
+			spr_large_destroyable_oneway = spr_onewayblock;
+			spr_dancewalk = spr_player_dancewalk;
+			spr_minecart_player = spr_player_minecart;
+			spr_minecartfast = spr_player_minecartfast;
+			spr_minecartfastland = spr_player_minecartfastland;
+			spr_minecartland = spr_player_minecartland;
+			spr_minecartjump = spr_player_minecartjump;
+			spr_minecartfall = spr_player_minecartfall;
+			spr_mask = spr_player_mask;
+			spr_fireass = spr_player_fireass;
+			spr_candyidle = spr_player_candyidle;
+			spr_candybegin = spr_player_candybegin;
+			spr_bottlerocketstart = spr_player_bottlerocketstart;
+			spr_hookvert = spr_player_hookvert
+			spr_hookhoriz = spr_player_hookhoriz
+			spr_lapvisual_player = spr_lapvisual
+			spr_lapbg_player = spr_lapbg
+			img_featuringme = 0;
+			spr_coneball_player = spr_coneball_new
+			spr_coneball_melting_player = spr_coneball_melting
+			spr_stylebar = spr_heatmeter
+			spr_stylebarunder = spr_heatmeterunder
+			spr_collecthud = spr_cakehud
+			spr_crankhud = spr_cranktopping
+			spr_brankhud = spr_branktopping
+			spr_arankhud = spr_aranktopping
+			spr_srankhud = spr_sranktopping
+			spr_gatehud = spr_gatecake
+			spr_combotitle = spr_combotitles
+			spr_combotitle_BR = spr_combotitles_BR
+			spr_combotitle_ES = spr_combotitles_ES
+			spr_combotitle_truly = spr_combotruly
+			spr_roomnamehud = spr_roomnamebg
+			spr_lapportal_create = spr_lappingportal_create
+			spr_lapportal_idle = spr_lappingportal_idle
+			spr_lapportal_enter = spr_lappingportal_enter
+			spr_lapportal_exit = spr_lappingportal_exit
+			spr_heatmeterpal = spr_heatpal
+			spr_escapepopup = spr_sugarrush
+			spr_fireassend = spr_player_fireassend
+			spr_fireassgrab = spr_player_fireassgrab
+			spr_fireassstart = spr_pizzelle_fireassstart
+			// fonts
+			font_lapcount = global.lapcountfont
+			font_collect_new = global.candlefont
+			font_collect = global.collectfont
+			// audio
+			mu_escapesong = mu_pizzelle_escape
+			mu_lap2song = mu_pizzelle_lap
+			mu_lap5song = mu_pizzelle_despairy
+			mu_lap10song = mu_pizzelle_death
+			sfx_lapbell = sfx_lapbells
+			sfx_escapecollectbig = sound_bigescapeclock
+			sfx_escapecollect = sound_escapeclock
+			sfx_collectmassive = sound_pizzagot
+			sfx_collectlarge = sound_points
+			sfx_collect = sound_points
+			sfx_taunt = "sound_taunt"
+			taunt_upperrange = 7
+			sfx_supertaunt = sound_supertaunt1
+			// toggles
+			do_sjump_cancel = true;
+			do_groundpound_cancel = false;
+			do_pizzano_sjump = false;
+			do_pizzano_twirl = false;
+			do_pizzano_shoulderbash = false;
+			do_pizzano_pummel = false;
+			do_pizzano_kungfu = false;
+			do_pizzano_mach = false;
+			do_pizzano_wallcling = false;
+			do_pizzano_mach1 = false;
+			do_doublejump = false;
+			do_mach1jump = true;
+			do_mach2jump = true;
+			do_mach3jump = true;
+			do_wallrun_maintain_speed = true;
+			do_freefall_spr = true;
+			do_gumbob_propeller = false;
+			do_noise_bomb = false;
+			do_combometer_type = 0;
+			// palettes
+			palnum = 29
+			ini_open((("Custom/Pizzelle_") + string(customsavedpalette)) + "_palettes.ini")
+			var i = 0
+			for (var i = 0; i <= 10 ; i++)
+				global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
+			ini_close()
+			set_palette(0, "Default", 0, c_white, 13150344);
+			set_palette(1, "Sugar", 0, 8441896, 6066975, 8628991, 14496, 5579956, 144);
+			set_palette(2, "Familiar Gremlin", 0, 8446200, 1607896, 8628991, 14496, 8446200, 1607896);
+			set_palette(3, "Massacre", 0, c_white, 13150344, 11056895, 2639766, c_white, c_white);
+			set_palette(4, "Rivals", 0, 9394088, 7617665, 8628991, 14496, 7617665);
+			set_palette(5, "Gum", 0, 14247423, 10181528, 8628991, 14496, 8198303);
+			set_palette(6, "Old School", 0, c_white, 6974057, 11250603, 11250603, 6974057, 6974057, 11250603, 11250603);
+			set_palette(7, "Zombified", 0, 4932824, 96, 11784798, 10567090);
+			set_palette(8, "Forestation", 0, 3594902, 3625271, 10797823, 4079303, 52735, 29894);
+			set_palette(9, "Lamda", 0, 13985376, 6627355, 11130197, 10525952, 248, c_white);
+			set_palette(10, "Golden", 0, 1489391, 25527, 1489391, 25527, 25527, 1489391);
+			set_palette(11, "Gnome Wizard", 0, 16296056, 13660176, 4771936, 28672, 9988216, 6830208, 16296056, 16308408);
+			set_palette(12, "Watermelon", 0, 2967076, 2177560, 7327808, 3766554, 9340159, 9340159, 9340159, c_white);
+			set_palette(13, "Purple", 0, 16273560, 16273560);
+			set_palette(14, "Piss", 0, 4259839, 3979494);
+			set_palette(15, "Cream n' Chips", 1, spr_pattern0, 13150344);
+			set_palette(16, "Valiant Hero", 1, spr_pattern1, 13150344);
+			set_palette(17, "Dead Man's Treats", 1, spr_pattern2, 13150344);
+			set_palette(18, "Candy Cane", 1, spr_pattern3, 13150344);
+			set_palette(19, "Sweet Apple", 1, spr_pattern4, 13150344);
+			set_palette(20, "Space Cream", 1, spr_pattern5, 13150344);
+			set_palette(21, "Sourness", 1, spr_pattern6, 13150344);
+			set_palette(22, "Neapolitan", 1, spr_pattern7, 13150344);
+			set_palette(23, "Cookie Cutter", 1, spr_pattern8, 13150344);
+			set_palette(24, "MissingTexture", 1, spr_pattern9, 13150344);
+			set_palette(25, "Solid", 1, spr_pattern10, 13150344);
+			set_palette(26, "Choco Squares", 1, spr_pattern11, 13150344);
+			set_palette(27, "Cotton Candy", 1, spr_pattern12, 13150344);
+			set_palette(28, "Custom", 0, global.custompal_col[1], global.custompal_col[9], global.custompal_col[3], global.custompal_col[4], global.custompal_col[7], global.custompal_col[8], global.custompal_col[7], global.custompal_col[8], global.custompal_col[0], global.custompal_col[2]);
+			break;
 	}
 }
