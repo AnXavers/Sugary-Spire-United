@@ -114,8 +114,8 @@ function state_player_climbwall()
 		{
 			if character == "S"
 				movespeed = clamp(movespeed, 0, 8)
-			image_index = 0;
 			sprite_index = spr_secondjump1;
+			image_index = 0
 			vsp = -9;
 			jumpstop = false;
 			state = 69;

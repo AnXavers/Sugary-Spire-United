@@ -1,6 +1,6 @@
 function state_player_backbreaker()
 {
-	if (sprite_index != spr_player_machfreefall)
+	if (sprite_index != spr_machfreefall)
 	{
 		hsp = 0;
 		movespeed = 0;
@@ -13,10 +13,10 @@ function state_player_backbreaker()
 		taunttimer--;
 		vsp = 0;
 	}
-	if (sprite_index == spr_player_machfreefall && place_meeting(x, y + 1, obj_solid))
+	if (sprite_index == spr_machfreefall && place_meeting(x, y + 1, obj_solid))
 	{
 		state = 71;
-		sprite_index = spr_player_crouchslide;
+		sprite_index = spr_crouchslide;
 	}
 	if (sprite_index == spr_taunt)
 	{

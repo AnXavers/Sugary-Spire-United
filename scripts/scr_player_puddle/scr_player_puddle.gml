@@ -82,7 +82,7 @@ function state_player_puddle()
 		if (!grounded)
 			sprite_index = obj_player.spr_outofcontrolfall;
 	}
-	if (animation_end() && (sprite_index == spr_player_slipnslidestart || sprite_index == spr_player_slipnslideend))
+	if (animation_end() && (sprite_index == spr_player_slipnslidestart || sprite_index == spr_slipnslideend))
 		image_speed = 0;
 	else if (sprite_index == obj_player.spr_outofcontrolfall)
 		image_speed = clamp(movespeed / 15, 0.3, 1) * 0.6;

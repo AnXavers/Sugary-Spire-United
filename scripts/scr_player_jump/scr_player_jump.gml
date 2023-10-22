@@ -272,4 +272,19 @@ function state_player_jump()
 		state = 69;
 		image_index = 0;
 	}
+	 if (character == "N")
+    {
+        if key_jump2
+        {
+            if place_meeting((x + xscale), y, obj_solid)
+            {
+                sprite_index = spr_pizzano_wallcling
+                image_index = 0
+                state = states.pizzano_wallcling
+                
+                vsp = 0
+                
+			}
+		}
+	}
 }

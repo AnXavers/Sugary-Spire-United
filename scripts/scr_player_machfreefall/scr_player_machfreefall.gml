@@ -14,7 +14,7 @@ function state_player_machfreefall()
 	move2 = key_right2 + key_left2;
 	move = key_right + key_left;
 	crouchslideAnim = 1;
-	sprite_index = spr_player_machfreefall;
+	sprite_index = spr_machfreefall;
 	if (scr_solid(x + 1, y) && image_xscale == 1)
 	{
 		machhitAnim = 0;
@@ -75,7 +75,7 @@ function state_player_machfreefall()
 		audio_play_sound(sfx_mach2, 1, false);
 	if (grounded && input_buffer_jump < 8 && vsp > 0)
 	{
-		sprite_index = spr_player_hanstandjump;
+		sprite_index = spr_player_hanstandjump_pep;
 		stompAnim = 0;
 		hsp = 0;
 		state = 17;

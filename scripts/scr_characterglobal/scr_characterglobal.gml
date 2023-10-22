@@ -352,6 +352,7 @@ function scr_characterglobal()
 				spr_mach1 = spr_player_mach1_new;
 				spr_mach2 = spr_player_mach2_new;
 				spr_mach3player = spr_player_mach3_new;
+				spr_angryidle = spr_player_3hpidle_new
 				spr_angrywalk = spr_player_3hpwalk_new;
 				spr_splat = spr_player_splat_new;
 				spr_fireass = spr_pizzelle_fireass
@@ -590,6 +591,7 @@ function scr_characterglobal()
 			spr_superjump_cancel = spr_pizzano_sjumpside;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
 			spr_superjump_cancelgrounded = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancel_slide = spr_pizzano_crouchslide
 			spr_twirl = spr_pizzano_twirl;
 			spr_bigcollect1 = spr_bigcollect1N;
 			spr_bigcollect2 = spr_bigcollect2N;
@@ -1163,6 +1165,7 @@ function scr_characterglobal()
 			spr_stompprep = spr_player_stompprep_pep;
 			spr_crouchslide = spr_player_machslide_pep;
 			spr_crouch = spr_player_crouch_pep;
+			spr_geyser = spr_player_current_pep
 			spr_bump = spr_player_bump_pep;
 			spr_victory = spr_player_entergate_pep;
 			spr_hurt = spr_player_hurt_pep;
@@ -1268,7 +1271,7 @@ function scr_characterglobal()
 			spr_superjump_cancelprep = spr_player_Sjumpcancelstart_pep
 			spr_superjumpland = spr_player_superjumpland_pep;
 			spr_suplexdashCancel = spr_player_suplexcancel_pep;
-			spr_outofcontrolfall = spr_player_outofcontrolfall;
+			spr_outofcontrolfall = spr_player_machfreefall_pep;
 			spr_machtumble = spr_player_faceplant_pep;
 			spr_skatejumpstart = spr_player_skatejumpstart;
 			spr_facestomp = spr_player_facestomp_pep;
@@ -1495,6 +1498,7 @@ function scr_characterglobal()
 			spr_keyget = spr_playerN_keyget;
 			spr_crouchslip = spr_playerN_crouchslip;
 			spr_slippingonice = spr_playerN_slipnslide;
+			spr_machfreefall = spr_playerN_fall
 			spr_mach1 = spr_Noise_mach1;
 			spr_mach2 = spr_Noise_mach;
 			spr_mach3player = spr_Noise_mach3;
@@ -1502,6 +1506,7 @@ function scr_characterglobal()
 			spr_mach3ceiling = spr_player_climbceilingmach3;
 			spr_machdashpad = spr_playerN_dashpad;
 			spr_rollgetup = spr_playerN_rollgetup;
+			spr_geyser = spr_playerN_current
 			spr_mach3jump = spr_Noise_mach3jump;
 			spr_mach3hitwall = spr_playerN_mach3hitwall;
 			spr_crazyrun = spr_Noise_crazyrun;
@@ -1523,8 +1528,12 @@ function scr_characterglobal()
 			spr_shoulder = spr_playerN_shoulder;
 			spr_uppunch = spr_playerN_charge;
 			spr_stomp = spr_playerN_stomp;
+			spr_ceilingcrash = spr_playerN_Sjumpland;
 			spr_stompprep = spr_playerN_stompprep;
 			spr_crouchslide = spr_playerN_crouchslip;
+			spr_superjump_cancel_slide = spr_playerN_jetpackslide
+			spr_superjump_cancel_mach4 = spr_playerN_jetpackboost
+			spr_superjump_cancelgrounded = spr_playerN_jetpackboost
 			spr_crouch = spr_playerN_crouch;
 			spr_bump = spr_playerN_bump;
 			spr_victory = spr_playerN_entergate;
@@ -1552,8 +1561,8 @@ function scr_characterglobal()
 			spr_blockbreak2 = spr_playerN_suplexmash2
 			spr_blockbreak3 = spr_playerN_suplexmash3
 			spr_blockbreak4 = spr_playerN_suplexmash4
-			spr_blockbreak5 = spr_playerN_suplexmash2
-			spr_blockbreak6 = spr_playerN_suplexmash3
+			spr_blockbreak5 = spr_playerN_punch
+			spr_blockbreak6 = spr_playerN_suplexmash1
 			spr_blockbreak7 = spr_playerN_suplexmash4
 			spr_tackle = spr_playerN_tackle;
 			spr_airdash1 = spr_Noise_airdash1;
@@ -1608,7 +1617,7 @@ function scr_characterglobal()
 			spr_superjump_cancelprep = spr_playerN_jetpackstart
 			spr_superjumpland = spr_playerN_Sjumpland
 			spr_suplexdashCancel = spr_playerN_suplexcancel
-			spr_outofcontrolfall = spr_playerN_slipbanan1
+			spr_outofcontrolfall = spr_playerN_rockethitwall
 			spr_winding = spr_Noise_winding;
 			spr_fudgeidle = spr_player_fudgeidle;
 			spr_danceidle = spr_playerN_idledance;
@@ -1948,7 +1957,7 @@ function scr_characterglobal()
 			spr_swingdingend = spr_player_swingdingend_pep;
 			spr_downslopes = spr_player_downslopes_pep;
 			spr_upslopes = spr_player_upslopes_pep;
-			spr_ceilingcrash = spr_player_bump_pep;
+			spr_ceilingcrash = spr_player_superjumpland_pep;
 			spr_machfreefall = spr_player_machfreefall_pep;
 			spr_throwDonut = spr_player_throwDonut;
 			spr_superjumpprep = spr_playerV_facehurt;
