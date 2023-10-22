@@ -54,7 +54,7 @@ if (character == "P")
 	if (anger > 0)
 	{
 		angry = 1;
-		anger -= 1;
+		anger--;
 	}
 }
 if ((angry == 1 || global.stylethreshold > 3) && sprite_index == spr_idle)
@@ -148,7 +148,7 @@ if (state != 60)
 if (state != 60)
 	stompAnim = 0;
 if (toomuchalarm1 > 0)
-	toomuchalarm1 -= 1;
+	toomuchalarm1--;
 if (state == 70 || state == 3 || state == 69 || state == 5 || (state == 71 && mach2 >= 100) || (state == 31 && sprite_index != spr_crouchslip && movespeed >= 12) || state == 17 || state == 97 || state == 101 || (state == 104 && sprite_index != spr_pizzano_sjumpprepside) || state == 121 || (state == 28 && mach2 >= 100))
 {
 	mach_aftimg--;
@@ -327,6 +327,6 @@ if (obj_player.state != 144 && obj_player.state != 145 && obj_player.state != 14
 if (keyboard_check_pressed(vk_pageup))
 	patternnumb++;
 if (keyboard_check_pressed(vk_pagedown))
-	patternnumb -= 1;
+	patternnumb--;
 patternnumb %= 2;
 patternspr = asset_get_index("spr_pattern" + string(patternnumb));

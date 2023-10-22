@@ -9,6 +9,6 @@ if (selected == ((pgnum - 1) * (rows * columns)))
 		selected = ((pgnum * (rows * columns)) - 1);
 }
 else
-	selected -= 1;
+	selected--;
 texty = 0;
 scrolldelay = 210;

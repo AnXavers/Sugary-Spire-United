@@ -50,7 +50,7 @@ function state_player_barrelcrouch()
 		}
 	}
 	if (key_jump2 && grounded)
-		vsp = -14
+		vsp = -12
 	if (move == 0 && input_buffer == 0 && sprite_index != spr_player_cookiemount_skid && sprite_index != spr_player_cookiemount_dash)
 	{
 		image_speed = 0.35;
@@ -83,7 +83,7 @@ function state_player_barrelcrouch()
 		image_speed = 0.35
 		sprite_index = spr_player_cookiemount_dash
 		if grounded
-			vsp = -10
+			vsp = -12
 		else
 			vsp = -5
 	}
@@ -101,11 +101,11 @@ function state_player_barrelcrouch()
 	}
 	if sprite_index == spr_player_cookiemountfireassend
 	{
-		vsp = approach(vsp, 10, 0.1)
+		vsp = approach(vsp, 10, 1)
 	}
 	if place_meeting(x, y, obj_hotcaramel)
 	{
-		vsp = -20
+		vsp = -10
 		if sprite_index != spr_player_cookiemountfireass
 			sprite_index = spr_player_cookiemountfireassstart
 		image_speed = 0.35

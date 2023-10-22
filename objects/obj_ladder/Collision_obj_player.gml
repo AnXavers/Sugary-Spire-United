@@ -9,6 +9,6 @@ with (obj_player)
 		x = other.x + (other.sprite_width / 2);
 		y = round(y);
 		if ((y % 2) == 1)
-			y -= 1;
+			y--;
 	}
 }

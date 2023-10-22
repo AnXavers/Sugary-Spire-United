@@ -75,4 +75,4 @@ else
 		image_index = 1
 }
 y_timer++
-global.fill_4 -= 1
+global.fill_4--

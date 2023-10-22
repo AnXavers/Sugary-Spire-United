@@ -22,5 +22,5 @@ function state_player_barrelfloat()
 	sprite_index = spr_player_barrelfloat;
 	image_speed = 0.35;
 	if (place_meeting(x, y, obj_water2))
-		vsp -= 1;
+		vsp--;
 }

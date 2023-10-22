@@ -5,6 +5,6 @@ with (obj_player)
 	sprite_index = spr_player_frothstuck;
 	bushdisguise = 0;
 	bushdetection = 4;
-	hp -= 1;
+	hp--;
 }
 instance_destroy();

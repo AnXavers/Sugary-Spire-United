@@ -31,7 +31,7 @@ if (floor(image_index) >= (image_number - 1))
 	image_speed = 0;
 if (counting == 1)
 	pspeed += 7;
-bgx -= 1;
+bgx--;
 bgy++;
 if (jandraw == 1)
 	janscale = approach(janscale, 1, 0.3);

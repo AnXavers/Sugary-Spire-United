@@ -7,7 +7,7 @@ if canmove
 		ScrollY = lerp(ScrollY, (CursorY / 600) * -500, 0.15);
 	if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > 0)
 	{
-		optionselected -= 1;
+		optionselected--;
 		scr_sound(sound_step);
 		optionsaved_newscorefont = global.newscorefont;
 		optionsaved_newplayeranim = global.newplayeranim;

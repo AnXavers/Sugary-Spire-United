@@ -622,7 +622,7 @@ function __scribble_class_typist() constructor
 				{
 					//Scan for events one character at a time
 					_head_pos += min(1, _remaining);
-					_remaining -= 1;
+					_remaining--;
 					
 					//Only scan for new events if we've moved onto a new character
 					if (_head_pos >= __last_character)

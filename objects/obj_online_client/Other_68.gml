@@ -8,7 +8,7 @@ if socket == event_id
 	{
 		case PACKET_PLAYER:
 			var c = buffer_read(buff, buffer_u8)
-			var e_id = buffer_read(buff, buffer_u32)
+			var e_id = buffer_read(buff, buffer_s32)
 			if !ds_map_exists(players, e_id)
 			{
 				var p = instance_create(0, 0, obj_online_player)
@@ -18,18 +18,18 @@ if socket == event_id
 			var p = players[? e_id]
 			switch(c)
 			{
-				case CMD_Y:
-					p.y = buffer_read(buff, buffer_s16);
-					break;
 				case CMD_X:
-					p.x = buffer_read(buff, buffer_s16);
-					break;
-				case CMD_SPRITE:
-					p.sprite_index = buffer_read(buff, buffer_u16);
-					break;
+					p.x = buffer_read(buff, buffer_s16)
+					break
+				case CMD_Y:
+					p.y = buffer_read(buff, buffer_s16)
+					break
 				case CMD_NAME:
-					p.playername = buffer_read(buff, buffer_string);
-					break;
+					p.playername = buffer_read(buff, buffer_string)
+					break
+				case CMD_SPRITE:
+					p.sprite_index = buffer_read(buff, buffer_u16)
+					break
 				case CMD_DESTROY:
 					buffer_read(buff, buffer_u8);
 					ds_map_delete(players, e_id)

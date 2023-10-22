@@ -2,7 +2,7 @@ if (obj_player.state == 17 && state != 6 && state != 17)
 {
 	state = 6;
 	obj_player.state = 1;
-	hp -= 1;
+	hp--;
 	stunned = 100;
 }
 if (state == 17)

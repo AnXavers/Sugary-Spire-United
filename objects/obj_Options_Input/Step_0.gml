@@ -1,12 +1,12 @@
-if (canmove == 1)
+if (canmove)
 {
 	scr_getinput();
 	ScrollY = lerp(ScrollY, (optionselected / 11) * -100, 0.15);
-	if (selecting == 0)
+	if (!selecting)
 	{
 		if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > 0)
 		{
-			optionselected -= 1;
+			optionselected--;
 			scr_sound(sound_step);
 		}
 		if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 11)

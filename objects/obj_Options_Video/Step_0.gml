@@ -4,7 +4,7 @@ if (canmove == 1)
 	ScrollY = lerp(ScrollY, (optionselected / 7) * -500, 0.15);
 	if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > 0)
 	{
-		optionselected -= 1;
+		optionselected--;
 		scr_sound(sound_step);
 		optionsaved_fullscreen = global.fullscreen;
 		optionsaved_resolution = global.selectedResolution;

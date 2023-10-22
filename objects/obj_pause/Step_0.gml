@@ -33,7 +33,7 @@ if (global.gamePauseState)
 		}
 		if (key_up2 && selected > 0)
 		{
-			selected -= 1;
+			selected--;
 			scr_sound(sound_land);
 		}
 		if (key_jump)

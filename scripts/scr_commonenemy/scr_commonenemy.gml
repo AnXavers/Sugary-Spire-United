@@ -1,7 +1,7 @@
 function scr_commonenemy()
 {
 	if (invtime > 0 && global.freezeframe == 0)
-		invtime -= 1;
+		invtime--;
 	if (setfordeath && !global.hitstunEnabled)
 	{
 		eliteHP--;

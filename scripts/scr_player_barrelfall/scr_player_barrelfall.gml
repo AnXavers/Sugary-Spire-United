@@ -4,7 +4,7 @@ function state_player_barrelfall()
 	if (vsp < 12)
 		vsp += grav;
 	if (place_meeting(x, y, obj_water2))
-		vsp -= 1;
+		vsp--;
 	if (grounded)
 	{
 		state = 83;

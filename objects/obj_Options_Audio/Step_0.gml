@@ -3,7 +3,7 @@ if (canmove == 1)
 	scr_getinput();
 	if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > 0)
 	{
-		optionselected -= 1;
+		optionselected--;
 		scr_sound(sound_step);
 		optionsaved_masterVolume = global.masterVolume;
 		optionsaved_musicVolume = global.musicVolume;

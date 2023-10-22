@@ -13,7 +13,7 @@ if (DestroyedBy.object_index == obj_player)
 					if (hp > 1)
 					{
 						ShakeBuffer = 5;
-						hp -= 1;
+						hp--;
 						instance_create(x, y, obj_bangeffect);
 						instance_create(x, y, obj_slapstar);
 						instance_create(x, y, obj_baddiegibs);

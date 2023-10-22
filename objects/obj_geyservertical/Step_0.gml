@@ -1,6 +1,6 @@
 if (!place_meeting(x, y, obj_geyserstop) && geysertimer > 0)
 {
-	image_yscale -= 1;
+	image_yscale--;
 	alarm[0] = 150;
 }
 with (instance_place(x, y, obj_player))

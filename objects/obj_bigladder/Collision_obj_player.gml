@@ -8,6 +8,6 @@ with (obj_player)
 		state = 59;
 		y = round(y);
 		if ((y % 2) == 1)
-			y -= 1;
+			y--;
 	}
 }

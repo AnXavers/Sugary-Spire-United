@@ -46,7 +46,7 @@ else
 if (global.seconds < 0)
 {
 	global.seconds = 59;
-	global.minutes -= 1;
+	global.minutes--;
 }
 global.dancetimer = approach(global.dancetimer, 0, 1);
 global.hitstunalarm = approach(global.hitstunalarm, -1, 1);
@@ -195,7 +195,7 @@ if (oldranklol != global.currentrank)
 	oldranklol = global.currentrank;
 }
 bubblescale = approach(bubblescale, 0, 0.1);
-global.screenflash -= 1;
+global.screenflash--;
 audio_listener_position(camera_get_view_x(view_camera[0]) + (global.cam_w / 2), camera_get_view_y(view_camera[0]) + (global.cam_h / 2), 0);
 if (painterdex < sprite_get_number(spr_painterhp))
 	painterdex += 0.35;

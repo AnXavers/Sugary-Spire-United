@@ -361,7 +361,7 @@ float easeBounce(float time)
 	}
 	else if (time < 2.0 / d1)
 	{
-		time -= 1.5/d1;
+		time--.5/d1;
 		return 1.0 - (n1*time*time + 0.75);
 	}
 	else if (time < 2.5 / d1)

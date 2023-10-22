@@ -175,7 +175,7 @@ if (showtext == 1)
 if (showtext == 0)
 {
 	if (_draw_y > -64)
-		_draw_y -= 1
+		_draw_y--
 	else
 	{
 		_message = ""

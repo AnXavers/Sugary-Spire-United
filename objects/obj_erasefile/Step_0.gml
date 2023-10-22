@@ -1,7 +1,7 @@
 scr_getinput();
 if ((-key_left2 || keyboard_check_pressed(vk_left)) && optionselected > 0)
 {
-	optionselected -= 1;
+	optionselected--;
 	scr_sound(sound_step);
 }
 if ((key_right2 || keyboard_check_pressed(vk_right)) && optionselected < 1)

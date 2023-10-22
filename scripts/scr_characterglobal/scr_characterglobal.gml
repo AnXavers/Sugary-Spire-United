@@ -359,6 +359,7 @@ function scr_characterglobal()
 				spr_fireassstart = spr_pizzelle_fireassstart
 				spr_fireassend = spr_player_fireassend
 				spr_machslideboost3 = spr_player_mach3boost_new
+				spr_winding = spr_player_winding_new;
 			}
 			else if global.newplayeranim == 2
 			{
@@ -366,6 +367,7 @@ function scr_characterglobal()
 				spr_mach2 = spr_player_mach2_alt;
 				spr_mach3player = spr_player_mach3_alt;
 				spr_crazyrun = spr_player_crazyrun_alt;
+				spr_mach3ceiling = spr_player_climbceilingmach_alt
 			}
 			else if global.newplayeranim == 3
 			{
@@ -629,6 +631,22 @@ function scr_characterglobal()
 			spr_lapportal_exit = spr_lappingportal_exit
 			spr_heatmeterpal = spr_heatpal
 			spr_escapepopup = spr_sugarrush
+			if global.newplayeranim == 1
+			{
+			}
+			else if global.newplayeranim == 2
+			{
+				spr_jump = spr_pizzano_jump_alt
+			}
+			else if global.newplayeranim == 3
+			{
+				spr_mach1 = spr_pizzano_mach1_old
+				spr_mach2 = spr_pizzano_mach2_old
+				spr_mach3player = spr_pizzano_mach3_old
+				spr_player_rankA = spr_pizzano_rankA_old;
+				spr_player_rankB = spr_pizzano_rankB_old;
+				spr_player_rankC = spr_pizzano_rankC_old;
+			}
 			// fonts
 			font_lapcount = global.lapcountfont
 			font_collect_new = global.candlefont

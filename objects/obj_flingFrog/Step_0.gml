@@ -83,7 +83,7 @@ if (grabbedPlayer != -4)
 	if (vsp >= 0)
 		vsp -= 0.65;
 	else if (vsp < 15)
-		vsp -= 1;
+		vsp--;
 	x = clamp(x, xstart - 280, xstart + 280);
 	if ((x >= (xstart + 200) || x <= (xstart - 200)) || ((xprevious - x) == 0 && (yprevious - y) == 0))
 		farBuffer++;

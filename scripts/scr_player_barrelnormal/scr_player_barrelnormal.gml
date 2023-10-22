@@ -23,7 +23,7 @@ function state_player_barrelnormal()
 		landAnim = 0;
 	}
 	if (place_meeting(x, y, obj_water2))
-		vsp -= 1;
+		vsp--;
 	movespeed = 2.5;
 	if (move == 0)
 		sprite_index = spr_player_barrelidle;

@@ -125,7 +125,7 @@ function state_player_grab()
 		swingdingbuffer += 50;
 	}
 	if (swingdingbuffer > 0)
-		swingdingbuffer -= 1;
+		swingdingbuffer--;
 	if (key_slap2)
 	{
 		if (move != 0)

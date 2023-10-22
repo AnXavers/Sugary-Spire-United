@@ -6,7 +6,7 @@ function state_player_bushdisguise()
 		shaketime--;
 	if (key_jump && shaketime < 6)
 	{
-		bushdetection -= 1;
+		bushdetection--;
 		shaketime = 12;
 		sprite_index = spr_player_frothstuck_start;
 		image_index = 0;

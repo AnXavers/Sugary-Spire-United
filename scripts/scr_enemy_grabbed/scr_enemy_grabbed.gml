@@ -45,7 +45,7 @@ function scr_enemy_grabbed()
 		global.hit++;
 		if (other.object_index == obj_pizzaball)
 			global.golfhit++;
-		hp -= 1;
+		hp--;
 		instance_create(x + (obj_player.xscale * 30), y, obj_bumpeffect);
 		alarm[1] = 5;
 		thrown = 1;
@@ -71,7 +71,7 @@ function scr_enemy_grabbed()
 		global.hit++;
 		if (other.object_index == obj_pizzaball)
 			global.golfhit++;
-		hp -= 1;
+		hp--;
 		instance_create(x + (-obj_player.xscale * 50), y, obj_bumpeffect);
 		alarm[1] = 5;
 		thrown = 1;
@@ -94,7 +94,7 @@ function scr_enemy_grabbed()
 	if (obj_player.state == states.shoulder && floor(obj_player.image_index) == 2)
 	{
 		global.hit++;
-		hp -= 1;
+		hp--;
 		instance_create(x, y + 20, obj_bumpeffect);
 		alarm[1] = 5;
 		thrown = 1;
@@ -116,7 +116,7 @@ function scr_enemy_grabbed()
 	if (obj_player.state == states.throwing && floor(obj_player.image_index) == 2)
 	{
 		global.hit++;
-		hp -= 1;
+		hp--;
 		alarm[1] = 5;
 		thrown = 1;
 		x = obj_player.x;

@@ -277,7 +277,7 @@ function state_player_normal()
 		movespeed -= 0.1;
 	if (key_slap2 && shotgunAnim == 1 && !instance_exists(obj_cutscene_upstairs))
 	{
-		global.ammo -= 1;
+		global.ammo--;
 		sprite_index = spr_shotgun;
 		state = 33;
 		image_index = 0;
@@ -354,7 +354,7 @@ function state_player_normal()
 		state = 100;
 		sprite_index = spr_breakdancebeach;
 		image_index = 0;
-		breakdanceammo -= 1;
+		breakdanceammo--;
 	}
 	if (key_slap2 && character == "G")
 	{

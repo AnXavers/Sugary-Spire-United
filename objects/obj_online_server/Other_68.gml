@@ -6,16 +6,12 @@ if server == event_id
 	if (type == network_type_connect)
 	{
 		ds_list_add(sockets, sock)
-		var p = instance_create(100, 100, obj_online_player)
+		var p = instance_create(CMD_X, CMD_Y, obj_online_player)
 		ds_map_add(clients, sock, p)
-		for (var i = 0; i < instance_number(obj_player); i++)
-		{
-			var pl = instance_find(obj_player, i)
-			send_player_data(sock, CMD_X, pl.id, pl.x)
-			send_player_data(sock, CMD_Y, pl.id, pl.y)
-			send_player_data(sock, CMD_NAME, pl.id, pl.playername)
-			send_player_data(sock, CMD_SPRITE, pl.id, pl.sprite_index)
-		}
+		send_player_data(sock, CMD_X, obj_player.id, obj_player.x)
+		send_player_data(sock, CMD_Y, obj_player.id, obj_player.y)
+		send_player_data(sock, CMD_NAME, obj_player.id, obj_player.playername)
+		send_player_data(sock, CMD_SPRITE, obj_player.id, obj_player.sprite_index)
 	}
 	if (type == network_type_disconnect)
 	{
@@ -36,17 +32,4 @@ else if event_id != global.socket
 	buffer_seek(buff, buffer_seek_start, 0)
 	var cmd = buffer_read(buff, buffer_u8)
 	var p = clients[? sock]
-	switch cmd
-	{
-		case PACKET_SPRITE:
-			with p
-			{
-				var s = buffer_read(buff, buffer_u16)
-				var i = buffer_read(buff, buffer_u16)
-				sprite_index = s
-				image_index = i
-			}
-				
-	}
-		
 }
