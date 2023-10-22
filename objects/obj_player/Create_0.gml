@@ -295,6 +295,7 @@ ufotimer = 0;
 ufomaxspeed = 0;
 additionalspeedvar = 0;
 trickcount = 0;
+playername = "Player"
 pattern = false;
 patternspr = spr_pattern0;
 patternnumb = 0;

@@ -8,6 +8,15 @@ if server == event_id
 		ds_list_add(sockets, sock)
 		var p = instance_create(100, 100, obj_online_player)
 		ds_map_add(clients, sock, p)
+		for (var i = 0; i < instance_number(obj_player); i++)
+			var pl = instance_find(obj_player, i)
+			send_player_data(sock, CMD_X, pl.id, pl.x)
+			send_player_data(sock, CMD_Y, pl.id, pl.y)
+			send_player_data(sock, CMD_NAME, pl.id, pl.playername)
+			send_player_data(sock, CMD_SPRITE, pl.id, pl.sprite_index)
+			send_player_data(sock, CMD_IMAGE, pl.id, pl.image_index)
+			send_player_data(sock, CMD_ALPHA, pl.id, pl.image_alpha)
+			send_player_data(sock, CMD_ROTATION, pl.id, pl.image_angle)
 	}
 	if (type == network_type_disconnect)
 	{
