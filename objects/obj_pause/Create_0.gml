@@ -14,7 +14,6 @@ draw_screen = 0;
 custompal = 0;
 pal = 1;
 palspr = spr_pal;
-playerspr = spr_pizzelle_pause;
 bgTileX = 0;
 bgTileY = 0;
 pauseSurface = -1;

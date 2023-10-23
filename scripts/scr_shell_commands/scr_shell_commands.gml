@@ -685,3 +685,17 @@ function meta_quick_load()
 		argumentDescriptions: ["Level to load."]
 	};
 }
+function sh_set_name()
+{
+	obj_player.playername = argument0[1];
+}
+function meta_set_name()
+{
+	return 
+	{
+		description: "Sets the player's name.",
+		arguments: ["<name>"],
+		suggestions: [0],
+		argumentDescriptions: ["the name to give yourself."]
+	};
+}

@@ -18,27 +18,31 @@ if socket == event_id
 			var p = players[? e_id]
 			switch(c)
 			{
+				case CMD_ROOM:
+					p.roomid = buffer_read(buff, buffer_u16)
+					break
 				case CMD_X:
 					p.x = buffer_read(buff, buffer_s16)
 					break
 				case CMD_Y:
 					p.y = buffer_read(buff, buffer_s16)
 					break
+				case CMD_X_SCALE:
+					p.image_xscale = buffer_read(buff, buffer_s8)
+					break
+				case CMD_SPRITE:
+					p.sprite_index = buffer_read(buff, buffer_u32)
+					break
 				case CMD_NAME:
 					p.playername = buffer_read(buff, buffer_string)
 					break
-				case CMD_SPRITE:
-					p.sprite_index = buffer_read(buff, buffer_u16)
+				case CMD_MESSAGE:
+					p.msg = buffer_read(buff, buffer_string)
 					break
-				case CMD_DESTROY:
-					buffer_read(buff, buffer_u8);
-					ds_map_delete(players, e_id)
-					with (p)
-					{
-						instance_destroy()
-					}
-					break;
+				case CMD_TYPING:
+					p.typing = buffer_read(buff, buffer_bool)
+					break
 			}
-			break
+			break;
 	}
 }

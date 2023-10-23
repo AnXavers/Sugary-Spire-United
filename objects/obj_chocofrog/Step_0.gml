@@ -60,12 +60,12 @@ with (instance_nearest(x, y, obj_player))
 		with (other.id)
 			instance_destroy();
 	}
-	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.bottlerocket && substate == states.frozen))
+	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.bottlerocket && substate == 0))
 	{
 		with (other.id)
 			instance_destroy();
 	}
-	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.barrelcrouch && substate == states.frozen))
+	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.barrelcrouch && substate == 0))
 	{
 		with (other.id)
 			instance_destroy();

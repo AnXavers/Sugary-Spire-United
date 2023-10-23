@@ -40,7 +40,7 @@ function scr_playerrespawn(argument0 = true)
 					sprite_index = spr_spray;
 					vsp = 0;
 					movespeed = 10;
-					state = states.frozen;
+					state = 0;
 				}
 			}
 			state = states.hurt;

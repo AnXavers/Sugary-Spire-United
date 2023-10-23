@@ -268,7 +268,7 @@ switch (room)
 		window_set_caption("Buzzing cities in the Sugary Spire.");
 		break;
 	case sucrose_1:
-		window_set_caption("Wastelands hidden within the Sugary Spire");
+		window_set_caption("The sky takes its last breath.");
 		break;
 	case silver_0:
 	case silver_1:

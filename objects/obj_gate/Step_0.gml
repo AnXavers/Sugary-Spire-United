@@ -31,7 +31,7 @@ if ((currentState == 1 || currentState == 0) && queuedEvent != 0)
 	if (queuedEvent == 2 && currentState != 0)
 	{
 		currentState = 2;
-		nextState = 0;
+		nextstate = 0;
 		sprite_index = spr_gateRaising;
 	}
 	else if (queuedEvent == 1 && currentState != 1)

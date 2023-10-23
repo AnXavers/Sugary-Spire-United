@@ -71,12 +71,12 @@ function __scribble_super_glyph_copy_common(_target_font_data, _source_font_data
 	}
 	else if (_target_font_data.__msdf || _source_font_data.__msdf)
 	{
-		if (_target_font_data.__msdf == false)
+		if (!_target_font_data.__msdf)
 		{
 			__scribble_error("Cannot mix standard/sprite fonts with MSDF fonts (target is not an MSDF font)");
 		}
 		
-		if (_source_font_data.__msdf == false)
+		if (!_source_font_data.__msd)
 		{
 			__scribble_error("Cannot mix standard/sprite fonts with MSDF fonts (source is not an MSDF font)");
 		}

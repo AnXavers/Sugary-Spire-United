@@ -60,7 +60,7 @@ if (character == "P")
 if ((angry == 1 || global.stylethreshold > 3) && sprite_index == spr_idle)
 	sprite_index = spr_angryidle;
 scr_playersounds();
-if (sprite_index == spr_winding && state != 1)
+if (sprite_index == spr_winding && state != states.normal)
 	windingAnim = 0;
 else
 	audio_stop_sound(sound_superjumpcharge2);
