@@ -1,0 +1,1 @@
+targetRoom = stormy_6;

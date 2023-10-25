@@ -8,14 +8,14 @@ if socket == event_id
 	{
 		case PACKET_PLAYER:
 			var c = buffer_read(buff, buffer_u8)
-			var e_id = buffer_read(buff, buffer_s32)
-			if !ds_map_exists(players, e_id)
+			var p_id = buffer_read(buff, buffer_s32)
+			if !ds_map_exists(players, p_id)
 			{
 				var p = instance_create(0, 0, obj_online_player)
-				ds_map_set(players, e_id, p)
+				ds_map_set(players, p_id, p)
 				show_debug_message("Created Player")
 			}
-			var p = players[? e_id]
+			var p = players[? p_id]
 			switch(c)
 			{
 				case CMD_ROOM:

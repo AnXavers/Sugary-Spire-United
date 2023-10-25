@@ -20,7 +20,6 @@ function do_special()
 	{
 		hsp = 0
 		vsp = 0
-		state = states.frozen;
 		sprite_index = spr_winding
 		msg = keyboard_string
 		if (keyboard_check_pressed(vk_enter))
