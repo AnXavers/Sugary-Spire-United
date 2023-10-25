@@ -12,8 +12,8 @@
   "out_tilehborder": 0,
   "out_tilevborder": 0,
   "parent": {
-    "name": "Exitway",
-    "path": "folders/Tile Sets/Levels/Exitway.yy",
+    "name": "SugarySpire",
+    "path": "SugarySpire.yyp",
   },
   "spriteId": {
     "name": "ts_exitway1_sprite",

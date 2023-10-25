@@ -3,7 +3,7 @@ var cam_height = camera_get_view_height(view_camera[0]);
 var cam_x = camera_get_view_x(view_camera[0]);
 var cam_y = camera_get_view_y(view_camera[0]);
 var c = view_camera[0];
-if (sucrose_lighting || bloodsauce_lighting || dance_lighting)
+if (sucrose_lighting || bloodsauce_lighting || dance_lighting || stormy_lighting)
 {
 	if (sucrose_lighting && !surface_exists(sucrose_surface))
 	{
@@ -108,6 +108,30 @@ if (sucrose_lighting || bloodsauce_lighting || dance_lighting)
 		draw_set_alpha(1);
 		surface_reset_target();
 		draw_surface(bloodsauce_surface, cam_x, cam_y);
+	}
+	if (stormy_lighting && !surface_exists(stormy_surface))
+	{
+		stormy_surface = surface_create(cam_width, cam_height);
+		surface_set_target(stormy_surface);
+		draw_clear_alpha(0, 0);
+		surface_reset_target();
+	}
+	if (stormy_lighting && surface_exists(stormy_surface))
+	{
+		surface_set_target(stormy_surface);
+		draw_clear_alpha(c_black, 1);
+		draw_set_blend_mode(3);
+		with (obj_player)
+		{
+			draw_set_alpha(0.5)
+			draw_circle_color(x - cam_x, y - cam_y, 240, c_white, c_white, false)
+			draw_circle_color(x - cam_x, y - cam_y, 160, c_white, c_white, false)
+			draw_set_alpha(1)
+		}
+		draw_set_blend_mode(0);
+		draw_set_alpha(0.75);
+		surface_reset_target();
+		draw_surface(stormy_surface, cam_x, cam_y);
 	}
 }
 if (instance_exists(obj_bosscontroller) && instance_exists(par_boss) && boss_radius <= 300 && obj_bosscontroller.showing_versus == 0)
