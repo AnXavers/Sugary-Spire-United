@@ -1,2 +1,2 @@
-targetRoom = steamy_2;
+targetRoom = stormy_2;
 visible = 0;
