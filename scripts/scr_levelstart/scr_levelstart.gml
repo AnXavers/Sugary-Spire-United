@@ -14,6 +14,10 @@ function scr_levelstart()
 			global.srank = 23000;
 			global.harrycolor = 0;
 			break;
+		case "storm":
+			global.srank = 24000;
+			global.harrycolor = 3;
+			break;
 		case "molasses":
 			global.srank = 23500;
 			global.harrycolor = 0;

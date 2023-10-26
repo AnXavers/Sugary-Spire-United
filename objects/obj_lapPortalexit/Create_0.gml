@@ -21,6 +21,9 @@ else if global.inflapping == 2
 			case "steamy":
 				global.fill_4 = time_in_frames(1, 0)
 				break
+			case "stormy":
+				global.fill_4 = time_in_frames(1, 0)
+				break
 			case "molasses":
 				global.fill_4 = time_in_frames(1, 10)
 				break

@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "SugarySpire",
-    "path": "SugarySpire.yyp",
+    "name": "Weird Shit IDK",
+    "path": "folders/Sprites/Weird Shit IDK.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

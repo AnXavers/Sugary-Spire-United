@@ -1,1 +1,1 @@
-targetRoom = steamy_5;
+targetRoom = stormy_5;

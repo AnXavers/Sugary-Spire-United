@@ -8,6 +8,10 @@ function scr_escapetimes(argument0 = global.levelname)
 			minutes = 4;
 			seconds = 0;
 			break;
+		case "stormy":
+			minutes = 4;
+			seconds = 0;
+			break;
 		case "entryway":
 			minutes = 3;
 			seconds = 0;

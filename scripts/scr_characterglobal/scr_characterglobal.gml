@@ -692,31 +692,34 @@ function scr_characterglobal()
 			for (var i = 0; i <= 10 ; i++)
 				global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
 			ini_close()
-			set_palette(0, "Default", 0, c_white, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 13660176);
-			set_palette(1, "Familiar Gremlin", 1607896, 1529791, 8628991, 14496, 8446200, 5678550, 16295984, 13660176);
-			set_palette(2, "Familiar Chef", 0, 16571339, 13088161, 8628991, 14496, c_white, 9670034, 16295984, 13660176);
-			set_palette(3, "Lasagna", 0, 10607871, 6790614, 6984167, 10614, 881663, 2566034, 16295984, 13660176);
-			set_palette(4, "Spice", 0, 9670034, 7893878, 8628991, 2565782, c_red, 133, 16295984, 13660176);
-			set_palette(5, "Plumber", 0, 16295984, 13660176, 8628991, 14496, 12512, 88, 3700243, 13660176);
-			set_palette(6, "Green Apple", 0, 3700243, 2438912, 8559341, 21690, 458496, 3700243, 16295984, 13660176);
-			set_palette(7, "Grape Soda", 0, 4982461, 3212154, 15761362, 8388670, 14231934, 8388670, 16295984, 13660176);
-			set_palette(8, "Antipathic", 0, 10461182, 9733581, 14277081, 11974326, 6710886, 3355443, 16295984, 13660176);
-			set_palette(9, "Gummy Bear", 0, 5263592, 855491, 5263592, 855491, 855491, 128, 16295984, 13660176);
-			set_palette(10, "Lime", 0, 4759552, 2115584, 13695144, 4771936, 4771936, 28672, 16295984, 13660176);
-			set_palette(11, "Bear5", 0, 14994783, 5396057, 8543528, 5323032, 8879748, 6974057, 16295984, 13660176);
-			set_palette(12, "Cream n' Chips", 1, spr_pattern0, 13150344);
-			set_palette(13, "Valiant Hero", 1, spr_pattern1, 13150344);
-			set_palette(14, "Dead Man's Treats", 1, spr_pattern2, 13150344);
-			set_palette(15, "Candy Cane", 1, spr_pattern3, 13150344);
-			set_palette(16, "Sweet Apple", 1, spr_pattern4, 13150344);
-			set_palette(17, "Space Cream", 1, spr_pattern5, 13150344);
-			set_palette(18, "Sourness", 1, spr_pattern6, 13150344);
-			set_palette(19, "Neapolitan", 1, spr_pattern7, 13150344);
-			set_palette(20, "Cookie Cutter", 1, spr_pattern8, 13150344);
-			set_palette(21, "MissingTexture", 1, spr_pattern9, 13150344);
-			set_palette(22, "Solid", 1, spr_pattern10, 13150344);
-			set_palette(23, "Choco Squares", 1, spr_pattern11, 13150344);
-			set_palette(24, "Cotton Candy", 1, spr_pattern12, 13150344);
+			var outline_col = c_black
+			if state == 88 || state == 97 || state == 98
+				outline_col = 5242960
+			set_palette(0, "Default", 0, c_white, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
+			set_palette(1, "Familiar Gremlin", 1607896, 1529791, 8628991, 14496, 8446200, 5678550, 16295984, 14903400, outline_col);
+			set_palette(2, "Familiar Chef", 0, 16571339, 13088161, 8628991, 14496, c_white, 9670034, 16295984, 14903400, outline_col);
+			set_palette(3, "Lasagna", 0, 10607871, 6790614, 6984167, 10614, 881663, 2566034, 16295984, 14903400, outline_col);
+			set_palette(4, "Spice", 0, 9670034, 7893878, 8628991, 2565782, c_red, 133, 16295984, 14903400, outline_col);
+			set_palette(5, "Plumber", 0, 16295984, 13660176, 8628991, 14496, 12512, 88, 16295984, 14903400, outline_col);
+			set_palette(6, "Green Apple", 0, 3700243, 2438912, 8559341, 21690, 458496, 3700243, 16295984, 14903400, outline_col);
+			set_palette(7, "Grape Soda", 0, 4982461, 3212154, 15761362, 8388670, 14231934, 8388670, 16295984, 14903400, outline_col);
+			set_palette(8, "Antipathic", 0, 10461182, 9733581, 14277081, 11974326, 6710886, 3355443, 16295984, 14903400, outline_col);
+			set_palette(9, "Gummy Bear", 0, 5263592, 855491, 5263592, 855491, 855491, 128, 16295984, 14903400, outline_col);
+			set_palette(10, "Lime", 0, 4759552, 2115584, 13695144, 4771936, 4771936, 28672, 16295984, 14903400, outline_col);
+			set_palette(11, "Bear5", 0, 14994783, 5396057, 8543528, 5323032, 8879748, 6974057, 16295984, 14903400, outline_col);
+			set_palette(12, "Cream n' Chips", 1, spr_pattern0, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
+			set_palette(13, "Valiant Hero", 1, spr_pattern1, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
+			set_palette(14, "Dead Man's Treats", 1, spr_pattern2, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
+			set_palette(15, "Candy Cane", 1, spr_pattern3, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
+			set_palette(16, "Sweet Apple", 1, spr_pattern4, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
+			set_palette(17, "Space Cream", 1, spr_pattern5, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
+			set_palette(18, "Sourness", 1, spr_pattern6, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
+			set_palette(19, "Neapolitan", 1, spr_pattern7, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
+			set_palette(20, "Cookie Cutter", 1, spr_pattern8, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
+			set_palette(21, "MissingTexture", 1, spr_pattern9, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
+			set_palette(22, "Solid", 1, spr_pattern10, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
+			set_palette(23, "Choco Squares", 1, spr_pattern11, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
+			set_palette(24, "Cotton Candy", 1, spr_pattern12, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
 			set_palette(25, "Custom", 0, global.custompal_col[1], global.custompal_col[9], global.custompal_col[3], global.custompal_col[4], global.custompal_col[7], global.custompal_col[8], global.custompal_col[5], global.custompal_col[6], global.custompal_col[0], global.custompal_col[2]);
 			break;
 		case "G":

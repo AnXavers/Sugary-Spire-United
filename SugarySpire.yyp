@@ -5620,6 +5620,7 @@
     {"id":{"name":"spr_gumslime_gumball","path":"sprites/spr_gumslime_gumball/spr_gumslime_gumball.yy",},},
     {"id":{"name":"spr_confecticage_debris","path":"sprites/spr_confecticage_debris/spr_confecticage_debris.yy",},},
     {"id":{"name":"spr_spamtonwalk","path":"sprites/spr_spamtonwalk/spr_spamtonwalk.yy",},},
+    {"id":{"name":"spr_cottonplatform_stormy","path":"sprites/spr_cottonplatform_stormy/spr_cottonplatform_stormy.yy",},},
     {"id":{"name":"spr_popcornscaredsh","path":"sprites/spr_popcornscaredsh/spr_popcornscaredsh.yy",},},
     {"id":{"name":"bg_mines2","path":"sprites/bg_mines2/bg_mines2.yy",},},
     {"id":{"name":"spr_coneboy_guard","path":"sprites/spr_coneboy_guard/spr_coneboy_guard.yy",},},
