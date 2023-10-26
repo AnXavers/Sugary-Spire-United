@@ -1560,7 +1560,7 @@
     {"name":"mines_8B","order":10,"path":"rooms/mines_8B/mines_8B.yy",},
     {"name":"obj_lowface","order":489,"path":"objects/obj_lowface/obj_lowface.yy",},
     {"name":"entryway_2_custom","order":3,"path":"rooms/entryway_2_custom/entryway_2_custom.yy",},
-    {"name":"frontparastormy","order":33,"path":"sprites/frontparastormy/frontparastormy.yy",},
+    {"name":"frontparastormy","order":26,"path":"sprites/frontparastormy/frontparastormy.yy",},
     {"name":"mines_9","order":11,"path":"rooms/mines_9/mines_9.yy",},
     {"name":"mines_8","order":12,"path":"rooms/mines_8/mines_8.yy",},
     {"name":"mines_10","order":13,"path":"rooms/mines_10/mines_10.yy",},

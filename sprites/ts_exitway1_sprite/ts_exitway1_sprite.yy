@@ -15,9 +15,9 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c9cab0f0-2e66-45ee-949a-8b5ae8159b48",},
   ],
-  "gridX": 0,
-  "gridY": 0,
-  "height": 1216,
+  "gridX": 32,
+  "gridY": 32,
+  "height": 1376,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5f0d9921-d385-4a42-a24b-f904c5427eee","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},

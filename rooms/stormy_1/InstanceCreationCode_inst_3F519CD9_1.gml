@@ -1,1 +1,1 @@
-targetRoom = steamy_portal;
+targetRoom = stormy_portal;
