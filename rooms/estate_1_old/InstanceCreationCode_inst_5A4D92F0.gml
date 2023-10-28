@@ -1,1 +1,1 @@
-firstGumslime = 1
+firstGumslime = true;

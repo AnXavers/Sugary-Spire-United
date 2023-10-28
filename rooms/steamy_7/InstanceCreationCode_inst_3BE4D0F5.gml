@@ -1,4 +1,4 @@
-flags.do_save = false;
+flags.do_once_per_save = false;
 condition = function()
 {
 	var _check = false;

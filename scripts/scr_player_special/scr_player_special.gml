@@ -1,6 +1,6 @@
 function do_special()
 {
-	if (key_special2 && key_taunt)
+	if (key_special2)
 	{
 		paletteselect++;
 		if (paletteselect >= palnum)
@@ -8,7 +8,7 @@ function do_special()
 		if (buffer_exists(my_pal_buffer))
 			buffer_delete(my_pal_buffer);
 	}
-	else if (key_special2 && !typing)
+	else if (keyboard_check_pressed(vk_enter) && !typing)
 	{
 		vsp = 0
 		hsp = 0

@@ -169,7 +169,8 @@ function scr_characterglobal()
 			spr_superjumpleft = spr_player_superjumpleft;
 			spr_superjump = spr_player_superjump;
 			spr_superjump_cancel = spr_player_superjump_cancel;
-			spr_superjump_cancelgrounded = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancelgroundedmach4 = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancelgroundedmach3 = spr_pizzano_mach3;
 			spr_superjump_cancelprep = spr_player_superjump_cancelprep;
 			spr_superjumpland = spr_player_superjumpland;
 			spr_suplexdashCancel = spr_player_suplexdashCancel;
@@ -592,7 +593,8 @@ function scr_characterglobal()
 			spr_kungfu5 = spr_pizzano_kungfu5;
 			spr_superjump_cancel = spr_pizzano_sjumpside;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
-			spr_superjump_cancelgrounded = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancelgroundedmach4 = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancelgroundedmach3 = spr_pizzano_mach3;
 			spr_twirl = spr_pizzano_twirl;
 			spr_bigcollect1 = spr_bigcollect1N;
 			spr_bigcollect2 = spr_bigcollect2N;
@@ -1286,7 +1288,8 @@ function scr_characterglobal()
 			spr_superjumpleft = spr_player_superjumpleft_pep;
 			spr_superjump = spr_player_superjump_pep;
 			spr_superjump_cancel = spr_player_Sjumpcancel_pep;
-			spr_superjump_cancelgrounded = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancelgroundedmach4 = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancelgroundedmach3 = spr_pizzano_mach3;
 			spr_superjump_cancelprep = spr_player_Sjumpcancelstart_pep
 			spr_superjumpland = spr_player_superjumpland_pep;
 			spr_suplexdashCancel = spr_player_suplexcancel_pep;
@@ -1979,7 +1982,8 @@ function scr_characterglobal()
 			spr_superjumpleft = spr_playerV_facehurt;
 			spr_superjump = spr_playerV_sjump;
 			spr_superjump_cancel = spr_player_Sjumpcancel_pep;
-			spr_superjump_cancelgrounded = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancelgroundedmach4 = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancelgroundedmach3 = spr_pizzano_mach3;
 			spr_superjump_cancelprep = spr_player_Sjumpcancelstart_pep
 			spr_superjumpland = spr_player_superjumpland_pep;
 			spr_suplexdashCancel = spr_player_suplexcancel_pep;
@@ -2335,7 +2339,8 @@ function scr_characterglobal()
 			spr_superjumpleft = spr_player_superjumpleft_pep;
 			spr_superjump = spr_player_superjump_pep;
 			spr_superjump_cancel = spr_player_Sjumpcancel_pep;
-			spr_superjump_cancelgrounded = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancelgroundedmach4 = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancelgroundedmach3 = spr_pizzano_mach3;
 			spr_superjump_cancelprep = spr_player_Sjumpcancelstart_pep
 			spr_superjumpland = spr_player_superjumpland_pep;
 			spr_suplexdashCancel = spr_player_suplexcancel_pep;
@@ -2699,7 +2704,8 @@ function scr_characterglobal()
 			spr_superjumpleft = spr_player_superjumpleft;
 			spr_superjump = spr_player_superjump;
 			spr_superjump_cancel = spr_player_superjump_cancel;
-			spr_superjump_cancelgrounded = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancelgroundedmach4 = spr_pizzano_sjumpsidemach4grounded;
+			spr_superjump_cancelgroundedmach3 = spr_pizzano_mach3;
 			spr_superjump_cancelprep = spr_player_superjump_cancelprep;
 			spr_superjumpland = spr_player_superjumpland;
 			spr_suplexdashCancel = spr_player_suplexdashCancel;

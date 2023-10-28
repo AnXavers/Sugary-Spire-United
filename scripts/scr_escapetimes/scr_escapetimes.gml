@@ -101,6 +101,10 @@ function scr_laptimes(argument0 = global.levelname)
 			minutes = 1;
 			seconds = 15;
 			break;
+		case "stormy":
+			minutes = 1;
+			seconds = 15;
+			break;
 		case "entryway":
 			minutes = 1;
 			seconds = 10;

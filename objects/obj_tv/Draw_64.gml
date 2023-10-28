@@ -36,7 +36,7 @@ else if obj_player.do_combometer_type
 	draw_set_halign(fa_right);
 	draw_set_font(global.combopepfont);
 	draw_sprite_ext(spr_tv_combobubble, -1, _cx + combo_x + 160, 218 + combo_y, 1, 1, 0, c_white, alpha);
-	draw_sprite_ext(spr_tv_combobubblefill, -1, _cx - (hand_y * 2), _hy - hand_y, 1, 1, 0, c_white, alpha);
+	draw_sprite_ext(spr_tv_combobubblefill, -1, _cx - (hand_y * 2) + 100, _hy - hand_y + 200, 1, 1, 0, c_white, alpha);
 	var _ct = string(global.combo) + "x";
 	draw_text(_cx + combo_x, combo_y, _ct);
 }
