@@ -1,6 +1,6 @@
-speaking = true;
-if !place_meeting(x, y, obj_player)
-	speaking = false;
+speaking = false;
+if (place_meeting(x, y, obj_player) && ((!press_to_speak) || (obj_player.key_slap2 && press_to_speak)))
+	speaking = true;
 sprite_index = speaking ? speak : idle;
 mytex_x -= 0.5;
 mytex_x %= sprite_get_width(mytex);
@@ -20,4 +20,10 @@ with (inst_78702139)
 		visible = false
 	else if obj_player.sprite_index != spr_pizzelle_taunt
 		visible = true
+}
+if turn_to_player
+{
+	image_xscale = 1
+	if obj_player.x > x
+		image_xscale = -1
 }

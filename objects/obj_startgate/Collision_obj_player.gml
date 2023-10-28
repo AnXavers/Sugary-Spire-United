@@ -27,10 +27,16 @@ if (sprite_index != spr_exitgateclosed)
 		{
 			if (animation_end())
 			{
-				if (!instance_exists(obj_titlecard))
+				if (!instance_exists(obj_titlecard) && other.do_titlecard)
 				{
 					with (instance_create(x, y, obj_titlecard))
 						info = instance_nearest(x, y, obj_startgate).info;
+				}
+				else if (!instance_exists(obj_fadeout) && !other.do_titlecard)
+				{
+					instance_create(x, y, obj_fadeout);
+					obj_tv.tvsprite = spr_tvturnon;
+					obj_tv.image_index = 0;
 				}
 			}
 		}

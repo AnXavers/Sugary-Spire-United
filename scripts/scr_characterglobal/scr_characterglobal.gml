@@ -360,6 +360,7 @@ function scr_characterglobal()
 				spr_fireassend = spr_player_fireassend
 				spr_machslideboost3 = spr_player_mach3boost_new
 				spr_winding = spr_player_winding_new;
+				spr_climbwall = spr_player_climbwall_new
 			}
 			else if global.newplayeranim == 2
 			{
