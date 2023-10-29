@@ -85,11 +85,13 @@ function state_player_handstandjump()
 			{
 				grav = 0.5;
 				movespeed = 0;
-				state = 72;
+				state = states.jump;
 				hsp = -2.5 * xscale;
-				vsp = -3;
+				vsp = -4;
 				mach2 = 0;
+				sprite_index = spr_suplexbump
 				image_index = 0;
+				jumpstop = 1
 				machslideAnim = 1;
 				machhitAnim = 0;
 				instance_create(x + (10 * xscale), y + 10, obj_bumpeffect);

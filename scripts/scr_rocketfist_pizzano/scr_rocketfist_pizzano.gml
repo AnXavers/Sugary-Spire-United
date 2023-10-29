@@ -73,7 +73,7 @@ else if sprite_index != spr_superjump_cancelprep
 		if !grounded
 			sprite_index = spr_superjump_cancel;
 		else
-			sprite_index = 	spr_mach3player;
+			sprite_index = 	spr_superjump_cancelgroundedmach3;
 	}	
 	
 	if key_jump && grounded
@@ -110,7 +110,7 @@ else if sprite_index != spr_superjump_cancelprep
 	}
 	else if !key_down && grounded && hsp != 0
 	{
-		sprite_index = 	spr_mach3player
+		sprite_index = 	spr_superjump_cancelgroundedmach3
 	}
 	
 		if key_jump2
@@ -167,6 +167,9 @@ else if sprite_index != spr_superjump_cancelprep
 )
         }
     }
+	if sprite_index == spr_playerN_jetpackstart
+	image_speed = 0.50
+	else
     image_speed = 0.35
     do_taunt()
 }

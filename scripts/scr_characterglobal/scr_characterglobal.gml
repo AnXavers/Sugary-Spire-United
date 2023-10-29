@@ -40,12 +40,17 @@ function scr_characterglobal()
 			spr_mach1 = spr_player_mach1;
 			spr_mach2 = spr_player_mach2;
 			spr_mach3player = spr_player_mach3;
+			spr_walljumpstart = spr_player_secondjump1
+			spr_walljumpend = spr_player_secondjump2
+			spr_suplexbump = spr_player_bump
 			spr_mach2ceiling = spr_player_climbceilingmach2;
 			spr_mach3ceiling = spr_player_climbceilingmach3;
 			spr_machdashpad = spr_player_dashpad;
 			spr_rollgetup = spr_player_rollgetup;
 			spr_mach3jump = spr_player_mach3jump;
 			spr_mach3hitwall = spr_player_mach3hitwall;
+			spr_mach3roll = spr_player_machroll
+			spr_mach3rollstart = spr_player_machroll
 			spr_crazyrun = spr_player_crazyrun;
 			spr_secondjump1 = spr_player_secondjump1;
 			spr_secondjump2 = spr_player_secondjump2;
@@ -371,6 +376,7 @@ function scr_characterglobal()
 				spr_rollgetup = spr_player_rollgetup_new
 				spr_mach3rollstart = spr_player_mach3roll_new
 			spr_mach3roll = spr_player_mach3roll_new
+			spr_suplexbump = spr_player_splat_new
 			}
 			else if global.newplayeranim == 2
 			{
@@ -527,6 +533,7 @@ function scr_characterglobal()
 			spr_mach3hitwall = spr_pizzano_mach3hitwall;
 			spr_walljumpstart = spr_pizzano_mach1jump
 			spr_walljumpend = spr_pizzano_mach1fall
+			spr_suplexbump = spr_player_bump
 			spr_crazyrun = spr_pizzano_crazyrun;
 			spr_secondjump1 = spr_player_secondjump1;
 			spr_secondjump2 = spr_player_secondjump2;
@@ -767,6 +774,7 @@ function scr_characterglobal()
 			spr_mach2 = spr_player_mach2;
 			spr_secondjump1 = spr_player_secondjump1;
 			spr_secondjump2 = spr_player_secondjump2;
+			spr_suplexbump = spr_player_bump
 			spr_machslidestart = spr_player_machslidestart;
 			spr_machslide = spr_player_machsliding;
 			spr_machslideend = spr_player_machslideend;
@@ -964,6 +972,7 @@ function scr_characterglobal()
 			spr_crouchfall = spr_player_crouchfall;
 			spr_couchstart = spr_coneboy_guard;
 			spr_bump = spr_player_bump;
+			spr_suplexbump = spr_player_bump
 			spr_land = spr_player_land;
 			spr_land2 = spr_player_land2;
 			spr_lookdoor = spr_player_lookdoor;
@@ -1161,6 +1170,7 @@ function scr_characterglobal()
 			spr_couchstart = spr_player_crouchstart;
 			spr_splat = spr_player_wallsplat_pep;
 			spr_bump = spr_player_bump_pep;
+			spr_suplexbump = spr_player_suplexbump_pep
 			spr_land = spr_player_land_pep;
 			spr_land2 = spr_player_land2_pep;
 			spr_lookdoor = spr_player_lookdoor_pep;
@@ -1532,6 +1542,7 @@ function scr_characterglobal()
 			spr_couchstart = spr_playerN_crouchstart;
 			spr_splat = spr_player_splat;
 			spr_bump = spr_playerN_bump;
+			spr_suplexbump = spr_playerN_suplexbump
 			spr_land = spr_playerN_land;
 			spr_land2 = spr_playerN_land2;
 			spr_lookdoor = spr_playerN_lookdoor;
@@ -1566,6 +1577,8 @@ function scr_characterglobal()
 			spr_machslideboost3 = spr_playerN_mach3boost;
 			spr_machslideboost3FallStart = spr_player_machslideboost3FallStart;
 			spr_machslideboost3Fall = spr_player_machslideboost3Fall;
+			spr_superjump_cancelgroundedmach3 = spr_playerN_jetpackboost
+			spr_superjump_cancelgroundedmach4 = spr_playerN_jetpackboost
 			spr_land2 = spr_playerN_land2;
 			spr_punch = spr_playerN_punch;
 			spr_backkick = spr_playerN_backkick;
@@ -1874,6 +1887,7 @@ function scr_characterglobal()
 			spr_couchstart = spr_playerV_crouchjump;
 			spr_splat = spr_player_wallsplat_pep;
 			spr_bump = spr_playerV_bump;
+			spr_suplexbump = spr_player_bump
 			spr_land = spr_player_land_pep;
 			spr_land2 = spr_player_land2_pep;
 			spr_lookdoor = spr_player_lookdoor_pep;
@@ -2233,6 +2247,7 @@ function scr_characterglobal()
 			spr_couchstart = spr_player_crouchstart;
 			spr_splat = spr_player_wallsplat_pep;
 			spr_bump = spr_player_bump_pep;
+			spr_suplexbump = spr_player_bump
 			spr_land = spr_player_land_pep;
 			spr_land2 = spr_player_land2_pep;
 			spr_lookdoor = spr_player_lookdoor_pep;
