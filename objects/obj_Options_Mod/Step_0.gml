@@ -1,3 +1,4 @@
+//TO BE DELETED
 if (selected == 0)
 {
 	scr_getinput();
@@ -6,7 +7,7 @@ if (selected == 0)
 		optionselected--;
 		scr_sound(sound_step);
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 5)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 3)
 	{
 		optionselected++;
 		scr_sound(sound_step);
@@ -23,16 +24,6 @@ if (selected == 0)
 			}
 			break;
 		case 1:
-			subtitle = "ADJUST MOD MUSIC";
-			CursorY = 100;
-			if (key_jump)
-			{
-				scr_sound(sound_enemythrow);
-				selected = true;
-				instance_create(0, 0, obj_Options_Mod_Music);
-			}
-			break;
-		case 2:
 			subtitle = "ADJUST MOD VISUALS";
 			CursorY = 200;
 			if (key_jump)
@@ -42,7 +33,7 @@ if (selected == 0)
 				instance_create(0, 0, obj_Options_Mod_Visual);
 			}
 			break;
-		case 3:
+		case 2:
 			subtitle = "ADJUST MOD GAMEPLAY";
 			CursorY = 300;
 			if (key_jump)
@@ -52,7 +43,7 @@ if (selected == 0)
 				instance_create(0, 0, obj_Options_Mod_Gameplay);
 			}
 			break;
-		case 4:
+		case 3:
 			subtitle = "ADJUST IN-GAME LANGUAGE";
 			CursorY = 400;
 			if (key_jump)

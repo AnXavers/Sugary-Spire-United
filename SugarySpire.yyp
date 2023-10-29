@@ -648,6 +648,7 @@
     {"id":{"name":"obj_hotbutter","path":"objects/obj_hotbutter/obj_hotbutter.yy",},},
     {"id":{"name":"spr_pepinoHUD3hp","path":"sprites/spr_pepinoHUD3hp/spr_pepinoHUD3hp.yy",},},
     {"id":{"name":"spr_playerN_glide","path":"sprites/spr_playerN_glide/spr_playerN_glide.yy",},},
+    {"id":{"name":"bg_hub3_clouds_esc","path":"sprites/bg_hub3_clouds_esc/bg_hub3_clouds_esc.yy",},},
     {"id":{"name":"obj_pizzano_spawner","path":"objects/obj_pizzano_spawner/obj_pizzano_spawner.yy",},},
     {"id":{"name":"obj_timesup","path":"objects/obj_timesup/obj_timesup.yy",},},
     {"id":{"name":"spr_Noise_airdash1","path":"sprites/spr_Noise_airdash1/spr_Noise_airdash1.yy",},},

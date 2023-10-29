@@ -22,7 +22,7 @@ if (active == 1)
 		ds_map_set(global.musicreplace, asset_get_index(global.musiclist[selectedy]), asset_get_index(global.musiclist[selectedx]));
 		scr_sound(sound_enemythrow)
 	}
-	if (key_escape)
+	if (keyboard_check_pressed(vk_enter))
 		active = 0
 }
 bgTileX++;

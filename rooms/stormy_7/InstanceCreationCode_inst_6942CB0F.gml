@@ -1,1 +1,1 @@
-targetRoom = stormy_secret_3
+targetRoom = stormy_secret_2

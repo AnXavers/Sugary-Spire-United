@@ -1,12 +1,12 @@
+//TO BE DELETED
 draw_set_halign(1);
 draw_set_font(global.font);
 if (selected == 0)
 {
 	draw_option(150, 30, "BACK", optionselected == 0);
-	draw_option(480, 100, "MOD MUSIC CONFIG", optionselected == 1);
-	draw_option(480, 200, "MOD VISUAL CONFIG", optionselected == 2);
-	draw_option(480, 300, "MOD GAMEPLAY CONFIG", optionselected == 3);
-	draw_option(480, 400, "LANGUAGE CONFIG", optionselected == 4);
+	draw_option(480, 200, "MOD VISUAL CONFIG", optionselected == 1);
+	draw_option(480, 300, "MOD GAMEPLAY CONFIG", optionselected == 2);
+	draw_option(480, 400, "LANGUAGE CONFIG", optionselected == 3);
 	draw_set_font(global.smallfont);
 	var _string_width = string_width(subtitle) + 32;
 	if (subtitle != "")
