@@ -118,7 +118,7 @@ for (var i = 0; audio_exists(i); i++)
 		I++
 	}
 }
-global.musicreplace = ds_list_create()
+global.musicreplace = ds_map_create()
 ini_open("silversave.ini")
 global.keypieces = ini_read_real("Unlocks", "keypieces", 0);
 global.unlockshell = ini_read_real("Unlocks", "shell", 0);

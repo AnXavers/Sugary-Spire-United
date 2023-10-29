@@ -1,3 +1,3 @@
-targetRoom = stormy_8;
+targetRoom = stormy_silver;
 visited = true;
 visible = false;

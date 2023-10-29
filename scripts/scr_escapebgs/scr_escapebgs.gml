@@ -97,7 +97,8 @@ function scr_escapebgs()
 		layer_change_background(bg_exitwayclouds1, bg_exitwayclouds1E)
 		layer_change_background(bg_exitwaycityback, bg_exitwaycitybackE)
 		layer_change_background(bg_exitwaycity, bg_exitwaycityE)
-		layer_change_background(bg_hub3___, bg_stormy1_esc)
+		layer_change_background(bg_hub3, bg_stormy1_esc)
+		layer_change_background(bg_stormy_rain, bg_stormy_rain_esc)
 		layer_change_tileset(ts_mountain1_night, ts_mountain1_day)
 	}
 }

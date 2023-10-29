@@ -1,0 +1,1 @@
+draw_sprite(spr_keypiece, 0, x, wave(y - 5, y + 5, 4, 0))

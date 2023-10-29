@@ -6,10 +6,10 @@ function draw_option(argument0, argument1, argument2, argument3)
 	draw_text(argument0, argument1, argument2);
 	draw_set_color(c_white);
 }
-function draw_jukebox(argument0, argument1, argument2, argument3)
+function draw_jukebox(argument0, argument1, argument2, argument3, argument4)
 {
 	draw_set_color(c_white);
-	if (argument3 == i)
+	if (argument3 == argument4)
 		draw_set_color(0x666666);
 	draw_text(argument0, argument1, argument2);
 	draw_set_color(c_white);
