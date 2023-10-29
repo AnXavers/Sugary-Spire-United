@@ -56,7 +56,9 @@ function state_player_handstandjump()
 	}
 	if (key_jump && grounded)
 	{
-		sprite_index = spr_mach2jump;
+		sprite_index = spr_longjump;
+		image_index = 0
+		
 		instance_create(x, y, obj_jumpdust);
 		state = 69;
 		jumpstop = 0;

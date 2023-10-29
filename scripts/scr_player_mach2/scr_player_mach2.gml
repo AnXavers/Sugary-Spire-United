@@ -205,16 +205,20 @@ function state_player_mach2()
 				sprite_index = spr_dashcloud;
 		}
 	}
-	if ((!grounded && sprite_index != spr_secondjump2 && sprite_index != spr_mach2jump) && sprite_index != spr_null && sprite_index != spr_player_bump)
+	if ((!grounded && sprite_index != spr_secondjump2 && sprite_index != spr_mach2jump) && sprite_index != spr_null && sprite_index != spr_player_bump && sprite_index != spr_longjump && sprite_index != spr_longjumpend && sprite_index != spr_walljumpstart && sprite_index != spr_walljumpend)
 		sprite_index = spr_secondjump1;
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_secondjump1)
 		sprite_index = spr_secondjump2;
+		if (floor(image_index) == (image_number - 1) && sprite_index == spr_longjump)
+		sprite_index = spr_longjumpend;
+		if (floor(image_index) == (image_number - 1) && sprite_index == spr_walljumpstart)
+        sprite_index = spr_walljumpend
 	if (grounded && (floor(image_index) == (image_number - 1) && sprite_index == spr_rollgetup))
 		sprite_index = spr_mach2;
 	scr_noise_abilities();
 	do_taunt();
 	do_grab();
-	if (sprite_index == spr_rollgetup || sprite_index == spr_suplexdash)
+	if (sprite_index == spr_rollgetup || sprite_index == spr_suplexdash || sprite_index == spr_player_longjumpend_pep || sprite_index == spr_player_longjump_pep|| sprite_index == spr_player_longjumpfall_new || sprite_index == spr_player_longjump_new)
 		image_speed = 0.4;
 	else
 		image_speed = abs(movespeed) / 15;

@@ -75,6 +75,9 @@ function scr_characterglobal()
 			spr_climbdownwall = spr_player_climbdownwall;
 			spr_grab = spr_player_grab;
 			spr_mach2jump = spr_player_mach2jump;
+			spr_longjump = spr_player_mach2jump
+            spr_longjumpend = spr_player_mach2jump
+			spr_trick = spr_player_trick
 			spr_Timesup = spr_player_timeup;
 			spr_deathstart = spr_player_deathstart;
 			spr_deathend = spr_player_deathend;
@@ -353,6 +356,7 @@ function scr_characterglobal()
 				spr_mach1 = spr_player_mach1_new;
 				spr_mach2 = spr_player_mach2_new;
 				spr_mach3player = spr_player_mach3_new;
+				spr_angryidle = spr_player_3hpidle_new
 				spr_angrywalk = spr_player_3hpwalk_new;
 				spr_splat = spr_player_splat_new;
 				spr_fireass = spr_pizzelle_fireass
@@ -362,6 +366,11 @@ function scr_characterglobal()
 				spr_machslideboost3 = spr_player_mach3boost_new
 				spr_winding = spr_player_winding_new;
 				spr_climbwall = spr_player_climbwall_new
+				spr_longjump = spr_player_longjump_new
+				spr_longjumpend = spr_player_longjumpfall_new
+				spr_rollgetup = spr_player_rollgetup_new
+				spr_mach3rollstart = spr_player_mach3roll_new
+			spr_mach3roll = spr_player_mach3roll_new
 			}
 			else if global.newplayeranim == 2
 			{
@@ -516,10 +525,15 @@ function scr_characterglobal()
 			spr_mach3player = spr_pizzano_mach3shoulder;
 			spr_mach3jump = spr_pizzano_mach3jump;
 			spr_mach3hitwall = spr_pizzano_mach3hitwall;
+			spr_walljumpstart = spr_pizzano_mach1jump
+			spr_walljumpend = spr_pizzano_mach1fall
 			spr_crazyrun = spr_pizzano_crazyrun;
 			spr_secondjump1 = spr_player_secondjump1;
 			spr_secondjump2 = spr_player_secondjump2;
+			spr_trick = spr_player_trick
 			spr_machslidestart = spr_player_machslidestart;
+			spr_mach3rollstart = spr_pizzano_crouchslide
+			spr_mach3roll = spr_pizzano_crouchslide
 			spr_machslide = spr_player_machsliding;
 			spr_machslideend = spr_player_machslideend;
 			spr_machslideboost = spr_pizzano_machslideboost;
@@ -777,6 +791,7 @@ function scr_characterglobal()
 			spr_deathend = spr_player_deathend;
 			spr_machpunch1 = spr_player_machpunch1;
 			spr_machpunch2 = spr_player_machpunch2;
+			spr_trick = spr_player_trick
 			spr_hurtjump = spr_gumbob_hurt;
 			spr_entergate = spr_player_entergate;
 			spr_gottreasure = spr_player_entergate;
@@ -965,6 +980,7 @@ function scr_characterglobal()
 			spr_crazyrun = spr_coneboy_crazyrun;
 			spr_secondjump1 = spr_player_secondjump1;
 			spr_secondjump2 = spr_player_secondjump2;
+			spr_trick = spr_player_trick
 			spr_machslidestart = spr_player_machslidestart;
 			spr_machslide = spr_coneboy_slidekick;
 			spr_machslideend = spr_player_machslideend;
@@ -1165,9 +1181,12 @@ function scr_characterglobal()
 			spr_rollgetup = spr_player_rollgetup_pep;
 			spr_mach3jump = spr_player_mach3jump_pep;
 			spr_mach3hitwall = spr_player_mach3hitwall_pep;
+			spr_trick = spr_player_rampjump_pep
 			spr_crazyrun = spr_player_crazyrun_pep;
 			spr_secondjump1 = spr_player_secondjump1_pep;
 			spr_secondjump2 = spr_player_secondjump2_pep;
+			spr_walljumpstart = spr_player_walljumpstart_pep
+			spr_walljumpend = spr_player_walljumpend_pep
 			spr_machslidestart = spr_player_machslidestart_pep;
 			spr_machslide = spr_player_machslide_pep;
 			spr_machslideend = spr_player_machslideend_pep;
@@ -1194,6 +1213,8 @@ function scr_characterglobal()
 			spr_climbdownwall = spr_player_climbdownwall;
 			spr_grab = spr_player_grab_pep;
 			spr_mach2jump = spr_player_mach2jump_pep;
+			spr_longjump = spr_player_longjump_pep
+				spr_longjumpend =  spr_player_longjumpend_pep
 			spr_Timesup = spr_player_timesup_pep;
 			spr_deathstart = spr_player_deathstart_pep;
 			spr_deathend = spr_player_deathend_pep;
@@ -1248,6 +1269,8 @@ function scr_characterglobal()
 			spr_tumbleend = spr_player_tumbleend;
 			spr_taunt = spr_player_taunt_pep;
 			spr_machroll =  spr_player_machroll_pep;
+			spr_mach3rollstart = spr_player_backslideland_pep
+			spr_mach3roll = spr_player_backslide_pep
 			spr_dive = spr_player_dive_pep;
 			spr_cottonidle = spr_cotton_idle;
 			spr_escapeidle = spr_player_panic_pep;
@@ -1532,6 +1555,7 @@ function scr_characterglobal()
 			spr_crazyrun = spr_Noise_crazyrun;
 			spr_secondjump1 = spr_playerN_secondjump1;
 			spr_secondjump2 = spr_playerN_secondjump2;
+			spr_trick = spr_playerN_secondjump1
 			spr_machslidestart = spr_playerN_machslidestart;
 			spr_machslide = spr_playerN_machslide;
 			spr_machslideend = spr_playerN_machslideend;
@@ -1558,6 +1582,12 @@ function scr_characterglobal()
 			spr_climbdownwall = spr_player_climbdownwall;
 			spr_grab = spr_playerN_haulingidle;
 			spr_mach2jump = spr_Noise_mach2jump;
+			spr_longjump = spr_Noise_mach2jump
+			spr_longjumpend = spr_Noise_mach2jump
+			spr_walljumpstart = spr_playerN_walljumpstart
+			spr_walljumpend = spr_playerN_walljumpend
+			spr_mach3rollstart = spr_Noise_machroll
+			spr_mach3roll = spr_Noise_machroll
 			spr_Timesup = spr_playerN_timesup;
 			spr_deathstart = spr_playerN_deathstart;
 			spr_deathend = spr_playerN_deathend;

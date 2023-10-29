@@ -1,7 +1,7 @@
 function state_player_trick()
 {
 	hsp = movespeed * xscale;
-	sprite_index = spr_player_trick;
+	sprite_index = spr_trick;
 	if (key_attack && ((!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)) && (character == "P" || character == "N"))
 	{
 		verticalMovespeed = movespeed;

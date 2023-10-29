@@ -30,6 +30,18 @@ function scr_pizzano_twirl()
 			mach2 = 0;
 			jumpstop = 0;
 		}
+        if (key_jump2)
+        {
+            if place_meeting((x + xscale), y, obj_solid)
+            {
+                scr_sound(sound_step)
+                sprite_index = spr_pizzano_wallcling
+                image_index = 0
+                state = states.pizzano_wallcling
+                vsp = 0
+                doublejumped = 0
+            }
+		}
 	}
 	var jumpbad = instance_place(x, y + vsp, obj_baddie);
 	if (jumpbad)
@@ -96,3 +108,4 @@ function scr_pizzano_twirl()
 		state = 11;
 	}
 }
+

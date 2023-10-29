@@ -115,7 +115,10 @@ function state_player_climbwall()
 			if character == "S"
 				movespeed = clamp(movespeed, 0, 8)
 			image_index = 0;
+			
 			sprite_index = spr_secondjump1;
+			if character == "S" || character == "T"
+			sprite_index = spr_walljumpstart;
 			vsp = -9;
 			jumpstop = false;
 			state = 69;
@@ -124,6 +127,8 @@ function state_player_climbwall()
 		else
 		{
 			sprite_index = spr_mach2jump;
+			if character == "S" || character == "T"
+			sprite_index = spr_walljumpstart;
 			movespeed = clamp(movespeed, 6, 10);
 			jumpstop = false;
 			vsp = -9;

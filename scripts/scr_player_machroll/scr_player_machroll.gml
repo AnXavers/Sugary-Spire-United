@@ -11,13 +11,16 @@ function state_player_machroll()
 	move = key_right + key_left;
 	if (!instance_exists(obj_cloudeffect) && grounded)
 		instance_create(x, y + 43, obj_cloudeffect);
-	if (grounded && sprite_index != spr_crouchslip)
+	if (grounded && sprite_index != spr_crouchslip && movespeed <= 11.99)
 		sprite_index = spr_machroll;
-	else if (sprite_index != spr_dive && sprite_index != spr_crouchslip)
+		else if (grounded && sprite_index != spr_crouchslip && movespeed >= 11.99)
+		sprite_index = spr_mach3roll
+	else if (sprite_index != spr_dive && sprite_index != spr_crouchslip && (!grounded))
 	{
 		sprite_index = spr_dive;
 		vsp = 10;
 	}
+
 	if (crouchslipbuffer > 0)
 		crouchslipbuffer--;
 	if (!key_down && !scr_solid(x + 27, y - 32) && !scr_solid(x - 27, y - 32) && !scr_solid(x, y - 32) && !scr_solid(x, y - 16))
