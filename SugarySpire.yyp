@@ -485,7 +485,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.4.0.84",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"obj_talisman","path":"objects/obj_talisman/obj_talisman.yy",},},
@@ -960,6 +960,7 @@
     {"id":{"name":"obj_ramp","path":"objects/obj_ramp/obj_ramp.yy",},},
     {"id":{"name":"spr_player_slipbanan2_pep","path":"sprites/spr_player_slipbanan2_pep/spr_player_slipbanan2_pep.yy",},},
     {"id":{"name":"obj_bombexplosionharmful","path":"objects/obj_bombexplosionharmful/obj_bombexplosionharmful.yy",},},
+    {"id":{"name":"spr_pizzano_mach3jump_old","path":"sprites/spr_pizzano_mach3jump_old/spr_pizzano_mach3jump_old.yy",},},
     {"id":{"name":"spr_tv_barrel","path":"sprites/spr_tv_barrel/spr_tv_barrel.yy",},},
     {"id":{"name":"obj_pizzanotrap_parent","path":"objects/obj_pizzanotrap_parent/obj_pizzanotrap_parent.yy",},},
     {"id":{"name":"obj_lapjanitor_collect","path":"objects/obj_lapjanitor_collect/obj_lapjanitor_collect.yy",},},
@@ -2371,6 +2372,7 @@
     {"id":{"name":"texture_set_interpolation_ext","path":"scripts/texture_set_interpolation_ext/texture_set_interpolation_ext.yy",},},
     {"id":{"name":"tile_layer_delete_at","path":"scripts/tile_layer_delete_at/tile_layer_delete_at.yy",},},
     {"id":{"name":"spr_playerV_tumblestart","path":"sprites/spr_playerV_tumblestart/spr_playerV_tumblestart.yy",},},
+    {"id":{"name":"spr_player_crazyrun_new","path":"sprites/spr_player_crazyrun_new/spr_player_crazyrun_new.yy",},},
     {"id":{"name":"tile_layer_find","path":"scripts/tile_layer_find/tile_layer_find.yy",},},
     {"id":{"name":"ts_ruincheese_sprite","path":"sprites/ts_ruincheese_sprite/ts_ruincheese_sprite.yy",},},
     {"id":{"name":"spr_pizzacollect2","path":"sprites/spr_pizzacollect2/spr_pizzacollect2.yy",},},
@@ -6627,6 +6629,7 @@
     {"id":{"name":"spr_pizzaboy","path":"sprites/spr_pizzaboy/spr_pizzaboy.yy",},},
     {"id":{"name":"ts_dance_sprite","path":"sprites/ts_dance_sprite/ts_dance_sprite.yy",},},
     {"id":{"name":"ts_dance","path":"tilesets/ts_dance/ts_dance.yy",},},
+    {"id":{"name":"spr_pizzano_crouchslide_old","path":"sprites/spr_pizzano_crouchslide_old/spr_pizzano_crouchslide_old.yy",},},
     {"id":{"name":"ts_mines1_sprite","path":"sprites/ts_mines1_sprite/ts_mines1_sprite.yy",},},
     {"id":{"name":"spr_coneplat_sleep","path":"sprites/spr_coneplat_sleep/spr_coneplat_sleep.yy",},},
     {"id":{"name":"ts_mines1","path":"tilesets/ts_mines1/ts_mines1.yy",},},

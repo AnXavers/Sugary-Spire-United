@@ -361,6 +361,7 @@ function scr_characterglobal()
 				spr_mach1 = spr_player_mach1_new;
 				spr_mach2 = spr_player_mach2_new;
 				spr_mach3player = spr_player_mach3_new;
+				spr_crazyrun = spr_player_crazyrun_new;
 				spr_angryidle = spr_player_3hpidle_new
 				spr_angrywalk = spr_player_3hpwalk_new;
 				spr_splat = spr_player_splat_new;
@@ -667,6 +668,9 @@ function scr_characterglobal()
 				spr_mach1 = spr_pizzano_mach1_old
 				spr_mach2 = spr_pizzano_mach2_old
 				spr_mach3player = spr_pizzano_mach3_old
+				spr_mach3jump = spr_pizzano_mach3jump_old;
+				spr_mach3rollstart = spr_pizzano_crouchslide_old	
+			    spr_mach3roll = spr_pizzano_crouchslide_old
 				spr_player_rankA = spr_pizzano_rankA_old;
 				spr_player_rankB = spr_pizzano_rankB_old;
 				spr_player_rankC = spr_pizzano_rankC_old;
