@@ -37,7 +37,7 @@ function do_grab()
 	{
 		if (global.treat)
 		{
-			if (state == 65 || state == 1)
+			if (state == 65 || state == states.normal)
 			{
 				if (move == 0)
 					movespeed = 0;
@@ -91,7 +91,7 @@ function do_grab()
 				instance_create(x, y, obj_jumpdust);
 				image_index = 0;
 				sprite_index = spr_suplexdash;
-				if (state == 1 || state == 60)
+				if (state == states.normal || state == 60)
 					movespeed = 8;
 				else if (movespeed < 5)
 					movespeed = 5;

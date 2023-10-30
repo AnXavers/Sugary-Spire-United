@@ -1,4 +1,3 @@
-flags.do_save = false;
 flags.do_once = false;
 condition = function()
 {
@@ -14,5 +13,5 @@ output = function()
 {
 	obj_camera.chargecamera = 0;
 	obj_player.movespeed = 5;
-	event_perform_object(402, 7, 10);
+	event_perform_object(obj_puddle, ev_other, ev_user0);
 };

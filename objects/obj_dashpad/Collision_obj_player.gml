@@ -12,7 +12,7 @@ if (other.Dashpad_buffer <= 0)
 	scr_sound(sound_dashpad);
 	with (other)
 	{
-		if (state != 64 && state != 22 && state != 101 && state != 65 && state != 144 && state != 145 && state != 146 && state != 83 && sprite_get_bbox_bottom(mask_index) <= other.bbox_bottom)
+		if (state != 64 && state != 22 && state != 101 && state != 65 && state != 144 && state != 145 && state != 146 && state != 83 && state != states.noclip &&sprite_get_bbox_bottom(mask_index) <= other.bbox_bottom)
 		{
 			movespeed += 0.25;
 			movespeed = clamp(movespeed, 12, 24);

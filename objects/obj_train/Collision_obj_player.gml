@@ -1,6 +1,6 @@
 with (other)
 {
-	if (state != 102 && (other.state == 1 || other.state == 2))
+	if (state != 102 && (other.state == states.normal || other.state == 2))
 	{
 		scr_hurtplayer();
 		image_index = 0;

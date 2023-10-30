@@ -78,7 +78,7 @@ if (sprite_index == spr_idlevomitblood && image_index > 28 && image_index < 43)
 	with (instance_create(x + random_range(-5, obj_snowgustfridge), y + 46, obj_vomit))
 		sprite_index = spr_vomit2;
 }
-if (angry == 1 && !instance_exists(obj_angrycloud) && obj_player.state == 1)
+if (angry == 1 && !instance_exists(obj_angrycloud) && obj_player.state == states.normal)
 	instance_create(x, y, obj_angrycloud);
 if (!global.freezeframe)
 {
@@ -167,7 +167,7 @@ else
 	mask_index = spr_crouchmask;
 if (state != 73)
 	hurtsound = mu_entryway_title;
-if (((place_meeting(x, y, obj_door) && !place_meeting(x, y, obj_doorblocked)) || (place_meeting(x, y, obj_startgate) && state != 61) || place_meeting(x, y, obj_janitorDoor) || place_meeting(x, y, obj_keydoorclock) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && (global.panic == 1 && room != sucrose_1))) && !instance_exists(obj_uparrow) && scr_solid(x, y + 1) && state == 1)
+if (((place_meeting(x, y, obj_door) && !place_meeting(x, y, obj_doorblocked)) || (place_meeting(x, y, obj_startgate) && state != 61) || place_meeting(x, y, obj_janitorDoor) || place_meeting(x, y, obj_keydoorclock) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && (global.panic == 1 && room != sucrose_1))) && !instance_exists(obj_uparrow) && scr_solid(x, y + 1) && state == states.normal)
 	instance_create(x, y, obj_uparrow);
 if (((state == 69 && sprite_index != spr_mach1) || state == 70) && !instance_exists(obj_speedlines))
 	instance_create(x, y, obj_speedlines, 

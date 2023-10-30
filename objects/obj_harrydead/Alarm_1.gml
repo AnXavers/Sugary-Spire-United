@@ -15,7 +15,7 @@ global.combotime = 60;
 instance_destroy(obj_cameraRegion)
 audio_pause_all()
 scr_sound(sound_explosion)
-screen_flash(1)
+screen_flash(3)
 layer_destroy(global.harryeffect)
 switch (global.combo)
 {

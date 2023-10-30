@@ -1,5 +1,3 @@
-flags.do_save = false;
-flags.do_once = false;
 condition = function()
 {
 	var _check = false;

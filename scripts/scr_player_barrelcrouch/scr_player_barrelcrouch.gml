@@ -31,7 +31,7 @@ function state_player_barrelcrouch()
 		if (input_buffer == 0)
 			movespeed = approach(movespeed, 0, 0.75);
 	}
-	if (key_attack2)
+	if (key_shoot2)
 	{
 		movespeed = abs(hsp);
 		if (movespeed < 6)

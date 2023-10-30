@@ -2,7 +2,7 @@ if (global.panic == 1 && room != sucrose_1)
 {
 	with (obj_player)
 	{
-		if (grounded && (!other.drop || other.drop_state == 1) && key_up && (state == 1 || state == 68 || state == 69 || state == 70 || state == 64))
+		if (grounded && (!other.drop || other.drop_state == 1) && key_up && (state == states.normal || state == 68 || state == 69 || state == 70 || state == 64))
 		{
 			targetDoor = "none";
 			audio_stop_all();

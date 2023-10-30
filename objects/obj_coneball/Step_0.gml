@@ -33,11 +33,11 @@ if (pid > 0 && !pid.cutscene && !instance_exists(obj_fadeout) && !instance_exist
 	}
 	instance_destroy();
 }
-if (global.coneballparry == 1 && distance_to_object(obj_parryhitbox) <= 20)
+if (global.coneballparry == 1 && distance_to_object(obj_parryhitbox) <= 40)
 {
 	audio_stop_sound(sound_parry);
 	scr_sound(sound_parry);
-	with obj_coneball
+	screen_flash(3)
 	coneballspeed = -2
 	alarm[1] = 10
 	with (obj_player)
