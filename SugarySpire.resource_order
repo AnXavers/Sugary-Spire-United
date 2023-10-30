@@ -5474,7 +5474,6 @@
     {"name":"mu_ancientsecret","order":2,"path":"sounds/mu_ancientsecret/mu_ancientsecret.yy",},
     {"name":"spr_badmarsh_rageend","order":2,"path":"sprites/spr_badmarsh_rageend/spr_badmarsh_rageend.yy",},
     {"name":"spr_5BuildingsBack1dance","order":22,"path":"sprites/spr_5BuildingsBack1dance/spr_5BuildingsBack1dance.yy",},
-    {"name":"spr_player_winding_new","order":8,"path":"sprites/spr_player_winding_new/spr_player_winding_new.yy",},
     {"name":"bg_dungeonsilouhette2","order":6,"path":"sprites/bg_dungeonsilouhette2/bg_dungeonsilouhette2.yy",},
     {"name":"obj_pillarentrance","order":1,"path":"objects/obj_pillarentrance/obj_pillarentrance.yy",},
     {"name":"spr_pizzasona39throw","order":96,"path":"sprites/spr_pizzasona39throw/spr_pizzasona39throw.yy",},
