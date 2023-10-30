@@ -25,7 +25,7 @@ if (selected == 0)
 			break;
 		case 1:
 			subtitle = "ADJUST MOD VISUALS";
-			CursorY = 200;
+			CursorY = 100;
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);
@@ -35,7 +35,7 @@ if (selected == 0)
 			break;
 		case 2:
 			subtitle = "ADJUST MOD GAMEPLAY";
-			CursorY = 300;
+			CursorY = 200;
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);
@@ -45,7 +45,7 @@ if (selected == 0)
 			break;
 		case 3:
 			subtitle = "ADJUST IN-GAME LANGUAGE";
-			CursorY = 400;
+			CursorY = 300;
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);

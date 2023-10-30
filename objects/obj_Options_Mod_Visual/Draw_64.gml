@@ -9,7 +9,7 @@ draw_option(280, 250 + ScrollY, "DEFAULT", optionsaved_newplayeranim == 0);
 draw_option(680, 250 + ScrollY, "NEW", optionsaved_newplayeranim == 1);
 draw_option(280, 300 + ScrollY, "ALT", optionsaved_newplayeranim == 2);
 draw_option(680, 300 + ScrollY, "CLASSIC", optionsaved_newplayeranim == 3);
-draw_option(480, 350 + ScrollY, "E RANK STACKING", optionselected == 3);
+draw_option(480, 350 + ScrollY, "VISUAL E RANK STACK", optionselected == 3);
 draw_option(280, 400 + ScrollY, "ON", optionsaved_erankstack);
 draw_option(680, 400 + ScrollY, "OFF", !optionsaved_erankstack);
 draw_option(480, 450 + ScrollY, "SLOPE ANGLE", optionselected == 4);

@@ -5,6 +5,6 @@ if (currentState == 2)
 }
 else if (currentState == 3)
 {
-	currentstate = 0;
+	currentState = 0;
 	sprite_index = spr_Released;
 }

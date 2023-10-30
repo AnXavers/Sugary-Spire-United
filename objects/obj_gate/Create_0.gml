@@ -13,7 +13,7 @@ if (!reversed)
 }
 else
 {
-	currentstate = 0;
+	currentState = 0;
 	nextstate = 0;
 	queuedEvent = 0;
 	sprite_index = spr_gateRaised;

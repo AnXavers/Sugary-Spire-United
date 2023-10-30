@@ -13,8 +13,9 @@ if canmove
 		optionsaved_newlvldesign = global.newlvldesign;
 		optionsaved_inflapping = global.inflapping;
 		optionsaved_enablejerald = global.enablejerald;
+		optionsaved_coneballparry = global.coneballparry;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 5)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 6)
 	{
 		optionselected++;
 		scr_sound(sound_step);
@@ -23,7 +24,7 @@ if canmove
 		optionsaved_inflapping = global.inflapping;
 		optionsaved_enablejerald = global.enablejerald;
 		optionsaved_coneballparry = global.coneballparry;
-		
+		optionsaved_moveset = global.moveset;
 	}
 	switch (optionselected)
 	{
@@ -114,6 +115,20 @@ if canmove
 				ini_write_real("Settings", "coneballparry", optionsaved_coneballparry);
 				ini_close();
 				global.coneballparry = optionsaved_coneballparry;
+			}
+			break;
+		case 6:
+			subtitle = "CHANGES THE PLAYER MOVESET";
+			CursorY = 650;
+			optionsaved_moveset += (key_right2 + key_left2);
+			optionsaved_moveset = wrap(optionsaved_moveset, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "moveset", optionsaved_moveset);
+				ini_close();
+				global.moveset = optionsaved_moveset;
 			}
 			break;
 	}
