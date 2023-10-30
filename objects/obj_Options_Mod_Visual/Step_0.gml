@@ -56,7 +56,7 @@ if canmove
 			}
 			break;
 		case 2:
-			subtitle = "CHANES THE PLAYER ANIMATIONS";
+			subtitle = "CHANGES THE PLAYER ANIMATIONS";
 			CursorY = 200;
 			optionsaved_newplayeranim += (key_right2 + key_left2);
 			optionsaved_newplayeranim = wrap(optionsaved_newplayeranim, 0, 3);
@@ -70,7 +70,7 @@ if canmove
 			}
 			break;
 		case 3:
-			subtitle = "CAUSES E RANK TO STACK INSTEAD OF OVERLAYING IT ACROSS THE SCREEN";
+			subtitle = "MAKES E RANK VISUALLY STACK INSTEAD OF OVERLAYING IT ACROSS THE SCREEN";
 			CursorY = 350;
 			optionsaved_erankstack += (key_right2 + key_left2);
 			optionsaved_erankstack = wrap(optionsaved_erankstack, 0, 1);

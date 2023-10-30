@@ -168,8 +168,12 @@ global.machsfx = ini_read_real("Settings", "machsfx", 0);
 global.eggplantcombo = ini_read_real("Settings", "eggplantcombo", 0);
 global.oldhud = ini_read_real("Settings", "oldhud", 0);
 global.harryfreeze = ini_read_real("Settings", "harryfreeze", 1);
+for (i = 0; i < (array_length(global.musiclist) - 1); i++)
+{
+	if ds_map_exists("Music", audio_get_name(i))
+		ds_map_set(global.musicreplace, i, asset_get_index(ini_read_real("Music", audio_get_name(i), noone)));
+}
 ini_close();
-
 audio_master_gain(global.masterVolume);
 global.player_input_device = -2;
 global.player_input_device2 = -2;

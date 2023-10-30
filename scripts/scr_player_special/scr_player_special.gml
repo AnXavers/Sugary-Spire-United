@@ -8,7 +8,7 @@ function do_special()
 		if (buffer_exists(my_pal_buffer))
 			buffer_delete(my_pal_buffer);
 	}
-	else if (keyboard_check_pressed(vk_enter) && typing)
+	else if (keyboard_check_pressed(vk_enter) && !typing)
 	{
 		vsp = 0
 		hsp = 0

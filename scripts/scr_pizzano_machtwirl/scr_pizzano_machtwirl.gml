@@ -47,14 +47,15 @@ function scr_pizzano_machtwirl()
 			mach2 = 0
 			charged = 0	
 			scr_sound(sound_superjumpcharge1);
+			
 		}
 		else if !charged {
 			flash = 1
 			alarm[0] = 240
 			image_index = 0
-			state = states.Sjump
 			sprite_index = spr_pizzano_sjumpprep	
-			scr_sound(sound_superjumpcharge1);
+			state = states.Sjump
+			scr_sound(sound_superjumpcharge1)
 		}
 		else {
 			scr_sound(sfx_kungfuair)
