@@ -1330,6 +1330,7 @@
     {"name":"obj_debris2","order":420,"path":"objects/obj_debris2/obj_debris2.yy",},
     {"name":"spr_pizzasona45","order":116,"path":"sprites/spr_pizzasona45/spr_pizzasona45.yy",},
     {"name":"obj_bigdestructibles","order":421,"path":"objects/obj_bigdestructibles/obj_bigdestructibles.yy",},
+    {"name":"spr_martcard_bg","order":1,"path":"sprites/spr_martcard_bg/spr_martcard_bg.yy",},
     {"name":"spr_knightpep_jump","order":10,"path":"sprites/spr_knightpep_jump/spr_knightpep_jump.yy",},
     {"name":"obj_Options_Mod_Music","order":485,"path":"objects/obj_Options_Mod_Music/obj_Options_Mod_Music.yy",},
     {"name":"obj_creamThiefGoTrigger","order":1,"path":"objects/obj_creamThiefGoTrigger/obj_creamThiefGoTrigger.yy",},
