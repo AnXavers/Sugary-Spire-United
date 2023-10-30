@@ -202,6 +202,7 @@ function scr_characterglobal()
 			spr_kungfu3 = spr_pizzano_kungfu3;
 			spr_kungfu4 = spr_pizzano_kungfu4;
 			spr_kungfu5 = spr_pizzano_kungfu5;
+			spr_kungfu6 = spr_pizzano_kungfu6;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
 			spr_twirl = spr_pizzano_twirl;
 			spr_small_destroyable = spr_smallbreak;
@@ -613,6 +614,7 @@ function scr_characterglobal()
 			spr_kungfu3 = spr_pizzano_kungfu3;
 			spr_kungfu4 = spr_pizzano_kungfu4;
 			spr_kungfu5 = spr_pizzano_kungfu5;
+			spr_kungfu6 = spr_pizzano_kungfu6;
 			spr_superjump_cancel = spr_pizzano_sjumpside;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
 			spr_superjump_cancelgroundedmach4 = spr_pizzano_sjumpsidemach4grounded;
@@ -1350,6 +1352,7 @@ function scr_characterglobal()
 			spr_kungfu3 = spr_pizzano_kungfu3;
 			spr_kungfu4 = spr_pizzano_kungfu4;
 			spr_kungfu5 = spr_pizzano_kungfu5;
+			spr_kungfu6 = spr_pizzano_kungfu6;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
 			spr_twirl = spr_pizzano_twirl;
 			spr_small_destroyable = spr_towerblocksmall;
@@ -2051,10 +2054,12 @@ function scr_characterglobal()
 			spr_kungfuair2start = spr_pizzano_kungfuair2start;
 			spr_kungfuair3start = spr_pizzano_kungfuair3start;
 			spr_kungfu1 = spr_pizzano_kungfu1;
+			spr_kungfu1 = spr_pizzano_kungfu1;
 			spr_kungfu2 = spr_pizzano_kungfu2;
 			spr_kungfu3 = spr_pizzano_kungfu3;
 			spr_kungfu4 = spr_pizzano_kungfu4;
 			spr_kungfu5 = spr_pizzano_kungfu5;
+			spr_kungfu6 = spr_pizzano_kungfu6;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
 			spr_twirl = spr_pizzano_twirl;
 			spr_small_destroyable = spr_towerblocksmall;
@@ -2413,6 +2418,7 @@ function scr_characterglobal()
 			spr_kungfu3 = spr_pizzano_kungfu3;
 			spr_kungfu4 = spr_pizzano_kungfu4;
 			spr_kungfu5 = spr_pizzano_kungfu5;
+			spr_kungfu6 = spr_pizzano_kungfu6;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
 			spr_twirl = spr_pizzano_twirl;
 			spr_small_destroyable = spr_towerblocksmall;
@@ -2778,6 +2784,7 @@ function scr_characterglobal()
 			spr_kungfu3 = spr_pizzano_kungfu3;
 			spr_kungfu4 = spr_pizzano_kungfu4;
 			spr_kungfu5 = spr_pizzano_kungfu5;
+			spr_kungfu6 = spr_pizzano_kungfu6;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
 			spr_twirl = spr_pizzano_twirl;
 			spr_small_destroyable = spr_smallbreak;
