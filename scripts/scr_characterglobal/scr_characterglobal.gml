@@ -202,6 +202,7 @@ function scr_characterglobal()
 			spr_kungfu3 = spr_pizzano_kungfu3;
 			spr_kungfu4 = spr_pizzano_kungfu4;
 			spr_kungfu5 = spr_pizzano_kungfu5;
+			spr_kungfu6 = spr_pizzano_kungfu6;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
 			spr_twirl = spr_pizzano_twirl;
 			spr_small_destroyable = spr_smallbreak;
@@ -370,7 +371,6 @@ function scr_characterglobal()
 				spr_fireassstart = spr_pizzelle_fireassstart
 				spr_fireassend = spr_player_fireassend
 				spr_machslideboost3 = spr_player_mach3boost_new
-				spr_winding = spr_player_winding_new;
 				spr_climbwall = spr_player_climbwall_new
 				spr_longjump = spr_player_longjump_new
 				spr_longjumpend = spr_player_longjumpfall_new
@@ -613,6 +613,7 @@ function scr_characterglobal()
 			spr_kungfu3 = spr_pizzano_kungfu3;
 			spr_kungfu4 = spr_pizzano_kungfu4;
 			spr_kungfu5 = spr_pizzano_kungfu5;
+			spr_kungfu6 = spr_pizzano_kungfu6;
 			spr_superjump_cancel = spr_pizzano_sjumpside;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
 			spr_superjump_cancelgroundedmach4 = spr_pizzano_sjumpsidemach4grounded;
@@ -1350,6 +1351,7 @@ function scr_characterglobal()
 			spr_kungfu3 = spr_pizzano_kungfu3;
 			spr_kungfu4 = spr_pizzano_kungfu4;
 			spr_kungfu5 = spr_pizzano_kungfu5;
+			spr_kungfu6 = spr_pizzano_kungfu6;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
 			spr_twirl = spr_pizzano_twirl;
 			spr_small_destroyable = spr_towerblocksmall;
@@ -2051,10 +2053,12 @@ function scr_characterglobal()
 			spr_kungfuair2start = spr_pizzano_kungfuair2start;
 			spr_kungfuair3start = spr_pizzano_kungfuair3start;
 			spr_kungfu1 = spr_pizzano_kungfu1;
+			spr_kungfu1 = spr_pizzano_kungfu1;
 			spr_kungfu2 = spr_pizzano_kungfu2;
 			spr_kungfu3 = spr_pizzano_kungfu3;
 			spr_kungfu4 = spr_pizzano_kungfu4;
 			spr_kungfu5 = spr_pizzano_kungfu5;
+			spr_kungfu6 = spr_pizzano_kungfu6;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
 			spr_twirl = spr_pizzano_twirl;
 			spr_small_destroyable = spr_towerblocksmall;
@@ -2413,6 +2417,7 @@ function scr_characterglobal()
 			spr_kungfu3 = spr_pizzano_kungfu3;
 			spr_kungfu4 = spr_pizzano_kungfu4;
 			spr_kungfu5 = spr_pizzano_kungfu5;
+			spr_kungfu6 = spr_pizzano_kungfu6;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
 			spr_twirl = spr_pizzano_twirl;
 			spr_small_destroyable = spr_towerblocksmall;
@@ -2778,6 +2783,7 @@ function scr_characterglobal()
 			spr_kungfu3 = spr_pizzano_kungfu3;
 			spr_kungfu4 = spr_pizzano_kungfu4;
 			spr_kungfu5 = spr_pizzano_kungfu5;
+			spr_kungfu6 = spr_pizzano_kungfu6;
 			spr_superjump_cancel_mach4 = spr_pizzano_sjumpsidemach4;
 			spr_twirl = spr_pizzano_twirl;
 			spr_small_destroyable = spr_smallbreak;
