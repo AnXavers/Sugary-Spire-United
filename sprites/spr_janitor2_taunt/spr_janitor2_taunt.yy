@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "texturegroup1",
-    "path": "texturegroups/texturegroup1",
+    "name": "Followers",
+    "path": "texturegroups/Followers",
   },
   "type": 0,
   "VTile": false,

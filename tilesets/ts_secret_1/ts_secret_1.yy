@@ -21,8 +21,8 @@
   },
   "spriteNoExport": true,
   "textureGroupId": {
-    "name": "Backgrounds",
-    "path": "texturegroups/Backgrounds",
+    "name": "Secrets",
+    "path": "texturegroups/Secrets",
   },
   "tile_count": 410,
   "tileAnimation": {

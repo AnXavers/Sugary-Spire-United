@@ -123,7 +123,7 @@ if (global.lapcount >= 2 && global.enablejerald)
 else
 	lapjanspr = spr_null;
 
-setcolors = function()
+function setcolors(argument0, argument1, argument2, argument3, argument4, argument5)
 {
 	realcol = 
 	{
@@ -135,7 +135,7 @@ setcolors = function()
 		b2: argument5
 	};
 };
-afterimagesetup = function()
+function afterimagesetup()
 {
 	shader_set(shd_afterimage);
 	var colorblend1 = shader_get_uniform(shd_afterimage, "blendcolor1");

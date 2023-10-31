@@ -81,8 +81,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "RankScr",
+    "path": "texturegroups/RankScr",
   },
   "type": 0,
   "VTile": false,

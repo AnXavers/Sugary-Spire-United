@@ -207,8 +207,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Backgrounds",
-    "path": "texturegroups/Backgrounds",
+    "name": "Player",
+    "path": "texturegroups/Player",
   },
   "type": 0,
   "VTile": false,

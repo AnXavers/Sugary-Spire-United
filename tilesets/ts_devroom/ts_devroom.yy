@@ -21,8 +21,8 @@
   },
   "spriteNoExport": true,
   "textureGroupId": {
-    "name": "Tiles",
-    "path": "texturegroups/Tiles",
+    "name": "Debug",
+    "path": "texturegroups/Debug",
   },
   "tile_count": 1680,
   "tileAnimation": {

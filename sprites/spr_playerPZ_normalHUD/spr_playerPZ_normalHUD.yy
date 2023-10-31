@@ -75,8 +75,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Backgrounds",
-    "path": "texturegroups/Backgrounds",
+    "name": "OldHud",
+    "path": "texturegroups/OldHud",
   },
   "type": 0,
   "VTile": false,

@@ -111,8 +111,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "HUD",
-    "path": "texturegroups/HUD",
+    "name": "TVHud",
+    "path": "texturegroups/TVHud",
   },
   "type": 0,
   "VTile": false,
