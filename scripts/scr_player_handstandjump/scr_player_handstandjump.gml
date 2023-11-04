@@ -94,6 +94,7 @@ function state_player_handstandjump()
 				jumpstop = 1
 				machslideAnim = 1;
 				machhitAnim = 0;
+				suplexmove = 1
 				instance_create(x + (10 * xscale), y + 10, obj_bumpeffect);
 				scr_sound(sound_bump);
 			}

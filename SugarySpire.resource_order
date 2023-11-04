@@ -3523,6 +3523,7 @@
     {"name":"spr_player_stunned_pep","order":286,"path":"sprites/spr_player_stunned_pep/spr_player_stunned_pep.yy",},
     {"name":"bg_exitwaysky","order":8,"path":"sprites/bg_exitwaysky/bg_exitwaysky.yy",},
     {"name":"bg_sucrose_cave2","order":5,"path":"sprites/bg_sucrose_cave2/bg_sucrose_cave2.yy",},
+    {"name":"spr_player_mach3hit","order":16,"path":"sprites/spr_player_mach3hit/spr_player_mach3hit.yy",},
     {"name":"spr_spraydebris","order":689,"path":"sprites/spr_spraydebris/spr_spraydebris.yy",},
     {"name":"spr_horsey_start3","order":6,"path":"sprites/spr_horsey_start3/spr_horsey_start3.yy",},
     {"name":"spr_player_climbceilingmach3","order":41,"path":"sprites/spr_player_climbceilingmach3/spr_player_climbceilingmach3.yy",},

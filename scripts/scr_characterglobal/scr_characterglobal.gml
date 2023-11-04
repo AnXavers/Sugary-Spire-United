@@ -370,6 +370,7 @@ function scr_characterglobal()
 				spr_fireassgrab = spr_pizzelle_fireassgrab
 				spr_fireassstart = spr_pizzelle_fireassstart
 				spr_fireassend = spr_player_fireassend
+				spr_mach3hit = spr_player_mach3hit
 				spr_machslideboost3 = spr_player_mach3boost_new
 				spr_climbwall = spr_player_climbwall_new
 				spr_longjump = spr_player_longjump_new
@@ -1198,6 +1199,7 @@ function scr_characterglobal()
 			spr_mach3hitwall = spr_player_mach3hitwall_pep;
 			spr_trick = spr_player_rampjump_pep
 			spr_crazyrun = spr_player_crazyrun_pep;
+		    spr_mach3hit = spr_player_mach3hit_pep
 			spr_secondjump1 = spr_player_secondjump1_pep;
 			spr_secondjump2 = spr_player_secondjump2_pep;
 			spr_walljumpstart = spr_player_walljumpstart_pep

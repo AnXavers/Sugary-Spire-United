@@ -3769,6 +3769,7 @@
     {"id":{"name":"bg_molasses_clouds","path":"sprites/bg_molasses_clouds/bg_molasses_clouds.yy",},},
     {"id":{"name":"bg_exitwaysky","path":"sprites/bg_exitwaysky/bg_exitwaysky.yy",},},
     {"id":{"name":"bg_sucrose_cave2","path":"sprites/bg_sucrose_cave2/bg_sucrose_cave2.yy",},},
+    {"id":{"name":"spr_player_mach3hit","path":"sprites/spr_player_mach3hit/spr_player_mach3hit.yy",},},
     {"id":{"name":"spr_spraydebris","path":"sprites/spr_spraydebris/spr_spraydebris.yy",},},
     {"id":{"name":"spr_horsey_start3","path":"sprites/spr_horsey_start3/spr_horsey_start3.yy",},},
     {"id":{"name":"spr_player_climbceilingmach3","path":"sprites/spr_player_climbceilingmach3/spr_player_climbceilingmach3.yy",},},

@@ -67,7 +67,7 @@ function state_player_mach3()
 		sprite_index = spr_mach3player;
 	if (sprite_index == spr_superjump_cancel && grounded)
 		sprite_index = spr_mach3player;
-	if (animation_end() && (sprite_index == spr_rollgetup || sprite_index == spr_machdashpad))
+	if (animation_end() && (sprite_index == spr_rollgetup || sprite_index == spr_machdashpad || sprite_index == spr_mach3hit))
 		sprite_index = spr_mach3player;
 	if ((movespeed > 16 && sprite_index != spr_crazyrun) && sprite_index != spr_dive && sprite_index != spr_rollgetup)
 	{
@@ -233,6 +233,8 @@ function state_player_mach3()
 		image_speed = 0.35;
 	if (sprite_index == spr_machdashpad)
 		image_speed = 0.3;
+		if (sprite_index == spr_mach3hit)
+		image_speed = 0.35;
 	if (sprite_index != spr_dive)
 	{
 		scr_noise_abilities();
