@@ -20,7 +20,7 @@ else if (state == 3)
 	with (instance_create(x, y, obj_baddietaunteffect))
 		image_speed = 0.25;
 	sprite_index = spr_meloncooltaunt;
-	image_index = choose(0, 1, 2);
+	image_index = irandom(2);
 }
 if (hitboxcreate == 0 && state == 21)
 {

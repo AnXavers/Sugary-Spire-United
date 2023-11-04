@@ -33,7 +33,7 @@ global.combotime = 60;
 instance_destroy(obj_cameraRegion)
 audio_pause_all()
 scr_sound(sound_explosion)
-screen_flash(3)
+screen_flash(1)
 layer_destroy(global.harryeffect)
 obj_player.cutscene = 0
 instance_destroy()

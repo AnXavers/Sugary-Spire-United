@@ -1,6 +1,6 @@
 function scr_pizzano_twirl()
 {
-	sprite_index = spr_pizzano_twirl;
+	sprite_index = spr_twirl;
 	move = key_left + key_right;
 	hsp = xscale * movespeed;
 	mach2++;
@@ -30,17 +30,17 @@ function scr_pizzano_twirl()
 			mach2 = 0;
 			jumpstop = 0;
 		}
-        if (key_jump2)
-        {
-            if place_meeting((x + xscale), y, obj_solid)
-            {
-                scr_sound(sound_step)
-                sprite_index = spr_pizzano_wallcling
-                image_index = 0
-                state = states.pizzano_wallcling
-                vsp = 0
-                doublejumped = 0
-            }
+		if (key_jump2)
+		{
+			if place_meeting((x + xscale), y, obj_solid)
+			{
+				scr_sound(sound_step)
+				sprite_index = spr_pizzano_wallcling
+				image_index = 0
+				state = states.pizzano_wallcling
+				vsp = 0
+				doublejumped = 0
+			}
 		}
 	}
 	var jumpbad = instance_place(x, y + vsp, obj_baddie);
@@ -83,10 +83,10 @@ function scr_pizzano_twirl()
 			if (!grounded)
 			{
 				airkung = 1;
-				sprite_index = choose(spr_pizzano_kungfuair1start, spr_pizzano_kungfuair2start, spr_pizzano_kungfuair3start);
+				sprite_index = choose(spr_kungfuair1start, spr_kungfuair2start, spr_kungfuair3start);
 			}
 			else
-				sprite_index = choose(spr_pizzano_kungfu1, spr_pizzano_kungfu2, spr_pizzano_kungfu3, spr_pizzano_kungfu4, spr_pizzano_kungfu5, spr_pizzano_kungfu6);
+				sprite_index = choose(spr_kungfu1, spr_kungfu2, spr_kungfu3, spr_kungfu4, spr_kungfu5, spr_kungfu6);
 			instance_create(x, y, obj_crazyrunothereffect);
 			if (!instance_exists(obj_superdashcloud) && grounded)
 				instance_create(x, y, obj_superdashcloud, 

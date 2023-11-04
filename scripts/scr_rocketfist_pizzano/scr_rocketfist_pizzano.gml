@@ -46,22 +46,22 @@ else if sprite_index != spr_superjump_cancelprep
 	 
 	if (move != 0 && move == xscale) 
 	{
-        if (movespeed < 24) {
-            if (!mach4mode)
-                movespeed += 0.0375;
-            else
-                movespeed += 0.15;		
-        }
-    }
+		if (movespeed < 24) {
+			if (!mach4mode)
+				movespeed += 0.0375;
+			else
+				movespeed += 0.15;		
+		}
+	}
 	if (movespeed > 16 && !mach4mode && sprite_index != spr_superjump_cancel_mach4 && sprite_index != spr_superjump_cancelgroundedmach4 && sprite_index != spr_crouchslide)
 	{
 		mach4mode = true;
-	    flash = 1;
-	    if !grounded
+		flash = 1;
+		if !grounded
 			sprite_index = spr_superjump_cancel_mach4;
 		else
 			sprite_index = spr_superjump_cancelgroundedmach4;
-        with (instance_create(x, y, obj_slapstar)) 
+		with (instance_create(x, y, obj_slapstar)) 
 		{
 			hsp = random_range(-5, 5);
 			vsp = random_range(-10, 10);
@@ -123,53 +123,53 @@ else if sprite_index != spr_superjump_cancelprep
 	if key_slap2
 	{
 		image_index = 0;
-	    state = states.freefallprep;
-	    sprite_index = spr_bodyslamstart;
-	    vsp = -6;
+		state = states.freefallprep;
+		sprite_index = spr_bodyslamstart;
+		vsp = -6;
 	}
 	if key_attack2
 	{
 		image_index = 0;
-	    state = states.mach2;
-	    sprite_index = spr_mach2;
-	    vsp = -5;
-     }
-        if ((!instance_exists(obj_crazyrunothereffect)) && sprite_index == spr_crazyrun)
-        {
-            instance_create(x, y, obj_crazyrunothereffect, 
-            {
-                playerID: id
-            }
+		state = states.mach2;
+		sprite_index = spr_mach2;
+		vsp = -5;
+	 }
+		if ((!instance_exists(obj_crazyrunothereffect)) && sprite_index == spr_crazyrun)
+		{
+			instance_create(x, y, obj_crazyrunothereffect, 
+			{
+				playerID: id
+			}
 )
-        }
-        if (!instance_exists(obj_crazyruneffect))
-        {
-            instance_create(x, y, obj_crazyruneffect, 
-            {
-                playerID: id
-            }
+		}
+		if (!instance_exists(obj_crazyruneffect))
+		{
+			instance_create(x, y, obj_crazyruneffect, 
+			{
+				playerID: id
+			}
 )
-        }
-        if ((!instance_exists(obj_chargeeffect)) && sprite_index != spr_dive)
-        {
-            instance_create(x, y, obj_chargeeffect, 
-            {
-                playerID: id
-            }
+		}
+		if ((!instance_exists(obj_chargeeffect)) && sprite_index != spr_dive)
+		{
+			instance_create(x, y, obj_chargeeffect, 
+			{
+				playerID: id
+			}
 )
-        }
-        if ((!instance_exists(obj_superdashcloud)) && grounded)
-        {
-            instance_create(x, y, obj_superdashcloud, 
-            {
-                playerID: id
-            }
+		}
+		if ((!instance_exists(obj_superdashcloud)) && grounded)
+		{
+			instance_create(x, y, obj_superdashcloud, 
+			{
+				playerID: id
+			}
 )
-        }
-    }
+		}
+	}
 	if sprite_index == spr_playerN_jetpackstart
 	image_speed = 0.50
 	else
-    image_speed = 0.35
-    do_taunt()
+	image_speed = 0.35
+	do_taunt()
 }

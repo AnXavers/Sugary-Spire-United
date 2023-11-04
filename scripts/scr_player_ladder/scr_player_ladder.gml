@@ -98,7 +98,7 @@ function state_player_ladder()
 		vsp = -9;
 		image_index = 0;
 	}
-	if (key_down && scr_solid_player(x, y + 1))
+	if (key_down && scr_solid(x, y + 1))
 	{
 		state = 1;
 		image_index = 0;

@@ -212,7 +212,7 @@ function state_player_mach2()
 		if (floor(image_index) == (image_number - 1) && sprite_index == spr_longjump)
 		sprite_index = spr_longjumpend;
 		if (floor(image_index) == (image_number - 1) && sprite_index == spr_walljumpstart)
-        sprite_index = spr_walljumpend
+		sprite_index = spr_walljumpend
 	if (grounded && (floor(image_index) == (image_number - 1) && sprite_index == spr_rollgetup))
 		sprite_index = spr_mach2;
 	scr_noise_abilities();

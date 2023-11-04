@@ -58,11 +58,11 @@ function scr_upslope_player(argument0, argument1, argument2 = 3) //scr_upslope_p
 		_z = (i - 1)
 		repeat (i - 1)
 		{
-			if (!(scr_solid_player(argument0, (argument1 - _z))))
+			if (!(scr_solid(argument0, (argument1 - _z))))
 				_check = 0
 			_z--
 		}
-		if (scr_solid_player(argument0, argument1) && _check && (!(scr_solid_player(argument0, (argument1 - i)))))
+		if (scr_solid(argument0, argument1) && _check && (!(scr_solid(argument0, (argument1 - i)))))
 			return i;
 	}
 	return 0;
@@ -76,11 +76,11 @@ function scr_downslope_player(argument0, argument1, argument2 = 3) //scr_downslo
 		_z = 1
 		repeat i
 		{
-			if scr_solid_player(argument0, (argument1 + _z))
+			if scr_solid(argument0, (argument1 + _z))
 				_check = 0
 			_z++
 		}
-		if ((!(scr_solid_player(argument0, argument1))) && _check && scr_solid_player(argument0, (argument1 + (i + 1))))
+		if ((!(scr_solid(argument0, argument1))) && _check && scr_solid(argument0, (argument1 + (i + 1))))
 			return i;
 	}
 	return 0;
@@ -103,8 +103,8 @@ function scr_collide_player() //scr_collide_player
 			var other_vsp = (other.y - other.yprevious)
 			if (place_meeting((x + other_hsp), y, other.id) || (place_meeting(x, ((y + other_vsp) + 1), other.id) && old_y < other.bbox_top))
 			{
-				var hcheck = scr_solid_player((x + other_hsp), y)
-				var vcheck = scr_solid_player(x, (y + other_vsp))
+				var hcheck = scr_solid((x + other_hsp), y)
+				var vcheck = scr_solid(x, (y + other_vsp))
 				scr_movingPlatforms(other.id, (!hcheck), (!vcheck))
 				onMovingPlatform = other.id
 			}
@@ -112,7 +112,7 @@ function scr_collide_player() //scr_collide_player
 	}
 	repeat abs(vsp)
 	{
-		if (!(scr_solid_player(x, (y + sign(vsp)))))
+		if (!(scr_solid(x, (y + sign(vsp)))))
 			y += sign(vsp)
 		else
 		{
@@ -124,7 +124,7 @@ function scr_collide_player() //scr_collide_player
 	{
 		y -= scr_upslope_player((x + sign(hsp)), y)
 		y += scr_downslope_player((x + sign(hsp)), y)
-		if (!(scr_solid_player((x + sign(hsp)), y)))
+		if (!(scr_solid((x + sign(hsp)), y)))
 			x += sign(hsp)
 		else
 		{
@@ -135,7 +135,7 @@ function scr_collide_player() //scr_collide_player
 	if (vsp < 20)
 		vsp += grav
 	var _oldGrounded = grounded
-	grounded = scr_solid_player(x, (y + 1))
+	grounded = scr_solid(x, (y + 1))
 	groundedSlope = (scr_slope_ext(x, (y + 1)) && scr_slope_ext(x, ((y - bbox_top) + bbox_bottom)))
 	if ((!grounded) && _oldGrounded && instance_exists(onMovingPlatform))
 	{

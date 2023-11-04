@@ -81,7 +81,7 @@ function scr_characterglobal()
 			spr_grab = spr_player_grab;
 			spr_mach2jump = spr_player_mach2jump;
 			spr_longjump = spr_player_mach2jump
-            spr_longjumpend = spr_player_mach2jump
+			spr_longjumpend = spr_player_mach2jump
 			spr_trick = spr_player_trick
 			spr_Timesup = spr_player_timeup;
 			spr_deathstart = spr_player_deathstart;
@@ -376,8 +376,8 @@ function scr_characterglobal()
 				spr_longjumpend = spr_player_longjumpfall_new
 				spr_rollgetup = spr_player_rollgetup_new
 				spr_mach3rollstart = spr_player_mach3roll_new
-			spr_mach3roll = spr_player_mach3roll_new
-			spr_suplexbump = spr_player_splat_new
+				spr_mach3roll = spr_player_mach3roll_new
+				spr_suplexbump = spr_player_splat_new
 			}
 			else if global.newplayeranim == 2
 			{
@@ -457,7 +457,7 @@ function scr_characterglobal()
 			do_freefall_spr = true;
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
-			do_combometer_type = 0;
+			do_HUD_type = 0;
 			// palettes
 			palnum = 29
 			ini_open((("Custom/Pizzelle_") + string(customsavedpalette)) + "_palettes.ini")
@@ -671,7 +671,7 @@ function scr_characterglobal()
 				spr_mach3player = spr_pizzano_mach3_old
 				spr_mach3jump = spr_pizzano_mach3jump_old;
 				spr_mach3rollstart = spr_pizzano_crouchslide_old	
-			    spr_mach3roll = spr_pizzano_crouchslide_old
+				spr_mach3roll = spr_pizzano_crouchslide_old
 				spr_player_rankA = spr_pizzano_rankA_old;
 				spr_player_rankB = spr_pizzano_rankB_old;
 				spr_player_rankC = spr_pizzano_rankC_old;
@@ -713,7 +713,7 @@ function scr_characterglobal()
 			do_freefall_spr = false;
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
-			do_combometer_type = 0;
+			do_HUD_type = 0;
 			// palettes
 			palnum = 25
 			ini_open((("Custom/Pizzano_") + string(customsavedpalette)) + "_palettes.ini")
@@ -909,7 +909,7 @@ function scr_characterglobal()
 			do_freefall_spr = false;
 			do_gumbob_propeller = true;
 			do_noise_bomb = false;
-			do_combometer_type = 0;
+			do_HUD_type = 0;
 			// palettes
 			palnum = 24
 			ini_open((("Custom/Gumbob_") + string(customsavedpalette)) + "_palettes.ini")
@@ -1117,7 +1117,7 @@ function scr_characterglobal()
 			do_freefall_spr = false;
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
-			do_combometer_type = 0;
+			do_HUD_type = 0;
 			// palettes
 			palnum = 26
 			ini_open((("Custom/Coneboy_") + string(customsavedpalette)) + "_palettes.ini")
@@ -1523,7 +1523,7 @@ function scr_characterglobal()
 			do_freefall_spr = true;
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
-			do_combometer_type = 1;
+			do_HUD_type = 1;
 			break;
 		case "T":
 			spr_idle = spr_Noise_idle;
@@ -1718,16 +1718,16 @@ function scr_characterglobal()
 			spr_large_destroyable_collect_escape = spr_halloweenbigblockescape;
 			spr_metal_destroyable_escape = spr_metaltowerescape;
 			spr_metal_destroyable_hard = spr_metalb;
-			spr_smallcollect1 = spr_halloweencollectibles1;
-			spr_smallcollect2 = spr_halloweencollectibles2;
-			spr_smallcollect3 = spr_halloweencollectibles3;
-			spr_smallcollect4 = spr_halloweencollectibles4;
-			spr_smallcollect5 = spr_halloweencollectibles5;
-			spr_bigcollect1 = spr_pizzacollect2halloween;
-			spr_bigcollect2 = spr_pizzacollect3halloween;
-			spr_bigcollect3 = spr_pizzacollect1halloween;
-			spr_bigcollect4 = spr_pizzacollect2halloween;
-			spr_bigcollect5 = spr_pizzacollect3halloween;
+			spr_smallcollect1 = spr_shroomcollect;
+			spr_smallcollect2 = spr_cheesecollect;
+			spr_smallcollect3 = spr_tomatocollect;
+			spr_smallcollect4 = spr_sausagecollect;
+			spr_smallcollect5 = spr_pineapplecollect;
+			spr_bigcollect1 = spr_pizzacollect1;
+			spr_bigcollect2 = spr_pizzacollect2;
+			spr_bigcollect3 = spr_pizzacollect3;
+			spr_bigcollect4 = spr_pizzacollect4;
+			spr_bigcollect5 = spr_pizzacollect5;
 			spr_massivecollect1 = spr_giantpizzahalloween;
 			spr_massivecollect2 = spr_giantpizzahalloween;
 			spr_massivecollect3 = spr_giantpizzahalloween;
@@ -1868,7 +1868,7 @@ function scr_characterglobal()
 			do_freefall_spr = false;
 			do_gumbob_propeller = false;
 			do_noise_bomb = true;
-			do_combometer_type = 1;
+			do_HUD_type = 1;
 			break;
 		case "V":
 			spr_idle = spr_playerV_idle;
@@ -2230,7 +2230,7 @@ function scr_characterglobal()
 			do_freefall_spr = true;
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
-			do_combometer_type = 1;
+			do_HUD_type = 1;
 			break;
 		case "M":
 			spr_idle = spr_player_idle_pep;
@@ -2589,7 +2589,7 @@ function scr_characterglobal()
 			do_freefall_spr = false;
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
-			do_combometer_type = 1;
+			do_HUD_type = 1;
 			break;
 		case "RM":
 			// sprites
@@ -2975,7 +2975,7 @@ function scr_characterglobal()
 			do_freefall_spr = true;
 			do_gumbob_propeller = false;
 			do_noise_bomb = false;
-			do_combometer_type = 0;
+			do_HUD_type = 0;
 			// palettes
 			palnum = 29
 			ini_open((("Custom/Pizzelle_") + string(customsavedpalette)) + "_palettes.ini")

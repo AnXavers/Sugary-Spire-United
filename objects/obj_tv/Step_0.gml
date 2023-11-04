@@ -99,39 +99,42 @@ switch (state)
 				if (allstate == 31)
 					idlespr = machrolltvspr;
 				break;
-			case 126:
+			case states.hooks:
 				idlespr = hooktvspr;
 				break;
-			case 101:
+			case states.minecart:
 				idlespr = minecarttvspr;
 				break;
-			case 108:
+			case states.fireass:
 				idlespr = firetvspr;
 				break;
-			case 22:
+			case states.bombpep:
 				idlespr = bombtvspr;
 				break;
-			case 88:
-			case 97:
-			case 98:
+			case states.cotton:
+			case states.cottondrill:
+			case states.cottonroll:
 				idlespr = cottontvspr;
 				break;
-			case 140:
-			case 142:
-			case 141:
-			case 150:
-			case 148:
-			case 149:
-			case 151:
+			case states.rupertnormal:
+			case states.rupertjump:
+			case states.rupertslide:
+			case states.rupertstick:
+			case states.frostburn:
+			case states.frostburnbump:
+			case states.frostburnspin:
+			case states.frostburnwallrun:
 				idlespr = frostburntvspr;
 				break;
-			case 99:
+			case states.fling:
 				idlespr = orbtvspr;
 				break;
-			case 48:
+			case states.ufofloat:
+			case states.ufodash:
+			case states.ufodashOLD:
 				idlespr = ufotvspr;
 				break;
-			case 83:
+			case states.barrelcrouch:
 				idlespr = marshdogspr;
 				break;
 			default:
@@ -174,7 +177,7 @@ switch (state)
 				if (floor(image_index) == (image_number - 1))
 				{
 					sprite_index = idlespr;
-					idleanim = choose(500, 450, 400, 550);
+					idleanim = choose(400, 450, 500, 550);
 				}
 				break;
 		}
@@ -239,23 +242,23 @@ if (textbubblesprites == spr_tv_bubbleclose && floor(textbubbleframes) >= (sprit
 }
 switch (obj_player.state)
 {
-	case 88:
-	case 97:
-	case 98:
+	case states.cotton:
+	case states.cottondrill:
+	case states.cottonroll:
 		if (ds_list_find_index(global.saveroom, "cotton") == -1)
 		{
 			scr_queue_text("Mmmph!! MMMPH!! MMPPH! (This cotton is quite a delicacy, isn't it?)")
 			ds_list_add(global.saveroom, "cotton");
 		}
 		break;
-	case 101:
+	case states.minecart:
 		if (ds_list_find_index(global.saveroom, "minecart") == -1)
 		{
 			scr_queue_text("Easy... easy... hold on to your hats... hard hats, rather.")
 			ds_list_add(global.saveroom, "minecart");
 		}
 		break;
-	case 108:
+	case states.fireass:
 		if (ds_list_find_index(global.saveroom, "fireass") == -1)
 		{
 			scr_queue_text("Breaking news... local candy maker finds himself burned by caramel.");
@@ -263,14 +266,14 @@ switch (obj_player.state)
 			ds_list_add(global.saveroom, "fireass");
 		}
 		break;
-	case 99:
+	case states.fling:
 		if (ds_list_find_index(global.saveroom, "fling") == -1)
 		{
 			scr_queue_text("Aughh!! What kind of black magic has this flying frog casted upon me?! Feels kinda nice.");
 			ds_list_add(global.saveroom, "fling");
 		}
 		break;
-	case 125:
+	case states.flushed:
 		if (ds_list_find_index(global.saveroom, "flushed") == -1)
 		{
 			scr_queue_text("Incredibly cold temperatures are causing random individuals to be frozen solid. We recommend you stay inside during these chilly times.");
@@ -342,13 +345,13 @@ if (global.panic)
 			oldBall_sprite = spr_timer_coneball;
 			oldBall_index = 0;
 		}
-        if (oldBall_sprite == spr_timeryogurt_idle)
-        {
-            oldBall_sprite = spr_timeryogurt_agr
-            oldBall_index = 0
-        }
-        if (oldBall_sprite == spr_timeryogurt_agr)
-            timer_out = 999
+		if (oldBall_sprite == spr_timeryogurt_idle)
+		{
+			oldBall_sprite = spr_timeryogurt_agr
+			oldBall_index = 0
+		}
+		if (oldBall_sprite == spr_timeryogurt_agr)
+			timer_out = 999
 		if (coneball_sprite == spr_bartimer_normalFront)
 		{
 			coneball_sprite = spr_bartimer_showtime;

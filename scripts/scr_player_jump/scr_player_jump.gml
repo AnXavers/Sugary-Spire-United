@@ -246,17 +246,17 @@ function state_player_jump()
 		vsp = -10;
 		sprite_index = spr_djump;
 	}
-        if (key_jump && do_pizzano_wallcling)
-        {
-            if place_meeting((x + xscale), y, obj_solid)
-            {
-                scr_sound(sound_step)
-                sprite_index = spr_pizzano_wallcling
-                image_index = 0
-                state = states.pizzano_wallcling
-                vsp = 0
-                doublejumped = 0
-            }
+		if (key_jump && do_pizzano_wallcling)
+		{
+			if place_meeting((x + xscale), y, obj_solid)
+			{
+				scr_sound(sound_step)
+				sprite_index = spr_pizzano_wallcling
+				image_index = 0
+				state = states.pizzano_wallcling
+				vsp = 0
+				doublejumped = 0
+			}
 		}
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_candytransitionup)
 		sprite_index = spr_candyup;

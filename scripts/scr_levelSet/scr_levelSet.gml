@@ -232,7 +232,7 @@ function scr_levelSet()
 		timeuntilhpback = 300;
 		anger = 0;
 		angry = 0;
-		colors[0] = choose(0, 1, 2, 3);
+		colors[0] = irandom(3);
 		headless = 0;
 		substate = 0;
 		sourbuddied = 0;

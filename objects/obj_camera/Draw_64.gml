@@ -45,7 +45,7 @@ if (DrawHUD)
 			if (collected != _string)
 			{
 				for (i = 0; i < _string_length; i++)
-					colors[i] = choose(0, 1, 2, 3, 4, 5, 6);
+					colors[i] = irandom(6);
 				collected = _string;
 			}
 			for (var i = 0; i < _string_length; i++)

@@ -1,13 +1,27 @@
 switch (global.levelname)
 {
 	default:
-		current_bg = 0;
-		break;
+		for (var i = 0; i < array_length(bg_details); i++)
+			array_delete(bg_details, i, 4)
 	case "entryway":
-		current_bg = 0;
+		bg_details =
+		[
+			[spr_entry_startgate, 5, 0, 0],
+			[spr_entry_startgate, 4, 0.25, 0.15],
+			[spr_entry_startgate, 3, 0.5, 0.35],
+			[spr_entry_startgate, 2, 0, 0.5]
+		]
 		break;
 	case "steamy":
-		current_bg = 1;
+		bg_details =
+		[
+			[spr_steamy_startgate, 7, 0, 0],
+			[spr_steamy_startgate, 6, 0, 0.35],
+			[spr_steamy_startgate, 5, -0.4, 0.45],
+			[spr_steamy_startgate, 4, -0.05, 0.60],
+			[spr_steamy_startgate, 3, 0, 0.75],
+			[spr_steamy_startgate, 2, 0.1, 0.9]
+		]
 		break;
 	case "molasses":
 		current_bg = 2;

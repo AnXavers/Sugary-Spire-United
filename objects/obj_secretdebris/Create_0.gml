@@ -1,6 +1,6 @@
 initialhsp = 0;
 initialvsp = 0;
-rotatedirection = choose(-1, 0, 1);
+rotatedirection = irandom_range(-1, 1);
 rotatevalue = irandom_range(-5, 5);
 mask_index = spr_maskdebris;
 if (place_meeting(x, y, obj_player))

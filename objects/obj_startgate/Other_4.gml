@@ -48,5 +48,5 @@ with instance_create(x, y, obj_gatesecret)
 var i = 0;
 var _string_length = string_length(ini_read_string("Highscore", string(level), 0)) + 1;
 for (i = 0; i < _string_length; i++)
-	colors[i] = choose(0, 1, 2, 3, 4, 5, 6);
+	colors[i] = irandom(6);
 ini_close();

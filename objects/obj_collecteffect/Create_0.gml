@@ -12,13 +12,8 @@ drawyscale = 1;
 biggening = true;
 targetx = 128;
 targety = 96;
-if (choosed == 0)
+if !choosed
 {
-	switch (obj_player.character)
-	{
-		default:
-			sprite_index = choose(spr_collect1, spr_collect2, spr_collect3, spr_collect4, spr_collect5);
-			break;
-	}
+	sprite_index = choose(obj_player.spr_smallcollect1, obj_player.spr_smallcollect2, obj_player.spr_smallcollect3, obj_player.spr_smallcollect4, obj_player.spr_smallcollect5);
 }
 col = irandom_range(1, 5);

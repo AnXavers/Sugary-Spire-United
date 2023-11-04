@@ -47,6 +47,6 @@ if (other.key_up2 && (!instance_exists(obj_palettechanger)))
 		depth = _depth
 		image_speed = 0.35
 		sprite_index = spr_poofeffect
-		image_angle = choose(0, 90, 180, 270)
+		image_angle = (irandom(3) * 90)
 	}
 }

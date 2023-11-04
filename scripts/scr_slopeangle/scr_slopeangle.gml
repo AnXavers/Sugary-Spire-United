@@ -14,7 +14,7 @@ function scr_slopeangle(argument0 = x, argument1 = y, argument2 = 2)
 	
 	var _function = function()
 	{
-		return scr_solid_player(argument0, argument1) || (scr_slope_ext(argument0, argument1) && scr_slopePlatform(argument0, argument1));
+		return scr_solid(argument0, argument1) || (scr_slope_ext(argument0, argument1) && scr_slopePlatform(argument0, argument1));
 	}
 	for (var i = 0; i < 2; i++)
 	{

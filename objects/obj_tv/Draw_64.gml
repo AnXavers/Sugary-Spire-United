@@ -16,7 +16,7 @@ if (!surface_exists(goo_surface))
 	draw_clear_alpha(0, 0);
 	surface_reset_target();
 }
-else if !obj_player.do_combometer_type
+else if !obj_player.do_HUD_type
 {
 	surface_set_target(goo_surface);
 	draw_clear_alpha(0, 0);
@@ -31,19 +31,39 @@ else if !obj_player.do_combometer_type
 	var _ct = string(global.combo) + "x";
 	draw_text(_cx + combo_x, combo_y, _ct);
 }
-else if obj_player.do_combometer_type
+else if obj_player.do_HUD_type
 {
 	draw_set_halign(fa_right);
 	draw_set_font(global.combopepfont);
-	draw_sprite_ext(spr_tv_combobubble, -1, _cx + combo_x + 160, 218 + combo_y, 1, 1, 0, c_white, alpha);
-	draw_sprite_ext(spr_tv_combobubblefill, -1, _cx - (hand_y * 2) + 100, _hy - hand_y + 200, 1, 1, 0, c_white, alpha);
+	draw_sprite_ext(spr_tv_combobubblefill, -1, _cx - (hand_y * 2) + 214, _hy - hand_y + 130, 1, 1, 0, c_white, alpha);
+	draw_sprite_ext(spr_tv_combobubble, -1, _cx + combo_x + 170, 218 + combo_y, 1, 1, 0, c_white, alpha);
 	var _ct = string(global.combo) + "x";
-	draw_text(_cx + combo_x, combo_y, _ct);
+	draw_text(_cx + combo_x + 123, combo_y + 210, _ct);
+}
+if (!surface_exists(tvbg_surface))
+{
+	tvbg_surface = surface_create(278, 268);
+	surface_set_target(tvbg_surface);
+	draw_clear_alpha(0, 0);
+	surface_reset_target();
 }
 if !global.oldhud
 {
-	draw_sprite_ext(tvbg, current_bg, 819, 83 + DrawY + bobbing, 1, 1, 0, c_white, 1);
-	if (sprite_index != spr_tvturnon)
+	surface_set_target(tvbg_surface);
+	draw_clear_alpha(0, 0);
+	for (var i = 0; i < array_length(bg_details); i++)
+	{
+		if is_undefined(hscroll[i])
+			hscroll[i] = 0
+		hscroll[i] += bg_details[i][2]
+		draw_sprite_tiled(bg_details[i][0], bg_details[i][1], hscroll[i] + (obj_player.x * bg_details[i][3] / 4), 0);
+	}
+	draw_set_blend_mode(3);
+	draw_sprite(spr_tv_cut, 0, 0, 0);
+	draw_set_blend_mode(0);
+	surface_reset_target();
+	draw_surface(tvbg_surface, 693, -60 + DrawY + bobbing)
+	if (sprite_index != spr_tvturnon && !obj_player.do_HUD_type)
 		draw_sprite_ext(draw_static ? spr_tvpropellerstatic : spr_tvpropeller, propindex, 832, 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
 }
 scr_palette_as_player();

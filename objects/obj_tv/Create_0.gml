@@ -6,6 +6,10 @@ goo_surface = surface_create(100, 180);
 surface_set_target(goo_surface);
 draw_clear_alpha(0, 0);
 surface_reset_target();
+tvbg_surface = surface_create(278, 268);
+surface_set_target(tvbg_surface);
+draw_clear_alpha(0, 0);
+surface_reset_target();
 image_speed = 0.35;
 chose = 0;
 message = "";
@@ -79,7 +83,7 @@ voice3 = sfx_combovoice3p;
 voice4 = sfx_combovoice4p;
 voice5 = sfx_combovoice5p;
 voice6 = sfx_combovoice6p;
-voice7 = sfx_combovoice7p;;
+voice7 = sfx_combovoice7p;
 voice8 = sfx_combovoice8p;
 function scr_combotext(argument0 = global.combo)
 {
@@ -159,7 +163,13 @@ nexttext = "Nil";
 promptappear = false;
 promptappeared = false;
 prompt_timer = 0;
-tvbg = spr_tvbgs;
-current_bg = 0;
+bg_details =
+[
+	[spr_entry_startgate, 5, 0, 0],
+	[spr_entry_startgate, 4, 1, 0.15],
+	[spr_entry_startgate, 3, 2, 0.35],
+	[spr_entry_startgate, 2, 0, 0.5]
+]
+hscroll = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 DrawX = 0;
 OldDrawY = 0;

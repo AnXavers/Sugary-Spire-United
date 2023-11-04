@@ -12,7 +12,7 @@ function scr_pizzano_machtwirl()
 			movespeed -= 0.75
 	}
 	if (key_down2 && (!grounded) && vsp < 10)
-        vsp = 10
+		vsp = 10
 
 	if !key_jump2 && vsp < -4
 		vsp = -4
@@ -68,10 +68,10 @@ function scr_pizzano_machtwirl()
 			if !grounded
 			{
 				airkung = 1
-				sprite_index = choose(spr_pizzano_kungfuair1start, spr_pizzano_kungfuair2start, spr_pizzano_kungfuair3start)
+				sprite_index = choose(spr_kungfuair1start, spr_kungfuair2start, spr_kungfuair3start);
 			}
 			else
-				sprite_index = choose(spr_pizzano_kungfu1, spr_pizzano_kungfu2,spr_pizzano_kungfu3, spr_pizzano_kungfu4,spr_pizzano_kungfu5,spr_pizzano_kungfu6)
+				sprite_index = choose(spr_kungfu1, spr_kungfu2, spr_kungfu3, spr_kungfu4, spr_kungfu5, spr_kungfu6);
 			instance_create(x,y,obj_crazyrunothereffect)
 			if ((!instance_exists(obj_superdashcloud)) && grounded) 
 					instance_create(x, y, obj_superdashcloud, 
@@ -85,13 +85,13 @@ function scr_pizzano_machtwirl()
 	if key_attack && (!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)  
 	{
 		verticalMovespeed = movespeed;
-        if (vsp > 0) && (place_meeting(x + xscale, y, obj_icyWall)) 
+		if (vsp > 0) && (place_meeting(x + xscale, y, obj_icyWall)) 
 		{
-            verticalMovespeed -= round(vsp * 1.25);			
+			verticalMovespeed -= round(vsp * 1.25);			
 		}
-        else if (vsp > 0) && (character == "N") 
+		else if (vsp > 0) && (character == "N") 
 		{
-            verticalMovespeed -= vsp;
+			verticalMovespeed -= vsp;
 		}	
 		grabclimbbuffer = 0;
 		state = states.climbwall;

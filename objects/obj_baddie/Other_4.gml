@@ -1,5 +1,7 @@
-if (ds_list_find_index(global.baddieroom, id) != -1)
+if (ds_list_find_index(global.baddieroom, id) != -1 && global.lapcount < 10)
 	instance_destroy();
+if global.lapcount >= 10
+	panicEscape = 1
 if (panicEscape)
 	state = enemystates.panicWait;
 else
@@ -18,15 +20,14 @@ if (global.lapcount >= 3 && global.inflapping == 1)
 	{
 		eliteHPMax = (global.lapcount - 3)
 		eliteHP = (global.lapcount - 3)
-		multiplyfactor = clamp(global.lapcount * 0.05, 0.5, 1)
-		if (global.lapcount >= 10 && panicEscape && chance(multiplyfactor))
+		var multiplyfactor = clamp(global.lapcount * 0.05, 0.5, 1)
+		var ranx = choose(irandom_range(64, 256), irandom_range(-256, -64))
+		if (global.lapcount >= 10 && chance(multiplyfactor) && !place_meeting(x + ranx, y, par_collision) && !isDupe)
 		{
-			ranx = irandom_range(-5, 5)
-			with instance_create(x + ranx, y, self)
+			with instance_create(x + ranx, y, self.object_index)
 			{
 				panicEscape = 1
-				if place_meeting(x, y, par_collision)
-					instance_destroy(self, false)
+				isDupe = 1
 			}
 		}
 	}

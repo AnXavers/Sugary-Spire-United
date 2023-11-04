@@ -241,26 +241,26 @@ function gate_createlayer(argument0, argument1, argument2 = 0, argument3 = 0, ar
 }
 function string_random(str, count)
 {
-    var out = "";
-    var len = string_length(str);
-    if (len > 0) {
-        repeat (count) {
-            out += string_char_at(str, floor(random(len)) + 1);
-        }
-    } else {
-        repeat (count) {
-            out += chr(floor(random(95)) + 32);
-        }
-    }
-    return out;
+	var out = "";
+	var len = string_length(str);
+	if (len > 0) {
+		repeat (count) {
+			out += string_char_at(str, floor(random(len)) + 1);
+		}
+	} else {
+		repeat (count) {
+			out += chr(floor(random(95)) + 32);
+		}
+	}
+	return out;
 }
 function VarRef(_inst, _varname) constructor {
-    inst = _inst;
-    varname = _varname;
-    static get = function() {
-        return variable_struct_get(inst, varname);
-    }
-    static set = function(_value) {
-        variable_struct_set(inst, varname, _value);
-    }
+	inst = _inst;
+	varname = _varname;
+	static get = function() {
+		return variable_struct_get(inst, varname);
+	}
+	static set = function(_value) {
+		variable_struct_set(inst, varname, _value);
+	}
 }

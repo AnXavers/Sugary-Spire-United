@@ -1,6 +1,6 @@
 with (obj_player)
 {
-	with (create_afterimage(choose(1, 2), xscale))
+	with (create_afterimage(irandom_range(1, 2), xscale))
 	{
 		hsp = -20;
 		vsp = 0;
@@ -9,7 +9,7 @@ with (obj_player)
 		gonealpha = 1;
 		image_alpha = 1;
 	}
-	with (create_afterimage(choose(1, 2), xscale))
+	with (create_afterimage(irandom_range(1, 2), xscale))
 	{
 		hsp = -20;
 		vsp = -20;
@@ -18,7 +18,7 @@ with (obj_player)
 		gonealpha = 1;
 		image_alpha = 1;
 	}
-	with (create_afterimage(choose(1, 2), xscale))
+	with (create_afterimage(irandom_range(1, 2), xscale))
 	{
 		hsp = -20;
 		vsp = 20;
@@ -27,7 +27,7 @@ with (obj_player)
 		gonealpha = 1;
 		image_alpha = 1;
 	}
-	with (create_afterimage(choose(1, 2), xscale))
+	with (create_afterimage(irandom_range(1, 2), xscale))
 	{
 		hsp = 0;
 		vsp = 20;
@@ -36,7 +36,7 @@ with (obj_player)
 		gonealpha = 1;
 		image_alpha = 1;
 	}
-	with (create_afterimage(choose(1, 2), xscale))
+	with (create_afterimage(irandom_range(1, 2), xscale))
 	{
 		hsp = 0;
 		vsp = -20;
@@ -45,7 +45,7 @@ with (obj_player)
 		gonealpha = 1;
 		image_alpha = 1;
 	}
-	with (create_afterimage(choose(1, 2), xscale))
+	with (create_afterimage(irandom_range(1, 2), xscale))
 	{
 		hsp = 20;
 		vsp = 20;
@@ -54,7 +54,7 @@ with (obj_player)
 		gonealpha = 1;
 		image_alpha = 1;
 	}
-	with (create_afterimage(choose(1, 2), xscale))
+	with (create_afterimage(irandom_range(1, 2), xscale))
 	{
 		hsp = 20;
 		vsp = 0;
@@ -63,7 +63,7 @@ with (obj_player)
 		gonealpha = 1;
 		image_alpha = 1;
 	}
-	with (create_afterimage(choose(1, 2), xscale))
+	with (create_afterimage(irandom_range(1, 2), xscale))
 	{
 		hsp = 20;
 		vsp = -20;

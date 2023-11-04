@@ -112,7 +112,7 @@ function state_player_ufodash()
 		if (place_meeting_collision(x, y + sign(vsp), 1) && !place_meeting(x, y + sign(vsp), obj_destructibles))
 			verticalMovespeed = 0;
 	}
-	create_afterimage(choose(1, 2), xscale);
+	create_afterimage(irandom_range(1, 2), xscale);
 	if (animation_end() && sprite_index == spr_player_ufoFloatSpeedUp)
 		state = 48;
 	image_speed = 0.5;

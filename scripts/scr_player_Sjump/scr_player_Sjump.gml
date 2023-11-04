@@ -30,12 +30,12 @@ function state_player_Sjump()
 		vsp = -10;
 	}
 	 if (sprite_index == spr_pizzano_sjumpprep || sprite_index == spr_player_superjump_cancelprep)
-        vsp = 0
-    if (sprite_index == spr_pizzano_sjumpprep && floor(image_index) == (image_number - 1))
-    {
-        sprite_index = spr_pizzano_sjump
-        scr_sound(sound_superjumprelease)
-        vsp = -10
+		vsp = 0
+	if (sprite_index == spr_pizzano_sjumpprep && floor(image_index) == (image_number - 1))
+	{
+		sprite_index = spr_pizzano_sjump
+		scr_sound(sound_superjumprelease)
+		vsp = -10
 	}
 	if (scr_solid(x, y + vsp) && !place_meeting(x, y + vsp, obj_boxofpizza) && !place_meeting(x, y + vsp, obj_metalblock) && !place_meeting(x, y + vsp, obj_destructibles) && sprite_index != spr_superjump_cancelprep)
 	{

@@ -6,20 +6,20 @@ draw_set_alpha(1)
 draw_set_color(c_white)
 if deactivated = 0
 {
-    draw_set_font(global.font)
-    if press_start && room = devroom
-    {
-        var _txt = "PRESS START"
-        draw_text(480, 298, _txt)
-    }
+	draw_set_font(global.font)
+	if press_start && room = devroom
+	{
+		var _txt = "PRESS START"
+		draw_text(480, 298, _txt)
+	}
 }
 else
 {
-    draw_rectangle_color(0, 0, 960, 540, c_black, c_black, c_black, c_black, 0)
-    draw_set_font(global.smallfont)
-    _txt = "CONTROLLER DISCONNECTED\n\nPRESS START TO CONTINUE"
-    var _h = (string_height(_txt) / 2)
-    draw_text(480, (270 - _h), _txt)
+	draw_rectangle_color(0, 0, 960, 540, c_black, c_black, c_black, c_black, 0)
+	draw_set_font(global.smallfont)
+	_txt = "CONTROLLER DISCONNECTED\n\nPRESS START TO CONTINUE"
+	var _h = (string_height(_txt) / 2)
+	draw_text(480, (270 - _h), _txt)
 }
 if gamepad_discovered = 1
 {

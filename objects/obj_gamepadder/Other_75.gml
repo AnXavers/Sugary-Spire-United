@@ -1,8 +1,8 @@
-show_debug_message("Event = " + async_load[? "event_type"]);        // Debug code so you can see which event has been
+show_debug_message("Event = " + async_load[? "event_type"]);		// Debug code so you can see which event has been
 show_debug_message("Pad = " + string(async_load[? "pad_index"]));   // triggered and the pad associated with it.
-switch(async_load[? "event_type"])        
+switch(async_load[? "event_type"])		
 {
-case "gamepad discovered":              
+case "gamepad discovered":			  
    var padnew = async_load[? "pad_index"];  
    if global.player_input_device <= 0
    {
@@ -11,7 +11,7 @@ case "gamepad discovered":
 	   }
    break;
 
-case "gamepad lost":              
+case "gamepad lost":			  
 
    var padlost = async_load[? "pad_index"];  
    if global.player_input_device == padlost
