@@ -103,7 +103,7 @@ if (showtext)
 		draw_sprite_ext(spr_lapsticker, (_lrank - 1), (x + 8), (y - 218), 1, 1, 0, c_white, 1)
 		if (_rank == "e")
 		{
-			draw_set_font(global.rankfont);
+			draw_set_font(global.erankfont);
 			draw_set_halign(1);
 			draw_text(x - 55, y - 216, string_repeat("E", (ini_read_string("ERankLength", string(level), 1))))
 		}
@@ -113,7 +113,7 @@ if (showtext)
 		draw_sprite_ext(_rankspr, 0, (x - 32), (y - 218), 1, 1, 0, c_white, 1)
 		if (_rank == "e")
 		{
-			draw_set_font(global.rankfont);
+			draw_set_font(global.erankfont);
 			draw_set_halign(1);
 			draw_text(x - 5, y - 216, string_repeat("E", (ini_read_string("ERankLength", string(level), 1))))
 		}
@@ -125,6 +125,8 @@ if (showtext)
 	_string_length = string_length(_string);
 	var pal = colors[i];
 	draw_set_font(obj_player.font_collect);
+	if global.newscorefont
+		draw_set_font(obj_player.font_collect_new);
 	draw_set_alpha(1);
 	for (i = 0; i < _string_length; i++)
 	{

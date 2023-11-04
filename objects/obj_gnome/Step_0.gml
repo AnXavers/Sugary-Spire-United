@@ -15,9 +15,9 @@ if (sprite_index == spr_gnomeMinerBlowingUp && floor(image_index) >= (image_numb
 	instance_create(x, y, obj_bombexplosionharmless);
 	sprite_index = spr_gnomeMinerBlewUp;
 	image_xscale *= -1;
-	if (instance_exists(wall))
+	if instance_exists(wall)
 	{
-		with (wall)
+		with wall
 			instance_destroy();
 	}
 	with (obj_gnomeTNTBlock)

@@ -173,9 +173,19 @@ if !(global.levelname == "none" && room == timesuproom || room == rank_room || r
 			if (global.currentrank == "E")
 			{
 				global.Eranklength = global.lapcount - 9
-				draw_set_font(global.rankfont);
-				draw_set_halign(1);
-				draw_text(244, 24, string_repeat("E", global.Eranklength));
+				draw_set_font(global.erankfont);
+				draw_set_halign(fa_center);
+				if !global.erankstack
+					draw_text(244, 24, string_repeat("E", global.Eranklength));
+				else
+				{
+					draw_text(244, 24, "E");
+					if global.Eranklength > 1
+					{
+						draw_set_halign(fa_left);
+						draw_text(260, 24, "x" + string(global.Eranklength));
+					}
+				}
 			}
 		}
 	}
