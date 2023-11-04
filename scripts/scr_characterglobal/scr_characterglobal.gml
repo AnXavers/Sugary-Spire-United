@@ -48,6 +48,7 @@ function scr_characterglobal()
 			spr_machdashpad = spr_player_dashpad;
 			spr_rollgetup = spr_player_rollgetup;
 			spr_mach3jump = spr_player_mach3jump;
+			spr_mach3hit = spr_player_mach3
 			spr_mach3hitwall = spr_player_mach3hitwall;
 			spr_mach3roll = spr_player_machroll
 			spr_mach3rollstart = spr_player_machroll

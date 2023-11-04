@@ -67,7 +67,7 @@ function state_player_mach3()
 		sprite_index = spr_mach3player;
 	if (sprite_index == spr_superjump_cancel && grounded)
 		sprite_index = spr_mach3player;
-	if (animation_end() && (sprite_index == spr_rollgetup || sprite_index == spr_machdashpad || sprite_index == spr_mach3hit))
+	if (animation_end() && (sprite_index == spr_rollgetup || sprite_index == spr_machdashpad || (sprite_index == spr_mach3hit && ((character == "P" && global.newplayeranim == 1)) || character == "S")))
 		sprite_index = spr_mach3player;
 	if ((movespeed > 16 && sprite_index != spr_crazyrun) && sprite_index != spr_dive && sprite_index != spr_rollgetup)
 	{
