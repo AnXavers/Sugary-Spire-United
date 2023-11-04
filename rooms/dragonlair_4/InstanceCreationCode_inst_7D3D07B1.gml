@@ -1,1 +1,0 @@
-BoxContent = obj_confectimallow;
