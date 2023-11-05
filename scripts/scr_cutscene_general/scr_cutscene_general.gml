@@ -1,4 +1,4 @@
-function cutscene_wait()
+function cutscene_wait(argument0)
 {
 	timer++;
 	if (timer >= argument0)
@@ -25,7 +25,7 @@ function cutscene_start_player()
 	obj_player.sprite_index = obj_player.spr_idle;
 	cutscene_event_end();
 }
-function cutscene_create_instance()
+function cutscene_create_instance(argument0, argument1, argument2)
 {
 	instance_create(argument0, argument1, argument2);
 	cutscene_event_end();
@@ -78,7 +78,7 @@ function cutscene_lerp_actor(argument0, argument1, argument2, argument3)
 	if (finish)
 		cutscene_event_end();
 }
-function cutscene_move_actor()
+function cutscene_move_actor(argument0, argument1, argument2, argument3)
 {
 	var finish = false;
 	var _realActor = cutscene_get_actor(argument0);
@@ -95,7 +95,7 @@ function cutscene_move_actor()
 	if (finish || !_realActor)
 		cutscene_event_end();
 }
-function cutscene_new_actor()
+function cutscene_new_actor(argument0, argument1, argument2, argument3)
 {
 	var _new_actor = instance_create(argument0, argument1, obj_actor);
 	_new_actor.sprite_index = argument2;
@@ -104,7 +104,7 @@ function cutscene_new_actor()
 	cutscene_event_end();
 	return _new_actor;
 }
-function cutscene_actor_animend()
+function cutscene_actor_animend(argument0)
 {
 	var finish = 0;
 	var _realActor = cutscene_get_actor(argument0);

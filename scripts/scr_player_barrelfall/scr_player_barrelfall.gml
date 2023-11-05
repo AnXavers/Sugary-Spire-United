@@ -15,6 +15,6 @@ function state_player_barrelfall()
 		state = 82;
 		image_index = 0;
 	}
-	sprite_index = spr_player_barrelfall;
+	sprite_index = spr_peppino_barrelfall;
 	image_speed = 0.35;
 }

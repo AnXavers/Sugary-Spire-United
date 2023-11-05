@@ -4,7 +4,7 @@ function state_player_donut()
 	hsp = xscale * movespeed;
 	if (grounded)
 		movespeed = approach(movespeed, 0, 0.1);
-	sprite_index = spr_player_throwDonut;
+	sprite_index = spr_throwDonut;
 	if (animation_end())
 	{
 		if (key_attack && movespeed >= 10)

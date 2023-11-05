@@ -37,8 +37,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_supertaunt",
-    "path": "sprites/spr_player_supertaunt/spr_player_supertaunt.yy",
+    "name": "spr_pizzelle_supertaunt",
+    "path": "sprites/spr_pizzelle_supertaunt/spr_pizzelle_supertaunt.yy",
   },
   "spriteMaskId": null,
   "visible": true,

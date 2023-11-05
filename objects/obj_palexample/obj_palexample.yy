@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_pizzelleselectpal",
-    "path": "sprites/spr_pizzelleselectpal/spr_pizzelleselectpal.yy",
+    "name": "spr_pizzelle_selectpal",
+    "path": "sprites/spr_pizzelle_selectpal/spr_pizzelle_selectpal.yy",
   },
   "spriteMaskId": null,
   "visible": true,

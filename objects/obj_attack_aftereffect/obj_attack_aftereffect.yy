@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_uppercutend",
-    "path": "sprites/spr_player_uppercutend/spr_player_uppercutend.yy",
+    "name": "spr_pizzelle_uppercutend",
+    "path": "sprites/spr_pizzelle_uppercutend/spr_pizzelle_uppercutend.yy",
   },
   "spriteMaskId": null,
   "visible": true,

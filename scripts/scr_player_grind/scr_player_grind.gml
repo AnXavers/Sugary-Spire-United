@@ -17,7 +17,7 @@ function state_player_grind()
 		}
 		else
 		{
-			state = 70;
+			state = states.mach3;
 			sprite_index = spr_mach3jump;
 		}
 	}
@@ -40,7 +40,7 @@ function state_player_grind()
 		}
 		else
 		{
-			state = 70;
+			state = states.mach3;
 			sprite_index = spr_mach3jump;
 		}
 	}

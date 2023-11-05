@@ -26,7 +26,7 @@ function state_player_runonball()
 			audio_play_sound(sfx_jump, 1, false);
 	}
 	movespeed = 2.5;
-	sprite_index = spr_player_slipnslide;
+	sprite_index = spr_slipnslide;
 	if (key_attack && grounded)
 	{
 		if (mach2 < 35)

@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_fireass",
-    "path": "sprites/spr_player_fireass/spr_player_fireass.yy",
+    "name": "spr_pizzelle_fireass",
+    "path": "sprites/spr_pizzelle_fireass/spr_pizzelle_fireass.yy",
   },
   "spriteMaskId": null,
   "visible": true,

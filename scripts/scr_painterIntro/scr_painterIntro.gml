@@ -8,7 +8,7 @@ function cutscene_painter_start()
 		grav = 0.5;
 		image_speed = 0.35;
 		visible = true;
-		sprite_index = spr_player_machfreefall;
+		sprite_index = spr_machfreefall;
 		vsp = -18;
 		hsp = 0;
 		show_debug_message("lol");
@@ -62,13 +62,13 @@ function cutscene_player_land()
 	obj_player.image_speed = 0.35;
 	with (obj_player)
 	{
-		if (grounded && vsp > 0 && sprite_index != spr_player_land && sprite_index != spr_idle)
+		if (grounded && vsp > 0 && sprite_index != spr_land && sprite_index != spr_idle)
 		{
 			image_index = 0;
-			sprite_index = spr_player_land;
+			sprite_index = spr_land;
 			vsp = 0;
 		}
-		if (animation_end() && sprite_index == spr_player_land)
+		if (animation_end() && sprite_index == spr_land)
 		{
 			sprite_index = spr_idle;
 			_finish = 1;

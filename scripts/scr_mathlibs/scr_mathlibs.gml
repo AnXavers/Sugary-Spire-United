@@ -1,4 +1,4 @@
-function scr_mathlibs()
+function scr_mathlibs(argument0, argument1, argument2)
 {
 	function cycle(argument0, argument1, argument2)
 	{

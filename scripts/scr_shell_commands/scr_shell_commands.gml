@@ -576,34 +576,34 @@ function sh_set_transformation()
 	switch (_transfo)
 	{
 		case "Cottoncoated":
-			obj_player.state = 98
+			obj_player.state = states.cotton
 			break;
 		case "Frostburn":
-			obj_player.state = 151
+			obj_player.state = states.frostburn
 			break;
 		case "UFO":
-			obj_player.state = 48
+			obj_player.state = states.ufofloat
 			break;
 		case "Seacream":
-			obj_player.state = 146
+			obj_player.state = states.rupertnormal
 			break;
 		case "Fireass":
-			obj_player.state = 108
+			obj_player.state = states.fireass
 			break;
 		case "Bomb":
-			obj_player.state = 22
+			obj_player.state = states.bombpep
 			break;
 		case "Marshdog":
-			obj_player.state = 83
+			obj_player.state = states.barrelcrouch
 			break;
 		case "Minecart":
-			obj_player.state = 101
+			obj_player.state = states.minecart
 			break;
 		case "Hook":
-			obj_player.state = 126
+			obj_player.state = states.hooks
 			break;
 		case "Orb":
-			obj_player.state = 99
+			obj_player.state = states.fling
 			break;
 	}
 }

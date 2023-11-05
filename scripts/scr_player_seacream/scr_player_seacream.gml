@@ -5,9 +5,9 @@ function state_player_seacream()
 	grav = 0.4;
 	image_speed = 0.35;
 	if (move != 0)
-		sprite_index = spr_player_seacream_walk;
+		sprite_index = spr_seacream_walk;
 	else
-		sprite_index = spr_player_seacream_idle;
+		sprite_index = spr_seacream_idle;
 	if (sign(hsp) != 0)
 		xscale = sign(hsp);
 	var mvsp = 5;
@@ -23,7 +23,7 @@ function state_player_seacream()
 	if (key_jump && grounded)
 	{
 		image_index = 0;
-		sprite_index = spr_player_seacream_jump;
+		sprite_index = spr_seacream_jump;
 		state = 145;
 		vsp = -12;
 		jumpstop = false;
@@ -45,10 +45,10 @@ function state_player_seacreamjump()
 	hsp = movespeed;
 	grav = 0.4;
 	image_speed = 0.35;
-	if (sprite_index != spr_player_seacream_walljump)
+	if (sprite_index != spr_seacream_walljump)
 	{
-		if (sprite_index != spr_player_seacream_jump || animation_end())
-			sprite_index = spr_player_seacream_fall;
+		if (sprite_index != spr_seacream_jump || animation_end())
+			sprite_index = spr_seacream_fall;
 	}
 	if (seacream_stick_buffer > 0)
 		seacream_stick_buffer--;
@@ -66,7 +66,7 @@ function state_player_seacreamjump()
 	if (place_meeting(x, y, obj_seacreamgoop) && (place_meeting(x, y, obj_seacreamgoop) && (place_meeting_collision(x + sign(hsp), y, 1) || place_meeting_collision(x + xscale, y, 1))))
 	{
 		verticalMovespeed = 0;
-		state = 146;
+		state = states.rupertslide;
 		seacream_stick_buffer = 20;
 	}
 	if (!key_jump2 && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)
@@ -81,12 +81,12 @@ function state_player_seacreamstick()
 	hsp = xscale;
 	vsp = 0;
 	image_speed = 0.35;
-	sprite_index = spr_player_seacream_stick;
+	sprite_index = spr_seacream_stick;
 	if (key_jump)
 	{
 		vsp = -10;
 		state = 145;
-		sprite_index = spr_player_seacream_walljump;
+		sprite_index = spr_seacream_walljump;
 		xscale *= -1;
 		movespeed = xscale * 10;
 		seacream_stick_buffer = 1;

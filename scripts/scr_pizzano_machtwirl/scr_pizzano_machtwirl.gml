@@ -1,7 +1,7 @@
 
 function scr_pizzano_machtwirl()
 {
-	sprite_index = spr_pizzano_machtwirl
+	sprite_index = spr_machtwirl
 	move = (key_left + key_right);
 	hsp = (xscale * movespeed);
 	mach2++
@@ -41,7 +41,7 @@ function scr_pizzano_machtwirl()
 		if !charged && !key_up {
 			flash = 1
 			state = states.pizzano_rocketfist
-			sprite_index = spr_pizzano_sjumpprepside
+			sprite_index = spr_superjump_cancelprep
 			image_index = 0
 			movespeed = (movespeed / 1.50);
 			mach2 = 0
@@ -53,7 +53,7 @@ function scr_pizzano_machtwirl()
 			flash = 1
 			alarm[0] = 240
 			image_index = 0
-			sprite_index = spr_pizzano_sjumpprep	
+			sprite_index = spr_superjumpprep	
 			state = states.Sjump
 			scr_sound(sound_superjumpcharge1)
 		}

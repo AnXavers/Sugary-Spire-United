@@ -18,7 +18,7 @@ function scr_collide_destructibles()
 			state = 57;
 		}
 	}
-	if (state == 69 || state == 58 || state == 148 || state == 150 || state == 149 || state == 39 || state == 127 || state == 109 || (state == 133 && substate == 0) || state == 70 || state == 139 || state == 31 || (state == 88 && (sprite_index == spr_cotton_attack || movespeed >= 8)) || state == 103 || state == 3 || state == 19 || state == 67 || state == 89 || state == 93 || state == 95 || state == 96 || state == 105 || state == 77 || state == 62 || state == 104 || state == 121 || state == 101 || state == 125 || state == 140 || state == 142 || state == 106 || state == 119 || state == 120 || state == 107 || state == 83)
+	if (state == 69 || state == 58 || state == states.rupertstick || state == states.supergrab || state == states.honey || state == 39 || state == 127 || state == 109 || (state == 133 && substate == 0) || state == states.mach3 || state == 139 || state == 31 || (state == 88 && (sprite_index == spr_cotton_attack || movespeed >= 8)) || state == 103 || state == 3 || state == 19 || state == 67 || state == 89 || state == 93 || state == 95 || state == 96 || state == 105 || state == 77 || state == 62 || state == 104 || state == 121 || state == 101 || state == 125 || state == 140 || state == 142 || state == 106 || state == 119 || state == 120 || state == 107 || state == 83)
 	{
 		if (place_meeting(x + hsp, y, obj_destructibles))
 		{
@@ -158,9 +158,9 @@ function scr_collide_destructibles()
 			}
 		}
 	}
-	if (vsp >= 0 && (state == 95 || state == 150 || state == 36 || (state == 74 || state == 75)))
+	if (vsp >= 0 && (state == 95 || state == states.supergrab || state == 36 || (state == 74 || state == 75)))
 	{
-		if ((place_meeting(x, y + vsp, obj_metalblock) && state == 95) || (state == 150 && sprite_index == spr_player_skatespin) || (state == 36 && freefallsmash >= 10) || ((state == 74 || state == 75) && freefallsmash >= 10))
+		if ((place_meeting(x, y + vsp, obj_metalblock) && state == 95) || (state == states.supergrab && sprite_index == spr_skatespin) || (state == 36 && freefallsmash >= 10) || ((state == 74 || state == 75) && freefallsmash >= 10))
 		{
 			with (instance_place(x, y + vsp, obj_metalblock))
 			{
@@ -168,7 +168,7 @@ function scr_collide_destructibles()
 				event_user(0);
 			}
 		}
-		if ((place_meeting(x, y + sign(vsp), obj_metalblock) && state == 95) || (state == 150 && sprite_index == spr_player_skatespin) || (state == 36 && freefallsmash >= 10) || ((state == 74 || state == 75) && freefallsmash >= 10))
+		if ((place_meeting(x, y + sign(vsp), obj_metalblock) && state == 95) || (state == states.supergrab && sprite_index == spr_skatespin) || (state == 36 && freefallsmash >= 10) || ((state == 74 || state == 75) && freefallsmash >= 10))
 		{
 			with (instance_place(x, y + sign(vsp), obj_metalblock))
 			{
@@ -193,7 +193,7 @@ function scr_collide_destructibles()
 			}
 		}
 	}
-	if (state == 60 || state == 63 || state == 69 || state == 70 || state == 105 || state == 119 || state == 120)
+	if (state == 60 || state == 63 || state == 69 || state == states.mach3 || state == 105 || state == 119 || state == 120)
 	{
 		if (place_meeting(x, y + vsp, obj_destructibles) && vsp < 0)
 		{
@@ -246,8 +246,7 @@ function scr_collide_destructibles()
 		{
 			if (place_meeting(x - obj_player.hsp, y, obj_player))
 			{
-				var _player = instance_nearest(x, y, obj_player);
-				DestroyedBy = _player;
+				DestroyedBy = obj_player;
 				event_user(0);
 			}
 		}

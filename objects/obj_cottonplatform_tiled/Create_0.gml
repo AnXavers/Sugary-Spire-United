@@ -1,4 +1,3 @@
 depth = 5;
-if obj_player.character == "N"
-	sprite_index = spr_cottonplatform_stormy
+sprite_index = obj_player.spr_cotton_platform
 event_inherited();

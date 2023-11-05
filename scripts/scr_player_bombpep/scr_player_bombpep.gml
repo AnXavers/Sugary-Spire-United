@@ -1,6 +1,6 @@
 function state_player_bombpep()
 {
-	if (sprite_index == spr_bombpep_intro || sprite_index == spr_bombpep_end)
+	if (sprite_index == spr_pizzelle_bombintro || sprite_index == spr_pizzelle_bombend)
 		mask_index = spr_crouchmask;
 	else
 		mask_index = obj_player.spr_mask;
@@ -19,9 +19,9 @@ function state_player_bombpep()
 	landAnim = 0;
 	scr_getinput();
 	alarm[5] = 2;
-	if (sprite_index == spr_bombpep_intro && floor(image_index) == (image_number - 1))
-		sprite_index = spr_bombpep_run;
-	if (sprite_index == spr_bombpep_run || sprite_index == spr_bombpep_runabouttoexplode)
+	if (sprite_index == spr_pizzelle_bombintro && floor(image_index) == (image_number - 1))
+		sprite_index = spr_pizzelle_bombrun;
+	if (sprite_index == spr_pizzelle_bombrun || sprite_index == spr_pizzelle_bombrunabouttoexplode)
 	{
 		if (movespeed <= 8)
 			movespeed += 0.2;
@@ -33,8 +33,8 @@ function state_player_bombpep()
 		movespeed = 0;
 	}
 	if (bombpeptimer < 20 && bombpeptimer != 0)
-		sprite_index = spr_bombpep_runabouttoexplode;
-	if (sprite_index == spr_bombpep_end && floor(image_index) == (image_number - 1))
+		sprite_index = spr_pizzelle_bombrunabouttoexplode;
+	if (sprite_index == spr_pizzelle_bombend && floor(image_index) == (image_number - 1))
 	{
 		alarm[5] = 2;
 		alarm[7] = 60;
@@ -43,12 +43,12 @@ function state_player_bombpep()
 		sprite_index = spr_idle;
 		image_index = 0;
 	}
-	if (bombpeptimer <= 0 && sprite_index == spr_bombpep_runabouttoexplode)
+	if (bombpeptimer <= 0 && sprite_index == spr_pizzelle_bombrunabouttoexplode)
 	{
 		scr_sound(sound_explosion);
 		hurted = 1;
 		instance_create(x, y, obj_bombexplosion);
-		sprite_index = spr_bombpep_end;
+		sprite_index = spr_pizzelle_bombend;
 	}
 	if (bombpeptimer > 0)
 		bombpeptimer -= 0.5;

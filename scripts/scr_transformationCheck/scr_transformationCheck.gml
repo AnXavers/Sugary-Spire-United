@@ -1,4 +1,4 @@
-function scr_transformationCheck()
+function scr_transformationCheck(argument0)
 {
 	var _transfo = undefined;
 	switch (argument0)

@@ -70,7 +70,7 @@ with (instance_nearest(x, y, obj_player))
 		with (other.id)
 			instance_destroy();
 	}
-	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.ufodashOLD && sprite_index == spr_pizzelleuforoll))
+	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.ufodashOLD && sprite_index == spr_pizzelle_uforoll))
 	{
 		with (other.id)
 			instance_destroy();

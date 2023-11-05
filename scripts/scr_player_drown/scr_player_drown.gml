@@ -11,7 +11,7 @@ function state_player_drown()
 	if (key_jump && !key_down)
 	{
 		scr_sound(sound_jump);
-		sprite_index = spr_player_drown_jump;
+		sprite_index = spr_drown_jump;
 		instance_create(x, y, obj_highjumpcloud2);
 		vsp = -12;
 		state = 60;

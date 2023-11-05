@@ -1,1 +1,1 @@
-logicOutput = currentState == 1;
+logicOutput = currentstate == 1;

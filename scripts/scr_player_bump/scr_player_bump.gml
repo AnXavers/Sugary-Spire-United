@@ -4,7 +4,7 @@ function state_player_bump()
 	mach2 = 0;
 	start_running = 1;
 	alarm[4] = 14;
-	if ((sprite_index != spr_player_catched && sprite_index != spr_splat && (sprite_index != spr_tumbleend && sprite_index != spr_mach3hitwall)) && sprite_index != spr_pizzano_shoulderbash)
+	if ((sprite_index != spr_catched && sprite_index != spr_splat && (sprite_index != spr_tumbleend && sprite_index != spr_mach3hitwall)) && sprite_index != spr_pizzano_shoulderbash)
 		sprite_index = spr_bump;
 	if (sprite_index == spr_splat)
 	{

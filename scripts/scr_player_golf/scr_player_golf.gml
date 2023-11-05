@@ -5,14 +5,14 @@ function state_player_golf()
 		move = xscale;
 	hsp = 0;
 	vsp = 0;
-	if (sprite_index != spr_player_grab)
-		sprite_index = spr_player_swingding;
+	if (sprite_index != spr_grab)
+		sprite_index = spr_swingding;
 	else if (animation_end())
 		state = 1;
 	if (key_slap2)
 	{
 		image_index = 0;
-		sprite_index = spr_player_swingdingend;
+		sprite_index = spr_swingdingend;
 		instance_create(x, y, obj_slaphitbox);
 	}
 }

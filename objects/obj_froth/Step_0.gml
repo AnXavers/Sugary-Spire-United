@@ -47,7 +47,7 @@ if (place_meeting(x, y + 1, obj_player) && state == 22 && substate == 1 && sprit
 		hsp = 0;
 		player_x = x;
 		state = 92;
-		sprite_index = spr_player_frothstuck;
+		sprite_index = spr_frothstuck;
 		bushdetection = 3;
 	}
 	instance_destroy();

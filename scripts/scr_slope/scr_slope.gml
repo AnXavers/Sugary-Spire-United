@@ -6,7 +6,7 @@ function scr_slope_ext(argument0, argument1, argument2 = false)
 {
 	return place_meeting_slope(argument0, argument1, !argument2);
 }
-function scr_solid_slope()
+function scr_solid_slope(argument0, argument1)
 {
 	place_meeting_slopeSolid(argument0, argument1);
 }
@@ -14,7 +14,7 @@ function slopeCheck(argument0, argument1)
 {
 	return scr_slope_ext(argument0, argument1 + 1) && !scr_solid_slope(argument0, argument1 + 1) && !scr_solid_slope(argument0, argument1) && scr_slope_ext(argument0, (argument1 - bbox_top) + bbox_bottom);
 }
-function scr_slopePlatform()
+function scr_slopePlatform(argument0, argument1)
 {
 	place_meeting_slopePlatform(argument0, argument1);
 }

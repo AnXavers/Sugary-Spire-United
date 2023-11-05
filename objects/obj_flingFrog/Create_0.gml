@@ -1,7 +1,7 @@
 scr_collision_init();
 depth = 4;
 image_speed = 0.35;
-grabbedPlayer = -4;
+is_grabbed = 0;
 waitTimer = 5;
 old_hsp = 0;
 max_vsp = 0;

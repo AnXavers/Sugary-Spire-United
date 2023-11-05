@@ -43,7 +43,7 @@ function state_player_costumenormal()
 			if (move != 0)
 				xscale = move;
 			state = 132;
-			sprite_index = spr_player_swingding;
+			sprite_index = spr_swingding;
 		}
 		if (key_slap2 && grounded && place_meeting(x, y + 64, obj_iceblock))
 		{

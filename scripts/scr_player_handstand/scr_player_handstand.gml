@@ -60,7 +60,7 @@ function state_player_handstand()
 		movespeed = 0;
 		bouncespeed = 0;
 		bounced = 0;
-		state = 70;
+		state = states.mach3;
 	}
 	else if (key_slap2 && bounced != 0 && key_up)
 	{

@@ -8,8 +8,7 @@ function scr_enemy_panicWait()
 	invincible = true;
 	if (global.panic)
 	{
-		var _player = instance_nearest(xstart, ystart, obj_player);
-		if (!instance_exists(escapePortal) && point_in_rectangle(xstart, ystart, _player.x - 500, obj_player.y - 100, obj_player.x + 500, obj_player.y + 100))
+		if (!instance_exists(escapePortal) && point_in_rectangle(xstart, ystart, obj_player.x - 500, obj_player.y - 100, obj_player.x + 500, obj_player.y + 100))
 		{
 			escapePortal = instance_create(xstart, ystart, obj_panicPortal);
 			instance_create(xstart, ystart, obj_poofeffect);

@@ -19,7 +19,7 @@ with (other)
 			}
 		}
 		state = 102;
-		sprite_index = spr_player_squished;
+		sprite_index = spr_squished;
 		image_speed = 0.35;
 	}
 }

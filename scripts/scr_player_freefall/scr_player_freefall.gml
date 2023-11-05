@@ -58,7 +58,7 @@ function state_player_freefall()
 		if (sprite_index == spr_bombdropstart)
 			sprite_index = spr_bombdropfall;
 		if (global.treat)
-			sprite_index = spr_player_donutSlam;
+			sprite_index = spr_donutSlam;
 	}
 	if (grounded && (freefallsmash < 10 || !place_meeting(x, y + vsp, obj_metalblock)) && !place_meeting(x, y + vsp, obj_destructibles))
 	{
@@ -101,8 +101,8 @@ function state_player_freefall()
 			image_index = 0;
 			if (sprite_index == spr_bodyslamfall)
 				sprite_index = spr_bodyslamland;
-			if (sprite_index == spr_player_donutSlam)
-				sprite_index = spr_player_donutSlam_land;
+			if (sprite_index == spr_donutSlam)
+				sprite_index = spr_donutSlam_land;
 			if (sprite_index == spr_bombdropfall)
 				sprite_index = spr_bombdropland;
 		}

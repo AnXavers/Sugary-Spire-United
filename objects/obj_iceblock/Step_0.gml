@@ -63,7 +63,7 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 {
 	with (obj_player)
 	{
-		if (state == 70 || state == 69 || state == 106 || state == 101 || state == 133)
+		if (state == states.mach3 || state == 69 || state == 106 || state == 101 || state == 133)
 		{
 			instance_create(other.x, other.y, obj_slapstar);
 			instance_create(other.x, other.y, obj_baddiegibs);

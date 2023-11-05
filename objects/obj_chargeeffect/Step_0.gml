@@ -1,5 +1,5 @@
 image_xscale = obj_player.xscale;
-if (obj_player.state != 70 && obj_player.state != 101)
+if (obj_player.state != states.mach3 && obj_player.state != 101)
 	instance_destroy();
 if (obj_player.state != 101)
 	x = obj_player.x + (16 * obj_player.xscale);

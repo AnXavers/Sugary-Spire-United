@@ -75,28 +75,28 @@ switch (state)
 		var _transfo = true;
 		switch (allstate)
 		{
-			case 68:
-			case 69:
-			case 17:
-			case 71:
-			case 11:
-			case 31:
-			case 67:
-			case 70:
+			case states.mach1:
+			case states.mach2:
+			case states.handstandjump:
+			case states.machslide:
+			case states.climbwall:
+			case states.machroll:
+			case states.crouchslide:
+			case states.mach3:
 				_transfo = false;
 				var my_mvsp = global.freezeframe ? abs(obj_player.frozenhsp) : abs(obj_player.hsp);
-				if (allstate == 11)
+				if (allstate == states.climbwall)
 					my_mvsp = global.freezeframe ? abs(obj_player.frozenvsp) : abs(obj_player.vsp);
 				idlespr = mach1tvspr;
-				if (my_mvsp >= 8 || allstate == 17)
+				if (my_mvsp >= 8 || allstate == states.handstandjump)
 					idlespr = mach2tvspr;
-				if (my_mvsp >= 12 || allstate == 70)
+				if (my_mvsp >= 12 || allstate == states.mach3)
 					idlespr = mach3tvspr;
 				if (my_mvsp >= 20 || obj_player.sprite_index == obj_player.spr_crazyrun)
 					idlespr = mach4tvspr;
-				if (allstate == 17 || allstate == 67)
+				if (allstate == states.handstandjump || allstate == states.crouchslide)
 					idlespr = mach1tvspr;
-				if (allstate == 31)
+				if (allstate == states.machroll)
 					idlespr = machrolltvspr;
 				break;
 			case states.hooks:

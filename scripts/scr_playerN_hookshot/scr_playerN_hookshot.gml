@@ -44,8 +44,8 @@ function scr_playerN_hookshot()
 			}
 		}
 	}
-	if (floor(image_index) == (image_number - 1) && sprite_index == spr_playerN_hookshot1)
-		sprite_index = spr_playerN_hookshot2;
+	if (floor(image_index) == (image_number - 1) && sprite_index == spr_noise_hookshot1)
+		sprite_index = spr_noise_hookshot2;
 	if (move != 0)
 	{
 		if (movespeed < 8)

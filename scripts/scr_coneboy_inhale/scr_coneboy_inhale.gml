@@ -26,7 +26,7 @@ function scr_coneboy_inhale() //gml_Script_scr_coneboy_inhale
 		{
 			vsp = -6
 			movespeed = -6
-			sprite_index = spr_player_mach3hitwall
+			sprite_index = spr_mach3hitwall
 			state = (72 << 0)
 		}
 	}
@@ -57,7 +57,7 @@ function scr_coneboy_inhale() //gml_Script_scr_coneboy_inhale
 			{
 				vsp = -6
 				movespeed = -6
-				sprite_index = spr_player_mach3hitwall
+				sprite_index = spr_mach3hitwall
 				state = (72 << 0)
 			}
 		}

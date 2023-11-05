@@ -1,5 +1,5 @@
 with (other)
 {
-	if (state != 144 && state != 145 && state != 146)
+	if (state != 144 && state != 145 && state != states.rupertslide)
 		state = 144;
 }

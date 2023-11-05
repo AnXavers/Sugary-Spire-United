@@ -1,4 +1,4 @@
-function scr_levelstart()
+function scr_levelstart(argument0, argument1)
 {
 	switch (argument0)
 	{

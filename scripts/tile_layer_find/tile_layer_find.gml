@@ -1,4 +1,4 @@
-function tile_layer_find()
+function tile_layer_find(argument0, argument1, argument2)
 {
 	var __depth = argument0;
 	var __x = argument1;

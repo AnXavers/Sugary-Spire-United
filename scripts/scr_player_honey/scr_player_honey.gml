@@ -4,7 +4,7 @@ function state_player_honey()
 	vsp = 0;
 	movespeed = 0;
 	move = key_left + key_right;
-	sprite_index = spr_player_honeystuck;
+	sprite_index = spr_honeystuck;
 	image_speed = 0.35;
 	if (move != 0)
 		xscale = move;

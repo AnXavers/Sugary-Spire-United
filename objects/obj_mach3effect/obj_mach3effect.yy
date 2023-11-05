@@ -36,8 +36,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_airdash1",
-    "path": "sprites/spr_player_airdash1/spr_player_airdash1.yy",
+    "name": "spr_pizzelle_airdash1",
+    "path": "sprites/spr_pizzelle_airdash1/spr_pizzelle_airdash1.yy",
   },
   "spriteMaskId": null,
   "visible": true,

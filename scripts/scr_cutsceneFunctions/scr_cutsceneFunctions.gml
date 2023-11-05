@@ -1,4 +1,4 @@
-function cutscene_create()
+function cutscene_create(argument0)
 {
 	global.cutsceneManager = instance_create(0, 0, obj_cutsceneManager);
 	with (global.cutsceneManager)
@@ -35,7 +35,7 @@ function cutscene_declare_actor(argument0, argument1)
 	}
 	return true;
 }
-function cutscene_get_actor()
+function cutscene_get_actor(argument0)
 {
 	with (global.cutsceneManager)
 	{

@@ -6,11 +6,11 @@ if (other.state != 126 && other.state != 0 && other.state != 128)
 		{
 			case 17:
 				playerPrevState = 69;
-				playerPrevSprite = spr_player_mach2;
+				playerPrevSprite = spr_mach2;
 				break;
 			case 73:
 				playerPrevState = 69;
-				playerPrevSprite = spr_player_mach2;
+				playerPrevSprite = spr_mach2;
 				break;
 			case 71:
 				if (sprite_index == spr_machslideboost3)
@@ -18,26 +18,26 @@ if (other.state != 126 && other.state != 0 && other.state != 128)
 					playerPrevState = 70;
 					playerPrevSprite = spr_mach3player;
 				}
-				else if (sprite_index == spr_player_machslideboost)
+				else if (sprite_index == spr_machslideboost)
 				{
 					playerPrevState = 69;
-					playerPrevSprite = spr_player_mach2;
+					playerPrevSprite = spr_mach2;
 				}
 				else
 				{
 					playerPrevState = 71;
-					playerPrevSprite = spr_player_crouchslide;
+					playerPrevSprite = spr_crouchslide;
 				}
 				break;
 			case 88:
 			case 97:
 			case 98:
 				playerPrevState = 69;
-				playerPrevSprite = spr_player_mach2jump;
+				playerPrevSprite = spr_mach2jump;
 				break;
 			case 96:
 				playerPrevState = 69;
-				playerPrevSprite = spr_player_mach2jump;
+				playerPrevSprite = spr_mach2jump;
 				break;
 			default:
 				playerPrevSprite = sprite_index;

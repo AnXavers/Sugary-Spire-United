@@ -29,11 +29,11 @@ function state_player_Sjump()
 		scr_sound(sound_superjumprelease);
 		vsp = -10;
 	}
-	 if (sprite_index == spr_pizzano_sjumpprep || sprite_index == spr_player_superjump_cancelprep)
+	 if (sprite_index == spr_superjumpprep || sprite_index == spr_superjump_cancelprep)
 		vsp = 0
-	if (sprite_index == spr_pizzano_sjumpprep && floor(image_index) == (image_number - 1))
+	if (sprite_index == spr_superjumpprep && floor(image_index) == (image_number - 1))
 	{
-		sprite_index = spr_pizzano_sjump
+		sprite_index = spr_superjump
 		scr_sound(sound_superjumprelease)
 		vsp = -10
 	}
@@ -74,7 +74,7 @@ function state_player_Sjump()
 			xscale = move;
 		movespeed = 13;
 		machhitAnim = 0;
-		state = 70;
+		state = states.mach3;
 		flash = 1;
 		vsp = -4;
 		image_index = 0;

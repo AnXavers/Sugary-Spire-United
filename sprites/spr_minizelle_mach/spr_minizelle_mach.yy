@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Mini",
+    "path": "folders/Sprites/Player/Pizzelle/Mini.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

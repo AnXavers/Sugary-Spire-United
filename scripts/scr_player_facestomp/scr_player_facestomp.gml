@@ -40,10 +40,10 @@ function state_player_facestomp()
 			audio_play_sound(sfx_land, 1, false);
 	}
 	if (facestompAnim == 0)
-		sprite_index = spr_player_facestomp;
+		sprite_index = spr_facestomp;
 	else if (facestompAnim == 1)
 	{
-		sprite_index = spr_player_facestomphit;
+		sprite_index = spr_peppino_facestomphit;
 		if (floor(image_index) == 5)
 			facestompAnim = 0;
 	}
@@ -52,7 +52,7 @@ function state_player_facestomp()
 	image_speed = 0.35;
 	if (grounded && input_buffer_jump < 8 && vsp > 0)
 	{
-		sprite_index = spr_player_hanstandjump;
+		sprite_index = spr_peppino_hanstandjump;
 		stompAnim = 0;
 		hsp = 0;
 		state = 17;

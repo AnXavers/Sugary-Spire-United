@@ -15,7 +15,7 @@ function scr_hurtplayer(argument0 = obj_player)
 			}
 			else if (state == 101)
 			{
-				sprite_index = spr_player_mach3hitwall;
+				sprite_index = spr_mach3hitwall;
 				state = 72;
 				hsp = 2.5 * xscale;
 				vsp = -3;

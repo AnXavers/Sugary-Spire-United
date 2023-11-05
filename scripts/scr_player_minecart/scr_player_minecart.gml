@@ -34,7 +34,7 @@ function state_player_minecart()
 		});
 	if (scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles) && !place_meeting(x + xscale, y, obj_metalblock) && !place_meeting(x + xscale, y, obj_chocofrog))
 	{
-		sprite_index = spr_player_mach3hitwall;
+		sprite_index = spr_mach3hitwall;
 		state = 72;
 		hsp = 2.5 * -xscale;
 		vsp = -3;
@@ -86,7 +86,7 @@ function state_player_minecart()
 			state = 71;
 			vsp = -8;
 			movespeed = 6;
-			sprite_index = spr_player_hurtroll;
+			sprite_index = spr_pizzelle_hurtroll;
 		}
 	}
 	var groundedlandsprite = (movespeed >= 12) ? obj_player.spr_minecartfastland : obj_player.spr_minecartland;

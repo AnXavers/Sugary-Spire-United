@@ -8,11 +8,11 @@ function state_player_bushdisguise()
 	{
 		bushdetection--;
 		shaketime = 12;
-		sprite_index = spr_player_frothstuck_start;
+		sprite_index = spr_frothstuck_start;
 		image_index = 0;
 	}
-	if (animation_end() && sprite_index == spr_player_frothstuck_start)
-		sprite_index = spr_player_frothstuck;
+	if (animation_end() && sprite_index == spr_frothstuck_start)
+		sprite_index = spr_frothstuck;
 	if (bushdetection <= 0)
 	{
 		state = 1;

@@ -1,9 +1,8 @@
-var _player = instance_nearest(x, y, obj_player);
-if (grabbedPlayer <= -4)
+if !is_grabbed
 {
-	if (distance_to_object(_player) < 100)
+	if (distance_to_object(obj_player) < 100)
 	{
-		var _player_dir = point_direction(xstart, ystart, _player.x, _player.y);
+		var _player_dir = point_direction(xstart, ystart, obj_player.x, obj_player.y);
 		targetX = lengthdir_x(90, _player_dir);
 		targetY = lengthdir_y(90, _player_dir);
 		hsp = 0;
@@ -28,14 +27,14 @@ if (grabbedPlayer <= -4)
 		y = round(lerp(y, ystart + 70, 0.2));
 	}
 }
-if (place_meeting(x, y, _player) && !scr_solid(x, y) && _player.vsp >= -3 && _player.state != states.fling && grabbedPlayer <= -4 && waitTimer <= 0)
+if (place_meeting(x, y, obj_player) && !scr_solid(x, y) && obj_player.vsp >= -3 && obj_player.state != states.fling && !is_grabbed && waitTimer <= 0)
 {
-	grabbedPlayer = _player;
-	old_hsp = grabbedPlayer.hsp / 4;
+	is_grabbed = 1
+	old_hsp = obj_player.hsp / 4;
 	hsp = old_hsp;
-	vsp = clamp((grabbedPlayer.vsp / 2) + 10, 5, 20);
+	vsp = clamp((obj_player.vsp / 2) + 10, 5, 20);
 	max_vsp = -15;
-	with (grabbedPlayer)
+	with (obj_player)
 	{
 		if (!instance_exists(obj_candifiedeffect1))
 		{
@@ -49,14 +48,14 @@ if (place_meeting(x, y, _player) && !scr_solid(x, y) && _player.vsp >= -3 && _pl
 		y = other.y;
 	}
 }
-if (grabbedPlayer != -4)
+if (is_grabbed)
 {
-	with (grabbedPlayer)
+	with (obj_player)
 	{
 		x = other.x;
 		y = other.y;
-		if (sprite_index != obj_player.spr_candyidle)
-			sprite_index = obj_player.spr_candybegin;
+		if (sprite_index != spr_candyidle)
+			sprite_index = spr_candybegin;
 		state = states.fling;
 		if (!instance_exists(obj_candifiedeffect2))
 			instance_create(x, y, obj_candifiedeffect2);
@@ -72,11 +71,11 @@ if (grabbedPlayer != -4)
 			movespeed = 0;
 	}
 	old_hsp = approach(old_hsp, 0, 0.2);
-	hsp = old_hsp + grabbedPlayer.hsp;
+	hsp = old_hsp + obj_player.hsp;
 	if (scr_solid(x + sign(hsp), y))
 	{
 		old_hsp = -sign(hsp) * 3;
-		grabbedPlayer.movespeed /= 2;
+		obj_player.movespeed /= 2;
 	}
 	if (scr_solid(x, y + 1) && vsp >= 0)
 		vsp -= 5;
@@ -89,9 +88,9 @@ if (grabbedPlayer != -4)
 		farBuffer++;
 	else
 		farBuffer = 0;
-	if (grabbedPlayer.y <= ystart && vsp < 0)
+	if (obj_player.y <= ystart && vsp < 0)
 	{
-		with (grabbedPlayer)
+		with (obj_player)
 		{
 			scr_sound(sfx_bloop2);
 			state = states.jump;
@@ -99,16 +98,16 @@ if (grabbedPlayer != -4)
 			hsp = other.hsp;
 			movespeed = abs(hsp);
 			vsp = other.max_vsp;
-			sprite_index = obj_player.spr_candytransitionup;
+			sprite_index = spr_candytransitionup;
 			if (sign(hsp) != 0)
 				xscale = sign(hsp);
 		}
-		grabbedPlayer = -4;
+		is_grabbed = 0;
 		waitTimer = 25;
 	}
 	if (obj_player.key_jump || farBuffer >= 100)
 	{
-		with (grabbedPlayer)
+		with (obj_player)
 		{
 			scr_sound(sfx_bloop2);
 			state = states.jump;
@@ -116,11 +115,11 @@ if (grabbedPlayer != -4)
 			hsp = other.hsp;
 			movespeed = abs(hsp);
 			vsp = -6;
-			sprite_index = obj_player.spr_candytransitionup;
+			sprite_index = spr_candytransitionup;
 			if (sign(hsp) != 0)
 				xscale = sign(hsp);
 		}
-		grabbedPlayer = -4;
+		is_grabbed = 0;
 		waitTimer = 25;
 	}
 }

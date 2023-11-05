@@ -40,8 +40,8 @@
     "path": "sprites/spr_guard/spr_guard.yy",
   },
   "spriteMaskId": {
-    "name": "spr_player_mask",
-    "path": "sprites/spr_player_mask/spr_player_mask.yy",
+    "name": "spr_pizzelle_mask",
+    "path": "sprites/spr_pizzelle_mask/spr_pizzelle_mask.yy",
   },
   "visible": true,
 }

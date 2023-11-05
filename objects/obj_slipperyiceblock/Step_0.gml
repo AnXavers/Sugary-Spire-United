@@ -1,22 +1,18 @@
-if (!global.freezeframe)
+if (!global.freezeframe && place_meeting(x, y - 1, obj_player) && obj_player.grounded && !obj_player.cutscene && obj_player.state != 128 && obj_player.state != 0)
 {
-	var _player = instance_nearest(x, y, obj_player);
-	if (place_meeting(x, y - 1, _player) && _player.grounded && !_player.cutscene && _player.state != 128 && _player.state != 0)
+	with (obj_player)
 	{
-		with (_player)
+		if (state == states.rupertstick || state == states.supergrab || state == 151)
 		{
-			if (state == 148 || state == 150 || state == 151)
-			{
-				state = 149;
-				if (move != 0)
-					xscale = move;
-				else if (hsp != 0)
-					xscale = sign(hsp);
-			}
-			if (state != 149)
-				state = 58;
-			if (movespeed < 12)
-				movespeed = 12;
+			state = states.honey;
+			if (move != 0)
+				xscale = move;
+			else if (hsp != 0)
+				xscale = sign(hsp);
 		}
+		if (state != states.honey)
+			state = 58;
+		if (movespeed < 12)
+			movespeed = 12;
 	}
 }

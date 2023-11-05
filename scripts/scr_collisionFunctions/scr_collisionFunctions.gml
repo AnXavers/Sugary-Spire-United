@@ -97,7 +97,7 @@ function scr_checkPositionSolidAngle(argument0, argument1, argument2, argument3,
 	}
 	return _angle;
 }
-function triangle_meeting()
+function triangle_meeting(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7)
 {
 	var old_x = x;
 	var old_y = y;

@@ -15,7 +15,7 @@ function state_player_knightpepattack()
 	if (floor(image_index) == (image_number - 1))
 	{
 		image_index = 0;
-		sprite_index = spr_knightpep_idle;
+		sprite_index = spr_peppino_knightidle;
 		state = 19;
 	}
 	image_speed = 0.35;

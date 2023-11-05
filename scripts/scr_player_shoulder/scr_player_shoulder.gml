@@ -11,6 +11,6 @@ function state_player_shoulder()
 	crouchAnim = 1;
 	if (floor(image_index) == (image_number - 1))
 		state = 1;
-	sprite_index = spr_player_shoulder;
+	sprite_index = spr_shoulder;
 	image_speed = 0.35;
 }

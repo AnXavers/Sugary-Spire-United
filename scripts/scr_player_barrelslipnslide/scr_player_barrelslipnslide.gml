@@ -6,7 +6,7 @@ function state_player_barrelslipnslide()
 		movespeed += 0.2;
 	if (vsp < 12)
 		vsp += grav;
-	sprite_index = spr_player_barrelslipnslide;
+	sprite_index = spr_peppino_barrelslipnslide;
 	if (floor(image_index) == 6)
 	{
 		state = 85;

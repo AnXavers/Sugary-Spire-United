@@ -22,7 +22,7 @@ function state_player_crouchslide()
 					movespeed = 10;
 				break;
 			case "N":
-				sprite_index = spr_pizzano_mach2;
+				sprite_index = spr_mach2;
 				image_index = 0;
 				state = 69;
 				break;

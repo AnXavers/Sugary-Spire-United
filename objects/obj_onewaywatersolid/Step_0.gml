@@ -1,4 +1,4 @@
-if (obj_player.state != 69 && obj_player.state != 70 && obj_player.state != 101)
+if (obj_player.state != 69 && obj_player.state != states.mach3 && obj_player.state != 101)
 {
 	instance_destroy();
 	if (instance_exists(obj_watertop))

@@ -13,7 +13,7 @@ function state_player_pal()
 		with (obj_palexample)
 		{
 			instance_create_depth(x, y, -6, obj_poofeffect);
-			sprite_index = spr_pizzelleselectedpal;
+			sprite_index = spr_pizzelle_selectedpal;
 			image_index = 0;
 		}
 	}

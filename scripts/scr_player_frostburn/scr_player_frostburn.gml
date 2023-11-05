@@ -29,7 +29,7 @@ function state_player_frostburn()
 		movespeed -= 0.05;
 	if (movespeed > 18 && !groundedSlope)
 		movespeed -= 0.5;
-	if (movespeed > 3 && sprite_index != spr_player_skatedive)
+	if (movespeed > 3 && sprite_index != spr_skatedive)
 		player_slopeMomentum(0.3);
 	if ((!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles) && !place_meeting(x + xscale, y, obj_chocofrog))
 	{
@@ -44,14 +44,14 @@ function state_player_frostburn()
 	if (key_jump && grounded && !key_down)
 	{
 		vsp = -8;
-		sprite_index = spr_player_skatejumpstart;
+		sprite_index = spr_skatejumpstart;
 		image_index = 0;
 	}
 	if (key_down)
 	{
 		if (!grounded)
 		{
-			sprite_index = spr_player_skatedive;
+			sprite_index = spr_skatedive;
 			vsp = 14;
 			if (movespeed < 10)
 				movespeed++;
@@ -63,11 +63,11 @@ function state_player_frostburn()
 			movespeed = max(4, movespeed);
 		}
 	}
-	if (sprite_index == spr_player_skatejumpstart && animation_end())
-		sprite_index = spr_player_skatejump;
-	if (sprite_index == spr_player_skatedoublejumpstart && animation_end())
-		sprite_index = spr_player_skatedoublejump;
-	if (sprite_index == spr_player_skatediveland && animation_end())
+	if (sprite_index == spr_skatejumpstart && animation_end())
+		sprite_index = spr_skatejump;
+	if (sprite_index == spr_skatedoublejumpstart && animation_end())
+		sprite_index = spr_skatedoublejump;
+	if (sprite_index == spr_skatediveland && animation_end())
 		sprite_index = spr_player_skate;
 	if (sprite_index == spr_player_skateslow)
 		image_speed = clamp(movespeed / 16, 0.1, 0.5);
@@ -80,7 +80,7 @@ function state_player_frostburnwallrun()
 	verticalMovespeed -= 0.3;
 	move = key_left + key_right;
 	hsp = 0;
-	sprite_index = spr_player_skatewallrun;
+	sprite_index = spr_skatewallrun;
 	if (!place_meeting_collision(x + xscale, y))
 	{
 		instance_create(x, y, obj_jumpdust);
@@ -97,7 +97,7 @@ function state_player_frostburnwallrun()
 		movespeed = max(6, movespeed);
 		suplexmove = false;
 		state = 140;
-		sprite_index = spr_player_skatejumpstart;
+		sprite_index = spr_skatejumpstart;
 		image_index = 0;
 	}
 	if (place_meeting_collision(x, y - 1, 8))
@@ -129,7 +129,7 @@ function state_player_frostburnspin()
 	if (!_h)
 		vsp = 0;
 	image_speed = 0.35;
-	sprite_index = spr_player_skatespin;
+	sprite_index = spr_skatespin;
 	var maxSpd = 8;
 	if (_h)
 		maxSpd = 16;

@@ -37,7 +37,7 @@ function state_player_crouch()
 			movespeed = 0;
 		state = 137;
 		image_index = 0;
-		sprite_index = spr_player_throwDonut;
+		sprite_index = spr_throwDonut;
 		with (instance_create(x, y + 16, obj_donutThrowable))
 		{
 			image_xscale = other.xscale;

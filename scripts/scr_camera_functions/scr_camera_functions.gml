@@ -6,7 +6,7 @@ function point_in_camera(argument0, argument1, argument2)
 	var cam_h = camera_get_view_height(argument2);
 	return point_in_rectangle(argument0, argument1, cam_x, cam_y, cam_x + cam_w, cam_y + cam_h);
 }
-function bbox_in_camera(argument0)
+function bbox_in_camera(argument0, argument1)
 {
 	var cam_x = camera_get_view_x(argument0);
 	var cam_y = camera_get_view_y(argument0);
@@ -14,7 +14,7 @@ function bbox_in_camera(argument0)
 	var cam_h = camera_get_view_height(argument0);
 	return rectangle_in_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, cam_x, cam_y, cam_x + cam_w, cam_y + cam_h);
 }
-function bbox_in_camera_ext(argument0)
+function bbox_in_camera_ext(argument0, argument1)
 {
 	var cam_x = camera_get_view_x(argument0);
 	var cam_y = camera_get_view_y(argument0);

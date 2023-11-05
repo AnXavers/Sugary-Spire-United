@@ -16,7 +16,7 @@ function state_player_freefallprep()
 		if (!global.treat)
 			sprite_index = spr_bodyslamstart;
 		else
-			sprite_index = spr_player_donutSlam_intro;
+			sprite_index = spr_donutSlam_intro;
 	}
 	move = key_left + key_right;
 	if (character == "N")

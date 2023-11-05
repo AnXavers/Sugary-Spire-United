@@ -1,4 +1,4 @@
-function scr_destroy_tile()
+function scr_destroy_tile(argument0)
 {
 	var lay_id = layer_get_id(argument0);
 	var map_id = layer_tilemap_get_id(lay_id);

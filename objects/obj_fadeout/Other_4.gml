@@ -1,10 +1,13 @@
-if (room == outer_room1 && obj_player.state == 2)
+with obj_player
 {
-	obj_player.vsp = 5;
-	obj_player.xscale = 1;
-	obj_player.movespeed = 11;
-	obj_player.state = 45;
-	obj_player.sprite_index = spr_player_machfreefall;
+	if (room == outer_room1 && state == states.titlescreen)
+	{
+		vsp = 5;
+		xscale = 1;
+		movespeed = 11;
+		state = 45;
+		sprite_index = spr_machfreefall;
+	}
 }
 if (global.dolap10fg == 1 && !layer_exists(global.lap10fg))
 {

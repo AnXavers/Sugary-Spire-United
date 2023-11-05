@@ -1,10 +1,10 @@
-if (currentState == 2)
+if (currentstate == 2)
 {
-	currentState = 1;
+	currentstate = 1;
 	sprite_index = spr_Pressed;
 }
-else if (currentState == 3)
+else if (currentstate == 3)
 {
-	currentState = 0;
+	currentstate = 0;
 	sprite_index = spr_Released;
 }

@@ -6,7 +6,7 @@ if (global.panic == 1)
 		instance_create(x, y, obj_bombexplosion);
 		other.state = 22;
 		other.bombpeptimer = 0;
-		other.sprite_index = spr_bombpep_end;
+		other.sprite_index = spr_pizzelle_bombend;
 		other.image_index = 0;
 		instance_create(x, y, obj_bombexplosioncherry);
 	}

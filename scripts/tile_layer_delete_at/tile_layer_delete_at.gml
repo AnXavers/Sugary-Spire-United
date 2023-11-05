@@ -1,4 +1,4 @@
-function tile_layer_delete_at()
+function tile_layer_delete_at(argument0, argument1, argument2)
 {
 	var __depth = argument0;
 	var __x = argument1;

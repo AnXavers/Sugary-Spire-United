@@ -103,7 +103,7 @@ function state_player_handstandjump()
 	image_speed = 0.3;
 	if (!instance_exists(obj_slidecloud) && grounded && movespeed > 5)
 		instance_create(x, y, obj_slidecloud);
-	if (key_attack && floor(image_index) == (image_number - 1) && sprite_index != spr_player_bump)
+	if (key_attack && floor(image_index) == (image_number - 1) && sprite_index != spr_bump)
 	{
 		image_speed = 0.35;
 		state = 69;

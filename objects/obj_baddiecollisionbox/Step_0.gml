@@ -42,7 +42,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				camera_shake(3, 3);
 				repeat (3)
 					instance_create(x, y, obj_slapstar);
-					   if (state == states.mach3 && sprite_index != spr_player_superjump_cancel && sprite_index != spr_mach3hit && ((character == "P" && global.newplayeranim == 1)) || character == "S")
+					   if (state == states.mach3 && sprite_index != spr_superjump_cancel && sprite_index != spr_mach3hit && ((character == "P" && global.newplayeranim == 1)) || character == "S")
     {
             sprite_index = spr_mach3hit
         image_index = 0

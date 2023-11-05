@@ -7,23 +7,23 @@ function state_player_ufofloat()
 	var speed_magnitude = 0;
 	move = key_right + key_left;
 	move2 = key_down - key_up;
-	if ((sprite_index != spr_player_ufoShoot || (animation_end() && sprite_index == spr_player_ufoShoot)) && sprite_index != spr_player_ufoShootHold)
+	if ((sprite_index != spr_ufoShoot || (animation_end() && sprite_index == spr_ufoShoot)) && sprite_index != spr_ufoShootHold)
 	{
-		sprite_index = spr_player_ufoFloat;
+		sprite_index = spr_ufoFloat;
 		if (ufotimer <= 125)
-			sprite_index = spr_player_ufoFloatLow;
+			sprite_index = spr_ufoFloatLow;
 	}
-	if (move != 0 && sprite_index != spr_player_ufoShoot)
+	if (move != 0 && sprite_index != spr_ufoShoot)
 		xscale = move;
-	if (key_slap && sprite_index != spr_player_ufoShootHold)
+	if (key_slap && sprite_index != spr_ufoShootHold)
 	{
 		image_index = 0;
-		sprite_index = spr_player_ufoShootHold;
+		sprite_index = spr_ufoShootHold;
 	}
-	else if (!key_slap && sprite_index == spr_player_ufoShootHold)
+	else if (!key_slap && sprite_index == spr_ufoShootHold)
 	{
 		image_index = 0;
-		sprite_index = spr_player_ufoShoot;
+		sprite_index = spr_ufoShoot;
 		with (instance_create(x, y + 25, obj_donutShitted, 
 		{
 			bigShot: shoot_buffer >= 30
@@ -42,7 +42,7 @@ function state_player_ufofloat()
 		shoot_buffer += 0.3;
 	if (shoot_buffer >= 30)
 		image_index = 0;
-	if (sprite_index == spr_player_ufoShoot || sprite_index == spr_player_ufoShootHold)
+	if (sprite_index == spr_ufoShoot || sprite_index == spr_ufoShootHold)
 	{
 		maxspeed = 7;
 		hspaccel = 0.65;
@@ -85,7 +85,7 @@ function state_player_ufodash()
 	var maxspeed = 12;
 	var hspaccel = 0.5;
 	var vspaccel = 0.5;
-	sprite_index = spr_player_ufoFloatSpeedUp;
+	sprite_index = spr_ufoFloatSpeedUp;
 	var _angle = (xscale > 0) ? 0 : 180;
 	if (move != 0 || move2 != 0)
 		_angle = point_direction(0, 0, move, move2);
@@ -113,7 +113,7 @@ function state_player_ufodash()
 			verticalMovespeed = 0;
 	}
 	create_afterimage(irandom_range(1, 2), xscale);
-	if (animation_end() && sprite_index == spr_player_ufoFloatSpeedUp)
+	if (animation_end() && sprite_index == spr_ufoFloatSpeedUp)
 		state = 48;
 	image_speed = 0.5;
 	exit;

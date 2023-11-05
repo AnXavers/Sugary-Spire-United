@@ -10,7 +10,7 @@ function state_player_door()
 	crouchslideAnim = 1;
 	crouchAnim = 1;
 	machhitAnim = 0;
-	if (sprite_index != spr_player_downpizzabox && sprite_index != spr_player_uppizzabox)
+	if (sprite_index != spr_downpizzabox && sprite_index != spr_uppizzabox)
 		sprite_index = spr_lookdoor;
 	if (animation_end())
 	{

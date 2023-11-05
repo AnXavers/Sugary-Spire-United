@@ -33,7 +33,7 @@ function state_player_machroll()
 				image_index = 0;
 				sprite_index = spr_rollgetup;
 				if (movespeed >= 12)
-					state = 70;
+					state = states.mach3;
 				else
 					state = 69;
 			}
@@ -50,7 +50,7 @@ function state_player_machroll()
 	}
 	if (key_jump && character == "N" && grounded)
 	{
-		sprite_index = spr_pizzano_twirl;
+		sprite_index = spr_twirl;
 		state = 119;
 		vsp = -12;
 	}
@@ -63,7 +63,7 @@ function state_player_machroll()
 		if (global.treat)
 		{
 			vsp = -10;
-			sprite_index = spr_player_donutSlam_intro;
+			sprite_index = spr_donutSlam_intro;
 			instance_create(x, y, obj_donutSlammable);
 		}
 	}

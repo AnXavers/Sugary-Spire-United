@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_rankS",
-    "path": "sprites/spr_rankS/spr_rankS.yy",
+    "name": "spr_pizzelle_rankS",
+    "path": "sprites/spr_pizzelle_rankS/spr_pizzelle_rankS.yy",
   },
   "spriteMaskId": null,
   "visible": true,

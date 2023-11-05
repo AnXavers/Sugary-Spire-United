@@ -68,7 +68,7 @@ function state_player_climbwall()
 		}
 		else if (verticalMovespeed >= 12)
 		{
-			state = 70;
+			state = states.mach3;
 			sprite_index = spr_mach3player;
 			movespeed = verticalMovespeed;
 		}
@@ -107,7 +107,7 @@ function state_player_climbwall()
 			sprite_index = spr_mach3jump;
 			vsp = -9;
 			jumpstop = false;
-			state = 70;
+			state = states.mach3;
 			xscale *= -1;
 		}
 		else if (movespeed >= 6 && !place_meeting(x + xscale, y, obj_molassesWall))
@@ -189,7 +189,7 @@ function state_player_climbceiling()
 			state = 69;
 		else if (movespeed >= 12)
 		{
-			state = 70;
+			state = states.mach3;
 			sprite_index = spr_mach3player;
 		}
 	}
@@ -268,7 +268,7 @@ function state_player_climbceiling()
 			sprite_index = spr_mach3jump;
 			vsp = 5;
 			jumpstop = false;
-			state = 70;
+			state = states.mach3;
 			xscale *= -1;
 		}
 		else
@@ -362,7 +362,7 @@ function state_player_climbdownwall()
 			}
 			else if (verticalMovespeed >= 12)
 			{
-				state = 70;
+				state = states.mach3;
 				sprite_index = spr_mach3player;
 				movespeed = verticalMovespeed;
 			}
@@ -405,7 +405,7 @@ function state_player_climbdownwall()
 			sprite_index = spr_mach3jump;
 			vsp = 3;
 			jumpstop = false;
-			state = 70;
+			state = states.mach3;
 		}
 		else if (movespeed >= 6 && !place_meeting(x - xscale, y, obj_molassesWall))
 		{

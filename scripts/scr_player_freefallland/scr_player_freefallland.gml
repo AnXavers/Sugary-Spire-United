@@ -10,7 +10,7 @@ function state_player_freefallland()
 	crouchAnim = 0;
 	machhitAnim = 0;
 	movespeed = 0;
-	if (sprite_index != spr_player_donutSlam_land)
+	if (sprite_index != spr_donutSlam_land)
 		facehurt = 1;
 	start_running = 1;
 	alarm[4] = 14;

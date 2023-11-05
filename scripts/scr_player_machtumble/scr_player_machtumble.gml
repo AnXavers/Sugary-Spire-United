@@ -29,7 +29,7 @@ function state_player_machtumble()
 		}
 		flash = 0;
 		combo = 0;
-		sprite_index = spr_player_mach3hitwall;
+		sprite_index = spr_mach3hitwall;
 		state = 72;
 		hsp = -2.5 * xscale;
 		vsp = -3;
@@ -64,11 +64,11 @@ function state_player_machtumble()
 			if (mach2 < 100)
 			{
 				state = 69;
-				sprite_index = spr_player_mach2;
+				sprite_index = spr_mach2;
 			}
 			if (mach2 >= 100)
 			{
-				state = 70;
+				state = states.mach3;
 				sprite_index = spr_mach3player;
 			}
 		}

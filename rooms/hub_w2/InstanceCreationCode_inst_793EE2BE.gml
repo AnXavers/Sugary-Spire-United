@@ -10,4 +10,4 @@ info =
 	featuringinfo: [0, 5, 6, 200, 350],
 	song: mu_bee_title
 };
-details = [gate_createlayer(spr_dance_startgate, 0), gate_createlayer(spr_dance_startgate, 1), gate_createlayer(spr_dance_startgate, 4, 1), gate_createlayer(spr_dance_startgate, 3, 0.66), gate_createlayer(spr_dance_startgate, 2, 0.33)];
+details = [gate_createlayer(spr_dance_startgate, 0), gate_createlayer(spr_dance_startgate, 1), gate_createlayer(spr_dance_startgate, 2, 1), gate_createlayer(spr_dance_startgate, 3, 0.66), gate_createlayer(spr_dance_startgate, 4, 0.33)];

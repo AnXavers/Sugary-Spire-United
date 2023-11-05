@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_introscoot",
-    "path": "sprites/spr_player_introscoot/spr_player_introscoot.yy",
+    "name": "spr_pizzelle_introscoot",
+    "path": "sprites/spr_pizzelle_introscoot/spr_pizzelle_introscoot.yy",
   },
   "spriteMaskId": null,
   "visible": true,

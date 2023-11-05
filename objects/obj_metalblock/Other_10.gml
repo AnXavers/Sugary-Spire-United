@@ -30,7 +30,7 @@ if DestroyedBy.object_index == obj_player
 			if (sprite_index == spr_bodyslamfall)
 				sprite_index = spr_bodyslamland;
 			else
-				sprite_index = spr_player_donutSlam_land;
+				sprite_index = spr_donutSlam_land;
 		}
 		else if state == states.superslam
 		{

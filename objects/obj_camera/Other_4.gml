@@ -46,7 +46,7 @@ if (instance_exists(obj_player) && (obj_player.state != 30 && obj_player.state !
 	var _cam_y = target.y - (vh / 2);
 	var _shake_x = 0;
 	var _shake_y = 0;
-	if (obj_player.state == 70 || (obj_player.state == 101 && obj_player.movespeed > 10) || obj_player.state == 31)
+	if (obj_player.state == states.mach3 || (obj_player.state == 101 && obj_player.movespeed > 10) || obj_player.state == 31)
 	{
 		var _targetcharge = obj_player.xscale * ((obj_player.movespeed / 6) * 50);
 		var _tspeed = 2;

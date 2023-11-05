@@ -1,4 +1,4 @@
-function layer_tilemap_get_id_fixed()
+function layer_tilemap_get_id_fixed(argument0)
 {
 	if (layer_exists(argument0))
 	{
@@ -13,7 +13,7 @@ function layer_tilemap_get_id_fixed()
 	}
 	return -1;
 }
-function layer_background_get_id_fixed()
+function layer_background_get_id_fixed(argument0)
 {
 	if (layer_exists(argument0))
 	{
@@ -29,7 +29,7 @@ function layer_background_get_id_fixed()
 	}
 	return -1;
 }
-function layer_asset_get_id_fixed()
+function layer_asset_get_id_fixed(argument0)
 {
 	if (layer_exists(argument0))
 	{
@@ -45,7 +45,7 @@ function layer_asset_get_id_fixed()
 	}
 	return -1;
 }
-function layer_change_background()
+function layer_change_background(argument0, argument1)
 {
 	if (argument0 != argument1)
 	{
@@ -58,7 +58,7 @@ function layer_change_background()
 		}
 	}
 }
-function layer_change_tileset()
+function layer_change_tileset(argument0, argument1)
 {
 	if (argument0 != argument1)
 	{

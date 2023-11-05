@@ -16,7 +16,7 @@ if (instance_exists(ID))
 				instance_destroy(other.id);
 			}
 		}
-		if (obj_player.state == 70)
+		if (obj_player.state == states.mach3)
 		{
 			hitboxcreate = 0;
 			instance_destroy(other.id);

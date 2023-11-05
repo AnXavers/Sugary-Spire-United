@@ -38,8 +38,8 @@
     "path": "sprites/spr_banana_idle/spr_banana_idle.yy",
   },
   "spriteMaskId": {
-    "name": "spr_player_mask",
-    "path": "sprites/spr_player_mask/spr_player_mask.yy",
+    "name": "spr_pizzelle_mask",
+    "path": "sprites/spr_pizzelle_mask/spr_pizzelle_mask.yy",
   },
   "visible": true,
 }

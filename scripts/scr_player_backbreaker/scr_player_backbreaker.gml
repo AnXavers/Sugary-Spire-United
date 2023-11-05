@@ -1,6 +1,6 @@
 function state_player_backbreaker()
 {
-	if (sprite_index != spr_player_machfreefall)
+	if (sprite_index != spr_machfreefall)
 	{
 		hsp = 0;
 		movespeed = 0;
@@ -13,10 +13,10 @@ function state_player_backbreaker()
 		taunttimer--;
 		vsp = 0;
 	}
-	if (sprite_index == spr_player_machfreefall && place_meeting(x, y + 1, obj_solid))
+	if (sprite_index == spr_machfreefall && place_meeting(x, y + 1, obj_solid))
 	{
 		state = 71;
-		sprite_index = spr_player_crouchslide;
+		sprite_index = spr_crouchslide;
 	}
 	if (sprite_index == spr_taunt)
 	{
@@ -69,11 +69,11 @@ function state_player_backbreaker()
 			scr_taunt_setVariables();
 		}
 	}
-	if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_eatspaghetti)
+	if (floor(image_index) == (image_number - 1) && sprite_index == spr_pizzelle_eatspaghetti)
 		state = 1;
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_Timesup && place_meeting(x, y, obj_exitgate))
 		state = 1;
-	if (floor(image_index) == (image_number - 1) && (sprite_index == spr_player_levelcomplete || sprite_index == spr_playerN_victory))
+	if (floor(image_index) == (image_number - 1) && (sprite_index == spr_levelcomplete || sprite_index == spr_noise_victory))
 		state = 1;
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_bossintro)
 		state = 1;

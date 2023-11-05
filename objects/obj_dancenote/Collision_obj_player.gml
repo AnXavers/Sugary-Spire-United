@@ -2,9 +2,9 @@ if (activetimer == 0)
 {
 	with (other)
 	{
-		if (key_jump && (state == 60 || state == 68 || state == 69 || state == 70 || state == 119) && !grounded)
+		if (key_jump && (state == 60 || state == 68 || state == 69 || state == states.mach3 || state == 119) && !grounded)
 		{
-			if (!(state == 60 || state == 68 || state == 69 || state == 70 || state == 119))
+			if (!(state == 60 || state == 68 || state == 69 || state == states.mach3 || state == 119))
 				state = 60;
 			jumpAnim = 0;
 			jumpstop = 0;

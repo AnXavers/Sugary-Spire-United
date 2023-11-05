@@ -3,17 +3,17 @@ image_speed = 0.35;
 logicMap = ds_map_create();
 canCollide = function(argument0 = obj_player)
 {
-	return currentState == 1;
+	return currentstate == 1;
 };
 if (!reversed)
 {
-	currentState = 1;
-	nextState = 1;
+	currentstate = 1;
+	nextstate = 1;
 	queuedEvent = 0;
 }
 else
 {
-	currentState = 0;
+	currentstate = 0;
 	nextstate = 0;
 	queuedEvent = 0;
 	sprite_index = spr_gateRaised;

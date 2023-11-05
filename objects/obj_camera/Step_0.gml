@@ -114,30 +114,29 @@ if (instance_exists(obj_player) && (obj_player.state != 30 && obj_player.state !
 	var _shake_y = 0;
 	if (!global.freezeframe)
 	{
-		var _player = obj_player;
 		var _targetcharge = 0;
 		var _tspeed = 0;
-		if (_player.state == 69 || _player.state == 70)
+		if (obj_player.state == 69 || obj_player.state == states.mach3)
 		{
-			_targetcharge = _player.xscale * ((_player.movespeed / 4) * 50);
+			_targetcharge = obj_player.xscale * ((obj_player.movespeed / 4) * 50);
 			_tspeed = 0.3;
 			chargecamera = approach(chargecamera, _targetcharge, _tspeed);
 		}
-		else if (_player.state == 139)
+		else if (obj_player.state == 139)
 		{
-			_targetcharge = -_player.xscale * ((_player.movespeed / 4) * 50);
+			_targetcharge = -obj_player.xscale * ((obj_player.movespeed / 4) * 50);
 			_tspeed = 0.3;
 			chargecamera = approach(chargecamera, _targetcharge, _tspeed);
 		}
-		else if (abs(_player.hsp) >= 16 && _player.state != 12 && _player.state != 11 && _player.state != 63)
+		else if (abs(obj_player.hsp) >= 16 && obj_player.state != 12 && obj_player.state != 11 && obj_player.state != 63)
 		{
-			_targetcharge = sign(_player.hsp) * ((abs(_player.hsp) / 4) * 50);
+			_targetcharge = sign(obj_player.hsp) * ((abs(obj_player.hsp) / 4) * 50);
 			_tspeed = 2;
 			if ((_targetcharge > 0 && chargecamera < 0) || (_targetcharge < 0 && chargecamera > 0))
 				_tspeed = 8;
 			chargecamera = approach(chargecamera, _targetcharge, _tspeed);
 		}
-		else if (_player.state == 71)
+		else if (obj_player.state == 71)
 			chargecamera = approach(chargecamera, 0, 10);
 		else
 			chargecamera = approach(chargecamera, 0, 6);
@@ -201,7 +200,7 @@ if (painterdex < sprite_get_number(spr_painterhp))
 	painterdex += 0.35;
 else
 	painterdex = 0;
-if (pizdex < sprite_get_number(spr_pizzellehp))
+if (pizdex < sprite_get_number(spr_pizzelle_hp))
 	pizdex += 0.35;
 else
 	pizdex = 0;

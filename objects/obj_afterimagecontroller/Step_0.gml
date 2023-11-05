@@ -10,27 +10,28 @@ for (var i = 0; i < ds_list_size(global.afterimage_list); i++)
 		}
 		if (blink)
 			visible = global.BlinkTrail;
-		if (instance_exists(identity) && identity.object_index == obj_player && !global.freezeframe)
+		if (instance_exists(obj_player) && !global.freezeframe)
 		{
-			switch (identity.state)
+			switch (obj_player.state)
 			{
-				case 48:
-				case 49:
-					var _mvspd = (identity.verticalMovespeed > identity.movespeed) ? identity.verticalMovespeed : identity.movespeed;
-					image_alpha = abs(identity.movespeed) / 12;
+				case states.ufofloat:
+				case states.ufodash:
+				case states.ufodashOLD:
+					var _mvspd = (obj_player.verticalMovespeed > obj_player.movespeed) ? obj_player.verticalMovespeed : obj_player.movespeed;
+					image_alpha = abs(obj_player.movespeed) / 12;
 					break;
 				default:
-					image_alpha = identity.movespeed / 12;
+					image_alpha = obj_player.movespeed / 12;
 					break;
 			}
 		}
-		if (instance_exists(identity) && identity.object_index == obj_player && identity.state != 70 && identity.state != 3 && identity.state != 49 && identity.state != 48 && identity.state != 5 && identity.state != 69 && identity.state != 17 && identity.state != 71 && identity.state != 37 && identity.state != 28 && identity.state != 34 && identity.state != 36 && identity.state != 101 && !(identity.state == 31 && identity.sprite_index != identity.spr_crouchslip && identity.movespeed >= 12) && identity.state != 28 && identity.state != 63 && identity.state != 93 && identity.state != 96 && identity.state != 125 && identity.state != 60 && identity.state != 89 && identity.state != 103 && global.cane == 0 && identity.state != 104 && identity.state != 121 && identity.state != 68 && identity.state != 106 && identity.state != 150 && identity.state != 96)
+		if (instance_exists(obj_player) && obj_player.state != states.mach3 && obj_player.state != 3 && obj_player.state != 49 && obj_player.state != 48 && obj_player.state != 5 && obj_player.state != 69 && obj_player.state != 17 && obj_player.state != 71 && obj_player.state != 37 && obj_player.state != 28 && obj_player.state != 34 && obj_player.state != 36 && obj_player.state != 101 && !(obj_player.state == 31 && obj_player.sprite_index != obj_player.spr_crouchslip && obj_player.movespeed >= 12) && obj_player.state != 28 && obj_player.state != 63 && obj_player.state != 93 && obj_player.state != 96 && obj_player.state != 125 && obj_player.state != 60 && obj_player.state != 89 && obj_player.state != 103 && global.cane == 0 && obj_player.state != 104 && obj_player.state != 121 && obj_player.state != 68 && obj_player.state != 106 && obj_player.state != states.supergrab && obj_player.state != 96)
 			vanish = true;
 		if (vanish)
 			gonealpha = approach(gonealpha, 0, 0.15);
 		x += hsp;
 		y += vsp;
-		if (alarm[0] == 0 || !instance_exists(identity))
+		if (alarm[0] == 0 || !instance_exists(obj_player))
 			vanish = true;
 		if (alarm[1] == 0 || gonealpha == 0)
 		{

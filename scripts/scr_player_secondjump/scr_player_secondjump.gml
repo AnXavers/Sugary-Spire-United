@@ -64,12 +64,12 @@ function state_player_secondjump()
 		input_buffer_highjump = 0;
 	if (jumpAnim == 1)
 	{
-		sprite_index = spr_player_secondjump1;
+		sprite_index = spr_secondjump1;
 		if (floor(image_index) == (image_number - 1))
 			jumpAnim = 0;
 	}
 	if (jumpAnim == 0)
-		sprite_index = spr_player_secondjump2;
+		sprite_index = spr_secondjump2;
 	if (move != 0)
 		xscale = move;
 	image_speed = 0.35;

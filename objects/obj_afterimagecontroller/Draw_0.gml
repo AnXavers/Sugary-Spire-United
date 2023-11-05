@@ -13,7 +13,7 @@ for (var i = 0; i < ds_list_size(global.afterimage_list); i++)
 				shader_set_uniform_f(colorblend1, color_get_red(obj_afterimagecontroller.color_arr[color_choose].light) / 255, color_get_green(obj_afterimagecontroller.color_arr[color_choose].light) / 255, color_get_blue(obj_afterimagecontroller.color_arr[color_choose].light) / 255);
 				shader_set_uniform_f(colorblend2, color_get_red(obj_afterimagecontroller.color_arr[color_choose].dark) / 255, color_get_green(obj_afterimagecontroller.color_arr[color_choose].dark) / 255, color_get_blue(obj_afterimagecontroller.color_arr[color_choose].dark) / 255);
 			}
-			else if (instance_exists(identity) && identity.object_index == obj_player)
+			else if (instance_exists(obj_player))
 				scr_palette_as_player();
 			else if (spr_palette != -4 && paletteselect != -4)
 				pal_swap_set(spr_palette, paletteselect, false);

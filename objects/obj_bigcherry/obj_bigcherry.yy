@@ -39,8 +39,8 @@
     "path": "sprites/spr_bigcherry/spr_bigcherry.yy",
   },
   "spriteMaskId": {
-    "name": "spr_player_mask_1",
-    "path": "sprites/spr_player_mask_1/spr_player_mask_1.yy",
+    "name": "spr_pizzelle_mask_1",
+    "path": "sprites/spr_pizzelle_mask_1/spr_pizzelle_mask_1.yy",
   },
   "visible": true,
 }

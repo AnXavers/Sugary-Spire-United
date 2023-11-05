@@ -29,7 +29,7 @@ function state_player_trick()
 		scr_sound(sound_rollgetup);
 		image_index = 0;
 		sprite_index = spr_rollgetup;
-		state = 70;
+		state = states.mach3;
 	}
 	image_speed = 0.5;
 	if (image_index >= 11 && image_index < 12)

@@ -26,27 +26,27 @@ else if (!reversed)
 	queuedEvent = 1;
 else
 	queuedEvent = 2;
-if ((currentState == 1 || currentState == 0) && queuedEvent != 0)
+if ((currentstate == 1 || currentstate == 0) && queuedEvent != 0)
 {
-	if (queuedEvent == 2 && currentState != 0)
+	if (queuedEvent == 2 && currentstate != 0)
 	{
-		currentState = 2;
+		currentstate = 2;
 		nextstate = 0;
 		sprite_index = spr_gateRaising;
 	}
-	else if (queuedEvent == 1 && currentState != 1)
+	else if (queuedEvent == 1 && currentstate != 1)
 	{
-		currentState = 3;
-		nextState = 1;
+		currentstate = 3;
+		nextstate = 1;
 		sprite_index = spr_gateLowering;
 	}
 	queuedEvent = 0;
 }
-if (currentState == 1)
+if (currentstate == 1)
 {
 	with (obj_player)
 	{
-		if (state != 128)
+		if (state != states.noclip)
 		{
 			if (place_meeting(x, y, other))
 			{

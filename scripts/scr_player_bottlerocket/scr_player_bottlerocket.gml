@@ -13,18 +13,18 @@ function state_player_bottlerocket()
 		{
 			xscale *= -1;
 			substate = 0;
-			sprite_index = spr_player_bottlerocket_grounded;
+			sprite_index = spr_bottlerocket_grounded;
 			movespeed = 12;
 		}
 	}
 	if (substate == 0)
 	{
-		if (sprite_index != spr_player_bottlerocketstart)
+		if (sprite_index != spr_bottlerocketstart)
 		{
 			hsp = xscale * movespeed;
 			vsp = move2 * -5;
 			if (grounded)
-				sprite_index = spr_player_bottlerocket_grounded;
+				sprite_index = spr_bottlerocket_grounded;
 			else
 				sprite_index = spr_player_bottlerocket;
 			if (move == xscale)
@@ -34,7 +34,7 @@ function state_player_bottlerocket()
 				if (grounded)
 				{
 					substate = 1;
-					sprite_index = spr_player_bottlerocket_turn;
+					sprite_index = spr_bottlerocket_turn;
 					image_index = 0;
 				}
 				else
@@ -75,7 +75,7 @@ function state_player_bottlerocket()
 			xscale *= -1;
 			mach2 = 0;
 			grounded = 0;
-			sprite_index = spr_player_slipnslidestart;
+			sprite_index = spr_slipnslidestart;
 			state = 95;
 		}
 	}

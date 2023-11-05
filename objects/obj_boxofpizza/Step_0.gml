@@ -11,13 +11,13 @@ with (obj_player)
 				depth = -30;
 			}
 			scr_sound(sound_box);
-			obj_player.box = 1;
+			box = 1;
 			mach2 = 0;
 			obj_camera.chargecamera = 0;
 			x = other.x;
-			obj_player.targetDoor = other.targetDoor;
-			obj_player.targetRoom = other.targetRoom;
-			sprite_index = spr_player_downpizzabox;
+			targetDoor = other.targetDoor;
+			targetRoom = other.targetRoom;
+			sprite_index = spr_downpizzabox;
 			image_index = 0;
 			state = 77;
 		}
@@ -33,13 +33,13 @@ with (obj_player)
 				sprite_index = spr_pizzabox_front;
 				depth = -30;
 			}
-			obj_player.box = 1;
+			box = 1;
 			mach2 = 0;
 			obj_camera.chargecamera = 0;
 			x = other.x;
-			obj_player.targetDoor = other.targetDoor;
-			obj_player.targetRoom = other.targetRoom;
-			sprite_index = spr_player_uppizzabox;
+			targetDoor = other.targetDoor;
+			targetRoom = other.targetRoom;
+			sprite_index = spr_uppizzabox;
 			image_index = 0;
 			state = 77;
 		}

@@ -11,7 +11,7 @@ if (obj_player.state == 17 && place_meeting(x, y, obj_player))
 	{
 		if (state == 17)
 		{
-			sprite_index = spr_player_faucetpull;
+			sprite_index = spr_faucetpull;
 			suplexdashtimer = 7;
 			image_index = 0;
 			state = 57;

@@ -1,7 +1,7 @@
 switch character
 {
 	case "P":
-		sprite_index = spr_player_idle
+		sprite_index = spr_pizzelle_idle
 		break;
 	case "N":
 		sprite_index = spr_pizzano_idle
@@ -13,13 +13,13 @@ switch character
 		sprite_index = spr_coneboy_idle
 		break;
 	case "S":
-		sprite_index = spr_player_idle_pep
+		sprite_index = spr_peppino_idle
 		break;
 	case "T":
-		sprite_index = spr_Noise_idle
+		sprite_index = spr_noise_idle
 		break;
 	case "V":
-		sprite_index = spr_playerV_idle
+		sprite_index = spr_vigilante_idle
 		break;
 	case "M":
 		sprite_index = spr_pepperman_idle

@@ -11,7 +11,7 @@ output = function()
 	{
 		with (obj_player)
 		{
-			sprite_index = spr_player_mach3hitwall;
+			sprite_index = spr_mach3hitwall;
 			hsp = 2.5 * -xscale;
 			vsp = -3;
 			mach2 = 0;

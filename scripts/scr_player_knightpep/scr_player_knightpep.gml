@@ -3,7 +3,7 @@ function state_player_knightpep()
 	alarm[5] = 2;
 	alarm[7] = 60;
 	hurted = 1;
-	if (sprite_index == spr_knightpep_walk || sprite_index == spr_knightpep_jump || sprite_index == spr_knightpep_fall || sprite_index == spr_knightpep_idle)
+	if (sprite_index == spr_peppino_knightwalk || sprite_index == spr_peppino_knightjump || sprite_index == spr_peppino_knightfall || sprite_index == spr_peppino_knightidle)
 	{
 		move = key_left + key_right;
 		hsp = move * movespeed;
@@ -22,12 +22,12 @@ function state_player_knightpep()
 	}
 	if (grounded && vsp > 0)
 		jumpstop = 0;
-	if ((sprite_index == spr_knightpep_idle || sprite_index == spr_knightpep_walk) && key_slap2)
+	if ((sprite_index == spr_peppino_knightidle || sprite_index == spr_peppino_knightwalk) && key_slap2)
 	{
 		scr_sound(mu_martian_greenhouse);
 		instance_create(x, y, obj_swordhitbox);
 		instance_create(x + (-xscale * 10), y, obj_slidecloud);
-		sprite_index = spr_knightpep_attack;
+		sprite_index = spr_peppino_knightattack;
 		image_index = 0;
 		state = 20;
 	}
@@ -36,28 +36,28 @@ function state_player_knightpep()
 		dir = xscale;
 		movespeed = 0;
 	}
-	if (grounded && move != 0 && sprite_index == spr_knightpep_idle)
-		sprite_index = spr_knightpep_walk;
-	else if (grounded && move == 0 && sprite_index == spr_knightpep_walk)
-		sprite_index = spr_knightpep_idle;
-	if (input_buffer_jump < 8 && vsp > 0 && grounded && (sprite_index == spr_knightpep_idle || sprite_index == spr_knightpep_walk))
+	if (grounded && move != 0 && sprite_index == spr_peppino_knightidle)
+		sprite_index = spr_peppino_knightwalk;
+	else if (grounded && move == 0 && sprite_index == spr_peppino_knightwalk)
+		sprite_index = spr_peppino_knightidle;
+	if (input_buffer_jump < 8 && vsp > 0 && grounded && (sprite_index == spr_peppino_knightidle || sprite_index == spr_peppino_knightwalk))
 	{
 		scr_sound(mu_ranks);
 		image_index = 0;
-		sprite_index = spr_knightpep_jumpstart;
+		sprite_index = spr_peppino_knightjumpstart;
 	}
-	if (floor(image_index) == (image_number - 1) && sprite_index == spr_knightpep_jumpstart)
+	if (floor(image_index) == (image_number - 1) && sprite_index == spr_peppino_knightjumpstart)
 	{
 		vsp = -11;
 		if (key_right)
 			hsp = 4;
 		if (-key_left)
 			hsp = -4;
-		sprite_index = spr_knightpep_jump;
+		sprite_index = spr_peppino_knightjump;
 	}
-	if ((floor(image_index) == (image_number - 1) && sprite_index == spr_knightpep_jump) || (!grounded && sprite_index != spr_knightpep_jump))
-		sprite_index = spr_knightpep_fall;
-	if (sprite_index == spr_knightpep_fall && grounded)
+	if ((floor(image_index) == (image_number - 1) && sprite_index == spr_peppino_knightjump) || (!grounded && sprite_index != spr_peppino_knightjump))
+		sprite_index = spr_peppino_knightfall;
+	if (sprite_index == spr_peppino_knightfall && grounded)
 	{
 		with (obj_baddie)
 		{
@@ -79,10 +79,10 @@ function state_player_knightpep()
 		momemtum = 0;
 		scr_sound(sfx_bloop2);
 		instance_create(x, y, obj_landcloud);
-		sprite_index = spr_knightpep_land;
+		sprite_index = spr_peppino_knightland;
 	}
-	if (floor(image_index) == (image_number - 1) && sprite_index == spr_knightpep_land)
-		sprite_index = spr_knightpep_idle;
+	if (floor(image_index) == (image_number - 1) && sprite_index == spr_peppino_knightland)
+		sprite_index = spr_peppino_knightidle;
 	if (move != 0)
 		xscale = move;
 	if (move != 0)
@@ -105,10 +105,10 @@ function state_player_knightpep()
 	}
 	else
 		image_speed = 0.35;
-	if (floor(image_index) == 4 && sprite_index == spr_knightpep_start)
+	if (floor(image_index) == 4 && sprite_index == spr_peppino_knightstart)
 		instance_create(x, y - 600, obj_thunder);
-	if (floor(image_index) == (image_number - 1) && sprite_index == spr_knightpep_thunder)
-		sprite_index = spr_knightpep_idle;
+	if (floor(image_index) == (image_number - 1) && sprite_index == spr_peppino_knightthunder)
+		sprite_index = spr_peppino_knightidle;
 	if (!instance_exists(obj_cloudeffect) && grounded && move != 0 && (floor(image_index) == 4 || floor(image_index) == 10))
 		instance_create(x, y + 43, obj_cloudeffect);
 	if (move != 0 && (floor(image_index) == 3 || floor(image_index) == 8) && steppy == 0)

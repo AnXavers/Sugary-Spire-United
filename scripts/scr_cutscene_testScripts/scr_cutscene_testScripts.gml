@@ -1,4 +1,4 @@
-function cutscene_shake_actor()
+function cutscene_shake_actor(argument0, argument1)
 {
 	var _dump = cutscene_get_actor(argument0);
 	with _dump

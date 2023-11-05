@@ -1,31 +1,31 @@
 function scr_enemy_grabbed()
 {
-	image_xscale = -obj_player.xscale;
-	stunned = 200;
-	obj_player.baddiegrabbedID = id;
-	if (obj_player.state == states.grabbing || obj_player.state == states.grab || obj_player.state == states.throwing || obj_player.state == states.slam || obj_player.state == states.charge)
-	{
-		depth = 0;
-		x = obj_player.x;
-		if (obj_player.sprite_index != obj_player.spr_haulingstart)
-			y = obj_player.y - 40;
-		else if (floor(obj_player.image_index) == 0)
-			y = obj_player.y;
-		else if (floor(obj_player.image_index) == 1)
-			y = obj_player.y - 10;
-		else if (floor(obj_player.image_index) == 2)
-			y = obj_player.y - 20;
-		else if (floor(obj_player.image_index) == 3)
-			y = obj_player.y - 30;
-		image_xscale = -obj_player.xscale;
-		if (obj_player.sprite_index == spr_player_lungehit)
-		{
-			x = obj_player.x + obj_player.supergrabx;
-			y = obj_player.y + obj_player.supergraby;
-		}
-	}
 	with (obj_player)
-	{
+		{
+		other.image_xscale = -xscale;
+		other.stunned = 200;
+		baddiegrabbedID = other.id;
+		if (state == states.grabbing || state == states.grab || state == states.throwing || state == states.slam || state == states.charge)
+		{
+			other.depth = 0;
+			other.x = x;
+			if (sprite_index != spr_haulingstart)
+				other.y = y - 40;
+			else if (floor(image_index) == 0)
+				other.y = y;
+			else if (floor(image_index) == 1)
+				other.y = y - 10;
+			else if (floor(image_index) == 2)
+				other.y = y - 20;
+			else if (floor(image_index) == 3)
+				other.y = y - 30;
+			other.image_xscale = -xscale;
+			if (sprite_index == spr_lungehit)
+			{
+				other.x = x + supergrabx;
+				other.y = y + supergraby;
+			}
+		}
 		suplexhavetomash = other.hp - 1;
 		scr_getinput();
 		move = key_left2 + key_right2;

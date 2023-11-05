@@ -25,7 +25,7 @@ if (boundbox == 0)
 		other.boundbox = 1;
 	}
 }
-if (hitboxcreate == 0 && (state == 0 || state == 3) && obj_player.state != 70)
+if (hitboxcreate == 0 && (state == 0 || state == 3) && obj_player.state != states.mach3)
 {
 	hitboxcreate = 1;
 	with (instance_create(x, y, obj_taserhitbox))

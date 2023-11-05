@@ -10,7 +10,7 @@ if (collide == 1)
 			x = other.x;
 			y = other.y;
 			image_index = 0;
-			sprite_index = spr_player_bottlerocket;
+			sprite_index = spr_bottlerocket;
 		}
 	}
 }

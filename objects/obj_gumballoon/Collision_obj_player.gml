@@ -1,2 +1,2 @@
-if (other.state != 147)
-	other.state = 147;
+if (other.state != states.rupertjump)
+	other.state = states.rupertjump;

@@ -2,7 +2,7 @@ if (sprite_index != spr_exitgateclosed)
 {
 	with (obj_player)
 	{
-		if (key_up && grounded && (state == states.normal || state == 68 || state == 69 || state == 70) && !instance_exists(obj_fadeout) && state != 61 && state != 62)
+		if (key_up && grounded && (state == states.normal || state == 68 || state == 69 || state == states.mach3) && !instance_exists(obj_fadeout) && state != 61 && state != 62)
 		{
 			global.levelname = other.level;
 			scr_levelstart(global.levelname, other.targetRoom);

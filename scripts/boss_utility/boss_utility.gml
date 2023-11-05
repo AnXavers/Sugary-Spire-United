@@ -1,4 +1,4 @@
-function boss_attack_queue()
+function boss_attack_queue(argument0, argument1)
 {
 	ds_queue_enqueue(atkqueue, argument0, argument1);
 }
@@ -42,7 +42,7 @@ function face_center_room()
 	var dir = sign((room_width / 2) - x);
 	return dir;
 }
-function face_obj()
+function face_obj(argument0)
 {
 	var dir = sign(argument0.x - x);
 	return dir;
@@ -56,7 +56,7 @@ function scr_grab_boss()
 			baddiegrabbedID = other.id;
 			supergrabx = other.x - x;
 			supergraby = other.y - y;
-			sprite_index = spr_player_lungehit;
+			sprite_index = spr_lungehit;
 			image_index = 0;
 			state = 87;
 		}

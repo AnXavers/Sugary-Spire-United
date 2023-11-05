@@ -1,4 +1,4 @@
-function get_control_string()
+function get_control_string(argument0)
 {
 	switch (argument0)
 	{
