@@ -1,5 +1,5 @@
 with (other)
 {
-	if (state != 144 && state != 145 && state != states.rupertslide)
-		state = 144;
+	if (state != states.seacream && state != states.seacreamjump && state != states.seacreamstick)
+		state = states.seacream;
 }

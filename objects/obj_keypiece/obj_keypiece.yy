@@ -31,10 +31,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"ID","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"\"NULL\"","varType":4,},
   ],
   "solid": false,
-  "spriteId": {
-    "name": "spr_keypiece",
-    "path": "sprites/spr_keypiece/spr_keypiece.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

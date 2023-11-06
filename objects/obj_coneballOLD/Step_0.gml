@@ -111,7 +111,7 @@ if (place_meeting(x, y, obj_player) && attacking && attack > 1 && image_index > 
 					audio_stop_all();
 					scr_sound(mu_timesup);
 				}
-				state = 30;
+				state = states.timesup;
 				global.lapmusic = false;
 				instance_destroy(other.id);
 			}

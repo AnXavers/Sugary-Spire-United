@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Ruin",
-    "path": "folders/Sprites/Backgrounds/Ruin.yy",
+    "path": "folders/Sprites/Backgrounds/Tower/Ruin.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

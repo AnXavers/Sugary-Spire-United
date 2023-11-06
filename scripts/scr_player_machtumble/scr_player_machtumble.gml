@@ -48,7 +48,7 @@ function state_player_machtumble()
 			grav = 0.5;
 			sprite_index = spr_crouchslip;
 			machhitAnim = 0;
-			state = 31;
+			state = states.machroll;
 			if (audio_is_playing(sound_suplex1))
 				audio_stop_sound(sound_suplex1);
 			with (instance_create(x, y, obj_jumpdust))

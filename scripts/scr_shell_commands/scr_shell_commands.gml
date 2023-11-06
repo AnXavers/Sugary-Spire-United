@@ -581,11 +581,14 @@ function sh_set_transformation()
 		case "Frostburn":
 			obj_player.state = states.frostburn
 			break;
+		case "Rupert":
+			obj_player.state = states.rupertnormal
+			break;
 		case "UFO":
 			obj_player.state = states.ufofloat
 			break;
 		case "Seacream":
-			obj_player.state = states.rupertnormal
+			obj_player.state = states.seacream
 			break;
 		case "Fireass":
 			obj_player.state = states.fireass
@@ -594,7 +597,7 @@ function sh_set_transformation()
 			obj_player.state = states.bombpep
 			break;
 		case "Marshdog":
-			obj_player.state = states.barrelcrouch
+			obj_player.state = states.cookiemount
 			break;
 		case "Minecart":
 			obj_player.state = states.minecart
@@ -605,6 +608,9 @@ function sh_set_transformation()
 		case "Orb":
 			obj_player.state = states.fling
 			break;
+		case "Tumble":
+			obj_player.state = states.tumble
+			break;
 	}
 }
 function meta_set_transformation()
@@ -613,7 +619,7 @@ function meta_set_transformation()
 	{
 		description: "Sets the player's transformation.",
 		arguments: ["<transformation>"],
-		suggestions: [["Cottoncoated", "Frostburn", "UFO", "SeaCream", "Fireass", "Minecart", "Tumble", "Marshdog", "Hook", "Bomb", "Orb"]],
+		suggestions: [["Cottoncoated", "Frostburn", "UFO", "SeaCream", "Fireass", "Minecart", "Tumble", "Marshdog", "Hook", "Bomb", "Orb", "Rupert"]],
 		argumentDescriptions: ["the transformation to change to."]
 	};
 }

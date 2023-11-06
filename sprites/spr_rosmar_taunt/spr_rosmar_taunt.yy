@@ -73,8 +73,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Backgrounds",
-    "path": "texturegroups/Backgrounds",
+    "name": "PlayerRosmar",
+    "path": "texturegroups/PlayerRosmar",
   },
   "type": 0,
   "VTile": false,

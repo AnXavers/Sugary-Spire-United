@@ -18,19 +18,19 @@ function state_player_grabbing()
 	{
 		movespeed = 0;
 		image_index = 0;
-		state = 40;
+		state = states.grab;
 	}
 	if (key_attack && !grounded)
 	{
 		movespeed = 0;
 		image_index = 0;
-		state = 35;
+		state = states.throwing;
 	}
 	if (key_jump && !grounded)
 	{
 		movespeed = 0;
 		vsp = -11;
-		state = 37;
+		state = states.slam;
 		image_index = 0;
 		image_speed = 0.35;
 	}

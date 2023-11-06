@@ -1,6 +1,6 @@
 with (obj_player)
 {
-	if ((place_meeting(x, y, other.id) && key_up && grounded == 1 && (state == states.normal || state == 64 || state == 68 || state == 69 || state == states.mach3) && !instance_exists(obj_fadeout) && state != 77 && state != 61 && state != 62) && other.enterable)
+	if ((place_meeting(x, y, other.id) && key_up && grounded == 1 && (state == states.normal || state == states.Sjumpprep || state == states.mach1 || state == states.mach2 || state == states.mach3) && !instance_exists(obj_fadeout) && state != 77 && state != 61 && state != 62) && other.enterable)
 	{
 		mach2 = 0;
 		image_index = 0;

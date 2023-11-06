@@ -1,200 +1,200 @@
 enum states {
-	frozen,
-	normal,
-	titlescreen,
-	Nhookshot,
-	slap,
-	charge,
-	cheesepep,
-	cheeseball,
-	cheesepepstick,
-	boxxedpep,
+	frozen, // 0
+	normal, // 1
+	titlescreen, // 2
+	Nhookshot, // 3
+	slap, // 4
+	charge, // 5
+	cheesepep, // 6
+	cheeseball, // 7
+	cheesepepstick, // 8
+	boxxedpep, // 9
 	pistalaim, // 10
-	climbwall,
-	climbdownwall,
-	knightpepslopes,
-	portal,
-	secondjump,
-	chainsawbump,
-	handstandjump,
-	gottreasure,
-	knightpep,
+	climbwall, // 11
+	climbdownwall, // 12
+	knightpepslopes, // 13
+	portal, // 14
+	secondjump, // 15
+	chainsawbump, // 16
+	handstandjump, // 17
+	gottreasure, // 18
+	knightpep, // 19
 	knightpepattack, // 20
-	meteorpep,
-	bombpep,
-	grabbing,
-	chainsawpogo,
-	shotgunjump,
-	stunned,
-	highjump,
-	chainsaw,
-	facestomp,
+	meteorpep, // 21
+	bombpep, // 22
+	grabbing, // 23
+	chainsawpogo, // 24
+	shotgunjump, // 25
+	stunned, // 26
+	highjump, // 27
+	chainsaw, // 28
+	facestomp, // 29
 	timesup, // 30
-	machroll,
-	pistol,
-	shotgun,
-	machfreefall,
-	throwing,
-	superslam,
-	slam,
-	skateboard,
-	grind,
+	machroll, // 31
+	pistol, // 32
+	shotgun, // 33
+	machfreefall, // 34
+	throwing, // 35
+	superslam, // 36
+	slam, // 37
+	skateboard, // 38
+	grind, // 39
 	grab, // 40
-	punch,
-	backkick,
-	uppunch,
-	shoulder,
-	backbreaker,
-	bossdefeat,
-	bossintro,
-	ufofloat,
-	ufodash,
+	punch, // 41
+	backkick, // 42
+	uppunch, // 43
+	shoulder, // 44
+	backbreaker, // 45
+	bossdefeat, // 46
+	bossintro, // 47
+	ufofloat, // 48
+	ufodash, // 49
 	pizzathrow, // 50
-	gameover,
-	Sjumpland,
-	freefallprep,
-	runonball,
-	boulder,
-	keyget,
-	tackle,
-	slipnslide,
-	ladder,
+	gameover, // 51
+	Sjumpland, // 52
+	freefallprep, // 53
+	runonball, // 54
+	boulder, // 55
+	keyget, // 56
+	tackle, // 57
+	slipnslide, // 58
+	ladder, // 59
 	jump, // 60 
-	victory,
-	comingoutdoor,
-	Sjump,
-	Sjumpprep,
-	crouch,
-	crouchjump,
-	crouchslide,
-	mach1,
-	mach2,
+	victory, // 61
+	comingoutdoor, // 62
+	Sjump, // 63
+	Sjumpprep, // 64
+	crouch, // 65
+	crouchjump, // 66
+	crouchslide, // 67
+	mach1, // 68
+	mach2, // 69
 	mach3, // 70
-	machslide,
-	bump,
-	hurt,
-	freefall,
-	freefallland,
-	hang,
-	door,
-	barrelnormal,
-	barrelfall,
+	machslide, // 71
+	bump, // 72
+	hurt, // 73
+	freefall, // 74
+	freefallland, // 75
+	hang, // 76
+	door, // 77
+	barrelnormal, // 78
+	barrelfall, // 79
 	barrelmach1, // 80
-	barrelmach2,
-	barrelfloat,
-	barrelcrouch,
-	barrelslipnslide,
-	barrelroll,
-	current,
-	finishingblow,
-	cotton,
-	uppercut,
+	barrelmach2, // 81
+	barrelfloat, // 82
+	cookiemount, // 83
+	barrelslipnslide, // 84
+	barrelroll, // 85
+	current, // 86
+	finishingblow, // 87
+	cotton, // 88
+	uppercut, // 89
 	pal, // 90
-	shocked,
-	bushdisguise,
-	parry,
-	talkto,
-	puddle,
-	tumble,
-	cottondrill,
-	cottonroll,
-	fling,
+	shocked, // 91
+	bushdisguise, // 92
+	parry, // 93
+	talkto, // 94
+	puddle, // 95
+	tumble, // 96
+	cottondrill, // 97
+	cottonroll, // 98
+	fling, // 99
 	breakdance, // 100
-	minecart,
-	squished,
-	machtumble,
-	pizzano_rocketfist,
-	pizzano_mach,
-	pizzano_kungfu,
-	pizzano_pummel,
-	fireass,
-	geyser,
+	minecart, // 101
+	squished, // 102
+	machtumble, // 103
+	pizzano_rocketfist, // 104
+	pizzano_mach, // 105
+	pizzano_kungfu, // 106
+	pizzano_pummel, // 107
+	fireass, // 108
+	geyser, // 109
 	actor, // 110
-	donothing,
-	changing,
-	coneboy_inhale,
-	coneboy_inhale114,
-	coneboy_inhale115,
-	coneboy_kick,
-	gumbob_propeller,
-	gumbob_mixnbrew,
-	pizzano_twirl,
+	donothing, // 111
+	changing, // 112
+	coneboy_inhale, // 113
+	coneboy_inhale114, // 114
+	coneboy_inhale115, // 115
+	coneboy_kick, // 116
+	gumbob_propeller, // 117
+	gumbob_mixnbrew, // 118
+	pizzano_twirl, // 119
 	pizzano_machtwirl, // 120
-	pizzano_shoulderbash,
-	pizzano_wallcling,
-	mini,
-	ufodashOLD,
-	flushed,
-	hooks,
-	trick,
-	noclip,
-	costumenormal,
+	pizzano_shoulderbash, // 121
+	pizzano_wallcling, // 122
+	mini, // 123
+	ufodashOLD, // 124
+	flushed, // 125
+	hooks, // 126
+	trick, // 127
+	noclip, // 128
+	costumenormal, // 129
 	costumegrab, // 130
-	costumebreeze,
-	costumechuck,
-	bottlerocket,
-	holdbomb,
+	costumebreeze, // 131
+	costumechuck, // 132
+	bottlerocket, // 133
+	holdbomb, // 134
 	unused_1, // 135
 	unused_2, // 136
-	donut,
-	drown,
-	climbceiling,
+	donut, // 137
+	drown, // 138
+	climbceiling, // 139
 	frostburn, // 140
-	frostburnwallrun,
-	frostburnspin,
-	frostburnbump,
-	seacream,
-	seacreamjump,
-	seacreamstick,
-	gumballoon,
-	rupertnormal,
-	rupertslide,
+	frostburnwallrun, // 141
+	frostburnspin, // 142
+	frostburnbump, // 143
+	seacream, // 144
+	seacreamjump, // 145
+	seacreamstick, // 146
+	gumballoon, // 147
+	rupertnormal, // 148
+	rupertslide, // 149
 	rupertjump, // 150
-	rupertstick,
-	unused_3,
-	honey,
-	supergrab
+	rupertstick, // 151
+	unused_3, // 152
+	honey, // 153
+	supergrab // 154
 };
 
 enum substates {
-	unknown_0,
-	unknown_1,
-	unknown_2
+	unknown_0, // 0
+	unknown_1, // 1
+	unknown_2 // 2
 }
 
 enum confectistates {
-	normal,
-	taunt,
-	appear
+	normal, // 0
+	taunt, // 1
+	appear // 2
 }
 enum enemystates {
-	idle,
-	charge,
-	turn,
-	walk,
-	land,
-	hit,
-	stun,
-	thrown,
-	grabbed,
-	scared,
-	frozen,
-	shake,
-	panicWait,
-	secretWait,
-	inhaled,
-	cherrywait,
-	charcherry,
-	applejim_bash,
-	kick,
-	slugidle,
-	slugjump,
-	slugparry,
-	float,
-	theif,
-	eyescreamwait,
-	eyescream,
-	rage
+	idle, // 1
+	charge, // 2
+	turn, // 3
+	walk, // 4
+	land, // 5
+	hit, // 6
+	stun, // 7
+	thrown, // 8
+	grabbed, // 9
+	scared, // 10
+	frozen, // 11
+	shake, // 12
+	panicWait, // 13
+	secretWait, // 14
+	inhaled, // 15
+	cherrywait, // 16
+	charcherry, // 17
+	applejim_bash, // 18
+	kick, // 19
+	slugidle, // 20
+	slugjump, // 21
+	slugparry, // 22
+	float, // 23
+	theif, // 24
+	eyescreamwait, // 25
+	eyescream, // 26
+	rage // 27
 };
 
 exit;

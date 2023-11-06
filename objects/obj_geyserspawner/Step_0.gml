@@ -1,4 +1,4 @@
-if ((place_meeting(x, y - obj_player.vsp, obj_player) || place_meeting(x, y - 1, obj_player)) && obj_player.state == 75)
+if ((place_meeting(x, y - obj_player.vsp, obj_player) || place_meeting(x, y - 1, obj_player)) && obj_player.state == states.freefallland)
 {
 	if (!instance_exists(SpoutID))
 	{

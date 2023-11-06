@@ -2,15 +2,15 @@ function state_player_frostburn()
 {
 	if (grounded)
 	{
-		if (sprite_index != spr_player_skatecrouch)
+		if (sprite_index != spr_skatecrouch)
 		{
 			if (movespeed < 7)
-				sprite_index = spr_player_skateslow;
+				sprite_index = spr_skateslowwalk;
 			else
-				sprite_index = spr_player_skate;
+				sprite_index = spr_skatewalk;
 		}
 		else if (!key_down && !place_meeting_collision(x, y - 16))
-			sprite_index = spr_player_skate;
+			sprite_index = spr_skatewalk;
 	}
 	move = key_left + key_right;
 	hsp = xscale * movespeed;
@@ -18,7 +18,7 @@ function state_player_frostburn()
 		movespeed += 0.1;
 	var maxMVSP = 14;
 	var minMVSP = 4;
-	if (sprite_index == spr_player_skatecrouch)
+	if (sprite_index == spr_skatecrouch)
 	{
 		maxMVSP = 8;
 		minMVSP = 3;
@@ -58,7 +58,7 @@ function state_player_frostburn()
 		}
 		else
 		{
-			sprite_index = spr_player_skatecrouch;
+			sprite_index = spr_skatecrouch;
 			movespeed--;
 			movespeed = max(4, movespeed);
 		}
@@ -67,9 +67,9 @@ function state_player_frostburn()
 		sprite_index = spr_skatejump;
 	if (sprite_index == spr_skatedoublejumpstart && animation_end())
 		sprite_index = spr_skatedoublejump;
-	if (sprite_index == spr_skatediveland && animation_end())
-		sprite_index = spr_player_skate;
-	if (sprite_index == spr_player_skateslow)
+	if (sprite_index == spr_skateland && animation_end())
+		sprite_index = spr_skatewalk;
+	if (sprite_index == spr_skateslowwalk)
 		image_speed = clamp(movespeed / 16, 0.1, 0.5);
 	else
 		image_speed = 0.35;
@@ -87,7 +87,7 @@ function state_player_frostburnwallrun()
 		vsp = 0;
 		state = 140;
 		movespeed = verticalMovespeed;
-		sprite_index = spr_player_skate;
+		sprite_index = spr_skatewalk;
 	}
 	if (key_jump)
 	{

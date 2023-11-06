@@ -1,6 +1,6 @@
 with (other)
 {
-	if (!other.wasCollected && (state == 48 || state == 49))
+	if (!other.wasCollected && (state == states.ufofloat || state == states.ufodash))
 	{
 		other.wasCollected = true;
 		other.alarm[0] = 200;

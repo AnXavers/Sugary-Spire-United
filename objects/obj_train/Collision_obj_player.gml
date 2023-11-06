@@ -4,7 +4,7 @@ with (other)
 	{
 		scr_hurtplayer();
 		image_index = 0;
-		if (state == 101)
+		if (state == states.minecart)
 		{
 			instance_create(x, y, obj_bombexplosionharmless);
 			for (var i = 0; i < (sprite_get_number(spr_minecartdebris) - 1); i++)

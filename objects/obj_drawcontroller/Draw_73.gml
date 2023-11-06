@@ -124,8 +124,8 @@ if (sucrose_lighting || bloodsauce_lighting || dance_lighting || stormy_lighting
 		with (obj_player)
 		{
 			draw_set_alpha(0.5)
-			draw_circle_color(x - cam_x, y - cam_y, 240, c_white, c_white, false)
-			draw_circle_color(x - cam_x, y - cam_y, 160, c_white, c_white, false)
+			draw_circle_color(x - cam_x + random_range(-1, 1), y - cam_y + random_range(-1, 1), 240, c_white, c_white, false)
+			draw_circle_color(x - cam_x + random_range(-1, 1), y - cam_y + random_range(-1, 1), 180, c_white, c_white, false)
 			draw_set_alpha(1)
 		}
 		draw_set_blend_mode(0);

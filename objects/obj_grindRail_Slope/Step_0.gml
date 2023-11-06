@@ -1,6 +1,6 @@
 with (obj_player)
 {
-	if (state != states.noclip && state != states.cotton && state != states.cottondrill && state != states.cottonroll && state != 96 && state != states.machroll && state != states.crouchslide && state != states.backbreaker && state != states.frostburnbump && state != states.bump && state != states.actor && state != states.frozen)
+	if (state != states.noclip && state != states.cotton && state != states.cottondrill && state != states.cottonroll && state != 96 && state != states.machroll && state != states.crouchslide && state != states.backbreaker && state != 143 && state != states.bump && state != states.actor && state != states.frozen)
 	{
 		if (place_meeting_slopePlatform(x, y + 1, other) && vsp >= 0 && state != states.frostburn && state != states.grind)
 		{

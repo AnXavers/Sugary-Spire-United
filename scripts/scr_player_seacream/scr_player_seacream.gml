@@ -66,7 +66,7 @@ function state_player_seacreamjump()
 	if (place_meeting(x, y, obj_seacreamgoop) && (place_meeting(x, y, obj_seacreamgoop) && (place_meeting_collision(x + sign(hsp), y, 1) || place_meeting_collision(x + xscale, y, 1))))
 	{
 		verticalMovespeed = 0;
-		state = states.rupertslide;
+		state = 146;
 		seacream_stick_buffer = 20;
 	}
 	if (!key_jump2 && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)

@@ -4,7 +4,7 @@ if (place_meeting(x, y, obj_player))
 	{
 		if (place_meeting(x, y, other) && state != states.noclip && state != states.hooks && !cutscene)
 		{
-			if (state != states.rupertjump && state != states.rupertnormal && state != states.rupertstick)
+			if (state != states.rupertnormal && state != states.rupertjump && state != states.rupertslide && state != states.rupertstick && state != states.frostburn && state != states.frostburnbump && state != states.frostburnspin && state != states.frostburnwallrun)
 			{
 				state = states.rupertnormal;
 				movespeed = clamp(movespeed, 0, 8);

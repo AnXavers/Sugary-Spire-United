@@ -2,9 +2,9 @@ if (activetimer == 0)
 {
 	with (other)
 	{
-		if (key_jump && (state == 60 || state == 68 || state == 69 || state == states.mach3 || state == 119) && !grounded)
+		if (key_jump && (state == states.jump || state == states.mach1 || state == states.mach2 || state == states.mach3 || state == states.pizzano_twirl) && !grounded)
 		{
-			if (!(state == 60 || state == 68 || state == 69 || state == states.mach3 || state == 119))
+			if (!(state == states.jump || state == states.mach1 || state == states.mach2 || state == states.mach3 || state == states.pizzano_twirl))
 				state = 60;
 			jumpAnim = 0;
 			jumpstop = 0;

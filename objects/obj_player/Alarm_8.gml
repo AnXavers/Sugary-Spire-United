@@ -1,4 +1,4 @@
-if (state == 73)
+if (state == states.hurt)
 {
 	state = 1;
 	movespeed = 0;

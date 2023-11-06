@@ -1032,7 +1032,7 @@ function scr_characterglobal()
 				global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
 			ini_close()
 			var outline_col = c_black
-			if state == 88 || state == 97 || state == 98
+			if state == states.cotton || state == states.cottondrill || state == states.cottonroll
 				outline_col = 5242960
 			set_palette(0, "Default", 0, c_white, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
 			set_palette(1, "Familiar Gremlin", 1607896, 1529791, 8628991, 14496, 8446200, 5678550, 16295984, 14903400, outline_col);

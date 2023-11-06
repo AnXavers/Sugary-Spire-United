@@ -11,7 +11,7 @@ if (place_meeting(x, y - 16, obj_player))
 				movespeed = 14;
 				trickcount = 0;
 			}
-			else if (state == states.barrelcrouch)
+			else if (state == states.cookiemount)
 			{
 				input_buffer = 60;
 				vsp = -22;

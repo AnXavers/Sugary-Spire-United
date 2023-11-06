@@ -17,16 +17,11 @@ if (ds_exists(textureLoaderList, 2))
 	}
 }
 
-// THIS LOOP COULD CAUSE AN OUT OF MEMORY EXCEPTION
-// REMOVING IT WILL WORK BUT THE GAME WILL STUTTER WHEN LOADING SPRITES
-
-/*
 var i = 0;
 while sprite_exists(i)
 {
 	sprite_prefetch(i);
 	i++;
 }
-*/
 
 alarm[0] = 2;

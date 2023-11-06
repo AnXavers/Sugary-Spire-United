@@ -152,7 +152,7 @@ function state_player_grab()
 	{
 		sprite_index = spr_piledriverstart;
 		vsp = -6;
-		state = 36;
+		state = states.superslam;
 		image_index = 0;
 		image_speed = 0.35;
 	}

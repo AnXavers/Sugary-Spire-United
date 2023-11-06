@@ -17,7 +17,7 @@ output = function()
 			mach2 = 0;
 			image_index = 0;
 			instance_create(x, y, obj_bombexplosionharmless);
-			if (state == 101)
+			if (state == states.minecart)
 			{
 				for (var i = 0; i < (sprite_get_number(spr_minecartdebris) - 1); i++)
 				{

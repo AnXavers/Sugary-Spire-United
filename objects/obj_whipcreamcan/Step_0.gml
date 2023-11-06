@@ -8,5 +8,5 @@ if (place_meeting(x, y - 4, obj_player) && activated == 0)
 }
 if (activated == 0)
 	sprite_index = spr_whipcreamcan;
-if (place_meeting(x, y - 4, obj_player) && obj_player.state == 45)
+if (place_meeting(x, y - 4, obj_player) && obj_player.state == states.backbreaker)
 	activated = 0;

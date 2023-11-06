@@ -1,4 +1,4 @@
-with (instance_nearest(x, y, obj_player))
+with (obj_player)
 {
 	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.mach3 || state == states.rupertslide || state == states.puddle || state == states.pizzano_rocketfist || state == states.knightpepslopes || state == states.Nhookshot || (state == states.machroll && sprite_index != spr_crouchslip && movespeed >= 12) || state == states.pizzano_mach || state == states.minecart || (state == states.knightpep && momemtum == 1) || (state == states.bottlerocket && substate == substates.unknown_0)))
 	{

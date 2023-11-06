@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Tiles",
-    "path": "texturegroups/Tiles",
+    "name": "Unused",
+    "path": "texturegroups/Unused",
   },
   "type": 0,
   "VTile": false,

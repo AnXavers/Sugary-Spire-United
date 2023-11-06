@@ -1,4 +1,4 @@
-if (obj_player.state == 91)
+if (obj_player.state == states.shocked)
 {
 	obj_player.state = 1;
 	obj_tv.staticdraw = true;
@@ -6,7 +6,7 @@ if (obj_player.state == 91)
 	if (!instance_exists(obj_tasershockwave))
 		instance_create(x, y, obj_tasershockwave);
 }
-if (obj_player.state == 92)
+if (obj_player.state == states.bushdisguise)
 {
 	obj_player.state = 1;
 	obj_tv.staticdraw = true;

@@ -2,15 +2,15 @@ if (!global.freezeframe && place_meeting(x, y - 1, obj_player) && obj_player.gro
 {
 	with (obj_player)
 	{
-		if (state == states.rupertstick || state == states.supergrab || state == 151)
+		if (state == states.rupertnormal || state == states.rupertjump || state == states.rupertstick)
 		{
-			state = states.honey;
+			state = 149;
 			if (move != 0)
 				xscale = move;
 			else if (hsp != 0)
 				xscale = sign(hsp);
 		}
-		if (state != states.honey)
+		if (state != 149)
 			state = 58;
 		if (movespeed < 12)
 			movespeed = 12;

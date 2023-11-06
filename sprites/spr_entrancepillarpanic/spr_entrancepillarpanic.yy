@@ -28,7 +28,7 @@
   "origin": 0,
   "parent": {
     "name": "Entrance",
-    "path": "folders/Sprites/Backgrounds/Entrance.yy",
+    "path": "folders/Sprites/Backgrounds/Tower/Entrance.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Backgrounds",
-    "path": "texturegroups/Backgrounds",
+    "name": "Entrance",
+    "path": "texturegroups/Entrance",
   },
   "type": 0,
   "VTile": false,

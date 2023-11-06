@@ -41,7 +41,7 @@ function state_player_chainsawpogo()
 	{
 		instance_create(x, y, obj_chainsawhitbox);
 		sprite_index = spr_player_chainsawair;
-		state = 28;
+		state = states.chainsaw;
 	}
 	if (sprite_index != spr_player_chainsawpogobounce)
 	{

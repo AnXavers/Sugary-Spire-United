@@ -101,7 +101,7 @@ camera_set_view_angle(view_camera[0], cam_angle + camera_get_view_angle(view_cam
 var vw = global.cam_w * cam_zoom
 var vh = global.cam_h * cam_zoom
 camera_set_view_size(view_camera[0], vw, vh);
-if (instance_exists(obj_player) && (obj_player.state != 30 && obj_player.state != 51))
+if (instance_exists(obj_player) && (obj_player.state != states.timesup && obj_player.state != 51))
 {
 	var target = 
 	{
@@ -116,13 +116,13 @@ if (instance_exists(obj_player) && (obj_player.state != 30 && obj_player.state !
 	{
 		var _targetcharge = 0;
 		var _tspeed = 0;
-		if (obj_player.state == 69 || obj_player.state == states.mach3)
+		if (obj_player.state == states.mach2 || obj_player.state == states.mach3)
 		{
 			_targetcharge = obj_player.xscale * ((obj_player.movespeed / 4) * 50);
 			_tspeed = 0.3;
 			chargecamera = approach(chargecamera, _targetcharge, _tspeed);
 		}
-		else if (obj_player.state == 139)
+		else if (obj_player.state == states.climbceiling)
 		{
 			_targetcharge = -obj_player.xscale * ((obj_player.movespeed / 4) * 50);
 			_tspeed = 0.3;
@@ -136,7 +136,7 @@ if (instance_exists(obj_player) && (obj_player.state != 30 && obj_player.state !
 				_tspeed = 8;
 			chargecamera = approach(chargecamera, _targetcharge, _tspeed);
 		}
-		else if (obj_player.state == 71)
+		else if (obj_player.state == states.machslide)
 			chargecamera = approach(chargecamera, 0, 10);
 		else
 			chargecamera = approach(chargecamera, 0, 6);

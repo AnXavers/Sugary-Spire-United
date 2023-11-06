@@ -279,7 +279,7 @@ function state_player_normal()
 	{
 		global.ammo--;
 		sprite_index = spr_shotgun;
-		state = 33;
+		state = states.shotgun;
 		image_index = 0;
 	}
 	momemtum = 0;

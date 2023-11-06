@@ -13,7 +13,7 @@ function scr_hurtplayer(argument0 = obj_player)
 			else if (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite_index == spr_supertaunt3)
 			{
 			}
-			else if (state == 101)
+			else if (state == states.minecart)
 			{
 				sprite_index = spr_mach3hitwall;
 				state = 72;
@@ -39,10 +39,10 @@ function scr_hurtplayer(argument0 = obj_player)
 			else if (state == 9)
 			{
 			}
-			else if (state == 133 || (state == 106 && flash))
+			else if (state == states.bottlerocket || (state == states.pizzano_kungfu && flash))
 			{
 			}
-			else if (state == 142)
+			else if (state == states.frostburnspin)
 			{
 			}
 			else

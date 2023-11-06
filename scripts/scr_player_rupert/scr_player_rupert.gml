@@ -23,7 +23,7 @@ function state_player_rupertnormal()
 		xscale = -slopeMomentum_direction();
 		with (instance_create(x, y, obj_jumpdust))
 			image_xscale = other.xscale;
-		state = states.honey;
+		state = 149;
 	}
 	if (move == 0)
 		sprite_index = spr_skateidle;
@@ -38,13 +38,13 @@ function state_player_rupertnormal()
 		instance_create(x, y, obj_highjumpcloud2);
 		vsp = -10;
 		movespeed = hsp;
-		state = states.supergrab;
+		state = 150;
 	}
 	if (!grounded)
 	{
 		sprite_index = spr_skatedive;
 		movespeed = hsp;
-		state = states.supergrab;
+		state = 150;
 	}
 	image_speed = 0.35;
 }
@@ -78,7 +78,7 @@ function state_player_rupertslide()
 		with (instance_create(x, y, obj_highjumpcloud2))
 			image_xscale = other.xscale;
 		scr_sound(sound_jump);
-		state = states.supergrab;
+		state = 150;
 		movespeed = hsp;
 	}
 	if (grounded && movespeed < 14)
@@ -93,7 +93,7 @@ function state_player_rupertslide()
 	if (!grounded && vsp >= terminalVelocity)
 	{
 		movespeed = hsp;
-		state = states.supergrab;
+		state = 150;
 		flash = true;
 		momemtum = true;
 		sprite_index = spr_skatespin;
@@ -112,7 +112,7 @@ function state_player_rupertslide()
 		{
 			scr_sound(sound_bump);
 			sprite_index = spr_skatefall;
-			state = states.supergrab;
+			state = 150;
 			vsp = -4;
 			xscale = -sign(hsp);
 			movespeed = xscale * 5;
@@ -218,7 +218,7 @@ function state_player_rupertjump()
 				xscale = -slopeMomentum_direction();
 				with (instance_create(x, y, obj_jumpdust))
 					image_xscale = other.xscale;
-				state = states.honey;
+				state = 149;
 			}
 			else
 			{
@@ -258,11 +258,11 @@ function state_player_rupertjump()
 				xscale = -slopeMomentum_direction();
 				with (instance_create(x, y, obj_jumpdust))
 					image_xscale = other.xscale;
-				state = states.honey;
+				state = 149;
 			}
 			else
 			{
-				state = states.rupertstick;
+				state = 148;
 				if (sign(hsp) != 0)
 					xscale = sign(hsp);
 				movespeed = abs(movespeed);
@@ -283,7 +283,7 @@ function state_player_rupertstick()
 		sprite_index = spr_skatefall;
 		xscale *= -1;
 		movespeed = xscale * 5;
-		state = states.supergrab;
+		state = 150;
 	}
 	if (animation_end())
 	{
@@ -294,11 +294,11 @@ function state_player_rupertstick()
 			xscale *= -1;
 			vsp = -13;
 			movespeed = xscale * 10;
-			state = states.supergrab;
+			state = 150;
 		}
 		else
 		{
-			state = states.rupertstick;
+			state = 148;
 			sprite_index = spr_skateidle;
 			freefallsmash = 0;
 		}

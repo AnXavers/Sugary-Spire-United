@@ -129,7 +129,7 @@ function state_player_crouch()
 			grav = 0.5;
 			sprite_index = spr_crouchslip;
 			machhitAnim = 0;
-			state = 31;
+			state = states.machroll;
 			with (instance_create(x, y, obj_jumpdust))
 				image_xscale = other.xscale;
 			movespeed = 12;

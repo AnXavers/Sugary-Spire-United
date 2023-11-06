@@ -52,7 +52,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 					suplexmove = 0;
 					vsp = -11;
 				}
-				if (state == 106 || state == 142)
+				if (state == states.pizzano_kungfu || state == states.frostburnspin)
 				{
 					if (bID.hsp < obj_player.hsp)
 						bID.hsp = obj_player.hsp;
@@ -73,7 +73,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 					other.baddieID.squashvaly = 1;
 				}
 			}
-			if (state == 98 && movespeed <= 8)
+			if (state == states.cottonroll && movespeed <= 8)
 			{
 				if (!audio_is_playing(sound_bump))
 					scr_sound(sound_bump);
@@ -85,7 +85,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				other.baddieID.hsp = -other.baddieID.image_xscale * 5;
 				other.baddieID.vsp = -4;
 			}
-			if (instance_exists(other.baddieID) && other.baddieID.object_index != obj_eyescream && y < other.baddieID.y && attacking == 0 && state == 60 && vsp > 0 && other.baddieID.vsp >= 0 && sprite_index != spr_stompprep)
+			if (instance_exists(other.baddieID) && other.baddieID.object_index != obj_eyescream && y < other.baddieID.y && attacking == 0 && state == states.jump && vsp > 0 && other.baddieID.vsp >= 0 && sprite_index != spr_stompprep)
 			{
 				scr_sound(sound_enemyslap);
 				suplexmove = 0;
@@ -123,7 +123,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 					}
 				}
 			}
-			if (instance_exists(other.baddieID) && (state == 88 && sprite_index == spr_cotton_attack))
+			if (instance_exists(other.baddieID) && (state == states.cotton && sprite_index == spr_cotton_attack))
 			{
 				with (other.baddieID)
 				{
@@ -139,7 +139,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 					stunned = 500;
 				}
 			}
-			if (instance_exists(other.baddieID) && state == 68)
+			if (instance_exists(other.baddieID) && state == states.mach1)
 			{
 				if (other.baddieID.object_index == obj_pizzaball)
 					global.golfhit++;
@@ -176,7 +176,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 					vsp = -5;
 				}
 			}
-			if (instance_exists(other.baddieID) && !other.baddieID.throw_hit && bID.invtime <= 0 && (state == 69 || state == 31 || state == 104 || state == 121) && attacking && !instakillmove && other.baddieID.grounded == 1)
+			if (instance_exists(other.baddieID) && !other.baddieID.throw_hit && bID.invtime <= 0 && (state == states.mach2 || state == states.machroll || state == states.pizzano_rocketfist || state == states.pizzano_shoulderbash) && attacking && !instakillmove && other.baddieID.grounded == 1)
 			{
 				if (other.baddieID.object_index == obj_pizzaball)
 					global.golfhit++;
@@ -207,7 +207,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 					vsp = -11;
 				}
 			}
-			if (instance_exists(other.baddieID) && state == 107 && other.baddieID.state != 8 && other.baddieID.invtime <= 0)
+			if (instance_exists(other.baddieID) && state == states.pizzano_pummel && other.baddieID.state != 8 && other.baddieID.invtime <= 0)
 			{
 				global.combotime = 60;
 				instance_create(other.baddieID.x, other.baddieID.y, obj_slapstar);
@@ -263,14 +263,14 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				other.baddieID.vsp = -4;
 				if (other.baddieID.state == 3 || other.baddieID.state == 2)
 					other.baddieID.state = 6;
-				if (other.baddieID.state == 87)
+				if (other.baddieID.state == states.finishingblow)
 				{
 					stunned = 30;
 					other.baddieID.state = 6;
 				}
 				image_index = 0;
 				state = 72;
-				if (other.baddieID.state == 96)
+				if (other.baddieID.state == states.tumble)
 					other.baddieID.state = 6;
 			}
 			if (state == 17 && other.baddieID.object_index != obj_charcherry)
@@ -289,13 +289,13 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				}
 				else if (!key_up)
 				{
-					state = 40;
+					state = states.grab;
 					sprite_index = spr_haulingstart;
 					image_index = 0;
 				}
 				else
 				{
-					state = 36;
+					state = states.superslam;
 					sprite_index = spr_piledriverstart;
 					if (grounded)
 						vsp = -12;

@@ -64,7 +64,7 @@ function state_player_freefall()
 	{
 		if (slopeCheck(x, y) && !place_meeting(x, y, obj_dashpad))
 		{
-			state = 31;
+			state = states.machroll;
 			sprite_index = spr_crouchslip;
 			if (freefallsmash > 20)
 				movespeed = 12;

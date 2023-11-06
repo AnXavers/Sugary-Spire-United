@@ -37,8 +37,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Cotton",
+    "path": "folders/Sprites/Player/Pizzelle/Cotton.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

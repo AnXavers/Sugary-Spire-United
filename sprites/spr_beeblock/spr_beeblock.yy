@@ -79,8 +79,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Bee",
+    "path": "texturegroups/Bee",
   },
   "type": 0,
   "VTile": false,

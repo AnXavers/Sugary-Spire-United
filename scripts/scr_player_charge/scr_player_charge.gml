@@ -23,7 +23,7 @@ function state_player_charge()
 		jumpstop = 1;
 	}
 	if (movespeed <= 0)
-		state = 40;
+		state = states.grab;
 	if (key_slap2)
 	{
 		sprite_index = spr_swingdingend;

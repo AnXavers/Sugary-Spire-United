@@ -2,7 +2,7 @@ if (DestroyedBy.object_index == obj_player)
 {
 	if (place_meeting(x - obj_player.hsp, y, obj_player))
 	{
-		if (obj_player.state == 68 || obj_player.state == 69)
+		if (obj_player.state == states.mach1 || obj_player.state == states.mach2)
 		{
 			with obj_player
 			{

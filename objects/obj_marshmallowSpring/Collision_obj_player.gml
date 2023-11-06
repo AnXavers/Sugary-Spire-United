@@ -6,11 +6,11 @@ with (other)
 		vsp = -21;
 		if (state == states.normal || state == states.crouchslide || state == states.crouch || state == states.handstandjump || state == states.machslide)
 			state = states.jump;
-		if (state == states.rupertjump || state == states.rupertstick || state == states.rupertjump)
+		if (state == states.gumballoon || state == states.rupertnormal || state == states.gumballoon)
 		{
 			image_index = 0;
 			sprite_index = spr_skatejumpstart;
-			state = states.rupertjump;
+			state = 147;
 		}
 		if (state == states.climbwall || state == states.climbdownwall || state == states.climbceiling || state == states.machroll)
 			state = states.mach2;

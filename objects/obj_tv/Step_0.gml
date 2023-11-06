@@ -32,7 +32,7 @@ if (global.hurtcounter >= global.hurtmilestone && global.hurtcounter >= 5)
 	if !global.oldhud
 		scr_queue_tvanim(hurttext1tvspr, 100);
 }
-if (obj_player.state == 56)
+if (obj_player.state == states.keyget)
 {
 	showtext = 1;
 	message = "Key obtained!";
@@ -116,12 +116,12 @@ switch (state)
 			case states.cottonroll:
 				idlespr = cottontvspr;
 				break;
-			case states.rupertnormal:
-			case states.rupertjump:
-			case states.rupertslide:
-			case states.rupertstick:
+			case 145:
+			case 147:
+			case 146:
+			case 148:
 			case states.frostburn:
-			case states.frostburnbump:
+			case 143:
 			case states.frostburnspin:
 			case states.frostburnwallrun:
 				idlespr = frostburntvspr;
@@ -134,7 +134,7 @@ switch (state)
 			case states.ufodashOLD:
 				idlespr = ufotvspr;
 				break;
-			case states.barrelcrouch:
+			case states.cookiemount:
 				idlespr = marshdogspr;
 				break;
 			default:

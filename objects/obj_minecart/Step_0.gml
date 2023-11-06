@@ -17,7 +17,7 @@ if (place_meeting(x, y - 4, obj_player) && !place_meeting(x, y, obj_minedummycar
 	var myButton1 = get_control_string(global.key_jump);
 	scr_controlprompt("[spr_buttonfont]" + myButton1 + "[spr_promptfont] Jump" + "[spr_buttonfont]" + myButton1 + "[spr_promptfont] Dismount Minecart (In Air)");
 }
-if (obj_player.state == 101 || place_meeting(x, y, obj_minedummycart))
+if (obj_player.state == states.minecart || place_meeting(x, y, obj_minedummycart))
 	image_alpha = 0.5;
 else
 	image_alpha = 1;

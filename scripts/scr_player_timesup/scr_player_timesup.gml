@@ -8,7 +8,7 @@ function state_player_timesup()
 	alarm[5] = -1;
 	if (place_meeting(x, y, obj_timesup))
 	{
-		state = 30;
+		state = states.timesup;
 		sprite_index = obj_player.spr_outofcontrolfall;
 		state = 51;
 		sprite_index = spr_deathend;

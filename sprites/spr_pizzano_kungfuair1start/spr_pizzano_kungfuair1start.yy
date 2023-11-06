@@ -77,8 +77,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Player",
-    "path": "texturegroups/Player",
+    "name": "PlayerPizzano",
+    "path": "texturegroups/PlayerPizzano",
   },
   "type": 0,
   "VTile": false,

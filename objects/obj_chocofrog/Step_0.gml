@@ -1,4 +1,4 @@
-with (instance_nearest(x, y, obj_player))
+with (obj_player)
 {
 	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && state == states.cotton && movespeed >= 8)
 	{
@@ -50,12 +50,12 @@ with (instance_nearest(x, y, obj_player))
 		with (other.id)
 			instance_destroy();
 	}
-	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.rupertnormal || state == states.rupertjump || state == states.rupertslide))
+	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.seacreamjump || state == states.gumballoon || state == states.seacreamstick))
 	{
 		with (other.id)
 			instance_destroy();
 	}
-	if ((place_meeting(x, y + vsp, other.id) || place_meeting(x, y + sign(vsp), other.id)) && (state == states.rupertjump || state == states.rupertslide))
+	if ((place_meeting(x, y + vsp, other.id) || place_meeting(x, y + sign(vsp), other.id)) && (state == states.gumballoon || state == states.seacreamstick))
 	{
 		with (other.id)
 			instance_destroy();
@@ -65,7 +65,7 @@ with (instance_nearest(x, y, obj_player))
 		with (other.id)
 			instance_destroy();
 	}
-	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.barrelcrouch && substate == 0))
+	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.cookiemount && substate == 0))
 	{
 		with (other.id)
 			instance_destroy();

@@ -1,6 +1,6 @@
 if (DestroyedBy.object_index == obj_player)
 {
-	if ((place_meeting(x, y - obj_player.vsp, obj_player) || place_meeting(x, y - sign(obj_player.vsp), obj_player)) && obj_player.vsp < 0 && obj_player.state == 60)
+	if ((place_meeting(x, y - obj_player.vsp, obj_player) || place_meeting(x, y - sign(obj_player.vsp), obj_player)) && obj_player.vsp < 0 && obj_player.state == states.jump)
 	{
 		obj_player.vsp = 0;
 		instance_destroy();
@@ -26,13 +26,13 @@ if (DestroyedBy.object_index == obj_player)
 	{
 		with obj_player
 		{
-			if (state == 74 || state == 75)
+			if (state == states.freefall || state == states.freefallland)
 			{
 				state = 75;
 				sprite_index = spr_bodyslamland;
 				image_index = 0;
 			}
-			else if (state == 36)
+			else if (state == states.superslam)
 			{
 				sprite_index = spr_piledriverland;
 				scr_sound(sound_maximumspeedland);

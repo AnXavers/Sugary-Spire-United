@@ -2,7 +2,7 @@ with (obj_player)
 {
 	if (other.image_yscale == 1)
 	{
-		if (((key_down && !place_meeting(x, y + 1, obj_destructibles) && place_meeting(x, y + 1, other.id) && (state == 65 || state == 31)) || ((state == 67 || state == 74 || state == 75) && !place_meeting(x, y + 1, obj_destructibles) && place_meeting(x, y + 1, other.id))) && !instance_exists(obj_fadeout) && state != 77 && state != 62)
+		if (((key_down && !place_meeting(x, y + 1, obj_destructibles) && place_meeting(x, y + 1, other.id) && (state == states.crouch || state == states.machroll)) || ((state == states.crouchslide || state == states.freefall || state == states.freefallland) && !place_meeting(x, y + 1, obj_destructibles) && place_meeting(x, y + 1, other.id))) && !instance_exists(obj_fadeout) && state != 77 && state != 62)
 		{
 			with (other)
 			{
@@ -24,7 +24,7 @@ with (obj_player)
 	}
 	if (other.image_yscale == -1)
 	{
-		if ((((key_up || state == 63) && !place_meeting(x, y - 1, obj_destructibles) && place_meeting(x, y - 1, other.id) && (state == 60 || state == 89 || state == 63)) && !place_meeting(x, y - 1, obj_destructibles) && place_meeting(x, y - 1, other.id)) && !instance_exists(obj_fadeout))
+		if ((((key_up || state == states.Sjump) && !place_meeting(x, y - 1, obj_destructibles) && place_meeting(x, y - 1, other.id) && (state == states.jump || state == states.uppercut || state == states.Sjump)) && !place_meeting(x, y - 1, obj_destructibles) && place_meeting(x, y - 1, other.id)) && !instance_exists(obj_fadeout))
 		{
 			scr_sound(sound_box);
 			with (other)

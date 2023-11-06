@@ -63,7 +63,7 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 {
 	with (obj_player)
 	{
-		if (state == states.mach3 || state == 69 || state == 106 || state == 101 || state == 133)
+		if (state == states.mach3 || state == states.mach2 || state == states.pizzano_kungfu || state == states.minecart || state == states.bottlerocket)
 		{
 			instance_create(other.x, other.y, obj_slapstar);
 			instance_create(other.x, other.y, obj_baddiegibs);
@@ -73,10 +73,10 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 			machpunchAnim = true;
 			other.state = 6;
 			other.vsp = -11;
-			if (state == 69)
+			if (state == states.mach2)
 				other.vsp = -7;
 			other.movespeed = movespeed + 2;
-			if (state == 133)
+			if (state == states.bottlerocket)
 			{
 				other.vsp -= 7;
 				other.movespeed += 2;
@@ -88,7 +88,7 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 			scr_sound(sound_punch);
 			scr_sleep();
 		}
-		if (state == 63 || state == 89)
+		if (state == states.Sjump || state == states.uppercut)
 		{
 			var pctg = other.x - x;
 			instance_create(other.x, other.y, obj_slapstar);
@@ -99,7 +99,7 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 			machpunchAnim = true;
 			other.state = 6;
 			other.vsp = vsp;
-			if (state == 63)
+			if (state == states.Sjump)
 				other.vsp -= 8;
 			other.movespeed = 7 * (abs(pctg) / 32);
 			if (sign(pctg) != 0)
@@ -123,13 +123,13 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 			}
 			if (!key_up)
 			{
-				state = 40;
+				state = states.grab;
 				sprite_index = spr_haulingstart;
 				image_index = 0;
 			}
 			else
 			{
-				state = 36;
+				state = states.superslam;
 				sprite_index = spr_piledriverstart;
 				if (grounded)
 					vsp = -12;

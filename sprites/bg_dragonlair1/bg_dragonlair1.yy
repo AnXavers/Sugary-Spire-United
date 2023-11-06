@@ -33,7 +33,7 @@
   "origin": 0,
   "parent": {
     "name": "Medieval",
-    "path": "folders/Sprites/Backgrounds/Medieval.yy",
+    "path": "folders/Sprites/Backgrounds/Tower/Medieval.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -79,8 +79,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Backgrounds",
-    "path": "texturegroups/Backgrounds",
+    "name": "Pizzascape",
+    "path": "texturegroups/Pizzascape",
   },
   "type": 0,
   "VTile": false,

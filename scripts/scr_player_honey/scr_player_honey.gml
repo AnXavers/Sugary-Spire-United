@@ -23,14 +23,14 @@ function state_player_honey()
 		}
 		if (state != 45 || state != 93)
 			scr_taunt_setVariables();
-		if (state == 45 || state == 93)
+		if (state == states.backbreaker || state == states.parry)
 			state = 1;
 		vsp = 0;
 		if (key_jump2)
 			vsp = -11;
-		if (state == 71)
+		if (state == states.machslide)
 			state = 69;
-		if (state == 28)
+		if (state == states.chainsaw)
 		{
 			sprite_index = spr_jump;
 			movespeed = 0;

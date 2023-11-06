@@ -1,4 +1,4 @@
-if (instance_place(x, y - 1, obj_player) && obj_player.state == states.barrelcrouch)
+if (instance_place(x, y - 1, obj_player) && obj_player.state == states.cookiemount)
 {
 	alarm[0] = 1;
 	obj_player.state = states.normal;

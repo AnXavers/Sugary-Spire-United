@@ -1,4 +1,4 @@
-if (obj_player.state == 126)
+if (obj_player.state == states.hooks)
 	image_alpha = 0.5;
 else
 	image_alpha = 1;

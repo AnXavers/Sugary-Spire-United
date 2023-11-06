@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Dungeon",
-    "path": "folders/Sprites/Backgrounds/Dungeon.yy",
+    "path": "folders/Sprites/Backgrounds/Tower/Dungeon.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

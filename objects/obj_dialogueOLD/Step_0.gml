@@ -7,7 +7,7 @@ var _portrait = curMsg[1];
 var _sound = curMsg[2];
 var _func = curMsg[3];
 var hasImage = _portrait != -4;
-var _states = obj_player.state == 94 || obj_player.state == 110;
+var _states = obj_player.state == states.talkto || obj_player.state == states.actor;
 var _spd = (yoffset < 50) ? (((yoffset / 50) * 8) + 0.3) : 8;
 snddelay = drawspd * 3;
 if (!_states && state != 1)
@@ -45,7 +45,7 @@ switch (state)
 		move2 = -(obj_player.key_up2 - obj_player.key_down2);
 		choice_selected += (1 * move2);
 		choice_selected = wrap(choice_selected, 0, totalChoices - 1);
-		if (obj_player.state == 94 && obj_player.key_jump)
+		if (obj_player.state == states.talkto && obj_player.key_jump)
 		{
 			drawchar = 0;
 			if (current_message == (dialogLength - 1))

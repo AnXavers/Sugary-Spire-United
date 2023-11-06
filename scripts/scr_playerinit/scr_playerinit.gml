@@ -295,28 +295,28 @@ function scr_playerstate()
 			_stateFunction = state_player_door;
 			break;
 		case states.barrelnormal:
-			_stateFunction = state_player_barrelnormal;
+			_stateFunction = state_player_cookiemount;
 			break;
 		case states.barrelfall:
-			_stateFunction = state_player_barrelfall;
+			_stateFunction = state_player_cookiemount;
 			break;
 		case states.barrelmach1:
-			_stateFunction = state_player_barrelmach1;
+			_stateFunction = state_player_cookiemount;
 			break;
 		case states.barrelmach2:
-			_stateFunction = state_player_barrelmach2;
+			_stateFunction = state_player_cookiemount;
 			break;
 		case states.barrelfloat:
-			_stateFunction = state_player_barrelfloat;
+			_stateFunction = state_player_cookiemount;
 			break;
-		case states.barrelcrouch:
-			_stateFunction = state_player_barrelcrouch;
+		case states.cookiemount:
+			_stateFunction = state_player_cookiemount;
 			break;
 		case states.barrelslipnslide:
-			_stateFunction = state_player_barrelslipnslide;
+			_stateFunction = state_player_cookiemount;
 			break;
 		case states.barrelroll:
-			_stateFunction = state_player_barrelroll;
+			_stateFunction = state_player_cookiemount;
 			break;
 		case states.current:
 			_stateFunction = state_player_current;
@@ -480,6 +480,9 @@ function scr_playerstate()
 		case states.frostburnspin:
 			_stateFunction = state_player_frostburnspin;
 			break;
+		case states.frostburnbump:
+			_stateFunction = state_player_frostburnbump;
+			break;
 		case states.seacream:
 			_stateFunction = state_player_seacream;
 			break;
@@ -488,9 +491,6 @@ function scr_playerstate()
 			break;
 		case states.seacreamstick:
 			_stateFunction = state_player_seacreamstick;
-			break;
-		case states.frostburnbump:
-			_stateFunction = state_player_frostburnbump;
 			break;
 		case states.gumballoon:
 			_stateFunction = state_player_gumballoon;
@@ -506,6 +506,9 @@ function scr_playerstate()
 			break;
 		case states.rupertstick:
 			_stateFunction = state_player_rupertstick;
+			break;
+		case states.unused_3:
+			_stateFunction = state_player_normal;
 			break;
 		case states.honey:
 			_stateFunction = state_player_honey;

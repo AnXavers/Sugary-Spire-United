@@ -23,7 +23,7 @@ function scr_boss_vunerable()
 		var o = id;
 		with (p)
 		{
-			if (instakillmove || state == 89)
+			if (instakillmove || state == states.uppercut)
 			{
 				o.xscale = -xscale;
 				o.movespeed = 12;
@@ -60,7 +60,7 @@ function scr_boss_vunerable()
 				}
 				else
 				{
-					state = 36;
+					state = states.superslam;
 					sprite_index = spr_piledriverstart;
 					if (grounded)
 						vsp = -12;

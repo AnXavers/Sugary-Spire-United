@@ -1,6 +1,6 @@
 condition = function()
 {
-	return place_meeting(x, y, obj_player) && obj_player.state == 75;
+	return place_meeting(x, y, obj_player) && obj_player.state == states.freefallland;
 };
 output = function()
 {

@@ -120,7 +120,7 @@ function state_player_mach2()
 	if (key_down && !place_meeting(x, y, obj_dashpad))
 	{
 		flash = 0;
-		state = 31;
+		state = states.machroll;
 		if (!grounded)
 			sprite_index = spr_dive;
 		image_index = 0;

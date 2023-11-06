@@ -27,7 +27,7 @@ if (pid > 0 && !pid.cutscene && !instance_exists(obj_fadeout) && !instance_exist
 		instance_destroy(obj_fadeout);
 		targetDoor = "A";
 		room = timesuproom;
-		state = 30;
+		state = states.timesup;
 		sprite_index = spr_Timesup;
 		image_index = 0;
 		audio_stop_all();

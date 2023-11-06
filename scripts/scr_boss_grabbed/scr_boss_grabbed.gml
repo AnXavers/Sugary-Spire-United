@@ -2,7 +2,7 @@ function scr_boss_grabbed()
 {
 	sprite_index = grabbed_spr;
 	depth = 0;
-	if (obj_player.state == 36)
+	if (obj_player.state == states.superslam)
 	{
 		if (obj_player.character == "P")
 		{

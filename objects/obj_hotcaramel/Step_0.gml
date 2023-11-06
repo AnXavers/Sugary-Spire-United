@@ -2,9 +2,9 @@ if (place_meeting(x, y - 1, obj_player))
 {
 	with (obj_player)
 	{
-		if (state != 128 && !global.freezeframe && state != states.barrelcrouch)
+		if (state != 128 && !global.freezeframe && state != states.cookiemount)
 		{
-			if (state == 88 || state == 97)
+			if (state == states.cotton || state == states.cottondrill)
 				instance_create(x, y, obj_poofeffect);
 			sprite_index = spr_fireass;
 			if global.newplayeranim == 1

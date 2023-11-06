@@ -24,21 +24,21 @@ function state_player_pistolaim()
 	{
 		sprite_index = spr_player_pistol;
 		image_index = 0;
-		state = 32;
+		state = states.pistol;
 		shoot = 1;
 	}
 	if (key_shoot2 && sprite_index == spr_player_aimup)
 	{
 		sprite_index = spr_player_shootup;
 		image_index = 0;
-		state = 32;
+		state = states.pistol;
 		shoot = 1;
 	}
 	if (key_shoot2 && sprite_index == spr_player_aimdiagonal)
 	{
 		sprite_index = spr_player_shootdiagonal;
 		image_index = 0;
-		state = 32;
+		state = states.pistol;
 		shoot = 1;
 	}
 	if (!grounded)

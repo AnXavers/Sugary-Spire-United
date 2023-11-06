@@ -16,7 +16,7 @@ switch (state)
 			cooldown--;
 		else if (!instance_exists(enemyID) && point_distance(x, 0, obj_player.x, 0) <= threshold_x && point_distance(0, y, 0, obj_player.y) <= threshold_y && (important || not_in_list))
 		{
-			state = 35;
+			state = states.throwing;
 			attack_buffer = 20;
 		}
 		break;
@@ -29,7 +29,7 @@ switch (state)
 		{
 			with (obj_pizzano_dance)
 			{
-				if (state != 35)
+				if (state != states.throwing)
 				{
 					trap_x = other.x;
 					trap_y = other.y;
