@@ -21,8 +21,8 @@
   },
   "spriteNoExport": true,
   "textureGroupId": {
-    "name": "Hub",
-    "path": "texturegroups/Hub",
+    "name": "Backgrounds",
+    "path": "texturegroups/Backgrounds",
   },
   "tile_count": 72,
   "tileAnimation": {

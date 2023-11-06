@@ -79,8 +79,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Pizzascape",
-    "path": "texturegroups/Pizzascape",
+    "name": "Backgrounds",
+    "path": "texturegroups/Backgrounds",
   },
   "type": 0,
   "VTile": false,

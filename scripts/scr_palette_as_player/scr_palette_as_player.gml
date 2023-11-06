@@ -37,7 +37,7 @@ function new_palette(argument0, argument1, argument2, argument3, argument4 = 862
 	var q = [argument8, argument9, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument10, argument11, argument12];
 	array_push(my_palettes, [argument0, argument1, q]);
 }
-function set_palette(_arraynum, _palname, _ispattern, _clothcol, _clothshadecol, _skincol = 8628991, _skinshadecol = 14496, _scootcol = 13773959, _scootboostcol = 9988216, _boostoutercol = c_red, _boostinnercol = 56575, _outlinecol = c_black, _eyecol = c_white, _pizzanoetc = 855491)
+function set_palette(_arraynum, _palname, _ispattern, _clothcol = c_white, _clothshadecol = scribble_rgb_to_bgr($88A8C8), _skincol = scribble_rgb_to_bgr($FFAA83), _skinshadecol = scribble_rgb_to_bgr($A03800), _scootcol = scribble_rgb_to_bgr($872CD2), _scootboostcol = scribble_rgb_to_bgr($786898), _boostoutercol = c_red, _boostinnercol = scribble_rgb_to_bgr($FFDC00), _outlinecol = c_black, _eyecol = c_white, _pizzanoetc = 855491)
 {
 	var _q = [_outlinecol, _eyecol, _clothcol, _clothshadecol, _skincol, _skinshadecol, _scootcol, _scootboostcol, _boostoutercol, _boostinnercol, _pizzanoetc];
 	my_palettes[_arraynum] = [_palname, _ispattern, _q]

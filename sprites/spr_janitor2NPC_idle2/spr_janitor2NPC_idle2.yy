@@ -81,8 +81,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Followers",
-    "path": "texturegroups/Followers",
+    "name": "Backgrounds",
+    "path": "texturegroups/Backgrounds",
   },
   "type": 0,
   "VTile": false,

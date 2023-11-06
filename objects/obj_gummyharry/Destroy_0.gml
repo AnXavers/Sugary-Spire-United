@@ -9,6 +9,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	ds_list_add(global.saveroom, id);
 	with (instance_create(x, y, obj_harrydead))
 	{
+		isfrozen = 0
 		if !global.harryfreeze
 			alarm[1] = 1;
 		else
@@ -32,6 +33,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 			freezevsp = obj_player.vsp
 			freezehsp = obj_player.hsp
 			freezestate = obj_player.state
+			isfrozen = 1
 			cutscene_create([cutscene_harryFreeze])
 		}
 	}

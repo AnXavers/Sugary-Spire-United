@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Entryway",
-    "path": "texturegroups/Entryway",
+    "name": "Backgrounds",
+    "path": "texturegroups/Backgrounds",
   },
   "type": 0,
   "VTile": false,

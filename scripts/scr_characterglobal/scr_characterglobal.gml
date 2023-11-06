@@ -524,7 +524,7 @@ function scr_characterglobal()
 			for (var i = 0; i <= 10 ; i++)
 				global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
 			ini_close()
-			set_palette(0, "Default", 0, c_white, 13150344);
+			set_palette(0, "Default", 0);
 			set_palette(1, "Sugar", 0, 8441896, 6066975, 8628991, 14496, 5579956, 144);
 			set_palette(2, "Familiar Gremlin", 0, 8446200, 1607896, 8628991, 14496, 8446200, 1607896);
 			set_palette(3, "Massacre", 0, c_white, 13150344, 11056895, 2639766, c_white, c_white);
@@ -539,19 +539,19 @@ function scr_characterglobal()
 			set_palette(12, "Watermelon", 0, 2967076, 2177560, 7327808, 3766554, 9340159, 9340159, 9340159, c_white);
 			set_palette(13, "Purple", 0, 16273560, 16273560);
 			set_palette(14, "Piss", 0, 4259839, 3979494);
-			set_palette(15, "Cream n' Chips", 1, spr_pattern0, 13150344);
-			set_palette(16, "Valiant Hero", 1, spr_pattern1, 13150344);
-			set_palette(17, "Dead Man's Treats", 1, spr_pattern2, 13150344);
-			set_palette(18, "Candy Cane", 1, spr_pattern3, 13150344);
-			set_palette(19, "Sweet Apple", 1, spr_pattern4, 13150344);
-			set_palette(20, "Space Cream", 1, spr_pattern5, 13150344);
-			set_palette(21, "Sourness", 1, spr_pattern6, 13150344);
-			set_palette(22, "Neapolitan", 1, spr_pattern7, 13150344);
-			set_palette(23, "Cookie Cutter", 1, spr_pattern8, 13150344);
-			set_palette(24, "MissingTexture", 1, spr_pattern9, 13150344);
-			set_palette(25, "Solid", 1, spr_pattern10, 13150344);
-			set_palette(26, "Choco Squares", 1, spr_pattern11, 13150344);
-			set_palette(27, "Cotton Candy", 1, spr_pattern12, 13150344);
+			set_palette(15, "Cream n' Chips", 1, spr_pattern0);
+			set_palette(16, "Valiant Hero", 1, spr_pattern1);
+			set_palette(17, "Dead Man's Treats", 1, spr_pattern2);
+			set_palette(18, "Candy Cane", 1, spr_pattern3);
+			set_palette(19, "Sweet Apple", 1, spr_pattern4);
+			set_palette(20, "Space Cream", 1, spr_pattern5);
+			set_palette(21, "Sourness", 1, spr_pattern6);
+			set_palette(22, "Neapolitan", 1, spr_pattern7);
+			set_palette(23, "Cookie Cutter", 1, spr_pattern8);
+			set_palette(24, "MissingTexture", 1, spr_pattern9);
+			set_palette(25, "Solid", 1, spr_pattern10);
+			set_palette(26, "Choco Squares", 1, spr_pattern11);
+			set_palette(27, "Cotton Candy", 1, spr_pattern12);
 			set_palette(28, "Custom", 0, global.custompal_col[1], global.custompal_col[9], global.custompal_col[3], global.custompal_col[4], global.custompal_col[7], global.custompal_col[8], global.custompal_col[7], global.custompal_col[8], global.custompal_col[0], global.custompal_col[2]);
 			break;
 		case "N":
@@ -590,7 +590,7 @@ function scr_characterglobal()
 			spr_slippingonice = spr_pizzelle_slippingonice;
 			spr_mach1 = spr_pizzano_mach1;
 			spr_mach2 = spr_pizzano_mach2;
-			spr_mach3player = spr_pizzano_mach3;
+			spr_mach3player = spr_pizzano_mach3shoulder;
 			spr_walljumpstart = spr_pizzelle_secondjump1
 			spr_walljumpend = spr_pizzelle_secondjump2
 			spr_suplexbump = spr_pizzelle_bump
@@ -915,12 +915,12 @@ function scr_characterglobal()
 			spr_skatedoublejumpstart = spr_pizzelle_skatedoublejumpstart
 			spr_skatedrift = spr_pizzelle_skatedrift
 			spr_skatefall = spr_pizzelle_skatefall
-			spr_skateidle = spr_pizzelle_skateidle
+			spr_skateidle = spr_pizzano_frost_idle
 			spr_skatejump = spr_pizzelle_skatejump
 			spr_skateland = spr_pizzelle_skateland
-			spr_skateslowwalk = spr_pizzelle_skateslowwalk
+			spr_skateslowwalk = spr_pizzano_frost_walk
 			spr_skatespin = spr_pizzelle_skatespin
-			spr_skatewalk = spr_pizzelle_skatewalk
+			spr_skatewalk = spr_pizzano_frost_walk
 			spr_skatewalljump = spr_pizzelle_skatewalljump
 			spr_skatewalljumpstart = spr_pizzelle_skatewalljumpstart
 			spr_skatewallrun = spr_pizzelle_skatewallrun
@@ -1032,7 +1032,7 @@ function scr_characterglobal()
 				global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
 			ini_close()
 			var outline_col = c_black
-			if state == states.cotton || state == states.cottondrill || state == states.cottonroll
+			if (state == states.cotton || state == states.cottondrill || state == states.cottonroll)
 				outline_col = 5242960
 			set_palette(0, "Default", 0, c_white, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
 			set_palette(1, "Familiar Gremlin", 1607896, 1529791, 8628991, 14496, 8446200, 5678550, 16295984, 14903400, outline_col);

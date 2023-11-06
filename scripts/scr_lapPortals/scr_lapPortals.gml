@@ -118,6 +118,10 @@ function cutscene_harryFreeze()
 		vsp = 0;
 		x = horigin + random_range(-1, 1)
 		grav = 0;
+		if image_xscale
+			hudx = lerp(hudx, global.cam_w - 100, 0.05)
+		else
+			hudx = lerp(hudx, 100, 0.05)
 	}
 	with (obj_player)
 	{

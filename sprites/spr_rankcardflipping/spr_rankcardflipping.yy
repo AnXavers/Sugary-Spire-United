@@ -77,8 +77,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "RankScr",
-    "path": "texturegroups/RankScr",
+    "name": "HUD",
+    "path": "texturegroups/HUD",
   },
   "type": 0,
   "VTile": false,

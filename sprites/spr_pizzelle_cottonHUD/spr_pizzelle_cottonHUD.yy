@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "OldHud",
-    "path": "texturegroups/OldHud",
+    "name": "HUD",
+    "path": "texturegroups/HUD",
   },
   "type": 0,
   "VTile": false,

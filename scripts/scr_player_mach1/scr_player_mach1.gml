@@ -3,7 +3,7 @@ function state_player_mach1()
 	switch (character)
 	{
 		case "N":
-			sprite_index = spr_pizzano_mach2;
+			sprite_index = spr_mach2;
 			if (movespeed < 6)
 				movespeed = 6;
 			state = 69;

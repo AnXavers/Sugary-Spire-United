@@ -36,4 +36,5 @@ switch (global.combo)
 vsp = random_range(-5, -10);
 hsp = sign(x - obj_player.x) * random_range(5, 10);
 grav = 0.4;
+isfrozen = 0
 alarm[0] = 5;
