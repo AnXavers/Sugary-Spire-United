@@ -16,8 +16,9 @@ if canmove
 		optionsaved_machsfx = global.machsfx;
 		optionsaved_eggplantcombo = global.eggplantcombo;
 		optionsaved_oldhud = global.oldhud;
+		optionsaved_harryfreeze = global.harryfreeze;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 8)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 9)
 	{
 		optionselected++;
 		scr_sound(sound_step);
@@ -29,6 +30,7 @@ if canmove
 		optionsaved_eggplantcombo = global.eggplantcombo;
 		optionsaved_oldhud = global.oldhud;
 		optionsaved_harryfreeze = global.harryfreeze;
+		optionsaved_newvoicelines = global.newvoicelines;
 	}
 	switch (optionselected)
 	{
@@ -166,6 +168,20 @@ if canmove
 				ini_write_real("Settings", "harryfreeze", optionsaved_harryfreeze);
 				ini_close();
 				global.harryfreeze = optionsaved_harryfreeze;
+			}
+			break;
+		case 9:
+			subtitle = "PLAYS THE NEW PIZZELLE VOICELINES";
+			CursorY = 950;
+			optionsaved_newvoicelines += (key_right2 + key_left2);
+			optionsaved_newvoicelines = wrap(optionsaved_newvoicelines, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "harryfreeze", optionsaved_newvoicelines);
+				ini_close();
+				global.harryfreeze = optionsaved_newvoicelines;
 			}
 			break;
 	}

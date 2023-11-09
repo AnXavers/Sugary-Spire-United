@@ -1,5 +1,5 @@
-hspeed = lerp(hspeed, 0 , 0.05)
-vspeed += 0.3
+hsp = lerp(hsp, 0 , 0.05)
+vsp += 0.3
 movespeed -= 0.5;
 if (place_meeting(x, y, par_collision))
 {

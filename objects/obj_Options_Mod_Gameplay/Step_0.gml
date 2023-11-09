@@ -14,8 +14,9 @@ if canmove
 		optionsaved_inflapping = global.inflapping;
 		optionsaved_enablejerald = global.enablejerald;
 		optionsaved_coneballparry = global.coneballparry;
+		optionsaved_moveset = global.moveset;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 6)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 7)
 	{
 		optionselected++;
 		scr_sound(sound_step);
@@ -25,6 +26,7 @@ if canmove
 		optionsaved_enablejerald = global.enablejerald;
 		optionsaved_coneballparry = global.coneballparry;
 		optionsaved_moveset = global.moveset;
+		optionsaved_attackmove = global.attackmove;
 	}
 	switch (optionselected)
 	{
@@ -129,6 +131,20 @@ if canmove
 				ini_write_real("Settings", "moveset", optionsaved_moveset);
 				ini_close();
 				global.moveset = optionsaved_moveset;
+			}
+			break;
+		case 7:
+			subtitle = "CHANGES THE ATTACK MOVE";
+			CursorY = 750;
+			optionsaved_attackmove += (key_right2 + key_left2);
+			optionsaved_attackmove = wrap(optionsaved_attackmove, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "attackmove", optionsaved_attackmove);
+				ini_close();
+				global.attackmove = optionsaved_attackmove;
 			}
 			break;
 	}

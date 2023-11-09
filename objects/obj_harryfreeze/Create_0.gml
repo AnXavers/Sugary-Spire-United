@@ -1,1 +1,0 @@
-cutscene_create(cutscene_harryFreeze)

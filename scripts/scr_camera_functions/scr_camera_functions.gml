@@ -53,5 +53,23 @@ function screen_flash(argument0)
 }
 function pummel_dim()
 {
-	
+}
+function anchor_point(_point)
+{
+	switch _point
+	{
+		case "top":
+			return 0;
+		case "center":
+			return ((global.cam_h / 2) - 270);
+		case "bottom":
+			return (global.cam_h - 540);
+		case "left":
+			return 0;
+		case "middle":
+			return ((global.cam_w / 2) - 480);
+		case "right":
+			return (global.cam_w - 960);
+	}
+	exit;
 }

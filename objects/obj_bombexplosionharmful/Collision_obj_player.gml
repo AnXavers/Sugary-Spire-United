@@ -2,7 +2,7 @@ if (image_index > 9)
 	exit;
 with other
 {
-	if (other.state != 22)
+	if (state != 22)
 	{
 		scr_hurtplayer();
 		state = 22;

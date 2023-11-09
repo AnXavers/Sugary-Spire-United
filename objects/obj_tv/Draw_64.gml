@@ -5,7 +5,7 @@ bobbing = wave(2, -2, 3, 0);
 draw_set_font(global.combofont);
 draw_set_halign(1);
 draw_set_color(c_white);
-var _cx = 652;
+var _cx = 652 + anchor_point("right");
 var _hy = 88 + combo_y + hand_y;
 var _gy = _hy + 6;
 _hy = clamp(_hy, 88, 142);
@@ -35,10 +35,10 @@ else if obj_player.do_HUD_type
 {
 	draw_set_halign(fa_right);
 	draw_set_font(global.combopepfont);
-	draw_sprite_ext(spr_tv_combobubblefill, -1, _cx - (hand_y * 2) + 214, _hy - hand_y + 130, 1, 1, 0, c_white, alpha);
-	draw_sprite_ext(spr_tv_combobubble, -1, _cx + combo_x + 170, 218 + combo_y, 1, 1, 0, c_white, alpha);
+	draw_sprite_ext(spr_tv_combobubblefill, -1, _cx - (hand_y * 2) + 214, _hy - hand_y + 112, 1, 1, 0, c_white, alpha);
+	draw_sprite_ext(spr_tv_combobubble, -1, _cx + combo_x + 170, 200 + combo_y, 1, 1, 0, c_white, alpha);
 	var _ct = string(global.combo) + "x";
-	draw_text(_cx + combo_x + 123, combo_y + 210, _ct);
+	draw_text(_cx + combo_x + 123 + anchor_point("right"), combo_y + 192, _ct);
 }
 if (!surface_exists(tvbg_surface))
 {
@@ -62,28 +62,28 @@ if !global.oldhud
 	draw_sprite(spr_tv_cut, 0, 0, 0);
 	draw_set_blend_mode(0);
 	surface_reset_target();
-	draw_surface(tvbg_surface, 693, -60 + DrawY + bobbing)
+	draw_surface(tvbg_surface, 693 + anchor_point("right"), -60 + DrawY + bobbing)
 	if (sprite_index != spr_tvturnon && !obj_player.do_HUD_type)
-		draw_sprite_ext(draw_static ? spr_tvpropellerstatic : spr_tvpropeller, propindex, 832, 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
+		draw_sprite_ext(draw_static ? spr_tvpropellerstatic : spr_tvpropeller, propindex, 832 + anchor_point("right"), 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
 }
 scr_palette_as_player();
-draw_sprite_ext(sprite_index, image_index, 832 - DrawX, 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
+draw_sprite_ext(sprite_index, image_index, 832 - DrawX + anchor_point("right"), 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
 pal_swap_reset();
 if !global.oldhud
 {
 	if (draw_static)
 	{
 		static_index += 0.3;
-		draw_sprite_ext(spr_tv_newstatic, static_index, 832, 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
+		draw_sprite_ext(spr_tv_newstatic, static_index, 832 + anchor_point("right"), 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
 	}
 	if (tvsprite != spr_tvoff && tvsprite != spr_tvturnon && global.dialogueVolume <= 0)
-		draw_sprite_ext(spr_tvmuteicon, 0, 832 + DrawX, 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
+		draw_sprite_ext(spr_tvmuteicon, 0, 832 + DrawX + anchor_point("right"), 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
 }
 draw_set_font(global.promptfont);
 draw_set_halign(1);
 draw_set_color(c_white);
-var timerx = 480;
-var timery = 490 + timer_y;
+var timerx = 480 + anchor_point("middle");
+var timery = 490 + timer_y + anchor_point("bottom");
 var minsx = timerx - 90;
 var secx = timerx - 10;
 var minsy = timery - 15;
@@ -175,20 +175,15 @@ draw_set_halign(1);
 draw_set_font(global.lapfont);
 var x_shk = random_range(-1, 1);
 var y_shk = random_range(-1, 1);
-if (global.lapcount > 1)
-{
-	draw_sprite(spr_lapbg, 0, 480 + x_shk, lap_y + y_shk);
-	draw_text(480 + x_shk, lap_y + y_shk, global.lapcount);
-}
 if (global.lapcount >= 2 && global.inflapping != 0)
 {
 	draw_set_halign(fa_left);
-	draw_sprite(spr_harrylap, image_index, 70, 485);
-	draw_text(115 + x_shk, 460 + y_shk, global.lapcount);
+	draw_sprite(spr_harrylap, image_index, 70, 485 + anchor_point("bottom"));
+	draw_text(115 + x_shk, 460 + y_shk + anchor_point("bottom"), global.lapcount);
 }
 if (shownewtext == 1)
 {
-	draw_sprite_ext(textbubblesprites, textbubbleframes, 448, 45, 1, 1, 0, c_white, 1);
+	draw_sprite_ext(textbubblesprites, textbubbleframes, 448 + anchor_point("right"), 45, 1, 1, 0, c_white, 1);
 	if (!surface_exists(textpromptsurface))
 		textpromptsurface = surface_create(300, 100);
 	surface_set_target(textpromptsurface);
@@ -210,11 +205,11 @@ if (shownewtext == 1)
 	}
 	surface_reset_target();
 	if (surface_exists(textpromptsurface))
-		draw_surface(textpromptsurface, 283, -10);
+		draw_surface(textpromptsurface, 283 + anchor_point("right"), -10);
 	if (textbubblesprites == spr_tv_bubble)
-		draw_sprite(spr_tv_bubblefade, -1, 448, 45);
+		draw_sprite(spr_tv_bubblefade, -1, 448 + anchor_point("right"), 45);
 }
 draw_set_alpha(promptalpha);
 draw_set_halign(1)
-draw_text_scribble(480, 400, "[shake]" + controlprompt);
+draw_text_scribble(480 + anchor_point("middle"), 400 + anchor_point("bottom"), "[shake]" + controlprompt);
 draw_set_alpha(1);

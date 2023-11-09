@@ -705,3 +705,18 @@ function meta_set_name()
 		argumentDescriptions: ["the name to give yourself."]
 	};
 }
+function sh_set_resolution()
+{
+	global.cam_w = argument0[1];
+	global.cam_h = argument0[2];
+}
+function meta_set_resolution()
+{
+	return 
+	{
+		description: "Sets the in-game viewport resolution",
+		arguments: ["<width>", "<height>"],
+		suggestions: [["320", "480", "640", "960", "1920", "2560", "3840"], ["180", "270", "360", "540", "1080", "1440", "2160"]],
+		argumentDescriptions: ["the name to give yourself."]
+	};
+}

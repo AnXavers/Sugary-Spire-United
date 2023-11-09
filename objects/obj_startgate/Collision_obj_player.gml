@@ -1,6 +1,6 @@
 if (sprite_index != spr_exitgateclosed)
 {
-	with (obj_player)
+	with (other)
 	{
 		if (key_up && grounded && (state == states.normal || state == states.mach1 || state == states.mach2 || state == states.mach3) && !instance_exists(obj_fadeout) && state != 61 && state != 62)
 		{
@@ -20,24 +20,23 @@ if (sprite_index != spr_exitgateclosed)
 			ds_queue_clear(global.newhudmessage);
 			audio_stop_all();
 		}
-	}
-	if (obj_player.sprite_index == obj_player.spr_entergate)
-	{
-		with (obj_player)
+		if (sprite_index == spr_entergate && animation_end() && !instance_exists(obj_modifiermenu))
 		{
-			if (animation_end())
+			if (keyboard_lastkey == vk_escape)
 			{
-				if (!instance_exists(obj_titlecard) && other.do_titlecard)
-				{
-					with (instance_create(x, y, obj_titlecard))
-						info = instance_nearest(x, y, obj_startgate).info;
-				}
-				else if (!instance_exists(obj_fadeout) && !other.do_titlecard)
-				{
-					instance_create(x, y, obj_fadeout);
-					obj_tv.tvsprite = spr_tvturnon;
-					obj_tv.image_index = 0;
-				}
+				with instance_create(x, y, obj_modifiermenu)
+					startgate = instance_nearest(x, y, obj_startgate)
+			}
+			else if (!instance_exists(obj_titlecard) && other.do_titlecard)
+			{
+				with (instance_create(x, y, obj_titlecard))
+					info = instance_nearest(x, y, obj_startgate).info;
+			}
+			else if (!instance_exists(obj_fadeout) && !other.do_titlecard)
+			{
+				instance_create(x, y, obj_fadeout);
+				obj_tv.tvsprite = spr_tvturnon;
+				obj_tv.image_index = 0;
 			}
 		}
 	}

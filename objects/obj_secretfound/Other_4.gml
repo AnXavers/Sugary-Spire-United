@@ -12,3 +12,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	scr_sound(sound_secretgot);
 	ds_list_add(global.saveroom, id);
 }
+if global.newleveldesign == 2
+	layer_change_tileset(ts_secret, ts_secretold)
+else if global.newlvldesign >= 1
+	layer_change_tileset(ts_secret, ts_secretnew)

@@ -111,7 +111,7 @@ function scr_laptimes(argument0 = global.levelname)
 			break;
 		case "molasses":
 			minutes = 1;
-			seconds = 35;
+			seconds = 10;
 			break;
 		case "mines":
 			minutes = 1;

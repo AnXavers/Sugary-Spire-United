@@ -884,7 +884,7 @@ function scr_characterglobal()
 			spr_hookhoriz = spr_pizzelle_hookhoriz
 			spr_lapvisual_player = spr_lapvisual
 			spr_lapbg_player = spr_lapbg
-			img_featuringme = 0;
+			img_featuringme = 1;
 			spr_coneball_player = spr_coneball_new
 			spr_coneball_melting_player = spr_coneball_melting
 			spr_stylebar = spr_heatmeter

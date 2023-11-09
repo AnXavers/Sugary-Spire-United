@@ -168,44 +168,23 @@ global.machsfx = ini_read_real("Settings", "machsfx", 0);
 global.eggplantcombo = ini_read_real("Settings", "eggplantcombo", 0);
 global.oldhud = ini_read_real("Settings", "oldhud", 0);
 global.harryfreeze = ini_read_real("Settings", "harryfreeze", 1);
+global.newvoicelines = ini_read_real("Settings", "newvoicelines", 0)
+global.moveset = ini_read_real("Settings", "moveset", 0)
+global.attackmove = ini_read_real("Settings", "attackmove", 0)
+global.cam_w = ini_read_real("Settings", "reswidth", 960);
+global.cam_h = ini_read_real("Settings", "resheight", 540);
+window_set_size(global.cam_w, global.cam_h)
+surface_resize(application_surface, global.cam_w, global.cam_h)
 for (i = 0; i < (array_length(global.musiclist) - 1); i++)
 {
 	if ini_key_exists("Music", audio_get_name(i))
 		ds_map_set(global.musicreplace, i, asset_get_index(ini_read_real("Music", audio_get_name(i), noone)));
 }
-ini_close();
 audio_master_gain(global.masterVolume);
 global.player_input_device = -2;
 global.player_input_device2 = -2;
 global.targetCamX = 0;
 global.targetCamY = 0;
-ini_open("optionData.ini");
-switch (ini_read_real("Settings", "resolution", 1))
-{
-	case 0:
-		win_w = 480
-		win_h = 260
-		break;
-	case 1:
-		win_w = 960
-		win_h = 540
-		break;
-	case 2:
-		win_w = 1280
-		win_h = 720
-		break;
-	case 3:
-		win_w = 1920
-		win_h = 1080
-		break;
-	case 4:
-		win_w = 3840
-		win_h = 1080
-		global.cam_w = 1920
-		break;
-}
-window_set_size(win_w, win_h);
-surface_resize(application_surface, global.cam_w, global.cam_h)
 switch (ini_read_real("Settings", "machsfx", 0))
 {
 	case 0:
@@ -219,66 +198,6 @@ switch (ini_read_real("Settings", "machsfx", 0))
 		global.sfxdash2 = sound_dash2old
 		global.sfxdash3 = sound_dash3old
 		global.sfxdash4 = sound_dash4old
-		break;
-}
-switch (ini_read_real("Settings", "mu_lap10", 0))
-{
-	case 0:
-		global.lap10song = mu_sucrose;
-		break;
-	case 1:
-		global.lap10song = mu_finale;
-		break;
-	case 2:
-		global.lap10song = mu_peppino_death;
-		break;
-	case 3:
-		global.lap10song = mu_pizzelle_death;
-		break;
-}
-switch (ini_read_real("Settings", "mu_lap5", 0))
-{
-	case 0:
-		global.lap5song = mu_pizzelle_despairy;
-		break;
-	case 1:
-		global.lap5song = mu_pizzano_despairy;
-		break;
-	case 2:
-		global.lap5song = mu_peppino_despairy;
-		break;
-	case 3:
-		global.lap5song = mu_overdose;
-		break;
-}
-switch (ini_read_real("Settings", "mu_lap2", 0))
-{
-	case 0:
-		global.lap2song = mu_pizzelle_lap;
-		break;
-	case 1:
-		global.lap2song = mu_pizzano_lap;
-		break;
-	case 2:
-		global.lap2song = mu_noise_lap;
-		break;
-	case 3:
-		global.lap2song = mu_peppino_lap;
-		break;
-}
-switch (ini_read_real("Settings", "mu_escape", 0))
-{
-	case 0:
-		global.escapesong = mu_pizzelle_escape;
-		break;
-	case 1:
-		global.escapesong = mu_pizzano_escape;
-		break;
-	case 2:
-		global.escapesong = mu_noise_escape;
-		break;
-	case 3:
-		global.escapesong = mu_peppino_escape;
 		break;
 }
 window_set_fullscreen(ini_read_real("Settings", "fullscrn", 0));
