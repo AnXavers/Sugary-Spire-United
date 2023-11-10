@@ -79,7 +79,7 @@ if canmove
 			optionsaved_inflapping = wrap(optionsaved_inflapping, 0, 2);
 			if (key_jump)
 			{
-				if (global.levelname == "none" || is_hub())
+				if (global.lapcount <= 2 && !string_contains(room_get_name(room), "portal"))
 				{
 					scr_sound(sound_enemythrow);
 					ini_open("optionData.ini");

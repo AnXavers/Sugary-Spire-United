@@ -1,2 +1,2 @@
-if (irandom(100) <= 15)
-	lap = 1;
+if global.lapcount > 1
+	lap = 1

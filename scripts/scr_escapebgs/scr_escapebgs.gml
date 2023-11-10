@@ -64,6 +64,11 @@ function scr_escapebgs()
 		layer_change_background(bg_fudgetop_frontmountain, bg_futopmelt1)
 		layer_change_background(bg_fudgetop_mountainback, spr_backgroundnull)
 		layer_change_background(bg_fudgetop_sky, bg_futopmelt2)
+		if (global.newlvldesign == 1 || global.newlvldesign == 3)
+		{
+			layer_change_background(bg_futopmelt1, bg_futopmelt1_new)
+			layer_change_background(bg_futopmelt1, bg_futopmelt2_new)
+		}
 		layer_change_background(bg_fudgetop_skyscroll, spr_backgroundnull)
 		layer_change_background(bg_fudgetop2_foreground, bg_fudgetop2_foreground_escape)
 		layer_change_background(bg_fudgetop2_1, bg_fudgetop2_1_escape)
@@ -100,6 +105,5 @@ function scr_escapebgs()
 		layer_change_background(bg_hub3, bg_stormy1_esc)
 		layer_change_background(bg_stormy_rain, bg_stormy_rain_esc)
 		layer_change_background(bg_hub3_clouds, bg_hub3_clouds_esc)
-		layer_change_tileset(ts_mountain1_night, ts_mountain1_day)
 	}
 }

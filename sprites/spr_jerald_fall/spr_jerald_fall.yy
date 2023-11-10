@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_polka_fall",
+  "name": "spr_jerald_fall",
   "bbox_bottom": 92,
   "bbox_left": 17,
   "bbox_right": 119,
@@ -27,14 +27,14 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Jerald",
+    "path": "folders/Sprites/Objects/Collectibles/Janitor/Jerald.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_polka_fall",
+    "name": "spr_jerald_fall",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -56,9 +56,9 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6c0acf78-cb07-4ee5-aec5-e527decfb8f7","path":"sprites/spr_polka_fall/spr_polka_fall.yy",},},},"Disabled":false,"id":"c09593f9-5fe1-43f4-8e82-863f74806dd8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0b17cd42-9063-4fe0-8f79-81fc705c0498","path":"sprites/spr_polka_fall/spr_polka_fall.yy",},},},"Disabled":false,"id":"ae2bf3f5-0d4c-4de5-9cc6-380252af8a2d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6f1aa261-fded-45b1-9353-1e393921e6e7","path":"sprites/spr_polka_fall/spr_polka_fall.yy",},},},"Disabled":false,"id":"f997b07f-6a42-45e7-8ddc-0b433a319809","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6c0acf78-cb07-4ee5-aec5-e527decfb8f7","path":"sprites/spr_jerald_fall/spr_jerald_fall.yy",},},},"Disabled":false,"id":"c09593f9-5fe1-43f4-8e82-863f74806dd8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0b17cd42-9063-4fe0-8f79-81fc705c0498","path":"sprites/spr_jerald_fall/spr_jerald_fall.yy",},},},"Disabled":false,"id":"ae2bf3f5-0d4c-4de5-9cc6-380252af8a2d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6f1aa261-fded-45b1-9353-1e393921e6e7","path":"sprites/spr_jerald_fall/spr_jerald_fall.yy",},},},"Disabled":false,"id":"f997b07f-6a42-45e7-8ddc-0b433a319809","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -34,7 +34,7 @@ if layertype == layerelementtype_background
 		layer_vspeed(layerselect, irandom(random(10)))
 	}
 	else
-		layer_background_sprite(layerselect, irandom((array_length(global.spritelist) - 1)))
+		layer_change_background(layer_background_get_sprite(layerselect), irandom((array_length(global.spritelist) - 1)))
 }
 else if layertype == layerelementtype_tilemap
-	tilemap_tileset(layerselect, irandom((array_length(global.tilesetlist) - 1)))
+	layer_change_tileset(tileset_get_texture(layerselect), irandom((array_length(global.tilesetlist) - 1)))

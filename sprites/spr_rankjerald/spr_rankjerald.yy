@@ -29,8 +29,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Jerald",
+    "path": "folders/Sprites/Objects/Collectibles/Janitor/Jerald.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

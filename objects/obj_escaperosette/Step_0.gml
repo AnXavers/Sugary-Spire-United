@@ -6,7 +6,7 @@ switch (state)
 			state = 0;
 			sprite_index = spr_rosette_exitsign;
 			if (lap)
-				sprite_index = spr_polka_exitsign;
+				sprite_index = spr_jerald_exitsign;
 			image_index = 0;
 		}
 		break;
@@ -19,7 +19,7 @@ switch (state)
 			vsp = 20;
 			sprite_index = spr_rosette_fall;
 			if (lap)
-				sprite_index = spr_polka_fall;
+				sprite_index = spr_jerald_fall;
 			x = xstart;
 			y = camera_get_view_y(view_camera[0]) - 100;
 		}
@@ -39,7 +39,7 @@ switch (state)
 			state = 0;
 			sprite_index = spr_rosette_exitsign;
 			if (lap)
-				sprite_index = spr_polka_exitsign;
+				sprite_index = spr_jerald_exitsign;
 			image_index = 0;
 		}
 		break;
