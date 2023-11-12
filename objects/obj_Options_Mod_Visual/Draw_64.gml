@@ -1,5 +1,5 @@
 draw_set_font(global.font);
-draw_set_halign(1);
+draw_set_halign(fa_center);
 draw_option(150, 30 + ScrollY, "BACK", optionselected == 0);
 draw_option(480, 100 + ScrollY, "NEW SCORE FONT", optionselected == 1);
 draw_option(280, 150 + ScrollY, "ON", optionsaved_newscorefont);

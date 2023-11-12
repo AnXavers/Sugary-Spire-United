@@ -1,7 +1,6 @@
 obj_player.vsp = 0
 obj_player.hsp = 0
-obj_player.state = 1
-obj_player.sprite_index = spr_idle
+obj_player.sprite_index = obj_player.spr_idle
 obj_player.state = states.actor
 var _cam_x = camera_get_view_x(view_camera[0])
 var _cam_y = camera_get_view_y(view_camera[0])

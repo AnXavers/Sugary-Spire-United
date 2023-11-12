@@ -62,7 +62,7 @@ if (collected != _string)
 var pal = colors[i];
 draw_set_font(obj_player.font_collect);
 draw_set_alpha(1);
-draw_set_halign(1);
+draw_set_halign(fa_center);
 for (i = 0; i < _string_length; i++)
 {
 	_xx = (pshake ? irandom_range(-4, 4) : 0 + 750) + (-(string_width(_string) / 2) + ((string_width(_string) / _string_length) * i));

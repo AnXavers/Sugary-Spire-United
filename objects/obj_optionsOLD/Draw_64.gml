@@ -1,5 +1,5 @@
 draw_sprite_tiled(bg_options, 0, bgx, bgy);
-draw_set_halign(1);
+draw_set_halign(fa_center);
 draw_set_font(global.font);
 draw_sprite(spr_arrow, 0, 200, arrowy);
 draw_text(480, 0, title);

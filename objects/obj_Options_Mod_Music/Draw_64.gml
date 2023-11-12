@@ -1,5 +1,5 @@
 draw_set_font(global.font);
-draw_set_halign(1);
+draw_set_halign(fa_center);
 draw_option(150, 30 + ScrollY, "BACK", optionselected == 0);
 draw_set_halign(fa_left);
 draw_option(200, 100 + ScrollY, "CUSTOM MUSIC", optionselected == 1);
@@ -26,7 +26,7 @@ draw_option(150, 1100 + ScrollY, "BLUE LICORICE", optionsaved_mu_escape == 1);
 draw_option(150, 1150 + ScrollY, "DISTASTEFUL ANCHOVI", optionsaved_mu_escape == 2);
 draw_option(150, 1200 + ScrollY, "ITS PIZZA TIME", optionsaved_mu_escape == 3);
 draw_set_font(global.smallfont);
-draw_set_halign(1);
+draw_set_halign(fa_center);
 var _string_width = string_width(subtitle) + 32;
 if (subtitle != "")
 	draw_sprite_ext(spr_optionSubtitle, 0, 480, 521, _string_width / 32, 1, 0, c_white, 1);

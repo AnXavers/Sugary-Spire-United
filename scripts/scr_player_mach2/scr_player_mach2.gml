@@ -224,7 +224,7 @@ function state_player_mach2()
 		image_speed = abs(movespeed) / 15;
 	if (grounded)
 		upsideDownJump = false;
-	if ((do_pizzano_sjump) && key_up && key_slap2 && charged)
+	if ((obj_player.character == "N" || obj_player.character == "T") && key_up && key_slap2 && charged)
 	{
 		flash = 1;
 		alarm[0] = 240;

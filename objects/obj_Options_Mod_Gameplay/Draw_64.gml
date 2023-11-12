@@ -1,5 +1,5 @@
 draw_set_font(global.font);
-draw_set_halign(1);
+draw_set_halign(fa_center);
 draw_option(150, 30 + ScrollY, "BACK", optionselected == 0);
 draw_option(480, 100 + ScrollY, "HEATMETER", optionselected == 1);
 draw_option(280, 150 + ScrollY, "ON", optionsaved_heatmeter);
@@ -29,7 +29,7 @@ draw_option(680, 800 + ScrollY, "GRAB", optionsaved_attackmove == 1);
 draw_option(280, 850 + ScrollY, "SHOULDER", optionsaved_attackmove == 2);
 draw_option(680, 850 + ScrollY, "KUNG FU", optionsaved_attackmove == 3);
 draw_set_font(global.smallfont);
-draw_set_halign(1);
+draw_set_halign(fa_center);
 var _string_width = string_width(subtitle) + 32;
 if (subtitle != "")
 	draw_sprite_ext(spr_optionSubtitle, 0, 480, 521, _string_width / 32, 1, 0, c_white, 1);

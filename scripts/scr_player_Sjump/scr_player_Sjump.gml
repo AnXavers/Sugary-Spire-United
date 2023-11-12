@@ -12,7 +12,7 @@ function state_player_Sjump()
 	crouchAnim = 0;
 	machhitAnim = 0;
 	charactersjump = 0
-	if (do_pizzano_sjump)
+	if (character == "N" || character == "T")
 		charactersjump = 1
 	move = key_left + key_right;
 	if (move != 0)

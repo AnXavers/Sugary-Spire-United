@@ -6,11 +6,13 @@ if !surface_exists(surface)
 	surface_reset_target();
 }
 surface_set_target(surface);
-gpu_set_blendenable(false)
-gpu_set_colorwriteenable(false,false,false,true);
-draw_set_alpha(1);
-draw_sprite_tiled(bg_pausescreenTile, 0, bgTileX, bgTileY);
-draw_set_blend_mode(1);
-draw_set_color(c_white)
 draw_circle((global.cam_w / 2), (global.cam_h / 2), fadeinrad, false)
-draw_set_blend_mode(0);
+gpu_set_colorwriteenable(true, true, true, false);
+draw_sprite_tiled(bg_options, 0, bgTileX, bgTileY);
+gpu_set_colorwriteenable(true, true, true, true);
+surface_reset_target();
+draw_surface(surface, 0, 0)
+draw_set_alpha(clamp((txtalpha / 60), 0, 1))
+draw_set_font(global.smallfont);
+draw_set_halign(fa_left);
+draw_text(100, 100, "raghh")

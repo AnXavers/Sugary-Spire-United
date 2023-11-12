@@ -3,7 +3,7 @@ if (is_hub() || !scr_roomcheck() || global.levelname == "none")
 	exit;
 bobbing = wave(2, -2, 3, 0);
 draw_set_font(global.combofont);
-draw_set_halign(1);
+draw_set_halign(fa_center);
 draw_set_color(c_white);
 var _cx = 652 + anchor_point("right");
 var _hy = 88 + combo_y + hand_y;
@@ -16,7 +16,7 @@ if (!surface_exists(goo_surface))
 	draw_clear_alpha(0, 0);
 	surface_reset_target();
 }
-else if !obj_player.do_HUD_type
+else if (obj_player.character != "S" || obj_player.character != "T" || obj_player.character != "V" || obj_player.character != "M")
 {
 	surface_set_target(goo_surface);
 	draw_clear_alpha(0, 0);
@@ -31,7 +31,7 @@ else if !obj_player.do_HUD_type
 	var _ct = string(global.combo) + "x";
 	draw_text(_cx + combo_x, combo_y, _ct);
 }
-else if obj_player.do_HUD_type
+else
 {
 	draw_set_halign(fa_right);
 	draw_set_font(global.combopepfont);
@@ -63,7 +63,7 @@ if !global.oldhud
 	draw_set_blend_mode(0);
 	surface_reset_target();
 	draw_surface(tvbg_surface, 693 + anchor_point("right"), -60 + DrawY + bobbing)
-	if (sprite_index != spr_tvturnon && !obj_player.do_HUD_type)
+	if (sprite_index != spr_tvturnon && (obj_player.character != "S" || obj_player.character != "T" || obj_player.character != "V" || obj_player.character != "M"))
 		draw_sprite_ext(draw_static ? spr_tvpropellerstatic : spr_tvpropeller, propindex, 832 + anchor_point("right"), 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
 }
 scr_palette_as_player();
@@ -80,7 +80,7 @@ if !global.oldhud
 		draw_sprite_ext(spr_tvmuteicon, 0, 832 + DrawX + anchor_point("right"), 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
 }
 draw_set_font(global.promptfont);
-draw_set_halign(1);
+draw_set_halign(fa_center);
 draw_set_color(c_white);
 var timerx = 480 + anchor_point("middle");
 var timery = 490 + timer_y + anchor_point("bottom");
@@ -171,7 +171,7 @@ if (lap_out > 0)
 	lap_out--;
 }
 lap_y = approach(lap_y, tgt, spd);
-draw_set_halign(1);
+draw_set_halign(fa_center);
 draw_set_font(global.lapfont);
 var x_shk = random_range(-1, 1);
 var y_shk = random_range(-1, 1);
@@ -210,6 +210,6 @@ if (shownewtext == 1)
 		draw_sprite(spr_tv_bubblefade, -1, 448 + anchor_point("right"), 45);
 }
 draw_set_alpha(promptalpha);
-draw_set_halign(1)
+draw_set_halign(fa_center)
 draw_text_scribble(480 + anchor_point("middle"), 400 + anchor_point("bottom"), "[shake]" + controlprompt);
 draw_set_alpha(1);

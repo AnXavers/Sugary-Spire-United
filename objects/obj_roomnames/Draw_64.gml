@@ -1,7 +1,7 @@
-if (_message != "NO ROOMNAME FOUND-1265")
+if (_message != "NO ROOMNAME FOUND")
 {
 	draw_set_font(global.smallfont);
-	draw_set_halign(1);
+	draw_set_halign(fa_center);
 	draw_set_color(c_white);
 	draw_set_alpha(alpha);
 	draw_sprite(obj_player.spr_roomnamehud, 0, draw_x, newdraw_y);

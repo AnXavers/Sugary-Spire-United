@@ -61,7 +61,7 @@ function state_player_jump()
 		freefallstart = 0;
 		instance_create_depth(x, y, 0, obj_landcloud);
 	}
-	if (key_attack && (do_pizzano_sjump) && charged)
+	if (key_attack && (obj_player.character == "N" || obj_player.character == "T") && charged)
 	{
 		sprite_index = spr_superjump_cancelprep;
 		image_index = 0;
@@ -70,7 +70,7 @@ function state_player_jump()
 		charged = 0;
 		state = 104;
 	}
-	if (key_up && (do_pizzano_sjump) && charged)
+	if (key_up && (obj_player.character == "N" || obj_player.character == "T") && charged)
 	{
 		alarm[0] = 240;
 		sprite_index = spr_superjump;
@@ -104,21 +104,18 @@ function state_player_jump()
 	}
 	if (key_jump)
 		input_buffer_jump = 0;
-	if (do_freefall_spr)
+	if (vsp > 5)
+		fallinganimation++;
+	if ((fallinganimation >= 40 && fallinganimation < 80) && sprite_index != spr_candyup)
+		sprite_index = spr_freefall;
+	if ((fallinganimation >= 40 && fallinganimation < 80) && sprite_index == spr_candyup)
 	{
-		if (vsp > 5)
-			fallinganimation++;
-		if ((fallinganimation >= 40 && fallinganimation < 80) && sprite_index != spr_candyup)
-			sprite_index = spr_freefall;
-		if ((fallinganimation >= 40 && fallinganimation < 80) && sprite_index == spr_candyup)
-		{
-			sprite_index = spr_freefall;
-			if (!instance_exists(obj_candifiedeffect1))
-				instance_create(x, y, obj_candifiedeffect1);
-		}
-		if (fallinganimation >= 80)
-			sprite_index = spr_freefall2;
+		sprite_index = spr_freefall;
+		if (!instance_exists(obj_candifiedeffect1))
+			instance_create(x, y, obj_candifiedeffect1);
 	}
+	if (fallinganimation >= 80)
+		sprite_index = spr_freefall2;
 	if (stompAnim == 0)
 	{
 		if (jumpAnim == 1)
@@ -233,20 +230,20 @@ function state_player_jump()
 		if (!instance_exists(obj_mach3effect))
 			instance_create(x, y - 32, obj_mach3effect);
 	}
-	if (key_jump && do_gumbob_propeller && !grounded && gumbobpropellercooldown == 0)
+	if (key_jump && (obj_player.character == "G") && !grounded && gumbobpropellercooldown == 0)
 	{
 		state = 117;
 		sprite_index = spr_propeller_start;
 		movespeed = 0;
 		vsp = 0;
 	}
-	if (key_jump && do_doublejump && !grounded && doublejumped == 0 && !scr_solid(x + xscale, y, true))
+	if (key_jump && (obj_player.character == "N") && !grounded && doublejumped == 0 && !scr_solid(x + xscale, y, true))
 	{
 		doublejumped = 1;
 		vsp = -10;
 		sprite_index = spr_djump;
 	}
-		if (key_jump && do_pizzano_wallcling)
+		if (key_jump && (obj_player.character == "N"))
 		{
 			if place_meeting((x + xscale), y, obj_solid)
 			{

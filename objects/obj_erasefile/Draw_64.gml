@@ -2,7 +2,7 @@ draw_set_alpha(0.95);
 draw_rectangle_color(-32, -32, 992, 572, 0, 0, 0, 0, 0);
 draw_set_alpha(1);
 draw_set_font(263);
-draw_set_halign(1);
+draw_set_halign(fa_center);
 draw_text(480, 190, "ARE YOU SURE YOU WANT\nTO ERASE YOUR SAVE FILE!");
 draw_option(400, 300, "NO", optionselected == 0);
 if (optionselected == 1)

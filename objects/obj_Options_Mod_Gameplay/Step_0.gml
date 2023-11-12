@@ -137,7 +137,7 @@ if canmove
 			subtitle = "CHANGES THE ATTACK MOVE";
 			CursorY = 750;
 			optionsaved_attackmove += (key_right2 + key_left2);
-			optionsaved_attackmove = wrap(optionsaved_attackmove, 0, 1);
+			optionsaved_attackmove = wrap(optionsaved_attackmove, 0, 3);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);

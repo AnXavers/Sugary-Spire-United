@@ -102,7 +102,7 @@ with (obj_player)
 		if (global.debugmode == 1)
 		{
 			draw_set_font(font_dev);
-			draw_set_halign(1);
+			draw_set_halign(fa_center);
 			draw_set_color(c_white);
 			draw_text(x, y - 50, "State: " + string(state) + "." + string(substate) + ", " + string(stateName));
 			draw_text(x, y - 100, movespeed);

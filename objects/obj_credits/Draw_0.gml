@@ -12,6 +12,6 @@ draw_set_alpha(0.3);
 draw_rectangle(-64, -64, 1024, 605, false);
 draw_set_color(c_white);
 draw_set_alpha(1);
-draw_set_halign(1);
+draw_set_halign(fa_center);
 draw_set_font(global.creditsfont);
 draw_text(x, y, creditsText);

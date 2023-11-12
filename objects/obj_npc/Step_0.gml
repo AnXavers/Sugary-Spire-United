@@ -27,3 +27,5 @@ if turn_to_player
 	if obj_player.x > x
 		image_xscale = -1
 }
+if global.panic
+	idle = spr_grandpop_nervous

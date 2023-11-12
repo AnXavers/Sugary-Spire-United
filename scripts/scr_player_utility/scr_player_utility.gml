@@ -57,7 +57,7 @@ function do_grab()
 		}
 		else if (!key_up)
 		{
-			if (do_pizzano_kungfu)
+			if (character == "N")
 			{
 				scr_sound(sfx_kungfuair);
 				if (movespeed < 9)

@@ -25,7 +25,7 @@ if (DrawHUD)
 		if !global.newscorefont
 		{
 			draw_set_font(obj_player.font_collect);
-			draw_set_halign(1);
+			draw_set_halign(fa_center);
 			draw_set_color(c_white);
 			var _string = string(global.collect);
 			var _string_length = string_length(_string);
@@ -39,7 +39,7 @@ if (DrawHUD)
 		else
 		{
 			draw_set_font(obj_player.font_collect_new);
-			draw_set_halign(1);
+			draw_set_halign(fa_center);
 			var _string = string(global.collect);
 			var _string_length = string_length(_string);
 			if (collected != _string)
@@ -193,7 +193,7 @@ if !(global.levelname == "none" && room == timesuproom || room == rank_room || r
 if (global.debugmode == 1)
 {
 	draw_set_font(global.promptfont);
-	draw_set_halign(1);
+	draw_set_halign(fa_center);
 	draw_set_color(c_white);
 	draw_text(260, 450, angle);
 	draw_text(325, 450, angledir);

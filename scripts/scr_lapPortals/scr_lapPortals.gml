@@ -130,7 +130,7 @@ function cutscene_harryFreeze()
 		vsp = 0;
 		image_speed = 0;
 	}
-	if obj_harrydead.alarm[1] <= 1
+	if (instance_exists(obj_harrydead) && obj_harrydead.alarm[1] <= 1)
 	{
 		cutscene_event_end();
 		obj_player.hsp = obj_harrydead.freezehsp

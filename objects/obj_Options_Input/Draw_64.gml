@@ -1,4 +1,4 @@
-draw_set_halign(1);
+draw_set_halign(fa_center);
 draw_set_font(global.font);
 draw_option(150, 30 + ScrollY, "BACK", optionselected == 0);
 draw_option(800, 30 + ScrollY, "GAMEPAD", optionselected == 0);

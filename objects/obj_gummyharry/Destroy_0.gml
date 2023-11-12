@@ -29,7 +29,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 				ClampLeft = false
 				ClampRight = false
 			}
-			alarm[1] = 65;
+			alarm[1] = 105;
 			freezevsp = obj_player.vsp
 			freezehsp = obj_player.hsp
 			freezestate = obj_player.state

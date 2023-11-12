@@ -1,6 +1,6 @@
-scr_getinput();
-if (active == 1)
+if active
 {
+	scr_getinput();
 	obj_player.state = states.actor;
 	if !selectedxy
 	{

@@ -10,6 +10,6 @@ set_theme = -4
 hudx = -400
 if (x != obj_player.x)
 	image_xscale = -sign(x - obj_player.x);
-if x >= obj_player.x
+if x <= obj_player.x
 	hudx = global.cam_w + 400
 sprite_index = obj_player.spr_gummyharry_dead

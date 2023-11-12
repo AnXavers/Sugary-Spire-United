@@ -16,7 +16,7 @@ if (global.gamePauseState == 1 && !instance_exists(obj_pausefadeout))
 	draw_sprite(playerPauseSprite, global.panic, 686, 285);
 	shader_reset();
 	draw_set_font(global.font);
-	draw_set_halign(1);
+	draw_set_halign(fa_center);
 	draw_set_color(c_white);
 	var _x = 86;
 	var _y = 32;

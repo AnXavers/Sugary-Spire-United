@@ -4,7 +4,7 @@ if (state == 1)
 	var txt = hub_array[selected][1];
 	var yy = string_height(txt);
 	var length = array_length(hub_array);
-	draw_set_halign(1);
+	draw_set_halign(fa_center);
 	draw_set_font(global.font);
 	draw_text(480, 400 - (string_height(hub_choosing) / 2) + y_shk, hub_choosing);
 	if (!surface_exists(surface2))
@@ -30,7 +30,7 @@ else if (state == 2)
 	draw_sprite_tiled(bg_menuTile, -1, drawx++, drawy++);
 	draw_sprite(spr_elevator, selected, 464, 348);
 	draw_set_font(global.font);
-	draw_set_halign(1);
+	draw_set_halign(fa_center);
 	var msg = "GOING TO ";
 	if selected == 0
 		var hubmsg = "FLOOR 5"

@@ -56,7 +56,7 @@ if (showtext)
 {
 	ini_open(global.fileselect);
 	draw_set_font(global.smallfont);
-	draw_set_halign(1);
+	draw_set_halign(fa_center);
 	draw_set_color(c_white);
 	var _rank = ini_read_string("Ranks", string(level), 0);
 	var _rankspr = spr_null;
@@ -104,7 +104,7 @@ if (showtext)
 		if (_rank == "e")
 		{
 			draw_set_font(global.erankfont);
-			draw_set_halign(1);
+			draw_set_halign(fa_center);
 			draw_text(x - 55, y - 216, string_repeat("E", (ini_read_string("ERankLength", string(level), 1))))
 		}
 	}
@@ -114,7 +114,7 @@ if (showtext)
 		if (_rank == "e")
 		{
 			draw_set_font(global.erankfont);
-			draw_set_halign(1);
+			draw_set_halign(fa_center);
 			draw_text(x - 5, y - 216, string_repeat("E", (ini_read_string("ERankLength", string(level), 1))))
 		}
 	}

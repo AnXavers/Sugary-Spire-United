@@ -1,5 +1,5 @@
 //TO BE DELETED
-draw_set_halign(1);
+draw_set_halign(fa_center);
 draw_set_font(global.font);
 if (selected == 0)
 {

@@ -1,4 +1,4 @@
-draw_set_halign(1);
+draw_set_halign(fa_center);
 draw_set_font(global.font);
 draw_sprite_tiled(bg_options, 0, bgx, bgy);
 draw_sprite_ext(spr_arrow, -1, CursorX, CursorY + 24, 1, 1, 0, c_white, 1);

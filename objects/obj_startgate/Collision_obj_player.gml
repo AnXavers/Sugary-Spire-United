@@ -24,8 +24,7 @@ if (sprite_index != spr_exitgateclosed)
 		{
 			if (keyboard_lastkey == vk_escape)
 			{
-				with instance_create(x, y, obj_modifiermenu)
-					startgate = instance_nearest(x, y, obj_startgate)
+				instance_create(x, y, obj_modifiermenu)
 			}
 			else if (!instance_exists(obj_titlecard) && other.do_titlecard)
 			{

@@ -20,7 +20,7 @@ switch (color)
 		break;
 }
 draw_set_font(global.smallfont);
-draw_set_halign(1);
+draw_set_halign(fa_center);
 shader_reset();
 if (flash)
 {

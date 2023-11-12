@@ -1,6 +1,6 @@
 function scr_roomnames(argument0 = room)
 {
-	var room_name = "NO ROOMNAME FOUND-1265";
+	var room_name = "NO ROOMNAME FOUND";
 	switch (argument0)
 	{
 		case rm_missing:
@@ -449,7 +449,7 @@ function scr_roomnames(argument0 = room)
 			room_name = ""
 			break
 		default:
-			room_name = "NO ROOMNAME FOUND-1265"
+			room_name = "NO ROOMNAME FOUND"
 			break
 	}
 	return room_name;

@@ -8,25 +8,29 @@ function do_special()
 		if (buffer_exists(my_pal_buffer))
 			buffer_delete(my_pal_buffer);
 	}
-	else if (keyboard_check_pressed(vk_enter) && !typing)
+	if instance_exists(obj_online_client)
 	{
-		vsp = 0
-		hsp = 0
-		sprite_index = spr_winding
-		keyboard_string = ""
-		typing = 1
-	}
-	else if typing
-	{
-		hsp = 0
-		vsp = 0
-		sprite_index = spr_winding
-		msg = keyboard_string
-		if (keyboard_check_pressed(vk_enter))
+		if (keyboard_check_pressed(vk_enter) && !typing)
 		{
-			typing = 0
-			state = states.normal;
-			sprite_index = spr_idle
+			state = states.actor
+			vsp = 0
+			hsp = 0
+			sprite_index = spr_winding
+			keyboard_string = ""
+			typing = 1
+		}
+		else if typing
+		{
+			hsp = 0
+			vsp = 0
+			sprite_index = spr_winding
+			msg = keyboard_string
+			if (keyboard_check_pressed(vk_enter))
+			{
+				typing = 0
+				state = states.normal;
+				sprite_index = spr_idle
+			}
 		}
 	}
 }
