@@ -1,4 +1,4 @@
-if (active == 1 && obj_player.state != 150 && sprite_index != spr_honeypanel_regen)
+if (active == 1 && obj_player.state != states.rupertjump && sprite_index != spr_honeypanel_regen)
 	sprite_index = spr_honeypanel;
 if (sprite_index == spr_honeypanel_dissapear && animation_end())
 	sprite_index = spr_honeypanel_deactive;

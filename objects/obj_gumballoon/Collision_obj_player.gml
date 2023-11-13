@@ -1,2 +1,2 @@
-if (other.state != 147)
+if (other.state != states.gumballoon)
 	other.state = 147;

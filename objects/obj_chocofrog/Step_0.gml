@@ -50,12 +50,12 @@ with (obj_player)
 		with (other.id)
 			instance_destroy();
 	}
-	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.seacreamjump || state == states.gumballoon || state == states.seacreamstick))
+	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.rupertnormal || state == states.rupertslide || state == states.rupertjump))
 	{
 		with (other.id)
 			instance_destroy();
 	}
-	if ((place_meeting(x, y + vsp, other.id) || place_meeting(x, y + sign(vsp), other.id)) && (state == states.gumballoon || state == states.seacreamstick))
+	if ((place_meeting(x, y + vsp, other.id) || place_meeting(x, y + sign(vsp), other.id)) && (state == states.rupertslide || state == states.rupertjump))
 	{
 		with (other.id)
 			instance_destroy();

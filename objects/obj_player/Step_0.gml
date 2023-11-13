@@ -30,7 +30,7 @@ if (firetrailbuffer <= 0)
 		instance_create(x, y, obj_flamecloud);
 	firetrailbuffer = 100;
 }
-if (state != states.mach3 && state != 11 && state != 139 && state != 12)
+if (state != states.mach3 && state != 11 && state != states.climbceiling && state != 12)
 	mach4mode = false;
 if (room == realtitlescreen || room == rm_introVideo || room == scootercutsceneidk)
 	state = 2;
@@ -322,7 +322,7 @@ if (!ds_list_empty(sour_buddies))
 }
 if (state != 124)
 	ufomaxspeed = 0;
-if (obj_player.state != 144 && obj_player.state != 145 && obj_player.state != 146)
+if (obj_player.state != states.seacream && obj_player.state != states.seacreamjump && obj_player.state != states.seacreamstick)
 	additionalspeedvar = 0;
 if (keyboard_check_pressed(vk_pageup))
 	patternnumb++;

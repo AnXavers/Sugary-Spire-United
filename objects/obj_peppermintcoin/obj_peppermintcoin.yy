@@ -29,7 +29,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_peppermintcoin",
+    "path": "sprites/spr_peppermintcoin/spr_peppermintcoin.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

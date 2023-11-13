@@ -10,7 +10,7 @@ if (!global.freezeframe && place_meeting(x, y - 1, obj_player) && obj_player.gro
 			else if (hsp != 0)
 				xscale = sign(hsp);
 		}
-		if (state != 149)
+		if (state != states.rupertslide)
 			state = 58;
 		if (movespeed < 12)
 			movespeed = 12;

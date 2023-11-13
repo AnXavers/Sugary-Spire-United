@@ -1,2 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
+instance_destroy()
+scr_sound(sound_pizzacoin)
+ini_open(global.fileselect)
+var cointotal = (ini_read_real("Collects", "peppercoins", 0) + 1)
+ini_write_real("Collects", "cointotal", cointotal)
+scr_controlprompt("You have collected" + string(cointotal) + "peppermint coins!")
+ini_close()

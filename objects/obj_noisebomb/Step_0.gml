@@ -1,3 +1,4 @@
+scr_collision();
 hsp = lerp(hsp, 0 , 0.05)
 vsp += 0.3
 movespeed -= 0.5;

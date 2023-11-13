@@ -12,3 +12,4 @@ info =
 	featuringinfo: [0, 5, 6, 200, 350],
 	song: mu_swamp_title
 };
+depth = 200

@@ -1,11 +1,11 @@
-if (active && other.state != 149 && other.state != states.frozen && other.state != states.hurt && other.state != states.bump)
+if (active && other.state != states.rupertslide && other.state != states.frozen && other.state != states.hurt && other.state != states.bump)
 {
 	with (other)
 	{
 		if (state == states.climbwall)
 			state = states.mach2;
 		scr_taunt_storeVariables();
-		state = 149;
+		state = states.honey;
 		webID = other.id;
 	}
 }

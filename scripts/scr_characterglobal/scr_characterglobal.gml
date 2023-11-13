@@ -412,6 +412,7 @@ function scr_characterglobal()
 	spr_slipnslideend = spr_pizzelle_slipnslideend
 	spr_cottoncreator = spr_cottonmaker
 	spr_cotton_platform = spr_cottonplatform_tiled
+	spr_electrocuted = spr_pizzelle_electrocuted
 	if global.newplayeranim == 1
 	{
 		spr_mach1 = spr_pizzelle_mach1_new;
@@ -446,16 +447,15 @@ function scr_characterglobal()
 	else if global.newplayeranim == 3
 	{
 		spr_jump = spr_pizzelle_jump_classic;
-		spr_land = spr_pizzelle_land_classic
-		spr_land2 = spr_pizzelle_land2_classic
-		spr_Timesup = spr_pizzelle_timeup_classic
+		spr_land = spr_pizzelle_land_classic;
+		spr_land2 = spr_pizzelle_land2_classic;
+		spr_Timesup = spr_pizzelle_timeup_classic;
 		spr_mach2 = spr_pizzelle_mach2_classic;
-		spr_secondjump1 = spr_pizzelle_secondjump1_classic
-		spr_secondjump2 = spr_pizzelle_secondjump2_classic
+		spr_secondjump1 = spr_pizzelle_secondjump1_classic;
+		spr_secondjump2 = spr_pizzelle_secondjump2_classic;
 		spr_mach2jump = spr_pizzelle_mach2flip_classic;
-		spr_machpunch1 = spr_pizzelle_machpunch1_classic
-		spr_machpunch2 = spr_pizzelle_machpunch2_classic
-		spr_machslideboost = spr_pizzelle_machslideboost_classic
+		spr_machpunch1 = spr_pizzelle_machpunch1_classic;
+		spr_machpunch2 = spr_pizzelle_machpunch2_classic;
 		spr_mach3jump = spr_pizzelle_mach3jump_classic;
 		spr_blockbreak1 = spr_pizzelle_suplexmash1_classic;
 		spr_blockbreak2 = spr_pizzelle_suplexmash2_classic;
@@ -474,7 +474,7 @@ function scr_characterglobal()
 		spr_haulingstart = spr_pizzelle_haulingstart_classic;
 		spr_uppercutbegin = spr_pizzelle_uppercutbegin_classic;
 		spr_uppercutend = spr_pizzelle_uppercutend_classic;
-		spr_fireass = spr_pizzelle_fireass_classic
+		spr_fireass = spr_pizzelle_fireass_classic;
 	}
 	// fonts
 	font_lapcount = global.lapcountfont
@@ -576,11 +576,7 @@ function scr_characterglobal()
 			spr_machslide = spr_pizzano_crouchslide;
 			spr_machslideend = spr_pizzano_crouchslide;
 			spr_machslideboost = spr_pizzano_machslideboost;
-			spr_machslideboostFallStart = spr_pizzano_machslideboost;
-			spr_machslideboostFall = spr_pizzano_machslideboost;
 			spr_machslideboost3 = spr_pizzano_mach3boost;
-			spr_machslideboost3FallStart = spr_pizzano_mach3boost;
-			spr_machslideboost3Fall = spr_pizzano_mach3boost;
 			spr_land2 = spr_pizzano_land;
 			spr_shoulder = spr_pizzano_mach3shoulder;
 			spr_crouchslide = spr_pizzano_crouchslide;
@@ -1195,13 +1191,10 @@ function scr_characterglobal()
 			spr_machslideend = spr_noise_machslideend;
 			spr_grindrail = spr_noise_grind;
 			spr_machslideboost = spr_noise_machslideboost;
-			spr_machslideboostFallStart = spr_noise_machslideboost;
-			spr_machslideboostFall = spr_noise_machslideboost;
 			spr_machslideboost3 = spr_noise_mach3boost;
-			spr_machslideboost3FallStart = spr_noise_mach3boost;
-			spr_machslideboost3Fall = spr_noise_mach3boost;
-			spr_superjump_cancelgrounded = spr_noise_jetpackboost
-			spr_superjump_cancelgroundedmach4 = spr_noise_jetpackboost
+			spr_superjump_cancelmach4 = spr_noise_jetpackboost
+			spr_superjump_cancelgrounded = spr_noise_jetpackslide
+			spr_superjump_cancelgroundedmach4 = spr_noise_jetpackslide
 			spr_land2 = spr_noise_land2;
 			spr_punch = spr_noise_punch;
 			spr_backkick = spr_noise_backkick;
@@ -1480,11 +1473,7 @@ function scr_characterglobal()
 			spr_machslideend = spr_vigilante_machslideend;
 			spr_grindrail = spr_vigilante_tumble;
 			spr_machslideboost = spr_vigilante_mach2boost
-			spr_machslideboostFallStart = spr_vigilante_mach2boost;
-			spr_machslideboostFall = spr_vigilante_mach2boost;
 			spr_machslideboost3 = spr_vigilante_mach3boost;
-			spr_machslideboost3FallStart = spr_vigilante_mach3boost;
-			spr_machslideboost3Fall = spr_vigilante_mach3boost;
 			spr_land2 = spr_vigilante_land;
 			spr_stomp = spr_vigilante_stomp;
 			spr_stompprep = spr_vigilante_stompprep;

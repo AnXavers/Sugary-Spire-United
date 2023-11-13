@@ -64,7 +64,7 @@ function state_player_finishingblow()
 		global.hit++;
 		if (sprite_index == obj_player.spr_lungehit)
 		{
-			state = 154;
+			state = states.supergrab;
 			movespeed = -xscale * 8;
 			hsp = movespeed;
 			vsp = 0;
