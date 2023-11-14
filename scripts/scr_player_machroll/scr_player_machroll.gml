@@ -35,14 +35,14 @@ function state_player_machroll()
 				if (movespeed >= 12)
 					state = states.mach3;
 				else
-					state = 69;
+					state = states.mach2;
 			}
 			else if (movespeed > 6)
 			{
 				scr_sound(sound_break);
 				sprite_index = spr_machslidestart;
 				image_index = 0;
-				state = 71;
+				state = states.machslide;
 			}
 			else
 				state = 1;
@@ -51,13 +51,13 @@ function state_player_machroll()
 	if (key_jump && character == "N" && grounded)
 	{
 		sprite_index = spr_twirl;
-		state = 119;
+		state = states.pizzano_twirl;
 		vsp = -12;
 	}
 	if (key_jump && sprite_index == spr_dive)
 	{
 		image_index = 0;
-		state = 53;
+		state = states.freefallprep;
 		sprite_index = spr_bombdropstart;
 		vsp = -6;
 		if (global.treat)
@@ -69,7 +69,7 @@ function state_player_machroll()
 	}
 	if (scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles) && !(place_meeting(x + xscale, y, obj_metalblock) && sprite_index != spr_crouchslip && movespeed >= 12))
 	{
-		state = 72;
+		state = states.bump;
 		image_index = 0;
 		sprite_index = spr_splat;
 	}

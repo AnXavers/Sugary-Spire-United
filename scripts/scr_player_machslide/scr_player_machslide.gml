@@ -46,7 +46,7 @@ function state_player_machslide()
 		}
 		if (scr_solid(x + xscale, y, true))
 		{
-			state = 72;
+			state = states.bump;
 			movespeed = 0;
 			image_index = 0;
 			sprite_index = spr_splat;
@@ -58,7 +58,7 @@ function state_player_machslide()
 		image_index = 0;
 		xscale *= -1;
 		movespeed = 8;
-		state = 69;
+		state = states.mach2;
 		instance_create(x, y, obj_jumpdust);
 	}
 	if (grounded && ((animation_end() && sprite_index == spr_machslideboost3) || (sprite_index == spr_machslideboost3FallStart || sprite_index == spr_machslideboost3Fall)))

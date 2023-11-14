@@ -30,7 +30,7 @@ output = function()
 					}
 				}
 			}
-			state = 72;
+			state = states.bump;
 		}
 	}
 	else

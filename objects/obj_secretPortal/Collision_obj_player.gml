@@ -1,6 +1,6 @@
 if (secretActivated && !place_meeting(x, y, obj_secretPortalexit))
 {
-	if (other.state != 110 && sprite_index == spr_secretPortal && ds_list_find_index(global.saveroom, id) == -1)
+	if (other.state != states.actor && sprite_index == spr_secretPortal && ds_list_find_index(global.saveroom, id) == -1)
 	{
 		var _cutscene = cutscene_create([cutscene_secretPortal_start, cutscene_secretPortal_middle, cutscene_secretPortal_preend, cutscene_secretPortal_end]);
 		cutscene_declare_actor(id, "SECRETPORTAL");

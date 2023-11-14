@@ -8,11 +8,11 @@ function state_player_bottlerocket()
 		movespeed = approach(movespeed, 0, 0.5);
 		hsp = xscale * movespeed;
 		if (!grounded)
-			substate = 0;
+			substate = substates.unknown_0;
 		if (movespeed <= 0)
 		{
 			xscale *= -1;
-			substate = 0;
+			substate = substates.unknown_0;
 			sprite_index = spr_bottlerocket_grounded;
 			movespeed = 12;
 		}
@@ -33,7 +33,7 @@ function state_player_bottlerocket()
 			{
 				if (grounded)
 				{
-					substate = 1;
+					substate = substates.unknown_1;
 					sprite_index = spr_bottlerocket_turn;
 					image_index = 0;
 				}
@@ -44,7 +44,7 @@ function state_player_bottlerocket()
 				movespeed = approach(movespeed, 12, 0.2);
 			if (key_jump)
 			{
-				state = 69;
+				state = states.mach2;
 				vsp = -15;
 				image_index = 0;
 				sprite_index = spr_mach2jump;
@@ -76,7 +76,7 @@ function state_player_bottlerocket()
 			mach2 = 0;
 			grounded = 0;
 			sprite_index = spr_slipnslidestart;
-			state = 95;
+			state = states.puddle;
 		}
 	}
 }

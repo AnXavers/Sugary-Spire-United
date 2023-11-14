@@ -16,9 +16,9 @@ if (place_meeting(x, y, obj_exitgate) && state == states.comingoutdoor)
 		global.playhour = 0;
 	}
 }
-if (state != 62)
+if (state != states.comingoutdoor)
 	image_blend = make_color_hsv(0, 0, 255);
-if (state != 69 && state != states.mach3 && state != 12)
+if (state != states.mach2 && state != states.mach3 && state != 12)
 	upsideDownJump = false;
 if (!instance_exists(obj_heataftereffect))
 	instance_create(x, y, obj_heataftereffect);
@@ -38,7 +38,7 @@ if (grounded)
 	groundedcot = 1;
 if (y > (room_height + 400))
 	scr_playerrespawn();
-if (state != 74 && state != 53 && state != 75 && state != states.superslam)
+if (state != states.freefall && state != states.freefallprep && state != states.freefallland && state != states.superslam)
 	freefallsmash = 0;
 if (!global.freezeframe && state != 0)
 {
@@ -120,32 +120,32 @@ else
 	instakillmove = 0;
 if (flash == 1 && alarm[0] <= 0)
 	alarm[0] = 0.15 * room_speed;
-if (state != states.mach3 && state != 71)
+if (state != states.mach3 && state != states.machslide)
 	autodash = 0;
-if ((state != 60 && state != 66 && state != 4) || vsp < 0)
+if ((state != states.jump && state != states.crouchjump && state != 4) || vsp < 0)
 	fallinganimation = 0;
-if (state != 75 && state != 1 && state != 71)
+if (state != states.freefallland && state != 1 && state != states.machslide)
 	facehurt = 0;
-if (state != 1 && state != 71)
+if (state != 1 && state != states.machslide)
 	machslideAnim = 0;
 if (state != 1)
 {
 	idle = 0;
 	dashdust = 0;
 }
-if (state != 68 && state != 60 && state != 3 && state != 17 && state != 1 && state != 69 && state != states.mach3 && state != 53 && state != 19 && state != states.shotgun && state != 13 && state != 88 && state != 98)
+if (state != states.mach1 && state != states.jump && state != 3 && state != 17 && state != 1 && state != states.mach2 && state != states.mach3 && state != states.freefallprep && state != 19 && state != states.shotgun && state != 13 && state != states.cotton && state != states.cottonroll)
 	momemtum = 0;
-if (state != 63 && state != 64)
+if (state != states.Sjump && state != states.Sjumpprep)
 	a = 0;
 if (state != states.facestomp)
 	facestompAnim = 0;
-if (state != 74 && state != states.facestomp && state != states.superslam && state != 75)
+if (state != states.freefall && state != states.facestomp && state != states.superslam && state != states.freefallland)
 	superslam = 0;
-if (state != 69)
+if (state != states.mach2)
 	machpunchAnim = 0;
-if (state != 60)
+if (state != states.jump)
 	ladderbuffer = 0;
-if (state != 60)
+if (state != states.jump)
 	stompAnim = 0;
 if (toomuchalarm1 > 0)
 	toomuchalarm1--;
@@ -161,13 +161,13 @@ if (state == states.mach3 || state == 3 || state == states.mach2 || state == 5 |
 }
 else
 	mach_aftimg = 0;
-if (state != 72 && state != 98 && state != 65 && state != 9 && state != states.pistol && state != 96 && sprite_index != spr_crouchshoot && sprite_index != spr_skatecrouch && state != 64 && state != states.chainsaw && state != states.machroll && state != 73 && state != 67 && state != 66 && sprite_index != spr_pizzano_crouchslide)
+if (state != states.bump && state != states.cottonroll && state != states.crouch && state != 9 && state != states.pistol && state != states.tumble && sprite_index != spr_crouchshoot && sprite_index != spr_skatecrouch && state != states.Sjumpprep && state != states.chainsaw && state != states.machroll && state != states.hurt && state != states.crouchslide && state != states.crouchjump && sprite_index != spr_pizzano_crouchslide)
 	mask_index = obj_player.spr_mask;
 else
 	mask_index = spr_crouchmask;
-if (state != 73)
+if (state != states.hurt)
 	hurtsound = mu_entryway_title;
-if (((place_meeting(x, y, obj_door) && !place_meeting(x, y, obj_doorblocked)) || (place_meeting(x, y, obj_startgate) && state != 61) || place_meeting(x, y, obj_janitorDoor) || place_meeting(x, y, obj_keydoorclock) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && (global.panic == 1 && room != sucrose_1))) && !instance_exists(obj_uparrow) && scr_solid(x, y + 1) && state == states.normal)
+if (((place_meeting(x, y, obj_door) && !place_meeting(x, y, obj_doorblocked)) || (place_meeting(x, y, obj_startgate) && state != states.victory) || place_meeting(x, y, obj_janitorDoor) || place_meeting(x, y, obj_keydoorclock) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && (global.panic == 1 && room != sucrose_1))) && !instance_exists(obj_uparrow) && scr_solid(x, y + 1) && state == states.normal)
 	instance_create(x, y, obj_uparrow);
 if (((state == states.mach2 && sprite_index != spr_mach1) || state == states.mach3) && !instance_exists(obj_speedlines))
 	instance_create(x, y, obj_speedlines, 
@@ -186,11 +186,11 @@ if (state == states.pizzano_kungfu)
 }
 else
 	blue_aftimg = 0;
-if (state != 45)
+if (state != states.backbreaker)
 {
 	if (global.combo >= 3 && supertauntbuffer < 500 && supertauntcharged == 0)
 		supertauntbuffer++;
-	if (supertauntbuffer >= 500 && supertauntcharged == 0 && state != 45)
+	if (supertauntbuffer >= 500 && supertauntcharged == 0 && state != states.backbreaker)
 	{
 		scr_sound(sound_gotsupertaunt);
 		supertauntbuffer = 500;
@@ -224,7 +224,7 @@ if (place_meeting(x, y + 1, obj_molassesGround))
 	if (state == 11 && vsp < 0)
 		state = 1;
 	if (state == states.frostburnwallrun && vsp < 0)
-		state = 140;
+		state = states.frostburn;
 	if (vsp < 0 && grounded)
 	{
 		vsp /= 2;
@@ -250,11 +250,11 @@ slideHsp = approach(slideHsp, 0, 0.15);
 slideHsp = clamp(abs(slideHsp), 0, 3) * sign(slideHsp);
 if (state == states.climbceiling || state == 12 || state == 11)
 	slideHsp = 0;
-if (state != 92)
+if (state != states.bushdisguise)
 	bushdetection = 0;
-if (state != 65)
+if (state != states.crouch)
 	crouchjumptimer = 0;
-if (state != 107 && state != 0)
+if (state != states.pizzano_pummel && state != 0)
 {
 	pummelhit = 0;
 	pummelfinish = 0;
@@ -284,11 +284,11 @@ if (surface_exists(surf_pallete) && paletteselect >= (array_length(my_palettes) 
 	custompalette = true;
 else if (paletteselect < (sprite_get_width(spr_palette) - 1))
 	custompalette = false;
-if (state != 115 && state != 0)
+if (state != states.coneboy_inhale115 && state != 0)
 	inhalestrength = 0;
 if (kungaircount == 1)
 	kungairtime++;
-if (state != 106 && state != 0)
+if (state != states.pizzano_kungfu && state != 0)
 {
 	kungaircount = 0;
 	kungairtime = 0;
@@ -320,7 +320,7 @@ if (!ds_list_empty(sour_buddies))
 		sour_buddies_timer = irandom_range(5, 25);
 	}
 }
-if (state != 124)
+if (state != states.ufodashOLD)
 	ufomaxspeed = 0;
 if (obj_player.state != states.seacream && obj_player.state != states.seacreamjump && obj_player.state != states.seacreamstick)
 	additionalspeedvar = 0;

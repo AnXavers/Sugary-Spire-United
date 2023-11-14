@@ -94,7 +94,7 @@ function state_player_ladder()
 		sprite_index = spr_jump;
 		ladderbuffer = 20;
 		jumpAnim = 1;
-		state = 60;
+		state = states.jump;
 		vsp = -9;
 		image_index = 0;
 	}

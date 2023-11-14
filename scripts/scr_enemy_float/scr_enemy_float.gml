@@ -55,7 +55,7 @@ function scr_enemy_float()
 				sprite_index = spr_snowclouddiveboil;
 			if (grounded)
 			{
-				substate = 0;
+				substate = substates.unknown_0;
 				sprite_index = spr_snowcloudwalk;
 			}
 		}

@@ -10,7 +10,7 @@ function scr_enemy_slugparry()
 		image_speed = 0.35;
 		if (animation_end())
 		{
-			substate = 0;
+			substate = substates.unknown_0;
 			bombreset = 100;
 			state = 3;
 			sprite_index = spr_meloncoolwalk;
@@ -25,7 +25,7 @@ function scr_enemy_slugparry()
 		taunttimer--;
 		if (taunttimer <= 0)
 		{
-			substate = 0;
+			substate = substates.unknown_0;
 			bombreset = 100;
 			state = 3;
 			sprite_index = spr_meloncoolwalk;

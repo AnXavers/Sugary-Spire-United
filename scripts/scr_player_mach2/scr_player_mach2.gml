@@ -20,7 +20,7 @@ function state_player_mach2()
 		case "G":
 			if (key_jump && grounded)
 			{
-				state = 119;
+				state = states.pizzano_twirl;
 				sprite_index = spr_twirl;
 				vsp = -12;
 			}
@@ -97,14 +97,14 @@ function state_player_mach2()
 			scr_sound(sound_break);
 			sprite_index = spr_machslidestart;
 			image_index = 0;
-			state = 71;
+			state = states.machslide;
 		}
 		if (move == -xscale && grounded)
 		{
 			scr_sound(sound_maximumspeedstop);
 			sprite_index = spr_machslideboost;
 			image_index = 0;
-			state = 71;
+			state = states.machslide;
 		}
 	}
 	else if (movespeed < 8)
@@ -162,7 +162,7 @@ function state_player_mach2()
 				state = 1;
 			else
 			{
-				state = 72;
+				state = states.bump;
 				image_index = 0;
 				sprite_index = spr_splat;
 			}
@@ -172,7 +172,7 @@ function state_player_mach2()
 	if (key_shoot2 && global.treat)
 	{
 		vsp = -5;
-		state = 137;
+		state = states.donut;
 		image_index = 0;
 		sprite_index = spr_throwDonut;
 		with (instance_create(x, y + 16, obj_donutThrowable))
@@ -229,7 +229,7 @@ function state_player_mach2()
 		flash = 1;
 		alarm[0] = 240;
 		image_index = 0;
-		state = 63;
+		state = states.Sjump;
 		sprite_index = spr_superjumpprep;
 	}
 }

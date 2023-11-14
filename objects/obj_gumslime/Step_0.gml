@@ -34,7 +34,7 @@ if (bombreset > 0)
 	bombreset--;
 if (ragereset > 0)
 	ragereset--;
-if (point_in_rectangle(obj_player.x, obj_player.y, x - 200, y - 50, x + 200, y + 50) && obj_player.state != 77 && obj_player.state != 62)
+if (point_in_rectangle(obj_player.x, obj_player.y, x - 200, y - 50, x + 200, y + 50) && obj_player.state != states.door && obj_player.state != states.comingoutdoor)
 {
 	if (state != 7 && state == 3 && use_heat() && bombreset <= 0)
 	{

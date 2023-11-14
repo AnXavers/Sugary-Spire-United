@@ -3,7 +3,7 @@ function cutscene_rosetteMines_prestart()
 	var finished = false;
 	with (obj_player)
 	{
-		state = 110;
+		state = states.actor;
 		image_speed = 0.35;
 		if (grounded)
 		{

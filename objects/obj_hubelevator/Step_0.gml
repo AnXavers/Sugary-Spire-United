@@ -21,7 +21,7 @@ switch state
 				if (hub_array[selected][0] != room)
 				{
 					alarm[0] = 180
-					state = (2 << 0)
+					state = 2
 					scr_sound(sound_enemythrow);
 					scr_sound(sfx_elevator_ding);
 					with (obj_player)
@@ -33,9 +33,9 @@ switch state
 				}
 				else
 				{
-					state = (0 << 0)
+					state = 0
 					with (obj_player)
-						state = (1 << 0)
+						state = 1
 				}
 			}
 		}

@@ -19,7 +19,7 @@ function cutscene_end_player()
 }
 function cutscene_start_player()
 {
-	obj_player.state = 110;
+	obj_player.state = states.actor;
 	obj_player.hsp = 0;
 	obj_player.vsp = 0;
 	obj_player.sprite_index = obj_player.spr_idle;

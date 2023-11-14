@@ -7,7 +7,7 @@ if (place_meeting(x, y - 1, obj_player))
 			hsp = 0;
 			vsp = 0;
 			y += 5;
-			state = 59;
+			state = states.ladder;
 			x = other.x + (other.sprite_width / 2);
 			y = round(y);
 			if ((y % 2) == 1)

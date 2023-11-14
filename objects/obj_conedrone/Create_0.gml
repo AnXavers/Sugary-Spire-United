@@ -37,5 +37,5 @@ grounded = 1;
 birdcreated = 0;
 boundbox = 0;
 idletimer = 200;
-substate = 0;
+substate = substates.unknown_0;
 spr_palette = spr_thundercloud_pal;

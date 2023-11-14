@@ -29,7 +29,7 @@ else
 		if (dist > 1500)
 			dist = 1500
 		var dir = point_direction(obj_player.x, obj_player.y, x, y)
-		create_afterimage((7 << 0))
+		create_afterimage(7)
 		x = (obj_player.x + lengthdir_x(dist, dir))
 		y = (obj_player.y + lengthdir_y(dist, dir))
 		if (movespd < 11)
@@ -43,7 +43,7 @@ else
 		if instance_exists(obj_coneball)
 		{
 			dir = point_direction(x, y, obj_coneball.x, obj_coneball.y)
-			create_afterimage((7 << 0))
+			create_afterimage(7)
 			x = approach(x, obj_coneball.x, lengthdir_x(movespd, dir))
 			y = approach(y, obj_coneball.y, lengthdir_y(movespd, dir))
 			obj_player.x = x

@@ -1,1 +1,1 @@
-other.state = 144;
+other.state = states.seacream;

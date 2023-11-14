@@ -5,9 +5,9 @@ if (!place_meeting(x, y, obj_geyserstop) && geysertimer > 0)
 }
 with (instance_place(x, y, obj_player))
 {
-	if (state != 109 && state != 99 && other.geysertimer > 0)
+	if (state != states.geyser && state != states.fling && other.geysertimer > 0)
 	{
-		state = 109;
+		state = states.geyser;
 		vsp = -8;
 		movespeed = 8;
 	}

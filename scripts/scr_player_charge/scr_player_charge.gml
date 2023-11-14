@@ -27,7 +27,7 @@ function state_player_charge()
 	if (key_slap2)
 	{
 		sprite_index = spr_swingdingend;
-		state = 87;
+		state = states.finishingblow;
 		image_index = 0;
 		movespeed /= 2;
 	}

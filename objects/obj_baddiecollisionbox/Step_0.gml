@@ -7,7 +7,7 @@ if (instance_exists(baddieID))
 	y = baddieID.y;
 	image_xscale = baddieID.image_xscale;
 }
-if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj_player) && obj_player.cutscene == 0 && obj_player.state != 73)
+if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj_player) && obj_player.cutscene == 0 && obj_player.state != states.hurt)
 {
 	if (baddieID.state != 8)
 	{
@@ -47,7 +47,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
             sprite_index = spr_mach3hit
         image_index = 0
     }
-				if (!grounded && state != 74 && key_jump2)
+				if (!grounded && state != states.freefall && key_jump2)
 				{
 					suplexmove = 0;
 					vsp = -11;
@@ -164,7 +164,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				other.baddieID.state = 6;
 				image_index = 0;
 				sprite_index = spr_canehit;
-				state = 57;
+				state = states.tackle;
 				if (other.baddieID.hp == 0 && other.baddieID.object_index != obj_boss)
 				{
 					instance_destroy(other.id);
@@ -200,7 +200,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				other.baddieID.stunned = 200;
 				other.baddieID.state = 6;
 				bID.invtime = 5;
-				if (!grounded && state != 74 && key_jump2)
+				if (!grounded && state != states.freefall && key_jump2)
 				{
 					suplexmove = 0;
 					sprite_index = spr_mach2jump;
@@ -247,7 +247,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				other.baddieID.stunned = 200;
 				other.baddieID.state = 6;
 			}
-			if (instance_exists(other.baddieID) && !other.baddieID.throw_hit && other.baddieID.state != 1 && attacking == 0 && state != 57 && state != 73 && !y < other.baddieID.y && !y > other.baddieID.y && grabbing == 0 && other.baddieID.state != 6 && state != 17 && state != 3)
+			if (instance_exists(other.baddieID) && !other.baddieID.throw_hit && other.baddieID.state != 1 && attacking == 0 && state != states.tackle && state != states.hurt && !y < other.baddieID.y && !y > other.baddieID.y && grabbing == 0 && other.baddieID.state != 6 && state != 17 && state != 3)
 			{
 				if (x != other.baddieID.x)
 				{
@@ -269,7 +269,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 					other.baddieID.state = 6;
 				}
 				image_index = 0;
-				state = 72;
+				state = states.bump;
 				if (other.baddieID.state == states.tumble)
 					other.baddieID.state = 6;
 			}

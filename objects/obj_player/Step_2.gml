@@ -2,5 +2,5 @@ if (flash == 1 && alarm[11] <= 0)
 	alarm[11] = 5;
 image_xscale = xscale;
 hspCarry += slideHsp;
-if (state != 2 && state != 126 && state != 128 && state != 77 && state != 63 && state != 62 && state != 55 && state != 56 && state != 61 && state != 14 && state != states.timesup && state != 18 && state != 51 && state != 77)
+if (state != 2 && state != states.hooks && state != states.noclip && state != states.door && state != states.Sjump && state != states.comingoutdoor && state != states.boulder && state != states.keyget && state != states.victory && state != 14 && state != states.timesup && state != 18 && state != states.gameover && state != states.door)
 	scr_collision();

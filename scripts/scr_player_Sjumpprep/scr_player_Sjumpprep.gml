@@ -59,7 +59,7 @@ function state_player_Sjumpprep()
 		scr_sound(sound_superjumprelease);
 		instance_create(x, y, obj_explosioneffect);
 		sprite_index = spr_superjump;
-		state = 63;
+		state = states.Sjump;
 		vsp = -12;
 		movespeed = 12;
 		Sjumpcan_doublejump = false;

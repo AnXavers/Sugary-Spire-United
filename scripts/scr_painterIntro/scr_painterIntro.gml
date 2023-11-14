@@ -2,7 +2,7 @@ function cutscene_painter_start()
 {
 	with (obj_player)
 	{
-		state = 110;
+		state = states.actor;
 		x = 192;
 		y = 544;
 		grav = 0.5;
@@ -57,7 +57,7 @@ function cutscene_player_land()
 {
 	var _finish = 0;
 	obj_player.vsp = approach(obj_player.vsp, 12, 0.35);
-	obj_player.state = 110;
+	obj_player.state = states.actor;
 	obj_painter.image_speed = 0.35;
 	obj_player.image_speed = 0.35;
 	with (obj_player)

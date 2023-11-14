@@ -29,9 +29,9 @@ if (boundbox == 0 && state != 14)
 }
 if (bombreset > 0)
 	bombreset--;
-if (((obj_player.x > (x - 50) && obj_player.x < (x + 50)) && (y <= (obj_player.y + 300) && y >= (obj_player.y - 300))) && obj_player.state != 88 && obj_player.state != 97 && obj_player.state != 77 && obj_player.state != 98 && obj_player.state != 112)
+if (((obj_player.x > (x - 50) && obj_player.x < (x + 50)) && (y <= (obj_player.y + 300) && y >= (obj_player.y - 300))) && obj_player.state != states.cotton && obj_player.state != states.cottondrill && obj_player.state != states.door && obj_player.state != states.cottonroll && obj_player.state != states.changing)
 {
-	if (state != 7 && bombreset <= 0 && obj_player.state != 88)
+	if (state != 7 && bombreset <= 0 && obj_player.state != states.cotton)
 	{
 		if (state == 22)
 		{

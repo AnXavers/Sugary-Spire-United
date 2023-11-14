@@ -33,7 +33,7 @@ camera_set_view_angle(view_camera[0], cam_angle + camera_get_view_angle(view_cam
 var vw = global.cam_w * cam_zoom;
 var vh = global.cam_h * cam_zoom;
 camera_set_view_size(view_camera[0], vw, vh);
-if (instance_exists(obj_player) && (obj_player.state != states.timesup && obj_player.state != 51))
+if (instance_exists(obj_player) && (obj_player.state != states.timesup && obj_player.state != states.gameover))
 {
 	global.targetCamX = obj_player.x;
 	global.targetCamY = obj_player.y - 32;

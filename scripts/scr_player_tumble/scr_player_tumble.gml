@@ -16,7 +16,7 @@ function state_player_tumble()
 		scr_sound(sound_tumbleend);
 		scr_sound(sound_bump);
 		sprite_index = spr_tumbleend;
-		state = 72;
+		state = states.bump;
 		landAnim = 0;
 		sprite_index = spr_tumbleend;
 		image_index = 0;

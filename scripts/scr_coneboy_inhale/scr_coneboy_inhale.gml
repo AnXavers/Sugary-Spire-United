@@ -10,7 +10,7 @@ function scr_coneboy_inhale() //gml_Script_scr_coneboy_inhale
 		sprite_index = spr_coneboy_inhaling
 		if ((!key_attack) || inhalingenemy == 1)
 		{
-			state = (1 << 0)
+			state = 1
 			inhaling = 0
 		}
 		inhalestrength = (gamepad_button_value(0, gp_shoulderlb) * 20)
@@ -35,7 +35,7 @@ function scr_coneboy_inhale() //gml_Script_scr_coneboy_inhale
 		hsp = (xscale * movespeed)
 		if (!key_attack)
 		{
-			state = (1 << 0)
+			state = 1
 			sprite_index = spr_coneboy_idle
 		}
 		if ((!key_jump2) && jumpstop == 0 && vsp < 0.5)

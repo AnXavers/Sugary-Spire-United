@@ -6,7 +6,7 @@ function scr_enemy_inhaled()
 	y += lengthdir_y(3, angle);
 	sprite_index = grabbedspr;
 	grav = 0;
-	if (obj_player.state != 115)
+	if (obj_player.state != states.coneboy_inhale115)
 	{
 		state = 6;
 		grav = 0.35;

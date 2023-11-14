@@ -14,7 +14,7 @@ function state_player_drown()
 		sprite_index = spr_drown_jump;
 		instance_create(x, y, obj_highjumpcloud2);
 		vsp = -12;
-		state = 60;
+		state = states.jump;
 		image_index = 0;
 	}
 	image_speed = 0.35;

@@ -24,13 +24,13 @@ function state_player_shotgunjump()
 	if (sprite_index == spr_player_shotgunjump2 && floor(image_index) == (image_number - 1))
 	{
 		mach2 = 50;
-		state = 69;
+		state = states.mach2;
 	}
 	if (grounded && input_buffer_jump < 5 && !key_down && vsp > 0)
 	{
 		stompAnim = 0;
 		vsp = -9;
-		state = 60;
+		state = states.jump;
 		jumpAnim = 1;
 		jumpstop = 0;
 		image_index = 0;

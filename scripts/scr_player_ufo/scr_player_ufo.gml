@@ -114,7 +114,7 @@ function state_player_ufodash()
 	}
 	create_afterimage(irandom_range(1, 2), xscale);
 	if (animation_end() && sprite_index == spr_ufoFloatSpeedUp)
-		state = 48;
+		state = states.ufofloat;
 	image_speed = 0.5;
 	exit;
 }

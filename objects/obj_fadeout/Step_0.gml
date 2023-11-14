@@ -19,11 +19,11 @@ if (instance_exists(obj_player))
 	{
 		if (other.fadein == 1 && (state == states.door || state == states.victory) && (place_meeting(x, y, par_door) || place_meeting(x, y, obj_startgate)))
 		{
-			state = 62;
+			state = states.comingoutdoor;
 			image_index = 0;
 		}
 		if (other.fadein == 1 && state == states.door && (sprite_index == spr_downpizzabox || sprite_index == spr_uppizzabox))
-			state = 66;
+			state = states.crouchjump;
 	}
 }
 if (fadein == 1 && fadealpha < 0)

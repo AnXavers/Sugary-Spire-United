@@ -1,6 +1,6 @@
 function scr_hurtplayer(argument0 = obj_player)
 {
-	if (!global.freezeframe && argument0.state != 110 && argument0.state != 93 && argument0.state != 73)
+	if (!global.freezeframe && argument0.state != states.actor && argument0.state != states.parry && argument0.state != states.hurt)
 	{
 		with (argument0)
 		{
@@ -16,7 +16,7 @@ function scr_hurtplayer(argument0 = obj_player)
 			else if (state == states.minecart)
 			{
 				sprite_index = spr_mach3hitwall;
-				state = 72;
+				state = states.bump;
 				hsp = 2.5 * xscale;
 				vsp = -3;
 				mach2 = 0;
@@ -47,11 +47,11 @@ function scr_hurtplayer(argument0 = obj_player)
 			}
 			else
 			{
-				if (state != 73 && state != 45 && hurted == 0 && cutscene == 0 && state != 72 && state != 96)
+				if (state != states.hurt && state != states.backbreaker && hurted == 0 && cutscene == 0 && state != states.bump && state != states.tumble)
 				{
 					scr_sound(sound_touchspike);
 					global.hurtcounter++;
-					state = 73;
+					state = states.hurt;
 					alarm[8] = 60;
 					alarm[7] = 120;
 					hurted = 1;

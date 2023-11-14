@@ -5,7 +5,7 @@ with obj_player
 		vsp = 5;
 		xscale = 1;
 		movespeed = 11;
-		state = 45;
+		state = states.backbreaker;
 		sprite_index = spr_machfreefall;
 	}
 }

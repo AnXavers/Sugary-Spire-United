@@ -57,7 +57,7 @@ function state_player_Sjump()
 			}
 		}
 		image_index = 0;
-		state = 52;
+		state = states.Sjumpland;
 		machhitAnim = 0;
 		movespeed = 0;
 	}
@@ -92,7 +92,7 @@ function state_player_Sjump()
 		movespeed = 0;
 		vsp = 0;
 		mach2 = 0;
-		state = 104;
+		state = states.pizzano_rocketfist;
 	}
 	image_speed = 0.5;
 	scr_collision();

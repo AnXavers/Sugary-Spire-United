@@ -2,7 +2,7 @@ if (sprite_index != spr_exitgateclosed)
 {
 	with (other)
 	{
-		if (key_up && grounded && (state == states.normal || state == states.mach1 || state == states.mach2 || state == states.mach3) && !instance_exists(obj_fadeout) && state != 61 && state != 62)
+		if (key_up && grounded && (state == states.normal || state == states.mach1 || state == states.mach2 || state == states.mach3) && !instance_exists(obj_fadeout) && state != states.victory && state != states.comingoutdoor)
 		{
 			global.levelname = other.level;
 			scr_levelstart(global.levelname, other.targetRoom);
@@ -14,7 +14,7 @@ if (sprite_index != spr_exitgateclosed)
 			obj_camera.chargecamera = 0;
 			image_index = 0;
 			sprite_index = spr_entergate;
-			state = 61;
+			state = states.victory;
 			targetDoor = other.targetDoor;
 			targetRoom = other.targetRoom;
 			ds_queue_clear(global.newhudmessage);

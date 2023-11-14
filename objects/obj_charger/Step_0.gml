@@ -36,7 +36,7 @@ if (x != targetplayer.x && grounded)
 		if (state == 3)
 		{
 			state = 1;
-			substate = 0;
+			substate = substates.unknown_0;
 			movespeed = 0;
 			image_xscale = -sign(x - obj_player.x);
 			sprite_index = spr_banana_chargestart;

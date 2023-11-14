@@ -14,7 +14,7 @@ if (obj_player.state == 17 && place_meeting(x, y, obj_player))
 			sprite_index = spr_faucetpull;
 			suplexdashtimer = 7;
 			image_index = 0;
-			state = 57;
+			state = states.tackle;
 			movespeed = 0.1;
 			vsp = -3;
 			with (other.id)

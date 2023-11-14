@@ -51,7 +51,7 @@ function state_player_climbwall()
 	{
 		movespeed = 0;
 		vsp /= 2;
-		state = 60;
+		state = states.jump;
 		sprite_index = spr_fall;
 		slideHsp = -9 * xscale;
 	}
@@ -63,7 +63,7 @@ function state_player_climbwall()
 			verticalMovespeed = 6;
 		if (verticalMovespeed < 12)
 		{
-			state = 69;
+			state = states.mach2;
 			movespeed = verticalMovespeed;
 		}
 		else if (verticalMovespeed >= 12)
@@ -78,7 +78,7 @@ function state_player_climbwall()
 		sprite_index = spr_ceilingcrash;
 		scr_sound(sound_maximumspeedland);
 		image_index = 0;
-		state = 52;
+		state = states.Sjumpland;
 		machhitAnim = 0;
 		with (obj_camera)
 		{
@@ -88,7 +88,7 @@ function state_player_climbwall()
 	}
 	else if (scr_solid(x, y - 1, true) && vsp <= 0 && !place_meeting(x, y - 1, obj_destructibles))
 	{
-		state = 139;
+		state = states.climbceiling;
 		vsp = -1;
 		if (verticalMovespeed < 6)
 			verticalMovespeed = 6;
@@ -121,7 +121,7 @@ function state_player_climbwall()
 			sprite_index = spr_walljumpstart;
 			vsp = -9;
 			jumpstop = false;
-			state = 69;
+			state = states.mach2;
 			xscale *= -1;
 		}
 		else
@@ -132,7 +132,7 @@ function state_player_climbwall()
 			movespeed = clamp(movespeed, 6, 10);
 			jumpstop = false;
 			vsp = -9;
-			state = 69;
+			state = states.mach2;
 			xscale *= -1;
 			with (instance_create(x + (16 * -xscale), y + 43, obj_debris))
 			{
@@ -149,7 +149,7 @@ function state_player_climbwall()
 	}
 	if (grounded && verticalMovespeed < 0)
 	{
-		state = 60;
+		state = states.jump;
 		sprite_index = spr_fall;
 		vsp = -verticalMovespeed;
 	}
@@ -186,7 +186,7 @@ function state_player_climbceiling()
 		vsp = 0;
 		xscale *= -1;
 		if (movespeed < 12)
-			state = 69;
+			state = states.mach2;
 		else if (movespeed >= 12)
 		{
 			state = states.mach3;
@@ -203,14 +203,14 @@ function state_player_climbceiling()
 			scr_sound(sound_maximumspeedstop);
 			sprite_index = spr_machslideboost;
 			image_index = 0;
-			state = 71;
+			state = states.machslide;
 		}
 		else
 		{
 			scr_sound(sound_maximumspeedstop);
 			sprite_index = spr_machslideboost3;
 			flash = 0;
-			state = 71;
+			state = states.machslide;
 			image_index = 0;
 			mach2 = 100;
 		}
@@ -223,7 +223,7 @@ function state_player_climbceiling()
 		scr_sound(sound_break);
 		sprite_index = spr_machslidestart;
 		image_index = 0;
-		state = 71;
+		state = states.machslide;
 	}
 	if (place_meeting_slope(x, y - 1) && scr_solid(x - xscale, y, true) && !place_meeting(x - xscale, y, obj_destructibles) && !(place_meeting(x - xscale, y, obj_metalblock) && movespeed >= 12))
 	{
@@ -252,7 +252,7 @@ function state_player_climbceiling()
 		flash = 0;
 		combo = 0;
 		sprite_index = spr_mach3hitwall;
-		state = 72;
+		state = states.bump;
 		hsp = -2.5 * -xscale;
 		vsp = -3;
 		mach2 = 0;
@@ -278,7 +278,7 @@ function state_player_climbceiling()
 			sprite_index = spr_secondjump1;
 			vsp = 5;
 			jumpstop = false;
-			state = 69;
+			state = states.mach2;
 			xscale *= -1;
 		}
 		instance_create(x, y, obj_jumpdust);
@@ -337,7 +337,7 @@ function state_player_climbdownwall()
 		xscale *= -1;
 		movespeed = 0;
 		vsp /= 2;
-		state = 60;
+		state = states.jump;
 		sprite_index = spr_fall;
 		slideHsp = -9 * xscale;
 	}
@@ -346,7 +346,7 @@ function state_player_climbdownwall()
 		instance_create(x, y, obj_jumpdust);
 		xscale *= -1;
 		vsp = verticalMovespeed;
-		state = 74;
+		state = states.freefall;
 		freefallsmash = 10;
 	}
 	if (scr_solid(x, y + 1) && !place_meeting(x, y + 1, obj_metalblock) && !place_meeting(x, y + 1, obj_destructibles))
@@ -357,7 +357,7 @@ function state_player_climbdownwall()
 				verticalMovespeed = 6;
 			if (verticalMovespeed >= 6 && verticalMovespeed < 12)
 			{
-				state = 69;
+				state = states.mach2;
 				movespeed = verticalMovespeed;
 			}
 			else if (verticalMovespeed >= 12)
@@ -372,7 +372,7 @@ function state_player_climbdownwall()
 			xscale *= -1;
 			scr_sound(sound_maximumspeedland);
 			image_index = 0;
-			state = 75;
+			state = states.freefallland;
 			jumpAnim = 1;
 			jumpstop = 0;
 			with (obj_baddie)
@@ -414,7 +414,7 @@ function state_player_climbdownwall()
 			sprite_index = spr_secondjump1;
 			vsp = 3;
 			jumpstop = false;
-			state = 69;
+			state = states.mach2;
 		}
 		else
 		{
@@ -423,7 +423,7 @@ function state_player_climbdownwall()
 			movespeed = clamp(movespeed, 6, 10);
 			jumpstop = false;
 			vsp = 3;
-			state = 69;
+			state = states.mach2;
 			with (instance_create(x + (16 * -xscale), y + 43, obj_debris))
 			{
 				sprite_index = spr_molassesgoop;

@@ -8,10 +8,10 @@ if (global.panic == 1 && room != sucrose_1)
 			audio_stop_all();
 			scr_savelevelDetails();
 			obj_tv.tvsprite = spr_tvoff;
-			if (state != 77)
+			if (state != states.door)
 			{
 				sprite_index = spr_lookdoor;
-				state = 77;
+				state = states.door;
 				image_index = 0;
 			}
 			if (!instance_exists(obj_endlevelfade))

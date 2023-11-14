@@ -1,9 +1,9 @@
 with (obj_player)
 {
-	if (state != 88 && state != 97 && state != 77 && state != 98 && state != 112)
+	if (state != states.cotton && state != states.cottondrill && state != states.door && state != states.cottonroll && state != states.changing)
 	{
 		global.combofreeze = 30;
-		state = 88;
+		state = states.cotton;
 		if (movespeed > 6)
 			movespeed = 6;
 		with (instance_create(x, y, obj_poofeffect))

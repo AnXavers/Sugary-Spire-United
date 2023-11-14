@@ -11,7 +11,7 @@ function scr_playerN_hookshot()
 		scr_sound(mu_ranks);
 		sprite_index = spr_jump;
 		stompAnim = 0;
-		state = 60;
+		state = states.jump;
 		jumpAnim = 1;
 		jumpstop = 0;
 		image_index = 0;

@@ -6,7 +6,7 @@ function state_player_mach1()
 			sprite_index = spr_mach2;
 			if (movespeed < 6)
 				movespeed = 6;
-			state = 69;
+			state = states.mach2;
 			break;
 		default:
 			dir = xscale;
@@ -52,7 +52,7 @@ function state_player_mach1()
 				{
 					charged = 0;
 					movespeed = 10;
-					state = 69;
+					state = states.mach2;
 					instance_create(x, y, obj_jumpdust);
 				}
 			}
@@ -61,7 +61,7 @@ function state_player_mach1()
 			{
 				sprite_index = spr_airdash1;
 				momemtum = 1;
-				state = 60;
+				state = states.jump;
 				jumpAnim = 0;
 				image_index = 0;
 			}
@@ -74,7 +74,7 @@ function state_player_mach1()
 			if (key_down)
 			{
 				sprite_index = spr_crouchslip;
-				state = 67;
+				state = states.crouchslide;
 				mach2 = 0;
 			}
 			image_speed = 0.45;
@@ -86,7 +86,7 @@ function state_player_mach1()
 				momemtum = 1;
 				vsp = -11;
 				movespeed += 2;
-				state = 60;
+				state = states.jump;
 				jumpAnim = 1;
 				image_index = 0;
 			}
@@ -96,7 +96,7 @@ function state_player_mach1()
 			{
 				taunttimer = 20;
 				scr_taunt_storeVariables();
-				state = 45;
+				state = states.backbreaker;
 				if (supertauntcharged == 1 && key_up)
 				{
 					image_index = 0;

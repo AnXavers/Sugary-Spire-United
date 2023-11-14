@@ -1,6 +1,6 @@
 with (obj_player)
 {
-	if (state != 63 && state != 74)
+	if (state != states.Sjump && state != states.freefall)
 	{
 		scr_sound(sound_superjumprelease);
 		scr_sound(sfx_coneballspike);
@@ -10,14 +10,14 @@ with (obj_player)
 		if (other.image_yscale == 1)
 		{
 			sprite_index = spr_superjump;
-			state = 63;
+			state = states.Sjump;
 			vsp = -12;
 			movespeed = 12;
 			freefallsmash = 0;
 		}
 		else
 		{
-			state = 74;
+			state = states.freefall;
 			verticalMovespeed = 10;
 			freefallsmash = 0;
 			sprite_index = spr_outofcontrolfall;

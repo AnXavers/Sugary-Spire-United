@@ -26,7 +26,7 @@ function scr_pizzano_kungfu()
 			if (grounded)
 			{
 				if (key_attack)
-					state = 69;
+					state = states.mach2;
 				else
 					state = 1;
 				if (movespeed < 6)
@@ -42,7 +42,7 @@ function scr_pizzano_kungfu()
 				sprite_index = spr_pizzano_kungfuair3;
 			if (scr_solid(x + hsp, y, true))
 			{
-				state = 72;
+				state = states.bump;
 				sprite_index = spr_djump;
 				vsp = -8;
 				movespeed = -4;
@@ -50,7 +50,7 @@ function scr_pizzano_kungfu()
 			if (grounded)
 			{
 				if (key_attack)
-					state = 69;
+					state = states.mach2;
 				else
 					state = 1;
 				if (movespeed < 0)
@@ -73,7 +73,7 @@ function scr_pizzano_kungfu()
 			if (animation_end())
 			{
 				if (key_attack)
-					state = 69;
+					state = states.mach2;
 				else
 					state = 1;
 				if (movespeed < 6)
@@ -99,14 +99,14 @@ function scr_pizzano_kungfu()
 		instance_create(x, y, obj_jumpdust);
 		image_index = 0;
 		sprite_index = spr_pizzano_lunge;
-		state = 107;
+		state = states.pizzano_pummel;
 	}
 	if (key_down && grounded)
 	{
 		grav = 0.5;
 		sprite_index = spr_crouchslip;
 		machhitAnim = 0;
-		state = 67;
+		state = states.crouchslide;
 		if (audio_is_playing(sound_suplex1))
 			audio_stop_sound(sound_suplex1);
 	}
@@ -124,7 +124,7 @@ function scr_pizzano_kungfu()
 		}
 		else
 		{
-			state = 72;
+			state = states.bump;
 			hsp = -2.5 * xscale;
 			vsp = -3;
 			mach2 = 0;

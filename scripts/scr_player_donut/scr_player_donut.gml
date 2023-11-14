@@ -9,13 +9,13 @@ function state_player_donut()
 	{
 		if (key_attack && movespeed >= 10)
 		{
-			state = 69;
+			state = states.mach2;
 			if (movespeed < 10)
 				movespeed = 10;
 		}
 		else if (scr_solid(x, y - 3))
 		{
-			state = 65;
+			state = states.crouch;
 			landAnim = 0;
 			image_index = 0;
 			idle = 0;

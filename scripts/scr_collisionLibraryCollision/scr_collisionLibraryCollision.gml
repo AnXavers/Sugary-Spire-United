@@ -1,11 +1,11 @@
 global.MyCollisionList = ds_list_create()
-function instance_place_list_collision(argument0, argument1, argument2 = (0 << 0), argument3 = undefined) //instance_place_list_collision
+function instance_place_list_collision(argument0, argument1, argument2 = 0, argument3 = undefined) //instance_place_list_collision
 {
 	var collided = 0
-	var check_slopes = ((1 << 0) & argument2) != (1 << 0)
-	var check_solids = ((2 << 0) & argument2) != (2 << 0)
-	var check_platforms = ((8 << 0) & argument2) != (8 << 0)
-	var check_moving = ((4 << 0) & argument2) != (4 << 0)
+	var check_slopes = (1 & argument2) != 1
+	var check_solids = (2 & argument2) != 2
+	var check_platforms = (8 & argument2) != 8
+	var check_moving = (4 & argument2) != 4
 	if check_solids
 	{
 		collided += instance_place_list_solid(argument0, argument1, argument3)
@@ -28,12 +28,12 @@ function instance_place_list_collision(argument0, argument1, argument2 = (0 << 0
 	return collided;
 }
 
-function place_meeting_collision(argument0, argument1, argument2 = (0 << 0)) //place_meeting_collision
+function place_meeting_collision(argument0, argument1, argument2 = 0) //place_meeting_collision
 {
-	var check_slopes = ((1 << 0) & argument2) != (1 << 0)
-	var check_solids = ((2 << 0) & argument2) != (2 << 0)
-	var check_platforms = ((8 << 0) & argument2) != (8 << 0)
-	var check_moving = ((4 << 0) & argument2) != (4 << 0)
+	var check_slopes = (1 & argument2) != 1
+	var check_solids = (2 & argument2) != 2
+	var check_platforms = (8 & argument2) != 8
+	var check_moving = (4 & argument2) != 4
 	if check_solids
 	{
 		if place_meeting_solid(argument0, argument1)
@@ -69,7 +69,7 @@ function place_meeting_collision(argument0, argument1, argument2 = (0 << 0)) //p
 	return 0;
 }
 
-function position_meeting_collision(argument0, argument1, argument2 = (0 << 0)) //position_meeting_collision
+function position_meeting_collision(argument0, argument1, argument2 = 0) //position_meeting_collision
 {
 	var old_mask = mask_index
 	mask_index = spr_pixel

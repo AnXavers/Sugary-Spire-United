@@ -16,7 +16,7 @@ function state_player_gumballoon()
 		obj_player.image_index = 0;
 		obj_player.image_speed = 0.35;
 		obj_player.sprite_index = spr_slipnslidestart;
-		obj_player.state = 95;
+		obj_player.state = states.puddle;
 		movespeed = abs(hsp);
 		vsp -= 2;
 	}

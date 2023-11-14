@@ -24,7 +24,7 @@ function state_player_mach3()
 			if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1) && key_attack)
 			{
 				image_index = 0;
-				state = 120;
+				state = states.pizzano_machtwirl;
 				sprite_index = spr_twirl;
 				if (!playedjumpsound)
 				{
@@ -88,7 +88,7 @@ function state_player_mach3()
 	{
 		scr_sound(sound_superjumpcharge1);
 		sprite_index = spr_superjumpprep;
-		state = 64;
+		state = states.Sjumpprep;
 		hsp = 0;
 		image_index = 0;
 	}
@@ -97,21 +97,21 @@ function state_player_mach3()
 		scr_sound(sound_break);
 		sprite_index = spr_machslidestart;
 		image_index = 0;
-		state = 71;
+		state = states.machslide;
 	}
 	if ((move == -xscale && grounded) && Dashpad_buffer <= 0)
 	{
 		scr_sound(sound_maximumspeedstop);
 		sprite_index = spr_machslideboost3;
 		flash = 0;
-		state = 71;
+		state = states.machslide;
 		image_index = 0;
 		mach2 = 100;
 	}
 	if (key_shoot2 && global.treat)
 	{
 		vsp = -5;
-		state = 137;
+		state = states.donut;
 		image_index = 0;
 		sprite_index = spr_throwDonut;
 		with (instance_create(x, y + 16, obj_donutThrowable))
@@ -197,7 +197,7 @@ function state_player_mach3()
 			flash = 0;
 			combo = 0;
 			sprite_index = spr_mach3hitwall;
-			state = 72;
+			state = states.bump;
 			hsp = -2.5 * xscale;
 			vsp = -3;
 			mach2 = 0;

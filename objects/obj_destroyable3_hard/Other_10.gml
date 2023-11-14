@@ -15,11 +15,11 @@ if (DestroyedBy.object_index == obj_player)
 			vsp = -4;
 			mach2 = 0;
 			image_index = 0;
-			if (state != 68)
+			if (state != states.mach1)
 				sprite_index = choose(spr_blockbreak1, spr_blockbreak2, spr_blockbreak3, spr_blockbreak4, spr_blockbreak5, spr_blockbreak6, spr_blockbreak7);
 			else
 				sprite_index = spr_canehit;
-			state = 57;
+			state = states.tackle;
 		}
 	}
 	else
@@ -28,7 +28,7 @@ if (DestroyedBy.object_index == obj_player)
 		{
 			if (state == states.freefall || state == states.freefallland)
 			{
-				state = 75;
+				state = states.freefallland;
 				sprite_index = spr_bodyslamland;
 				image_index = 0;
 			}

@@ -1,8 +1,8 @@
-if (place_meeting(x, y - 4, obj_player) && !place_meeting(x, y, obj_minedummycart) && obj_player.state != 101)
+if (place_meeting(x, y - 4, obj_player) && !place_meeting(x, y, obj_minedummycart) && obj_player.state != states.minecart)
 {
 	grabbedMinecart = true;
 	global.combofreeze = 30;
-	obj_player.state = 101;
+	obj_player.state = states.minecart;
 	if (obj_player.xscale == image_xscale)
 		obj_player.movespeed = clamp(obj_player.movespeed, 3, 12);
 	else

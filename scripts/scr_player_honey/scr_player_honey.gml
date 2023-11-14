@@ -21,20 +21,20 @@ function state_player_honey()
 			x = webID.x;
 			y = webID.y;
 		}
-		if (state != 45 || state != 93)
+		if (state != states.backbreaker || state != states.parry)
 			scr_taunt_setVariables();
 		if (state == states.backbreaker || state == states.parry)
-			state = 1;
+			state = states.normal;
 		vsp = 0;
 		if (key_jump2)
 			vsp = -11;
 		if (state == states.machslide)
-			state = 69;
+			state = states.mach2;
 		if (state == states.chainsaw)
 		{
 			sprite_index = spr_jump;
 			movespeed = 0;
-			state = 60;
+			state = states.jump;
 		}
 		jumpAnim = 1;
 		scr_sound(sound_jump);

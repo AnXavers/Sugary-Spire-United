@@ -4,9 +4,9 @@ shown = false;
 step = 0;
 info = 
 {
-	bginfo: [spr_entrycard_bg, (2 << 0), (4 << 0), (8 << 0), 0, 0],
-	titleinfo: [spr_entrycard_title, (0 << 0), (5 << 0), (6 << 0), 672, 160],
-	featuringinfo: [(0 << 0), (5 << 0), (6 << 0), 672, 160],
+	bginfo: [spr_entrycard_bg, 2, 4, 8, 0, 0],
+	titleinfo: [spr_entrycard_title, 0, 5, 6, 672, 160],
+	featuringinfo: [0, 5, 6, 672, 160],
 	song: 0
 };
 bgX = 0;

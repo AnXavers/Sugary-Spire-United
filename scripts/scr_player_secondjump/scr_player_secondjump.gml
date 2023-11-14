@@ -79,6 +79,6 @@ function state_player_secondjump()
 		mach2 = 0;
 		image_index = 0;
 		vsp = -7;
-		state = 53;
+		state = states.freefallprep;
 	}
 }

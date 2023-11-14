@@ -2,14 +2,14 @@ if (place_meeting(x, y - 1, obj_player))
 {
 	with (obj_player)
 	{
-		if (state != 128 && !global.freezeframe && state != states.cookiemount)
+		if (state != states.noclip && !global.freezeframe && state != states.cookiemount)
 		{
 			if (state == states.cotton || state == states.cottondrill)
 				instance_create(x, y, obj_poofeffect);
 			sprite_index = spr_fireass;
 			if global.newplayeranim == 1
 				sprite_index = spr_fireassstart
-			state = 108;
+			state = states.fireass;
 			image_index = 0;
 			vsp = -20;
 			audio_stop_sound(sound_fireass);

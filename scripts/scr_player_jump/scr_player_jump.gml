@@ -54,7 +54,7 @@ function state_player_jump()
 		instance_create_depth(x, y, -6, obj_highjumpcloud2);
 		stompAnim = 0;
 		vsp = -11;
-		state = 60;
+		state = states.jump;
 		jumpAnim = 1;
 		jumpstop = 0;
 		image_index = 0;
@@ -68,7 +68,7 @@ function state_player_jump()
 		movespeed = 0;
 		mach2 = 0;
 		charged = 0;
-		state = 104;
+		state = states.pizzano_rocketfist;
 	}
 	if (key_up && (obj_player.character == "N" || obj_player.character == "T") && charged)
 	{
@@ -77,7 +77,7 @@ function state_player_jump()
 		image_index = 0;
 		movespeed = 0;
 		mach2 = 0;
-		state = 63;
+		state = states.Sjump;
 	}
 	if (key_attack && grounded && fallinganimation < 40 && character == "DEEZNUTS")
 	{
@@ -85,7 +85,7 @@ function state_player_jump()
 		movespeed = 0;
 		sprite_index = spr_null;
 		jumpAnim = 1;
-		state = 105;
+		state = states.pizzano_mach;
 		image_index = 0;
 	}
 	if (grounded && vsp > 0 && !key_attack)
@@ -144,7 +144,7 @@ function state_player_jump()
 	if (key_shoot2 && global.treat)
 	{
 		vsp = -5;
-		state = 137;
+		state = states.donut;
 		image_index = 0;
 		sprite_index = spr_throwDonut;
 		with (instance_create(x, y + 16, obj_donutThrowable))
@@ -181,7 +181,7 @@ function state_player_jump()
 		}
 		image_index = 0;
 		sprite_index = spr_freefallland;
-		state = 75;
+		state = states.freefallland;
 		doublejumped = 0;
 	}
 	do_taunt();
@@ -197,7 +197,7 @@ function state_player_jump()
 			sprite_index = spr_donutSlam_intro;
 			instance_create(x, y, obj_donutSlammable);
 		}
-		state = 53;
+		state = states.freefallprep;
 		if (character == "N")
 			vsp = 0;
 	}
@@ -208,7 +208,7 @@ function state_player_jump()
 		if (key_down2)
 		{
 			image_index = 0;
-			state = 74;
+			state = states.freefall;
 			sprite_index = spr_caneslam;
 			vsp = -18;
 		}
@@ -232,7 +232,7 @@ function state_player_jump()
 	}
 	if (key_jump && (obj_player.character == "G") && !grounded && gumbobpropellercooldown == 0)
 	{
-		state = 117;
+		state = states.gumbob_propeller;
 		sprite_index = spr_propeller_start;
 		movespeed = 0;
 		vsp = 0;
@@ -278,7 +278,7 @@ function state_player_jump()
 			movespeed = 6;
 		sprite_index = spr_mach1;
 		jumpAnim = 1;
-		state = 69;
+		state = states.mach2;
 		image_index = 0;
 	}
 }

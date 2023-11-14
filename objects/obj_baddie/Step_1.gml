@@ -96,7 +96,7 @@ if (tauntBuffer == 1)
 			other.tauntBufferEffect = id;
 		}
 	}
-	if (obj_player.state != 45 && obj_player.state != 93 && object_index != obj_popcornbag)
+	if (obj_player.state != states.backbreaker && obj_player.state != states.parry && object_index != obj_popcornbag)
 	{
 		tauntBuffer = false;
 		bombreset = 0;
@@ -105,7 +105,7 @@ if (tauntBuffer == 1)
 		jumptimer = 0;
 		ScareBuffer = 0;
 	}
-	if (obj_player.state != 45 && obj_player.state != 93 && object_index == obj_popcornbag)
+	if (obj_player.state != states.backbreaker && obj_player.state != states.parry && object_index == obj_popcornbag)
 		tauntBuffer = false;
 }
 if (place_meeting_solid(x, y) && state == 6 && thrown)

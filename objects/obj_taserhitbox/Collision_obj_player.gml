@@ -1,2 +1,2 @@
-if (obj_player.state != 91)
-	obj_player.state = 91;
+if (obj_player.state != states.shocked)
+	obj_player.state = states.shocked;

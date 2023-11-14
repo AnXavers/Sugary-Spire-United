@@ -10,7 +10,7 @@ function state_player_timesup()
 	{
 		state = states.timesup;
 		sprite_index = obj_player.spr_outofcontrolfall;
-		state = 51;
+		state = states.gameover;
 		sprite_index = spr_deathend;
 		alarm[10] = 5;
 		vsp = -8;

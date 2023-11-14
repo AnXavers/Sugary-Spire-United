@@ -63,7 +63,7 @@ function state_player_freefallprep()
 		if (character == "N")
 			verticalMovespeed = 23;
 		vsp = verticalMovespeed;
-		state = 74;
+		state = states.freefall;
 		freefallsmash = 0;
 	}
 }

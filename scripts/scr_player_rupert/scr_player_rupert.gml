@@ -23,7 +23,7 @@ function state_player_rupertnormal()
 		xscale = -slopeMomentum_direction();
 		with (instance_create(x, y, obj_jumpdust))
 			image_xscale = other.xscale;
-		state = 149;
+		state = states.rupertslide;
 	}
 	if (move == 0)
 		sprite_index = spr_skateidle;
@@ -38,13 +38,13 @@ function state_player_rupertnormal()
 		instance_create(x, y, obj_highjumpcloud2);
 		vsp = -10;
 		movespeed = hsp;
-		state = 150;
+		state = states.rupertjump;
 	}
 	if (!grounded)
 	{
 		sprite_index = spr_skatedive;
 		movespeed = hsp;
-		state = 150;
+		state = states.rupertjump;
 	}
 	image_speed = 0.35;
 }
@@ -78,7 +78,7 @@ function state_player_rupertslide()
 		with (instance_create(x, y, obj_highjumpcloud2))
 			image_xscale = other.xscale;
 		scr_sound(sound_jump);
-		state = 150;
+		state = states.rupertjump;
 		movespeed = hsp;
 	}
 	if (grounded && movespeed < 14)
@@ -93,7 +93,7 @@ function state_player_rupertslide()
 	if (!grounded && vsp >= terminalVelocity)
 	{
 		movespeed = hsp;
-		state = 150;
+		state = states.rupertjump;
 		flash = true;
 		momemtum = true;
 		sprite_index = spr_skatespin;
@@ -105,14 +105,14 @@ function state_player_rupertslide()
 			vsp = 0;
 			image_index = 0;
 			sprite_index = spr_skatewallrun;
-			state = 151;
+			state = states.rupertstick;
 			xscale = sign(hsp);
 		}
 		else
 		{
 			scr_sound(sound_bump);
 			sprite_index = spr_skatefall;
-			state = 150;
+			state = states.rupertjump;
 			vsp = -4;
 			xscale = -sign(hsp);
 			movespeed = xscale * 5;
@@ -201,7 +201,7 @@ function state_player_rupertjump()
 			vsp = 0;
 			image_index = 0;
 			sprite_index = spr_skatewallrun;
-			state = 151;
+			state = states.rupertstick;
 			xscale = sign(hsp);
 		}
 		else
@@ -218,14 +218,14 @@ function state_player_rupertjump()
 				xscale = -slopeMomentum_direction();
 				with (instance_create(x, y, obj_jumpdust))
 					image_xscale = other.xscale;
-				state = 149;
+				state = states.rupertslide;
 			}
 			else
 			{
 				scr_sound(sound_maximumspeedland);
 				image_index = 0;
 				movespeed = 0;
-				state = 151;
+				state = states.rupertstick;
 				jumpAnim = 1;
 				jumpstop = 0;
 				with (obj_baddie)
@@ -258,11 +258,11 @@ function state_player_rupertjump()
 				xscale = -slopeMomentum_direction();
 				with (instance_create(x, y, obj_jumpdust))
 					image_xscale = other.xscale;
-				state = 149;
+				state = states.rupertslide;
 			}
 			else
 			{
-				state = 148;
+				state = states.rupertnormal;
 				if (sign(hsp) != 0)
 					xscale = sign(hsp);
 				movespeed = abs(movespeed);
@@ -283,7 +283,7 @@ function state_player_rupertstick()
 		sprite_index = spr_skatefall;
 		xscale *= -1;
 		movespeed = xscale * 5;
-		state = 150;
+		state = states.rupertjump;
 	}
 	if (animation_end())
 	{
@@ -294,11 +294,11 @@ function state_player_rupertstick()
 			xscale *= -1;
 			vsp = -13;
 			movespeed = xscale * 10;
-			state = 150;
+			state = states.rupertjump;
 		}
 		else
 		{
-			state = 148;
+			state = states.rupertnormal;
 			sprite_index = spr_skateidle;
 			freefallsmash = 0;
 		}

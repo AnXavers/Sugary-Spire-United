@@ -3,11 +3,11 @@ function state_player_costumenormal()
 	sprite_index = spr_costume_idle;
 	move = key_left + key_right;
 	hsp = movespeed;
-	if (substate != 2)
+	if (substate != substates.unknown_2)
 	{
 		if (grounded)
 		{
-			substate = 0;
+			substate = substates.unknown_0;
 			jumpstop = 0;
 		}
 		if (movespeed != 0)
@@ -17,10 +17,10 @@ function state_player_costumenormal()
 		{
 			if (grounded)
 				vsp = -12;
-			else if (substate == 0)
+			else if (substate == substates.unknown_0)
 			{
 				vsp = -8;
-				substate = 1;
+				substate = substates.unknown_1;
 			}
 		}
 		if (!key_jump2 && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)
@@ -30,7 +30,7 @@ function state_player_costumenormal()
 		}
 		if (key_shoot2)
 		{
-			state = 131;
+			state = states.costumebreeze;
 			breezecooldown = 25;
 			instance_create(x, y, obj_breezehitbox);
 			movespeed = 12 * xscale;
@@ -42,19 +42,19 @@ function state_player_costumenormal()
 		{
 			if (move != 0)
 				xscale = move;
-			state = 132;
+			state = states.costumechuck;
 			sprite_index = spr_swingding;
 		}
 		if (key_slap2 && grounded && place_meeting(x, y + 64, obj_iceblock))
 		{
-			substate = 2;
+			substate = substates.unknown_2;
 			costumegrabdelay = 15;
 			with (instance_place(x, y + 82, obj_iceblock))
 				hsp = 0;
 			vsp = 0;
 		}
 	}
-	if (substate == 2)
+	if (substate == substates.unknown_2)
 	{
 		hsp = 0;
 		vsp = 0;
@@ -74,8 +74,8 @@ function state_player_costumenormal()
 				other.costumeBlock = id;
 				shake = 0;
 			}
-			state = 130;
-			substate = 0;
+			state = states.costumegrab;
+			substate = substates.unknown_0;
 			sprite_index = spr_grab;
 		}
 	}

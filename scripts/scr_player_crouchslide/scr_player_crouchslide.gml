@@ -17,14 +17,14 @@ function state_player_crouchslide()
 				sprite_index = spr_rollgetup;
 				image_index = 0;
 				mach2 = 35;
-				state = 69;
+				state = states.mach2;
 				if (movespeed < 10)
 					movespeed = 10;
 				break;
 			case "N":
 				sprite_index = spr_mach2;
 				image_index = 0;
-				state = 69;
+				state = states.mach2;
 				break;
 		}
 	}
@@ -51,7 +51,7 @@ function state_player_crouchslide()
 	}
 	if (scr_solid(x + xscale, y, true) && !place_meeting(x + sign(hsp), y, obj_destructibles))
 	{
-		state = 65;
+		state = states.crouch;
 		landAnim = 0;
 		crouchAnim = 1;
 		image_index = 0;

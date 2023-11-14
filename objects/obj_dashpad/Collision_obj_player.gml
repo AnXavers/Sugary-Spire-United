@@ -12,7 +12,7 @@ if (other.Dashpad_buffer <= 0)
 	scr_sound(sound_dashpad);
 	with (other)
 	{
-		if (state != 64 && state != 22 && state != 101 && state != 65 && state != states.seacream && state != states.seacreamjump && state != states.seacreamstick && state != 83 && state != states.noclip &&sprite_get_bbox_bottom(mask_index) <= other.bbox_bottom)
+		if (state != states.Sjumpprep && state != 22 && state != states.minecart && state != states.crouch && state != states.seacream && state != states.seacreamjump && state != states.seacreamstick && state != states.cookiemount && state != states.noclip &&sprite_get_bbox_bottom(mask_index) <= other.bbox_bottom)
 		{
 			movespeed += 0.25;
 			movespeed = clamp(movespeed, 12, 24);
@@ -81,7 +81,7 @@ if (other.Dashpad_buffer <= 0)
 		}
 		else if ((state == states.seacream || state == states.seacreamjump || state == states.seacreamstick) && sprite_get_bbox_bottom(mask_index) <= other.bbox_bottom)
 		{
-			state = 144;
+			state = states.seacream;
 			if (!scr_solid(other.x, y))
 				x = other.x;
 			flash = 1;

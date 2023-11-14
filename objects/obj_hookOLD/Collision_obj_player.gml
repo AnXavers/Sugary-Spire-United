@@ -1,4 +1,4 @@
-if (other.state != 126 && other.state != 0 && other.state != 128)
+if (other.state != states.hooks && other.state != 0 && other.state != states.noclip)
 {
 	with (other)
 	{
@@ -46,7 +46,7 @@ if (other.state != 126 && other.state != 0 && other.state != 128)
 		}
 		y = other.y - 14;
 		x = other.x;
-		state = 126;
+		state = states.hooks;
 		if (other.hookSubState == 2)
 			xscale = 1;
 		else if (other.hookSubState == 1)

@@ -106,7 +106,7 @@ function state_player_superslam()
 	if (sprite_index == spr_piledriverland && floor(image_index) == (image_number - 1))
 	{
 		vsp = -9;
-		state = 60;
+		state = states.jump;
 		if (character == "P")
 			sprite_index = spr_machfreefall;
 		if (character == "DEEZNUTS")

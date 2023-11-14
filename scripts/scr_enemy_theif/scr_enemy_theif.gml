@@ -12,7 +12,7 @@ function scr_enemy_theif()
 		}
 		if (place_meeting(x + sign(hsp), y, obj_solid) && !place_meeting(x + sign(hsp), y, obj_slope))
 			image_xscale *= -1;
-		if (((obj_player.x > (x - 200) && obj_player.x < (x + 200)) && (y <= (obj_player.y + 60) && y >= (obj_player.y - 60))) && snatchcooldown == 0 && obj_player.state != 56 && theifkeyinv == 0)
+		if (((obj_player.x > (x - 200) && obj_player.x < (x + 200)) && (y <= (obj_player.y + 60) && y >= (obj_player.y - 60))) && snatchcooldown == 0 && obj_player.state != states.keyget && theifkeyinv == 0)
 		{
 			theifsubstate = 2;
 			sprite_index = spr_theif_snatch;
@@ -41,7 +41,7 @@ function scr_enemy_theif()
 			snatchcooldown = 100;
 			movespeed = 2;
 		}
-		if (place_meeting(x + sign(hsp), y, obj_player) && obj_player.state != 56)
+		if (place_meeting(x + sign(hsp), y, obj_player) && obj_player.state != states.keyget)
 		{
 			if (global.key_inv == 0)
 			{

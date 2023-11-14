@@ -1,2 +1,2 @@
-state = 74;
+state = states.freefall;
 vsp = 6;

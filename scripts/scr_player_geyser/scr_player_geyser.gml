@@ -12,7 +12,7 @@ function state_player_geyser()
 	if (!place_meeting(x, y, obj_geyservertical))
 	{
 		jumpstop = true;
-		state = 60;
+		state = states.jump;
 		movespeed = abs(hsp);
 		vsp = -18;
 	}

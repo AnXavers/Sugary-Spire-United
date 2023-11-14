@@ -22,7 +22,7 @@ function state_player_slipnslide()
 	}
 	if (place_meeting_collision(x + xscale, y, 1) && !place_meeting(x + xscale, y, obj_destructibles))
 	{
-		state = 60;
+		state = states.jump;
 		vsp = -12;
 		jumpstop = 1;
 		movespeed = 0;

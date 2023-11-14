@@ -14,7 +14,7 @@ function state_player_pistol()
 	if (floor(image_index) == (image_number - 1) && sprite_index != spr_player_crouchshoot && sprite_index != spr_player_shootup && sprite_index != spr_player_shootdiagonal && sprite_index != spr_player_pistolair && !key_down)
 		state = 1;
 	else if (floor(image_index) == (image_number - 1) && key_down && sprite_index != spr_player_shootup && sprite_index != spr_player_shootdiagonal && sprite_index != spr_player_pistolair)
-		state = 65;
+		state = states.crouch;
 	else if (floor(image_index) == (image_number - 1) && sprite_index != spr_player_pistolair)
 	{
 		if (move != 0)
@@ -27,7 +27,7 @@ function state_player_pistol()
 	else if (grounded && vsp > 0 && sprite_index == spr_player_pistolair)
 	{
 		sprite_index = spr_player_shootslide;
-		state = 67;
+		state = states.crouchslide;
 	}
 	if (shoot == 1 && floor(image_index) == 0 && (sprite_index == spr_player_pistol || sprite_index == spr_player_pistolair))
 	{

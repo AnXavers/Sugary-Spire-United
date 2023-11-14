@@ -22,7 +22,7 @@ function state_player_tackle()
 				movespeed = 6;
 			sprite_index = spr_mach1;
 			jumpAnim = 1;
-			state = 69;
+			state = states.mach2;
 			image_index = 0;
 		}
 		else

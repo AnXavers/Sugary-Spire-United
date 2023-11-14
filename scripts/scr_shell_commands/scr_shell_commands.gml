@@ -426,8 +426,8 @@ function meta_petersprite_reset()
 }
 function sh_noclip()
 {
-	if (obj_player.state != 128)
-		obj_player.state = 128;
+	if (obj_player.state != states.noclip)
+		obj_player.state = states.noclip;
 	else
 		obj_player.state = 1;
 }
@@ -673,7 +673,7 @@ function sh_quick_load()
 			obj_camera.chargecamera = 0;
 			image_index = 0;
 			sprite_index = spr_entergate;
-			state = 61;
+			state = states.victory;
 			targetDoor = other.targetDoor;
 			targetRoom = other.targetRoom;
 			ds_queue_clear(global.newhudmessage);

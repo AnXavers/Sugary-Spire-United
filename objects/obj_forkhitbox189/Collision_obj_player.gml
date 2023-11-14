@@ -12,7 +12,7 @@ with (obj_player)
 	else if (state == 6 || state == 8)
 	{
 	}
-	else if (state != 73 && hurted == 0 && cutscene == 0 && state != 72 && state != 96)
+	else if (state != states.hurt && hurted == 0 && cutscene == 0 && state != states.bump && state != states.tumble)
 	{
 		scr_sound(sound_touchspike);
 		global.hurtcounter++;
@@ -48,7 +48,7 @@ with (obj_player)
 		else if (obj_player.shotgunAnim == 1)
 			obj_player.shotgunAnim = 0;
 		instance_create(x, y, obj_spikehurteffect);
-		state = 73;
+		state = states.hurt;
 		image_index = 0;
 		flash = 1;
 		global.style -= 30;

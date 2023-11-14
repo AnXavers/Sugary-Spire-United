@@ -2,7 +2,7 @@ with (obj_player)
 {
 	if (other.image_yscale == 1)
 	{
-		if (((key_down && !place_meeting(x, y + 1, obj_destructibles) && place_meeting(x, y + 1, other.id) && (state == states.crouch || state == states.machroll)) || ((state == states.crouchslide || state == states.freefall || state == states.freefallland) && !place_meeting(x, y + 1, obj_destructibles) && place_meeting(x, y + 1, other.id))) && !instance_exists(obj_fadeout) && state != 77 && state != 62)
+		if (((key_down && !place_meeting(x, y + 1, obj_destructibles) && place_meeting(x, y + 1, other.id) && (state == states.crouch || state == states.machroll)) || ((state == states.crouchslide || state == states.freefall || state == states.freefallland) && !place_meeting(x, y + 1, obj_destructibles) && place_meeting(x, y + 1, other.id))) && !instance_exists(obj_fadeout) && state != states.door && state != states.comingoutdoor)
 		{
 			with (other)
 			{
@@ -19,7 +19,7 @@ with (obj_player)
 			targetRoom = other.targetRoom;
 			sprite_index = spr_downpizzabox;
 			image_index = 0;
-			state = 77;
+			state = states.door;
 		}
 	}
 	if (other.image_yscale == -1)
@@ -41,7 +41,7 @@ with (obj_player)
 			targetRoom = other.targetRoom;
 			sprite_index = spr_uppizzabox;
 			image_index = 0;
-			state = 77;
+			state = states.door;
 		}
 	}
 }

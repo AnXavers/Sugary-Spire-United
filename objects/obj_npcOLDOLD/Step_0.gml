@@ -1,4 +1,4 @@
-if (obj_player.state != 94)
+if (obj_player.state != states.talkto)
 	drawing = 0;
 error_shake = min(error_shake + 0.05, 12);
 if (obj_player.x > x)

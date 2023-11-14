@@ -37,7 +37,7 @@ function state_player_cookiemount()
 		if (movespeed < 6)
 			movespeed = 6;
 		dir = xscale;
-		state = 69;
+		state = states.mach2;
 		sprite_index = spr_mach2jump;
 		jumpstop = 0;
 		vsp = -11;

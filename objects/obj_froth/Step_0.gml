@@ -39,14 +39,14 @@ scr_commonenemy();
 if (state != 22 || substate == 0)
 	scr_scareenemy();
 if (state != 22)
-	substate = 0;
+	substate = substates.unknown_0;
 if (place_meeting(x, y + 1, obj_player) && state == 22 && substate == 1 && sprite_index == spr_snowclouddiveboil)
 {
 	with (obj_player)
 	{
 		hsp = 0;
 		player_x = x;
-		state = 92;
+		state = states.bushdisguise;
 		sprite_index = spr_frothstuck;
 		bushdetection = 3;
 	}

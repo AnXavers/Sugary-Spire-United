@@ -27,7 +27,7 @@ if (sprite_index == spr_grabbiehand_fall)
 	{
 		image_index = 0;
 		sprite_index = spr_catched;
-		state = 77;
+		state = states.door;
 		x = other.x;
 		y = other.y;
 		vsp = 0;
@@ -40,7 +40,7 @@ if (sprite_index == spr_grabbiehand_catch)
 	{
 		vsp = 0;
 		hsp = 0;
-		state = 77;
+		state = states.door;
 		sprite_index = spr_catched;
 		x = other.x;
 		y = other.y;

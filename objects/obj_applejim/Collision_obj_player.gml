@@ -29,9 +29,9 @@ if (state == 17)
 			image_index = 0;
 			obj_player.image_index = 0;
 			obj_player.flash = 1;
-			state = 72;
+			state = states.bump;
 		}
-		else if (state != 73 && hurted == 0 && cutscene == 0 && state != 72)
+		else if (state != states.hurt && hurted == 0 && cutscene == 0 && state != states.bump)
 		{
 			scr_sound(sfx_coneboyswallow);
 			global.hurtcounter++;
@@ -65,7 +65,7 @@ if (state == 17)
 				instance_create(x, y, obj_pizzaloss);
 			}
 			instance_create(x, y, obj_spikehurteffect);
-			state = 73;
+			state = states.hurt;
 			image_index = 0;
 			flash = 1;
 		}

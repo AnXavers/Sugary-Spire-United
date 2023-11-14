@@ -56,7 +56,7 @@ function state_player_holdbomb()
 			hsp = 0;
 			movespeed = 0;
 			vsp = 0;
-			substate = 1;
+			substate = substates.unknown_1;
 		}
 		if (grounded && move != 0)
 			sprite_index = spr_haulingwalk;
@@ -80,6 +80,6 @@ function state_player_holdbomb()
 		angle = wave(-70 + angleto, 70 + angleto, 2, 0);
 		sprite_index = spr_suplexmash1;
 		if (key_jump)
-			substate = 0;
+			substate = substates.unknown_0;
 	}
 }

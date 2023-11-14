@@ -5,7 +5,7 @@ if (collide == 1)
 	{
 		if (state != states.bottlerocket)
 		{
-			state = 133;
+			state = states.bottlerocket;
 			xscale = other.image_xscale;
 			x = other.x;
 			y = other.y;

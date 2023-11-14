@@ -44,7 +44,7 @@ function state_player_highjump()
 	if (grounded && input_buffer_jump < 8 && !key_attack && !key_down && vsp > 0)
 	{
 		vsp = -9;
-		state = 60;
+		state = states.jump;
 		jumpAnim = 1;
 		jumpstop = 0;
 		image_index = 0;
@@ -74,6 +74,6 @@ function state_player_highjump()
 		mach2 = 0;
 		image_index = 0;
 		vsp = -7;
-		state = 53;
+		state = states.freefallprep;
 	}
 }

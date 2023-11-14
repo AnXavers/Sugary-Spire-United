@@ -4,7 +4,7 @@ function cutscene_lapPortal_start()
 	global.combofreeze = 30;
 	with (obj_player)
 	{
-		state = 110;
+		state = states.actor;
 		hsp = 0;
 		vsp = 0;
 		sprite_index = spr_lapportal_enter;
@@ -56,7 +56,7 @@ function cutscene_lapPortal_middle()
 	with (obj_player)
 	{
 		visible = false;
-		state = 110;
+		state = states.actor;
 		hsp = 0;
 		vsp = 0;
 		sprite_index = spr_bodyslamfall;
@@ -92,7 +92,7 @@ function cutscene_lapPortal_end()
 		vsp = 0;
 		movespeed = 0;
 		sprite_index = spr_bodyslamfall;
-		state = 74;
+		state = states.freefall;
 		_finished = true;
 	}
 	if (_finished)
@@ -125,7 +125,7 @@ function cutscene_harryFreeze()
 	}
 	with (obj_player)
 	{
-		state = 110;
+		state = states.actor;
 		hsp = 0;
 		vsp = 0;
 		image_speed = 0;

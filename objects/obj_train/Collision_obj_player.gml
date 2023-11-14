@@ -1,6 +1,6 @@
 with (other)
 {
-	if (state != 102 && (other.state == states.normal || other.state == 2))
+	if (state != states.squished && (other.state == states.normal || other.state == 2))
 	{
 		scr_hurtplayer();
 		image_index = 0;
@@ -18,7 +18,7 @@ with (other)
 				}
 			}
 		}
-		state = 102;
+		state = states.squished;
 		sprite_index = spr_squished;
 		image_speed = 0.35;
 	}

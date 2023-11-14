@@ -1,4 +1,4 @@
-if (obj_player.state != 124)
+if (obj_player.state != states.ufodashOLD)
 {
 	canbecollected = true;
 	image_alpha = 1;

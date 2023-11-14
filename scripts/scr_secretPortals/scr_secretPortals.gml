@@ -23,7 +23,7 @@ function cutscene_secretPortal_start()
 	with (obj_player)
 	{
 		is_inSecretPortal = true;
-		state = 110;
+		state = states.actor;
 		hsp = 0;
 		vsp = 0;
 		sprite_index = spr_hurt;
@@ -57,7 +57,7 @@ function cutscene_secretPortal_middle()
 	with (obj_player)
 	{
 		is_inSecretPortal = true;
-		state = 110;
+		state = states.actor;
 		hsp = 0;
 		vsp = 0;
 	}
@@ -83,7 +83,7 @@ function cutscene_secretPortal_preend()
 	with (obj_player)
 	{
 		is_inSecretPortal = true;
-		state = 110;
+		state = states.actor;
 		hsp = 0;
 		vsp = 0;
 		switch (_state)
@@ -128,7 +128,7 @@ function cutscene_secretPortal_end()
 	with (obj_player)
 	{
 		is_inSecretPortal = true;
-		state = 110;
+		state = states.actor;
 		hsp = 0;
 		vsp = 0;
 		if (_waittimer > 10)

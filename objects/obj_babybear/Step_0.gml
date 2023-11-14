@@ -17,7 +17,7 @@ if (state != 6 && state != 10)
 	thrown = 0;
 if (ragereset > 0)
 	ragereset--;
-if (point_in_rectangle(obj_player.x, obj_player.y, x - 200, y - 50, x + 200, y + 50) && obj_player.state != 77 && obj_player.state != 62)
+if (point_in_rectangle(obj_player.x, obj_player.y, x - 200, y - 50, x + 200, y + 50) && obj_player.state != states.door && obj_player.state != states.comingoutdoor)
 {
 	if (state != 26 && state == 3 && ragereset <= 0)
 	{

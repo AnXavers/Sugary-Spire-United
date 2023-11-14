@@ -11,7 +11,7 @@ with (other)
 				movespeed = 10;
 			else
 				movespeed = abs(movespeed);
-			state = 69;
+			state = states.mach2;
 		}
 		sprite_index = spr_idle;
 		instance_create(x, y, obj_poofeffect);

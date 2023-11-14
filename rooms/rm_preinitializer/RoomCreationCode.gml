@@ -168,33 +168,33 @@ enum confectistates {
 	appear // 2
 }
 enum enemystates {
-	idle, // 1
-	charge, // 2
-	turn, // 3
-	walk, // 4
-	land, // 5
-	hit, // 6
-	stun, // 7
-	thrown, // 8
-	grabbed, // 9
-	scared, // 10
-	frozen, // 11
-	shake, // 12
-	panicWait, // 13
-	secretWait, // 14
-	inhaled, // 15
-	cherrywait, // 16
-	charcherry, // 17
-	applejim_bash, // 18
-	kick, // 19
-	slugidle, // 20
-	slugjump, // 21
-	slugparry, // 22
-	float, // 23
-	theif, // 24
-	eyescreamwait, // 25
-	eyescream, // 26
-	rage // 27
+	idle, // 0
+	charge, // 1
+	turn, // 2
+	walk, // 3
+	land, // 4
+	hit, // 5
+	stun, // 6
+	thrown, // 7
+	grabbed, // 8
+	scared, // 9
+	frozen, // 10
+	shake, // 11
+	panicWait, // 12
+	secretWait, // 13
+	inhaled, // 14
+	cherrywait, // 15
+	charcherry, // 16
+	applejim_bash, // 17
+	kick, // 18
+	slugidle, // 19
+	slugjump, // 20
+	slugparry, // 21
+	float, // 22
+	theif, // 23
+	eyescreamwait, // 24
+	eyescream, // 25
+	rage // 26
 };
 
 exit;

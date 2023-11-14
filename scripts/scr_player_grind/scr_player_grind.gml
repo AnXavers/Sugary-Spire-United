@@ -12,7 +12,7 @@ function state_player_grind()
 	{
 		if (movespeed < 12)
 		{
-			state = 69;
+			state = states.mach2;
 			sprite_index = spr_mach2jump;
 		}
 		else
@@ -23,7 +23,7 @@ function state_player_grind()
 	}
 	if (place_meeting_collision(x + xscale, y, 1))
 	{
-		state = 72;
+		state = states.bump;
 		hsp = -xscale * 5;
 		vsp = 1;
 		instance_create(x + (10 * xscale), y + 10, obj_bumpeffect);
@@ -35,7 +35,7 @@ function state_player_grind()
 		jumpstop = 0;
 		if (movespeed < 12)
 		{
-			state = 69;
+			state = states.mach2;
 			sprite_index = spr_mach2jump;
 		}
 		else

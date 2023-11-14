@@ -131,7 +131,7 @@ function state_player_grab()
 		if (move != 0)
 			move = xscale;
 		movespeed = clamp(movespeed, 0, 6);
-		state = 87;
+		state = states.finishingblow;
 		if (sprite_index == spr_swingding)
 			sprite_index = spr_swingdingend;
 		else if (!key_up)
@@ -170,7 +170,7 @@ function state_player_grab()
 				y = other.y;
 			}
 		}
-		state = 65;
+		state = states.crouch;
 		landAnim = 0;
 		crouchAnim = 1;
 		image_index = 0;

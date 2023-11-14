@@ -5,7 +5,7 @@ function state_player_crouchjump()
 	if (fallinganimation >= 40 && fallinganimation < 80)
 	{
 		sprite_index = spr_facestomp;
-		state = 60;
+		state = states.jump;
 	}
 	mask_index = spr_crouchmask;
 	hsp = move * movespeed;
@@ -22,7 +22,7 @@ function state_player_crouchjump()
 	}
 	if (grounded && key_down)
 	{
-		state = 65;
+		state = states.crouch;
 		jumpAnim = 1;
 		crouchAnim = 1;
 		image_index = 0;
@@ -41,7 +41,7 @@ function state_player_crouchjump()
 	}
 	if (grounded)
 	{
-		state = 65;
+		state = states.crouch;
 		jumpAnim = 1;
 		crouchAnim = 1;
 		image_index = 0;

@@ -10,7 +10,7 @@ with (other)
 		{
 			image_index = 0;
 			sprite_index = spr_skatejumpstart;
-			state = 147;
+			state = states.gumballoon;
 		}
 		if (state == states.climbwall || state == states.climbdownwall || state == states.climbceiling || state == states.machroll)
 			state = states.mach2;

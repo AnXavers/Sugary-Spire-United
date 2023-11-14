@@ -26,7 +26,7 @@ function state_player_handstandjump()
 	dir = xscale;
 	if (move != xscale && move != 0)
 	{
-		state = 60;
+		state = states.jump;
 		image_index = 0;
 		sprite_index = spr_suplexdashCancel;
 		jumpAnim = true;
@@ -60,7 +60,7 @@ function state_player_handstandjump()
 		image_index = 0
 		
 		instance_create(x, y, obj_jumpdust);
-		state = 69;
+		state = states.mach2;
 		jumpstop = 0;
 		vsp = -11;
 	}
@@ -106,7 +106,7 @@ function state_player_handstandjump()
 	if (key_attack && floor(image_index) == (image_number - 1) && sprite_index != spr_bump)
 	{
 		image_speed = 0.35;
-		state = 69;
+		state = states.mach2;
 		sprite_index = spr_mach2;
 		grav = 0.5;
 	}
@@ -115,7 +115,7 @@ function state_player_handstandjump()
 		sprite_index = spr_machtumble;
 		image_index = 0;
 		image_speed = 0.2;
-		state = 103;
+		state = states.machtumble;
 		with (instance_create(x, y, obj_jumpdust))
 			image_xscale = other.xscale;
 	}

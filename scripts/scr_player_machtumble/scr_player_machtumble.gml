@@ -30,7 +30,7 @@ function state_player_machtumble()
 		flash = 0;
 		combo = 0;
 		sprite_index = spr_mach3hitwall;
-		state = 72;
+		state = states.bump;
 		hsp = -2.5 * xscale;
 		vsp = -3;
 		mach2 = 0;
@@ -63,7 +63,7 @@ function state_player_machtumble()
 		{
 			if (mach2 < 100)
 			{
-				state = 69;
+				state = states.mach2;
 				sprite_index = spr_mach2;
 			}
 			if (mach2 >= 100)

@@ -19,7 +19,7 @@ function state_player_trick()
 			y += _ledge;
 		else if (_ledge <= 0)
 		{
-			state = 72;
+			state = states.bump;
 			image_index = 0;
 			sprite_index = spr_splat;
 		}

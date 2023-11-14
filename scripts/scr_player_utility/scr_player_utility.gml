@@ -4,7 +4,7 @@ function do_taunt()
 	{
 		taunttimer = 20;
 		scr_taunt_storeVariables();
-		state = 45;
+		state = states.backbreaker;
 		if (supertauntcharged == 1 && key_up && tauntStored.state != states.trick)
 		{
 			scr_sound(sound_supertaunt1);
@@ -44,7 +44,7 @@ function do_grab()
 			}
 			else
 				vsp = -3;
-			state = 137;
+			state = states.donut;
 			image_index = 0;
 			sprite_index = spr_throwDonut;
 			with (instance_create(x, y + 25, obj_donutShitted))
@@ -64,7 +64,7 @@ function do_grab()
 					movespeed = 9;
 				airkung = 0;
 				kungtime = 30;
-				state = 106;
+				state = states.pizzano_kungfu;
 				flash = 1;
 				if (!grounded)
 				{
@@ -108,7 +108,7 @@ function do_uppercut()
 	vsp = -10;
 	if (grounded)
 		vsp = -14;
-	state = 89;
+	state = states.uppercut;
 	suplexmove = true;
 	sprite_index = spr_uppercutbegin;
 	image_index = 0;

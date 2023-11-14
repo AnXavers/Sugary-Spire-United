@@ -13,7 +13,7 @@ function scr_pizzano_wallcling()
 		movespeed = 8;
 		vsp = -12;
 		xscale *= -1;
-		state = 119;
+		state = states.pizzano_twirl;
 	}
 	if (grounded)
 		state = 1;

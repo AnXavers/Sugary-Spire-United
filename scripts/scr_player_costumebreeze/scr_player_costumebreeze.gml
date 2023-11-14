@@ -5,5 +5,5 @@ function state_player_costumebreeze()
 	movespeed = approach(movespeed, 0, 0.2);
 	breezecooldown--;
 	if (breezecooldown <= 0 || movespeed == 0)
-		state = 129;
+		state = states.costumenormal;
 }

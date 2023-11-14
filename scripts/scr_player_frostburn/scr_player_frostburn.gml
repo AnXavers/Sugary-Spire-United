@@ -85,7 +85,7 @@ function state_player_frostburnwallrun()
 	{
 		instance_create(x, y, obj_jumpdust);
 		vsp = 0;
-		state = 140;
+		state = states.frostburn;
 		movespeed = verticalMovespeed;
 		sprite_index = spr_skatewalk;
 	}
@@ -96,7 +96,7 @@ function state_player_frostburnwallrun()
 		movespeed = abs(verticalMovespeed);
 		movespeed = max(6, movespeed);
 		suplexmove = false;
-		state = 140;
+		state = states.frostburn;
 		sprite_index = spr_skatejumpstart;
 		image_index = 0;
 	}
@@ -104,7 +104,7 @@ function state_player_frostburnwallrun()
 	{
 		instance_create(x, y, obj_bangeffect);
 		movespeed = verticalMovespeed;
-		state = 143;
+		state = states.frostburnbump;
 		doublejump = true;
 		movespeed /= 2;
 	}
@@ -117,7 +117,7 @@ function state_player_frostburnwallrun()
 			movespeed += 2;
 		}
 		xscale *= -1;
-		state = 140;
+		state = states.frostburn;
 	}
 	image_speed = 0.35;
 }
@@ -139,7 +139,7 @@ function state_player_frostburnspin()
 		movespeed = approach(movespeed, -maxSpd, 0.9);
 	if (animation_end())
 	{
-		state = 140;
+		state = states.frostburn;
 		if (sign(hsp) != 0)
 			xscale = sign(hsp);
 		movespeed = abs(movespeed);
@@ -148,7 +148,7 @@ function state_player_frostburnspin()
 	}
 	if ((!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles) && !place_meeting(x + xscale, y, obj_chocofrog))
 	{
-		state = 141;
+		state = states.frostburnwallrun;
 		verticalMovespeed = movespeed;
 	}
 	else if (scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles) && !place_meeting(x + xscale, y, obj_chocofrog))
@@ -163,7 +163,7 @@ function state_player_frostburnbump()
 	hsp = -xscale * movespeed;
 	if (grounded)
 	{
-		state = 140;
+		state = states.frostburn;
 		movespeed = 0;
 	}
 }

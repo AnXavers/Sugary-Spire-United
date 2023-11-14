@@ -15,7 +15,7 @@ function scr_collide_destructibles()
 			machpunchAnim = true;
 			image_index = 0;
 			sprite_index = spr_canehit;
-			state = 57;
+			state = states.tackle;
 		}
 	}
 	if (state == states.mach2 || state == states.slipnslide || state == states.rupertnormal || state == states.rupertjump || state == states.rupertslide || state == states.grind || state == states.trick || state == states.geyser || (state == states.bottlerocket && substate == 0) || state == states.mach3 || state == states.climbceiling || state == states.machroll || (state == states.cotton && (sprite_index == spr_cotton_attack || movespeed >= 8)) || state == states.machtumble || state == 3 || state == 19 || state == states.crouchslide || state == states.uppercut || state == states.parry || state == states.puddle || state == states.tumble || state == states.pizzano_mach || state == states.door || state == states.comingoutdoor || state == states.pizzano_rocketfist || state == states.pizzano_shoulderbash || state == states.minecart || state == states.flushed || state == states.frostburn || state == states.frostburnspin || state == states.pizzano_kungfu || state == states.pizzano_twirl || state == states.pizzano_machtwirl || state == states.pizzano_pummel || state == states.cookiemount)
@@ -236,7 +236,7 @@ function scr_collide_destructibles()
 					mach2 = 0;
 					image_index = 0;
 					sprite_index = choose(spr_blockbreak1, spr_blockbreak2, spr_blockbreak3, spr_blockbreak4, spr_blockbreak5, spr_blockbreak6, spr_blockbreak7);
-					state = 57;
+					state = states.tackle;
 				}
 				DestroyedBy = other.id;
 				event_user(0);

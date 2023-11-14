@@ -15,7 +15,7 @@ function state_player_backbreaker()
 	}
 	if (sprite_index == spr_machfreefall && place_meeting(x, y + 1, obj_solid))
 	{
-		state = 71;
+		state = states.machslide;
 		sprite_index = spr_crouchslide;
 	}
 	if (sprite_index == spr_taunt)
@@ -56,7 +56,7 @@ function state_player_backbreaker()
 			with (obj_camera)
 			{
 				scr_sleep();
-				obj_player.state = 45;
+				obj_player.state = states.backbreaker;
 				shake_mag = 10;
 				shake_mag_acc = 30 / room_speed;
 			}

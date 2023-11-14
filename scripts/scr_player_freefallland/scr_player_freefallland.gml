@@ -30,7 +30,7 @@ function state_player_freefallland()
 			stopAnim = 1;
 			jumpAnim = 1;
 			vsp = -14;
-			state = 60;
+			state = states.jump;
 		}
 	}
 	image_speed = 0.35;

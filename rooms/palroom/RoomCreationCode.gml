@@ -1,2 +1,2 @@
-obj_player.state = 90;
+obj_player.state = states.pal;
 obj_player.targetDoor = "C";

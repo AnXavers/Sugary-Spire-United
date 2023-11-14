@@ -1,7 +1,7 @@
-if (state == 0 && other.state != 62 && other.hsp == 0 && other.grounded && other.key_up2)
+if (state == 0 && other.state != states.comingoutdoor && other.hsp == 0 && other.grounded && other.key_up2)
 {
 	state = 1
-	other.state = 110
+	other.state = states.actor
 	other.key_up2 = 0
 	other.movespeed = 0
 	other.hsp = 0

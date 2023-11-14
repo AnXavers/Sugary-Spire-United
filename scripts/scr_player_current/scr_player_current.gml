@@ -4,7 +4,7 @@ function state_player_current()
 	hsp = movespeed;
 	if (grounded)
 	{
-		substate = 0;
+		substate = substates.unknown_0;
 		jumpstop = 0;
 	}
 	if (movespeed != 0)

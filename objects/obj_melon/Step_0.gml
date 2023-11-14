@@ -15,7 +15,7 @@ if (bombreset > 0)
 else if (state == 3)
 {
 	state = 21;
-	substate = 0;
+	substate = substates.unknown_0;
 	taunttimer = 40;
 	with (instance_create(x, y, obj_baddietaunteffect))
 		image_speed = 0.25;

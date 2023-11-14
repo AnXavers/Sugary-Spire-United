@@ -18,7 +18,7 @@ function scr_boss_vunerable()
 		image_index = 0;
 	}
 	var p = obj_player;
-	if (place_meeting(x, y, p) && p.state != 73)
+	if (place_meeting(x, y, p) && p.state != states.hurt)
 	{
 		var o = id;
 		with (p)
@@ -54,7 +54,7 @@ function scr_boss_vunerable()
 				}
 				if (!key_up)
 				{
-					state = 87;
+					state = states.finishingblow;
 					image_index = 0;
 					sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4);
 				}

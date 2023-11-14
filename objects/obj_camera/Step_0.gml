@@ -101,7 +101,7 @@ camera_set_view_angle(view_camera[0], cam_angle + camera_get_view_angle(view_cam
 var vw = global.cam_w * cam_zoom
 var vh = global.cam_h * cam_zoom
 camera_set_view_size(view_camera[0], vw, vh);
-if (instance_exists(obj_player) && (obj_player.state != states.timesup && obj_player.state != 51))
+if (instance_exists(obj_player) && (obj_player.state != states.timesup && obj_player.state != states.gameover))
 {
 	var target = 
 	{
@@ -128,7 +128,7 @@ if (instance_exists(obj_player) && (obj_player.state != states.timesup && obj_pl
 			_tspeed = 0.3;
 			chargecamera = approach(chargecamera, _targetcharge, _tspeed);
 		}
-		else if (abs(obj_player.hsp) >= 16 && obj_player.state != 12 && obj_player.state != 11 && obj_player.state != 63)
+		else if (abs(obj_player.hsp) >= 16 && obj_player.state != 12 && obj_player.state != 11 && obj_player.state != states.Sjump)
 		{
 			_targetcharge = sign(obj_player.hsp) * ((abs(obj_player.hsp) / 4) * 50);
 			_tspeed = 2;

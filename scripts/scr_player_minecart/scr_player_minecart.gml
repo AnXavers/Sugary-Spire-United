@@ -35,7 +35,7 @@ function state_player_minecart()
 	if (scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles) && !place_meeting(x + xscale, y, obj_metalblock) && !place_meeting(x + xscale, y, obj_chocofrog))
 	{
 		sprite_index = spr_mach3hitwall;
-		state = 72;
+		state = states.bump;
 		hsp = 2.5 * -xscale;
 		vsp = -3;
 		mach2 = 0;
@@ -55,7 +55,7 @@ function state_player_minecart()
 	}
 	if (key_jump && !grounded)
 	{
-		state = 69;
+		state = states.mach2;
 		vsp = -12;
 		image_index = 0;
 		sprite_index = spr_mach2jump;
@@ -83,7 +83,7 @@ function state_player_minecart()
 				sprite_index = spr_minecartend;
 				movespeed = 0;
 			}
-			state = 71;
+			state = states.machslide;
 			vsp = -8;
 			movespeed = 6;
 			sprite_index = spr_pizzelle_hurtroll;

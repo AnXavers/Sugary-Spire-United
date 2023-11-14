@@ -24,11 +24,11 @@ if (DestroyedBy.object_index == obj_player)
 				vsp = -4;
 				mach2 = 0;
 				image_index = 0;
-				if (state != 68)
+				if (state != states.mach1)
 					sprite_index = choose(spr_blockbreak1, spr_blockbreak2, spr_blockbreak3, spr_blockbreak4, spr_blockbreak5, spr_blockbreak6, spr_blockbreak7);
 				else
 					sprite_index = spr_canehit;
-				state = 57;
+				state = states.tackle;
 			}
 		}
 		else if (obj_player.state == 17)
@@ -39,7 +39,7 @@ if (DestroyedBy.object_index == obj_player)
 				movespeed = 0;
 				sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4);
 				image_index = 0;
-				state = 87;
+				state = states.finishingblow;
 			}
 		}
 		else

@@ -5,7 +5,7 @@ if (activetimer == 0)
 		if (key_jump && (state == states.jump || state == states.mach1 || state == states.mach2 || state == states.mach3 || state == states.pizzano_twirl) && !grounded)
 		{
 			if (!(state == states.jump || state == states.mach1 || state == states.mach2 || state == states.mach3 || state == states.pizzano_twirl))
-				state = 60;
+				state = states.jump;
 			jumpAnim = 0;
 			jumpstop = 0;
 			vsp = -11;

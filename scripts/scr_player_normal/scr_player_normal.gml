@@ -186,17 +186,17 @@ function state_player_normal()
 		else
 			sprite_index = spr_shotgun_fall;
 		jumpAnim = 0;
-		state = 60;
+		state = states.jump;
 		image_index = 0;
 	}
 	if (character == "C" && key_attack && inhalingenemy == 0 && substate == 0)
-		state = 115;
+		state = states.coneboy_inhale115;
 	if (character == "C" && inhalingenemy == 1 && key_down && grounded)
 	{
 		if (storedinhalebaddie == "obj_knight")
-			substate = 1;
+			substate = substates.unknown_1;
 		else if (storedinhalebaddie == "obj_googlyjuice")
-			substate = 2;
+			substate = substates.unknown_2;
 		scr_sound(sfx_coneboyswallow);
 		inhalingenemy = false;
 	}
@@ -218,7 +218,7 @@ function state_player_normal()
 			movespeed = 0;
 		else
 			movespeed = 3;
-		state = 116;
+		state = states.coneboy_kick;
 		image_index = 0;
 		sprite_index = spr_coneboy_kick;
 		headless = true;
@@ -245,7 +245,7 @@ function state_player_normal()
 			sprite_index = spr_shotgun_jump;
 		instance_create(x, y, obj_highjumpcloud2);
 		vsp = -12;
-		state = 60;
+		state = states.jump;
 		image_index = 0;
 		jumpAnim = 1;
 	}
@@ -258,7 +258,7 @@ function state_player_normal()
 		instance_create(x, y, obj_highjumpcloud2);
 		stompAnim = 0;
 		vsp = -11;
-		state = 60;
+		state = states.jump;
 		jumpAnim = 1;
 		jumpstop = 0;
 		image_index = 0;
@@ -301,13 +301,13 @@ function state_player_normal()
 		{
 			movespeed = hsp;
 			xscale = -slopeMomentum_direction();
-			state = 96;
+			state = states.tumble;
 			sprite_index = spr_tumblestart;
 			scr_sound(sound_tumblestart);
 		}
 		else
 		{
-			state = 65;
+			state = states.crouch;
 			landAnim = 0;
 			crouchAnim = 1;
 			image_index = 0;
@@ -333,7 +333,7 @@ function state_player_normal()
 			sprite_index = spr_canefall;
 			vsp = -15;
 			canrebound = 1;
-			state = 60;
+			state = states.jump;
 		}
 		if (key_slap2 && !key_down && suplexmove == 0 && shotgunAnim == 0)
 		{
@@ -351,14 +351,14 @@ function state_player_normal()
 	}
 	if (key_shoot2 && key_up && breakdanceammo > 0)
 	{
-		state = 100;
+		state = states.breakdance;
 		sprite_index = spr_breakdancebeach;
 		image_index = 0;
 		breakdanceammo--;
 	}
 	if (key_slap2 && character == "G")
 	{
-		state = 118;
+		state = states.gumbob_mixnbrew;
 		image_index = 0;
 		sprite_index = spr_gumbob_brew_pulloutdrink;
 	}
@@ -369,7 +369,7 @@ function state_player_normal()
 			movespeed = 6;
 		sprite_index = spr_mach1;
 		jumpAnim = 1;
-		state = 69;
+		state = states.mach2;
 		image_index = 0;
 	}
 	if (character == "C")
@@ -381,7 +381,7 @@ function state_player_normal()
 			if (key_up && key_slap2)
 			{
 				vsp = -15;
-				state = 89;
+				state = states.uppercut;
 				suplexmove = true;
 				sprite_index = spr_coneboy_sworduppercut;
 				instance_create(x, y, obj_coneboyswordhitbox);
@@ -390,7 +390,7 @@ function state_player_normal()
 			{
 				instance_create(x, y, obj_coneboyswordhitbox);
 				sprite_index = spr_coneboy_sworddash;
-				state = 115;
+				state = states.coneboy_inhale115;
 			}
 		}
 		if (substate == 2)
@@ -399,13 +399,13 @@ function state_player_normal()
 			{
 				image_index = 0;
 				sprite_index = spr_coneboy_juicespit;
-				state = 116;
+				state = states.coneboy_kick;
 				instance_create(x, y, obj_coneboyjuice);
 			}
 			if (key_attack)
 			{
 				sprite_index = spr_coneboy_juicewave;
-				state = 115;
+				state = states.coneboy_inhale115;
 				movespeed = 6;
 			}
 		}

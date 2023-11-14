@@ -22,7 +22,7 @@ function state_player_shotgun()
 		else
 		{
 			sprite_index = spr_shotgun_fall;
-			state = 60;
+			state = states.jump;
 		}
 	}
 	image_speed = 0.4;

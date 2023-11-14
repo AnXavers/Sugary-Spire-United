@@ -35,7 +35,7 @@ if (bombreset > 0)
 if (ragereset > 0)
 	ragereset--;
 var targetplayer = instance_nearest(x, y, obj_player);
-if (x != targetplayer.x && state != 7 && targetplayer.state != 96 && bombreset <= 0 && grounded)
+if (x != targetplayer.x && state != 7 && targetplayer.state != states.tumble && bombreset <= 0 && grounded)
 {
 	if (targetplayer.x > (x - 80) && targetplayer.x < (x + 80) && y <= (targetplayer.y + 100) && y >= (targetplayer.y - 100))
 	{

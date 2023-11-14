@@ -78,7 +78,7 @@ function state_player_freefall()
 		{
 			scr_sound(sound_maximumspeedland);
 			image_index = 0;
-			state = 75;
+			state = states.freefallland;
 			jumpAnim = 1;
 			jumpstop = 0;
 			with (obj_baddie)

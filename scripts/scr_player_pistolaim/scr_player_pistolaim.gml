@@ -44,7 +44,7 @@ function state_player_pistolaim()
 	if (!grounded)
 	{
 		sprite_index = spr_fall;
-		state = 60;
+		state = states.jump;
 	}
 	if (move != 0)
 		xscale = move;

@@ -2,7 +2,7 @@ function scr_playerrespawn(argument0 = true)
 {
 	if (!argument0)
 	{
-		if (state != 51 && state != 110 && state != 99 && !place_meeting(x, y, obj_vertical_hallway) && !instance_exists(obj_fadeout) && room != outer_room2 && room != timesuproom && room != rank_room)
+		if (state != states.gameover && state != states.actor && state != states.fling && !place_meeting(x, y, obj_vertical_hallway) && !instance_exists(obj_fadeout) && room != outer_room2 && room != timesuproom && room != rank_room)
 		{
 			var _checkpoint = instance_nearest(x, y, obj_checkpoint_invis);
 			var _checkpointReal = -4;

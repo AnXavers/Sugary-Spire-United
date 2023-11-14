@@ -22,12 +22,12 @@ shake_magy_acc = 0;
 draw_shakey = 0;
 dialog_function = function()
 {
-	obj_player.state = 94;
+	obj_player.state = states.talkto;
 	queue_dialogue(dialog);
 };
 talk_condition = function()
 {
-	return place_meeting(x, y, obj_player) && obj_player.key_up2 && obj_player.state != 94;
+	return place_meeting(x, y, obj_player) && obj_player.key_up2 && obj_player.state != states.talkto;
 };
 step_event = function()
 {

@@ -51,14 +51,14 @@ function scr_grab_boss()
 {
 	with (obj_player)
 	{
-		if (state != 87 || baddiegrabbedID != other.id)
+		if (state != states.finishingblow || baddiegrabbedID != other.id)
 		{
 			baddiegrabbedID = other.id;
 			supergrabx = other.x - x;
 			supergraby = other.y - y;
 			sprite_index = spr_lungehit;
 			image_index = 0;
-			state = 87;
+			state = states.finishingblow;
 		}
 	}
 	state = 8;

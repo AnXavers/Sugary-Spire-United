@@ -17,7 +17,7 @@ function state_player_runonball()
 	if (key_jump && grounded && !key_down && !key_attack)
 	{
 		vsp = -7;
-		state = 60;
+		state = states.jump;
 		image_index = 0;
 		machslideAnim = 1;
 		jumpAnim = 1;

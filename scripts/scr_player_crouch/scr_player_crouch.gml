@@ -16,7 +16,7 @@ function state_player_crouch()
 	if (!grounded && !key_jump)
 	{
 		jumpAnim = 0;
-		state = 66;
+		state = states.crouchjump;
 		movespeed = 4;
 		crouchAnim = 1;
 		image_index = 0;
@@ -25,7 +25,7 @@ function state_player_crouch()
 	{
 		scr_sound(sound_jump);
 		vsp = -8;
-		state = 66;
+		state = states.crouchjump;
 		movespeed = 4;
 		image_index = 0;
 		crouchAnim = 1;
@@ -35,7 +35,7 @@ function state_player_crouch()
 	{
 		if (move == 0)
 			movespeed = 0;
-		state = 137;
+		state = states.donut;
 		image_index = 0;
 		sprite_index = spr_throwDonut;
 		with (instance_create(x, y + 16, obj_donutThrowable))
@@ -95,7 +95,7 @@ function state_player_crouch()
 	{
 		taunttimer = 20;
 		scr_taunt_storeVariables();
-		state = 45;
+		state = states.backbreaker;
 		if (supertauntcharged == 1 && key_up)
 		{
 			image_index = 0;
@@ -114,7 +114,7 @@ function state_player_crouch()
 		{
 			grav = 0.5;
 			machhitAnim = 0;
-			state = 67;
+			state = states.crouchslide;
 			movespeed = 7;
 			sprite_index = spr_coneboy_slidekick;
 			if (audio_is_playing(sound_suplex1))

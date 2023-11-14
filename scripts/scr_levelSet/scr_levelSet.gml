@@ -122,7 +122,7 @@ function scr_levelSet()
 		groundedSlope = false;
 		targetDoor = "A";
 		firetrailbuffer = 0;
-		state = 62;
+		state = states.comingoutdoor;
 		image_index = 0;
 		sprite_index = spr_walkfront;
 		Sjumpcan_doublejump = true;
@@ -234,7 +234,7 @@ function scr_levelSet()
 		angry = 0;
 		colors[0] = irandom(3);
 		headless = 0;
-		substate = 0;
+		substate = substates.unknown_0;
 		sourbuddied = 0;
 		hp = 6;
 	}

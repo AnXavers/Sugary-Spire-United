@@ -12,9 +12,9 @@ if (bombreset > 0)
 	bombreset--;
 scr_commonenemy();
 scr_scareenemy();
-if (((obj_player.x > (x - 400) && obj_player.x < (x + 400)) && (y <= (obj_player.y + 60) && y >= (obj_player.y - 60))) && obj_player.state != 88 && obj_player.state != 97 && obj_player.state != 77 && obj_player.state != 98 && obj_player.state != 112)
+if (((obj_player.x > (x - 400) && obj_player.x < (x + 400)) && (y <= (obj_player.y + 60) && y >= (obj_player.y - 60))) && obj_player.state != states.cotton && obj_player.state != states.cottondrill && obj_player.state != states.door && obj_player.state != states.cottonroll && obj_player.state != states.changing)
 {
-	if (state != 9 && state != 7 && bombreset <= 0 && obj_player.state != 88)
+	if (state != 9 && state != 7 && bombreset <= 0 && obj_player.state != states.cotton)
 	{
 		if (state == 3 || state == 0)
 		{

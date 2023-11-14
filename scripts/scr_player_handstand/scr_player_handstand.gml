@@ -71,6 +71,6 @@ function state_player_handstand()
 		movespeed = 0;
 		bouncespeed = 0;
 		bounced = 0;
-		state = 63;
+		state = states.Sjump;
 	}
 }

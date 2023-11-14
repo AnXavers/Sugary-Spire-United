@@ -42,7 +42,7 @@ if (global.coneballparry == 1 && distance_to_object(obj_parryhitbox) <= 40)
 	alarm[1] = 10
 	with (obj_player)
 	{
-		state = 93;
+		state = states.parry;
 		sprite_index = choose(spr_parry1, spr_parry2, spr_parry3);
 		image_index = 0;
 		movespeed = -8;

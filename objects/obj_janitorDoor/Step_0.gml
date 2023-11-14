@@ -1,6 +1,6 @@
 with (obj_player)
 {
-	if (place_meeting(x, y, other.id) && key_up && grounded == 1 && (state == states.normal || state == states.Sjumpprep || state == states.mach1 || state == states.mach2 || state == states.mach3) && !instance_exists(obj_fadeout) && state != 77 && state != 61 && state != 62)
+	if (place_meeting(x, y, other.id) && key_up && grounded == 1 && (state == states.normal || state == states.Sjumpprep || state == states.mach1 || state == states.mach2 || state == states.mach3) && !instance_exists(obj_fadeout) && state != states.door && state != states.victory && state != states.comingoutdoor)
 	{
 		if (ds_list_find_index(global.saveroom, other.id) != -1)
 		{
@@ -15,7 +15,7 @@ with (obj_player)
 		else if (global.janitorRudefollow)
 		{
 			scr_sound(sfx_unlockingdoor);
-			state = 61;
+			state = states.victory;
 			image_index = 0;
 			obj_camera.chargecamera = 0;
 			targetDoor = other.targetDoor;

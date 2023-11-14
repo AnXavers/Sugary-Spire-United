@@ -19,7 +19,7 @@ function scr_pizzano_twirl()
 	{
 		if (key_attack)
 		{
-			state = 69;
+			state = states.mach2;
 			image_index = 0;
 			jumpstop = 0;
 		}
@@ -54,7 +54,7 @@ function scr_pizzano_twirl()
 		if (charged && !key_up)
 		{
 			flash = 1;
-			state = 104;
+			state = states.pizzano_rocketfist;
 			sprite_index = spr_superjumpprep;
 			image_index = 0;
 			movespeed /= 1.5;
@@ -67,7 +67,7 @@ function scr_pizzano_twirl()
 			flash = 1;
 			alarm[0] = 240;
 			image_index = 0;
-			state = 63;
+			state = states.Sjump;
 			sprite_index = spr_superjumpprep;
 			scr_sound(sound_superjumpcharge1);
 		}
@@ -78,7 +78,7 @@ function scr_pizzano_twirl()
 				movespeed = 9;
 			airkung = 0;
 			kungtime = 30;
-			state = 106;
+			state = states.pizzano_kungfu;
 			flash = 1;
 			if (!grounded)
 			{

@@ -15,7 +15,7 @@ function state_player_bump()
 		hsp = 0;
 	if (animation_end())
 	{
-		state = 60;
+		state = states.jump;
 		sprite_index = spr_jump;
 		if (shotgunAnim == 1)
 			sprite_index = spr_shotgun_jump;

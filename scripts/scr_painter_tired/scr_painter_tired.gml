@@ -21,7 +21,7 @@ function scr_painter_tired()
 		with (obj_player)
 		{
 			xscale *= -1;
-			state = 87;
+			state = states.finishingblow;
 			image_index = 0;
 			sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4);
 		}

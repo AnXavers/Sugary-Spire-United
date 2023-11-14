@@ -6,7 +6,7 @@ function state_player_slap()
 		if (fallinganimation >= 40 && fallinganimation < 80)
 		{
 			sprite_index = spr_facestomp;
-			state = 60;
+			state = states.jump;
 		}
 	}
 	move = key_left + key_right;
@@ -120,7 +120,7 @@ function state_player_slap()
 		else if (!grounded)
 		{
 			sprite_index = spr_fall;
-			state = 60;
+			state = states.jump;
 		}
 	}
 	if (move != 0)

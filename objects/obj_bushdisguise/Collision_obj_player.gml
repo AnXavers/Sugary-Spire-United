@@ -1,1 +1,1 @@
-obj_player.state = 92;
+obj_player.state = states.bushdisguise;
