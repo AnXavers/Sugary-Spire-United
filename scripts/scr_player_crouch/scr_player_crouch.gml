@@ -55,7 +55,7 @@ function state_player_crouch()
 	}
 	if (grounded && !key_down && !scr_solid(x, y - 16) && !scr_solid(x, y - 32) && !key_jump)
 	{
-		state = 1;
+		state = states.normal;
 		movespeed = 0;
 		crouchAnim = 1;
 		jumpAnim = 1;

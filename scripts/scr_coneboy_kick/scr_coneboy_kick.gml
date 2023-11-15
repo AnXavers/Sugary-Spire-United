@@ -15,7 +15,7 @@ function scr_coneboy_kick() //gml_Script_scr_coneboy_kick
 		else if (move == 0)
 			movespeed = approach(movespeed, 0, 0.5)
 		if (floor(image_index) == (image_number - 1) && sprite_index == spr_coneboy_kick)
-			state = 1
+			state = states.normal
 	}
 	if (substate == 2)
 	{
@@ -25,7 +25,7 @@ function scr_coneboy_kick() //gml_Script_scr_coneboy_kick
 		else
 			movespeed = approach(movespeed, 0, 0.5)
 		if (!key_shoot)
-			state = 1
+			state = states.normal
 		else if (animation_end() && sprite_index == spr_coneboy_juicespit)
 		{
 			with (instance_create(x, y, obj_coneboyswordhitbox))

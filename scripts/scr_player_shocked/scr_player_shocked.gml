@@ -16,5 +16,5 @@ function state_player_shocked()
 		ridingmarsh = false;
 	}
 	if (animation_end())
-		state = 1;
+		state = states.normal;
 }

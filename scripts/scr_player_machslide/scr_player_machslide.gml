@@ -7,7 +7,7 @@ function state_player_machslide()
 	if (sprite_index == spr_pizzelle_hurtroll && grounded)
 		sprite_index = spr_crouchslide;
 	if (sprite_index == spr_crouchslide && movespeed <= 0)
-		state = 1;
+		state = states.normal;
 	if (sprite_index == spr_machslidestart && floor(image_index) == (image_number - 1))
 		sprite_index = spr_machslide;
 	if (animation_end() && !grounded)
@@ -42,7 +42,7 @@ function state_player_machslide()
 			if (sprite_index == spr_machslide)
 				machslideAnim = 1;
 			movespeed = 0;
-			state = 1;
+			state = states.normal;
 		}
 		if (scr_solid(x + xscale, y, true))
 		{

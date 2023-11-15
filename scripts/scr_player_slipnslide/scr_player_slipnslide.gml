@@ -15,7 +15,7 @@ function state_player_slipnslide()
 	crouchslideAnim = 1;
 	if (movespeed <= 0)
 	{
-		state = 1;
+		state = states.normal;
 		movespeed = 0;
 		mach2 = 0;
 		image_index = 0;

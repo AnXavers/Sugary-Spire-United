@@ -50,7 +50,7 @@ function state_player_handstand()
 	if (sprite_index == spr_null && floor(image_index) == (image_number - 1))
 		sprite_index = spr_null;
 	if (!key_attack)
-		state = 1;
+		state = states.normal;
 	if (key_slap2 && bounced != 0 && !key_up)
 	{
 		sprite_index = spr_null;

@@ -34,7 +34,7 @@ function state_player_pal()
 			with (obj_playerhatselect)
 				Selection = obj_playerhat.image_index;
 			scr_sound(sound_enemythrow);
-			state = 1;
+			state = states.normal;
 			targetRoom = hub_w1;
 			targetDoor = "C";
 			instance_create(x, y, obj_fadeout);

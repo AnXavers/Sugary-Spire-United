@@ -51,7 +51,7 @@ function scr_confecti_normal()
 	if (obj_player.state == states.backbreaker && obj_player.sprite_index == obj_player.spr_taunt && state != 1)
 	{
 		instance_create(x, y, obj_confectitaunt);
-		state = 1;
+		state = confectistates.taunt;
 		image_index = choose(0, 1, 2);
 	}
 }

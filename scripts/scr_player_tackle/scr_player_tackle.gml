@@ -26,7 +26,7 @@ function state_player_tackle()
 			image_index = 0;
 		}
 		else
-			state = 1;
+			state = states.normal;
 	}
 	image_speed = 0.5;
 }

@@ -112,7 +112,7 @@ function cutscene_painter_land()
 		cutscene_event_end();
 		obj_player.hsp = 0;
 		obj_player.movespeed = 0;
-		obj_player.state = 1;
+		obj_player.state = states.normal;
 		obj_painter.state = bossstates.normal;
 	}
 }

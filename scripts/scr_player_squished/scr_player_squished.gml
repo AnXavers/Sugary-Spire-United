@@ -9,7 +9,7 @@ function state_player_squished()
 		if (grounded)
 		{
 			image_speed = 0.35;
-			state = 1;
+			state = states.normal;
 		}
 	}
 }

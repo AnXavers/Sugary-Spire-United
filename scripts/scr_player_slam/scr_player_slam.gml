@@ -24,7 +24,7 @@ function state_player_slam()
 	crouchslideAnim = 1;
 	crouchAnim = 1;
 	if (floor(image_index) == 8)
-		state = 1;
+		state = states.normal;
 	if (move != 0)
 		xscale = move;
 	if (floor(image_index) == 3 && !grounded)

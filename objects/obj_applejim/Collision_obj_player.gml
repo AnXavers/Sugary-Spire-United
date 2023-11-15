@@ -1,7 +1,7 @@
 if (obj_player.state == 17 && state != 6 && state != 17)
 {
 	state = 6;
-	obj_player.state = 1;
+	obj_player.state = states.normal;
 	hp--;
 	stunned = 100;
 }

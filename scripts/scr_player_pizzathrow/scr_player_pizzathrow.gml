@@ -7,7 +7,7 @@ function state_player_pizzathrow()
 	jumpstop = 0;
 	if (global.mallowfollow == 0 && global.crackfollow == 0 && global.chocofollow == 0 && global.wormfollow == 0 && global.candyfollow == 0)
 	{
-		state = 1;
+		state = states.normal;
 		landAnim = 0;
 		mach2 = 0;
 		image_index = 0;

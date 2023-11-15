@@ -17,7 +17,7 @@ else
 	obj_player.vsp = vsp;
 	obj_player.x = x;
 	obj_player.y = y;
-	obj_player.state = 7;
+	obj_player.state = states.cheeseball;
 	instance_create(x, y, obj_slimedebris);
 	instance_create(x, y, obj_slimedebris);
 	instance_create(x, y, obj_slimedebris);

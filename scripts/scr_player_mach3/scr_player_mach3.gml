@@ -157,7 +157,7 @@ function state_player_mach3()
 			if (vsp > 0 && place_meeting(x + xscale, y, obj_icyWall))
 				verticalMovespeed -= vsp;
 			grabclimbbuffer = 0;
-			state = 11;
+			state = states.climbwall;
 		}
 		else
 		{
@@ -167,7 +167,7 @@ function state_player_mach3()
 			vsp = 0;
 			grabclimbbuffer = 0;
 			verticalMovespeed = movespeed;
-			state = 12;
+			state = states.climbdownwall;
 			xscale *= -1;
 		}
 	}

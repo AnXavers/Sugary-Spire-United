@@ -23,7 +23,7 @@ function scr_painter_grabbed()
 			atktimer--;
 			if (atktimer <= 0)
 			{
-				state = 1;
+				state = states.normal;
 				ds_queue_clear(atkqueue);
 				if (phase == 1)
 				{

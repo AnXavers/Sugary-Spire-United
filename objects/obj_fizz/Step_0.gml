@@ -1,20 +1,20 @@
-if (point_in_circle(x, y, obj_player.x + (75 * obj_player.xscale), obj_player.y, 125) && obj_player.inhaling && state != 14)
-	state = 14;
-if (state == 6 && stunned > 40 && birdcreated == 0)
+if (point_in_circle(x, y, obj_player.x + (75 * obj_player.xscale), obj_player.y, 125) && obj_player.inhaling && state != enemystates.inhaled)
+	state = enemystates.inhaled;
+if (state == enemystates.stun && stunned > 40 && birdcreated == 0)
 {
 	birdcreated = 1;
 	with (instance_create(x, y, obj_enemybird))
 		ID = other.id;
 }
-if (state != 6 && state != 10)
+if (state != enemystates.stun && state != enemystates.frozen)
 	birdcreated = 0;
 if (flash == 1 && alarm[2] <= 0)
 	alarm[2] = 0.15 * room_speed;
-if (state != 8)
+if (state != enemystates.grabbed)
 	depth = 0;
-if (state != 6 && state != 10)
+if (state != enemystates.stun && state != enemystates.frozen)
 	thrown = 0;
-if (boundbox == 0 && state != 14)
+if (boundbox == 0 && state != enemystates.inhaled)
 {
 	with (instance_create(x, y, obj_baddiecollisionbox, 
 	{
@@ -31,24 +31,24 @@ if (bombreset > 0)
 	bombreset--;
 if (((obj_player.x > (x - 50) && obj_player.x < (x + 50)) && (y <= (obj_player.y + 300) && y >= (obj_player.y - 300))) && obj_player.state != states.cotton && obj_player.state != states.cottondrill && obj_player.state != states.door && obj_player.state != states.cottonroll && obj_player.state != states.changing)
 {
-	if (state != 7 && bombreset <= 0 && obj_player.state != states.cotton)
+	if (state != enemystates.thrown && bombreset <= 0 && obj_player.state != states.cotton)
 	{
-		if (state == 22)
+		if (state == enemystates.float)
 		{
 			image_index = 0;
-			state = 7;
+			state = enemystates.thrown;
 			if (x != obj_player.x)
 				image_xscale = -sign(x - obj_player.x);
 			sprite_index = spr_throw;
 		}
 	}
 }
-if (state == 6)
+if (state == enemystates.stun)
 	grav = 0.5;
 else
 	grav = 0;
-if (state == 3)
-	state = 22;
+if (state == enemystates.walk)
+	state = enemystates.float;
 scr_commonenemy();
-if (state != 7)
+if (state != enemystates.thrown)
 	scr_scareenemy();

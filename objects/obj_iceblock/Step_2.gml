@@ -1,2 +1,2 @@
-if (state == 8)
+if (state == enemystates.grabbed)
 	scr_enemy_grabbed();

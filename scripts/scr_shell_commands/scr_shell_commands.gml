@@ -429,7 +429,7 @@ function sh_noclip()
 	if (obj_player.state != states.noclip)
 		obj_player.state = states.noclip;
 	else
-		obj_player.state = 1;
+		obj_player.state = states.normal;
 }
 function meta_noclip()
 {

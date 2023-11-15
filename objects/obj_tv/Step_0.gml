@@ -1,7 +1,7 @@
 scr_tvsprites();
 if (!visible)
 	sprite_index = spr_tvoff;
-if (!(obj_player.state == 19 && obj_player.state == 20 && obj_player.state == 13))
+if (!(obj_player.state == states.knightpep && obj_player.state == states.knightpepattack && obj_player.state == states.knightpepslopes))
 	once = 0;
 if (obj_player.y < (180 + obj_camera.Cam_y) && obj_player.x > ((camera_get_view_width(view_camera[0]) - 350) + obj_camera.Cam_x))
 {
@@ -118,12 +118,12 @@ switch (state)
 			case states.cottonroll:
 				idlespr = cottontvspr;
 				break;
-			case 145:
-			case 147:
-			case 146:
-			case 148:
+			case states.rupertnormal:
+			case states.rupertjump:
+			case states.rupertslide:
+			case states.rupertstick:
 			case states.frostburn:
-			case 143:
+			case states.frostburnbump:
 			case states.frostburnspin:
 			case states.frostburnwallrun:
 				idlespr = frostburntvspr;
@@ -145,7 +145,7 @@ switch (state)
 		}
 		if (!_transfo)
 		{
-			if (allstate == 73)
+			if (allstate == states.hurt)
 				scr_queue_tvanim(hurttvspr, 60);
 			if ((global.combo % 3) == 0 && playComboVariable != global.combo && global.combotime > 0 && global.combo > 0)
 			{

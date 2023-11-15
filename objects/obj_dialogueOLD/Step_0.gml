@@ -51,7 +51,7 @@ switch (state)
 			if (current_message == (dialogLength - 1))
 			{
 				state = 1;
-				obj_player.state = 1;
+				obj_player.state = states.normal;
 			}
 			else
 				current_message++;

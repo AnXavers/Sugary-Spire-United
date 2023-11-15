@@ -97,7 +97,7 @@ if (currentstate == 1)
 	}
 	with (obj_baddie)
 	{
-		if (state != 8)
+		if (state != enemystates.grabbed)
 		{
 			if (place_meeting(x, y, other))
 			{

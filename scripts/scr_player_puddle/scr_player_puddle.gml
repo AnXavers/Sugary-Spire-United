@@ -77,7 +77,7 @@ function state_player_puddle()
 		{
 			movespeed -= 0.5;
 			if (movespeed <= 0)
-				state = 1;
+				state = states.normal;
 		}
 		if (!grounded)
 			sprite_index = obj_player.spr_outofcontrolfall;

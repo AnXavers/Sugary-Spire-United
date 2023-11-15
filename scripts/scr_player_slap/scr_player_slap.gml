@@ -116,7 +116,7 @@ function state_player_slap()
 	if (floor(image_index) == (image_number - 1) && slapbuffer == 8)
 	{
 		if (grounded)
-			state = 1;
+			state = states.normal;
 		else if (!grounded)
 		{
 			sprite_index = spr_fall;

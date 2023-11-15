@@ -1,16 +1,16 @@
-if (state == 6 && stunned > 40 && birdcreated == 0)
+if (state == enemystates.stun && stunned > 40 && birdcreated == 0)
 {
 	birdcreated = 1;
 	with (instance_create(x, y, obj_enemybird))
 		ID = other.id;
 }
-if (state != 6 && state != 10)
+if (state != enemystates.stun && state != enemystates.frozen)
 	birdcreated = 0;
 if (flash == 1 && alarm[2] <= 0)
 	alarm[2] = 0.15 * room_speed;
-if (state != 8)
+if (state != enemystates.grabbed)
 	depth = 0;
-if (state != 6 && state != 10)
+if (state != enemystates.stun && state != enemystates.frozen)
 	thrown = 0;
 if (boundbox == 0)
 {
@@ -28,14 +28,13 @@ if (boundbox == 0)
 if (!pizzano)
 	scr_scareenemy();
 scr_commonenemy();
-var targetplayer = instance_nearest(x, y, obj_player);
-if (x != targetplayer.x && grounded)
+if (x != obj_player.x && grounded)
 {
-	if ((targetplayer.x > (x - 400) && targetplayer.x < (x + 400)) && (y <= (targetplayer.y + 20) && y >= (targetplayer.y - 20)))
+	if ((obj_player.x > (x - 400) && obj_player.x < (x + 400)) && (y <= (obj_player.y + 20) && y >= (obj_player.y - 20)))
 	{
-		if (state == 3)
+		if (state == enemystates.walk)
 		{
-			state = 1;
+			state = enemystates.charge;
 			substate = substates.unknown_0;
 			movespeed = 0;
 			image_xscale = -sign(x - obj_player.x);
@@ -46,7 +45,7 @@ if (x != targetplayer.x && grounded)
 }
 if (sprite_index == spr_banana_chargestart && floor(image_index) == (image_number - 1))
 	sprite_index = spr_banana_charge;
-if (hitboxcreate == 0 && state == 1 && sprite_index == spr_banana_charge)
+if (hitboxcreate == 0 && state == enemystates.charge && sprite_index == spr_banana_charge)
 {
 	hitboxcreate = 1;
 	with (instance_create(x, y, obj_forkhitbox, 
@@ -62,7 +61,7 @@ if (hitboxcreate == 0 && state == 1 && sprite_index == spr_banana_charge)
 		mask_index = spr_chargershitbox;
 	}
 }
-if (state == 3)
+if (state == enemystates.walk)
 {
 	movespeed = 0;
 	hsp = 0;

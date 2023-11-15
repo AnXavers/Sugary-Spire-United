@@ -39,7 +39,7 @@ function state_player_bombpep()
 		alarm[5] = 2;
 		alarm[7] = 60;
 		hurted = 1;
-		state = 1;
+		state = states.normal;
 		sprite_index = spr_idle;
 		image_index = 0;
 	}

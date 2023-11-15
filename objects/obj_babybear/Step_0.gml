@@ -1,27 +1,27 @@
 movespeed = 5;
-if (point_in_circle(x, y, obj_player.x + (75 * obj_player.xscale), obj_player.y, 125) && obj_player.inhaling && state != 14)
-	state = 14;
-if (state == 6 && stunned > 40 && birdcreated == 0)
+if (point_in_circle(x, y, obj_player.x + (75 * obj_player.xscale), obj_player.y, 125) && obj_player.inhaling && state != enemystates.inhaled)
+	state = enemystates.inhaled;
+if (state == enemystates.stun && stunned > 40 && birdcreated == 0)
 {
 	birdcreated = 1;
 	with (instance_create(x, y, obj_enemybird))
 		ID = other.id;
 }
-if (state != 6 && state != 10)
+if (state != enemystates.stun && state != enemystates.frozen)
 	birdcreated = 0;
 if (flash == 1 && alarm[2] <= 0)
 	alarm[2] = 0.15 * room_speed;
-if (state != 8)
+if (state != enemystates.grabbed)
 	depth = 0;
-if (state != 6 && state != 10)
+if (state != enemystates.stun && state != enemystates.frozen)
 	thrown = 0;
 if (ragereset > 0)
 	ragereset--;
 if (point_in_rectangle(obj_player.x, obj_player.y, x - 200, y - 50, x + 200, y + 50) && obj_player.state != states.door && obj_player.state != states.comingoutdoor)
 {
-	if (state != 26 && state == 3 && ragereset <= 0)
+	if (state != enemystates.rage && state == enemystates.walk && ragereset <= 0)
 	{
-		state = 26;
+		state = enemystates.rage;
 		sprite_index = ragespr;
 		if (x != obj_player.x)
 			image_xscale = -sign(x - obj_player.x);
@@ -33,7 +33,7 @@ if (point_in_rectangle(obj_player.x, obj_player.y, x - 200, y - 50, x + 200, y +
 		create_heat_afterimage(0);
 	}
 }
-if (boundbox == 0 && state != 14)
+if (boundbox == 0 && state != enemystates.inhaled)
 {
 	with (instance_create(x, y, obj_baddiecollisionbox, 
 	{
@@ -46,7 +46,7 @@ if (boundbox == 0 && state != 14)
 		other.boundbox = 1;
 	}
 }
-if (hitboxcreate == 0 && animation_end(undefined, 10) && state == 26)
+if (hitboxcreate == 0 && animation_end(undefined, 10) && state == enemystates.rage)
 {
 	hitboxcreate = 1;
 	with (instance_create(x, y, obj_forkhitbox, 
@@ -60,6 +60,6 @@ if (hitboxcreate == 0 && animation_end(undefined, 10) && state == 26)
 		depth = -1;
 	}
 }
-if (grounded && state != 26)
+if (grounded && state != enemystates.rage)
 	scr_scareenemy();
 scr_commonenemy();

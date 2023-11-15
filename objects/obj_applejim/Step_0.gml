@@ -1,5 +1,5 @@
 bashcooldown--;
-if (state == 3)
+if (state == enemystates.walk)
 	movespeed = 0;
 if (state == 17)
 	movespeed = 5;
@@ -9,7 +9,7 @@ if (bashcooldown == 0)
 	state = 17;
 	bashcooldown = 200;
 }
-if (state == 6 && stunned > 40 && birdcreated == 0)
+if (state == enemystates.stun && stunned > 40 && birdcreated == 0)
 {
 	birdcreated = 1;
 	with (instance_create(x, y, obj_enemybird))
@@ -17,11 +17,11 @@ if (state == 6 && stunned > 40 && birdcreated == 0)
 }
 if (hp == 0)
 	instance_destroy();
-if (state != 6 && state != 10)
+if (state != enemystates.stun && state != enemystates.frozen)
 	birdcreated = 0;
 if (flash == 1 && alarm[2] <= 0)
 	alarm[2] = 0.15 * room_speed;
-if (state != 8)
+if (state != enemystates.grabbed)
 	depth = 0;
 instance_destroy(obj_baddiethrow);
 instance_destroy(obj_swordhitbox);

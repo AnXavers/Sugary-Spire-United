@@ -6,7 +6,7 @@ function state_player_breakdance()
 	hsp *= 2;
 	if (sprite_index == spr_player_breakdancebeach && floor(image_index) >= (image_number - 1))
 	{
-		state = 1;
+		state = states.normal
 		sprite_index = spr_idle;
 	}
 }

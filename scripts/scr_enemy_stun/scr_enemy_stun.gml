@@ -85,7 +85,7 @@ function scr_enemy_stun()
 		{
 			hsp *= 1.5;
 			stunned = 0;
-			state = 3;
+			state = enemystates.walk;
 		}
 	}
 	else
@@ -109,34 +109,34 @@ function scr_enemy_stun()
 		if (object_index != obj_charger && object_index != obj_swedishfish)
 		{
 			movespeed = 1;
-			state = 3;
+			state = enemystates.walk;
 			sprite_index = walkspr;
 		}
 		else if (object_index == obj_babybear)
 		{
 			movespeed = 5;
-			state = 3;
+			state = enemystates.walk;
 			sprite_index = walkspr;
 			vsp -= 8;
 		}
 		else if (object_index == obj_fizz || object_index == obj_froth)
 		{
 			movespeed = 5;
-			state = 22;
+			state = enemystates.float;
 			sprite_index = walkspr;
 			vsp -= 8;
 		}
 		else if (object_index == obj_creamtheifOLD)
 		{
 			movespeed = 2;
-			state = 23;
+			state = enemystates.theif;
 			sprite_index = walkspr;
 			theifsubstate = 0;
 		}
 		else
 		{
 			sprite_index = idlespr;
-			state = 0;
+			state = enemystates.idle;
 		}
 	}
 }

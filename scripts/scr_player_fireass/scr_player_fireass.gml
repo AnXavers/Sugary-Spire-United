@@ -38,7 +38,7 @@ function state_player_fireass()
 		vsp = _dashvsp;
 		if (floor(image_index) == (image_number - 1))
 		{
-			state = 1;
+			state = states.normal;
 			hsp = 0;
 			image_index = 0;
 			sprite_index = obj_player.spr_idle
@@ -55,7 +55,7 @@ function state_player_fireass()
 			movespeed -= 0.25;
 		if (floor(image_index) == (image_number - 1))
 		{
-			state = 1;
+			state = states.normal;
 			hsp = 0;
 			image_index = 0;
 			alarm[5] = 2;

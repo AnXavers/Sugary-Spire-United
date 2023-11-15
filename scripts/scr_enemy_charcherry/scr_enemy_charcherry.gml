@@ -1,8 +1,7 @@
 function scr_enemy_charcherry()
 {
-	var targetplayer = obj_player;
-	var playerposition = x - targetplayer.x;
-	if (x != targetplayer.x && image_xscale != -sign(playerposition))
+	var playerposition = x - obj_player.x;
+	if (x != obj_player.x && image_xscale != -sign(playerposition))
 	{
 		movespeed = 10;
 		image_xscale = -sign(playerposition);

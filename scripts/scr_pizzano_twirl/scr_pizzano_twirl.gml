@@ -25,7 +25,7 @@ function scr_pizzano_twirl()
 		}
 		else
 		{
-			state = 1;
+			state = states.normal;
 			image_index = 0;
 			mach2 = 0;
 			jumpstop = 0;

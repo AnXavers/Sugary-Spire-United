@@ -15,7 +15,7 @@ function state_player_bushdisguise()
 		sprite_index = spr_frothstuck;
 	if (bushdetection <= 0)
 	{
-		state = 1;
+		state = states.normal;
 		sprite_index = spr_idle;
 		x = player_x;
 		instance_create(x, y, obj_snowpoofeffect);

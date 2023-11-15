@@ -7,7 +7,7 @@ function state_player_supergrab()
 		movespeed = approach(movespeed, 0, 0.2);
 		if (movespeed == 0)
 		{
-			state = 1;
+			state = states.normal;
 			landAnim = 0;
 		}
 	}

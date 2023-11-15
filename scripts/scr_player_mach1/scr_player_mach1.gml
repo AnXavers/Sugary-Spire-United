@@ -15,7 +15,7 @@ function state_player_mach1()
 			if (scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles))
 			{
 				mach2 = 0;
-				state = 1;
+				state = states.normal;
 				movespeed = 0;
 			}
 			if (movespeed <= 8)
@@ -67,7 +67,7 @@ function state_player_mach1()
 			}
 			if (!key_attack && grounded)
 			{
-				state = 1;
+				state = states.normal;
 				image_index = 0;
 				mach2 = 0;
 			}

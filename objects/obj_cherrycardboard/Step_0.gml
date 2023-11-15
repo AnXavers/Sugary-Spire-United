@@ -14,13 +14,13 @@ if (floor(image_index) == (image_number - 1) && sprite_index == spr_cardcherry_g
 }
 if (didthingflag == 1 && sprite_index == spr_cardboardcherry)
 	sprite_index = spr_cardcherry_idle;
-if (state != 6 && state != 10)
+if (state != enemystates.stun && state != enemystates.frozen)
 	birdcreated = 0;
 if (flash == 1 && alarm[2] <= 0)
 	alarm[2] = 0.15 * room_speed;
-if (state != 8)
+if (state != enemystates.grabbed)
 	depth = 0;
-if (state != 6 && state != 10)
+if (state != enemystates.stun && state != enemystates.frozen)
 	thrown = 0;
 if (boundbox == 0)
 {

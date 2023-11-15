@@ -24,7 +24,7 @@ function state_player_uppercut()
 		landAnim = 1;
 		movespeed = abs(movespeed);
 		input_buffer_secondjump = 0;
-		state = 1;
+		state = states.normal;
 		jumpAnim = 1;
 		jumpstop = 0;
 		image_index = 0;

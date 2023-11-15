@@ -18,7 +18,20 @@ if (content != -4)
 {
 	contentspr = object_get_sprite(content);
 	if (contentspr == spr_bigcollect1P)
-		contentspr = choose(18, 642, 85, 927, 1708, 1533);
+	{
+		switch obj_player.character
+		{
+			case "N":
+				contentspr = choose(spr_bigcollect1N, spr_bigcollect2N, spr_bigcollect3N);
+			case "S":
+			case "T":
+			case "V":
+			case "M":
+				contentspr = choose(spr_pizzacollect1, spr_pizzacollect2, spr_pizzacollect3, spr_pizzacollect4, spr_pizzacollect5);
+			default:
+				contentspr = choose(spr_bigcollect1P, spr_bigcollect2P, spr_bigcollect3P, spr_bigcollect4P, spr_bigcollect5P, spr_bigcollect6P);
+		}
+	}
 }
 if (ds_list_find_index(global.saveroom, id) != -1)
 	instance_destroy();

@@ -11,7 +11,7 @@ function state_player_finishingblow()
 	if (animation_end())
 	{
 		backto = 0;
-		state = 1;
+		state = states.normal;
 		movespeed = abs(movespeed);
 	}
 	var throw_frame = 6;

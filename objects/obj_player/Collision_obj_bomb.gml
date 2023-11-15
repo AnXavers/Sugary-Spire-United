@@ -1,8 +1,8 @@
-if (state == 17)
+if (state == states.handstandjump)
 {
 	bombpeptimer = 100;
 	global.combofreeze = 30;
-	state = 22;
+	state = states.bombpep;
 	image_index = 0;
 	sprite_index = spr_bombpep_intro;
 	with (instance_nearest(x, y, obj_bomb))

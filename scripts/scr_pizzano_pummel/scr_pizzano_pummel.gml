@@ -3,7 +3,7 @@ function scr_pizzano_pummel()
 	hsp = movespeed * xscale;
 	movespeed = 12;
 	if ((animation_end() && grounded) || move == -xscale)
-		state = 1;
+		state = states.normal;
 	if (scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles))
 	{
 		state = states.bump;

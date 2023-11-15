@@ -18,11 +18,11 @@ function scr_enemy_throw()
 			case obj_fizz:
 			case obj_froth:
 			case obj_conedrone:
-				state = 22;
+				state = enemystates.float;
 				sprite_index = walkspr;
 				break;
 			default:
-				state = 3;
+				state = enemystates.walk;
 				sprite_index = walkspr;
 				break;
 		}

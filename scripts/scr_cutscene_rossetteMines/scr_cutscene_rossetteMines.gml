@@ -114,6 +114,6 @@ function cutscene_rosetteMines_end()
 	global.treat = true;
 	scr_controlprompt("[spr_buttonfont]" + myButton1 + "[spr_promptfont] Throw Donut");
 	with (obj_player)
-		state = 1;
+		state = states.normal;
 	cutscene_event_end();
 }

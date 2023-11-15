@@ -1,1 +1,1 @@
-obj_player.state = 2;
+obj_player.state = states.titlescreen;

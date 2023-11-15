@@ -12,7 +12,7 @@ function state_player_pistol()
 	crouchslideAnim = 1;
 	crouchAnim = 1;
 	if (floor(image_index) == (image_number - 1) && sprite_index != spr_player_crouchshoot && sprite_index != spr_player_shootup && sprite_index != spr_player_shootdiagonal && sprite_index != spr_player_pistolair && !key_down)
-		state = 1;
+		state = states.normal;
 	else if (floor(image_index) == (image_number - 1) && key_down && sprite_index != spr_player_shootup && sprite_index != spr_player_shootdiagonal && sprite_index != spr_player_pistolair)
 		state = states.crouch;
 	else if (floor(image_index) == (image_number - 1) && sprite_index != spr_player_pistolair)

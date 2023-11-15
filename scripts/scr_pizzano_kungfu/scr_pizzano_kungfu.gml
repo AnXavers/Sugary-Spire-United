@@ -28,7 +28,7 @@ function scr_pizzano_kungfu()
 				if (key_attack)
 					state = states.mach2;
 				else
-					state = 1;
+					state = states.normal;
 				if (movespeed < 6)
 					movespeed = 6;
 			}
@@ -52,7 +52,7 @@ function scr_pizzano_kungfu()
 				if (key_attack)
 					state = states.mach2;
 				else
-					state = 1;
+					state = states.normal;
 				if (movespeed < 0)
 					movespeed *= -1;
 			}
@@ -75,7 +75,7 @@ function scr_pizzano_kungfu()
 				if (key_attack)
 					state = states.mach2;
 				else
-					state = 1;
+					state = states.normal;
 				if (movespeed < 6)
 					movespeed = 6;
 			}

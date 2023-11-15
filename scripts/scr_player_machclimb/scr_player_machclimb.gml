@@ -230,7 +230,7 @@ function state_player_climbceiling()
 		dir = (move == xscale) ? xscale : -xscale;
 		vsp = 0;
 		verticalMovespeed = movespeed;
-		state = 12;
+		state = states.climbdownwall;
 	}
 	else if (scr_solid(x - xscale, y, true) && !place_meeting(x - xscale, y, obj_destructibles) && !(place_meeting(x - xscale, y, obj_metalblock) && movespeed >= 12))
 	{

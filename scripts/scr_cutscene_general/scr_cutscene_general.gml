@@ -11,7 +11,7 @@ function cutscene_wait(argument0)
 }
 function cutscene_end_player()
 {
-	obj_player.state = 1;
+	obj_player.state = states.normal;
 	obj_player.hsp = 0;
 	obj_player.vsp = 0;
 	obj_player.sprite_index = obj_player.spr_idle;

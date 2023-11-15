@@ -2,7 +2,7 @@ if (!instance_exists(obj_pizzano_dance))
 	exit;
 switch (state)
 {
-	case 1:
+	case states.normal:
 		y = approach(y, ystart, 6);
 		if (cooldown > 0)
 			cooldown--;
@@ -12,14 +12,14 @@ switch (state)
 			attack_buffer = 5;
 		}
 		break;
-	case 74:
+	case states.freefall:
 		hsp = 0;
 		vsp = 10;
 		scr_collide();
 		if (grounded && vsp > 0)
 			state = 1;
 		break;
-	case 35:
+	case states.throwing:
 		if (attack_buffer > 0)
 			attack_buffer--;
 		else
@@ -31,7 +31,7 @@ switch (state)
 					trap_x = other.x;
 					trap_y = other.y;
 					event_perform(2, 0);
-					other.state = 1;
+					other.state = states.normal;
 					other.cooldown = other.cooldown_max;
 				}
 			}

@@ -110,7 +110,7 @@ function state_player_mach2()
 	else if (movespeed < 8)
 	{
 		if (!key_attack && grounded)
-			state = 1;
+			state = states.normal;
 		if (move == -xscale && grounded)
 		{
 			xscale *= -1;
@@ -159,7 +159,7 @@ function state_player_mach2()
 		else
 		{
 			if (movespeed < 8)
-				state = 1;
+				state = states.normal;
 			else
 			{
 				state = states.bump;

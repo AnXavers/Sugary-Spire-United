@@ -3,42 +3,42 @@ if (flying == 1)
 	grav = 0;
 	movespeed = 0;
 }
-if (state == 3)
+if (state == enemystates.walk)
 {
 	if (!instance_exists(sightID) && !alarmed)
 	{
 		sightID = instance_create(x, y, obj_guardhitbox);
 		sightID.ID = id;
 	}
-	walkspr = alarmed ? 133 : 2013;
-	if (state == 3 && alarmed)
+	walkspr = alarmed ? spr_guard_run : spr_guard;
+	if (state == enemystates.walk && alarmed)
 		movespeed = 4;
 	if (alarm[3] > 0)
 		hsp = 0;
 }
-if (state == 6 || state == 9 || state == 10 || state == 8 || alarmed)
+if (state == enemystates.stun || state == enemystates.scared || state == enemystates.frozen || state == enemystates.grabbed || alarmed)
 {
 	alarm[3] = -1;
 	if (instance_exists(sightID))
 		instance_destroy(sightID);
 }
-if (point_in_circle(x, y, obj_player.x + (75 * obj_player.xscale), obj_player.y, 125) && obj_player.inhaling && state != 14)
-	state = 14;
-if (state == 6 && stunned > 40 && birdcreated == 0)
+if (point_in_circle(x, y, obj_player.x + (75 * obj_player.xscale), obj_player.y, 125) && obj_player.inhaling && state != enemystates.inhaled)
+	state = enemystates.inhaled;
+if (state == enemystates.stun && stunned > 40 && birdcreated == 0)
 {
 	birdcreated = 1;
 	with (instance_create(x, y, obj_enemybird))
 		ID = other.id;
 }
-if (state != 6 && state != 10)
+if (state != enemystates.stun && state != enemystates.frozen)
 	birdcreated = 0;
 if (flash == 1 && alarm[2] <= 0)
 	alarm[2] = 0.15 * room_speed;
-if (state != 8)
+if (state != enemystates.grabbed)
 	depth = 0;
-if (state != 6 && state != 10)
+if (state != enemystates.stun && state != enemystates.frozen)
 	thrown = 0;
-if (boundbox == 0 && state != 14)
+if (boundbox == 0 && state != enemystates.inhaled)
 {
 	with (instance_create(x, y, obj_baddiecollisionbox, 
 	{

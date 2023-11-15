@@ -70,13 +70,13 @@ function state_player_backbreaker()
 		}
 	}
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_pizzelle_eatspaghetti)
-		state = 1;
+		state = states.normal;
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_Timesup && place_meeting(x, y, obj_exitgate))
-		state = 1;
+		state = states.normal;
 	if (floor(image_index) == (image_number - 1) && (sprite_index == spr_levelcomplete || sprite_index == spr_noise_victory))
-		state = 1;
+		state = states.normal;
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_bossintro)
-		state = 1;
+		state = states.normal;
 	if (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite_index == spr_supertaunt3)
 		image_speed = 0.4;
 	else if (sprite_index == spr_taunt)

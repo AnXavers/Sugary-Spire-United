@@ -1,4 +1,4 @@
-if (state == 3)
+if (state == enemystates.walk)
 {
 	scr_collision();
 	sprite_index = sourbuddywalkspr;

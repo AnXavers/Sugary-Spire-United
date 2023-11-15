@@ -1,6 +1,6 @@
 if (!global.freezeframe)
 	invtime = approach(invtime, 0, 1);
-if (obj_player.baddiegrabbedID != id && state == 8)
+if (obj_player.baddiegrabbedID != id && state == enemystates.grabbed)
 	state = 0;
 if (type == "Heavy" && !grounded)
 	vsp += 0.2;
@@ -14,14 +14,14 @@ if (y > (room_height + 200))
 }
 switch (state)
 {
-	case 0:
+	case enemystates.idle:
 		thrown = false;
 		grav = 0.5;
 		if (grounded)
 			hsp = approach(hsp, 0, 0.3);
 		scr_collision();
 		break;
-	case 6:
+	case enemystates.stun:
 		if (type == "Fragile" && scr_solid(x + hsp, y + vsp))
 			instance_destroy();
 		grav = 0.5;
@@ -29,13 +29,13 @@ switch (state)
 			state = 0;
 		scr_collision();
 		break;
-	case 10:
+	case enemystates.frozen:
 		scr_enemy_frozen();
 		break;
 }
 if (flash == 1 && alarm[1] <= 0)
 	alarm[1] = 0.15 * room_speed;
-if ((type == "Normal" || type == "Heavy") && ((state == 0 && type == "Heavy") || state == 6))
+if ((type == "Normal" || type == "Heavy") && ((state == 0 && type == "Heavy") || state == enemystates.stun))
 {
 	instance_destroy(instance_place(x + hsp, y + vsp, obj_baddie));
 	instance_destroy(instance_place(x + sign(hsp), y + sign(vsp), obj_baddie));
@@ -46,9 +46,9 @@ if ((type == "Normal" || type == "Heavy") && ((state == 0 && type == "Heavy") ||
 }
 if (!place_meeting(x, y, obj_dashpad))
 	touching = false;
-if (!global.freezeframe && place_meeting(x, y, obj_dashpad) && state != 8 && touching == 0)
+if (!global.freezeframe && place_meeting(x, y, obj_dashpad) && state != enemystates.grabbed && touching == 0)
 {
-	state = 6;
+	state = enemystates.stun;
 	vsp = -7;
 	var _pad = instance_place(x, y, obj_dashpad);
 	x = _pad.x;
@@ -59,7 +59,7 @@ if (!global.freezeframe && place_meeting(x, y, obj_dashpad) && state != 8 && tou
 	other.flash = true;
 	touching = true;
 }
-if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && state != 8)
+if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && state != enemystates.grabbed)
 {
 	with (obj_player)
 	{
@@ -112,13 +112,13 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 			scr_sound(sound_punch);
 			scr_sleep();
 		}
-		if (state == 17)
+		if (state == states.handstandjump)
 		{
 			scr_sound(sound_slaphit);
 			baddiegrabbedID = other.id;
 			with (other)
 			{
-				state = 8;
+				state = enemystates.grabbed;
 				instance_create(x + (other.xscale * 40), y, obj_punchdust);
 			}
 			if (!key_up)

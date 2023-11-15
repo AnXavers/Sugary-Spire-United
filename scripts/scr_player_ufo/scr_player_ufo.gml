@@ -61,7 +61,7 @@ function state_player_ufofloat()
 		with (instance_create(x, y, obj_ufo_dead))
 			hsp = other.hsp + 2;
 		vsp = -11;
-		state = 1;
+		state = states.normal;
 		movespeed = abs(hsp);
 		if (movespeed < 6)
 			movespeed = 6;
