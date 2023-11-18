@@ -153,7 +153,9 @@ enum states {
 	rupertstick, // 151
 	unused_3, // 152
 	honey, // 153
-	supergrab // 154
+	supergrab, // 154
+	tv_transition, // 155
+	tv_expression // 156
 };
 
 enum substates {
@@ -194,7 +196,8 @@ enum enemystates {
 	theif, // 23
 	eyescreamwait, // 24
 	eyescream, // 25
-	rage // 26
+	rage, // 26
+	intro // 27
 };
 
 exit;
