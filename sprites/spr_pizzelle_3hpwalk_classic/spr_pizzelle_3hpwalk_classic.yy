@@ -32,8 +32,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Classic",
-    "path": "folders/Sprites/Player/Pizzelle/Classic.yy",
+    "name": "Old",
+    "path": "folders/Sprites/Player/Pizzelle/Old.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

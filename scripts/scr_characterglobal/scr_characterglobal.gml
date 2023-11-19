@@ -475,6 +475,8 @@ function scr_characterglobal()
 		spr_uppercutbegin = spr_pizzelle_uppercutbegin_classic;
 		spr_uppercutend = spr_pizzelle_uppercutend_classic;
 		spr_fireass = spr_pizzelle_fireass_classic;
+		spr_cookiemount_skid = spr_pizzelle_cookiemount_skid_old
+		spr_skateidle = spr_pizzelle_skateidle_old
 	}
 	// fonts
 	font_lapcount = global.lapcountfont

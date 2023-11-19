@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 113.68492,
+  "duration": 75.85937,
   "parent": {
     "name": "Spire",
     "path": "folders/Sounds/Music/Spire.yy",

@@ -47,6 +47,9 @@ function scr_tvsprites()
 	escape7tvspr = spr_pizzytv_escape7;
 	DrawX = 0
 	OldDrawY = 0
+	tvcutspr = spr_tv_cut
+	if global.newplayeranim
+		marshdogspr = spr_pizzytvmarshnew
 	switch (obj_player.character)
 	{
 		case "N":
@@ -122,6 +125,7 @@ function scr_tvsprites()
 			lap3tvspr = spr_tv_exprheat;
 			lap4tvspr = spr_tv_exprheat;
 			harrytvspr = spr_tv_exprhurt3;
+			tvcutspr = spr_peptv_cut
 			break;
 		case "C":
 			idletvspr = spr_coneboytv;
@@ -171,6 +175,13 @@ function scr_tvsprites()
 			panictvspr = spr_tv_exprpanicN;
 			secrettvspr = spr_tv_secretN
 			laptvspr = spr_tv_exprheatN;
+			tvcutspr = spr_peptv_cut
+		case "V":
+			panictvspr = spr_vigilantetv_panic
+			tvcutspr = spr_peptv_cut
+		case "M":
+			happytvspr = spr_tv_exprcollectM
+			tvcutspr = spr_peptv_cut
 	}
 	if global.oldhud
 	{
