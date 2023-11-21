@@ -8,8 +8,8 @@ with obj_player
 		instance_destroy(other);
 	else if tauntStored.state == states.trick
 	{
-		trickxpos++
-		trickalpha = wave(0, 1, 2, 0, 0)
-		draw_sprite_ext(spr_combotrick, clamp((trickcount - 1), 0, sprite_get_number(spr_combotrick - 1)), x - trickxpos, y, 1, 1, 0, c_white, trickalpha)
+		obj_taunteffect.trickxpos++
+		obj_taunteffect.trickalpha = wave(0, 1, 2, 0, 0)
+		draw_sprite_ext(spr_combotrick, clamp((trickcount - 1), 0, sprite_get_number(spr_combotrick - 1)), x - obj_taunteffect.trickxpos, y, 1, 1, 0, c_white, obj_taunteffect.trickalpha)
 	}
 }
