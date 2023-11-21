@@ -40,7 +40,7 @@ function scr_playerrespawn(argument0 = true)
 					sprite_index = spr_spray;
 					vsp = 0;
 					movespeed = 10;
-					state = 0;
+					state = states.frozen;
 				}
 			}
 			state = states.hurt;
@@ -312,11 +312,11 @@ function scr_playerstate()
 		case states.cookiemount:
 			_stateFunction = state_player_cookiemount;
 			break;
-		case states.barrelslipnslide:
-			_stateFunction = state_player_cookiemount;
+		case states.cookiemountattack:
+			_stateFunction = state_player_cookiemountattack;
 			break;
-		case states.barrelroll:
-			_stateFunction = state_player_cookiemount;
+		case states.cookiemountfireass:
+			_stateFunction = state_player_cookiemountfireass;
 			break;
 		case states.current:
 			_stateFunction = state_player_current;

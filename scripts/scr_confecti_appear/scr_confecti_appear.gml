@@ -6,6 +6,6 @@ function scr_confecti_appear()
 	if (animation_end())
 	{
 		sprite_index = spr_idle;
-		state = 0;
+		state = confectistates.normal;
 	}
 }

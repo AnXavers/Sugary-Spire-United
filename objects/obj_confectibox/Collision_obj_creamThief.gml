@@ -5,7 +5,7 @@ if (sprite_index != spr_confectiboxopen && other.state == 2)
 	{
 		sprite_index = spr_creamthief_grab;
 		image_index = 0;
-		state = 0;
+		state = enemystates.idle;
 	}
 	with (obj_creamThiefLoseTrigger)
 	{

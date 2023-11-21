@@ -17,17 +17,30 @@ if (global.hurtcounter >= global.hurtmilestone && global.hurtcounter >= 5)
 {
 	showtext = 1;
 	global.hurtmilestone += 5;
-	character = "Pizzelle";
-	if (obj_player.character == "N")
-		character = "Pizzano";
-	else if (obj_player.character == "G")
-		character = "Gumbob";
-	else if (obj_player.character == "C")
-		character = "Pizzano";
-	else if (obj_player.character == "T")
-		character = "The Noise";
-	else if (obj_player.character == "S")
-		character = "Peppino";
+	var character = "Pizzelle";
+	switch obj_player.character
+	{
+		case "N":
+			character = "Pizzano";
+		case "G":
+			character = "Gumbob";
+		case "C":
+			character = "Pizzano";
+		case "T":
+			character = "The Noise";
+		case "S":
+			character = "Peppino";
+		case "V":
+			character = "The Vigilante";
+		case "M":
+			character = "Pepperman";
+		case "Z":
+			character = "Pizzall";
+		case "RM":
+			character = "Rosette and Marble";
+		case "GB":
+			character = "Gustavo and Brick";
+	}
 	scr_controlprompt("[spr_promptfont]You have hurt " + string(character) + " " + string(global.hurtmilestone) + " times...");
 	if !global.oldhud
 		scr_queue_tvanim(hurttext1tvspr, 100);
@@ -45,7 +58,7 @@ if (statictimer < 0)
 var allstate = global.freezeframe ? obj_player.frozenstate : obj_player.state;
 switch (state)
 {
-	case 1:
+	case states.normal:
 		if instance_exists(obj_secretfound)
 		{
 			idlespr = secrettvspr;
@@ -187,18 +200,18 @@ switch (state)
 		{
 			saved_tv_spr = idlespr;
 			draw_static = true;
-			state = 155;
+			state = states.tv_transition;
 			static_index = 0;
 		}
 		break;
-	case 155:
+	case states.tv_transition:
 		draw_static = true;
 		saved_tv_spr = idlespr;
 		if (floor(static_index) >= 4 || global.oldhud)
 		{
 			if (expressionsprite != -4)
 			{
-				state = 156;
+				state = states.tv_expression;
 				sprite_index = expressionsprite;
 			}
 			else
@@ -210,7 +223,7 @@ switch (state)
 			draw_static = 0;
 		}
 		break;
-	case 156:
+	case states.tv_expression:
 		switch (expressionsprite)
 		{
 			case hurttvspr:
@@ -223,7 +236,7 @@ switch (state)
 		}
 		if (expressiontime <= 0)
 		{
-			state = 155;
+			state = states.tv_transition;
 			expressionsprite = -4;
 			draw_static = true;
 			static_index = 0;

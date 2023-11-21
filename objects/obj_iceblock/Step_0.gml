@@ -1,12 +1,12 @@
 if (!global.freezeframe)
 	invtime = approach(invtime, 0, 1);
 if (obj_player.baddiegrabbedID != id && state == enemystates.grabbed)
-	state = 0;
+	state = enemystates.idle;
 if (type == "Heavy" && !grounded)
 	vsp += 0.2;
 if (y > (room_height + 200))
 {
-	state = 0;
+	state = enemystates.idle;
 	x = xstart;
 	y = ystart;
 	hsp = 0;
@@ -26,7 +26,7 @@ switch (state)
 			instance_destroy();
 		grav = 0.5;
 		if (grounded && vsp > 0)
-			state = 0;
+			state = enemystates.idle;
 		scr_collision();
 		break;
 	case enemystates.frozen:
@@ -35,7 +35,7 @@ switch (state)
 }
 if (flash == 1 && alarm[1] <= 0)
 	alarm[1] = 0.15 * room_speed;
-if ((type == "Normal" || type == "Heavy") && ((state == 0 && type == "Heavy") || state == enemystates.stun))
+if ((type == "Normal" || type == "Heavy") && ((state == states.frozen && type == "Heavy") || state == enemystates.stun))
 {
 	instance_destroy(instance_place(x + hsp, y + vsp, obj_baddie));
 	instance_destroy(instance_place(x + sign(hsp), y + sign(vsp), obj_baddie));
@@ -71,7 +71,7 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 			with (instance_create(other.x, other.y, obj_bangeffect))
 				sprite_index = spr_enemypuncheffect;
 			machpunchAnim = true;
-			other.state = 6;
+			other.state = enemystates.stun;
 			other.vsp = -11;
 			if (state == states.mach2)
 				other.vsp = -7;
@@ -97,7 +97,7 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 			with (instance_create(other.x, other.y, obj_bangeffect))
 				sprite_index = spr_enemypuncheffect;
 			machpunchAnim = true;
-			other.state = 6;
+			other.state = enemystates.stun;
 			other.vsp = vsp;
 			if (state == states.Sjump)
 				other.vsp -= 8;

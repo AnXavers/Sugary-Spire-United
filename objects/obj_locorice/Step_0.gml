@@ -33,5 +33,5 @@ if (active)
 	scr_commonenemy();
 	scr_scareenemy();
 }
-if (state == 0 && active)
-	state = 16;
+if (state == enemystates.idle && active)
+	state = enemystates.charcherry;

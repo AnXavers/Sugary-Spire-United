@@ -6,12 +6,12 @@ if (bosshpindex > sprite_get_number(bosshpspr))
 	bosshpindex = frac(bosshpindex);
 switch (state)
 {
-	case 27:
+	case states.highjump:
 		scr_bosscontroller_intro();
 		break;
-	case 1:
+	case states.normal:
 		scr_bosscontroller_normal();
 		break;
-	case 61:
+	case states.victory:
 		break;
 }

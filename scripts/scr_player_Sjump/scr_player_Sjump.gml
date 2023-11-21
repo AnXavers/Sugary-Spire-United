@@ -51,7 +51,7 @@ function state_player_Sjump()
 			if (bbox_in_camera(view_camera[0]) && grounded)
 			{
 				image_index = 0;
-				state = 0;
+				state = states.frozen;
 				vsp = -7;
 				hsp = 0;
 			}

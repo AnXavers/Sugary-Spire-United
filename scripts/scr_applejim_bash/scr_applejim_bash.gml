@@ -16,7 +16,7 @@ function scr_applejim_bash()
 		if (grounded || (grounded && !place_meeting(x, y, obj_platform)))
 		{
 			hsp = 0;
-			state = 0;
+			state = enemystates.idle;
 			image_index = 0;
 		}
 	}
@@ -25,20 +25,20 @@ function scr_applejim_bash()
 	else
 	{
 		sprite_index = spr_applejim_charge;
-		state = 0;
+		state = enemystates.idle;
 	}
 	image_speed = 0.35;
 	if ((scr_solid(x + 1, y) && image_xscale == 1) || (scr_solid(x - 1, y) && image_xscale == -1) || place_meeting(x + hsp, y, obj_hallway))
 	{
 		if (!place_meeting(x + sign(hsp), y, obj_slope))
-			state = 6;
+			state = enemystates.stun;
 	}
 	if (!(scr_solid(x + 15, y + 31) || place_meeting(x + 15, y + 31, obj_platform)))
 	{
 		if (image_xscale == 1 && movespeed > 0)
 		{
 			bashcooldown = 200;
-			state = 6;
+			state = enemystates.stun;
 		}
 	}
 	if (!(scr_solid(x - 15, y + 31) || place_meeting(x - 15, y + 31, obj_platform)))
@@ -46,7 +46,7 @@ function scr_applejim_bash()
 		if (image_xscale == -1 && movespeed > 0)
 		{
 			bashcooldown = 200;
-			state = 6;
+			state = enemystates.stun;
 		}
 	}
 	if (!(grounded || (grounded && !place_meeting(x, y, obj_platform))) && hsp < 0)

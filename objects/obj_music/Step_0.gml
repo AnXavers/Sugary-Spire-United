@@ -17,13 +17,13 @@ if (_oldGummyBear != GummyBear)
 {
 	if (GummyBear)
 	{
-		audio_sound_gain(global.harrymusic, global.musicVolume, 2000);
+		audio_sound_gain(global.harrymusic, global.musicVolume * global.VolumeModifier, 2000);
 		audio_sound_gain(global.music, 0, 2000);
 	}
 	else
 	{
 		audio_sound_gain(global.harrymusic, 0, 2000);
-		audio_sound_gain(global.music, global.musicVolume, 2000);
+		audio_sound_gain(global.music, global.musicVolume * global.VolumeModifier, 2000);
 	}
 }
 if (audio_sound_get_gain(prevmuID) <= 0)
@@ -68,10 +68,10 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 		{
 			audio_sound_gain(prevmuID, 0, 500);
 			audio_sound_gain(global.music, 0, 0);
-			audio_sound_gain(global.music, global.musicVolume, 500);
+			audio_sound_gain(global.music, global.musicVolume * global.VolumeModifier, 500);
 		}
 		else
-			audio_sound_gain(global.music, global.musicVolume, 0);
+			audio_sound_gain(global.music, global.musicVolume * global.VolumeModifier, 0);
 		audio_stop_sound(global.secretmusic);
 		audio_stop_sound(global.harrymusic);
 		global.secretmusic = -4;

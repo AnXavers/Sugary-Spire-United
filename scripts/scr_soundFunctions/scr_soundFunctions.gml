@@ -22,7 +22,7 @@ function scr_music(argument0, argument1 = 0, argument2 = undefined)
 	audio_sound_gain(_snd, global.musicVolume, 0);
 	return _snd;
 }
-function scr_musicnoloop()
+function scr_musicnoloop(argument0)
 {
 	global.music = audio_play_sound(argument0, 10, false);
 	audio_sound_gain(global.music, global.musicVolume, 0);
@@ -62,7 +62,7 @@ function force_song(argument0, argument1, argument2 = true, argument3 = 0, argum
 	}
 	exit;
 }
-function scr_get_music_loop()
+function scr_get_music_loop(argument0)
 {
 	if (!audio_is_playing(argument0))
 		return 0;

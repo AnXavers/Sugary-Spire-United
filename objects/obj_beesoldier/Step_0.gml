@@ -28,7 +28,7 @@ if (boundbox == 0 && state != enemystates.inhaled)
 	}
 }
 scr_commonenemy();
-if (state != 7 && state != 0)
+if (state != enemystates.thrown && state != enemystates.idle)
 	scr_scareenemy();
 if (bombreset > 0)
 	bombreset--;
@@ -36,7 +36,7 @@ if (ragereset > 0)
 	ragereset--;
 if (state == 0)
 	bombreset = 0;
-if (point_in_rectangle(obj_player.x, obj_player.y, x - 300, y - 50, x + 300, y + 50) && obj_player.state != states.door && obj_player.state != states.comingoutdoor && state != 3)
+if (point_in_rectangle(obj_player.x, obj_player.y, x - 300, y - 50, x + 300, y + 50) && obj_player.state != states.door && obj_player.state != states.comingoutdoor && state != enemystates.walk)
 {
 	if ((state == 0 || state == 3) && bombreset <= 0)
 	{
@@ -45,11 +45,11 @@ if (point_in_rectangle(obj_player.x, obj_player.y, x - 300, y - 50, x + 300, y +
 		sprite_index = spr_beesoldier_intro;
 	}
 }
-if (state != 0 && ((obj_player.x > (x - 400) && obj_player.x < (x + 400)) && (y <= (obj_player.y + 60) && y >= (obj_player.y - 60))) && obj_player.state != states.cotton && obj_player.state != states.cottondrill && obj_player.state != states.door && obj_player.state != states.cottonroll && obj_player.state != states.changing)
+if (state != enemystates.idle && ((obj_player.x > (x - 400) && obj_player.x < (x + 400)) && (y <= (obj_player.y + 60) && y >= (obj_player.y - 60))) && obj_player.state != states.cotton && obj_player.state != states.cottondrill && obj_player.state != states.door && obj_player.state != states.cottonroll && obj_player.state != states.changing)
 {
-	if (state != 9 && state != 7 && bombreset <= 0 && obj_player.state != states.cotton)
+	if (state != enemystates.scared && state != enemystates.thrown && bombreset <= 0 && obj_player.state != states.cotton)
 	{
-		if (state == 3 || state == 0)
+		if (state == enemystates.walk || state == enemystates.idle)
 		{
 			image_index = 0;
 			state = 7;

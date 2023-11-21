@@ -1665,9 +1665,106 @@ function scr_characterglobal()
 			break;
 		case "M":
 			break;
+		case "Z":
+			// sprites
+			spr_idle = spr_pizzall_idle;
+			spr_move = spr_pizzall_walk;
+			spr_angryidle = spr_pizzall_3hpidle;
+			spr_angrywalk = spr_pizzall_3hpwalk;
+			spr_crawl = spr_pizzall_machsliding;
+			spr_hurt = spr_pizzall_hurt;
+			spr_jump = spr_pizzall_jump;
+			spr_jump2 = spr_pizzall_jump;
+			spr_fall = spr_pizzall_fall;
+			spr_fall2 = spr_pizzall_fall;
+			spr_bodyslamstart = spr_pizzall_bodyslamstart;
+			spr_bodyslamfall = spr_pizzall_bodyslamfall;
+			spr_bodyslamland = spr_pizzall_bodyslamland;
+			spr_bombdropstart = spr_pizzall_bodyslamstart;
+			spr_bombdropfall = spr_pizzall_bodyslamfall;
+			spr_bombdropland = spr_pizzall_bodyslamland;
+			spr_crouch = spr_pizzall_machsliding;
+			spr_bump = spr_pizzall_bump;
+			spr_land = spr_pizzall_land;
+			spr_land2 = spr_pizzall_land2;
+			spr_lookdoor = spr_pizzall_lookdoor;
+			spr_walkfront = spr_pizzall_walkfront;
+			spr_victory = spr_pizzall_enterkey;
+			spr_keyget = spr_pizzall_keyget;
+			spr_crouchslip = spr_pizzall_machsliding;
+			spr_mach1 = spr_pizzall_mach1;
+			spr_mach2 = spr_pizzall_mach;
+			spr_mach3player = spr_pizzall_mach4;
+			spr_suplexbump = spr_pizzall_bump
+			spr_rollgetup = spr_pizzall_machslideend;
+			spr_mach3jump = spr_pizzall_mach3jump;
+			spr_mach3hitwall = spr_pizzall_mach3hitwall;
+			spr_mach3roll = spr_pizzall_machslideboost3
+			spr_crazyrun = spr_pizzall_crazyrun;
+			spr_machslide = spr_pizzall_machsliding;
+			spr_machslideend = spr_pizzall_machslideend;
+			spr_machslideboost = spr_pizzall_machslideboost;
+			spr_machslideboost3 = spr_pizzall_machslideboost3;
+			spr_land2 = spr_pizzall_land2;
+			spr_stomp = spr_pizzall_bodyslamfall;
+			spr_stompprep = spr_pizzall_bodyslamstart;
+			spr_crouchslide = spr_pizzall_machslideboost3;
+			spr_crouch = spr_pizzall_machsliding;
+			spr_bump = spr_pizzall_bump;
+			spr_victory = spr_pizzall_enterkey;
+			spr_hurt = spr_pizzall_hurt;
+			spr_climbwall = spr_pizzall_climbwall;
+			spr_grab = spr_pizzall_suplexdash;
+			spr_mach2jump = spr_pizzall_mach2jump;
+			spr_longjump = spr_pizzall_mach2jump
+			spr_longjumpend = spr_pizzall_mach2jump
+			spr_Timesup = spr_pizzall_timeup;
+			spr_hurtjump = spr_pizzall_hurt;
+			spr_blockbreak1 = spr_pizzall_blockbreak1
+			spr_blockbreak2 = spr_pizzall_blockbreak2
+			spr_blockbreak3 = spr_pizzall_blockbreak3
+			spr_blockbreak4 = spr_pizzall_blockbreak4
+			spr_blockbreak5 = spr_pizzall_blockbreak5
+			spr_blockbreak6 = spr_pizzall_blockbreak6
+			spr_airdash1 = spr_pizzall_airdash1;
+			spr_airdash2 = spr_pizzall_airdash2;
+			spr_keyget = spr_pizzall_keyget;
+			spr_idle1 = spr_pizzall_idle;
+			spr_idle2 = spr_pizzall_idle;
+			spr_idle3 = spr_pizzall_idle;
+			spr_idle4 = spr_pizzall_idle;
+			spr_suplexdash = spr_pizzall_suplexdash;
+			spr_taunt = spr_pizzall_taunt;
+			spr_selectpal = spr_pizzall_selectpal;
+			spr_cottonidle = spr_pizzall_cotton_idle;
+			spr_escapeidle = spr_pizzall_escapeidle;
+			spr_timesupidle = spr_pizzall_timesupidle;
+			spr_facehurtup = spr_pizzall_facehurtup;
+			spr_facehurt = spr_pizzall_facehurt;
+			spr_shotgun_player = spr_peppino_shotgun;
+			spr_swingdingend = spr_pizzall_swingdingend;
+			spr_superjump = spr_pizzall_superjump;
+			spr_superjump_cancelgroundedmach4 = spr_pizzano_superjump_cancelmach4grounded;
+			spr_superjump_cancelgrounded = spr_pizzano_mach3;
+			spr_suplexdashCancel = spr_pizzall_suplexdashCancel;
+			spr_outofcontrolfall = spr_pizzall_outofcontrolfall;
+			spr_metal_destroyable_escape = spr_pizzall_metalblockEscape;
+			spr_player_rankS = spr_pizzall_rankS;
+			spr_player_rankA = spr_pizzall_rankA;
+			spr_player_rankB = spr_pizzall_rankB;
+			spr_player_rankC = spr_pizzall_rankC;
+			spr_player_rankD = spr_pizzall_rankD;
+			spr_coneball_player = spr_pizzall_coneball;
+			spr_coneball_melting_player = spr_pizzall_coneball_aggro;
+			spr_cottoncreator = spr_pizzall_cottonmaker;
+			spr_cotton_platform = spr_pizzall_cottonplatform_tiled;
+			break;
+		case "GB":
+			break;
 		case "RM":
 			// sprites
 			spr_idle = spr_rosmar_idle;
+			spr_move = spr_rosmar_walk;
 			spr_taunt = spr_rosmar_taunt;
 			spr_palette = spr_pal_RosMar;
 			break;

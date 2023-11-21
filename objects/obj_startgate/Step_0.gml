@@ -16,115 +16,57 @@ if (is_hub())
 	else
 		layer_background_alpha(b, 0);
 }
-showtext = false;
-if (distance_to_object(obj_player) < 50)
+if ((place_meeting(x, y, obj_player)) && (obj_player.state != states.victory))
 {
 	showtext = true;
 	switch (level)
 	{
-		default:
-			with (obj_tv)
-			{
-				message = string_upper(other.level);
-				showtext = 1;
-				alarm[0] = 2;
-			}
-			break;
 		case "tutorial":
-			with (obj_tv)
-			{
-				message = "TUTORIAL";
-				showtext = 1;
-				alarm[0] = 2;
-			}
+			scr_controlprompt("[spr_promptfont]Tutorial", -4, 10)
 			break;
 		case "entryway":
-			with (obj_tv)
-			{
-				message = "ENTRYWAY";
-				showtext = 1;
-				alarm[0] = 2;
-			}
+			scr_controlprompt("[spr_promptfont]Crunchy Construction", -4, 10)
 			break;
 		case "steamy":
-			with (obj_tv)
-			{
-				message = "COTTONTOWN";
-				showtext = 1;
-				alarm[0] = 2;
-			}
+			scr_controlprompt("[spr_promptfont]Cottontown", -4, 10)
 			break;
 		case "mines":
-			with (obj_tv)
-			{
-				message = "SUGARSHACK MINES";
-				showtext = 1;
-				alarm[0] = 2;
-			}
+			scr_controlprompt("[spr_promptfont]Sugarshack Mines", -4, 10)
 			break;
 		case "molasses":
-			with (obj_tv)
-			{
-				message = "MOLASSES SWAMP";
-				showtext = 1;
-				alarm[0] = 2;
-			}
+			scr_controlprompt("[spr_promptfont]Molasses Swamp", -4, 10)
 			break;
 		case "fudge":
-			with (obj_tv)
-			{
-				message = "MT FUDGETOP";
-				showtext = 1;
-				alarm[0] = 2;
-			}
+			scr_controlprompt("[spr_promptfont]Mt. Fudgetop", -4, 10)
 			break;
 		case "dance":
-			with (obj_tv)
-			{
-				message = "DANCE OFF";
-				showtext = 1;
-				alarm[0] = 2;
-			}
+			scr_controlprompt("[spr_promptfont]Dance Off", -4, 10)
 			break;
 		case "sucrose":
-			with (obj_tv)
-			{
-				message = "SUCROSE SNOWSTORM";
-				showtext = 1;
-				alarm[0] = 2;
-			}
+			scr_controlprompt("[spr_promptfont]Sucrose Snowstorm", -4, 10)
 			break;
 		case "martian":
-			with (obj_tv)
-			{
-				message = "MARTIAN FREEZER";
-				showtext = 1;
-				alarm[0] = 2;
-			}
+			scr_controlprompt("[spr_promptfont]Martian Outpost", -4, 10)
 			break;
 		case "bee":
-			with (obj_tv)
-			{
-				message = "STING OPERATION";
-				showtext = 1;
-				alarm[0] = 2;
-			}
+			scr_controlprompt("[spr_promptfont]Sting Operation", -4, 10)
 			break;
 		case "exitway":
-			with (obj_tv)
-			{
-				message = "COTTONSTORM";
-				showtext = 1;
-				alarm[0] = 2;
-			}
+			scr_controlprompt("[spr_promptfont]Wafer Deconstruction", -4, 10)
+			break;
+		case "stormy":
+			scr_controlprompt("[spr_promptfont]Cottonstorm", -4, 10)
 			break;
 		case "dragonlair":
-			with (obj_tv)
-			{
-				message = "DRAGON ZONE";
-				showtext = 1;
-				alarm[0] = 2;
-			}
+			scr_controlprompt("[spr_promptfont]Dragon Zone", -4, 10)
+			break;
+		case "yogurt":
+			scr_controlprompt("[spr_promptfont]Yogurt's Challenge", -4, 10)
+			break;
+		default:
+			scr_controlprompt(string_upper(other.level), -4, 10)
 			break;
 	}
 }
+else
+	showtext = false;

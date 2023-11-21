@@ -4,7 +4,7 @@ if (sprite_index != spr_confectiboxopen)
 	{
 		hsp = 0;
 		vsp = 0;
-		state = 0;
+		state = enemystates.idle;
 		sprite_index = spr_creamthief_lose;
 	}
 	var _content = instance_create(x + (sprite_width / 2), y + (sprite_height / 2), BoxContent);

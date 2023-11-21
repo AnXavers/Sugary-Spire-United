@@ -1,7 +1,19 @@
 function scr_escapebgs()
 {
+	if global.newlvldesign == 2
+	{
+		layer_change_tileset(ts_secret, ts_secretold)
+		layer_change_background(bg_secret2, bg_secret2_old)
+	}
+	else if global.newlvldesign >= 1
+		layer_change_tileset(ts_secret, ts_secretnew)
 	if (global.panic == 1)
 	{
+		if (global.newlvldesign == 1 || global.newlvldesign == 3)
+		{
+			layer_change_background(bg_fudgetop_frontmountain, bg_futopmelt1_new)
+			layer_change_background(bg_fudgetop_sky, bg_futopmelt2_new)
+		}
 		layer_change_background(bg_waferback1, bgwafer_escape2)
 		layer_change_background(bg_waferback2, bgwafer_escape1)
 		layer_change_background(bg_waferclouds, bgwafer_escape3)
@@ -64,11 +76,6 @@ function scr_escapebgs()
 		layer_change_background(bg_fudgetop_frontmountain, bg_futopmelt1)
 		layer_change_background(bg_fudgetop_mountainback, spr_backgroundnull)
 		layer_change_background(bg_fudgetop_sky, bg_futopmelt2)
-		if (global.newlvldesign == 1 || global.newlvldesign == 3)
-		{
-			layer_change_background(bg_futopmelt1, bg_futopmelt1_new)
-			layer_change_background(bg_futopmelt1, bg_futopmelt2_new)
-		}
 		layer_change_background(bg_fudgetop_skyscroll, spr_backgroundnull)
 		layer_change_background(bg_fudgetop2_foreground, bg_fudgetop2_foreground_escape)
 		layer_change_background(bg_fudgetop2_1, bg_fudgetop2_1_escape)

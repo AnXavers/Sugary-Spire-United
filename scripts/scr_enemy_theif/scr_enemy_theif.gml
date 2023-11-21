@@ -27,7 +27,7 @@ function scr_enemy_theif()
 		if (animation_end() && sprite_index == spr_theif_keyget)
 		{
 			sprite_index = spr_theif_keywalk;
-			theifsubstate = 0;
+			theifsubstate = substates.unknown_0;
 			movespeed = 4;
 		}
 	}
@@ -37,7 +37,7 @@ function scr_enemy_theif()
 		movespeed = 5;
 		if ((place_meeting(x + sign(hsp), y, obj_solid) && !place_meeting(x + sign(hsp), y, obj_slope)) || animation_end())
 		{
-			theifsubstate = 0;
+			theifsubstate = substates.unknown_0;
 			snatchcooldown = 100;
 			movespeed = 2;
 		}
@@ -47,7 +47,7 @@ function scr_enemy_theif()
 			{
 				scr_hurtplayer();
 				snatchcooldown = 100;
-				theifsubstate = 0;
+				theifsubstate = substates.unknown_0;
 				movespeed = 2;
 			}
 			if (global.key_inv == 1)

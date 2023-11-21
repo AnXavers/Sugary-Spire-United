@@ -10,7 +10,7 @@ if (state != enemystates.stun && state != enemystates.frozen)
 	birdcreated = 0;
 if (flash == 1 && alarm[2] <= 0)
 	alarm[2] = 0.15 * room_speed;
-if (hitboxcreate == 0 && state == 3)
+if (hitboxcreate == 0 && state == enemystates.walk)
 {
 	hitboxcreate = 1;
 	with (instance_create(x, y, obj_forkhitbox, 

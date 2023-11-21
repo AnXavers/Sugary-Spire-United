@@ -22,6 +22,7 @@
     {"name":"inst_587D492F","path":"rooms/options_room/options_room.yy",},
     {"name":"inst_7809CA92","path":"rooms/options_room/options_room.yy",},
     {"name":"inst_173A013F","path":"rooms/options_room/options_room.yy",},
+    {"name":"inst_F19ED28","path":"rooms/options_room/options_room.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -62,8 +63,12 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7809CA92","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_jukebox","path":"objects/obj_jukebox/obj_jukebox.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1760.0,"y":562.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_173A013F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_charswitch","path":"objects/obj_charswitch/obj_charswitch.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_charswitch","path":"objects/obj_charswitch/obj_charswitch.yy",},"propertyId":{"name":"character","path":"objects/obj_charswitch/obj_charswitch.yy",},"value":"\"RM\"",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_charswitch","path":"objects/obj_charswitch/obj_charswitch.yy",},"propertyId":{"name":"switchid","path":"objects/obj_charswitch/obj_charswitch.yy",},"value":"6",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_charswitch","path":"objects/obj_charswitch/obj_charswitch.yy",},"propertyId":{"name":"switchid","path":"objects/obj_charswitch/obj_charswitch.yy",},"value":"7",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1312.0,"y":562.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_F19ED28","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_charswitch","path":"objects/obj_charswitch/obj_charswitch.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_charswitch","path":"objects/obj_charswitch/obj_charswitch.yy",},"propertyId":{"name":"character","path":"objects/obj_charswitch/obj_charswitch.yy",},"value":"\"Z\"",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_charswitch","path":"objects/obj_charswitch/obj_charswitch.yy",},"propertyId":{"name":"switchid","path":"objects/obj_charswitch/obj_charswitch.yy",},"value":"8",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1408.0,"y":562.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":24,"SerialiseWidth":63,"TileCompressedData":[
 -3,59,-60,1,-3,59,-60,1,-3,59,2,61,62,-53,116,2,117,118,-3,1,-3,59,57,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,123,124,125,126,127,128,129,130,131,132,133,134,135,136,

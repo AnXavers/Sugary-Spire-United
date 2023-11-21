@@ -6,15 +6,10 @@ var _confectispr = [
 	[obj_player.spr_confecti4_idle, obj_player.spr_confecti4_walk, obj_player.spr_confecti4_taunt, 35],
 	[obj_player.spr_confecti5_idle, obj_player.spr_confecti5_walk, obj_player.spr_confecti5_taunt, 75]
 ];
-confecti[0] = ini_read_real("Confecti", string(level) + "1", 0);
-confecti[1] = ini_read_real("Confecti", string(level) + "2", 0);
-confecti[2] = ini_read_real("Confecti", string(level) + "3", 0);
-confecti[3] = ini_read_real("Confecti", string(level) + "4", 0);
-confecti[4] = ini_read_real("Confecti", string(level) + "5", 0);
 for (var i = 0; i < array_length(_confectispr); i++)
 {
 	var b = _confectispr[i];
-	if (confecti[i])
+	if ini_read_real("Confecti", string(level) + string((i + 1)), 0)
 	{
 		with (instance_create(x + b[3], y - 46, obj_confectiprop))
 		{
@@ -27,23 +22,14 @@ for (var i = 0; i < array_length(_confectispr); i++)
 		}
 	}
 }
-with instance_create(x, y, obj_gatesecret)
+for (var i = 0; i < 3; i++)
 {
-	cardtimer = 750;
-	cardspr = (ini_read_string("Secret", string(obj_startgate.level), 0) >= 1 ? spr_rankcardflipped : spr_rankcard);
-	dorigin = other.depth
-}
-with instance_create(x, y, obj_gatesecret)
-{
-	cardtimer = 0;
-	cardspr = (ini_read_string("Secret", string(obj_startgate.level), 0) >= 2 ? spr_rankcardflipped : spr_rankcard);
-	dorigin = other.depth
-}
-with instance_create(x, y, obj_gatesecret)
-{
-	cardtimer = -750;
-	cardspr = (ini_read_string("Secret", string(obj_startgate.level), 0) >= 3 ? spr_rankcardflipped : spr_rankcard);
-	dorigin = other.depth
+	with instance_create(x, y, obj_gatesecret)
+	{
+		cardtimer = ((i * -750) + 750);
+		cardspr = (ini_read_string("Secret", string(obj_startgate.level), 0) >= (i + 1) ? spr_rankcardflipped : spr_rankcard);
+		dorigin = other.depth
+	}
 }
 var i = 0;
 var _string_length = string_length(ini_read_string("Highscore", string(level), 0)) + 1;

@@ -83,8 +83,8 @@ enum states {
 	barrelmach2, // 81
 	barrelfloat, // 82
 	cookiemount, // 83
-	barrelslipnslide, // 84
-	barrelroll, // 85
+	cookiemountattack, // 84
+	cookiemountfireass, // 85
 	current, // 86
 	finishingblow, // 87
 	cotton, // 88

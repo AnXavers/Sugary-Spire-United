@@ -131,7 +131,7 @@ function scr_enemy_stun()
 			movespeed = 2;
 			state = enemystates.theif;
 			sprite_index = walkspr;
-			theifsubstate = 0;
+			theifsubstate = substates.unknown_0;
 		}
 		else
 		{

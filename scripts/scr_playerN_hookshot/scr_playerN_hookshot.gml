@@ -38,7 +38,7 @@ function scr_playerN_hookshot()
 			if (grounded && bbox_in_camera(view_camera[0]))
 			{
 				image_index = 0;
-				state = 0;
+				state = enemystates.idle;
 				vsp = -7;
 				hsp = 0;
 			}

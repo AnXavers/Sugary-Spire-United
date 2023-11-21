@@ -5,7 +5,7 @@ function scr_enemy_turn()
 	hsp = 0;
 	if (floor(image_index) == (image_number - 1))
 	{
-		state = 0;
+		state = enemystates.idle;
 		image_index = 0;
 		sprite_index = idlespr;
 		image_xscale *= -1;

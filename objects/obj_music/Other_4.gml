@@ -21,10 +21,10 @@ if (!global.panic && room != rank_room && room != timesuproom && !instance_exist
 		{
 			audio_sound_gain(prevmuID, 0, 500);
 			audio_sound_gain(global.music, 0, 0);
-			audio_sound_gain(global.music, global.musicVolume, 500);
+			audio_sound_gain(global.music, global.musicVolume * global.VolumeModifier, 500);
 		}
 		else
-			audio_sound_gain(global.music, global.musicVolume, 0);
+			audio_sound_gain(global.music, global.musicVolume * global.VolumeModifier, 0);
 		audio_stop_sound(global.secretmusic);
 		audio_stop_sound(global.harrymusic);
 		global.secretmusic = -4;
@@ -32,7 +32,7 @@ if (!global.panic && room != rank_room && room != timesuproom && !instance_exist
 	if (instance_exists(obj_gummyharry))
 	{
 		global.harrymusic = scr_music(mu_gummyharry);
-		audio_sound_gain(global.harrymusic, 0, 0);
+		audio_sound_gain(global.harrymusic * global.VolumeModifier, 0, 0);
 	}
 }
 trace(global.secret_room);

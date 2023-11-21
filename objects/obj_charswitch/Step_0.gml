@@ -27,4 +27,7 @@ switch character
 	case "RM":
 		sprite_index = spr_rosmar_idle
 		break;
+	case "Z":
+		sprite_index = spr_pizzall_idle
+		break;
 }

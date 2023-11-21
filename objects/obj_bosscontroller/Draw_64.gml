@@ -1,6 +1,6 @@
 switch (state)
 {
-	case 27:
+	case states.highjump:
 		firey--;
 		draw_sprite_tiled(spr_versusbg, 0, 0, firey);
 		if (!surface_exists(player_surface))
@@ -40,7 +40,7 @@ switch (state)
 		draw_rectangle_color(-10, -10, 970, 550, color, color, color, color, false);
 		draw_set_alpha(1);
 		break;
-	case 1:
+	case states.normal:
 		scr_bosscontroller_draw_health();
 		scr_bosscontroller_draw_health(bosshpspr, -1, bossmaxhp, lastbosshp, 896, 50, undefined, undefined, undefined, bosshpindex);
 		break;

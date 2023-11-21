@@ -8,12 +8,12 @@ if (state != enemystates.stun && state != enemystates.frozen)
 	birdcreated = 0;
 if (bombreset > 0)
 	bombreset--;
-if (state != 7 && bombreset == 0)
+if (state != enemystates.thrown && bombreset == 0)
 {
-	if (state == 3 || state == 0)
+	if (state == enemystates.walk || state == enemystates.idle)
 	{
 		image_index = 0;
-		state = 7;
+		state = enemystates.thrown;
 		sprite_index = spr_throw;
 	}
 }

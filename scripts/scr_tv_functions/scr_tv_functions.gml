@@ -6,7 +6,7 @@ function scr_queue_tvanim(argument0 = noone, argument1 = 150)
 		{
 			expressionsprite = argument0;
 			draw_static = true;
-			state = 155;
+			state = states.tv_transition;
 			static_index = 0;
 			expressiontime = argument1;
 		}

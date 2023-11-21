@@ -4,7 +4,7 @@ if (instance_exists(obj_creamThief) && ds_list_find_index(global.saveroom, id) =
 	{
 		hsp = 0;
 		vsp = 0;
-		state = 0;
+		state = enemystates.idle;
 		sprite_index = spr_creamthief_lose;
 	}
 }

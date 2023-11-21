@@ -1,6 +1,7 @@
 global.music_map = ds_map_create();
 global.secret_room = false;
 global.secretmusic = -4;
+global.VolumeModifier = 1
 function add_music(argument0, argument1, argument2, argument3, argument4 = undefined)
 {
 	var b = 
@@ -132,6 +133,7 @@ add_music(rm_coneballarena, mu_coneball1, mu_coneball1, true);
 add_music(stormy_12, mu_exitway, mu_steamysecret, false);
 add_music(stormy_7, mu_coneboy_escape, mu_steamysecret, true);
 add_music(stormy_8, mu_exitway, mu_steamysecret, true);
+add_music(options_room, mu_confectionary, mu_confectionary, true);
 audio_sound_loop_start(mu_waffle, 34.9);
 audio_sound_loop_end(mu_waffle, 218.18);
 audio_sound_loop_start(mu_steamy, 8);

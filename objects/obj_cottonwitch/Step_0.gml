@@ -14,12 +14,12 @@ scr_commonenemy();
 scr_scareenemy();
 if (((obj_player.x > (x - 400) && obj_player.x < (x + 400)) && (y <= (obj_player.y + 60) && y >= (obj_player.y - 60))) && obj_player.state != states.cotton && obj_player.state != states.cottondrill && obj_player.state != states.door && obj_player.state != states.cottonroll && obj_player.state != states.changing)
 {
-	if (state != 9 && state != 7 && bombreset <= 0 && obj_player.state != states.cotton)
+	if (state != enemystates.scared && state != enemystates.thrown && bombreset <= 0 && obj_player.state != states.cotton)
 	{
-		if (state == 3 || state == 0)
+		if (state == enemystates.walk || state == enemystates.idle)
 		{
 			image_index = 0;
-			state = 7;
+			state = enemystates.thrown;
 			if (x != obj_player.x)
 				image_xscale = -sign(x - obj_player.x);
 			sprite_index = spr_throw;

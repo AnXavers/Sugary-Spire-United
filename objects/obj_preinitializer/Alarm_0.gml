@@ -1,27 +1,11 @@
-if (ds_exists(textureLoaderList, 2))
+var len = array_length(tex_list);
+if len > 0
 {
-	if (!ds_list_empty(textureLoaderList))
-	{
-		var tex = ds_list_find_value(textureLoaderList, 0);
-		for (var i = 0; i < array_length(tex); i++)
-		{
-			if (!texture_is_ready(tex[i]))
-				texture_prefetch(tex[i]);
-		}
-		ds_list_delete(textureLoaderList, 0);
-	}
-	else
-	{
-		ds_list_destroy(textureLoaderList);
-		room_goto(rm_initializer);
-	}
+	var tex = array_pop(tex_list);
+	trace("Loading texture: ", tex);
+	if !texture_is_ready(tex)
+		texture_prefetch(tex);
 }
-
-var i = 0;
-while sprite_exists(i)
-{
-	sprite_prefetch(i);
-	i++;
-}
-
-alarm[0] = 2;
+else
+	room_goto(rm_initializer);
+alarm[0] = 1;

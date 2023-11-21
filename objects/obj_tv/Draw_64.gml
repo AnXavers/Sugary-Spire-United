@@ -7,7 +7,6 @@ draw_set_halign(fa_center);
 draw_set_color(c_white);
 var _cx = 652 + anchor_point("right");
 var _hy = 88 + combo_y + hand_y;
-var _gy = _hy + 6;
 _hy = clamp(_hy, 88, 142);
 if (!surface_exists(goo_surface))
 {
