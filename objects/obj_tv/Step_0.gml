@@ -69,7 +69,7 @@ switch (state)
 			with (obj_gummyharry)
 			{
 				if (obj_player.character == "N" && distance_to_object(obj_player) < 400 && (!global.panic))
-					other.idlespr = other.harrytvspr
+					other.idlespr = spr_pizzanotv_harry
 			}
 		}
 		var _transfo = true;

@@ -38,8 +38,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_pizzytv",
-    "path": "sprites/spr_pizzytv/spr_pizzytv.yy",
+    "name": "spr_pizzelletv_idle",
+    "path": "sprites/spr_pizzelletv_idle/spr_pizzelletv_idle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -14,8 +14,6 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bbb5c3d4-6dc5-417f-925f-01c4b91e683a",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3adee215-6399-466b-87ff-839f2cd450b9",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4bbf10df-9be4-4bf7-aff9-b10e2ebc358a",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -45,7 +43,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 3.0,
+    "length": 1.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -56,9 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bbb5c3d4-6dc5-417f-925f-01c4b91e683a","path":"sprites/spr_pizzanotv/spr_pizzanotv.yy",},},},"Disabled":false,"id":"acdc9305-a87f-4d55-b4f1-2551780e7f4e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3adee215-6399-466b-87ff-839f2cd450b9","path":"sprites/spr_pizzanotv/spr_pizzanotv.yy",},},},"Disabled":false,"id":"b47ced77-9be1-4346-9dd6-6d3edbc2e378","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4bbf10df-9be4-4bf7-aff9-b10e2ebc358a","path":"sprites/spr_pizzanotv/spr_pizzanotv.yy",},},},"Disabled":false,"id":"818b9c46-e40e-4af7-836d-6d05fafe5f4b","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bbb5c3d4-6dc5-417f-925f-01c4b91e683a","path":"sprites/spr_pizzanotv/spr_pizzanotv.yy",},},},"Disabled":false,"id":"114b5de9-d446-4c3b-89da-7094e6c553e0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

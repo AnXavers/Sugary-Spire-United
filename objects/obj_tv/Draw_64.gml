@@ -59,7 +59,7 @@ if !global.oldhud
 		draw_sprite_tiled(bg_details[i][0], bg_details[i][1], hscroll[i] + (obj_player.x * bg_details[i][3] / 4), 0);
 	}
 	draw_set_blend_mode(3);
-	draw_sprite(spr_tv_cut, 0, 0, 0);
+	draw_sprite(tvcutspr, 0, 0, 0);
 	draw_set_blend_mode(0);
 	surface_reset_target();
 	draw_surface(tvbg_surface, 693 + anchor_point("right"), -60 + DrawY + bobbing)
@@ -68,6 +68,8 @@ if !global.oldhud
 }
 scr_palette_as_player();
 draw_sprite_ext(sprite_index, image_index, 832 - DrawX + anchor_point("right"), 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
+if (sprite_index != spr_pizzanotv_panic && !global.oldhud)
+	draw_sprite_ext(tvspr, image_index, 832 - DrawX + anchor_point("right"), 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
 pal_swap_reset();
 if !global.oldhud
 {
