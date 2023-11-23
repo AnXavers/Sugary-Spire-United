@@ -36,8 +36,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Destroyable",
-    "path": "folders/Sprites/Level Structure/Destroyable.yy",
+    "name": "Destructibles",
+    "path": "folders/Sprites/Objects/Level Layout/Destructibles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

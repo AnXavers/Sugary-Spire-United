@@ -123,7 +123,7 @@ if canmove
 			subtitle = "CHANGES THE PLAYER MOVESET";
 			CursorY = 650;
 			optionsaved_moveset += (key_right2 + key_left2);
-			optionsaved_moveset = wrap(optionsaved_moveset, 0, 1);
+			optionsaved_moveset = wrap(optionsaved_moveset, 0, 2);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);

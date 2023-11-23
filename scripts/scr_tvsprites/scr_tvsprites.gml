@@ -44,11 +44,14 @@ function scr_tvsprites()
 	escape5tvspr = spr_pizzelletv_escape5;
 	escape6tvspr = spr_pizzelletv_escape6;
 	escape7tvspr = spr_pizzelletv_escape7;
-	DrawX = 0
-	OldDrawY = 0
-	tvcutspr = spr_pizzelletv_cut
+	DrawX = 0;
+	OldDrawY = 0;
+	tvcutspr = spr_pizzelletv_cut;
 	if global.newplayeranim
-		marshdogspr = spr_pizzelletv_marshnew
+	{
+		marshdogspr = spr_pizzelletv_marsh_new;
+		idletvspr = spr_pizzelletv_idle_new;
+	}
 	switch (obj_player.character)
 	{
 		case "N":

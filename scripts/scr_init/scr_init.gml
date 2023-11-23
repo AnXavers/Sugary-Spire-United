@@ -171,6 +171,7 @@ global.harryfreeze = ini_read_real("Settings", "harryfreeze", 1);
 global.newvoicelines = ini_read_real("Settings", "newvoicelines", 0)
 global.moveset = ini_read_real("Settings", "moveset", 0)
 global.attackmove = ini_read_real("Settings", "attackmove", 0)
+global.destroyables = ini_read_real("Settings", "destroyables", 0)
 global.cam_w = ini_read_real("Settings", "reswidth", 960);
 global.cam_h = ini_read_real("Settings", "resheight", 540);
 window_set_size(global.cam_w, global.cam_h)

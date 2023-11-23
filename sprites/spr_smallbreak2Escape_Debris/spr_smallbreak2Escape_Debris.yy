@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Destructibles",
+    "path": "folders/Sprites/Objects/Level Layout/Destructibles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

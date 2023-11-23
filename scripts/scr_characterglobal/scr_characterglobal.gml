@@ -435,6 +435,7 @@ function scr_characterglobal()
 		spr_mach3rollstart = spr_pizzelle_mach3roll_new
 		spr_mach3roll = spr_pizzelle_mach3roll_new
 		spr_suplexbump = spr_pizzelle_splat_new
+		spr_mach3jump = spr_pizzelle_mach3jump_new;
 	}
 	else if global.newplayeranim == 2
 	{
@@ -478,6 +479,13 @@ function scr_characterglobal()
 		spr_cookiemount_skid = spr_pizzelle_cookiemount_skid_old
 		spr_skateidle = spr_pizzelle_skateidle_old
 	}
+	if global.destroyables
+	{
+		spr_small_destroyable = spr_smallbreak_new
+		spr_large_destroyable = spr_bigbreak_new
+		spr_large_destroyable_oneway = spr_onewayblock_new
+		spr_large_destroyable_hard = spr_bigbreakhard_new
+	}
 	// fonts
 	font_lapcount = global.lapcountfont
 	font_collect_new = global.candlefont
@@ -516,21 +524,22 @@ function scr_characterglobal()
 	set_palette(11, "Gnome Wizard", 0, 16296056, 13660176, 4771936, 28672, 9988216, 6830208, 16296056, 16308408);
 	set_palette(12, "Watermelon", 0, 2967076, 2177560, 7327808, 3766554, 9340159, 9340159, 9340159, c_white);
 	set_palette(13, "Purple", 0, 16273560, 16273560);
-	set_palette(14, "Piss", 0, 4259839, 3979494);
-	set_palette(15, "Cream n' Chips", 1, spr_pattern0);
-	set_palette(16, "Valiant Hero", 1, spr_pattern1);
-	set_palette(17, "Dead Man's Treats", 1, spr_pattern2);
-	set_palette(18, "Candy Cane", 1, spr_pattern3);
-	set_palette(19, "Sweet Apple", 1, spr_pattern4);
-	set_palette(20, "Space Cream", 1, spr_pattern5);
-	set_palette(21, "Sourness", 1, spr_pattern6);
-	set_palette(22, "Neapolitan", 1, spr_pattern7);
-	set_palette(23, "Cookie Cutter", 1, spr_pattern8);
-	set_palette(24, "MissingTexture", 1, spr_pattern9);
-	set_palette(25, "Solid", 1, spr_pattern10);
-	set_palette(26, "Choco Squares", 1, spr_pattern11);
-	set_palette(27, "Cotton Candy", 1, spr_pattern12);
-	set_palette(28, "Custom", 0, global.custompal_col[2], global.custompal_col[3], global.custompal_col[4], global.custompal_col[5], global.custompal_col[6], global.custompal_col[7], global.custompal_col[8], global.custompal_col[9], global.custompal_col[0], global.custompal_col[1]);
+	set_palette(14, "Sunrise", 0, scribble_rgb_to_bgr($EDD77A), scribble_rgb_to_bgr($ED983A), scribble_rgb_to_bgr($FFAA83), scribble_rgb_to_bgr($A03800), scribble_rgb_to_bgr($C34726), scribble_rgb_to_bgr($642626), scribble_rgb_to_bgr($954D6D), scribble_rgb_to_bgr($BDBD87), scribble_rgb_to_bgr($262626), scribble_rgb_to_bgr($EDD77A));
+	set_palette(15, "Piss", 0, 4259839, 3979494);
+	set_palette(16, "Cream n' Chips", 1, spr_pattern0);
+	set_palette(17, "Valiant Hero", 1, spr_pattern1);
+	set_palette(18, "Dead Man's Treats", 1, spr_pattern2);
+	set_palette(19, "Candy Cane", 1, spr_pattern3);
+	set_palette(20, "Sweet Apple", 1, spr_pattern4);
+	set_palette(21, "Space Cream", 1, spr_pattern5);
+	set_palette(22, "Sourness", 1, spr_pattern6);
+	set_palette(23, "Neapolitan", 1, spr_pattern7);
+	set_palette(24, "Cookie Cutter", 1, spr_pattern8);
+	set_palette(25, "MissingTexture", 1, spr_pattern9);
+	set_palette(26, "Solid", 1, spr_pattern10);
+	set_palette(27, "Choco Squares", 1, spr_pattern11);
+	set_palette(28, "Cotton Candy", 1, spr_pattern12);
+	set_palette(29, "Custom", 0, global.custompal_col[2], global.custompal_col[3], global.custompal_col[4], global.custompal_col[5], global.custompal_col[6], global.custompal_col[7], global.custompal_col[8], global.custompal_col[9], global.custompal_col[0], global.custompal_col[1]);
 	switch (character)
 	{
 		case "N":

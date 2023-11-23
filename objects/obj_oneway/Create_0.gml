@@ -11,3 +11,4 @@ if (!(ds_list_find_index(global.saveroom, id) != -1))
 		mask_index = spr_onewaysolidMASK;
 	}
 }
+image_speed = 0.35

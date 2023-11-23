@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 199.63356,
+  "duration": 156.52174,
   "parent": {
     "name": "Pizzelle",
     "path": "folders/Sounds/Music/Levels/Global/Escape/Pizzelle.yy",

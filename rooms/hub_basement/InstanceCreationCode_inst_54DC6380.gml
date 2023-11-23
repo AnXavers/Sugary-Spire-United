@@ -1,0 +1,1 @@
+npc_jerald("exitway", "Wafer Demolition")
