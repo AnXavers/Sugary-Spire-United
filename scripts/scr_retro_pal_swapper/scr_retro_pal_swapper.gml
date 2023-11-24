@@ -1,4 +1,4 @@
-function pal_swap_init_system()
+function pal_swap_init_system(argument0, argument1, argument2)
 {
 	var _swapper = 
 	{
@@ -121,7 +121,7 @@ function pal_swap_set_layer(argument0, argument1, argument2, argument3)
 		is_surf: argument3
 	});
 }
-function pal_swap_enable_layer()
+function pal_swap_enable_layer(argument0)
 {
 	if (!layer_exists(argument0))
 		exit;

@@ -1,4 +1,4 @@
 event_inherited();
-for (var i = 0; i < array_length(layer_tile); i++)
-	scr_destroy_tile(layer_tile[i]);
+for (var i = 0; i < array_length(tiles); i++)
+	scr_destroy_tile(tiles[i]);
 scr_destroy_nearby_tiles();

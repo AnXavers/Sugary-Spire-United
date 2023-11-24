@@ -1,5 +1,12 @@
 ini_open("optionData.ini");
+ini_write_real(level, "gamemode", global.gamemode);
 ini_write_real(level, "leveldesign", global.leveldesign);
 ini_write_real(level, "lapmode", global.lapmode);
 ini_write_real(level, "jerald", global.jerald);
+ini_write_real(level, "perfect", global.perfect);
+ini_write_real(level, "flashlight", global.flashlight);
+ini_write_real(level, "collects", global.collects);
+ini_write_real(level, "breakables", global.breakables);
+ini_write_real(level, "enemies", global.enemies);
+ini_write_real(level, "escapetimer", global.escapetimer);
 ini_close();

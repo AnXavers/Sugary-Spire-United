@@ -1,3 +1,4 @@
+event_inherited();
 scr_collision_init();
 image_speed = 0.5;
 hsp = 0;

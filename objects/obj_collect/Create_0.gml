@@ -1,3 +1,4 @@
+event_inherited();
 collectvanish = false;
 collectboxid = -4;
 use_palette = true;

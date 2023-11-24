@@ -1,3 +1,5 @@
+if !global.enemies
+	instance_destroy(self, false);
 scr_collision_init();
 boss_enemy = false;
 pizzano = false;

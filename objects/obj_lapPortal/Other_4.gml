@@ -1,3 +1,5 @@
+if global.lapmode == 3
+	instance_destroy();
 with (instance_place(x, y, obj_doortrigger_parent))
 	other.targetDoor = id_door;
 image_alpha = 0.5;

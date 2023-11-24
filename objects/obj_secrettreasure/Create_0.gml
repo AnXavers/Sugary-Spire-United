@@ -1,3 +1,5 @@
+if !global.collects
+	instance_destroy(self, false)
 collectvanish = false;
 collectboxid = -4;
 in_the_void = false;
