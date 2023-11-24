@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Sucrose",
+    "path": "folders/Sprites/Layer Assets/Levels/Sucrose.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

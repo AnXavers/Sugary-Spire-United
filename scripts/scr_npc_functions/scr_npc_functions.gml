@@ -3,7 +3,7 @@ function npc_jerald(argument0 = "entryway", argument1 = "Crunchy Construction"){
 	speak = spr_janitor2NPC_idle2;
 	mytex = spr_lapjanitorbg;
 	image_speed = 0.35
-	y = (y - 18)
+	y = (y + 18)
 	ini_open(global.fileselect);
 	var laps = ini_read_string("Laps", argument0, 1)
 	ini_close()

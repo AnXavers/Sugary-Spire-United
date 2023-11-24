@@ -1,2 +1,2 @@
-if ((ds_list_find_index(global.saveroom, id) != -1) || (!global.enablejerald) || (global.levelname == "yogurt"))
+if ((ds_list_find_index(global.saveroom, id) != -1) || (!global.jerald) || (global.levelname == "yogurt"))
 	instance_destroy();

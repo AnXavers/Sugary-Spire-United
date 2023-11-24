@@ -11,7 +11,7 @@ if (use_heat())
 	if (object_index != obj_googlyjuice && object_index != obj_fizz)
 		paletteselect = 1;
 }
-if (global.lapcount >= 3 && global.inflapping == 1)
+if (global.lapcount >= 3 && global.lapmode == 1)
 {
 	eliteEnemy = 1;
 	if sprite_get_width(spr_palette) >= 2

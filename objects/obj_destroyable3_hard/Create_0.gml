@@ -4,5 +4,5 @@ image_speed = 0.35
 if sprite_index = spr_bigbreakhard_new
 {
 	image_speed = 0
-	image_index = irandom(1)
+	image_index = irandom(2)
 }

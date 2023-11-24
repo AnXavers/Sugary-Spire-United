@@ -16,8 +16,8 @@
     "path": "folders/Tile Sets/Levels/Estate.yy",
   },
   "spriteId": {
-    "name": "ts_estate3_sprite",
-    "path": "sprites/ts_estate3_sprite/ts_estate3_sprite.yy",
+    "name": "ts_cafe3_sprite",
+    "path": "sprites/ts_cafe3_sprite/ts_cafe3_sprite.yy",
   },
   "spriteNoExport": true,
   "textureGroupId": {

@@ -1,15 +1,15 @@
 function scr_escapebgs()
 {
-	if global.newlvldesign == 2
+	if global.leveldesign == 2
 	{
 		layer_change_tileset(ts_secret, ts_secretold)
 		layer_change_background(bg_secret2, bg_secret2_old)
 	}
-	else if global.newlvldesign >= 1
+	else if global.leveldesign >= 1
 		layer_change_tileset(ts_secret, ts_secretnew)
 	if (global.panic == 1)
 	{
-		if (global.newlvldesign == 1 || global.newlvldesign == 3)
+		if (global.leveldesign == 1 || global.leveldesign == 3)
 		{
 			layer_change_background(bg_fudgetop_frontmountain, bg_futopmelt1_new)
 			layer_change_background(bg_fudgetop_sky, bg_futopmelt2_new)

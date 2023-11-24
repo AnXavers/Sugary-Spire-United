@@ -49,8 +49,11 @@ function scr_tvsprites()
 	tvcutspr = spr_pizzelletv_cut;
 	if global.newplayeranim
 	{
+		tvspr = spr_pizzelletv_new
 		marshdogspr = spr_pizzelletv_marsh_new;
 		idletvspr = spr_pizzelletv_idle_new;
+		tvchange1 = spr_pizzelletv_idleanim1_new
+		tvchange2 = spr_pizzelletv_idleanim2_new
 	}
 	switch (obj_player.character)
 	{
@@ -124,6 +127,7 @@ function scr_tvsprites()
 			secrettvspr = spr_noisetv_secret
 			laptvspr = spr_noisetv_heat;
 			tvcutspr = spr_peppinotv_cut;
+			break;
 		case "V":
 			tvspr = spr_peppinotv;
 			panictvspr = spr_vigilantetv_panic;
@@ -132,10 +136,12 @@ function scr_tvsprites()
 			mach3tvspr = spr_vigilantetv_mach3;
 			mach4tvspr = spr_vigilantetv_mach3;
 			tvcutspr = spr_peppinotv_cut;
+			break;
 		case "M":
 			tvspr = spr_peppinotv;
 			happytvspr = spr_peppermantv_collect;
 			tvcutspr = spr_peppinotv_cut;
+			break;
 	}
 	if global.oldhud
 	{

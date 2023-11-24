@@ -70,7 +70,7 @@ switch (state)
 				idlespr = angrytvspr;
 			if (global.panic)
 				idlespr = panictvspr;
-			if (global.inflapping == 2)
+			if (global.lapmode == 2)
 			{
 				if (global.lapcount >= 4)
 					idlespr = lap4tvspr;

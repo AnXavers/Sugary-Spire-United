@@ -1,11 +1,4 @@
-if global.newlvldesign == 3
-	targetRoom = entryway_1_custom;
-else if global.newlvldesign == 2
-	targetRoom = entryway_1_old;
-else if global.newlvldesign == 1
-	targetRoom = entryway_1_new;
-else
-	targetRoom = entryway_1;
+targetRoom = entryway_1;
 targetDoor = "A";
 level = "entryway";
 details = [gate_createlayer(spr_entry_startgate, 0), gate_createlayer(spr_entry_startgate, 1), gate_createlayer(spr_entry_startgate, 2, 0.5), gate_createlayer(spr_entry_startgate, 3, 0.35), gate_createlayer(spr_entry_startgate, 4, 0.15), gate_createlayer(spr_entry_startgate, 5, 0)];

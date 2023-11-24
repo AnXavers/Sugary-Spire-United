@@ -1,56 +1,57 @@
 if canmove
 {
 	scr_getinput();
-	ScrollY = lerp(ScrollY, SelectedY, 0.15);
+	ScrollY = lerp(ScrollY, CursorY, 0.15);
 	if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > 0)
 	{
 		optionselected--;
-		sinceup = 0;
-		timer = 0;
 		scr_sound(sound_step);
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 7)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 2)
 	{
 		optionselected++;
-		sincedown = 0;
-		timer = 0;
 		scr_sound(sound_step);
 	}
-	if ((key_up || keyboard_check(vk_up)) && optionselected > 0)
-	{
-		timer++;
-		sinceup++;
-		if (timer == 40 && sinceup < sincedown)
-		{
-			optionselected--;
-			audio_stop_sound(sound_step);
-			scr_sound(sound_step);
-		}
-	}
-	if ((key_down || keyboard_check(vk_down)) && optionselected < 7)
-	{
-		timer++;
-		sincedown++;
-		if (timer == 40 && sincedown < sinceup)
-		{
-			optionselected++;
-			audio_stop_sound(sound_step);
-			scr_sound(sound_step);
-		}
-	}
+	if (key_right2 || -key_left2)
+		scr_sound(sound_step)
 	switch (optionselected)
 	{
 		case 0:
+			CursorY = 0
+			optionsaved_leveldesign += (key_right2 + key_left2);
+			optionsaved_leveldesign = wrap(optionsaved_leveldesign, 0, 3)
+			global.leveldesign = optionsaved_leveldesign
+			break;
 		case 1:
+			CursorY = 30
+			optionsaved_lapmode += (key_right2 + key_left2);
+			optionsaved_lapmode = wrap(optionsaved_lapmode, 0, 2)
+			global.lapmode = optionsaved_lapmode
+			break;
 		case 2:
-		case 3:
-		case 4:
-		case 5:
-		case 6:
-		case 7:
+			CursorY = 60
+			optionsaved_jerald += (key_right2 + key_left2);
+			optionsaved_jerald = wrap(optionsaved_jerald, 0, 1)
+			global.jerald = optionsaved_jerald
+			break;
 	}
 	if keyboard_check_pressed(vk_escape)
 	{
+		with obj_player
+		{
+			switch other.optionsaved_leveldesign
+			{
+				case 1:
+					if ((asset_get_index(room_get_name(targetRoom) + "_new")) != -1)
+						targetRoom = asset_get_index(room_get_name(targetRoom) + "_new")
+				case 2:
+					if ((asset_get_index(room_get_name(targetRoom) + "_old")) != -1)
+						targetRoom = asset_get_index(room_get_name(targetRoom) + "_old")
+				case 3:
+					if ((asset_get_index(room_get_name(targetRoom) + "_custom")) != -1)
+						targetRoom = asset_get_index(room_get_name(targetRoom) + "_custom")
+			}
+		}
 		with instance_nearest(x, y, obj_startgate)
 		{
 			if !instance_exists(obj_titlecard) && do_titlecard
@@ -72,6 +73,4 @@ if canmove
 bgTileX++
 bgTileY++
 txtalpha++
-if txtalpha > 50
-	canmove = true
 fadeinrad = lerp(fadeinrad, ((global.cam_w + global.cam_h) / 2), 0.06)

@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Particles",
+    "path": "folders/Sprites/Objects/Level Layout/Destructibles/Particles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

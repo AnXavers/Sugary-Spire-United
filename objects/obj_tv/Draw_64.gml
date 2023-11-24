@@ -176,7 +176,7 @@ draw_set_halign(fa_center);
 draw_set_font(global.lapfont);
 var x_shk = random_range(-1, 1);
 var y_shk = random_range(-1, 1);
-if (global.lapcount >= 2 && global.inflapping != 0)
+if (global.lapcount >= 2 && global.lapmode != 0)
 {
 	draw_set_halign(fa_left);
 	draw_sprite(spr_harrylap, image_index, 70, 485 + anchor_point("bottom"));

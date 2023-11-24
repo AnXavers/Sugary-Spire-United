@@ -15,6 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9decf2af-0eb3-4808-aea9-16ca07d9d77b",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"03634fa9-5cb8-4270-a3ef-c92984db852f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"da2162ed-438b-4dcd-8a91-b61667186fd0",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -67,7 +68,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -80,6 +81,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9decf2af-0eb3-4808-aea9-16ca07d9d77b","path":"sprites/spr_bigbreakhard_new/spr_bigbreakhard_new.yy",},},},"Disabled":false,"id":"f1323838-885b-4963-999a-9618fb274688","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"03634fa9-5cb8-4270-a3ef-c92984db852f","path":"sprites/spr_bigbreakhard_new/spr_bigbreakhard_new.yy",},},},"Disabled":false,"id":"b060fe3e-5aaa-493e-aa36-44872f10fb51","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"da2162ed-438b-4dcd-8a91-b61667186fd0","path":"sprites/spr_bigbreakhard_new/spr_bigbreakhard_new.yy",},},},"Disabled":false,"id":"09a5dc9e-a81a-44b1-a6bf-773a8fa2a1f8","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

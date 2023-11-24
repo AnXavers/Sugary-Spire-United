@@ -2,14 +2,14 @@ depth = -95;
 image_speed = 0.35;
 image_index = 0;
 sprite_index = obj_player.spr_lapportal_exit
-if global.inflapping == 1
+if global.lapmode == 1
 {
 	var time_array = scr_laptimes();
 	global.fill += time_in_frames(time_array[0], time_array[1]);
 	if !instance_exists(obj_panicchanger)
 		instance_create(x, y, obj_panicchanger);
 }
-else if global.inflapping == 2
+else if global.lapmode == 2
 {
 	if global.lapcount >= 4
 	{
@@ -77,7 +77,7 @@ if (global.lapcount == 10)
 	layer_vspeed(global.lap10fg, 3);
 	global.dolap10fg = 1;
 }
-if (global.lapcount == 3 && global.inflapping == 1)
+if (global.lapcount == 3 && global.lapmode == 1)
 	scr_controlprompt("[spr_promptfont]The heat is rising...")
 else if global.lapcount == 5
 	scr_controlprompt("[spr_promptfont]Enemies are getting stronger...")

@@ -1,6 +1,4 @@
 targetRoom = dance_1;
-if global.newlvldesign == 2
-	targetRoom = dance_1_old;
 targetDoor = "A";
 level = "dance";
 info = 

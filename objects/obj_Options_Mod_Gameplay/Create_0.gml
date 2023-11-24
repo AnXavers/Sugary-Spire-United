@@ -1,17 +1,11 @@
 optionselected = 0;
 ini_open("optionData.ini");
 global.heatmeter = ini_read_real("Settings", "heatmeter", 0);
-global.newlvldesign = ini_read_real("Settings", "newlvldesign", 0);
-global.inflapping = ini_read_real("Settings", "inflapping", 1);
-global.enablejerald = ini_read_real("Settings", "enablejerald", 1);
 global.coneballparry = ini_read_real("Settings", "coneballparry", 0);
 global.moveset = ini_read_real("Settings", "moveset", 0);
 global.attackmove = ini_read_real("Settings", "attackmove", 0);
 ini_close();
 optionsaved_heatmeter = global.heatmeter;
-optionsaved_newlvldesign = global.newlvldesign;
-optionsaved_inflapping = global.inflapping;
-optionsaved_enablejerald = global.enablejerald;
 optionsaved_coneballparry = global.coneballparry;
 optionsaved_moveset = global.moveset;
 optionsaved_attackmove = global.attackmove;

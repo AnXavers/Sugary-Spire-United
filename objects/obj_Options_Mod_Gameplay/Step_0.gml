@@ -10,20 +10,14 @@ if canmove
 		optionselected--;
 		scr_sound(sound_step);
 		optionsaved_heatmeter = global.heatmeter;
-		optionsaved_newlvldesign = global.newlvldesign;
-		optionsaved_inflapping = global.inflapping;
-		optionsaved_enablejerald = global.enablejerald;
 		optionsaved_coneballparry = global.coneballparry;
 		optionsaved_moveset = global.moveset;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 7)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 4)
 	{
 		optionselected++;
 		scr_sound(sound_step);
 		optionsaved_heatmeter = global.heatmeter;
-		optionsaved_newlvldesign = global.newlvldesign;
-		optionsaved_inflapping = global.inflapping;
-		optionsaved_enablejerald = global.enablejerald;
 		optionsaved_coneballparry = global.coneballparry;
 		optionsaved_moveset = global.moveset;
 		optionsaved_attackmove = global.attackmove;
@@ -54,60 +48,8 @@ if canmove
 			}
 			break;
 		case 2:
-			subtitle = "TOGGLES WHAT DESIGNS OF LEVELS ARE USED";
-			CursorY = 200;
-			optionsaved_newlvldesign += (key_right2 + key_left2);
-			optionsaved_newlvldesign = wrap(optionsaved_newlvldesign, 0, 3);
-			if (key_jump)
-			{
-				if (global.levelname == "none" || is_hub())
-				{
-					scr_sound(sound_enemythrow);
-					ini_open("optionData.ini");
-					ini_write_real("Settings", "newlvldesign", optionsaved_newlvldesign);
-					ini_close();
-					global.newlvldesign = optionsaved_newlvldesign;
-				}
-				else
-					scr_sound(sound_enemyslap);
-			}
-			break;
-		case 3:
-			subtitle = "TOGGLES WHAT LAPPING MODE TO USE";
-			CursorY = 350;
-			optionsaved_inflapping += (key_right2 + key_left2);
-			optionsaved_inflapping = wrap(optionsaved_inflapping, 0, 2);
-			if (key_jump)
-			{
-				if (global.lapcount <= 2 && !string_contains(room_get_name(room), "portal"))
-				{
-					scr_sound(sound_enemythrow);
-					ini_open("optionData.ini");
-					ini_write_real("Settings", "inflapping", optionsaved_inflapping);
-					ini_close();
-					global.inflapping = optionsaved_inflapping;
-				}
-				else
-					scr_sound(sound_enemyslap);
-			}
-			break;
-		case 4:
-			subtitle = "REENABLES JERALD WHICH MAKES YOU REQUIRE HIM FOR THE LAP PORTALS";
-			CursorY = 450;
-			optionsaved_enablejerald += (key_right2 + key_left2);
-			optionsaved_enablejerald = wrap(optionsaved_enablejerald, 0, 1);
-			if (key_jump)
-			{
-				scr_sound(sound_enemythrow);
-				ini_open("optionData.ini");
-				ini_write_real("Settings", "enablejerald", optionsaved_enablejerald);
-				ini_close();
-				global.enablejerald = optionsaved_enablejerald;
-			}
-			break;
-		case 5:
 			subtitle = "ALLOWS YOU TO PARRY AND SUPERTAUNT CONEBALL";
-			CursorY = 550;
+			CursorY = 200;
 			optionsaved_coneballparry += (key_right2 + key_left2);
 			optionsaved_coneballparry = wrap(optionsaved_coneballparry, 0, 1);
 			if (key_jump)
@@ -119,9 +61,9 @@ if canmove
 				global.coneballparry = optionsaved_coneballparry;
 			}
 			break;
-		case 6:
+		case 3:
 			subtitle = "CHANGES THE PLAYER MOVESET";
-			CursorY = 650;
+			CursorY = 300;
 			optionsaved_moveset += (key_right2 + key_left2);
 			optionsaved_moveset = wrap(optionsaved_moveset, 0, 2);
 			if (key_jump)
@@ -133,9 +75,9 @@ if canmove
 				global.moveset = optionsaved_moveset;
 			}
 			break;
-		case 7:
+		case 4:
 			subtitle = "CHANGES THE ATTACK MOVE";
-			CursorY = 750;
+			CursorY = 400;
 			optionsaved_attackmove += (key_right2 + key_left2);
 			optionsaved_attackmove = wrap(optionsaved_attackmove, 0, 3);
 			if (key_jump)

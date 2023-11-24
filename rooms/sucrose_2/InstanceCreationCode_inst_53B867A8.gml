@@ -15,5 +15,5 @@ condition = function()
 {
 	var _bg = layer_background_get_id_fixed("Backgrounds_far");
 	var _bg_sprite = layer_background_get_sprite(_bg);
-	return audio_sound_get_track_position(global.music) >= 9.45 && obj_music.music == mu_sucrose && _bg == (bg_sucrose_skySleep || bg_sucrose_skyWakingUp);
+	return audio_sound_get_track_position(global.music) >= 9.45 && _bg == (bg_sucrose_skySleep || bg_sucrose_skyWakingUp);
 };

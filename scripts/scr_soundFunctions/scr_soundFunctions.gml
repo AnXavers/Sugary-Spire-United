@@ -72,7 +72,7 @@ function scr_get_music_loop(argument0)
 		default:
 			return 0;
 			break;
-		case 53:
+		case mu_sucrose:
 			return 8.15;
 			break;
 	}

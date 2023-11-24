@@ -118,7 +118,7 @@ if (global.treasure == 1)
 	janspr = spr_rankrudejanitor;
 else
 	janspr = spr_null;
-if (global.lapcount >= 2 && global.enablejerald)
+if (global.lapcount >= 2 && global.jerald)
 	lapjanspr = spr_rankotherjanitor;
 else
 	lapjanspr = spr_null;
