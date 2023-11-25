@@ -1,7 +1,7 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "finale_0",
+  "name": "finale_2",
   "creationCodeFile": "",
   "inheritCode": false,
   "inheritCreationOrder": false,

@@ -94,7 +94,7 @@ var dist = clamp(perc * 268, 0, 268);
 var timeinsecs = floor(target_fill / 60);
 var mins = max(floor(timeinsecs / 60), 0);
 var secs = max(timeinsecs % 60, 0);
-if (global.panic == 1 || global.starrmode == 1)
+if ((global.panic == 1 || global.starrmode == 1) && global.gamemode != 1)
 {
 	if (!sucroseTimer)
 		target_fill = lerp(target_fill, global.fill, 0.03);

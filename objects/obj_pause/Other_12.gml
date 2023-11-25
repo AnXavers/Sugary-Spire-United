@@ -9,8 +9,6 @@ if !is_hub()
 	room = global.entergateroom
 	with (obj_tv)
 		tvsprite = spr_tvoff;
-	with (obj_player)
-		targetDoor = global.entergatedoor
 	with (instance_create(x, y, obj_fadeout))
 	{
 		fadealpha = 1;

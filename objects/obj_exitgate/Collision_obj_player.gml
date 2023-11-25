@@ -5,6 +5,7 @@ if (global.panic == 1 && room != sucrose_1)
 		if (grounded && (!other.drop || other.drop_state == 1) && key_up && (state == states.normal || state == states.mach1 || state == states.mach2 || state == states.mach3 || state == states.Sjumpprep))
 		{
 			if ((global.perfect == 0) || (global.perfect == 1 && global.currentrank == "D") || (global.perfect == 2 && global.currentrank == "C") || (global.perfect == 3 && global.currentrank == "B") || (global.perfect == 4 && global.currentrank == "A") || (global.perfect == 5 && global.currentrank == "S") || (global.perfect == 6 && global.currentrank == "P") || (global.perfect == 7 && global.currentrank == "E"))
+			{
 				targetDoor = "none";
 				audio_stop_all();
 				scr_savelevelDetails();
@@ -41,19 +42,17 @@ if (global.panic == 1 && room != sucrose_1)
 					scr_sound(mu_rankc);
 				if (global.rank == "d")
 					scr_sound(mu_rankd);
-			else
+			}
+			else if (state != states.door && state != states.timesup)
 			{
-				with (obj_player)
-				{
-					instance_destroy(obj_fadeout);
-					targetDoor = "A";
-					room = timesuproom;
-					state = states.timesup;
-					sprite_index = spr_Timesup;
-					image_index = 0;
-					audio_stop_all();
-					scr_sound(mu_timesup);
-				}
+				instance_destroy(obj_fadeout);
+				targetDoor = "A";
+				room = timesuproom;
+				state = states.timesup;
+				sprite_index = spr_Timesup;
+				image_index = 0;
+				audio_stop_all();
+				scr_sound(mu_timesup);
 			}
 		}
 	}

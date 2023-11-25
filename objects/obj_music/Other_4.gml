@@ -1,7 +1,7 @@
 var cur_stuff = ds_map_find_value(global.music_map, room);
 if (!is_undefined(cur_stuff))
 	room_details = cur_stuff;
-if (!global.panic && room != rank_room && room != timesuproom && !instance_exists(obj_endlevelfade))
+if (!global.panic && room != rank_room && room != timesuproom && !instance_exists(obj_endlevelfade) && music != mu_getaway)
 {
 	var _new_song = room_details.music;
 	if (!is_undefined(room_details.my_func))

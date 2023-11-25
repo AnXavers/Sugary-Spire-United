@@ -58,6 +58,32 @@ if (DrawHUD)
 				shader_reset();
 			}
 		}
+		draw_set_font(global.promptfont);
+		draw_set_halign(fa_center);
+		draw_set_color(c_white);
+		var _cx = (global.cam_w / 2)
+		frameref++
+		if global.conedowntime > -1
+		{
+			var _display_mins = string(frames_in_minutes(global.conedowntime))
+			var _display_secs = string(((frames_in_seconds(global.conedowntime)) mod 60))
+			if string_length(_display_secs) == 1
+				_display_secs = ("0" + _display_secs)
+			draw_sprite_ext(obj_player.spr_coneball_melting_player, floor(frameref * 0.35), _cx, 120, 1, 1, 0, c_white, 0.5)
+			draw_text(_cx, 105, _display_mins + ":" + _display_secs);
+		}
+		if global.gamemode == 1
+		{
+			var _display_mins = string(frames_in_minutes(global.getawayfill))
+			var _display_secs = string(((frames_in_seconds(global.getawayfill)) mod 60))
+			if string_length(_display_secs) == 1
+				_display_secs = ("0" + _display_secs)
+			draw_text(_cx, 430, _display_mins + ":" + _display_secs);
+			var _getawayclock = spr_getawayclock_normal
+			if global.getawayfill < time_in_frames(0, 11)
+				_getawayclock = spr_getawayclock_panic
+			draw_sprite(_getawayclock, floor(frameref * 0.35), _cx + 120, 430)
+		}
 	}
 	draw_set_font(global.promptfont);
 	draw_set_halign(0);

@@ -38,6 +38,15 @@ with (obj_coneball)
 		y += (-other.hallwaydirection * 200);
 	else
 		image_alpha = 0;
+	if coneballtype == 1
+	{
+		hspeed = 0
+		vspeed = 0
+		if (other.hallway)
+			hspeed = (other.hallwaydirection * 6);
+		else if (other.vertical)
+			vspeed = (other.hallwaydirection * 6);
+	}
 }
 hallway = 0;
 box = 0;

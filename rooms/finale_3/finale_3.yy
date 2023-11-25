@@ -1,7 +1,7 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "finale_pre",
+  "name": "finale_3",
   "creationCodeFile": "",
   "inheritCode": false,
   "inheritCreationOrder": false,
@@ -25,10 +25,10 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "roomSettings": {
-    "Height": 768,
+    "Height": 1024,
     "inheritRoomSettings": false,
     "persistent": false,
-    "Width": 1366,
+    "Width": 4096,
   },
   "sequenceId": null,
   "views": [

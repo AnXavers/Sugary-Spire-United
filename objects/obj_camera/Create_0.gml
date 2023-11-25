@@ -1,6 +1,8 @@
 n = 0;
 maxtime = 0;
 global.fill = 4000;
+global.conedowntime = -1;
+global.getawayfill = time_in_frames(0, 31)
 greyscalefade = 0;
 SSapplication_surface = -4;
 finalApplicationSurface = -4;
@@ -13,6 +15,7 @@ panicshake = 0;
 panicshakeacc = 0;
 DrawY = 0;
 DrawHUD = false;
+frameref = 0;
 image_speed = 0.35;
 alarm[1] = 60;
 alarm[2] = 3;

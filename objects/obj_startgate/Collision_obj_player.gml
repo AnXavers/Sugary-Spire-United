@@ -22,6 +22,8 @@ if (sprite_index != spr_exitgateclosed)
 		}
 		if (sprite_index == spr_entergate && animation_end() && !instance_exists(obj_modifiermenu))
 		{
+			global.entergateroom = room
+			global.entergateid = instance_nearest(x, y, obj_startgate).id
 			if (keyboard_lastkey == vk_escape)
 			{
 				instance_create(x, y, obj_modifiermenu)

@@ -20,7 +20,7 @@ with (obj_coneball)
 {
 	if (bbox_in_camera(view_camera[0]) && global.coneballparry)
 	{
-		global.fill = time_in_frames(0, 10)
+		global.conedowntime = time_in_frames(0, 11)
 		screen_flash(3)
 		instance_destroy();
 	}

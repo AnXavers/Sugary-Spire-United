@@ -5,7 +5,42 @@ if (room == timesuproom || room == rank_room || room == rm_credits || room == rm
 	DrawHUD = 0;
 else
 	DrawHUD = 1;
-if (get_panic() && !global.freezeframe)
+if (global.conedowntime > -1 && !global.freezeframe && !instance_exists(obj_rank) && room != timesuproom && room != rank_room && room != rm_titlecard)
+{
+	global.conedowntime--
+	if global.conedowntime == 0
+	{
+		with instance_create(obj_player.x, obj_player.y, obj_coneball)
+		{
+			if global.gamemode == 1
+			{
+				coneballtype = 1;
+				sprite_index = obj_player.spr_coneball_melting_player
+			}
+		}
+	}
+}
+if (!global.freezeframe && !instance_exists(obj_rank) && room != timesuproom && room != rank_room && room != rm_titlecard)
+{
+	global.getawayfill--
+	if instance_exists(obj_coneball)
+	{
+		with obj_coneball
+		{
+			if (global.getawayfill < 1)
+			{
+				coneballspeed = 1.6;
+				sprite_index = obj_player.spr_coneball_player
+			}
+			else
+			{
+				coneballspeed = 1;
+				sprite_index = obj_player.spr_coneball_melting_player
+			}
+		}
+	}
+}
+if (get_panic() && !global.freezeframe && global.gamemode != 1)
 {
 	if (global.fill > global.maxwave)
 		global.maxwave = global.fill;
@@ -24,7 +59,7 @@ if (get_panic() && !global.freezeframe)
 	}
 	if (global.panic && global.fill <= 0 && obj_tv.timer_out <= 0)
 	{
-		if (!instance_exists(obj_coneball) && room != timesuproom)
+		if (!instance_exists(obj_coneball) && room != timesuproom && global.conedowntime == -1)
 			instance_create(obj_player.x, obj_player.y, obj_coneball);
 		global.greyscalefade = approach(global.greyscalefade, 0.45, 0.005);
 	}
@@ -257,7 +292,7 @@ switch (room)
 	case rm_painterarena:
 		window_set_caption("Artist's representation of the Sugary Spire");
 		break;
-	case cafe_1:
+	case estate_1_new:
 	case estate_1_old:
 	case estate_1:
 		window_set_caption("Property of the Sugary Spire");

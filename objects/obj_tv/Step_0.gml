@@ -22,24 +22,34 @@ if (global.hurtcounter >= global.hurtmilestone && global.hurtcounter >= 5)
 	{
 		case "N":
 			character = "Pizzano";
+			break;
 		case "G":
 			character = "Gumbob";
+			break;
 		case "C":
-			character = "Pizzano";
+			character = "Coneboy";
+			break;
 		case "T":
 			character = "The Noise";
+			break;
 		case "S":
 			character = "Peppino";
+			break;
 		case "V":
 			character = "The Vigilante";
+			break;
 		case "M":
 			character = "Pepperman";
+			break;
 		case "Z":
 			character = "Pizzall";
+			break;
 		case "RM":
 			character = "Rosette and Marble";
+			break;
 		case "GB":
 			character = "Gustavo and Brick";
+			break;
 	}
 	scr_controlprompt("[spr_promptfont]You have hurt " + string(character) + " " + string(global.hurtmilestone) + " times...");
 	if !global.oldhud

@@ -33,6 +33,8 @@ if ((ds_list_find_index(global.baddieroom, id) == -1 && inhaleddestroyvar == 0) 
 		global.combofreeze = 30;
 		if (obj_tv.sucroseTimer && global.fill != 0)
 			global.fill += time_in_frames(0, 2.5);
+		if (global.gamemode == 1)
+			global.getawayfill += time_in_frames(0, 2.5);
 	}
 	ds_list_add(global.baddieroom, id);
 	if (panicEscape)

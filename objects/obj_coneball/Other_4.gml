@@ -14,11 +14,11 @@ if !coneballtype
 		coneballspeed = 0.8;
 		sprite_index = obj_player.spr_coneball_melting_player
 	}
-	if obj_player.state == (states.actor || states.comingoutdoor || states.victory || states.keyget)
-	coneballspeed = 0
 }
-else
+if obj_player.state == (states.actor || states.comingoutdoor || states.victory || states.keyget)
 {
+	vspeed = 0
+	hspeed = 0
 }
 with instance_create(x, y, obj_icontracker)
 {

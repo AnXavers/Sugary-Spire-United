@@ -2,14 +2,14 @@ depth = -95;
 image_speed = 0.35;
 image_index = 0;
 sprite_index = obj_player.spr_lapportal_exit
-if global.lapmode == 1
+if global.lapmode == 1 && global.gamemode != 1
 {
 	var time_array = scr_laptimes();
 	global.fill += time_in_frames(time_array[0], time_array[1]);
 	if !instance_exists(obj_panicchanger)
 		instance_create(x, y, obj_panicchanger);
 }
-else if global.lapmode == 2
+else if global.lapmode == 2 && global.gamemode != 1
 {
 	if global.lapcount >= 4
 	{

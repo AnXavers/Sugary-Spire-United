@@ -41,10 +41,12 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 		else if global.levelname == "yogurt"
 			_new_song = mu_pizzelle_death;
 		else if global.levelname == "sucrose"
+		{
 			if global.lapcount >= 2
 				_new_song = mu_sucrose_lap
 			else
 				_new_song = mu_sucrose
+		}
 		else
 		{
 			if (global.lapcount >= 10 || (global.lapcount == 4 && global.lapmode == 2))
@@ -57,12 +59,14 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 				_new_song = obj_player.mu_escapesong;
 		}
 		unforce_cont = true;
+	}
+	if (global.gamemode == 1 && !instance_exists(obj_modifiermenu) && !instance_exists(obj_titlecard) && !instance_exists(obj_rank) && music != mu_getaway)
+		_new_song = mu_getaway
 	if ds_map_exists(global.musicreplace, _new_song)
 		_new_song = ds_map_find_value(global.musicreplace, _new_song);
-	}
-	if (_new_song != -4 && music != _new_song)
+	if (_new_song != -4 && music != _new_song && music != mu_getaway)
 	{
-		obj_music.music = _new_song;
+		music = _new_song;
 		prevmuID = global.music;
 		var cur_mus_pos = audio_sound_get_track_position(prevmuID) / audio_sound_length(prevmuID);
 		global.music = scr_music(music);

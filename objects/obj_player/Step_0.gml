@@ -1,4 +1,3 @@
-scr_exitlevellocation()
 audio_emitter_position(playerSound, x, y, 0);
 audio_emitter_gain(playerSound, global.soundVolume);
 var a = instance_place(x, y, obj_secret_tiles);

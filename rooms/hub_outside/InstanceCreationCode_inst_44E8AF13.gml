@@ -1,4 +1,4 @@
-targetRoom = finale_0;
+targetRoom = finale_1;
 targetDoor = "A";
 level = "finale";
 details = [gate_createlayer(spr_entry_startgate, 0), gate_createlayer(spr_entry_startgate, 1), gate_createlayer(spr_entry_startgate, 2, 0.5), gate_createlayer(spr_entry_startgate, 3, 0.35), gate_createlayer(spr_entry_startgate, 4, 0.15), gate_createlayer(spr_entry_startgate, 5, 0)];

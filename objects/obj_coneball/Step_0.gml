@@ -10,8 +10,8 @@ if (image_alpha == 1)
 		}
 		else
 		{
-			hspeed = lerp(hspeed, lengthdir_x(8 * coneballspeed * parryspeed, dir), 0.02)
-			vspeed = lerp(vspeed, lengthdir_y(8 * coneballspeed * parryspeed, dir), 0.02)
+			hspeed = lerp(hspeed, lengthdir_x(10 * coneballspeed * parryspeed, dir), 0.02)
+			vspeed = lerp(vspeed, lengthdir_y(10 * coneballspeed * parryspeed, dir), 0.02)
 		}
 	}
 }
@@ -35,10 +35,12 @@ if (pid > 0 && !pid.cutscene && !instance_exists(obj_fadeout) && !instance_exist
 }
 if (global.coneballparry == 1 && distance_to_object(obj_parryhitbox) <= 40)
 {
+	vspeed = 0
+	hspeed = 0
 	audio_stop_sound(sound_parry);
 	scr_sound(sound_parry);
 	screen_flash(3)
-	coneballspeed = -2
+	parryspeed = -2
 	alarm[1] = 10
 	with (obj_player)
 	{

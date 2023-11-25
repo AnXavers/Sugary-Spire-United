@@ -88,6 +88,8 @@ function scr_levelSet()
 	global.kungairtime = ini_read_string("achievments", "kungairtime", 0);
 	ini_close();
 	global.showplaytimer = ranks != "none";
+	global.conedowntime = -1
+	global.getawayfill = time_in_frames(0, 31)
 	with (obj_camera)
 	{
 		NextFreeze = false;

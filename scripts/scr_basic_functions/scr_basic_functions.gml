@@ -160,6 +160,14 @@ function time_in_frames(argument0, argument1)
 {
 	return ((argument0 * 60) + argument1) * 60;
 }
+function frames_in_seconds(argument0)
+{
+	return floor(argument0 / room_speed)
+}
+function frames_in_minutes(argument0)
+{
+	return floor(argument0 / (room_speed * 60))
+}
 function onBeat(argument0, argument1 = false)
 {
 	var bps = argument0 / 60;
