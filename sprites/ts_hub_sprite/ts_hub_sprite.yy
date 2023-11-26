@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Hub",
-    "path": "folders/Sprites/Tilesets/Spire/Hub.yy",
+    "name": "Tutorial",
+    "path": "folders/Sprites/Tilesets/Spire/Tutorial.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

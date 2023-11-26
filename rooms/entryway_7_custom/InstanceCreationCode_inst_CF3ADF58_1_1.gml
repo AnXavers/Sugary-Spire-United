@@ -1,2 +1,2 @@
-targetRoom = entryway_8_new;
+targetRoom = entryway_8_custom;
 targetDoor = "B";

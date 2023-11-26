@@ -1,4 +1,4 @@
-function p1Vibration()
+function p1Vibration(argument0, argument1)
 {
 	with (obj_gamepadder)
 	{

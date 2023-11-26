@@ -41,8 +41,8 @@ function scr_escapetimes(argument0 = global.levelname)
 			seconds = 55;
 			break;
 		case "sucrose":
-			minutes = 0;
-			seconds = 0;
+			minutes = 6;
+			seconds = 30;
 			break;
 		case "bee":
 			minutes = 4;
@@ -85,7 +85,11 @@ function scr_escapetimes(argument0 = global.levelname)
 			seconds = 59;
 			break;
 	}
-	
+	if obj_tv.sucroseTimer
+	{
+		minutes = 0
+		seconds = 30
+	}
 	var time_array;
 	time_array[0] = minutes;
 	time_array[1] = seconds;
@@ -134,7 +138,7 @@ function scr_laptimes(argument0 = global.levelname)
 			seconds = 15;
 			break;
 		case "sucrose":
-			minutes = 0;
+			minutes = 3;
 			seconds = 0;
 			break;
 		case "bee":
@@ -173,7 +177,11 @@ function scr_laptimes(argument0 = global.levelname)
 			seconds = 59;
 			break;
 	}
-	
+	if obj_tv.sucroseTimer
+	{
+		minutes = 0;
+		seconds = 0;
+	}
 	var time_array;
 	time_array[0] = minutes;
 	time_array[1] = seconds;

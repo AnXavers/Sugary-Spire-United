@@ -1,1 +1,1 @@
-targetRoom = entryway_portal_new;
+targetRoom = entryway_portal_custom;

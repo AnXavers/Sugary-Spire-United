@@ -1,17 +1,18 @@
 scr_sound(sound_enemythrow)
 optionselected = 0;
 level = instance_nearest(x, y, obj_startgate).level
+var _lvl = capitalize_section(level, 1, 1)
 ini_open("optionData.ini");
-global.gamemode = ini_read_real(level, "gamemode", 0);
-global.leveldesign = ini_read_real(level, "leveldesign", 1);
-global.lapmode = ini_read_real(level, "lapmode", 1);
-global.jerald = ini_read_real(level, "jerald", 0);
-global.perfect = ini_read_real(level, "perfect", 0);
-global.flashlight = ini_read_real(level, "flashlight", 0);
-global.collects = ini_read_real(level, "collects", 1);
-global.breakables = ini_read_real(level, "breakables", 1);
-global.enemies = ini_read_real(level, "enemies", 1);
-global.escapetimer = ini_read_real(level, "escapetimer", 0);
+global.gamemode = ini_read_real(_lvl, "gamemode", 0);
+global.leveldesign = ini_read_real(_lvl, "leveldesign", 1);
+global.lapmode = ini_read_real(_lvl, "lapmode", 1);
+global.jerald = ini_read_real(_lvl, "jerald", 0);
+global.perfect = ini_read_real(_lvl, "perfect", 0);
+global.flashlight = ini_read_real(_lvl, "flashlight", 0);
+global.collects = ini_read_real(_lvl, "collects", 1);
+global.breakables = ini_read_real(_lvl, "breakables", 1);
+global.enemies = ini_read_real(_lvl, "enemies", 1);
+global.escapetimer = ini_read_real(_lvl, "escapetimer", 0);
 ini_close();
 optionsaved_gamemode = global.gamemode;
 optionsaved_leveldesign = global.leveldesign;

@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Spire",
-    "path": "folders/Sprites/Layer Assets/Spire.yy",
+    "name": "To Be Sorted",
+    "path": "folders/Sprites/To Be Sorted.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

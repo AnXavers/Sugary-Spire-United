@@ -2,11 +2,13 @@ flags.do_once_per_save = true;
 output = function()
 {
 	global.panic = true;
-	global.fill = time_in_frames(0, 30);
+	if global.escapetimer != 1
+		obj_tv.sucroseTimer = true;
+	var time_array = scr_escapetimes();
+	global.fill = time_in_frames(time_array[0], time_array[1]);
 	obj_tv.target_fill = global.fill;
 	obj_tv.timer_in = 0;
 	obj_tv.timer_y = 80;
-	obj_tv.sucroseTimer = true;
 	global.wave = 0;
 	global.maxwave = global.fill;
 	instance_create(x, y, obj_panicchanger);

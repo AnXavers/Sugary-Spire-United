@@ -74,6 +74,8 @@ if (DrawHUD)
 		}
 		if global.gamemode == 1
 		{
+			if ((floor(frameref * 0.1) mod 2) && global.getawayfill < 0)
+				draw_set_color(c_red);
 			var _display_mins = string(frames_in_minutes(global.getawayfill))
 			var _display_secs = string(((frames_in_seconds(global.getawayfill)) mod 60))
 			if string_length(_display_secs) == 1

@@ -29,6 +29,8 @@ hsp = sign(x - obj_player.x) * random_range(5, 10);
 grav = 0.4;
 isfrozen = 0
 var time_array = scr_escapetimes();
+if global.escapetimer == 2
+	obj_tv.sucroseTimer = true;
 global.fill = time_in_frames(time_array[0], time_array[1]);
 obj_tv.target_fill = global.fill;
 global.wave = 0;

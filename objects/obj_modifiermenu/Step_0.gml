@@ -19,7 +19,7 @@ if canmove
 		case 0:
 			CursorY = 0
 			optionsaved_gamemode += (key_right2 + key_left2);
-			optionsaved_gamemode = wrap(optionsaved_gamemode, 0, 2)
+			optionsaved_gamemode = wrap(optionsaved_gamemode, 0, 4)
 			global.gamemode = optionsaved_gamemode
 			break;
 		case 1:
@@ -86,12 +86,15 @@ if canmove
 				case 1:
 					if ((asset_get_index(room_get_name(targetRoom) + "_new")) != -1)
 						targetRoom = asset_get_index(room_get_name(targetRoom) + "_new")
+					break;
 				case 2:
 					if ((asset_get_index(room_get_name(targetRoom) + "_old")) != -1)
 						targetRoom = asset_get_index(room_get_name(targetRoom) + "_old")
+					break;
 				case 3:
 					if ((asset_get_index(room_get_name(targetRoom) + "_custom")) != -1)
 						targetRoom = asset_get_index(room_get_name(targetRoom) + "_custom")
+					break;
 			}
 		}
 		with instance_nearest(x, y, obj_startgate)

@@ -1,1 +1,1 @@
-targetRoom = entryway_9_new;
+targetRoom = entryway_9_custom;

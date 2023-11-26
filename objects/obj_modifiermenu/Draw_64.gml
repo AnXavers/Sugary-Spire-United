@@ -34,7 +34,13 @@ switch optionsaved_gamemode
 		text_gamemode = "SUGARY GETAWAY"
 		break;
 	case 2:
+		text_gamemode = "HYPERGLYCEMIC GETAWAY"
+		break;
+	case 3:
 		text_gamemode = "TIME TRIAL"
+		break;
+	case 4:
+		text_gamemode = "CONE-GAL"
 		break;
 }
 var text_leveldesign = "P-RANK"

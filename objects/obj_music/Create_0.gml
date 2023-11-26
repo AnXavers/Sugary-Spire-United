@@ -20,6 +20,7 @@ target_gain = 1;
 contTrack_pos = 0;
 GummyBear = false;
 music = undefined;
+normalmusic = -1
 escapemusic = -4;
 default_escapemusic = mu_pizzelle_escape;
 musicGain = 1;
@@ -35,22 +36,22 @@ room_details =
 	continuous: false,
 	my_func: undefined,
 };
-add_music(rm_disclaimer, mu_paletteselect, mu_painter, false);
-add_music(rm_verify, mu_paletteselect, mu_painter, false);
-add_music(rm_introVideo, -4, mu_painter, false);
-add_music(devroom, mu_what, mu_painter, false);
-add_music(rm_missing, mu_void, mu_painter, false);
-add_music(realtitlescreen, mu_title, mu_painter, false);
-add_music(outer_room1, mu_title, mu_painter, false);
-add_music(hub_basement, mu_hubex, mu_painter, true);
+add_music(rm_disclaimer, mu_paletteselect, mu_paletteselect, false);
+add_music(rm_verify, mu_paletteselect, mu_paletteselect, false);
+add_music(rm_introVideo, -4, -4, false);
+add_music(devroom, mu_what, mu_what, false);
+add_music(rm_missing, mu_void, mu_void, false);
+add_music(realtitlescreen, mu_title, mu_title, false);
+add_music(outer_room1, mu_title, mu_title, false);
+add_music(hub_basement, mu_hubex, mu_hubex, true);
 add_music(silver_0, mu_silver, mu_silver, true);
-add_music(hub_hallway, mu_hubw1, mu_painter, true);
-add_music(hub_w1, mu_hubw1, mu_painter, true);
-add_music(hub_w1old, mu_hubw1, mu_painter, true);
-add_music(hub_w1oldold, mu_hubw1, mu_painter, true);
-add_music(hub_w1oldoldold, mu_hubw1, mu_painter, true);
+add_music(hub_hallway, mu_hubw1, mu_hubw1, true);
+add_music(hub_w1, mu_hubw1, mu_hubw1, true);
+add_music(hub_w1old, mu_hubw1, mu_hubw1, true);
+add_music(hub_w1oldold, mu_hubw1, mu_hubw1, true);
+add_music(hub_w1oldoldold, mu_hubw1, mu_hubw1, true);
 add_music(silver_1, mu_silver, mu_silver, true);
-add_music(hub_shop1, mu_hubshop1, mu_painter, true);
+add_music(hub_shop1, mu_hubshop1, mu_hubshop1, true);
 add_music(rm_painter, mu_outside, mu_outside, true);
 add_music(hub_w2, mu_hubw2, mu_hubw2, true);
 add_music(hub_w2old, mu_hubw2, mu_hubw2, true);

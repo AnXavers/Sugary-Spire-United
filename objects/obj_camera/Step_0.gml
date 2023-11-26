@@ -22,7 +22,8 @@ if (global.conedowntime > -1 && !global.freezeframe && !instance_exists(obj_rank
 }
 if (!global.freezeframe && !instance_exists(obj_rank) && room != timesuproom && room != rank_room && room != rm_titlecard)
 {
-	global.getawayfill--
+	if global.getawayfill > 0
+		global.getawayfill--
 	if instance_exists(obj_coneball)
 	{
 		with obj_coneball
@@ -53,7 +54,7 @@ if (get_panic() && !global.freezeframe && global.gamemode != 1)
 			global.collect -= 5;
 			with (instance_create(obj_player.x, obj_player.y, obj_pizzaloss))
 				sprite_index = choose(spr_collect1, spr_collect2, spr_collect3, spr_collect4, spr_collect5);
-			if (global.levelname == "sucrose")
+			if obj_tv.sucroseTimer
 				scr_sound(sfx_countdown)
 		}
 	}

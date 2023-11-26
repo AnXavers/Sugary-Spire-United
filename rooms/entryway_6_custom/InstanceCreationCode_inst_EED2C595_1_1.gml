@@ -1,1 +1,1 @@
-targetRoom = entryway_7_new
+targetRoom = entryway_7_custom

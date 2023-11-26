@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_towerentrancehall",
-  "bbox_bottom": 1471,
+  "bbox_bottom": 1247,
   "bbox_left": 0,
   "bbox_right": 633,
   "bbox_top": 0,

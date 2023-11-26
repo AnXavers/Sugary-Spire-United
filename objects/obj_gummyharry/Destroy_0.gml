@@ -33,6 +33,12 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 			freezevsp = obj_player.vsp
 			freezehsp = obj_player.hsp
 			freezestate = obj_player.state
+			if instance_exists(obj_coneball)
+			{
+				coneballvsp = obj_coneball.vspeed
+				coneballhsp = obj_coneball.hspeed
+				obj_coneball.image_speed = 0
+			}
 			isfrozen = 1
 			cutscene_create([cutscene_harryFreeze])
 		}

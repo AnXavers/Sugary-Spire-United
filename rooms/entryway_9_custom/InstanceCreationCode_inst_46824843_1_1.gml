@@ -1,2 +1,2 @@
 depth = 500
-targetRoom = entryway_8_new;
+targetRoom = entryway_8_custom;

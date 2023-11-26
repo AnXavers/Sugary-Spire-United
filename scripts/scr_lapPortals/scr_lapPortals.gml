@@ -130,6 +130,11 @@ function cutscene_harryFreeze()
 		vsp = 0;
 		image_speed = 0;
 	}
+	if instance_exists(obj_coneball)
+	{
+		obj_coneball.hspeed = 0;
+		obj_coneball.vspeed = 0;
+	}
 	if (instance_exists(obj_harrydead) && obj_harrydead.alarm[1] <= 1)
 	{
 		cutscene_event_end();
@@ -137,5 +142,11 @@ function cutscene_harryFreeze()
 		obj_player.vsp = obj_harrydead.freezevsp
 		obj_player.state = obj_harrydead.freezestate
 		obj_player.image_speed = 0.35
+		if instance_exists(obj_coneball)
+		{
+			obj_coneball.hspeed = obj_harrydead.coneballhsp
+			obj_coneball.vspeed = obj_harrydead.coneballvsp
+			obj_coneball.image_speed = 0.35
+		}
 	}
 }
