@@ -12,8 +12,9 @@ if canmove
 		optionsaved_heatmeter = global.heatmeter;
 		optionsaved_coneballparry = global.coneballparry;
 		optionsaved_moveset = global.moveset;
+		optionsaved_attackmove = global.attackmove;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 4)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 5)
 	{
 		optionselected++;
 		scr_sound(sound_step);
@@ -21,6 +22,7 @@ if canmove
 		optionsaved_coneballparry = global.coneballparry;
 		optionsaved_moveset = global.moveset;
 		optionsaved_attackmove = global.attackmove;
+		optionsaved_checkpoints = global.checkpoints;
 	}
 	switch (optionselected)
 	{
@@ -87,6 +89,20 @@ if canmove
 				ini_write_real("Settings", "attackmove", optionsaved_attackmove);
 				ini_close();
 				global.attackmove = optionsaved_attackmove;
+			}
+			break;
+		case 5:
+			subtitle = "ADDS CHECKPOINTS TO THE START OF EACH LAP";
+			CursorY = 550;
+			optionsaved_checkpoints += (key_right2 + key_left2);
+			optionsaved_checkpoints = wrap(optionsaved_checkpoints, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "checkpoints", optionsaved_checkpoints);
+				ini_close();
+				global.checkpoints = optionsaved_checkpoints;
 			}
 			break;
 	}

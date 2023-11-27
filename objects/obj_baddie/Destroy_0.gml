@@ -35,6 +35,8 @@ if ((ds_list_find_index(global.baddieroom, id) == -1 && inhaleddestroyvar == 0) 
 			global.fill += time_in_frames(0, 2.5);
 		if (global.gamemode == 1)
 			global.getawayfill += time_in_frames(0, 2.5);
+		if (instance_exists(obj_lowface) && global.lowfacefill > 0)
+			global.lowfacefill += time_in_frames(0, 2);
 	}
 	ds_list_add(global.baddieroom, id);
 	if (panicEscape)

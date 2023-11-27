@@ -3,18 +3,26 @@ if (image_alpha == 1)
 	var dir = point_direction(x, y, obj_player.x, obj_player.y);
 	if (!global.freezeframe)
 	{
-		if distance_to_object(obj_player) <= 250
+		var _xdistance = abs(x - obj_player.x)
+		var _ydistance = abs(y - obj_player.y)
+		if global.lowfacefill > 0
 		{
-			x = approach(x, obj_player.x, lengthdir_x(8, dir));
-			y = approach(y, obj_player.y, lengthdir_y(8, dir));
-			sprite_index = spr_lowface_aggro
+			if ((lastframexdistance + 8) <= _xdistance)
+				hspeed = lerp(hspeed, lengthdir_x(16 * coneballspeed * parryspeed, dir), 0.02)
+			else
+				hspeed = lerp(hspeed, lengthdir_x(10 * coneballspeed * parryspeed, dir), 0.02)
+			if ((lastframeydistance + 8) <= _ydistance)
+				vspeed = lerp(vspeed, lengthdir_y(16 * coneballspeed * parryspeed, dir), 0.02)
+			else
+				vspeed = lerp(vspeed, lengthdir_y(10 * coneballspeed * parryspeed, dir), 0.02)
 		}
-		if distance_to_object(obj_player) > 250
+		else
 		{
-			x = approach(x, obj_player.x, lengthdir_x(4, dir));
-			y = approach(y, obj_player.y, lengthdir_y(4, dir));
-			sprite_index = spr_lowface_idle
+			x = approach(x, obj_player.x, lengthdir_x(16 * coneballspeed * parryspeed, dir));
+			y = approach(y, obj_player.y, lengthdir_y(16 * coneballspeed * parryspeed, dir));
 		}
+		lastframexdistance = _xdistance
+		lastframeydistance = _ydistance
 	}
 }
 else

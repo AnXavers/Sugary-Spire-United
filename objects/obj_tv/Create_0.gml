@@ -27,6 +27,7 @@ comboendImage = 0;
 comboendSprite = spr_badcombo_boil;
 combocanFade = true;
 once = 0;
+frameref = 0;
 global.hurtcounter = 0;
 global.hurtmilestone = 0;
 global.mallowfollow = 0;

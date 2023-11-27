@@ -86,6 +86,25 @@ if (DrawHUD)
 				_getawayclock = spr_getawayclock_panic
 			draw_sprite(_getawayclock, floor(frameref * 0.35), _cx + 120, 430)
 		}
+		if instance_exists(obj_lowface)
+		{
+			var _cammid = (global.cam_w / 2)
+			var _timerspr = spr_timer_lowface
+			if global.lowfacefill < 1
+				_timerspr = spr_timer_lowface_showtime
+			draw_sprite(_timerspr, 0, _cammid, lowfacetimery)
+			if global.lowfacefill >= 1
+			{
+				var _mins = string(frames_in_minutes(global.lowfacefill))
+				if string_length(_mins) == 1
+					_mins = "0" + _mins
+				var _secs = string((frames_in_seconds(global.lowfacefill) mod 60))
+				if string_length(_secs) == 1
+					_secs = "0" + _secs
+				draw_text(_cammid - 45, lowfacetimery - 30, _mins)
+				draw_text(_cammid + 45, lowfacetimery - 30, _secs)
+			}
+		}
 	}
 	draw_set_font(global.promptfont);
 	draw_set_halign(0);

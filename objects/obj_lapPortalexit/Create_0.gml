@@ -11,7 +11,9 @@ if global.lapmode == 1 && global.gamemode != 1
 }
 else if global.lapmode == 2 && global.gamemode != 1
 {
-	if global.lapcount >= 4
+	if global.lapcount >= 5
+		instance_create(x, y, obj_lowface)
+	else if global.lapcount >= 4
 	{
 		switch global.levelname
 		{
@@ -77,12 +79,15 @@ if (global.lapcount == 10)
 	layer_vspeed(global.lap10fg, 3);
 	global.dolap10fg = 1;
 }
-if (global.lapcount == 3 && global.lapmode == 1)
-	scr_controlprompt("[spr_promptfont]The heat is rising...")
-else if global.lapcount == 5
-	scr_controlprompt("[spr_promptfont]Enemies are getting stronger...")
-else if global.lapcount == 10
-	scr_controlprompt("[spr_promptfont]The enemies are starting to multiply...")
+if global.lapmode == 1
+{
+	if (global.lapcount == 3)
+		scr_controlprompt("[spr_promptfont]The heat is rising...")
+	else if global.lapcount == 5
+		scr_controlprompt("[spr_promptfont]Enemies are getting stronger...")
+	else if global.lapcount == 10
+		scr_controlprompt("[spr_promptfont]The enemies are starting to multiply...")
+}
 scr_sound(sfx_lapexit)
 with instance_create(x, y, obj_cameraRegion)
 {
@@ -91,4 +96,9 @@ with instance_create(x, y, obj_cameraRegion)
 	ClampBottom = false
 	ClampLeft = false
 	ClampRight = false
+}
+if global.checkpoints
+{
+	global.checkpointroom = room
+	global.checkpointdoor = obj_player.targetDoor
 }

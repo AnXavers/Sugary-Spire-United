@@ -19,7 +19,7 @@ if (place_meeting(x, y, obj_player) && obj_player.state != states.comingoutdoor 
 	obj_player.sprite_index = obj_player.spr_Timesup;
 	if global.gamemode == 1
 	{
-		global.getawayfill = time_in_frames(0, 31)
+		global.getawayfill = time_in_frames(0, 30)
 		with instance_create(obj_player.x, obj_player.y, obj_coneball)
 		{
 			coneballtype = 1;

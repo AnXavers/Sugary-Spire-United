@@ -3,7 +3,7 @@ if (image_alpha == 1)
 	var dir = point_direction(x, y, obj_player.x, obj_player.y);
 	if (!global.freezeframe)
 	{
-		if !coneballtype
+		if (!coneballtype || obj_camera.getawayfill < 1)
 		{
 			x = approach(x, obj_player.x, lengthdir_x(8 * coneballspeed * parryspeed, dir));
 			y = approach(y, obj_player.y, lengthdir_y(8 * coneballspeed * parryspeed, dir));

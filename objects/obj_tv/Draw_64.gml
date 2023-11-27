@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 if (is_hub() || !scr_roomcheck() || global.levelname == "none")
 	exit;
 bobbing = wave(2, -2, 3, 0);
@@ -94,7 +93,7 @@ var dist = clamp(perc * 268, 0, 268);
 var timeinsecs = floor(target_fill / 60);
 var mins = max(floor(timeinsecs / 60), 0);
 var secs = max(timeinsecs % 60, 0);
-if ((global.panic == 1 || global.starrmode == 1) && global.gamemode != 1)
+if ((global.panic == 1 || global.starrmode == 1) && global.gamemode != 1 && !instance_exists(obj_lowface))
 {
 	if (!sucroseTimer)
 		target_fill = lerp(target_fill, global.fill, 0.03);
@@ -179,7 +178,7 @@ var y_shk = random_range(-1, 1);
 if (global.lapcount >= 2 && global.lapmode != 0)
 {
 	draw_set_halign(fa_left);
-	draw_sprite(spr_harrylap, image_index, 70, 485 + anchor_point("bottom"));
+	draw_sprite(spr_harrylap, floor(frameref * 0.35), 70, 485 + anchor_point("bottom"));
 	draw_text(115 + x_shk, 460 + y_shk + anchor_point("bottom"), global.lapcount);
 }
 if (shownewtext == 1)

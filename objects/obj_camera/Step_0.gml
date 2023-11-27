@@ -20,7 +20,7 @@ if (global.conedowntime > -1 && !global.freezeframe && !instance_exists(obj_rank
 		}
 	}
 }
-if (!global.freezeframe && !instance_exists(obj_rank) && room != timesuproom && room != rank_room && room != rm_titlecard)
+if (!global.freezeframe && !instance_exists(obj_rank) && room != timesuproom && room != rank_room && room != rm_titlecard && global.gamemode == 1)
 {
 	if global.getawayfill > 0
 		global.getawayfill--
@@ -41,7 +41,7 @@ if (!global.freezeframe && !instance_exists(obj_rank) && room != timesuproom && 
 		}
 	}
 }
-if (get_panic() && !global.freezeframe && global.gamemode != 1)
+if (get_panic() && !global.freezeframe && global.gamemode != 1 && !instance_exists(obj_lowface))
 {
 	if (global.fill > global.maxwave)
 		global.maxwave = global.fill;
@@ -54,7 +54,7 @@ if (get_panic() && !global.freezeframe && global.gamemode != 1)
 			global.collect -= 5;
 			with (instance_create(obj_player.x, obj_player.y, obj_pizzaloss))
 				sprite_index = choose(spr_collect1, spr_collect2, spr_collect3, spr_collect4, spr_collect5);
-			if obj_tv.sucroseTimer
+			if obj_tv.sucroseTimer && !instance_exists(obj_yogurtexe) && !instance_exists(obj_coneball)
 				scr_sound(sfx_countdown)
 		}
 	}
@@ -78,6 +78,19 @@ else
 	panicshakeacc = 0;
 	if (!global.freezeframe)
 		camera_set_view_angle(view_camera[0], 0);
+}
+if instance_exists(obj_lowface)
+{
+	if global.lowfacefill > 0
+		global.lowfacefill--
+	lowfacetimery = lerp(lowfacetimery, global.cam_h, 0.05)
+	if ((global.lowfacefill mod 60) == 0)
+		scr_sound(sfx_blip)
+}
+else
+{
+	global.lowfacefill = time_in_frames(0, 10)
+	lowfacetimery = global.cam_h - 300
 }
 if (global.seconds < 0)
 {

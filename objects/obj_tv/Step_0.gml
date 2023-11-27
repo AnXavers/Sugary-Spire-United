@@ -82,7 +82,9 @@ switch (state)
 				idlespr = panictvspr;
 			if (global.lapmode == 2)
 			{
-				if (global.lapcount >= 4)
+				if global.lapcount >= 5
+					idlespr = spr_pizzelletv_fear
+				else if (global.lapcount >= 4)
 					idlespr = lap4tvspr;
 				else if (global.lapcount >= 3)
 					idlespr = lap3tvspr;
@@ -460,3 +462,4 @@ else if (promptappear || prompt_timer <= 0)
 		promptappear = false;
 	}
 }
+frameref++

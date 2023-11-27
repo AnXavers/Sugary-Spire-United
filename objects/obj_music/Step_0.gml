@@ -49,7 +49,9 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 		}
 		else
 		{
-			if (global.lapcount >= 10 || (global.lapcount == 4 && global.lapmode == 2))
+			if (global.lapcount == 5 && global.lapmode == 2)
+				_new_song = mu_lowface
+			else if (global.lapcount >= 10 || (global.lapcount == 4 && global.lapmode == 2))
 				_new_song = obj_player.mu_lap10song;
 			else if (global.lapcount >= 5 || (global.lapcount == 3 && global.lapmode == 2))
 				_new_song = obj_player.mu_lap5song;

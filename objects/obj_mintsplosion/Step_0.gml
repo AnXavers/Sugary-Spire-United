@@ -26,6 +26,8 @@ if (((obj_player.x > (x - 400) && obj_player.x < (x + 400)) && (y <= (obj_player
 		}
 	}
 }
+else
+	bombreset = 50;
 if (flash == 1 && alarm[2] <= 0)
 	alarm[2] = 0.15 * room_speed;
 if (state != enemystates.grabbed)

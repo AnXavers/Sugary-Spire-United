@@ -99,6 +99,7 @@ global.collects = 1;
 global.breakables = 1;
 global.enemies = 1;
 global.escapetimer = 0;
+global.lowfacefill = time_in_frames(0, 10)
 var i = 0
 var I = 0
 for (var i = 0; room_exists(i); i++)
@@ -173,6 +174,7 @@ global.newvoicelines = ini_read_real("Settings", "newvoicelines", 0)
 global.moveset = ini_read_real("Settings", "moveset", 0)
 global.attackmove = ini_read_real("Settings", "attackmove", 0)
 global.destroyables = ini_read_real("Settings", "destroyables", 0)
+global.checkpoints = ini_read_real("Settings", "checkpoints", 0)
 global.cam_w = ini_read_real("Settings", "reswidth", 960);
 global.cam_h = ini_read_real("Settings", "resheight", 540);
 window_set_size(global.cam_w, global.cam_h)
