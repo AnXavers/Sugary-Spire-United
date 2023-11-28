@@ -75,4 +75,5 @@ else
 		image_index = 1
 }
 y_timer++
-global.fill_4--
+if !instance_exists(obj_lowface)
+	global.fill_4--

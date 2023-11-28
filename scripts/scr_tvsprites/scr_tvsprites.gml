@@ -108,7 +108,7 @@ function scr_tvsprites()
 			break;
 		case "T":
 			tvspr = spr_noisetv;
-			idletvspr = spr_noisetv_hurt;
+			idletvspr = spr_noisetv_idle;
 			combotvspr = spr_noisetv_combo;
 			happytvspr = spr_noisetv_collect;
 			tvchange1 = spr_noisetv_idleanim1;

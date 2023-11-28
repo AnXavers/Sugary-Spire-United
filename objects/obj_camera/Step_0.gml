@@ -41,13 +41,13 @@ if (!global.freezeframe && !instance_exists(obj_rank) && room != timesuproom && 
 		}
 	}
 }
-if (get_panic() && !global.freezeframe && global.gamemode != 1 && !instance_exists(obj_lowface))
+if (get_panic() && !global.freezeframe && global.gamemode != 1)
 {
 	if (global.fill > global.maxwave)
 		global.maxwave = global.fill;
 	if (!global.freezeframe)
 	{
-		if (!obj_tv.sucroseTimer || obj_tv.target_fill >= global.fill)
+		if (!obj_tv.sucroseTimer || obj_tv.target_fill >= global.fill && !instance_exists(obj_lowface))
 			global.fill--;
 		if (((global.fill > 0 && (global.fill % 60) == 0) || (global.fill <= 0 && (abs(global.fill) % 10) == 0)) && global.collect >= 5)
 		{

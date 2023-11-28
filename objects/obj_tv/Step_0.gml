@@ -123,8 +123,6 @@ switch (state)
 					idlespr = mach1tvspr;
 				if (allstate == states.machroll)
 					idlespr = machrolltvspr;
-				if (obj_player.sprite_index == obj_player.spr_mach3hitwall || obj_player.sprite_index == obj_player.spr_freefallland || obj_player.sprite_index == obj_player.spr_ceilingcrash || allstate = states.squished)
-					idlespr = crashtvspr;
 				break;
 			case states.hooks:
 				idlespr = hooktvspr;
@@ -168,6 +166,8 @@ switch (state)
 				_transfo = false;
 				break;
 		}
+		if (obj_player.sprite_index == obj_player.spr_mach3hitwall || obj_player.sprite_index == obj_player.spr_freefallland || obj_player.sprite_index == obj_player.spr_ceilingcrash || allstate = states.squished)
+			idlespr = crashtvspr;
 		if (!_transfo)
 		{
 			if (allstate == states.hurt)
