@@ -1,4 +1,5 @@
-scr_sound(sfx_lowface_death)
+if (room != timesuproom && !instance_exists(obj_timesup))
+	scr_sound(sfx_lowface_death)
 repeat 3
 	instance_create(random_range(-20, 20), random_range(-20, 20), obj_slapstar);
 repeat 3

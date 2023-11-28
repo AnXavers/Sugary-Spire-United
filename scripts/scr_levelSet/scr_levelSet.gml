@@ -90,6 +90,7 @@ function scr_levelSet()
 	global.showplaytimer = ranks != "none";
 	global.conedowntime = -1
 	global.getawayfill = time_in_frames(0, 30)
+	global.lowfacefill = time_in_frames(0, 10)
 	with (obj_camera)
 	{
 		NextFreeze = false;

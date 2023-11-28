@@ -32,6 +32,7 @@ if (pid > 0 && !pid.cutscene && !instance_exists(obj_fadeout) && !instance_exist
 {
 	with (pid)
 	{
+		scr_sound(sfx_lowface_jumpscare);
 		instance_destroy(obj_fadeout);
 		targetDoor = "A";
 		room = timesuproom;

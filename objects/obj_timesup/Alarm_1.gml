@@ -1,4 +1,4 @@
-if !global.checkpoints
+if (!global.checkpoints && global.lapcount < 2)
 {
 	targetRoom = global.entergateroom;
 	global.levelname = "none";
@@ -7,7 +7,8 @@ if !global.checkpoints
 }
 else
 {
-	targetRoom = global.checkpointroom
-	targetDoor = global.checkpointdoor
-	cutscene_create([cutscene_lapPortal_middle, cutscene_lapPortal_end])
+	obj_player.targetRoom = global.checkpointroom
+	obj_player.targetDoor = global.checkpointdoor
+	instance_create(x, y, obj_fadeout)
+	cutscene_create([cutscene_lapPortal_end])
 }

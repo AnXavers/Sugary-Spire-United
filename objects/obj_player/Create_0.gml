@@ -108,6 +108,7 @@ superDashCloudID = -4;
 mach4mode = 0;
 doublejump = 0;
 global.saveroom = ds_list_create();
+global.checkpointsaveroom = ds_list_create();
 global.timetrial = false;
 grav = 0.5;
 hsp = 0;

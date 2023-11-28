@@ -79,10 +79,9 @@ else
 	if (!global.freezeframe)
 		camera_set_view_angle(view_camera[0], 0);
 }
-if instance_exists(obj_lowface)
+if (instance_exists(obj_lowface) && global.lowfacefill > 0)
 {
-	if global.lowfacefill > 0
-		global.lowfacefill--
+	global.lowfacefill--
 	lowfacetimery = lerp(lowfacetimery, global.cam_h, 0.05)
 	if ((global.lowfacefill mod 60) == 0)
 		scr_sound(sfx_blip)
@@ -90,7 +89,7 @@ if instance_exists(obj_lowface)
 else
 {
 	global.lowfacefill = time_in_frames(0, 10)
-	lowfacetimery = global.cam_h - 300
+	lowfacetimery = global.cam_h + 300
 }
 if (global.seconds < 0)
 {

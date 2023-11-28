@@ -101,4 +101,7 @@ if global.checkpoints
 {
 	global.checkpointroom = room
 	global.checkpointdoor = obj_player.targetDoor
+	ds_list_clear(global.checkpointsaveroom)
+	ds_list_copy(global.checkpointsaveroom, global.saveroom)
+	scr_controlprompt("[spr_promptfont]Lap " + string(global.lapcount) + " checkpoint set!")
 }
