@@ -63,7 +63,7 @@ function scr_bosscontroller_normal()
 	if (bosshp != lastbosshp)
 		lastbosshp = bosshp;
 }
-function scr_bosscontroller_draw_health(argument0 = spr_pizzellehp, argument1 = 1, argument2 = playmaxhp, argument3 = playhp, argument4 = 64, argument5 = 50, argument6 = argument2 / 2, argument7 = 54, argument8 = 52, argument9 = playhpindex)
+function scr_bosscontroller_draw_health(argument0 = spr_pizzelle_hp, argument1 = 1, argument2 = playmaxhp, argument3 = playhp, argument4 = 64, argument5 = 50, argument6 = argument2 / 2, argument7 = 54, argument8 = 52, argument9 = playhpindex)
 {
 	for (var i = 0; i < argument2; i++)
 	{
