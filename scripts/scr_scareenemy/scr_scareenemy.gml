@@ -1,6 +1,6 @@
 function scr_scareenemy()
 {
-	if (!secretjumped && point_in_rectangle(x, y, obj_player.x - 400, obj_player.y - 60, obj_player.x + 400, obj_player.y + 60) && brave_timer <= 0 && (obj_player.state == states.mach3 || ((obj_player.movespeed >= 10 && obj_player.state == states.minecart) || (obj_player.movespeed >= 6 && obj_player.state == states.rupertslide) || (obj_player.move != 0 && obj_player.state == states.cookiemount))))
+	if (!secretjumped && point_in_rectangle(x, y, obj_player.x - 400, obj_player.y - 60, obj_player.x + 400, obj_player.y + 60) && brave_timer <= 0 && (obj_player.state == states.mach3 || ((obj_player.movespeed >= 10 && obj_player.state == states.minecart) || (obj_player.movespeed >= 6 && obj_player.state == states.rupertslide) || (obj_player.move != 0 && obj_player.state == states.cookiemount) || obj_player.state == states.pepperman_pinball)))
 	{
 		if (state != 9 && !thrown && !throw_hit)
 		{

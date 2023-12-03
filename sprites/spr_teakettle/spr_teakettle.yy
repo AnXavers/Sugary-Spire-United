@@ -49,7 +49,7 @@
     "left": 0,
     "right": 0,
     "tileMode": [
-      0,
+      1,
       1,
       0,
       1,
@@ -57,7 +57,7 @@
     ],
     "top": 0,
   },
-  "origin": 3,
+  "origin": 6,
   "parent": {
     "name": "To Be Sorted",
     "path": "folders/Sprites/To Be Sorted.yy",
@@ -105,7 +105,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 0,
-    "yorigin": 32,
+    "yorigin": 64,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

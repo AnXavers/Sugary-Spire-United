@@ -364,13 +364,22 @@ function state_player_normal()
 	}
 	if (key_attack && grounded && !scr_solid(x + xscale, y, true))
 	{
-		mach2 = 0;
-		if (movespeed < 6)
-			movespeed = 6;
-		sprite_index = spr_mach1;
-		jumpAnim = 1;
-		state = states.mach2;
 		image_index = 0;
+		if character != "M"
+		{
+			mach2 = 0;
+			if (movespeed < 6)
+				movespeed = 6;
+			sprite_index = spr_mach1;
+			jumpAnim = 1;
+			state = states.mach2;
+		}
+		else
+		{
+			sprite_index = spr_pepperman_shoulderstart;
+			movespeed = -3
+			state = states.mach3
+		}
 	}
 	if (character == "C")
 	{

@@ -101,7 +101,16 @@ function state_player_climbwall()
 	}
 	if (key_jump && key_attack)
 	{
-		if (movespeed >= 12 && !place_meeting(x + xscale, y, obj_molassesWall) && character != "S")
+		if character == "M"
+		{
+			image_index = 0;
+			sprite_index = spr_pepperman_rolling
+			vsp = -9;
+			jumpstop = false;
+			state = states.pepperman_pinball;
+			xscale *= -1;
+		}
+		else if (movespeed >= 12 && !place_meeting(x + xscale, y, obj_molassesWall) && character != "S")
 		{
 			image_index = 0;
 			sprite_index = spr_mach3jump;
@@ -115,10 +124,9 @@ function state_player_climbwall()
 			if character == "S"
 				movespeed = clamp(movespeed, 0, 8)
 			image_index = 0;
-			
 			sprite_index = spr_secondjump1;
 			if character == "S" || character == "T"
-			sprite_index = spr_walljumpstart;
+				sprite_index = spr_walljumpstart;
 			vsp = -9;
 			jumpstop = false;
 			state = states.mach2;
@@ -128,7 +136,7 @@ function state_player_climbwall()
 		{
 			sprite_index = spr_mach2jump;
 			if character == "S" || character == "T"
-			sprite_index = spr_walljumpstart;
+				sprite_index = spr_walljumpstart;
 			movespeed = clamp(movespeed, 6, 10);
 			jumpstop = false;
 			vsp = -9;
@@ -261,6 +269,15 @@ function state_player_climbceiling()
 	}
 	if (key_jump && key_attack)
 	{
+		if character == "M"
+		{
+			image_index = 0;
+			sprite_index = spr_pepperman_rolling
+			vsp = 9;
+			jumpstop = false;
+			state = states.pepperman_pinball;
+			xscale *= -1;
+		}
 		if (movespeed >= 12 && character != "S")
 		{
 			upsideDownJump = true;
@@ -398,6 +415,14 @@ function state_player_climbdownwall()
 	}
 	if (key_jump && key_attack)
 	{
+		if character == "M"
+		{
+			image_index = 0;
+			sprite_index = spr_pepperman_rolling
+			vsp = 9;
+			jumpstop = false;
+			state = states.pepperman_pinball;
+		}
 		if (movespeed >= 12 && !place_meeting(x - xscale, y, obj_molassesWall) && character != "S")
 		{
 			upsideDownJump = true;

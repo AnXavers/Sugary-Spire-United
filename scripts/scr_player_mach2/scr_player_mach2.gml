@@ -1,5 +1,14 @@
 function state_player_mach2()
 {
+	if character == "M"
+	{
+		vsp = 0;
+		image_index = 0;
+		sprite_index = spr_pepperman_shoulderstart;
+		movespeed = -3
+		state = states.mach3
+		exit;
+	}
 	if (windingAnim < 2000)
 		windingAnim++;
 	mach2 = 35;

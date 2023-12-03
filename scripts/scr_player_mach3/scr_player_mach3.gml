@@ -8,6 +8,17 @@ function state_player_mach3()
 	move2 = key_right2 + key_left2;
 	momemtum = 1;
 	crouchslideAnim = 1;
+	if sprite_index == spr_pepperman_shoulderstart
+	{
+		movespeed = -3
+		if floor(image_index) == (image_number - 1)
+		{
+			sprite_index = spr_mach3player
+			movespeed = 12;
+		}
+		else
+			exit;
+	}
 	if (key_jump)
 		input_buffer_jump = 0;
 	if (!key_jump2 && jumpstop == 0 && vsp < 0.5)
@@ -32,6 +43,17 @@ function state_player_mach3()
 					playedjumpsound = mu_rankd;
 				}
 				vsp = -12;
+				dir = xscale
+			}
+		case "M":
+			if (key_shoot2)
+			{
+				state = states.pepperman_pinball
+				image_index = 0;
+				sprite_index = spr_pepperman_rolling
+				if grounded
+					vsp = -16
+				exit;
 			}
 		default:
 			if (grounded && vsp > 0)

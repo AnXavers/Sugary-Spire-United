@@ -1,5 +1,19 @@
 function state_player_freefall()
 {
+	if ((key_shoot2 || key_slap2 || key_attack2) && character == "M")
+	{
+		state = states.pepperman_pinball
+		image_index = 0;
+		sprite_index = spr_pepperman_rolling
+		var move = key_right - key_left
+		if move != 0
+			movespeed = move * 12
+		else
+			movespeed = choose(12, -12)
+		if grounded
+			vsp = -16
+		exit;
+	}
 	landAnim = 1;
 	if (verticalMovespeed >= 2)
 	{

@@ -69,8 +69,7 @@ function state_player_cookiemount()
 		sprite_index = spr_player_cookiemount;
 	if sprite_index == spr_cookiemount_dash
 	{
-		movespeed = 11;
-		hsp = xscale * movespeed
+		movespeed = (11 * xscale);
 		vsp = approach(vsp, 0, 4)
 		image_speed = 0.35
 		if floor(image_index) == (image_number - 1)
@@ -78,8 +77,7 @@ function state_player_cookiemount()
 	}
 	if (key_slap2 && (sprite_index != spr_cookiemount_dash))
 	{
-		movespeed = 16;
-		hsp = xscale * movespeed
+		movespeed = (16 * xscale);
 		image_speed = 0.35
 		sprite_index = spr_cookiemount_dash
 		if grounded

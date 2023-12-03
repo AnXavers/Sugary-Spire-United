@@ -39,8 +39,8 @@ if socket == event_id
 				case CMD_MESSAGE:
 					p.msg = buffer_read(buff, buffer_string)
 					break
-				case CMD_TYPING:
-					p.typing = buffer_read(buff, buffer_bool)
+				case CMD_ID:
+					p.playerid = buffer_read(buff, buffer_string)
 					break
 			}
 			break;

@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "ts_entryway1_sprite_custom",
-  "bbox_bottom": 1119,
+  "bbox_bottom": 1087,
   "bbox_left": 0,
   "bbox_right": 1023,
   "bbox_top": 0,
@@ -20,7 +20,7 @@
   "height": 1152,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7b54cd66-9f50-48f9-9b8a-3d502a7acaee","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2b918ff7-65b6-46d6-a360-7822d13b2b01","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,

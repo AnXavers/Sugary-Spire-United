@@ -11,6 +11,6 @@ for (var i = 0; i < instance_number(obj_online_player); i++)
 		send_player_data(so, CMD_SPRITE, pl.id, pl.sprite_index)
 		send_player_data(so, CMD_NAME, pl.id, pl.playername)
 		send_player_data(so, CMD_MESSAGE, pl.id, pl.msg)
-		send_player_data(so, CMD_TYPING, pl.id, pl.typing)
+		send_player_data(so, CMD_ID, pl.id, string(pl.id))
 	}
 }

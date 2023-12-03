@@ -171,7 +171,7 @@
 2,372,373,-12,0,1,539,-26,0,2,388,389,-12,0,1,555,-26,0,2,404,405,-12,0,1,571,-26,0,2,420,421,-12,0,1,587,-26,0,2,436,437,-12,0,
 1,603,-26,0,2,452,453,-12,0,7,619,0,0,374,375,376,377,-37,0,4,390,391,392,393,-12,0,3,308,309,310,-22,0,4,406,407,408,409,-4,0,1,313,
 -7,0,3,324,325,326,-18,0,1,383,-3,0,4,422,423,424,425,-4,0,1,329,-7,0,3,340,341,342,-5,0,3,311,312,313,-4,0,3,314,315,316,-3,0,
-1,399,-11,0,1,345,-7,0,3,356,357,358,-5,0,3,327,328,329,-4,0,3,330,331,332,-31,0,3,343,344,345,-4,0,3,346,347,348,-15,0,],"TileDataFormat":1,},"tilesetId":{"name":"ts_secretold","path":"tilesets/ts_secretold/ts_secretold.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+1,399,-11,0,1,345,-7,0,3,356,357,358,-5,0,3,327,328,329,-4,0,3,330,331,332,-31,0,3,343,344,345,-4,0,3,346,347,348,-15,0,],"TileDataFormat":1,},"tilesetId":{"name":"ts_secret_old","path":"tilesets/ts_secret_old/ts_secret_old.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":64,"SerialiseWidth":41,"TileCompressedData":[
 -170,51,1,34,-4,82,16,84,82,83,83,84,82,83,84,82,83,82,83,84,82,83,36,-20,51,1,37,-19,0,1,65,-20,51,1,37,-19,0,1,33,-20,51,
 1,37,-19,0,1,49,-20,51,1,37,-19,0,1,65,-20,51,1,37,-19,0,15,81,82,82,83,84,82,83,84,82,83,84,82,83,84,82,-6,51,1,37,-34,
@@ -188,13 +188,13 @@
 1,65,-12,51,1,37,-27,0,1,33,-12,51,1,53,-27,0,1,49,-12,51,1,37,-27,0,1,65,-12,51,1,37,-8,0,3,17,18,21,-16,0,1,33,-12,
 51,1,37,-8,0,3,33,51,37,-16,0,1,49,-12,51,1,66,-8,18,3,68,51,37,-16,0,1,65,-23,51,1,37,-5,0,3,17,18,21,-8,145,1,33,
 -23,51,1,37,-5,0,3,33,51,37,-8,0,4,81,83,84,82,-20,51,1,66,-5,18,3,68,51,37,-12,0,-28,51,1,37,-12,0,-28,51,1,37,-7,0,
-5,114,18,19,20,19,-28,51,1,37,-6,0,2,114,130,-32,51,1,66,-4,18,3,19,20,130,-210,51,],"TileDataFormat":1,},"tilesetId":{"name":"ts_secretold","path":"tilesets/ts_secretold/ts_secretold.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+5,114,18,19,20,19,-28,51,1,37,-6,0,2,114,130,-32,51,1,66,-4,18,3,19,20,130,-210,51,],"TileDataFormat":1,},"tilesetId":{"name":"ts_secret_old","path":"tilesets/ts_secret_old/ts_secret_old.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":64,"SerialiseWidth":41,"TileCompressedData":[
 -388,0,2,238,239,-39,0,2,254,255,-39,0,2,270,271,-26,0,-2,624,10,625,628,627,628,626,627,628,626,629,726,-29,0,-2,640,10,641,644,643,644,642,643,
 644,642,645,646,-34,0,2,631,632,-39,0,2,647,648,-41,0,2,663,664,-39,0,5,679,686,0,663,664,-39,0,2,679,686,-790,0,3,168,169,170,-38,0,3,
 184,185,186,-38,0,3,200,201,202,-38,0,3,216,217,218,-19,0,8,624,625,626,626,627,628,629,726,-33,0,8,640,641,642,642,643,644,645,646,-36,0,2,631,
 632,-39,0,2,647,648,-80,0,2,663,664,-39,0,2,679,686,-93,0,3,235,236,237,-38,0,3,251,252,253,-39,0,2,268,269,-41,0,8,624,625,627,628,628,
-627,629,726,-33,0,8,640,641,643,644,644,643,645,646,-37,0,2,631,632,-39,0,2,647,648,-40,0,2,663,664,-39,0,2,679,686,-251,0,],"TileDataFormat":1,},"tilesetId":{"name":"ts_secretold","path":"tilesets/ts_secretold/ts_secretold.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+627,629,726,-33,0,8,640,641,643,644,644,643,645,646,-37,0,2,631,632,-39,0,2,647,648,-40,0,2,663,664,-39,0,2,679,686,-251,0,],"TileDataFormat":1,},"tilesetId":{"name":"ts_secret_old","path":"tilesets/ts_secret_old/ts_secret_old.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_4","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":64,"SerialiseWidth":41,"TileCompressedData":[
 -5,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,
 580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,
@@ -205,7 +205,7 @@
 0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,
 -26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,
 580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,579,580,-26,0,-13,578,2,
-579,580,-26,0,-13,578,2,579,580,-26,0,-15,578,-26,0,-15,578,-31,0,-10,578,-308,0,],"TileDataFormat":1,},"tilesetId":{"name":"ts_secretold","path":"tilesets/ts_secretold/ts_secretold.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+579,580,-26,0,-13,578,2,579,580,-26,0,-15,578,-26,0,-15,578,-31,0,-10,578,-308,0,],"TileDataFormat":1,},"tilesetId":{"name":"ts_secret_old","path":"tilesets/ts_secret_old/ts_secret_old.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Backgrounds_1","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":1.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"bg_secret2_old","path":"sprites/bg_secret2_old/bg_secret2_old.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":1.0,"vtiled":true,"x":0,"y":0,},
   ],
   "parent": {

@@ -7,7 +7,7 @@ function send_player_data(argument0, argument1, argument2, argument3)
 	#macro CMD_SPRITE	4
 	#macro CMD_NAME		5
 	#macro CMD_MESSAGE	6
-	#macro CMD_TYPING	7
+	#macro CMD_ID		7
 	buffer_seek(buffer, buffer_seek_start, 0)
 	buffer_write(buffer, buffer_u8, PACKET_PLAYER)
 	buffer_write(buffer, buffer_u8, argument1)
@@ -35,8 +35,8 @@ function send_player_data(argument0, argument1, argument2, argument3)
 		case CMD_MESSAGE:
 			buffer_write(buffer, buffer_string, argument3);
 			break;
-		case CMD_TYPING:
-			buffer_write(buffer, buffer_bool, argument3);
+		case CMD_ID:
+			buffer_write(buffer, buffer_string, argument3);
 			break;
 	}
 	network_send_packet(argument0, buffer, buffer_tell(buffer))

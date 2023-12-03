@@ -77,7 +77,7 @@ enum states {
 	freefallland, // 75
 	hang, // 76
 	door, // 77
-	barrelnormal, // 78
+	pepperman_pinball, // 78
 	barrelfall, // 79
 	barrelmach1, // 80
 	barrelmach2, // 81

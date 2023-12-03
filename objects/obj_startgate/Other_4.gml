@@ -36,7 +36,7 @@ var _string_length = string_length(ini_read_string("Highscore", string(level), 0
 for (i = 0; i < _string_length; i++)
 	colors[i] = irandom(6);
 ini_close();
-if global.entergateid == id
+if global.entergateid == id && place_meeting(obj_player.roomstartx, obj_player.roomstarty, self)
 {
 	with instance_create(x - 16, y - 32, obj_doortrigger_parent)
 		id_door = "SG"

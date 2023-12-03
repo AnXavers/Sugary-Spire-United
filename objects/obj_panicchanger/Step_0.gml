@@ -1,6 +1,6 @@
 if (fadealpha > 1)
 {
-	scr_escapebgs();
+	scr_layerswap();
 	obj_tv.tvbg = spr_tvbgescape;
 	with (obj_collectEscape)
 	{

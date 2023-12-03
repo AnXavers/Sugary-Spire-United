@@ -74,4 +74,4 @@ if (instance_exists(obj_player) && (obj_player.state != states.timesup && obj_pl
 	camera_set_view_pos(view_camera[0], Cam_x + _shake_x, Cam_y + _shake_y);
 }
 global.wave = global.maxwave - global.fill;
-scr_escapebgs();
+scr_layerswap();

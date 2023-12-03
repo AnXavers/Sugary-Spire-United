@@ -294,8 +294,8 @@ function scr_playerstate()
 		case states.door:
 			_stateFunction = state_player_door;
 			break;
-		case states.barrelnormal:
-			_stateFunction = state_player_cookiemount;
+		case states.pepperman_pinball:
+			_stateFunction = state_pepperman_pinball();
 			break;
 		case states.barrelfall:
 			_stateFunction = state_player_cookiemount;

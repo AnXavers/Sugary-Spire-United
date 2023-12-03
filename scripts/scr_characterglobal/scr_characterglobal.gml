@@ -1673,6 +1673,23 @@ function scr_characterglobal()
 			sfx_supertaunt = sound_supertaunt1
 			break;
 		case "M":
+			spr_idle = spr_pepperman_idle
+			spr_move = spr_pepperman_move
+			spr_jump = spr_pepperman_jump
+			spr_bodyslamstart = spr_pepperman_groundpoundstart
+			spr_bodyslamfall = spr_pepperman_groundpound
+			spr_bodyslamland = spr_pepperman_groundpoundland
+			spr_bombdropstart = spr_pepperman_groundpoundstart
+			spr_bombdropfall = spr_pepperman_groundpound
+			spr_bombdropland = spr_pepperman_groundpoundland
+			spr_fall = spr_pepperman_fall
+			spr_hurt = spr_pepperman_hurtplayer
+			spr_entergate = spr_pepperman_lookdoor
+			spr_mach3player = spr_pepperman_shoulderloop
+			spr_machslideboost3 = spr_pepperman_shoulderturn
+			spr_taunt = spr_pepperman_taunt
+			spr_Timesup = spr_pepperman_timesup
+			spr_walkfront = spr_pepperman_walkfront
 			break;
 		case "Z":
 			// sprites
@@ -1708,7 +1725,6 @@ function scr_characterglobal()
 			spr_rollgetup = spr_pizzall_machslideend;
 			spr_mach3jump = spr_pizzall_mach3jump;
 			spr_mach3hitwall = spr_pizzall_mach3hitwall;
-			spr_mach3roll = spr_pizzall_machslideboost3
 			spr_crazyrun = spr_pizzall_crazyrun;
 			spr_machslide = spr_pizzall_machsliding;
 			spr_machslideend = spr_pizzall_machslideend;
@@ -1717,7 +1733,6 @@ function scr_characterglobal()
 			spr_land2 = spr_pizzall_land2;
 			spr_stomp = spr_pizzall_bodyslamfall;
 			spr_stompprep = spr_pizzall_bodyslamstart;
-			spr_crouchslide = spr_pizzall_machslideboost3;
 			spr_crouch = spr_pizzall_machsliding;
 			spr_bump = spr_pizzall_bump;
 			spr_victory = spr_pizzall_enterkey;
