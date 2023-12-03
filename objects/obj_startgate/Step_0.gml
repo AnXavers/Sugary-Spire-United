@@ -19,54 +19,53 @@ if (is_hub())
 if ((place_meeting(x, y, obj_player)) && (obj_player.state != states.victory))
 {
 	showtext = true;
+	var _lvlname = level
 	switch (level)
 	{
 		case "tutorial":
-			scr_controlprompt("[spr_promptfont]Tutorial", -4, 10)
+			_lvlname = "Tutorial"
 			break;
 		case "entryway":
-			scr_controlprompt("[spr_promptfont]Crunchy Construction", -4, 10)
+			_lvlname = "Crunchy Construction"
 			break;
 		case "steamy":
-			scr_controlprompt("[spr_promptfont]Cottontown", -4, 10)
+			_lvlname = "Cottontown"
 			break;
 		case "mines":
-			scr_controlprompt("[spr_promptfont]Sugarshack Mines", -4, 10)
+			_lvlname = "Sugarshack Mines"
 			break;
 		case "molasses":
-			scr_controlprompt("[spr_promptfont]Molasses Swamp", -4, 10)
+			_lvlname = "Molasses Swamp"
 			break;
 		case "fudge":
-			scr_controlprompt("[spr_promptfont]Mt. Fudgetop", -4, 10)
+			_lvlname = "Mt. Fudgetop"
 			break;
 		case "dance":
-			scr_controlprompt("[spr_promptfont]Dance Off", -4, 10)
+			_lvlname = "Dance Off"
 			break;
 		case "sucrose":
-			scr_controlprompt("[spr_promptfont]Sucrose Snowstorm", -4, 10)
+			_lvlname = "Sucrose Snowstorm"
 			break;
 		case "martian":
-			scr_controlprompt("[spr_promptfont]Martian Outpost", -4, 10)
+			_lvlname = "Martian Outpost"
 			break;
 		case "bee":
-			scr_controlprompt("[spr_promptfont]Sting Operation", -4, 10)
+			_lvlname = "Sting Operation"
 			break;
 		case "exitway":
-			scr_controlprompt("[spr_promptfont]Wafer Deconstruction", -4, 10)
+			_lvlname = "Wafer Deconstruction"
 			break;
 		case "stormy":
-			scr_controlprompt("[spr_promptfont]Cottonstorm", -4, 10)
+			_lvlname = "Cottonstorm"
 			break;
 		case "dragonlair":
-			scr_controlprompt("[spr_promptfont]Dragon Zone", -4, 10)
+			_lvlname = "Dragon Zone"
 			break;
 		case "yogurt":
-			scr_controlprompt("[spr_promptfont]Yogurt's Challenge", -4, 10)
-			break;
-		default:
-			scr_controlprompt(string_upper(other.level), -4, 10)
+			_lvlname = "Yogurt's Challenge"
 			break;
 	}
+	scr_controlprompt("[spr_promptfont]" + _lvlname, -4, 1)
 }
 else
 	showtext = false;

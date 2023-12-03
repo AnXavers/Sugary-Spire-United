@@ -45,6 +45,8 @@ function state_player_bottlerocket()
 			if (key_jump)
 			{
 				state = states.mach2;
+				if character == "M"
+					state = states.mach3
 				vsp = -15;
 				image_index = 0;
 				sprite_index = spr_mach2jump;

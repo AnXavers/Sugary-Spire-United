@@ -104,8 +104,9 @@ else
 			featuringY = ((approach(featuringY, info.featuringinfo[4], 40) + (info.featuringinfo[2] == 6 ? wave(2, -2, 5, 0) : 0)) + (info.featuringinfo[2] == 7 ? irandom_range(-2, 2) : 0))
 		}
 	}
-	if ((!audio_is_playing(info.song)) && round(step) > 3)
+	if (((!audio_is_playing(info.song)) && round(step) > 3) || keyboard_check_pressed(vk_enter))
 	{
+		audio_stop_sound(info.song)
 		if (!instance_exists(obj_fadeout))
 		{
 			instance_create(x, y, obj_fadeout);

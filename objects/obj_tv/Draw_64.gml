@@ -1,3 +1,7 @@
+draw_set_alpha(promptalpha);
+draw_set_halign(fa_center)
+draw_text_scribble(480 + anchor_point("middle"), 400 + anchor_point("bottom"), "[shake]" + controlprompt);
+draw_set_alpha(1);
 if (is_hub() || !scr_roomcheck() || global.levelname == "none")
 	exit;
 bobbing = wave(2, -2, 3, 0);
@@ -14,7 +18,16 @@ if (!surface_exists(goo_surface))
 	draw_clear_alpha(0, 0);
 	surface_reset_target();
 }
-else if (obj_player.character != "S" || obj_player.character != "T" || obj_player.character != "V" || obj_player.character != "M")
+else if (obj_player.character == "S" || obj_player.character == "T" || obj_player.character == "V" || obj_player.character == "M" || obj_player.character == "GB")
+{
+	draw_set_halign(fa_right);
+	draw_set_font(global.combopepfont);
+	draw_sprite_ext(spr_tv_combobubblefill, -1, _cx - (hand_y * 2) + 214, _hy - hand_y + 112, 1, 1, 0, c_white, alpha);
+	draw_sprite_ext(spr_tv_combobubble, -1, _cx + combo_x + 170, 200 + combo_y, 1, 1, 0, c_white, alpha);
+	var _ct = string(global.combo) + "x";
+	draw_text(_cx + combo_x + 123 + anchor_point("right"), combo_y + 192, _ct);
+}
+else
 {
 	surface_set_target(goo_surface);
 	draw_clear_alpha(0, 0);
@@ -28,15 +41,6 @@ else if (obj_player.character != "S" || obj_player.character != "T" || obj_playe
 	draw_sprite_ext(spr_combometer_hand, -1, _cx + hand_x, _hy, 1, 1, 0, c_white, alpha);
 	var _ct = string(global.combo) + "x";
 	draw_text(_cx + combo_x, combo_y, _ct);
-}
-else
-{
-	draw_set_halign(fa_right);
-	draw_set_font(global.combopepfont);
-	draw_sprite_ext(spr_tv_combobubblefill, -1, _cx - (hand_y * 2) + 214, _hy - hand_y + 112, 1, 1, 0, c_white, alpha);
-	draw_sprite_ext(spr_tv_combobubble, -1, _cx + combo_x + 170, 200 + combo_y, 1, 1, 0, c_white, alpha);
-	var _ct = string(global.combo) + "x";
-	draw_text(_cx + combo_x + 123 + anchor_point("right"), combo_y + 192, _ct);
 }
 if (!surface_exists(tvbg_surface))
 {
@@ -209,7 +213,3 @@ if (shownewtext == 1)
 	if (textbubblesprites == spr_tv_bubble)
 		draw_sprite(spr_tv_bubblefade, -1, 448 + anchor_point("right"), 45);
 }
-draw_set_alpha(promptalpha);
-draw_set_halign(fa_center)
-draw_text_scribble(480 + anchor_point("middle"), 400 + anchor_point("bottom"), "[shake]" + controlprompt);
-draw_set_alpha(1);

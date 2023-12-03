@@ -1,5 +1,18 @@
 function state_player_Sjump()
 {
+	if (key_shoot2 && character == "M")
+	{
+		state = states.pepperman_pinball
+		image_index = 0;
+		sprite_index = spr_pepperman_rolling
+		var move = key_right - key_left
+		if move != 0
+			movespeed = move * 12
+		else
+			movespeed = choose(12, -12)
+		vsp = -16
+		exit;
+	}
 	hsp = 0;
 	Sjumpcan_doublejump = false;
 	mach2 = 0;

@@ -20,14 +20,12 @@ if (sprite_index != spr_exitgateclosed)
 			ds_queue_clear(global.newhudmessage);
 			audio_stop_all();
 		}
-		if (sprite_index == spr_entergate && animation_end() && !instance_exists(obj_modifiermenu))
+		if (sprite_index == spr_entergate && (animation_end() || keyboard_check_pressed(vk_enter)) && !instance_exists(obj_modifiermenu))
 		{
 			global.entergateroom = room
 			global.entergateid = instance_nearest(x, y, obj_startgate).id
 			if (keyboard_lastkey == vk_escape)
-			{
 				instance_create(x, y, obj_modifiermenu)
-			}
 			else if (!instance_exists(obj_titlecard) && other.do_titlecard)
 			{
 				with (instance_create(x, y, obj_titlecard))

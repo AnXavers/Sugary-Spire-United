@@ -86,7 +86,7 @@ if (instance_exists(obj_lowface) && global.lowfacefill > 0)
 	if ((global.lowfacefill mod 60) == 0)
 		scr_sound(sfx_blip)
 }
-else
+else if !instance_exists(obj_lowface)
 {
 	global.lowfacefill = time_in_frames(0, 10)
 	lowfacetimery = global.cam_h + 300

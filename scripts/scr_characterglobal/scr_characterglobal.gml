@@ -740,8 +740,8 @@ function scr_characterglobal()
 			font_collect_new = global.candlefont
 			font_collect = global.collectfont
 			// audio
-			sfx_taunt = "sound_tauntextra"
-			taunt_upperrange = 2
+			sfx_taunt = "sfx_tauntgumbob"
+			taunt_upperrange = 1
 			// palettes
 			palnum = 24
 			ini_open((("Custom/Gumbob_") + string(customsavedpalette)) + "_palettes.ini")
@@ -1439,7 +1439,7 @@ function scr_characterglobal()
 			sfx_collectmassive = sfx_collectgiant
 			sfx_collectlarge = sfx_collectbig
 			sfx_collect = sfx_collectsmall
-			sfx_taunt = "sound_tauntpeppino"
+			sfx_taunt = "sfx_tauntnoise"
 			taunt_upperrange = 1
 			sfx_supertaunt = sound_supertaunt1
 			break;
@@ -1690,6 +1690,8 @@ function scr_characterglobal()
 			spr_taunt = spr_pepperman_taunt
 			spr_Timesup = spr_pepperman_timesup
 			spr_walkfront = spr_pepperman_walkfront
+			sfx_taunt = "sfx_tauntpepperman"
+			taunt_upperrange = 1
 			break;
 		case "Z":
 			// sprites
