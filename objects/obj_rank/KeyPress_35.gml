@@ -4,6 +4,7 @@ global.levelname = "none";
 obj_player.targetRoom = global.entergateroom;
 audio_stop_all();
 instance_create(x, y, obj_fadeout);
+global.exitinglevel = true;
 alarm[0] = -1;
 alarm[1] = -1;
 alarm[2] = -1;

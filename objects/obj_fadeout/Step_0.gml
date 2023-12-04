@@ -27,7 +27,10 @@ if (instance_exists(obj_player))
 	}
 }
 if (fadein == 1 && fadealpha < 0)
+{
 	instance_destroy();
+	global.exitinglevel = false;
+}
 if (fadein == 0 && fadealpha > 1)
 {
 	if (instance_exists(obj_titlecard))

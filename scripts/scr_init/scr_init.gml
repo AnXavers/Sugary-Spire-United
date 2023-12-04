@@ -99,6 +99,7 @@ global.collects = 1;
 global.breakables = 1;
 global.enemies = 1;
 global.escapetimer = 0;
+global.exitinglevel = false;
 global.lowfacefill = time_in_frames(0, 10)
 var i = 0
 var I = 0

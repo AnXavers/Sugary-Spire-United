@@ -77,17 +77,14 @@ function state_player_mach3()
 	}
 	if (move == xscale && grounded)
 	{
-		if (movespeed < 30 && character == "M")
-		{
-			if (!mach4mode)
-				movespeed += 0.035;
-			else
-				movespeed += 0.1;
-		}
 		if (movespeed < 24)
 		{
 			if (!mach4mode)
+			{
 				movespeed += 0.025;
+				if character == "M"
+					movespeed += 0.01;
+			}
 			else
 				movespeed += 0.1;
 		}

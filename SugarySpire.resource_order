@@ -920,6 +920,7 @@
     {"name":"obj_optionsOLD","order":215,"path":"objects/obj_optionsOLD/obj_optionsOLD.yy",},
     {"name":"obj_geyservertical","order":216,"path":"objects/obj_geyservertical/obj_geyservertical.yy",},
     {"name":"obj_palettechangerscrollbar","order":217,"path":"objects/obj_palettechangerscrollbar/obj_palettechangerscrollbar.yy",},
+    {"name":"martian_3b","order":7,"path":"rooms/martian_3b/martian_3b.yy",},
     {"name":"spr_peppino_trashjump","order":1,"path":"sprites/spr_peppino_trashjump/spr_peppino_trashjump.yy",},
     {"name":"obj_noticeeffect","order":218,"path":"objects/obj_noticeeffect/obj_noticeeffect.yy",},
     {"name":"obj_piledrivereffect","order":219,"path":"objects/obj_piledrivereffect/obj_piledrivereffect.yy",},

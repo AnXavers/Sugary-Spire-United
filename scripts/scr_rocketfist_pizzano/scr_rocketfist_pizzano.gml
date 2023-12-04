@@ -1,15 +1,12 @@
 function scr_rocketfist_pizzano()
 {
 	if (windingAnim < 2000) 
-	{
 		windingAnim++;
-	}
 	mach2 = 100;
 	move = (key_left + key_right);
 	vsp = 0
 	hsp = (xscale * movespeed);
 	mach2++
-	
 	if sprite_index == spr_superjump_cancelprep && (floor(image_index) == (image_number - 1))
 	{
 		image_index = 0
@@ -30,7 +27,6 @@ function scr_rocketfist_pizzano()
 		movespeed = (movespeed * 1.50);
 		flash = 1
 	}
-	
 else if sprite_index != spr_superjump_cancelprep
 	{
 	if !key_up && !key_down
@@ -43,7 +39,6 @@ else if sprite_index != spr_superjump_cancelprep
 		hsp = (xscale * 12);
 		movespeed = 12;
 	}
-	 
 	if (move != 0 && move == xscale) 
 	{
 		if (movespeed < 24) {
@@ -75,7 +70,6 @@ else if sprite_index != spr_superjump_cancelprep
 		else
 			sprite_index = 	spr_superjump_cancelgrounded;
 	}	
-	
 	if key_jump && grounded
 	{
 		state = states.pizzano_machtwirl
@@ -85,7 +79,6 @@ else if sprite_index != spr_superjump_cancelprep
 		vsp = -5
 	if key_down
 		vsp = 5
-
 	if scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)
 	{
 		vsp = -6
@@ -96,7 +89,7 @@ else if sprite_index != spr_superjump_cancelprep
 	
 	if !grounded && hsp != 0 && sprite_index != spr_superjump_cancel
 		sprite_index = spr_superjump_cancel
-	if key_slap2 && key_up && charged
+	if ((key_slap2 && key_up && charged) || (character == "T" && key_up))
 	{
 		flash = 1
 		alarm[0] = 240
@@ -105,15 +98,10 @@ else if sprite_index != spr_superjump_cancelprep
 		sprite_index = spr_superjumpprep;
 	}
 	if key_down && grounded
-	{
 		sprite_index = spr_crouchslide
-	}
 	else if !key_down && grounded && hsp != 0
-	{
 		sprite_index = 	spr_superjump_cancelgrounded
-	}
-	
-		if key_jump2
+	if key_jump2
 	{
 		state = states.mach2
 		doublejumped = 1
@@ -168,8 +156,8 @@ else if sprite_index != spr_superjump_cancelprep
 		}
 	}
 	if sprite_index == spr_noise_jetpackstart
-	image_speed = 0.50
+		image_speed = 0.50
 	else
-	image_speed = 0.35
+		image_speed = 0.35
 	do_taunt()
 }
