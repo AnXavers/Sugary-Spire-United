@@ -44,6 +44,8 @@ function scr_playerrespawn(argument0 = true)
 				}
 			}
 			state = states.hurt;
+			if global.newvoicelines
+				scr_sound(choose(sfx_newhurt1p, sfx_newhurt2p))
 			alarm[8] = 30;
 			alarm[7] = 60;
 			hurted = 1;

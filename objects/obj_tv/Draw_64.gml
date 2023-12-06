@@ -179,11 +179,36 @@ draw_set_halign(fa_center);
 draw_set_font(global.lapfont);
 var x_shk = random_range(-1, 1);
 var y_shk = random_range(-1, 1);
-if (global.lapcount >= 2 && global.lapmode != 0)
+if (global.lapcount >= 2)
 {
-	draw_set_halign(fa_left);
-	draw_sprite(spr_harrylap, floor(frameref * 0.35), 70, 485 + anchor_point("bottom"));
-	draw_text(115 + x_shk, 460 + y_shk + anchor_point("bottom"), global.lapcount);
+	if (global.lapmode != 0)
+	{
+		draw_set_halign(fa_left);
+		draw_sprite(spr_harrylap, floor(frameref * 0.35), 70, 485 + anchor_point("bottom"));
+		draw_text(115 + x_shk, 460 + y_shk + anchor_point("bottom"), global.lapcount);
+	}
+	if global.checkpoints
+	{
+		if checkpointalpha >= 1
+		{
+			checkpointspr = spr_checkpointflag_appear
+			checkpointindex += 0.35
+			draw_sprite_ext(checkpointspr, floor(checkpointindex), 70, 400, 1, 1, 0, c_white, checkpointalpha)
+			if floor(checkpointindex) == (sprite_get_number(spr_checkpointflag_appear) - 1)
+			{
+				checkpointspr = spr_checkpointflag
+				checkpointalpha = 0.95
+			}
+		}
+		else
+		{
+			if checkpointspr == spr_checkpointflag_unvisit
+				checkpointalpha += 0.05
+			else
+				checkpointalpha -= 0.05
+			draw_sprite_ext(checkpointspr, floor(frameref * 0.35), 70, 400, 1, 1, 0, c_white, checkpointalpha)
+		}
+	}
 }
 if (shownewtext == 1)
 {

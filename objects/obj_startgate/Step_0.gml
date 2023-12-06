@@ -43,6 +43,9 @@ if ((place_meeting(x, y, obj_player)) && (obj_player.state != states.victory))
 		case "dance":
 			_lvlname = "Dance Off"
 			break;
+		case "estate":
+			_lvlname = "Chocoa Cafe"
+			break;
 		case "sucrose":
 			_lvlname = "Sucrose Snowstorm"
 			break;
@@ -60,6 +63,12 @@ if ((place_meeting(x, y, obj_player)) && (obj_player.state != states.victory))
 			break;
 		case "dragonlair":
 			_lvlname = "Dragon Zone"
+			break;
+		case "soursweet":
+			_lvlname = "Soursweet Jungle"
+			break;
+		case "walls":
+			_lvlname = "Wafer Walls"
 			break;
 		case "yogurt":
 			_lvlname = "Yogurt's Challenge"

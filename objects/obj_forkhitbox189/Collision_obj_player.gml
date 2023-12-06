@@ -49,6 +49,8 @@ with (obj_player)
 			obj_player.shotgunAnim = 0;
 		instance_create(x, y, obj_spikehurteffect);
 		state = states.hurt;
+		if global.newvoicelines
+			scr_sound(choose(sfx_newhurt1p, sfx_newhurt2p))
 		image_index = 0;
 		flash = 1;
 		global.style -= 30;

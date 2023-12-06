@@ -315,14 +315,14 @@ switch (room)
 		window_set_caption("Buzzing cities in the Sugary Spire.");
 		break;
 	case sucrose_1:
-		window_set_caption("The sky takes its last breath.");
+		window_set_caption("At the end of the Spire.");
 		break;
 	case silver_0:
 	case silver_1:
 	case silver_2:
 	case silver_3:
 	case silver_4:
-		window_set_caption("");
+		window_set_caption("The edge.");
 		break;
 }
 audio_listener_position(Cam_x, Cam_y, 0);

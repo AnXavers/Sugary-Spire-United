@@ -325,10 +325,12 @@ function meta_instance_destroy()
 }
 function sh_set_variable()
 {
-	if argument0[3] = "global"
-		variable_global_set(argument0[1], argument0[2]);
+	var _var = argument[1]
+	try{var _value = real(argument[2])} catch(e){_value = argument[2]}
+	if argument0[3] == "global"
+		variable_global_set(_var, _value);
 	else
-		variable_instance_set(argument0[3], argument0[1], argument0[2]);
+		variable_instance_set(asset_get_index(argument0[3]), _var, _value);
 }
 function meta_set_variable()
 {

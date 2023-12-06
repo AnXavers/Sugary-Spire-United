@@ -30,7 +30,7 @@ draw_option(680, 900 + ScrollY, "OFF", !optionsaved_harryfreeze);
 draw_option(480, 950 + ScrollY, "NEW PIZZELLE VOICELINES", optionselected == 9);
 draw_option(280, 1000 + ScrollY, "ON", optionsaved_newvoicelines);
 draw_option(680, 1000 + ScrollY, "OFF", !optionsaved_newvoicelines);
-draw_option(480, 1050 + ScrollY, "DESTROYABLES", optionselected == 9);
+draw_option(480, 1050 + ScrollY, "DESTROYABLES", optionselected == 10);
 draw_option(180, 1100 + ScrollY, "DEFAULT", optionsaved_destroyables == 0);
 draw_option(480, 1100 + ScrollY, "NEW", optionsaved_destroyables == 1);
 draw_option(780, 1100 + ScrollY, "OLD", optionsaved_destroyables == 2);

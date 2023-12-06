@@ -58,7 +58,7 @@ add_music(hub_w2old, mu_hubw2, mu_hubw2, true);
 add_music(silver_2, mu_silver, mu_silver, true);
 add_music(hub_shop2, mu_hubshop2, mu_hubshop2, true);
 add_music(rm_pizzano, mu_outside, mu_outside, true);
-add_music(hub_w3, mu_hubex, mu_hubex, true);
+add_music(hub_w3, mu_hubw3, mu_hubw3, true);
 add_music(silver_3, mu_silver, mu_silver, true);
 add_music(hub_shop3, mu_hubshop3, mu_hubshop3, true);
 add_music(hub_outside, mu_outside, mu_outside, true);

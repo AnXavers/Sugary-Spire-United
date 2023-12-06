@@ -181,9 +181,9 @@ if canmove
 			{
 				scr_sound(sound_enemythrow);
 				ini_open("optionData.ini");
-				ini_write_real("Settings", "harryfreeze", optionsaved_newvoicelines);
+				ini_write_real("Settings", "newvoicelines", optionsaved_newvoicelines);
 				ini_close();
-				global.harryfreeze = optionsaved_newvoicelines;
+				global.newvoicelines = optionsaved_newvoicelines;
 			}
 			break;
 		case 10:

@@ -1795,4 +1795,9 @@ function scr_characterglobal()
 			spr_palette = spr_pal_RosMar;
 			break;
 	}
+	sfx_fireass = sound_fireass
+	if global.newvoicelines
+	{
+		sfx_fireass = sfx_newfireassp
+	}
 }

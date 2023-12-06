@@ -107,5 +107,8 @@ if global.checkpoints
 	global.checkpointfill = global.fill
 	ds_list_clear(global.checkpointsaveroom)
 	ds_list_copy(global.checkpointsaveroom, global.saveroom)
-	scr_controlprompt("[spr_promptfont]Lap " + string(global.lapcount) + " checkpoint set!")
+	scr_sound(sfx_checkpoint)
+	obj_tv.checkpointspr = spr_checkpointflag_unvisit
+	obj_tv.checkpointalpha = 0
+	obj_tv.checkpointindex = 0
 }

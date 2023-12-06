@@ -34,6 +34,8 @@ function state_player_normal()
 				{
 					randomise();
 					idleanim = random_range(0, 100);
+					if global.newvoicelines
+						scr_sound(choose(sfx_newidle1p, sfx_newidle2p, sfx_newidle3p, sfx_newidle4p))
 					if (idleanim <= 25)
 						sprite_index = spr_idle1;
 					else if (idleanim > 25 && idleanim < 50)

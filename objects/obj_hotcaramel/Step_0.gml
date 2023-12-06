@@ -12,8 +12,8 @@ if (place_meeting(x, y - 1, obj_player))
 			state = states.fireass;
 			image_index = 0;
 			vsp = -20;
-			audio_stop_sound(sound_fireass);
-			scr_sound(sound_fireass);
+			audio_stop_sound(obj_player.sfx_fireass);
+			scr_sound(obj_player.sfx_fireass);
 		}
 	}
 }

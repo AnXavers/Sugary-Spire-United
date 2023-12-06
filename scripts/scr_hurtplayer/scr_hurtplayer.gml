@@ -52,6 +52,8 @@ function scr_hurtplayer(argument0 = obj_player)
 					scr_sound(sound_touchspike);
 					global.hurtcounter++;
 					state = states.hurt;
+					if global.newvoicelines
+						scr_sound(choose(sfx_newhurt1p, sfx_newhurt2p))
 					alarm[8] = 60;
 					alarm[7] = 120;
 					hurted = 1;
