@@ -149,7 +149,7 @@ camera_set_view_angle(view_camera[0], cam_angle + camera_get_view_angle(view_cam
 var vw = global.cam_w * cam_zoom
 var vh = global.cam_h * cam_zoom
 camera_set_view_size(view_camera[0], vw, vh);
-if (instance_exists(obj_player) && (obj_player.state != states.timesup && obj_player.state != states.gameover))
+if (instance_exists(obj_player) && !instance_exists(obj_editor) && (obj_player.state != states.timesup && obj_player.state != states.gameover))
 {
 	var target = 
 	{
@@ -214,6 +214,8 @@ if (instance_exists(obj_player) && (obj_player.state != states.timesup && obj_pl
 	}
 	camera_set_view_pos(view_camera[0], Cam_x + _shake_x, Cam_y + _shake_y + irandom_range(-shake_mag, shake_mag));
 }
+else if instance_exists(obj_editor)
+	camera_set_view_pos(view_camera[0], obj_editor.x, obj_editor.y);
 if (obj_player.y < (180 + obj_camera.Cam_y) && obj_player.x < (350 + obj_camera.Cam_x))
 	DrawY = lerp(DrawY, -300, 0.15);
 else

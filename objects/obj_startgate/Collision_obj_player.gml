@@ -20,22 +20,27 @@ if (sprite_index != spr_exitgateclosed)
 			ds_queue_clear(global.newhudmessage);
 			audio_stop_all();
 		}
-		if (sprite_index == spr_entergate && (animation_end() || keyboard_check_pressed(vk_enter)) && !instance_exists(obj_modifiermenu))
+		if (sprite_index == spr_entergate && !instance_exists(obj_modifiermenu))
 		{
 			global.entergateroom = room
 			global.entergateid = instance_nearest(x, y, obj_startgate).id
-			if (keyboard_lastkey == vk_escape)
+			if keyboard_check_pressed(vk_escape)
+			{
 				instance_create(x, y, obj_modifiermenu)
-			else if (!instance_exists(obj_titlecard) && other.do_titlecard)
-			{
-				with (instance_create(x, y, obj_titlecard))
-					info = instance_nearest(x, y, obj_startgate).info;
 			}
-			else if (!instance_exists(obj_fadeout) && !other.do_titlecard)
+			else if (animation_end() || keyboard_check_pressed(vk_enter))
 			{
-				instance_create(x, y, obj_fadeout);
-				obj_tv.tvsprite = spr_tvturnon;
-				obj_tv.image_index = 0;
+				if (!instance_exists(obj_titlecard) && other.do_titlecard)
+				{
+					with (instance_create(x, y, obj_titlecard))
+						info = instance_nearest(x, y, obj_startgate).info;
+				}
+				else if (!instance_exists(obj_fadeout) && !other.do_titlecard)
+				{
+					instance_create(x, y, obj_fadeout);
+					obj_tv.tvsprite = spr_tvturnon;
+					obj_tv.image_index = 0;
+				}
 			}
 		}
 	}

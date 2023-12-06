@@ -1,7 +1,8 @@
 scr_sound(sound_enemythrow)
 optionselected = 0;
+sub_optionselected = 0;
 level = instance_nearest(x, y, obj_startgate).level
-var _lvl = capitalize_section(level, 1, 1)
+var _lvl = "Level" + capitalize_section(level, 1, 1)
 ini_open("optionData.ini");
 global.gamemode = ini_read_real(_lvl, "gamemode", 0);
 global.leveldesign = ini_read_real(_lvl, "leveldesign", 1);
@@ -24,11 +25,25 @@ optionsaved_collects = global.collects;
 optionsaved_breakables = global.breakables;
 optionsaved_enemies = global.enemies;
 optionsaved_escapetimer = global.escapetimer;
+modifiers = [
+["GAMEMODE", ["DEFAULT", "SWEET SHOWDOWN", "MULTI-SHOWDOWN", "TIME TRIAL", "CONE-GAL"]],
+["LEVEL DESIGN", ["P-RANK", "DEV STREAM", "DEMO", "SSU"]],
+["LAP MODE", ["DEFAULT", "INFINITE", "CHASEDOWN", "NO LAPPING"]],
+["JERALD", ["OFF", "ON"]],
+["PERFECT", ["OFF", "D-RANK", "C-RANK", "B-RANK", "A-RANK", "S-RANK", "P-RANK", "E-RANK"]],
+["FLASHLIGHT", ["OFF", "ON"]],
+["COLLECTS", ["OFF", "ON"]],
+["DESTROYABLES", ["OFF", "ON"]],
+["ENEMIES", ["OFF", "ON"]],
+["ESCAPE TIMER", ["DEFAULT", "CONEBALL", "SUCROSE", "YOGURT"]]
+]
 bgTileX = 0
 bgTileY = 0
 fadeinrad = 0
 surface = surface_create(global.cam_w, global.cam_h);
 txtalpha = -30
+ScrollX = 0
+CursorX = 0
 ScrollY = 0
 CursorY = 0
 surface_set_target(surface);

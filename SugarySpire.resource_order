@@ -442,6 +442,8 @@
     {"name":"Tower","order":3,"path":"folders/Tile Sets/Tower.yy",},
     {"name":"Unused or Unknown","order":2,"path":"folders/Tile Sets/Unused or Unknown.yy",},
     {"name":"Timelines","order":22,"path":"folders/Timelines.yy",},
+    {"name":"Level Editor","order":509,"path":"folders/Objects/Level Editor.yy",},
+    {"name":"Level Editor","order":18,"path":"folders/Rooms/Level Editor.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_minedummycart","order":1,"path":"objects/obj_minedummycart/obj_minedummycart.yy",},

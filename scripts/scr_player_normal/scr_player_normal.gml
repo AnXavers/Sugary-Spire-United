@@ -34,6 +34,10 @@ function state_player_normal()
 				{
 					randomise();
 					idleanim = random_range(0, 100);
+					audio_stop_sound(sfx_newidle1p)
+					audio_stop_sound(sfx_newidle2p)
+					audio_stop_sound(sfx_newidle3p)
+					audio_stop_sound(sfx_newidle4p)
 					if global.newvoicelines
 						scr_sound(choose(sfx_newidle1p, sfx_newidle2p, sfx_newidle3p, sfx_newidle4p))
 					if (idleanim <= 25)
