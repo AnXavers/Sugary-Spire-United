@@ -10,4 +10,4 @@ var _selected_obj_spr = object_get_sprite(selected_obj)
 if !sprite_exists(_selected_obj_spr)
 	_selected_obj_spr = spr_wall
 if !mouse_check_button(mb_left)
-	draw_sprite(_selected_obj_spr, 0, selected_obj_x, selected_obj_y)
+	draw_sprite_ext(_selected_obj_spr, 0, selected_obj_x, selected_obj_y, selected_obj_w, selected_obj_h, selected_obj_r, c_white, 1)

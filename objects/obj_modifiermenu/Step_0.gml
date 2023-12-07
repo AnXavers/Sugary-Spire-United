@@ -3,12 +3,12 @@ if canmove
 	scr_getinput();
 	ScrollX = lerp(ScrollX, CursorX, 0.15);
 	ScrollY = lerp(ScrollY, CursorY, 0.15);
-	if ((-key_left2 || keyboard_check_pressed(vk_up)) && optionselected > 0)
+	if ((-key_left2) && optionselected > 0)
 	{
 		optionselected--;
 		scr_sound(sound_step);
 	}
-	if ((key_right2 || keyboard_check_pressed(vk_down)) && optionselected < 9)
+	if ((key_right2) && optionselected < 9)
 	{
 		optionselected++;
 		scr_sound(sound_step);

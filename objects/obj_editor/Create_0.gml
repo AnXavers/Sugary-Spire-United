@@ -20,11 +20,22 @@ with instance_create(-1000, -1000, obj_solid)
 x = 0
 y = 0
 depth = -900
+selected_category = "NONE"
 selected_obj = obj_solid
 cursor_x = 0
 cursor_y = 0
 selected_obj_x = 0
 selected_obj_y = 0
+selected_obj_h = 1
+selected_obj_w = 1
+selected_obj_r = 0
+object_list = [
+[obj_solid, obj_slope, obj_platform, obj_sidePlatform, obj_slopePlatform, obj_movingPlatform, obj_movingPlatformTrigger, obj_movingPlatform_attach],
+[],
+[],
+[],
+[]
+]
 with instance_create(-1000, -1000, obj_cameraRegion)
 {
 	ClampTop = false
