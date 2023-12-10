@@ -653,6 +653,7 @@ function scr_characterglobal()
 			spr_machtwirl = spr_pizzano_machtwirl
 			spr_cottoncreator = spr_cottonmakerstormy
 			spr_cotton_platform = spr_cottonplatform_stormy
+			img_featuringme = 1
 			if global.newplayeranim == 2
 				spr_jump = spr_pizzano_jump_alt
 			else if global.newplayeranim == 3

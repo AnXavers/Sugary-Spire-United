@@ -59,7 +59,7 @@ function scr_tvsprites()
 	{
 		case "N":
 			tvspr = spr_pizzanotv;
-			idletvspr = spr_pizzanotv;
+			idletvspr = spr_pizzanotv_idle;
 			combotvspr = spr_pizzanotv_combo;
 			happytvspr = spr_pizzanotv_happy;
 			tvchange1 = spr_pizzanotv_idleanim1;
@@ -129,7 +129,7 @@ function scr_tvsprites()
 			tvcutspr = spr_peppinotv_cut;
 			break;
 		case "V":
-			tvspr = spr_peppinotv;
+			tvspr = spr_vigilantetv;
 			panictvspr = spr_vigilantetv_panic;
 			mach1tvspr = spr_vigilantetv_mach3;
 			mach2tvspr = spr_vigilantetv_mach3;

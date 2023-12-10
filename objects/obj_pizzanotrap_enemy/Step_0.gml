@@ -8,7 +8,7 @@ if (!important && enemyID != -4 && !instance_exists(enemyID) && ds_list_find_ind
 var not_in_list = ds_list_find_index(global.baddieroom, id) == -1;
 switch (state)
 {
-	case 1:
+	case states.normal:
 		visible = false;
 		image_speed = 0;
 		image_index = 0;
@@ -20,7 +20,7 @@ switch (state)
 			attack_buffer = 20;
 		}
 		break;
-	case 35:
+	case states.throwing:
 		visible = true;
 		image_speed = 0.35;
 		if (attack_buffer > 0)

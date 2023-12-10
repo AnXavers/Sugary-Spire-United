@@ -73,6 +73,9 @@ if ((place_meeting(x, y, obj_player)) && (obj_player.state != states.victory))
 		case "yogurt":
 			_lvlname = "Yogurt's Challenge"
 			break;
+		case "secrets":
+			_lvlname = "Secrets Around the Spire"
+			break;
 	}
 	scr_controlprompt("[spr_promptfont]" + _lvlname, -4, 1)
 }

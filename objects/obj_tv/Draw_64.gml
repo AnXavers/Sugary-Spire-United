@@ -65,7 +65,7 @@ if !global.oldhud
 	draw_set_blend_mode(0);
 	surface_reset_target();
 	draw_surface(tvbg_surface, 693 + anchor_point("right"), -60 + DrawY + bobbing)
-	if (sprite_index != spr_tvturnon && (obj_player.character != "S" || obj_player.character != "T" || obj_player.character != "V" || obj_player.character != "M"))
+	if (sprite_index != spr_tvturnon && (obj_player.character != "S" && obj_player.character != "T" && obj_player.character != "V" && obj_player.character != "M"))
 		draw_sprite_ext(draw_static ? spr_tvpropellerstatic : spr_tvpropeller, propindex, 832 + anchor_point("right"), 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
 }
 scr_palette_as_player();

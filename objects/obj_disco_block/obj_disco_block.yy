@@ -32,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_danceblock_visualovelay",
+    "path": "sprites/spr_danceblock_visualovelay/spr_danceblock_visualovelay.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

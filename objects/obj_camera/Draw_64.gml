@@ -86,6 +86,14 @@ if (DrawHUD)
 				_getawayclock = spr_getawayclock_panic
 			draw_sprite(_getawayclock, floor(frameref * 0.35), _cx + 120, 430)
 		}
+		if (instance_exists(obj_secretfound) && global.levelname == "secrets")
+		{
+			var _display_mins = string(frames_in_minutes(global.secrettime))
+			var _display_secs = string(((frames_in_seconds(global.secrettime)) mod 60))
+			if string_length(_display_secs) == 1
+				_display_secs = ("0" + _display_secs)
+			draw_text(_cx, 430, _display_mins + ":" + _display_secs);
+		}
 		if instance_exists(obj_lowface)
 		{
 			var _cammid = (global.cam_w / 2)

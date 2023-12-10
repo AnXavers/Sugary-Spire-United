@@ -31,7 +31,7 @@ switch other.state
 	case states.mach3:
 	case states.machslide:
 	case states.freefall:
-	case states.barrelmach2:
+	case states.pepperman_pinball:
 	case states.current:
 	case states.uppercut:
 	case states.parry:

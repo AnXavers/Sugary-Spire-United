@@ -1,7 +1,7 @@
 state = 0
 var i = 0
-w1target = hub_w1
-w2target = hub_w2
+var w1target = hub_w1
+var w2target = hub_w2
 if random (0.03)
 {
 	w1target = hub_w1old
@@ -17,7 +17,7 @@ hub_array[i++] = [hub_w3, "FLOOR 3"]
 hub_array[i++] = [w2target, "FLOOR 2"]
 hub_array[i++] = [w1target, "FLOOR 1"]
 hub_array[i++] = [hub_basement, "THE BASEMENT"]
-hub_array[i++] = [options_room, "THE OPTION ROOM"]
+hub_array[i++] = [options_room, "THE CONFECTIONARY"]
 drawx = 0
 drawy = 0
 surface2 = -4

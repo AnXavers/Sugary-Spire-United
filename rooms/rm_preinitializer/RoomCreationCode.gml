@@ -78,9 +78,9 @@ enum states {
 	hang, // 76
 	door, // 77
 	pepperman_pinball, // 78
-	barrelfall, // 79
-	barrelmach1, // 80
-	barrelmach2, // 81
+	candy_normal, // 79
+	candy_pinball, // 80
+	candy_dash, // 81
 	barrelfloat, // 82
 	cookiemount, // 83
 	cookiemountattack, // 84
@@ -154,8 +154,11 @@ enum states {
 	unused_3, // 152
 	honey, // 153
 	supergrab, // 154
-	tv_transition, // 155
-	tv_expression // 156
+	knightnormal, // 155
+	knightslide, // 156
+	knightjump, // 157
+	tv_transition, // 158
+	tv_expression // 159
 };
 
 enum substates {

@@ -15,6 +15,6 @@ function scr_pizzano_wallcling()
 		xscale *= -1;
 		state = states.pizzano_twirl;
 	}
-	if (grounded)
-		state = 1;
+	if ((grounded) || !place_meeting(x + image_xscale, y, par_collision))
+		state = states.normal;
 }

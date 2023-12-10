@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 1,
   "conversionMode": 0,
-  "duration": 119.259796,
+  "duration": 64.14933,
   "parent": {
     "name": "Global",
     "path": "folders/Sounds/Music/Levels/Global.yy",

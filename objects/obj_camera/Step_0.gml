@@ -215,7 +215,11 @@ if (instance_exists(obj_player) && !instance_exists(obj_editor) && (obj_player.s
 	camera_set_view_pos(view_camera[0], Cam_x + _shake_x, Cam_y + _shake_y + irandom_range(-shake_mag, shake_mag));
 }
 else if instance_exists(obj_editor)
-	camera_set_view_pos(view_camera[0], obj_editor.x, obj_editor.y);
+{
+	Cam_x = obj_editor.x
+	Cam_y = obj_editor.y
+	camera_set_view_pos(view_camera[0], Cam_x, Cam_y);
+}
 if (obj_player.y < (180 + obj_camera.Cam_y) && obj_player.x < (350 + obj_camera.Cam_x))
 	DrawY = lerp(DrawY, -300, 0.15);
 else

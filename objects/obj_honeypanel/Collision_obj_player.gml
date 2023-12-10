@@ -1,4 +1,4 @@
-if (active && other.state != states.rupertslide && other.state != states.frozen && other.state != states.hurt && other.state != states.bump)
+if (active && other.state != states.honey && other.state != states.frozen && other.state != states.hurt && other.state != states.bump)
 {
 	with (other)
 	{

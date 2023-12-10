@@ -297,19 +297,19 @@ function scr_playerstate()
 			_stateFunction = state_player_door;
 			break;
 		case states.pepperman_pinball:
-			_stateFunction = state_pepperman_pinball();
+			_stateFunction = state_pepperman_pinball;
 			break;
-		case states.barrelfall:
-			_stateFunction = state_player_cookiemount;
+		case states.candy_normal:
+			_stateFunction = state_pepperman_pinball;
 			break;
-		case states.barrelmach1:
-			_stateFunction = state_player_cookiemount;
+		case states.candy_dash:
+			_stateFunction = state_pepperman_pinball;
 			break;
-		case states.barrelmach2:
-			_stateFunction = state_player_cookiemount;
+		case states.candy_pinball:
+			_stateFunction = state_pepperman_pinball;
 			break;
 		case states.barrelfloat:
-			_stateFunction = state_player_cookiemount;
+			_stateFunction = state_pepperman_pinball;
 			break;
 		case states.cookiemount:
 			_stateFunction = state_player_cookiemount;

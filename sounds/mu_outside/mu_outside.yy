@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 1,
   "conversionMode": 0,
-  "duration": 53.75422,
+  "duration": 82.155106,
   "parent": {
     "name": "Spire",
     "path": "folders/Sounds/Music/Spire.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "mu_outside.wav",
+  "soundFile": "mu_outside.mp3",
   "type": 0,
   "volume": 1.0,
 }
