@@ -14,4 +14,4 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	scr_sound(sound_secretgot);
 	ds_list_add(global.saveroom, id);
 }
-global.secrettime = time_in_frames(0, 30)
+global.secrettime = time_in_frames(0, 25)

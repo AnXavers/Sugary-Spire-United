@@ -1,7 +1,7 @@
 var cur_stuff = ds_map_find_value(global.music_map, room);
 if (!is_undefined(cur_stuff))
 	room_details = cur_stuff;
-if (!global.panic && room != rank_room && room != timesuproom && !instance_exists(obj_endlevelfade) && ((music != mu_getaway) && !((ds_map_find_value(global.musicreplace, mu_getaway) == music) && normalmusic == mu_getaway)))
+if (!global.panic && room != rank_room && room != timesuproom && !instance_exists(obj_endlevelfade) && (music != mu_getaway))
 {
 	var _new_song = room_details.music;
 	if (!is_undefined(room_details.my_func))
@@ -37,7 +37,7 @@ if (!global.panic && room != rank_room && room != timesuproom && !instance_exist
 	}
 }
 trace(global.secret_room);
-if (global.secret_room == 1)
+if (global.secret_room == 1 && global.levelname != "secrets")
 {
 	if (global.panic && global.levelname != "sucrose" && global.levelname != "finale")
 		global.secretmusic = scr_music(mu_escapesecret)
@@ -49,7 +49,7 @@ if (global.secret_room == 1)
 	audio_pause_sound(global.music);
 	global.secret_room = 2;
 }
-else if (global.secret_room == 2)
+else if (global.secret_room == 2 && global.levelname != "secrets")
 {
 	global.secret_room = false;
 	audio_resume_sound(global.music);

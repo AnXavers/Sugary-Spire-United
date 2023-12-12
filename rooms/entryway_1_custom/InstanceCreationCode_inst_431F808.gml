@@ -1,0 +1,1 @@
+_message = "Breaking news... Pizzelle, the local candy maker has just entered the Sugary Spire. Who knows what procedures they may be up to."

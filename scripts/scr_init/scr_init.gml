@@ -51,7 +51,7 @@ global.lapcountfont = font_add_sprite_ext(spr_lapcount_font, "0123456789", 1, 2)
 global.dialogfont = font_add_sprite_ext(spr_font_dialogue, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz,.!?:;`'/-_+=1234567890@#$%^&*()[]", 1, 2);
 global.buttonfont = font_add_sprite_ext(spr_buttonfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZ$%&*()/", 1, 0);
 global.promptfont = font_add_sprite_ext(spr_promptfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.:!0123456789?'\"ÁÉÍÓÚáéíóú_-[]▼()&#风雨廊桥전태양*яиБжидГзвбнль", 1, 0);
-global.npcfont = font_add_sprite_ext(spr_npcfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!,.:0123456789'?-", 1, 2);
+global.npcfont = font_add_sprite_ext(spr_npcfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!,.:0123456789'?-()", 1, 2);
 global.erankfont = font_add_sprite_ext(spr_rankbubble_e_font, "Ex1234567890", 1, -10);
 global.lapcountpepfont = font_add_sprite_ext(spr_lapcount_font_pep, "0123456789", 1, 2);
 global.collectpepfont = font_add_sprite_ext(spr_font_collect, "0123456789", 1, 0);
@@ -103,7 +103,7 @@ global.preventpause = 0;
 global.lowfacefill = time_in_frames(0, 10)
 global.secretsspire = [entryway_secret_1, entryway_secret_2, entryway_secret_3, steamy_secret_1, steamy_secret_2, steamy_secret_3, molasses_secret_1, molasses_secret_2, molasses_secret_3, mountain_secret_1, mountain_secret_2, mountain_secret_3, dance_secret1, dance_secret2, dance_secret3, estate_secret1, estate_secret2, estate_secret3, bee_secret_1, bee_secret_2, bee_secret_3, sucrose_secret1, sucrose_secret2, sucrose_secret3, exitway_secret_1, stormy_secret_1, stormy_secret_2, stormy_secret_3, martian_secret_1, entrance_secret3, entrance_secret4, entrance_secret5, medieval_secret4, medieval_secret5, medieval_secret6, dungeon_secret1, dungeon_secret2, dungeon_secret3]
 global.secretstotal = array_length(global.secretsspire)
-global.secrettime = time_in_frames(0, 30)
+global.secrettime = time_in_frames(0, 25)
 var i = 0
 var I = 0
 for (var i = 0; room_exists(i); i++)

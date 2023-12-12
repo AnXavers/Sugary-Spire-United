@@ -4504,6 +4504,7 @@
     {"name":"spr_pizzasona4","order":100,"path":"sprites/spr_pizzasona4/spr_pizzasona4.yy",},
     {"name":"spr_timer_pizzaface3","order":5,"path":"sprites/spr_timer_pizzaface3/spr_timer_pizzaface3.yy",},
     {"name":"sound_tauntextra1","order":3,"path":"sounds/sound_tauntextra1/sound_tauntextra1.yy",},
+    {"name":"obj_prompter","order":510,"path":"objects/obj_prompter/obj_prompter.yy",},
     {"name":"spr_vigilante_intro1","order":13,"path":"sprites/spr_vigilante_intro1/spr_vigilante_intro1.yy",},
     {"name":"spr_spring","order":650,"path":"sprites/spr_spring/spr_spring.yy",},
     {"name":"bg_labEscape","order":1,"path":"sprites/bg_labEscape/bg_labEscape.yy",},

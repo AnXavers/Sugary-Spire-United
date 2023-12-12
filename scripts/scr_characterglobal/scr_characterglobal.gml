@@ -605,7 +605,6 @@ function scr_characterglobal()
 			spr_supertaunt2 = spr_pizzano_supertaunt1;
 			spr_supertaunt3 = spr_pizzano_supertaunt1;
 			spr_taunt = spr_pizzano_taunt;
-			spr_palette = spr_pal_Pizzelle;
 			spr_cottonidle = spr_cotton_idle;
 			spr_superjumpprep = spr_pizzano_superjumpprep;
 			spr_superjumppreplight = spr_pizzano_superjumpprep;
@@ -653,6 +652,7 @@ function scr_characterglobal()
 			spr_machtwirl = spr_pizzano_machtwirl
 			spr_cottoncreator = spr_cottonmakerstormy
 			spr_cotton_platform = spr_cottonplatform_stormy
+			spr_palette = spr_pal_Pizzano
 			img_featuringme = 1
 			if global.newplayeranim == 2
 				spr_jump = spr_pizzano_jump_alt
@@ -682,9 +682,10 @@ function scr_characterglobal()
 			for (var i = 0; i <= 10 ; i++)
 				global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
 			ini_close()
-			var outline_col = c_black
 			if (state == states.cotton || state == states.cottondrill || state == states.cottonroll)
-				outline_col = 5242960
+				var outline_col = scribble_rgb_to_bgr($500050)
+			else
+				var outline_col = c_black
 			set_palette(0, "Default", 0, c_white, 13150344, 8628991, 14496, 16293960, 16278856, 16295984, 14903400, outline_col);
 			set_palette(1, "Familiar Gremlin", 1607896, 1529791, 8628991, 14496, 8446200, 5678550, 16295984, 14903400, outline_col);
 			set_palette(2, "Familiar Chef", 0, 16571339, 13088161, 8628991, 14496, c_white, 9670034, 16295984, 14903400, outline_col);
@@ -1669,7 +1670,7 @@ function scr_characterglobal()
 			sfx_collectmassive = sfx_collectgiant
 			sfx_collectlarge = sfx_collectbig
 			sfx_collect = sfx_collectsmall
-			sfx_taunt = "sound_tauntpeppino"
+			sfx_taunt = "sfx_tauntvigilante"
 			taunt_upperrange = 1
 			sfx_supertaunt = sound_supertaunt1
 			break;
@@ -1787,6 +1788,8 @@ function scr_characterglobal()
 			spr_cotton_platform = spr_pizzall_cottonplatform_tiled;
 			break;
 		case "GB":
+			sfx_taunt = "sfx_tauntgustavo"
+			taunt_upperrange = 1
 			break;
 		case "RM":
 			// sprites
@@ -1794,6 +1797,8 @@ function scr_characterglobal()
 			spr_move = spr_rosmar_walk;
 			spr_taunt = spr_rosmar_taunt;
 			spr_palette = spr_pal_RosMar;
+			sfx_taunt = "sfx_tauntrosmar"
+			taunt_upperrange = 1
 			break;
 	}
 	sfx_fireass = sound_fireass

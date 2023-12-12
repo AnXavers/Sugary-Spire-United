@@ -210,18 +210,22 @@ if (global.lapcount >= 2)
 		}
 	}
 }
-if (shownewtext == 1)
+if (shownewtext == 1 && global.tvmessages)
 {
-	draw_sprite_ext(textbubblesprites, textbubbleframes, 448 + anchor_point("right"), 45, 1, 1, 0, c_white, 1);
+	draw_sprite_ext(textbubblesprites, floor(textbubbleframes), 448 + anchor_point("right"), 45, 1, 1, 0, c_white, 1);
 	if (!surface_exists(textpromptsurface))
 		textpromptsurface = surface_create(300, 100);
 	surface_set_target(textpromptsurface);
 	draw_clear_alpha(0, 0);
 	var _new_message = new_message;
-	draw_set_font(global.bubblefont);
+	draw_set_font(global.npcfont);
 	draw_set_halign(0);
-	draw_set_color(c_white);
-	textbubblesprites = spr_tv_bubbleopen
+	draw_set_color(c_black);
+	if (textbubblesprites == spr_null || textbubblesprites == spr_tv_bubbleclosed)
+	{
+		textbubblesprites = spr_tv_bubbleopen
+		text_x = 300
+	}
 	if (textbubblesprites == spr_tv_bubble)
 	{
 		var _length = -(floor(string_width(_new_message)) + 5);

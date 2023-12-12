@@ -1,34 +1,40 @@
 ini_open(global.fileselect);
-var _confectispr = [
-	[obj_player.spr_confecti1_idle, obj_player.spr_confecti1_walk, obj_player.spr_confecti1_taunt, -75],
-	[obj_player.spr_confecti2_idle, obj_player.spr_confecti2_walk, obj_player.spr_confecti2_taunt, -35],
-	[obj_player.spr_confecti3_idle, obj_player.spr_confecti3_walk, obj_player.spr_confecti3_taunt, 0],
-	[obj_player.spr_confecti4_idle, obj_player.spr_confecti4_walk, obj_player.spr_confecti4_taunt, 35],
-	[obj_player.spr_confecti5_idle, obj_player.spr_confecti5_walk, obj_player.spr_confecti5_taunt, 75]
-];
-for (var i = 0; i < array_length(_confectispr); i++)
+if do_gateconfecti
 {
-	var b = _confectispr[i];
-	if ini_read_real("Confecti", string(level) + string((i + 1)), 0)
+	var _confectispr = [
+		[obj_player.spr_confecti1_idle, obj_player.spr_confecti1_walk, obj_player.spr_confecti1_taunt, -75],
+		[obj_player.spr_confecti2_idle, obj_player.spr_confecti2_walk, obj_player.spr_confecti2_taunt, -35],
+		[obj_player.spr_confecti3_idle, obj_player.spr_confecti3_walk, obj_player.spr_confecti3_taunt, 0],
+		[obj_player.spr_confecti4_idle, obj_player.spr_confecti4_walk, obj_player.spr_confecti4_taunt, 35],
+		[obj_player.spr_confecti5_idle, obj_player.spr_confecti5_walk, obj_player.spr_confecti5_taunt, 75]
+	];
+	for (var i = 0; i < array_length(_confectispr); i++)
 	{
-		with (instance_create(x + b[3], y - 46, obj_confectiprop))
+		var b = _confectispr[i];
+		if ini_read_real("Confecti", string(level) + string((i + 1)), 0)
 		{
-			tauntspr = b[2];
-			movespr = b[1];
-			idlespr = b[0];
-			depth = other.depth - 5
-			if (place_meeting(x, y, obj_platform))
-				y -= 2;
+			with (instance_create(x + b[3], y - 46, obj_confectiprop))
+			{
+				tauntspr = b[2];
+				movespr = b[1];
+				idlespr = b[0];
+				depth = other.depth - 5
+				if (place_meeting(x, y, obj_platform))
+					y -= 2;
+			}
 		}
 	}
 }
-for (var i = 0; i < 3; i++)
+if do_gatesecrets
 {
-	with instance_create(x, y, obj_gatesecret)
+	for (var i = 0; i < 3; i++)
 	{
-		cardtimer = ((i * -750) + 750);
-		cardspr = (ini_read_string("Secret", string(obj_startgate.level), 0) >= (i + 1) ? spr_rankcardflipped : spr_rankcard);
-		dorigin = other.depth
+		with instance_create(x, y, obj_gatesecret)
+		{
+			cardtimer = ((i * -750) + 750);
+			cardspr = (ini_read_string("Secret", string(obj_startgate.level), 0) >= (i + 1) ? spr_rankcardflipped : spr_rankcard);
+			dorigin = other.depth
+		}
 	}
 }
 var i = 0;

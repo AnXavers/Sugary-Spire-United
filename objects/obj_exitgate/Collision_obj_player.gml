@@ -1,4 +1,4 @@
-if (global.panic == 1 && room != sucrose_1)
+if ((global.panic == 1 || room == secrets_end) && room != sucrose_1)
 {
 	with (obj_player)
 	{

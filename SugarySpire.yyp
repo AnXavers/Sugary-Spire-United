@@ -4808,6 +4808,7 @@
     {"id":{"name":"spr_timer_pizzaface3","path":"sprites/spr_timer_pizzaface3/spr_timer_pizzaface3.yy",},},
     {"id":{"name":"spr_pizzelle_angryHUD","path":"sprites/spr_pizzelle_angryHUD/spr_pizzelle_angryHUD.yy",},},
     {"id":{"name":"sound_tauntextra1","path":"sounds/sound_tauntextra1/sound_tauntextra1.yy",},},
+    {"id":{"name":"obj_prompter","path":"objects/obj_prompter/obj_prompter.yy",},},
     {"id":{"name":"spr_vigilante_intro1","path":"sprites/spr_vigilante_intro1/spr_vigilante_intro1.yy",},},
     {"id":{"name":"spr_spring","path":"sprites/spr_spring/spr_spring.yy",},},
     {"id":{"name":"bg_labEscape","path":"sprites/bg_labEscape/bg_labEscape.yy",},},

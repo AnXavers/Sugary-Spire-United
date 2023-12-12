@@ -258,7 +258,7 @@ switch (state)
 if (textbubblesprites == spr_tv_bubbleopen && floor(textbubbleframes) >= (sprite_get_number(spr_tv_bubbleopen) - 1))
 	textbubblesprites = spr_tv_bubble;
 if (textbubblesprites == spr_tv_bubble)
-	text_x += -3;
+	text_x -= 1.5;
 if (textbubblesprites == spr_tv_bubbleclose && floor(textbubbleframes) >= (sprite_get_number(spr_tv_bubbleclose) - 1))
 {
 	new_message = "";
@@ -266,6 +266,7 @@ if (textbubblesprites == spr_tv_bubbleclose && floor(textbubbleframes) >= (sprit
 	showingnewtext = false;
 	textbubbleframes = 0;
 	text_x = 300;
+	textbubblesprites = spr_null
 }
 switch (obj_player.state)
 {
@@ -422,7 +423,6 @@ if (global.combo != 0 && global.combotime > 0)
 				combo_state = 1;
 			break;
 		case 1:
-			var pct = global.combotime / 60;
 			var _shk = 2;
 			var _t = 5;
 			if (global.combotime < 30)
@@ -463,3 +463,5 @@ else if (promptappear || prompt_timer <= 0)
 	}
 }
 frameref++
+if textbubblesprites != spr_null
+	textbubbleframes += 0.35

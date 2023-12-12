@@ -67,7 +67,7 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 	normalmusic = _new_song
 	if ds_map_exists(global.musicreplace, _new_song)
 		_new_song = ds_map_find_value(global.musicreplace, _new_song);
-	if (_new_song != -4 && music != _new_song && ((music != mu_getaway) && !((ds_map_find_value(global.musicreplace, mu_getaway) == music) && normalmusic == mu_getaway)))
+	if (_new_song != -4 && music != _new_song && (music != mu_getaway))
 	{
 		music = _new_song;
 		prevmuID = global.music;

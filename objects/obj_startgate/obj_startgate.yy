@@ -31,7 +31,10 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"do_gateconfecti","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"true","varType":4,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"do_gatesecrets","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"true","varType":4,},
+  ],
   "solid": false,
   "spriteId": {
     "name": "spr_default_startgate",

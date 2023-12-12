@@ -266,4 +266,10 @@ if (global.debugmode == 1)
 if (global.screenflash > 0)
 	draw_rectangle_color(0, 0, 960, 540, c_white, c_white, c_white, c_white, 0);
 if (global.dancetimer > 0)
-	draw_text(480, 100, global.dancetimer);
+{
+	var _display_mins = string(frames_in_minutes(global.dancetimer))
+	var _display_secs = string(((frames_in_seconds(global.dancetimer)) mod 60))
+	if string_length(_display_secs) == 1
+		_display_secs = ("0" + _display_secs)
+	draw_text((global.cam_w / 2), 100, _display_mins + ":" + _display_secs);
+}
