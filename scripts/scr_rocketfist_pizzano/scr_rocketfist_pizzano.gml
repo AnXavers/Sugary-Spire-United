@@ -81,10 +81,34 @@ else if sprite_index != spr_superjump_cancelprep
 		vsp = 5
 	if scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)
 	{
-		vsp = -6
-		movespeed = -6
-		sprite_index = spr_mach3hitwall
-		state = states.bump
+			scr_sound(sound_maximumspeedland);
+		with (obj_camera)
+		{
+			shake_mag = 20;
+			shake_mag_acc = 40 / room_speed;
+		}
+		image_speed = 0.35;
+		with (obj_baddie)
+		{
+			if (bbox_in_camera(view_camera[0]) && grounded)
+			{
+				stun = 1;
+				alarm[0] = 200;
+				ministun = 0;
+				vsp = -5;
+				hsp = 0;
+			}
+		}
+		flash = 0;
+		combo = 0;
+		sprite_index = spr_mach3hitwall;
+		state = states.bump;
+		hsp = -2.5 * xscale;
+		vsp = -3;
+		mach2 = 0;
+		image_index = 0;
+		instance_create(x + (10 * xscale), y + 10, obj_bumpeffect);
+	
 	}
 	
 	if !grounded && hsp != 0 && sprite_index != spr_superjump_cancel

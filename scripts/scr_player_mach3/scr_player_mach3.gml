@@ -209,6 +209,7 @@ function state_player_mach3()
 			scr_sound(sound_maximumspeedland);
 			camera_shake(20, 40);
 			image_speed = 0.35;
+			sprite_index = spr_mach3hitwall;
 			with (obj_baddie)
 			{
 				if (bbox_in_camera(view_camera[0]) && grounded)

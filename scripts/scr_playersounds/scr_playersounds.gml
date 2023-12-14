@@ -32,14 +32,14 @@ function scr_playersounds()
 	}
 	else if (audio_is_playing(flipsnd))
 		audio_stop_sound(flipsnd);
-	if (state == states.mach2 || state == states.mach3 || state == states.climbwall || state == states.climbceiling || state == states.climbdownwall)
+	if (state == states.mach2 || state == states.mach3 || state == states.climbwall || state == states.climbceiling || state == states.climbdownwall || state = states.pizzano_rocketfist)
 	{
 		var machsnd = -4;
-		if (state == states.mach2 && sprite_index == spr_mach1 && grounded)
+		if (state == states.mach2 && sprite_index == spr_mach1 && grounded || (state = states.pizzano_rocketfist && sprite_index == spr_superjump_cancelprep))
 			machsnd = global.sfxdash1;
 		else if ((state == states.mach2 && sprite_index == spr_mach2) || (state == states.climbwall || state == states.climbceiling || state == states.climbdownwall))
 			machsnd = global.sfxdash2;
-		else if (state == states.mach3 && sprite_index != spr_crazyrun)
+		else if (state == states.mach3 && sprite_index != spr_crazyrun || state = states.pizzano_rocketfist)
 			machsnd = global.sfxdash3;
 		else if (sprite_index == spr_crazyrun)
 			machsnd = global.sfxdash4;

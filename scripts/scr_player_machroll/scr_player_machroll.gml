@@ -27,7 +27,7 @@ function state_player_machroll()
 	{
 		if (crouchslipbuffer <= 0)
 		{
-			if (key_attack)
+			if (key_attack && character != "PT")
 			{
 				scr_sound(sound_rollgetup);
 				image_index = 0;
@@ -37,12 +37,21 @@ function state_player_machroll()
 				else
 					state = states.mach2;
 			}
-			else if (movespeed > 6)
+			else if (movespeed > 6 && character != "PT")
 			{
 				scr_sound(sound_break);
 				sprite_index = spr_machslidestart;
 				image_index = 0;
 				state = states.machslide;
+			}
+				else if (key_attack && character == "PT")
+			{
+				scr_sound(sound_rollgetup);
+				image_index = 0;
+				vsp = -8
+				pogospeed = movespeed
+				sprite_index = spr_noise_pogostart;
+					state = states.pogo;
 			}
 			else
 				state = 1;
