@@ -8,6 +8,6 @@ function npc_jerald(argument0 = "entryway", argument1 = "Crunchy Construction"){
 	var laps = ini_read_string("Laps", argument0, 1)
 	ini_close()
 	text = "You've lapped " + argument1 + " " + string(laps) + " times!";
-	if laps <= 1
+	if (laps <= 1 || global.panic)
 		instance_destroy()
 }

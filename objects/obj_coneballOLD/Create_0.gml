@@ -20,16 +20,16 @@ hurtplayer = function()
 {
 	with (obj_player)
 	{
-		if ((state == 19 || state == 20 || state == 13) && cutscene == 0)
+		if ((state == states.knightpep || state == states.knightpepattack || state == states.knightpepslopes) && cutscene == 0)
 		{
 		}
-		else if (state == 22 && hurted == 0)
+		else if (state == states.bombpep && hurted == 0)
 		{
 		}
-		else if (state == 9)
+		else if (state == states.boxxedpep)
 		{
 		}
-		else if (state == 6 || state == 8)
+		else if (state == states.cheesepep || state == states.cheesepepstick)
 		{
 		}
 		else if (state != states.hurt && hurted == 0 && cutscene == 0 && state != states.bump && state != states.tumble)
@@ -52,18 +52,8 @@ hurtplayer = function()
 				global.collect = 0;
 			if (global.collect != 0)
 			{
-				instance_create(x, y, obj_pizzaloss);
-				instance_create(x, y, obj_pizzaloss);
-				instance_create(x, y, obj_pizzaloss);
-				instance_create(x, y, obj_pizzaloss);
-				instance_create(x, y, obj_pizzaloss);
-				instance_create(x, y, obj_pizzaloss);
-				instance_create(x, y, obj_pizzaloss);
-				instance_create(x, y, obj_pizzaloss);
-				instance_create(x, y, obj_pizzaloss);
-				instance_create(x, y, obj_pizzaloss);
-				instance_create(x, y, obj_pizzaloss);
-				instance_create(x, y, obj_pizzaloss);
+				repeat 12
+					instance_create(x, y, obj_pizzaloss);
 			}
 			else if (obj_player.shotgunAnim == 1)
 				obj_player.shotgunAnim = 0;

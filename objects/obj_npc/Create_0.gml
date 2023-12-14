@@ -1,7 +1,9 @@
 image_speed = 0.35;
 speaking = false;
 idle = spr_grandpop;
+panicidle = spr_grandpop_nervous;
 speak = spr_grandpop_speak;
+panicspeak = spr_grandpop_nervous;
 mytex = spr_icepopbg;
 text = "I'll give you my cigar, if I can have yours!";
 speaking = false;

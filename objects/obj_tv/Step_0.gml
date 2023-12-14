@@ -261,12 +261,22 @@ if (textbubblesprites == spr_tv_bubble)
 	text_x -= 1.5;
 if (textbubblesprites == spr_tv_bubbleclose && floor(textbubbleframes) >= (sprite_get_number(spr_tv_bubbleclose) - 1))
 {
-	new_message = "";
-	shownewtext = false;
+	if new_message[1] != ""
+	{
+		array_delete(new_message, 0, 1)
+		array_push(new_message, "")
+		shownewtext = true;
+		textbubblesprites = spr_tv_bubbleclosed
+	}
+	else
+	{
+		new_message = ["", ""];
+		shownewtext = false;
+		textbubblesprites = spr_null
+	}
 	showingnewtext = false;
 	textbubbleframes = 0;
 	text_x = 300;
-	textbubblesprites = spr_null
 }
 switch (obj_player.state)
 {
@@ -289,8 +299,7 @@ switch (obj_player.state)
 	case states.fireass:
 		if (ds_list_find_index(global.saveroom, "fireass") == -1)
 		{
-			scr_queue_text("Breaking news... local candy maker finds himself burned by caramel.");
-			scr_queue_text("What an idiot. How does that even happen?");
+			scr_queue_text(["Breaking news... local candy maker finds himself burned by caramel.", "What an idiot. How does that even happen?"]);
 			ds_list_add(global.saveroom, "fireass");
 		}
 		break;
@@ -306,6 +315,20 @@ switch (obj_player.state)
 		{
 			scr_queue_text("Incredibly cold temperatures are causing random individuals to be frozen solid. We recommend you stay inside during these chilly times.");
 			ds_list_add(global.saveroom, "flushed");
+		}
+		break;
+	case states.frostburn:
+	case states.frostburnbump:
+	case states.frostburnspin:
+	case states.frostburnwallrun:
+	case states.rupertjump:
+	case states.rupertnormal:
+	case states.rupertslide:
+	case states.rupertstick:
+		if (ds_list_find_index(global.saveroom, "rupert") == -1)
+		{
+			scr_queue_text("Is... it... cold in here... or is it just me?");
+			ds_list_add(global.saveroom, "rupert");
 		}
 		break;
 }
