@@ -21,4 +21,5 @@ if (global.secrettime <= 0 && global.levelname == "secrets")
 		scr_sound(mu_timesup);
 	}
 }
-global.secrettime--
+if global.gamemode != 1
+	global.secrettime--

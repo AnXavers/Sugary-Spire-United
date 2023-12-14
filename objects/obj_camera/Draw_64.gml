@@ -86,7 +86,7 @@ if (DrawHUD)
 				_getawayclock = spr_getawayclock_panic
 			draw_sprite(_getawayclock, floor(frameref * 0.35), _cx + 120, 430)
 		}
-		if (instance_exists(obj_secretfound) && global.levelname == "secrets")
+		else if (instance_exists(obj_secretfound) && global.levelname == "secrets")
 		{
 			var _display_mins = string(frames_in_minutes(global.secrettime))
 			var _display_secs = string(((frames_in_seconds(global.secrettime)) mod 60))

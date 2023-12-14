@@ -228,17 +228,18 @@ if (shownewtext == 1 && global.tvmessages)
 	}
 	if (textbubblesprites == spr_tv_bubble)
 	{
-		var _length = -(floor(string_width(_new_message)) + 5);
+		var _length = -(floor(string_width(_new_message[0])) + 5);
 		if (floor(text_x) <= _length)
 		{
 			textbubblesprites = spr_tv_bubbleclose;
 			textbubbleframes = 0;
 		}
-		draw_text(text_x, 30, _new_message);
+		draw_text(text_x, 30, _new_message[0]);
 	}
 	surface_reset_target();
 	if (surface_exists(textpromptsurface))
 		draw_surface(textpromptsurface, 283 + anchor_point("right"), -10);
 	if (textbubblesprites == spr_tv_bubble)
 		draw_sprite(spr_tv_bubblefade, -1, 448 + anchor_point("right"), 45);
+	draw_set_color(c_white);
 }
