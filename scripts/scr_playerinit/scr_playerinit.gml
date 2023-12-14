@@ -518,6 +518,9 @@ function scr_playerstate()
 		case states.supergrab:
 			_stateFunction = state_player_supergrab;
 			break;
+			case states.pogo:
+			_stateFunction = scr_player_pogo;
+			break;
 		case states.ufodashOLD:
 			show_error("Smirk old code lmao", false);
 			_stateFunction = state_player_ufodash;

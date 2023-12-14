@@ -79,6 +79,36 @@ function state_player_jump()
 		mach2 = 0;
 		state = states.Sjump;
 	}
+	if (key_attack && character == "PT" && pogochargeactive = 1)
+	{
+		if !key_up
+		{
+		sprite_index = spr_superjump_cancelprep;
+		image_index = 0;
+		movespeed = 0;
+		mach2 = 0;
+		charged = 0;
+		state = states.pizzano_rocketfist;
+		}
+		else
+		{
+		alarm[0] = 240;
+		sprite_index = spr_superjumpprep;
+		image_index = 0;
+		movespeed = 0;
+		mach2 = 0;
+		state = states.Sjump;
+	}
+	}
+	if (key_up && (obj_player.character == "N" || obj_player.character == "T") && charged)
+	{
+		alarm[0] = 240;
+		sprite_index = spr_superjump;
+		image_index = 0;
+		movespeed = 0;
+		mach2 = 0;
+		state = states.Sjump;
+	}
 	if (key_attack && grounded && fallinganimation < 40 && character == "DEEZNUTS")
 	{
 		mach2 = 0;
@@ -88,6 +118,13 @@ function state_player_jump()
 		state = states.pizzano_mach;
 		image_index = 0;
 	}
+		 if (key_attack && !pogochargeactive && !key_slap2)
+            {
+                sprite_index = spr_noise_pogostart
+                image_index = 0
+				pogospeed = movespeed
+                state = states.pogo
+            }
 	if (grounded && vsp > 0 && !key_attack)
 	{
 		if (key_attack)
@@ -237,11 +274,13 @@ function state_player_jump()
 		movespeed = 0;
 		vsp = 0;
 	}
-	if (key_jump && (obj_player.character == "N") && !grounded && doublejumped == 0 && !scr_solid(x + xscale, y, true))
+	if (key_jump && (character == "N" || character == "PT") && !grounded && doublejumped == 0 && !scr_solid(x + xscale, y, true))
 	{
 		doublejumped = 1;
 		vsp = -10;
 		sprite_index = spr_djump;
+		if character == "PT"
+		jumpAnim = true
 	}
 		if (key_jump && (obj_player.character == "N"))
 		{
@@ -255,6 +294,21 @@ function state_player_jump()
 				doublejumped = 0
 			}
 		}
+			if (key_jump && character = "PT" && wallclingcooldown == 10)
+		{
+			if place_meeting((x + xscale), y, obj_solid)
+			{
+				scr_sound(sound_step)
+				sprite_index = spr_noise_wallclingstart
+				image_index = 0
+				state = states.pizzano_wallcling
+				vsp = 0
+				xscale *= -1
+				doublejumped = 0
+			}
+		}
+		if (floor(image_index) == (image_number - 1) && sprite_index == spr_noise_doublejump)
+		sprite_index = spr_noise_doublejumpfall
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_candytransitionup)
 		sprite_index = spr_candyup;
 	if (character == "C" && inhalingenemy == 1 && key_slap && !grounded)
@@ -271,8 +325,10 @@ function state_player_jump()
 		hsp = -5 * xscale;
 		move = 0;
 	}
-	if (key_attack && grounded && fallinganimation < 40)
+	if (key_attack && grounded && fallinganimation < 40 && pogochargeactive = 0)
 	{
+		if character != "PT"
+		{
 		mach2 = 0;
 		if (movespeed < 6)
 			movespeed = 6;
@@ -280,5 +336,15 @@ function state_player_jump()
 		jumpAnim = 1;
 		state = states.mach2;
 		image_index = 0;
+		}
+		else
+		{
+                sprite_index = spr_noise_pogobounce
+                image_index = 0
+				pogospeed = movespeed
+                state = states.pogo
+            }
 	}
+	
 }
+

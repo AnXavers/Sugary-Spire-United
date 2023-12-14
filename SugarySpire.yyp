@@ -519,7 +519,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.4.0.84",
   },
   "resources": [
     {"id":{"name":"obj_talisman","path":"objects/obj_talisman/obj_talisman.yy",},},
@@ -6313,6 +6313,7 @@
     {"id":{"name":"bg_waferback2_new","path":"sprites/bg_waferback2_new/bg_waferback2_new.yy",},},
     {"id":{"name":"spr_pizzano_crawl","path":"sprites/spr_pizzano_crawl/spr_pizzano_crawl.yy",},},
     {"id":{"name":"spr_gusbrickpoker","path":"sprites/spr_gusbrickpoker/spr_gusbrickpoker.yy",},},
+    {"id":{"name":"scr_player_pogo","path":"scripts/scr_player_pogo/scr_player_pogo.yy",},},
     {"id":{"name":"ruin_3b","path":"rooms/ruin_3b/ruin_3b.yy",},},
     {"id":{"name":"spr_medievaldoor1","path":"sprites/spr_medievaldoor1/spr_medievaldoor1.yy",},},
     {"id":{"name":"bg_blackwall","path":"sprites/bg_blackwall/bg_blackwall.yy",},},

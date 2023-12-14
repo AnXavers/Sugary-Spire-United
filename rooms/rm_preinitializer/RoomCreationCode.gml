@@ -157,6 +157,7 @@ enum states {
 	knightnormal, // 155
 	knightslide, // 156
 	knightjump, // 157
+	pogo, //probably 160 idk
 	tv_transition, // 158
 	tv_expression // 159
 };

@@ -5928,6 +5928,7 @@
     {"name":"bg_waferback2_new","order":35,"path":"sprites/bg_waferback2_new/bg_waferback2_new.yy",},
     {"name":"spr_pizzano_crawl","order":7,"path":"sprites/spr_pizzano_crawl/spr_pizzano_crawl.yy",},
     {"name":"spr_gusbrickpoker","order":5,"path":"sprites/spr_gusbrickpoker/spr_gusbrickpoker.yy",},
+    {"name":"scr_player_pogo","order":155,"path":"scripts/scr_player_pogo/scr_player_pogo.yy",},
     {"name":"ruin_3b","order":7,"path":"rooms/ruin_3b/ruin_3b.yy",},
     {"name":"spr_medievaldoor1","order":8,"path":"sprites/spr_medievaldoor1/spr_medievaldoor1.yy",},
     {"name":"bg_blackwall","order":24,"path":"sprites/bg_blackwall/bg_blackwall.yy",},

@@ -101,12 +101,19 @@ else if sprite_index != spr_superjump_cancelprep
 		sprite_index = spr_crouchslide
 	else if !key_down && grounded && hsp != 0
 		sprite_index = 	spr_superjump_cancelgrounded
-	if key_jump2
+	if key_jump2 && character != "PT"
 	{
 		state = states.mach2
 		doublejumped = 1
 		vsp = -10
 		sprite_index = spr_djump
+	}
+	if key_jump2 && character == "PT"
+	{
+		state = states.jump
+		doublejumped = 0
+		vsp = -15
+		sprite_index = spr_noise_noisebombspinjump
 	}
 	if key_slap2
 	{
@@ -115,12 +122,19 @@ else if sprite_index != spr_superjump_cancelprep
 		sprite_index = spr_bodyslamstart;
 		vsp = -6;
 	}
-	if key_attack2
+	if key_attack2 && character != "PT"
 	{
 		image_index = 0;
 		state = states.mach2;
 		sprite_index = spr_mach2;
 		vsp = -5;
+	 }
+	 if key_attack2 && character == "PT"
+	{
+		image_index = 0;
+		state = states.pogo;
+		sprite_index = spr_noise_pogostart;
+		vsp = -10;
 	 }
 		if ((!instance_exists(obj_crazyrunothereffect)) && sprite_index == spr_crazyrun)
 		{

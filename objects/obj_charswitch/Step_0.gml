@@ -18,6 +18,9 @@ switch character
 	case "T":
 		sprite_index = spr_noise_idle
 		break;
+		case "PT":
+		sprite_index = spr_noise_pogobounce
+		break;
 	case "V":
 		sprite_index = spr_vigilante_idle
 		break;
