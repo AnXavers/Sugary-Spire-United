@@ -32,6 +32,9 @@ if (global.hurtcounter >= global.hurtmilestone && global.hurtcounter >= 5)
 		case "T":
 			character = "The Noise";
 			break;
+				case "PT":
+			character = "The Noise";
+			break;
 		case "S":
 			character = "Peppino";
 			break;

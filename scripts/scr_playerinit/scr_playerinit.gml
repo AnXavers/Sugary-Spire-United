@@ -521,6 +521,9 @@ function scr_playerstate()
 			case states.pogo:
 			_stateFunction = scr_player_pogo;
 			break;
+			case states.dynamite:
+			_stateFunction = state_player_dynamite
+			break
 		case states.ufodashOLD:
 			show_error("Smirk old code lmao", false);
 			_stateFunction = state_player_ufodash;

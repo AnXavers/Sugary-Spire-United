@@ -158,6 +158,7 @@ enum states {
 	knightslide, // 156
 	knightjump, // 157
 	pogo, //probably 160 idk
+	dynamite, //probably 161 idk: electric boolagoo
 	tv_transition, // 158
 	tv_expression // 159
 };

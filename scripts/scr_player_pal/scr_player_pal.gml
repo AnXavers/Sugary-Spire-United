@@ -7,7 +7,11 @@ function state_player_pal()
 		switch (character)
 		{
 			default:
-				paletteselect = wrap(paletteselect + move, 1, array_length(my_palettes) - 1);
+		paletteselect++;
+		if (paletteselect >= palnum)
+			paletteselect = 0;
+		if (buffer_exists(my_pal_buffer))
+			buffer_delete(my_pal_buffer);
 				break;
 		}
 		with (obj_palexample)
@@ -15,6 +19,7 @@ function state_player_pal()
 			instance_create_depth(x, y, -6, obj_poofeffect);
 			sprite_index = spr_pizzelle_selectedpal;
 			image_index = 0;
+         
 		}
 	}
 	with (obj_playerhatselect)

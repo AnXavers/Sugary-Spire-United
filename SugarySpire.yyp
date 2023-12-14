@@ -755,6 +755,7 @@
     {"id":{"name":"spr_xmassausagetoppin_intro","path":"sprites/spr_xmassausagetoppin_intro/spr_xmassausagetoppin_intro.yy",},},
     {"id":{"name":"obj_honeypanel","path":"objects/obj_honeypanel/obj_honeypanel.yy",},},
     {"id":{"name":"obj_bee","path":"objects/obj_bee/obj_bee.yy",},},
+    {"id":{"name":"scr_player_dynamite","path":"scripts/scr_player_dynamite/scr_player_dynamite.yy",},},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"spr_pizzagoblin_stun","path":"sprites/spr_pizzagoblin_stun/spr_pizzagoblin_stun.yy",},},
     {"id":{"name":"spr_sausagecollect","path":"sprites/spr_sausagecollect/spr_sausagecollect.yy",},},

@@ -675,6 +675,7 @@
     {"name":"spr_peppino_shotgunduck","order":7,"path":"sprites/spr_peppino_shotgunduck/spr_peppino_shotgunduck.yy",},
     {"name":"spr_xmassausagetoppin_intro","order":7,"path":"sprites/spr_xmassausagetoppin_intro/spr_xmassausagetoppin_intro.yy",},
     {"name":"obj_honeypanel","order":101,"path":"objects/obj_honeypanel/obj_honeypanel.yy",},
+    {"name":"scr_player_dynamite","order":156,"path":"scripts/scr_player_dynamite/scr_player_dynamite.yy",},
     {"name":"obj_button","order":102,"path":"objects/obj_button/obj_button.yy",},
     {"name":"spr_pizzagoblin_stun","order":5,"path":"sprites/spr_pizzagoblin_stun/spr_pizzagoblin_stun.yy",},
     {"name":"spr_sausagecollect","order":19,"path":"sprites/spr_sausagecollect/spr_sausagecollect.yy",},
