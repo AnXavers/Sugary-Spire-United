@@ -432,7 +432,7 @@ function scr_characterglobal()
 		spr_longjump = spr_pizzelle_longjump_new
 		spr_longjumpend = spr_pizzelle_longjumpfall_new
 		spr_rollgetup = spr_pizzelle_rollgetup_new
-		spr_mach3rollstart = spr_pizzelle_mach3roll_new
+		spr_mach3rollstart = spr_pizzelle_mach3rollstart_new
 		spr_mach3roll = spr_pizzelle_mach3roll_new
 		spr_suplexbump = spr_pizzelle_splat_new
 		spr_mach3jump = spr_pizzelle_mach3jump_new;

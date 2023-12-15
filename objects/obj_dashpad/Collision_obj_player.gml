@@ -40,6 +40,30 @@ if (other.Dashpad_buffer <= 0)
 				image_index = 0;
 				flash = 1;
 			}
+			if (character == "PT")
+			{
+				state = states.pizzano_rocketfist;
+				Dashpad_buffer = 25;
+				if (sprite_index != spr_noise_jetpackstart)
+				{
+					sprite_index = spr_noise_jetpackstart;
+					image_index = 0;
+				}
+				xscale = sign(other.image_xscale);
+				try_y = 0;
+				while (try_y <= 16)
+				{
+					if (scr_solid(x, other.y - try_y))
+						try_y++;
+					else
+					{
+						y = other.y - try_y;
+						break;
+					}
+				}
+				image_index = 0;
+				flash = 1;
+			}
 			else
 			{
 				Dashpad_buffer = 25;

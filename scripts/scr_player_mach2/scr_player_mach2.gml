@@ -89,7 +89,10 @@ function state_player_mach2()
 			trace("Jerked off");
 			if (movespeed < 12)
 				movespeed = 12;
+				if character != "PT"
 			state = states.mach3;
+			else
+			state = states.pizzano_rocketfist
 			flash = 1;
 			if (sprite_index != spr_rollgetup)
 				sprite_index = spr_mach3player;
