@@ -183,7 +183,7 @@ if (state != states.jump)
 	stompAnim = 0;
 if (toomuchalarm1 > 0)
 	toomuchalarm1--;
-if (state == states.mach3 || state == 3 || state == states.mach2 || state == 5 || (state == states.machslide && mach2 >= 100) || (state == states.machroll && sprite_index != spr_crouchslip && movespeed >= 12) || state == 17 || state == states.cottondrill || state == states.minecart || (state == states.pizzano_rocketfist && sprite_index != spr_superjump_cancelprep) || state == states.pizzano_shoulderbash || (state == states.chainsaw && mach2 >= 100))
+if (state == states.mach3 || state == 3 || state == states.mach2 || state == 5 || (state == states.machslide && mach2 >= 100) || (state == states.machroll && sprite_index != spr_crouchslip && movespeed >= 12) || state == 17 || state == states.cottondrill || state == states.minecart || (state == states.pizzano_rocketfist && sprite_index != spr_superjump_cancelprep) || state == states.pizzano_shoulderbash || (state == states.chainsaw && mach2 >= 100) || state = states.punch)
 {
 	mach_aftimg--;
 	if (mach_aftimg <= 0)

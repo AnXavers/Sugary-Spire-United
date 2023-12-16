@@ -11,7 +11,7 @@ function state_player_dynamite() //oughhhh im so noise bombs rn
     landAnim = 0
     if (floor(image_index) == (image_number - 1))
     {
-		if character == "V"
+		if character == "V" ||  character == "T"
 		{
         if (key_attack && hsp != 0)
             state = states.mach2

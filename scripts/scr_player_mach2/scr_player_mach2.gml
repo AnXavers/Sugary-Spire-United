@@ -11,11 +11,20 @@ function state_player_mach2()
 	}
 	if (windingAnim < 2000)
 		windingAnim++;
-	mach2 = 35;
+		if (global.moveset = 2 && grounded)
+			mach2 += 1.5;
+			else
+		mach2 = 35
+
 	hsp = xscale * movespeed;
 	move = key_right + key_left;
 	move2 = key_right2 + key_left2;
+	characterwallclimb = 0
 	crouchslideAnim = 1;
+	//this gives characters the ability to climb walls at mach 2
+	if (character == "P" || character == "N" || character == "T" || character == "S" || character = "Z" || character == "V")
+	characterwallclimb = 1
+	//yayyyyyyyy
 	if (key_jump)
 		input_buffer_jump = 0;
 	if (!key_jump2 && jumpstop == 0 && vsp < 0.5)
@@ -81,7 +90,9 @@ function state_player_mach2()
 	{
 		if (slopeCheck(x, y) && hsp != 0 && movespeed > 8)
 			player_slopeMomentum(0.1, 0.2);
-		if (movespeed < 12)
+			if global.moveset != 2
+			{
+				if (movespeed < 12)
 			movespeed += 0.1;
 		if (abs(hsp) >= 12 && sprite_index != spr_suplexdash)
 		{
@@ -101,6 +112,26 @@ function state_player_mach2()
 				obj_player: id
 			});
 		}
+			}
+			if global.moveset = 2
+	{
+		if (grounded && character == "P")
+            {
+                if (mach2 < 100)
+                    mach2 += 1.5
+                if (mach2 >= 100)
+                {
+                    machhitAnim = 0
+                    state = states.mach3
+                    flash = 1
+                    sprite_index = spr_mach3player
+                    instance_create(x, y, obj_jumpdust)
+                    if (movespeed < 12)
+                        movespeed = 12
+                }
+			
+			}
+	}
 	}
 	if (movespeed >= 8)
 	{
@@ -129,17 +160,21 @@ function state_player_mach2()
 			movespeed = 6;
 		}
 	}
-	if (key_down && !place_meeting(x, y, obj_dashpad))
+	if (key_down && grounded && !place_meeting(x, y, obj_dashpad))
 	{
 		flash = 0;
 		state = states.machroll;
-		if (!grounded)
+		if global.moveset = 2
+			state = states.crouchslide
+		if (!grounded && global.moveset != 2)
+		{
 			sprite_index = spr_dive;
 		image_index = 0;
 		sprite_index = spr_machroll;
 		vsp = 10;
 	}
-	if (((!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)) && (character == "P" || character == "N" || character == "T" || character == "S"))
+	}
+	if (((!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)) && characterwallclimb)
 	{
 		if (!upsideDownJump)
 		{

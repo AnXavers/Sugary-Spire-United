@@ -7,6 +7,8 @@ function state_player_climbwall()
 	move = key_right + key_left;
 	suplexmove = 0;
 	vsp = -verticalMovespeed;
+		if global.moveset = 2 && verticalMovespeed > 0
+		verticalMovespeed -= 0.075
 	if (vsp != 0 && place_meeting(x + xscale, y, obj_molassesWall))
 	{
 		if ((floor(image_index) % 4) == 0)
@@ -19,9 +21,9 @@ function state_player_climbwall()
 		}
 	}
 	var _maxspeed = (move == xscale) ? 20 : 12;
-	if (verticalMovespeed < _maxspeed && !place_meeting(x + xscale, y, obj_molassesWall))
+	if (verticalMovespeed < _maxspeed && !place_meeting(x + xscale, y, obj_molassesWall) && global.moveset != 2)
 		verticalMovespeed += 0.1;
-	else if (place_meeting(x + xscale, y, obj_molassesWall))
+	else if (place_meeting(x + xscale, y, obj_molassesWall) || global.moveset == 2)
 	{
 		if (verticalMovespeed > 0)
 			verticalMovespeed -= 0.05;
@@ -73,6 +75,11 @@ function state_player_climbwall()
 			movespeed = verticalMovespeed;
 		}
 	}
+	if ((grounded && verticalMovespeed <= 0) || verticalMovespeed <= 0)
+{
+    state = states.jump
+    sprite_index = spr_fall
+}
 	if ((scr_solid(x, y - 1, true) && vsp <= 0 && !place_meeting(x, y - 1, obj_destructibles)) && !scr_slope_ext(x + xscale, y))
 	{
 		sprite_index = spr_ceilingcrash;
