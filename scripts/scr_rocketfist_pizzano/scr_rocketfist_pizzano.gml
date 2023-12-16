@@ -7,6 +7,7 @@ function scr_rocketfist_pizzano()
 	vsp = 0
 	hsp = (xscale * movespeed);
 	mach2++
+	machpunchAnim = true;
 	if sprite_index == spr_superjump_cancelprep && (floor(image_index) == (image_number - 1))
 	{
 		image_index = 0
@@ -139,12 +140,19 @@ else if sprite_index != spr_superjump_cancelprep
 		vsp = -15
 		sprite_index = spr_noise_noisebombspinjump
 	}
-	if key_slap2
+	if key_slap2 && character != "PT"
 	{
 		image_index = 0;
 		state = states.freefallprep;
 		sprite_index = spr_bodyslamstart;
 		vsp = -6;
+	}
+	if key_slap2 && character == "PT"
+	{
+		image_index = 0;
+		state = states.Sjump;
+		sprite_index = spr_noise_jetpackboostdown;
+		scr_sound(sound_superjumprelease)
 	}
 	if key_attack2 && character != "PT"
 	{
@@ -159,6 +167,7 @@ else if sprite_index != spr_superjump_cancelprep
 		state = states.pogo;
 		sprite_index = spr_noise_pogostart;
 		vsp = -10;
+		pogospeed = movespeed
 	 }
 		if ((!instance_exists(obj_crazyrunothereffect)) && sprite_index == spr_crazyrun)
 		{

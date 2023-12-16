@@ -35,6 +35,11 @@ function state_player_Sjump()
 		vsp = -movespeed;
 		movespeed = approach(movespeed, 18, 1);
 	}
+	if (sprite_index == spr_noise_jetpackboostdown)
+	{
+		vsp = movespeed;
+		movespeed = 12
+	}
 	if ((sprite_index == spr_superjumpprep && charactersjump) || sprite_index == spr_superjump_cancelprep)
 		vsp = 0;
 	if ((sprite_index == spr_superjumpprep && charactersjump) && floor(image_index) == (image_number - 1))
@@ -53,7 +58,10 @@ function state_player_Sjump()
 	if (scr_solid(x, y + vsp) && !place_meeting(x, y + vsp, obj_boxofpizza) && !place_meeting(x, y + vsp, obj_metalblock) && !place_meeting(x, y + vsp, obj_destructibles) && sprite_index != spr_superjump_cancelprep)
 	{
 		scr_sound(sound_maximumspeedland);
+		if vsp != 12
 		sprite_index = spr_superjumpland;
+		else
+		sprite_index = spr_freefallland;
 		with (obj_camera)
 		{
 			shake_mag = 10;
@@ -113,18 +121,26 @@ function state_player_Sjump()
 		with (instance_create(x, y, obj_jumpdust))
 			image_xscale = other.xscale;
 	}
-	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && charactersjump)
+	if ((key_attack2 || key_slap2) && !grounded &&  (vsp < -10 || sprite_index == spr_noise_jetpackboostdown) && charactersjump)
 	{
 		scr_sound(sound_superjumpcancel);
 		flash = 1;
 		charged = 0;
-		sprite_index = spr_superjump_cancelprep;
+		if sprite_index == spr_noise_jetpackboostdown
+			image_index = 11
+		else
 		image_index = 0;
+		sprite_index = spr_superjump_cancelprep;
 		movespeed = 0;
 		vsp = 0;
 		mach2 = 0;
 		state = states.pizzano_rocketfist;
 	}
+			if sprite_index == spr_noise_jetpackboostdown && !instance_exists(obj_groundpoundeffect)
+			instance_create(x, y, obj_groundpoundeffect, 
+			{
+				obj_player: id
+			});
 	image_speed = 0.5;
 	scr_collision();
 }

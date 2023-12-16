@@ -5,7 +5,6 @@ deactivated = 0
 device_to_reconnect = 0
 press_start = 0
 carddex = 0
-CheckUsedIndex = self
 cardspr = spr_rankcard
 confirmspr = spr_rankcardflipping
 prevstate[0] = 2

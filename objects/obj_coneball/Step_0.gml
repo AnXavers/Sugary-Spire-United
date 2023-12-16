@@ -18,7 +18,7 @@ if (image_alpha == 1)
 else
 	image_alpha += 0.01;
 var pid = instance_place(x, y, obj_player);
-if (pid > 0 && !pid.cutscene && !instance_exists(obj_fadeout) && !instance_exists(obj_endlevelfade) && image_alpha == 1)
+if (pid > 0 && !pid.cutscene && obj_player.state != states.actor && !instance_exists(obj_fadeout) && !instance_exists(obj_endlevelfade) && image_alpha == 1)
 {
 	with (pid)
 	{

@@ -63,7 +63,7 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 {
 	with (obj_player)
 	{
-		if (state == states.mach3 || state == states.mach2 || state == states.pizzano_kungfu || state == states.minecart || state == states.bottlerocket || state == states.machtumble || state == states.pepperman_pinball)
+		if (state == states.mach3 || state == states.mach2 || state == states.pizzano_kungfu || state == states.minecart || state == states.bottlerocket || state == states.machtumble || state == states.pepperman_pinball || state = states.punch || state = states.pogo || state == states.pizzano_rocketfist)
 		{
 			instance_create(other.x, other.y, obj_slapstar);
 			instance_create(other.x, other.y, obj_baddiegibs);
@@ -74,8 +74,34 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 			other.state = enemystates.stun;
 			other.vsp = -11;
 			if (state == states.mach2)
+			{
 				other.vsp = -7;
 			other.movespeed = movespeed + 2;
+			}
+			if (state == states.pogo && !pogochargeactive)
+			{
+				other.vsp = -7;
+			other.movespeed = movespeed + 2;
+			}
+				if (state == states.pogo && pogochargeactive)
+				{
+				other.state = enemystates.stun;
+			other.vsp = -11;
+			other.movespeed = movespeed + 2;
+				}
+				if (state == states.punch)
+				{
+				 sprite_index = choose(spr_blockbreak1, spr_blockbreak2, spr_blockbreak3, spr_blockbreak4, spr_blockbreak5, spr_blockbreak6, spr_blockbreak7, spr_punch)
+                image_index = 0
+                state = states.tackle
+                movespeed = 3
+				machpunchAnim = true;
+				hsp = 2 * xscale
+                vsp = -3
+				other.thrown = true
+				other.vsp = -10;
+			other.movespeed = movespeed + 12;
+				}
 			if (state == states.bottlerocket)
 			{
 				other.vsp -= 7;

@@ -60,7 +60,6 @@ else
 				global.player_input_device = _index
 				deactivated = 0
 				instance_activate_all()
-				
 				alarm[0] = 1
 			}
 		

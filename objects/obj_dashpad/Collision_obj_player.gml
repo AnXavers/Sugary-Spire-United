@@ -47,7 +47,8 @@ if (other.Dashpad_buffer <= 0)
 				if (sprite_index != spr_noise_jetpackstart)
 				{
 					sprite_index = spr_noise_jetpackstart;
-					image_index = 0;
+					image_index = 8;
+					
 				}
 				xscale = sign(other.image_xscale);
 				try_y = 0;

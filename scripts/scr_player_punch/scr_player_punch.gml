@@ -91,7 +91,7 @@ function state_player_punch()
             sprite_index = spr_noise_pogostart
             image_index = 0
             state = states.pogo
-            pogospeed = 8
+            pogospeed = 10
 			vsp = -11
         }
         if ((!instance_exists(obj_slidecloud)) && grounded && movespeed > 5)

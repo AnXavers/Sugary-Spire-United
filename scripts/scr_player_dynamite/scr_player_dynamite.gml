@@ -18,7 +18,7 @@ function state_player_dynamite() //oughhhh im so noise bombs rn
         else
             state = states.normal
 		}
-		if character == "PT" || character == "T"
+		if character == "PT" 
 		{
         if (key_attack && hsp != 0)
             state = states.pogo

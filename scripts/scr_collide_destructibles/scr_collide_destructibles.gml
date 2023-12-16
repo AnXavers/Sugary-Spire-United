@@ -173,7 +173,7 @@ function scr_collide_destructibles()
 			}
 		}
 	}
-	if (vsp >= 0 && (state == states.puddle || state == states.rupertjump || state == states.superslam || (state == states.freefall || state == states.freefallland)))
+	if (vsp >= 0 && (state == states.puddle || state == states.rupertjump || state == states.superslam || (state == states.freefall || state == states.freefallland || state = states.Sjump)))
 	{
 		if ((place_meeting(x, y + vsp, obj_metalblock) && state == states.puddle) || (state == states.rupertjump && sprite_index == spr_skatespin) || (state == states.superslam && freefallsmash >= 10) || ((state == states.freefall || state == states.freefallland) && freefallsmash >= 10))
 		{

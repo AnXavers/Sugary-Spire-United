@@ -1,4 +1,4 @@
-if (obj_player.state == 17)
+if (obj_player.state == 17 || obj_player.state == states.punch)
 {
 	if (obj_player.xscale == -1)
 		obj_player.movespeed = -obj_player.movespeed;
