@@ -160,20 +160,16 @@ function state_player_mach2()
 			movespeed = 6;
 		}
 	}
-	if (key_down && grounded && !place_meeting(x, y, obj_dashpad))
-	{
-		flash = 0;
-		state = states.machroll;
-		if global.moveset = 2
-			state = states.crouchslide
-		if (!grounded && global.moveset != 2)
-		{
-			sprite_index = spr_dive;
-		image_index = 0;
-		sprite_index = spr_machroll;
-		vsp = 10;
-	}
-	}
+	if (key_down && (!(place_meeting(x, y, obj_dashpad))))
+    {
+        flash = 0
+        state = states.machroll
+        if (!grounded)
+            sprite_index = spr_dive
+        image_index = 0
+        sprite_index = spr_machroll
+        vsp = 10
+    }
 	if (((!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)) && characterwallclimb)
 	{
 		if (!upsideDownJump)
