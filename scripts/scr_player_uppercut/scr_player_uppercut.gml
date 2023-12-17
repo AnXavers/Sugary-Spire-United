@@ -37,4 +37,17 @@ function state_player_uppercut()
 	{
 		attack_afterimagetimer = 6;
 	}
+		if (key_jump && character = "PT" && wallclingcooldown == 10)
+		{
+			if place_meeting((x + xscale), y, obj_solid)
+			{
+				scr_sound(sound_step)
+				sprite_index = spr_noise_wallclingstart
+				image_index = 0
+				state = states.pizzano_wallcling
+				vsp = 0
+				xscale *= -1
+				doublejumped = 0
+			}
+		}
 }

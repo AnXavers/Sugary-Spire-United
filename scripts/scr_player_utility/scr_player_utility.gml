@@ -82,7 +82,19 @@ function do_grab()
 				p1Vibration(30, 5);
 				image_index = 0;
 			}
-			else if (character != "G" && character != "C" && character != "V" && character != "M" && character != "RM" && character != "GB")
+			else if character == "PT"
+			{
+    state = states.punch
+    sprite_index = spr_noise_spin
+    image_index = 0
+	if movespeed < 10
+    movespeed = 10
+	scr_sound(sound_suplex1)
+	scr_sound(sound_throw)
+		instance_create(x, y, obj_jumpdust);
+				image_index = 0;
+			}
+			else if (character != "G" && character != "C" && character != "V" && character != "M" && character != "RM" && character != "GB" && character != "PT")
 			{
 				scr_sound(sound_suplex1);
 				instance_create(x, y, obj_slaphitbox);

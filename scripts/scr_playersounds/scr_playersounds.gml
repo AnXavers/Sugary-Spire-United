@@ -11,7 +11,9 @@ function scr_playersounds()
 		scr_sound(sound_tumble);
 	if ((sprite_index == spr_tumble || sprite_index == spr_machroll) && !audio_is_playing(sound_tumblestart) && !audio_is_playing(sound_tumble))
 		scr_sound(sound_tumble);
-	if (state != states.tumble && sprite_index != spr_machroll)
+			if (sprite_index == spr_mach3roll && !audio_is_playing(sound_tumblestart) && !audio_is_playing(sound_tumble))
+		scr_sound(sound_tumble);
+	if (state != states.tumble && (sprite_index != spr_machroll || sprite_index != spr_mach3roll  || sprite_index != spr_mach3rollstart))
 	{
 		audio_stop_sound(sound_tumble);
 		audio_stop_sound(sound_tumblestart);
@@ -32,14 +34,14 @@ function scr_playersounds()
 	}
 	else if (audio_is_playing(flipsnd))
 		audio_stop_sound(flipsnd);
-	if (state == states.mach2 || state == states.mach3 || state == states.climbwall || state == states.climbceiling || state == states.climbdownwall)
+	if (state == states.mach2 || state == states.mach3 || state == states.climbwall || state == states.climbceiling || state == states.climbdownwall || state = states.pizzano_rocketfist || sprite_index = spr_mach3roll)
 	{
 		var machsnd = -4;
-		if (state == states.mach2 && sprite_index == spr_mach1 && grounded)
+		if (state == states.mach2 && sprite_index == spr_mach1 && grounded || (state = states.pizzano_rocketfist && sprite_index == spr_superjump_cancelprep))
 			machsnd = global.sfxdash1;
 		else if ((state == states.mach2 && sprite_index == spr_mach2) || (state == states.climbwall || state == states.climbceiling || state == states.climbdownwall))
 			machsnd = global.sfxdash2;
-		else if (state == states.mach3 && sprite_index != spr_crazyrun)
+		else if (state == states.mach3 && sprite_index != spr_crazyrun || state = states.pizzano_rocketfist || (sprite_index = spr_mach3roll && character == "P" && global.newplayeranim = 1))
 			machsnd = global.sfxdash3;
 		else if (sprite_index == spr_crazyrun)
 			machsnd = global.sfxdash4;

@@ -66,5 +66,6 @@ function scr_player_pogo() //im so jolly
         state = states.normal
     image_speed = 0.35
     do_taunt()
+	scr_noise_abilities();
 }
 

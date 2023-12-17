@@ -148,7 +148,7 @@ if (state == states.throwing || state == states.punch || state == states.backkic
 else
 	grabbing = 0;
 var _machslideCheck = sprite_index == spr_machslideboost3 || sprite_index == spr_machslideboost3FallStart || sprite_index == spr_machslideboost3Fall;
-if ((state == states.mach3 || (state == states.machslide && _machslideCheck) || state == states.slipnslide || state == states.rupertslide || state == states.rupertnormal || (state == states.rupertjump && vsp > 0) || (state == states.tumble && sprite_index != spr_tumblestart && sprite_index != spr_tumbleend) || (state == 11 && (verticalMovespeed > 8 || mach2 >= 100)) || (state == states.climbceiling && (movespeed > 8 || mach2 >= 100)) || (state == 12 && (verticalMovespeed > 8 || mach2 >= 100)) || state == states.frostburnspin || state == states.pizzano_kungfu || (state == states.cottonroll && movespeed > 8) || state == states.bottlerocket || state == states.machtumble || state == states.minecart || state == states.fireass || state == states.puddle || state == 3 || state == states.skateboard || state == states.chainsaw || state == states.freefall || state == states.Sjump || (state == states.machroll && movespeed >= 12) || state == states.machfreefall || state == 5 || (state == states.superslam && sprite_index == spr_piledriver) || (state == states.superslam && sprite_index == spr_piledriverstart) || state == 19 || state == 20 || state == 13 || state == 9 || state == 6 || state == 7) || state == states.uppercut || state == states.pizzano_mach || state == states.ufodash || state = states.pizzano_rocketfist)
+if ((state == states.mach3 || (state == states.machslide && _machslideCheck) || state == states.slipnslide || state == states.rupertslide || state == states.rupertnormal || (state == states.rupertjump && vsp > 0) || (state == states.tumble && sprite_index != spr_tumblestart && sprite_index != spr_tumbleend) || (state == 11 && (verticalMovespeed > 8 || mach2 >= 100)) || (state == states.climbceiling && (movespeed > 8 || mach2 >= 100)) || (state == 12 && (verticalMovespeed > 8 || mach2 >= 100)) || state == states.frostburnspin || state == states.pizzano_kungfu || (state == states.cottonroll && movespeed > 8) || state == states.bottlerocket || state == states.machtumble || state == states.minecart || state == states.fireass || state == states.puddle || state == 3 || state == states.skateboard || state == states.chainsaw || state == states.freefall || state == states.Sjump || (state == states.machroll && movespeed >= 12) || state == states.machfreefall || state == 5 || (state == states.superslam && sprite_index == spr_piledriver) || (state == states.superslam && sprite_index == spr_piledriverstart) || state == 19 || state == 20 || state == 13 || state == 9 || state == 6 || state == 7) || state == states.uppercut || state == states.pizzano_mach || state == states.ufodash || state = states.pizzano_rocketfist || (state = states.jump && sprite_index = spr_noise_noisebombspinjump) || (state = states.pogo && pogochargeactive = 1))
 	instakillmove = 1;
 else
 	instakillmove = 0;
@@ -183,7 +183,7 @@ if (state != states.jump)
 	stompAnim = 0;
 if (toomuchalarm1 > 0)
 	toomuchalarm1--;
-if (state == states.mach3 || state == 3 || state == states.mach2 || state == 5 || (state == states.machslide && mach2 >= 100) || (state == states.machroll && sprite_index != spr_crouchslip && movespeed >= 12) || state == 17 || state == states.cottondrill || state == states.minecart || (state == states.pizzano_rocketfist && sprite_index != spr_superjump_cancelprep) || state == states.pizzano_shoulderbash || (state == states.chainsaw && mach2 >= 100))
+if (state == states.mach3 || state == 3 || state == states.mach2 || state == 5 || (state == states.machslide && mach2 >= 100) || (state == states.machroll && sprite_index != spr_crouchslip && movespeed >= 12) || state == 17 || state == states.cottondrill || state == states.minecart || (state == states.pizzano_rocketfist && sprite_index != spr_superjump_cancelprep) || state == states.pizzano_shoulderbash || (state == states.chainsaw && mach2 >= 100) || state = states.punch)
 {
 	mach_aftimg--;
 	if (mach_aftimg <= 0)
@@ -195,7 +195,7 @@ if (state == states.mach3 || state == 3 || state == states.mach2 || state == 5 |
 }
 else
 	mach_aftimg = 0;
-if (state != states.bump && state != states.cottonroll && state != states.crouch && state != 9 && state != states.pistol && state != states.tumble && sprite_index != spr_crouchshoot && sprite_index != spr_skatecrouch && state != states.Sjumpprep && state != states.chainsaw && state != states.machroll && state != states.hurt && state != states.crouchslide && state != states.crouchjump && sprite_index != spr_pizzano_crouchslide)
+if (state != states.bump && state != states.cottonroll && state != states.crouch && state != 9 && state != states.pistol && state != states.tumble && sprite_index != spr_crouchshoot && sprite_index != spr_skatecrouch && state != states.Sjumpprep && state != states.chainsaw && state != states.machroll && state != states.hurt && state != states.crouchslide && state != states.crouchjump && sprite_index != spr_crouchslide)
 	mask_index = obj_player.spr_mask;
 else
 	mask_index = spr_crouchmask;

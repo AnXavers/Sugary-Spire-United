@@ -128,6 +128,28 @@ function scr_tvsprites()
 			laptvspr = spr_noisetv_heat;
 			tvcutspr = spr_peppinotv_cut;
 			break;
+				case "PT":
+			tvspr = spr_noisetv;
+			idletvspr = spr_noisetv_idle;
+			combotvspr = spr_noisetv_combo;
+			happytvspr = spr_noisetv_collect;
+			tvchange1 = spr_noisetv_idleanim1;
+			tvchange2 = spr_noisetv_idleanim2;
+			cottontvspr = spr_pizzanotv_cotton;
+			hurttvspr = spr_noisetv_hurt;
+			bombtvspr = spr_noisetv_bomb;
+			firetvspr = spr_noisetv_fireass;
+			angrytvspr = spr_noisetv_heat;
+			orbtvspr = spr_pizzanotv_croaked;
+			mach1tvspr = spr_noisetv_mach3;
+			mach2tvspr = spr_noisetv_mach3;
+			mach3tvspr = spr_noisetv_mach3;
+			mach4tvspr = spr_noisetv_mach4;
+			panictvspr = spr_noisetv_panic;
+			secrettvspr = spr_noisetv_secret
+			laptvspr = spr_noisetv_heat;
+			tvcutspr = spr_peppinotv_cut;
+			break;
 		case "V":
 			tvspr = spr_vigilantetv;
 			panictvspr = spr_vigilantetv_panic;

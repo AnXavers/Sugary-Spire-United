@@ -118,7 +118,7 @@ function state_player_jump()
 		state = states.pizzano_mach;
 		image_index = 0;
 	}
-		 if (key_attack && !pogochargeactive && !key_slap2)
+		 if (key_attack && !pogochargeactive && !key_slap2 && character == "PT")
             {
                 sprite_index = spr_noise_pogostart
                 image_index = 0
@@ -333,9 +333,12 @@ function state_player_jump()
 		if (movespeed < 6)
 			movespeed = 6;
 		sprite_index = spr_mach1;
+			image_index = 0;
 		jumpAnim = 1;
 		state = states.mach2;
-		image_index = 0;
+		if global.moveset = 2
+				state = states.mach1
+	
 		}
 		else
 		{

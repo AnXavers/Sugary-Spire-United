@@ -17,8 +17,7 @@ if !coneballtype
 }
 if obj_player.state == (states.actor || states.comingoutdoor || states.victory || states.keyget)
 {
-	vspeed = 0
-	hspeed = 0
+     coneballspeed = 0
 }
 with instance_create(x, y, obj_icontracker)
 {

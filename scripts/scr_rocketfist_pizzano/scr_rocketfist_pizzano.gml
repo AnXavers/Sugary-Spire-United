@@ -7,6 +7,7 @@ function scr_rocketfist_pizzano()
 	vsp = 0
 	hsp = (xscale * movespeed);
 	mach2++
+	machpunchAnim = true;
 	if sprite_index == spr_superjump_cancelprep && (floor(image_index) == (image_number - 1))
 	{
 		image_index = 0
@@ -81,10 +82,34 @@ else if sprite_index != spr_superjump_cancelprep
 		vsp = 5
 	if scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)
 	{
-		vsp = -6
-		movespeed = -6
-		sprite_index = spr_mach3hitwall
-		state = states.bump
+			scr_sound(sound_maximumspeedland);
+		with (obj_camera)
+		{
+			shake_mag = 20;
+			shake_mag_acc = 40 / room_speed;
+		}
+		image_speed = 0.35;
+		with (obj_baddie)
+		{
+			if (bbox_in_camera(view_camera[0]) && grounded)
+			{
+				stun = 1;
+				alarm[0] = 200;
+				ministun = 0;
+				vsp = -5;
+				hsp = 0;
+			}
+		}
+		flash = 0;
+		combo = 0;
+		sprite_index = spr_mach3hitwall;
+		state = states.bump;
+		hsp = -2.5 * xscale;
+		vsp = -3;
+		mach2 = 0;
+		image_index = 0;
+		instance_create(x + (10 * xscale), y + 10, obj_bumpeffect);
+	
 	}
 	
 	if !grounded && hsp != 0 && sprite_index != spr_superjump_cancel
@@ -115,12 +140,19 @@ else if sprite_index != spr_superjump_cancelprep
 		vsp = -15
 		sprite_index = spr_noise_noisebombspinjump
 	}
-	if key_slap2
+	if key_slap2 && character != "PT"
 	{
 		image_index = 0;
 		state = states.freefallprep;
 		sprite_index = spr_bodyslamstart;
 		vsp = -6;
+	}
+	if key_slap2 && character == "PT"
+	{
+		image_index = 0;
+		state = states.Sjump;
+		sprite_index = spr_noise_jetpackboostdown;
+		scr_sound(sound_superjumprelease)
 	}
 	if key_attack2 && character != "PT"
 	{
@@ -135,6 +167,7 @@ else if sprite_index != spr_superjump_cancelprep
 		state = states.pogo;
 		sprite_index = spr_noise_pogostart;
 		vsp = -10;
+		pogospeed = movespeed
 	 }
 		if ((!instance_exists(obj_crazyrunothereffect)) && sprite_index == spr_crazyrun)
 		{

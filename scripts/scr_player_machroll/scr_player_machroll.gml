@@ -13,8 +13,8 @@ function state_player_machroll()
 		instance_create(x, y + 43, obj_cloudeffect);
 	if (grounded && sprite_index != spr_crouchslip && movespeed <= 11.99)
 		sprite_index = spr_machroll;
-		else if (grounded && sprite_index != spr_crouchslip && movespeed >= 11.99)
-		sprite_index = spr_mach3roll
+		else if (grounded && sprite_index != spr_crouchslip && movespeed >= 11.99 && sprite_index != spr_mach3roll)
+		sprite_index = spr_mach3rollstart
 	else if (sprite_index != spr_dive && sprite_index != spr_crouchslip && (!grounded))
 	{
 		sprite_index = spr_dive;
@@ -23,11 +23,14 @@ function state_player_machroll()
 
 	if (crouchslipbuffer > 0)
 		crouchslipbuffer--;
+
+			if floor(image_index) == (image_number - 1) && sprite_index == spr_mach3rollstart
+			sprite_index = spr_mach3roll
 	if (!key_down && !scr_solid(x + 27, y - 32) && !scr_solid(x - 27, y - 32) && !scr_solid(x, y - 32) && !scr_solid(x, y - 16))
 	{
 		if (crouchslipbuffer <= 0)
 		{
-			if (key_attack)
+			if (key_attack && character != "PT")
 			{
 				scr_sound(sound_rollgetup);
 				image_index = 0;
@@ -37,12 +40,21 @@ function state_player_machroll()
 				else
 					state = states.mach2;
 			}
-			else if (movespeed > 6)
+			else if (movespeed > 6 && character != "PT")
 			{
 				scr_sound(sound_break);
 				sprite_index = spr_machslidestart;
 				image_index = 0;
 				state = states.machslide;
+			}
+				else if (key_attack && character == "PT")
+			{
+				scr_sound(sound_rollgetup);
+				image_index = 0;
+				vsp = -12
+				pogospeed = 14
+				sprite_index = spr_noise_pogostart;
+					state = states.pogo;
 			}
 			else
 				state = 1;
@@ -73,5 +85,13 @@ function state_player_machroll()
 		image_index = 0;
 		sprite_index = spr_splat;
 	}
+		if ((!instance_exists(obj_chargeeffectsmall)) &&  sprite_index != spr_dive && sprite_index != spr_crouchslip && character == "P" && global.newplayeranim = 1)
+		{
+			instance_create(x, y, obj_chargeeffectsmall, 
+			{
+				playerID: id
+			}
+)
+		}
 	image_speed = 0.8;
 }

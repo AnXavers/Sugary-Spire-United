@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "palroom",
-  "creationCodeFile": "${project_dir}/rooms/palroom/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/palroom/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

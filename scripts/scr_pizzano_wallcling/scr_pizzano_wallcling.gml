@@ -27,9 +27,9 @@ function scr_pizzano_wallcling()
         sprite_index = spr_noise_wallcling
     vsp = 0
     wallclingcooldown = 0
-    if (floor(image_index) == (image_number - 1))
+    if ( !key_jump2)
     {
-        jumpstop = 0
+        jumpstop = 1
         vsp = -15
         state = states.jump
         sprite_index = spr_noise_noisebombspinjump

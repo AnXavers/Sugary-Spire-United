@@ -400,6 +400,8 @@ function state_player_normal()
 			sprite_index = spr_mach1;
 			jumpAnim = 1;
 			state = states.mach2;
+			if global.moveset = 2
+				state = states.mach1
 		}
 		else if character != "PT"
 		{
