@@ -6,7 +6,6 @@ if global.levelname == "secrets"
 	if array_length(global.secretsspire) == 0
 	{
 		targetRoom = secrets_end
-		targetDoor = "A"
 	}
 	else
 		targetRoom = global.secretsspire[irandom((array_length(global.secretsspire)) - 1)]

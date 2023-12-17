@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 301.036,
+  "duration": 201.6,
   "parent": {
     "name": "Secrets",
     "path": "folders/Sounds/Music/Levels/Secrets.yy",

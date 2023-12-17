@@ -519,7 +519,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.4.0.84",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"obj_talisman","path":"objects/obj_talisman/obj_talisman.yy",},},
@@ -3438,6 +3438,7 @@
     {"id":{"name":"spr_noise_bombstart","path":"sprites/spr_noise_bombstart/spr_noise_bombstart.yy",},},
     {"id":{"name":"spr_snowcloudhit","path":"sprites/spr_snowcloudhit/spr_snowcloudhit.yy",},},
     {"id":{"name":"spr_pizzelle_superjumpright","path":"sprites/spr_pizzelle_superjumpright/spr_pizzelle_superjumpright.yy",},},
+    {"id":{"name":"spr_smallchargeeffect","path":"sprites/spr_smallchargeeffect/spr_smallchargeeffect.yy",},},
     {"id":{"name":"spr_pizzelle_walk","path":"sprites/spr_pizzelle_walk/spr_pizzelle_walk.yy",},},
     {"id":{"name":"bg_fudgetop3_mountain2escape","path":"sprites/bg_fudgetop3_mountain2escape/bg_fudgetop3_mountain2escape.yy",},},
     {"id":{"name":"spr_pizzelle_mach3hitwall","path":"sprites/spr_pizzelle_mach3hitwall/spr_pizzelle_mach3hitwall.yy",},},
@@ -4286,6 +4287,7 @@
     {"id":{"name":"spr_pizzelle_uforoll","path":"sprites/spr_pizzelle_uforoll/spr_pizzelle_uforoll.yy",},},
     {"id":{"name":"bg_waferback1","path":"sprites/bg_waferback1/bg_waferback1.yy",},},
     {"id":{"name":"spr_checkpoint","path":"sprites/spr_checkpoint/spr_checkpoint.yy",},},
+    {"id":{"name":"obj_smallchargeeffect","path":"objects/obj_smallchargeeffect/obj_smallchargeeffect.yy",},},
     {"id":{"name":"spr_rankbubble_a","path":"sprites/spr_rankbubble_a/spr_rankbubble_a.yy",},},
     {"id":{"name":"fg_sucrose_cave","path":"sprites/fg_sucrose_cave/fg_sucrose_cave.yy",},},
     {"id":{"name":"spr_peppino_ladder","path":"sprites/spr_peppino_ladder/spr_peppino_ladder.yy",},},

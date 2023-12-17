@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 1,
   "conversionMode": 0,
-  "duration": 50.4322,
+  "duration": 50.4,
   "parent": {
     "name": "Escape",
     "path": "folders/Sounds/Music/Levels/Global/Escape.yy",
