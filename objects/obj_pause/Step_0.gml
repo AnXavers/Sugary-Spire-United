@@ -49,3 +49,4 @@ if (pausecount == 0)
 	alarm[1] = 1;
 	pausecount = -1;
 }
+frameref += 0.35;

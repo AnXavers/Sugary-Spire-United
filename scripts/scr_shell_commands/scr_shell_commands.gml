@@ -527,9 +527,9 @@ function meta_draw_sprite()
 }
 function sh_set_combo()
 {
-	global.combo = argument0[1]
-	global.combotime = argument0[2]
-	global.combofreeze = argument0[3]
+	global.combo = real(argument0[1])
+	global.combotime = real(argument0[2])
+	global.combofreeze = real(argument0[3])
 }
 function meta_set_combo()
 {
@@ -543,7 +543,7 @@ function meta_set_combo()
 }
 function sh_set_lap()
 {
-	global.lapcount = argument0[1]
+	global.lapcount = real(argument0[1])
 }
 function meta_set_lap()
 {
@@ -627,7 +627,7 @@ function meta_set_transformation()
 }
 function sh_set_player_state()
 {
-	obj_player.state = argument0[1];
+	obj_player.state = real(argument0[1]);
 }
 function meta_set_player_state()
 {
@@ -689,7 +689,7 @@ function meta_quick_load()
 	{
 		description: "Quick Loads a level.",
 		arguments: ["<room>", "<door>"],
-		suggestions: [["tutorial", "crunchy construction", "cottontown", "molasses", "sugarshack mines", "mt fudgetop", "danceoff", "chocoa cafe", "martian outpost", "sting operation", "sucrose snowstorm", "cottonstorm"]],
+		suggestions: [["tutorial", "crunchy construction", "cottontown", "molasses", "sugarshack mines", "mt fudgetop", "dance", "chocoa cafe", "martian outpost", "sting operation", "sucrose snowstorm", "cottonstorm"]],
 		argumentDescriptions: ["Level to load."]
 	};
 }

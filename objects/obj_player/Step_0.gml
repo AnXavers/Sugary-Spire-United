@@ -328,12 +328,10 @@ if (state != states.pizzano_kungfu && state != 0)
 	kungairtime = 0;
 }
 var _cTitle = floor(global.combo / 5);
-_cTitle = wrap(_cTitle, 0, sprite_get_number(obj_player.spr_combotitle) - 1);
 if (oldComboTitle != _cTitle && _cTitle != 0)
 {
 	oldComboTitle = _cTitle;
 	instance_destroy(combo_title);
-	combo_title = -4;
 	combo_title = instance_create(830, 250, obj_combotitle);
 	combo_title.title = _cTitle;
 	combo_title.image_index = _cTitle;

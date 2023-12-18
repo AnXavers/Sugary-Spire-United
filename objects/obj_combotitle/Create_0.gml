@@ -9,7 +9,6 @@ image_speed = 0;
 alpha = 3;
 seq = 0;
 type = 0;
-global.dotruly = 0
 var num = floor(global.combo / 25);
 num = clamp(num, 0, 3);
 type = num;
@@ -34,7 +33,7 @@ switch (type)
 		if global.eggplantcombo
 			scr_sound(sfx_combotitle3)
 		break;
-	case 3:
+	default:
 		image_xscale = 0;
 		image_yscale = 0;
 		if global.eggplantcombo
@@ -46,3 +45,4 @@ if global.language == 2
 	sprite_index = obj_player.spr_combotitle_BR
 else if global.language == 1
 	sprite_index = obj_player.spr_combotitle_ES
+dotruly = floor(global.combo / 125)

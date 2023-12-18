@@ -487,7 +487,7 @@ function scr_characterglobal()
 		spr_large_destroyable_hard = spr_bigbreakhard_new
 	}
 	// fonts
-	font_lapcount = global.lapcountfont
+	font_lapcount = global.lapfont
 	font_collect_new = global.candlefont
 	font_collect = global.collectfont
 	// audio
@@ -738,7 +738,7 @@ function scr_characterglobal()
 			spr_mach3hitwall = spr_pizzano_mach3hitwall;
 			spr_crazyrun = spr_gumbob_mach3;
 			// fonts
-			font_lapcount = global.lapcountfont
+			font_lapcount = global.lapfont
 			font_collect_new = global.candlefont
 			font_collect = global.collectfont
 			// audio

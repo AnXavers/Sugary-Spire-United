@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "To Be Sorted",
-    "path": "folders/Sprites/To Be Sorted.yy",
+    "name": "Treasure",
+    "path": "folders/Sprites/Level Structure/Collectible/Treasure.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

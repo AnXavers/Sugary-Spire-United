@@ -14,17 +14,41 @@ if mouse_check_button_pressed(mb_left)
 			image_xscale = (other.selected_obj_w / 32)
 			image_yscale = (other.selected_obj_h / 32)
 			image_angle = other.selected_obj_r
+			array_push(global.editorinsts, id)
 		}
 	}
 	else if mode == 2
 	{
-	    tilemap_set(map_id, 2, (selected_obj_x / 32), (selected_obj_y / 32));
+	    tilemap_set(map_id, 2, floor(selected_obj_x / 32), floor(selected_obj_y / 32));
 	}
 }
 if mode == 3
 {
 	if keyboard_check_pressed(ord("t"))
+	{
 		scr_controlprompt("Tile layer created.")
+		array_push(global.editorlayers, layer_create((array_length(global.editorlayers) * 100), "untitled_tilelayer"))
+	}
+	if keyboard_check_pressed(ord("i"))
+	{
+		scr_controlprompt("Instance layer created.")
+		array_push(global.editorlayers, layer_create((array_length(global.editorlayers) * 100), "untitled_instancelayer"))
+	}
+	if keyboard_check_pressed(ord("a"))
+	{
+		scr_controlprompt("Asset layer created.")
+		array_push(global.editorlayers, layer_create((array_length(global.editorlayers) * 100), "untitled_assetlayer"))
+	}
+	if keyboard_check_pressed(ord("b"))
+	{
+		scr_controlprompt("Background layer created.")
+		array_push(global.editorlayers, layer_create((array_length(global.editorlayers) * 100), "untitled_backgroundlayer"))
+	}
+	if keyboard_check_pressed(ord("e"))
+	{
+		scr_controlprompt("Effect layer created.")
+		array_push(global.editorlayers, layer_create((array_length(global.editorlayers) * 100), "untitled_effectlayer"))
+	}
 }
 var _shift_held = keyboard_check(vk_shift)
 var _ctrl_held = keyboard_check(vk_control)
@@ -69,7 +93,7 @@ if (mouse_wheel_up())
 	else if _tab_held
 		mode++
 	else
-		_zoom -= (0.1 * _zoom)
+		_zoom -= (0.1)
 }
 else if (mouse_wheel_down())
 {
@@ -105,16 +129,16 @@ else if (mouse_wheel_down())
 	else if _tab_held
 		mode--
 	else
-		_zoom += (0.1 * _zoom)
+		_zoom += (0.1)
 }
 _zoom = clamp(_zoom, 0.2, 10)
 var _object_num = ((array_length(global.objectlist)) - 1)
-buttons_mode = button_array_check(0, 0, 240, 60, 4, 1)[1]
+buttons_mode = (button_array_check(0, 0, 240, 60, 4, 1)[0] + 1)
 mode = wrap(mode, 0, 3)
 selected_obj = wrap(selected_obj, 0, _object_num)
 selected_obj_r = wrap(selected_obj_r, 0, 359)
-cursor_x = (mouse_x - x)
-cursor_y = (mouse_y - y)
+cursor_x = ((mouse_x - x) * _zoom)
+cursor_y = ((mouse_y - y) * _zoom)
 selected_obj_x = ((floor(mouse_x / 32)) * 32)
 selected_obj_y = ((floor(mouse_y / 32)) * 32)
 obj_cameraRegion.zoom = _zoom

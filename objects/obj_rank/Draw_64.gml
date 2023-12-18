@@ -75,7 +75,7 @@ for (i = 0; i < _string_length; i++)
 }
 if (global.lapcount >= 2)
 {
-	draw_set_font(global.lapfont);
+	draw_set_font(global.promptfont);
 	draw_text(880, 340 + clipy, global.lapcount)
 }
 draw_sprite_ext(spr_rankletter, rankdex, 725, 108 + clipy, rscale, rscale, 0, c_white, 1);

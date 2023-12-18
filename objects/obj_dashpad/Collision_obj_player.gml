@@ -100,7 +100,7 @@ if (other.Dashpad_buffer <= 0)
 			if (!scr_solid(other.x, y))
 				x = other.x;
 			flash = 1;
-			Dashpad_buffer = 50;
+			Dashpad_buffer = 25;
 			image_index = 0;
 			sprite_index = obj_player.spr_minecartfastland;
 		}

@@ -1,5 +1,3 @@
-if is_undefined(global.editorinsts)
-	global.editorinsts = []
 x = 0
 y = 0
 depth = -900
@@ -15,26 +13,25 @@ selected_obj_w = 32
 selected_obj_r = 0
 object_list = [
 ["COLLISION", obj_solid, obj_slope, obj_platform, obj_sidePlatform, obj_slopePlatform, obj_movingPlatform, obj_movingPlatformTrigger, obj_movingPlatform_attach],
-[],
-[],
-[],
-[]
+["BADDIES", obj_solid],
+["WIRING", obj_solid],
+["TRIGGERS", obj_solid],
+["GIMMICKS", obj_solid],
+["CUSTOM", obj_solid]
 ]
-buttons_mode = [0, 0]
+buttons_mode = 0
 for	(var i = 0; i < array_length(global.editorinsts); i++)
 {
 	with global.editorinsts[i]
 	{
-		with instance_create(x, y, obj_editor_decoy)
+		if global.editorinsts[i] != -4
 		{
-			sprite_index = other.sprite_index
-			image_xscale = other.image_xscale
-			image_yscale = other.image_yscale
-			image_angle = other.image_angle
-			visible = true
-			obj = other.object_index
+			var saved_spr = global.editorinsts[i].sprite_index
+			with instance_change(obj_editor_decoy, false)
+			{
+				sprite_index = saved_spr
+			}
 		}
-		instance_destroy();
 	}
 }
 with obj_player

@@ -49,7 +49,7 @@ if (global.secret_room == 1 && global.levelname != "secrets")
 	audio_pause_sound(global.music);
 	global.secret_room = 2;
 }
-else if (global.secret_room == 2 && global.levelname != "secrets")
+else if (global.secret_room == 2)
 {
 	global.secret_room = false;
 	audio_resume_sound(global.music);

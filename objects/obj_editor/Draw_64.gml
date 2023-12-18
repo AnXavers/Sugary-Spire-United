@@ -1,6 +1,6 @@
 draw_set_font(global.smallfont)
 draw_set_halign(fa_left)
-draw_sprite(spr_editor_modes_placeholder, buttons_mode[1], 0, 0)
+draw_sprite(spr_editor_modes_placeholder, buttons_mode, 0, 0)
 draw_text(20, 100, "CATEGORY " + selected_category)
 draw_text(20, 130, "PLACING " + string_upper(object_get_name(selected_obj)))
 draw_text(20, 160, "X " + string(selected_obj_x))

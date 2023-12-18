@@ -1,30 +1,21 @@
 if !global.heatmeter
 	global.style = 0
-if (global.style >= 220)
-	global.stylethreshold = 4;
-else if (global.style >= 165)
+if (global.style >= 165)
 {
 	global.stylethreshold = 3;
-	if instance_exists(obj_baddie)
-	{
-		obj_baddie.eliteEnemy = 1;
-		if sprite_get_width(obj_baddie.spr_palette) >= 2
-			obj_baddie.paletteselect = 1;
-	}
+	if (global.style >= 220)
+		global.stylethreshold = 4;
+	event_user(0)
 }
 else if (global.style >= 110)
 	global.stylethreshold = 2;
-else if (global.style >= 55)
-{
-	global.stylethreshold = 1;
-	if (instance_exists(obj_baddie) && global.lapcount < 3 && global.lapmode != 1)
-	{
-		obj_baddie.eliteEnemy = 0;
-		obj_baddie.paletteselect = 0;
-	}
-}
 else
+{
 	global.stylethreshold = 0;
+	if (global.style >= 55)
+		global.stylethreshold = 1;
+	event_user(1)
+}
 global.style = clamp(global.style, 0, 220);
 if (global.combofreeze <= 0)
 	global.style -= 0.05;

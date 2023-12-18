@@ -176,16 +176,17 @@ if (lap_out > 0)
 }
 lap_y = approach(lap_y, tgt, spd);
 draw_set_halign(fa_center);
-draw_set_font(global.lapfont);
-var x_shk = random_range(-1, 1);
-var y_shk = random_range(-1, 1);
+draw_set_font(global.smalllapfont);
+var y_wave = wave(-3, 3, 4, 0)
+var x_wave = wave(-2, 2, 3, 0)
+var x_wave2 = wave(-2, 2, 3, 0, current_time + 600)
 if (global.lapcount >= 2)
 {
 	if (global.lapmode != 0)
 	{
-		draw_set_halign(fa_left);
-		draw_sprite(spr_harrylap, floor(frameref * 0.35), 70, 485 + anchor_point("bottom"));
-		draw_text(115 + x_shk, 460 + y_shk + anchor_point("bottom"), global.lapcount);
+		draw_set_halign(fa_center);
+		draw_sprite(spr_lappingportal_HUD, floor(frameref * 0.35), 50 + x_wave, (global.cam_h - 50));
+		draw_text(50 + x_wave2, global.cam_h + y_wave - 98, global.lapcount);
 	}
 	if global.checkpoints
 	{
@@ -193,7 +194,7 @@ if (global.lapcount >= 2)
 		{
 			checkpointspr = spr_checkpointflag_appear
 			checkpointindex += 0.35
-			draw_sprite_ext(checkpointspr, floor(checkpointindex), 70, 400, 1, 1, 0, c_white, checkpointalpha)
+			draw_sprite_ext(checkpointspr, floor(checkpointindex), 140, global.cam_h - 50, 1, 1, 0, c_white, checkpointalpha)
 			if floor(checkpointindex) == (sprite_get_number(spr_checkpointflag_appear) - 1)
 			{
 				checkpointspr = spr_checkpointflag
@@ -206,7 +207,7 @@ if (global.lapcount >= 2)
 				checkpointalpha += 0.05
 			else
 				checkpointalpha -= 0.05
-			draw_sprite_ext(checkpointspr, floor(frameref * 0.35), 70, 400, 1, 1, 0, c_white, checkpointalpha)
+			draw_sprite_ext(checkpointspr, floor(frameref * 0.35), 140, global.cam_h - 50, 1, 1, 0, c_white, checkpointalpha)
 		}
 	}
 }

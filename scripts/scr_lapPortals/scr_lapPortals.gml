@@ -45,6 +45,7 @@ function cutscene_lapPortal_start()
 			scr_sound(sound_door);
 			instance_create(0, 0, obj_fadeout);
 		}
+		global.maintainzoom = 1;
 		cutscene_event_end();
 	}
 }

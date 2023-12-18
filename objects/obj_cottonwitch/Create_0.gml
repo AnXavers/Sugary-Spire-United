@@ -27,6 +27,7 @@ grabbedspr = spr_cottonwitch_stunned;
 scaredspr = spr_cottonwitch_scared;
 spr_throw = spr_cottonwitch_shoot;
 deadspr = spr_cottonwitch_dead;
+spr_palette = pal_cottonwitch
 throw_frame = 7;
 landspr = spr_cottonwitch_walk;
 flash = 0;
