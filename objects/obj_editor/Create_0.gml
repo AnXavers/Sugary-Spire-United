@@ -19,7 +19,6 @@ object_list = [
 ["GIMMICKS", obj_solid],
 ["CUSTOM", obj_solid]
 ]
-buttons_mode = 0
 for	(var i = 0; i < array_length(global.editorinsts); i++)
 {
 	with global.editorinsts[i]
@@ -61,3 +60,46 @@ with instance_create(-1000, -1000, obj_cameraRegion)
 	ClampRight = false
 }
 global.preventpause = 1
+draw_set_font(global.smallfont)
+draw_set_halign(fa_left)
+draw_set_valign(fa_center)
+global.toolsurf = surface_create(global.cam_w, 30);
+surface_set_target(global.toolsurf)
+draw_clear(scribble_rgb_to_bgr($04010A))
+draw_set_color(scribble_rgb_to_bgr($141131))
+draw_rectangle(103, 3, global.cam_w - 3, 27, false)
+draw_set_color(c_white)
+draw_text(2, 15, "TOOLBOX")
+surface_reset_target()
+global.layersurf = surface_create(140, ((global.cam_h * 0.4) - 30));
+surface_set_target(global.layersurf)
+draw_clear(scribble_rgb_to_bgr($04010A))
+draw_set_color(scribble_rgb_to_bgr($141131))
+draw_rectangle(3, 20, 137, ((global.cam_h * 0.4) - 3), false)
+draw_set_color(c_white)
+draw_text(2, 10, "LAYERS")
+surface_reset_target()
+global.detailssurf = surface_create(140, global.cam_h * 0.6);
+surface_set_target(global.detailssurf)
+draw_clear(scribble_rgb_to_bgr($04010A))
+draw_set_color(scribble_rgb_to_bgr($141131))
+draw_rectangle(3, 20, 137, ((global.cam_h * 0.6) - 3), false)
+draw_set_color(c_white)
+draw_text(2, 10, "DETAILS")
+surface_reset_target()
+global.assetsurf = surface_create(140, ((global.cam_h) - 30));
+surface_set_target(global.assetsurf)
+draw_clear(scribble_rgb_to_bgr($04010A))
+draw_set_color(scribble_rgb_to_bgr($141131))
+draw_rectangle(3, 20, 137, (global.cam_h - 3), false)
+draw_set_color(c_white)
+draw_text(2, 10, "ASSETS")
+surface_reset_target()
+global.customsurf = surface_create(global.cam_w - 280, 100);
+surface_set_target(global.customsurf)
+draw_clear(scribble_rgb_to_bgr($04010A))
+draw_set_color(scribble_rgb_to_bgr($141131))
+draw_rectangle(3, 20, (global.cam_w - 283), 97, false)
+draw_set_color(c_white)
+draw_text(2, 10, "OBJECT CREATOR")
+surface_reset_target()

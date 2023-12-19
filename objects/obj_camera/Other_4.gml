@@ -75,3 +75,5 @@ if (instance_exists(obj_player) && (obj_player.state != states.timesup && obj_pl
 }
 global.wave = global.maxwave - global.fill;
 scr_layerswap();
+if chance(0.01)
+	instance_create(random(room_width), random(room_height), obj_hallucinationspawner)

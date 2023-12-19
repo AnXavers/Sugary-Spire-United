@@ -124,7 +124,20 @@ function state_player_normal()
 				sprite_index = spr_move;
 		}
 		if (key_taunt)
+		{
 			sprite_index = spr_breakdance;
+			if boombox_timer == -1
+				boombox_timer = 35
+			else if boombox_timer != 0
+				boombox_timer--
+			else
+			{
+				instance_create(x, y, obj_boombox)
+				boombox_timer = -2
+			}
+		}
+		else 
+			boombox_timer = -1
 		if (move != 0)
 			xscale = move;
 	}

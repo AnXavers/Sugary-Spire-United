@@ -2,7 +2,7 @@ if (place_meeting(x, y - 1, obj_player))
 {
 	with (obj_player)
 	{
-		if (state != states.noclip && !global.freezeframe && state != states.cookiemount)
+		if (state != states.noclip && !global.freezeframe && (state != states.cookiemount && state != states.cookiemountfireass && state != states.cookiemountattack))
 		{
 			if (state == states.cotton || state == states.cottondrill)
 				instance_create(x, y, obj_poofeffect);

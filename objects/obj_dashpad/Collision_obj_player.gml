@@ -12,7 +12,7 @@ if (other.Dashpad_buffer <= 0)
 	scr_sound(sound_dashpad);
 	with (other)
 	{
-		if (state != states.Sjumpprep && state != 22 && state != states.minecart && state != states.crouch && state != states.seacream && state != states.seacreamjump && state != states.seacreamstick && state != states.cookiemount && state != states.noclip &&sprite_get_bbox_bottom(mask_index) <= other.bbox_bottom)
+		if (state != states.Sjumpprep && state != 22 && state != states.minecart && state != states.crouch && state != states.seacream && state != states.seacreamjump && state != states.seacreamstick && state != states.cookiemount && state != states.cookiemountattack && state != states.cookiemountfireass && state != states.noclip &&sprite_get_bbox_bottom(mask_index) <= other.bbox_bottom)
 		{
 			movespeed += 0.25;
 			movespeed = clamp(movespeed, 12, 24);

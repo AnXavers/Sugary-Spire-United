@@ -1,8 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-
-
-
-
+if (obj_player.state == states.cookiemount || obj_player.state == states.cookiemountattack || obj_player.state == states.cookiemountfireass)
+	instance_destroy();

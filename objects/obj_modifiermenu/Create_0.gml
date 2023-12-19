@@ -39,15 +39,16 @@ modifiers = [
 ]
 bgTileX = 0
 bgTileY = 0
-fadeinrad = 0
-surface = surface_create(global.cam_w, global.cam_h);
+fadein = 0
+modifierfxval = 0
+modifierfx = fx_create("_filter_large_blur")
+fx_set_parameter(modifierfx, "g_Radius", [modifierfxval])
+modifiereffect = layer_create(-1000, "Effect_Modifiers")
+layer_set_fx(modifiereffect, modifierfx)
 txtalpha = -30
 ScrollX = 0
 CursorX = 0
 ScrollY = 0
 CursorY = 0
-surface_set_target(surface);
-draw_clear_alpha(0, 0);
-surface_reset_target();
 canmove = false
 alarm[0] = 25

@@ -1,4 +1,4 @@
-if (instance_place(x, y - 1, obj_player) && obj_player.state == states.cookiemount)
+if (instance_place(x, y - 1, obj_player) && (obj_player.state == states.cookiemount || obj_player.state = states.cookiemountattack || obj_player.state = states.cookiemountfireass))
 {
 	alarm[0] = 1;
 	obj_player.state = states.normal;

@@ -118,7 +118,8 @@ if canmove
 		}
 	}
 }
+modifierfxval = lerp(modifierfxval, 4, 0.05)
+fx_set_parameter(modifierfx, "g_Radius", [modifierfxval])
 bgTileX++
 bgTileY++
 txtalpha++
-fadeinrad = lerp(fadeinrad, ((global.cam_w + global.cam_h) / 2), 0.06)

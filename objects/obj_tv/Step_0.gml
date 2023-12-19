@@ -163,6 +163,8 @@ switch (state)
 				idlespr = ufotvspr;
 				break;
 			case states.cookiemount:
+			case states.cookiemountattack:
+			case states.cookiemountfireass:
 				idlespr = marshdogspr;
 				break;
 			default:

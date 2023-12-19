@@ -65,7 +65,7 @@ with (obj_player)
 		with (other.id)
 			instance_destroy();
 	}
-	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (state == states.cookiemount && substate == 0))
+	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && ((state == states.cookiemount || state == states.cookiemountattack || state == states.cookiemountfireass) && substate == 0))
 	{
 		with (other.id)
 			instance_destroy();

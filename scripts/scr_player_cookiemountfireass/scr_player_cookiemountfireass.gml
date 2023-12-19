@@ -4,24 +4,8 @@ function state_player_cookiemountfireass()
 		input_buffer = approach(input_buffer, 0, 1);
 	hsp = movespeed;
 	move = key_left + key_right;
-	if (move != 0 && input_buffer == 0)
-	{
-		if (move == xscale)
-			movespeed = approach(movespeed, xscale * 16, 0.65);
-		else
-			movespeed = approach(movespeed, 0, 0.45);
-		if (abs(movespeed) < 3 && move != 0)
-			image_speed = 0.35;
-		else if (abs(movespeed) > 3 && abs(movespeed) < 6)
-			image_speed = 0.45;
-		else
-			image_speed = 0.6;
-	}
-	else
-	{
-		if (input_buffer == 0)
-			movespeed = approach(movespeed, 0, 0.75);
-	}
+	if (input_buffer == 0)
+		movespeed = approach(movespeed, 0, 0.75);
 	if (key_shoot2)
 	{
 		movespeed = abs(hsp);

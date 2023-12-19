@@ -24,27 +24,27 @@ if mouse_check_button_pressed(mb_left)
 }
 if mode == 3
 {
-	if keyboard_check_pressed(ord("t"))
+	if keyboard_check_pressed(ord("T"))
 	{
 		scr_controlprompt("Tile layer created.")
 		array_push(global.editorlayers, layer_create((array_length(global.editorlayers) * 100), "untitled_tilelayer"))
 	}
-	if keyboard_check_pressed(ord("i"))
+	if keyboard_check_pressed(ord("I"))
 	{
 		scr_controlprompt("Instance layer created.")
 		array_push(global.editorlayers, layer_create((array_length(global.editorlayers) * 100), "untitled_instancelayer"))
 	}
-	if keyboard_check_pressed(ord("a"))
+	if keyboard_check_pressed(ord("A"))
 	{
 		scr_controlprompt("Asset layer created.")
 		array_push(global.editorlayers, layer_create((array_length(global.editorlayers) * 100), "untitled_assetlayer"))
 	}
-	if keyboard_check_pressed(ord("b"))
+	if keyboard_check_pressed(ord("B"))
 	{
 		scr_controlprompt("Background layer created.")
 		array_push(global.editorlayers, layer_create((array_length(global.editorlayers) * 100), "untitled_backgroundlayer"))
 	}
-	if keyboard_check_pressed(ord("e"))
+	if keyboard_check_pressed(ord("E"))
 	{
 		scr_controlprompt("Effect layer created.")
 		array_push(global.editorlayers, layer_create((array_length(global.editorlayers) * 100), "untitled_effectlayer"))
@@ -133,12 +133,11 @@ else if (mouse_wheel_down())
 }
 _zoom = clamp(_zoom, 0.2, 10)
 var _object_num = ((array_length(global.objectlist)) - 1)
-buttons_mode = (button_array_check(0, 0, 240, 60, 4, 1)[0])
 mode = wrap(mode, 0, 3)
 selected_obj = wrap(selected_obj, 0, _object_num)
 selected_obj_r = wrap(selected_obj_r, 0, 359)
-cursor_x = ((mouse_x - x) * _zoom)
-cursor_y = ((mouse_y - y) * _zoom)
+cursor_x = (mouse_x - x)
+cursor_y = (mouse_y - y)
 selected_obj_x = ((floor(mouse_x / 32)) * 32)
 selected_obj_y = ((floor(mouse_y / 32)) * 32)
 obj_cameraRegion.zoom = _zoom

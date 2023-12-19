@@ -16,7 +16,6 @@ vsp = 0;
 image_speed = 0.35;
 grounded = 0;
 state = 0;
-stunfallspr = spr_creamthief_fall
 with (instance_create(x, y, obj_icontracker))
 {
 	target = other.id;
