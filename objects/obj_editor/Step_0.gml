@@ -133,7 +133,7 @@ else if (mouse_wheel_down())
 }
 _zoom = clamp(_zoom, 0.2, 10)
 var _object_num = ((array_length(global.objectlist)) - 1)
-buttons_mode = (button_array_check(0, 0, 240, 60, 4, 1)[0] + 1)
+buttons_mode = (button_array_check(0, 0, 240, 60, 4, 1)[0])
 mode = wrap(mode, 0, 3)
 selected_obj = wrap(selected_obj, 0, _object_num)
 selected_obj_r = wrap(selected_obj_r, 0, 359)

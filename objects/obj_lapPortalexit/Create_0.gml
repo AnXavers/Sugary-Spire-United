@@ -103,10 +103,14 @@ if global.checkpoints
 	global.checkpointdoor = obj_player.targetDoor
 	global.checkpointmusic = obj_music.music
 	global.checkpointcombo = global.combo
+	global.checkpointcombolost = global.combolost
+	global.checkpointhurtcounter = global.hurtcounter
 	global.checkpointcollect = global.collect
 	global.checkpointfill = global.fill
 	ds_list_clear(global.checkpointsaveroom)
+	ds_list_clear(global.checkpointbaddieroom)
 	ds_list_copy(global.checkpointsaveroom, global.saveroom)
+	ds_list_copy(global.checkpointbaddieroom, global.baddieroom)
 	scr_sound(sfx_checkpoint)
 	obj_tv.checkpointspr = spr_checkpointflag_unvisit
 	obj_tv.checkpointalpha = 0

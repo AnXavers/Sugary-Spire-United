@@ -1,8 +1,7 @@
 /// @description Apply random layer data
 var layers = layer_get_all()
 var layerselect = layers[irandom((array_length(layers) - 1))]
-var layerID = layer_get_id(layerselect)
-var layerelems = layer_get_all_elements(layerID)
+var layerelems = layer_get_all_elements(layerselect)
 for (var i = 0; i < array_length(layerelems); i++)
 {
 	var layertype = layer_get_element_type(layerelems[i])
@@ -41,12 +40,25 @@ for (var i = 0; i < array_length(layerelems); i++)
 					layer_vspeed(layerelems[i], irandom(random(10)))
 					break;
 				default:
-					layer_change_background(layer_background_get_sprite(layerelems[i]), irandom((array_length(global.spritelist) - 1)))
+					var ransprite = irandom((array_length(global.spritelist) - 1))
+					var nineslicesprite = sprite_get_nineslice(ransprite)
+					if nineslicesprite.enabled = false
+						layer_change_background(layer_background_get_sprite(layerelems[i]), ransprite)
 					break;
 			}
 			break;
 		case layerelementtype_tilemap:
-			layer_change_tileset(tileset_get_texture(layerelems[i]), irandom((array_length(global.tilesetlist) - 1)))
+			var valchange = irandom(3)
+			var tileset = tilemap_get_tileset(layerelems[i])
+			var tileinfo = tileset_get_info(tileset)
+			switch valchange
+			{
+				case 0:
+					layer_change_tileset(tileset, irandom((array_length(global.tilesetlist) - 1)))
+				default:
+					repeat 100
+						tilemap_set(layerelems[i], (irandom(tileinfo.tile_count) - 1), irandom(floor(room_width / 32)), irandom(floor(room_height / 32)))
+			}
 			break;
 	}
 }

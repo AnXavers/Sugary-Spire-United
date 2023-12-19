@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 1,
   "conversionMode": 0,
-  "duration": 207.04652,
+  "duration": 228.8,
   "parent": {
     "name": "Peppino",
     "path": "folders/Sounds/Music/Levels/Global/Escape/Peppino.yy",

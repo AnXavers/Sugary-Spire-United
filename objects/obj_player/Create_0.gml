@@ -187,6 +187,7 @@ global.hit = 0;
 global.combofreeze = 0;
 global.combolost = 0;
 global.baddieroom = ds_list_create();
+global.checkpointbaddieroom = ds_list_create();
 global.escaperoom = ds_list_create();
 global.waterincaninv = 0;
 key_particles = 0;

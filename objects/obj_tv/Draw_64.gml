@@ -194,7 +194,7 @@ if (global.lapcount >= 2)
 		{
 			checkpointspr = spr_checkpointflag_appear
 			checkpointindex += 0.35
-			draw_sprite_ext(checkpointspr, floor(checkpointindex), 140, global.cam_h - 50, 1, 1, 0, c_white, checkpointalpha)
+			draw_sprite_ext(checkpointspr, floor(checkpointindex), 140, global.cam_h - 65, 1, 1, 0, c_white, checkpointalpha)
 			if floor(checkpointindex) == (sprite_get_number(spr_checkpointflag_appear) - 1)
 			{
 				checkpointspr = spr_checkpointflag
@@ -207,7 +207,7 @@ if (global.lapcount >= 2)
 				checkpointalpha += 0.05
 			else
 				checkpointalpha -= 0.05
-			draw_sprite_ext(checkpointspr, floor(frameref * 0.35), 140, global.cam_h - 50, 1, 1, 0, c_white, checkpointalpha)
+			draw_sprite_ext(checkpointspr, floor(frameref * 0.35), 140, global.cam_h - 65, 1, 1, 0, c_white, checkpointalpha)
 		}
 	}
 }
