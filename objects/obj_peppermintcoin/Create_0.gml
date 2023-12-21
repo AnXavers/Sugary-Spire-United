@@ -1,5 +1,7 @@
 scr_collision_init();
-hsp = 5
+movespeed = 5
+hsp = movespeed * obj_player.xscale
 vsp = -5
-grav = 1
+grav = 0.5
 xscale = 1;
+grace = 20

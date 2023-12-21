@@ -11,6 +11,12 @@ switch (obj_player.character)
 	case "C":
 		playerPauseSprite = spr_pizzelle_pause;
 		break;
+	case "T":
+		playerPauseSprite = spr_noise_pause;
+		break;
+	case "RM":
+		playerPauseSprite = spr_rosette_pause;
+		break;
 }
 playerCustomPalette = obj_player.custompalette;
 playerSPalette = obj_player.custompalette ? obj_player.surf_pallete : obj_player.spr_palette;

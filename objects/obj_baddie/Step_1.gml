@@ -110,3 +110,4 @@ if (tauntBuffer == 1)
 }
 if (place_meeting_solid(x, y) && state == 6 && thrown)
 	instance_destroy();
+persistent = (state == enemystates.grabbed) ? true : false;

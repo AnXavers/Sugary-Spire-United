@@ -12,7 +12,7 @@ with (instance_create(x, y, enemy))
 	squashedx = true;
 	squashvalx = 0;
 	stunned = 20;
-	if (object_get_parent(self) == obj_baddie)
+	if (enemy == obj_baddie)
 	{
 		invincible = false;
 		visible = true;

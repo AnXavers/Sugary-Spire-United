@@ -4735,6 +4735,7 @@
     {"id":{"name":"spr_doorvisited","path":"sprites/spr_doorvisited/spr_doorvisited.yy",},},
     {"id":{"name":"spr_rank","path":"sprites/spr_rank/spr_rank.yy",},},
     {"id":{"name":"spr_pizzano_crouch","path":"sprites/spr_pizzano_crouch/spr_pizzano_crouch.yy",},},
+    {"id":{"name":"spr_noise_pause","path":"sprites/spr_noise_pause/spr_noise_pause.yy",},},
     {"id":{"name":"bg_estate1back1E","path":"sprites/bg_estate1back1E/bg_estate1back1E.yy",},},
     {"id":{"name":"spr_tvframe","path":"sprites/spr_tvframe/spr_tvframe.yy",},},
     {"id":{"name":"spr_smallbreak2","path":"sprites/spr_smallbreak2/spr_smallbreak2.yy",},},
