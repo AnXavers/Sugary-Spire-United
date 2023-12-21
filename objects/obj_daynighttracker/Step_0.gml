@@ -1,0 +1,13 @@
+global.realtime = (current_second + ((current_minute + (current_hour * 60)) * 60))
+var timecycle = ((global.realtime / 86400) * (pi * 2))
+placeholdertime += 0.01
+var dayxtimecycle = sin(placeholdertime)
+var dayytimecycle = cos(placeholdertime)
+var nightxtimecycle = sin(placeholdertime - pi)
+var nightytimecycle = cos(placeholdertime - pi)
+var layer_idday = layer_get_id(assignedlayers[0])
+var layer_idnight = layer_get_id(assignedlayers[1])
+layer_x(layer_idday, (dayxtimecycle * 750))
+layer_y(layer_idday, (dayytimecycle * 500))
+layer_x(layer_idnight, (nightxtimecycle * 750))
+layer_y(layer_idnight, (nightytimecycle * 500))

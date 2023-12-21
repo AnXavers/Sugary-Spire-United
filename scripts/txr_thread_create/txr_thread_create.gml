@@ -10,37 +10,37 @@ function txr_thread_create() {
 	th[@txr_thread.jumpstack] = ds_stack_create();
 	var locals = ds_map_create();
 	if (argd != undefined) {
-	    if (is_array(argd)) { // an array of arguments
-	        var i = array_length_1d(argd);
-	        locals[?"argument_count"] = i;
-	        locals[?"argument"] = argd;
-	        while (--i >= 0) locals[?"argument" + string(i)] = argd[i];
-	    } else { // a ds_map with initial local scope
-	        ds_map_copy(locals, argd);
-	    }
+		if (is_array(argd)) { // an array of arguments
+			var i = array_length_1d(argd);
+			locals[?"argument_count"] = i;
+			locals[?"argument"] = argd;
+			while (--i >= 0) locals[?"argument" + string(i)] = argd[i];
+		} else { // a ds_map with initial local scope
+			ds_map_copy(locals, argd);
+		}
 	}
 	th[@txr_thread.locals] = locals;
 	th[@txr_thread.status] = txr_thread_status.running;
 	return th;
 	enum txr_thread {
-	    actions,
-	    pos,
-	    //
-	    stack,
-	    jumpstack,
-	    locals,
-	    //
-	    result, // status-specific, e.g. returned value or error text
-	    status,
-	    //
-	    sizeof,
+		actions,
+		pos,
+		//
+		stack,
+		jumpstack,
+		locals,
+		//
+		result, // status-specific, e.g. returned value or error text
+		status,
+		//
+		sizeof,
 	}
 	enum txr_thread_status {
-	    none,
-	    running,
-	    finished,
-	    error,
-	    yield,
+		none,
+		running,
+		finished,
+		error,
+		yield,
 	}
 
 

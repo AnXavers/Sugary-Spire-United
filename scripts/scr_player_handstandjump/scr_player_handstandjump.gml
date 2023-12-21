@@ -48,8 +48,8 @@ function state_player_handstandjump()
 			sprite_index = spr_crouchslip;
 			machhitAnim = 0;
 			state = states.machroll;
-			if global.moveset = 2
-			state = states.crouchslide
+			if global.moveset == 2
+				state = states.crouchslide
 			with (instance_create(x, y, obj_jumpdust))
 				image_xscale = other.xscale;
 			movespeed = 12;

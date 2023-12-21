@@ -1,7 +1,11 @@
 if (key_jump)
 	playedjumpsound = 0;
 scr_getinput();
-scr_characterglobal();
+characterspr();
+characterpal();
+charactergui();
+characterenv();
+charactersfx();
 if (state == states.gottreasure || sprite_index == spr_peppino_knightstart || sprite_index == spr_peppino_knightthunder || state == states.keyget || state == states.door || state == states.victory || state == states.comingoutdoor || state == states.gameover)
 	cutscene = 1;
 else

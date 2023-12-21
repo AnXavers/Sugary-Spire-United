@@ -83,23 +83,23 @@ function state_player_Sjump()
 		movespeed = 0;
 	}
 	  if (character == "PT" && key_jump2)
-    {
-        jumpstop = 0
-        vsp = -15
+	{
+		jumpstop = 0
+		vsp = -15
 		hsp = (3 * xscale)
-        state = states.jump
-        sprite_index = spr_noise_noisebombspinjump
-        image_index = 0
-        with (instance_create(x, y, obj_jumpdust))
-            image_xscale = other.xscale
-    }
-    if (character == "PT" && sprite_index != spr_superjump_cancelprep)
-    {
-        if (move == 1)
-            hsp = 6
-        if (move == -1)
-            hsp = -6
-    }
+		state = states.jump
+		sprite_index = spr_noise_noisebombspinjump
+		image_index = 0
+		with (instance_create(x, y, obj_jumpdust))
+			image_xscale = other.xscale
+	}
+	if (character == "PT" && sprite_index != spr_superjump_cancelprep)
+	{
+		if (move == 1)
+			hsp = 6
+		if (move == -1)
+			hsp = -6
+	}
 	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && !charactersjump && (sprite_index != spr_superjump_cancelprep))
 	{
 		scr_sound(sound_superjumpcancel);

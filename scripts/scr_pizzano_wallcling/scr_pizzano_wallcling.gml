@@ -22,22 +22,22 @@ function scr_pizzano_wallcling()
 }
 	if character == "PT"
 {
-    hsp = 0
-    if (sprite_index == spr_noise_wallclingstart && floor(image_index) == (image_number - 1))
-        sprite_index = spr_noise_wallcling
-    vsp = 0
-    wallclingcooldown = 0
-    if ( !key_jump2)
-    {
-        jumpstop = 1
-        vsp = -15
-        state = states.jump
-        sprite_index = spr_noise_noisebombspinjump
-        image_index = 0
-        with (instance_create(x, y, obj_jumpdust))
-            image_xscale = other.xscale
-    }
-    image_speed = 0.35
+	hsp = 0
+	if (sprite_index == spr_noise_wallclingstart && floor(image_index) == (image_number - 1))
+		sprite_index = spr_noise_wallcling
+	vsp = 0
+	wallclingcooldown = 0
+	if ( !key_jump2)
+	{
+		jumpstop = 1
+		vsp = -15
+		state = states.jump
+		sprite_index = spr_noise_noisebombspinjump
+		image_index = 0
+		with (instance_create(x, y, obj_jumpdust))
+			image_xscale = other.xscale
+	}
+	image_speed = 0.35
 }
 }
 

@@ -19,7 +19,7 @@ function state_player_pal()
 			instance_create_depth(x, y, -6, obj_poofeffect);
 			sprite_index = spr_pizzelle_selectedpal;
 			image_index = 0;
-         
+		 
 		}
 	}
 	with (obj_playerhatselect)

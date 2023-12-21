@@ -1,20 +1,20 @@
 function scr_collide_destructibles()
 {
 	 if ((state == states.jump && sprite_index == spr_noise_noisebombspinjump) || (state == states.pogo && pogochargeactive == 1))
-    {
-        with (instance_place((x + xscale), y, obj_destructibles))
-            instance_destroy()
-        with (instance_place(((x + hsp) + xscale), y, obj_destructibles))
-            instance_destroy()
-        with (instance_place(x, ((y + vsp) + 1), obj_destructibles))
-            instance_destroy()
-        with (instance_place(x, ((y + vsp) - 1), obj_destructibles))
-            instance_destroy()
-        with (instance_place(x, (y + 1), obj_destructibles))
-            instance_destroy()
-        with (instance_place(x, (y - 1), obj_destructibles))
-            instance_destroy()
-    }
+	{
+		with (instance_place((x + xscale), y, obj_destructibles))
+			instance_destroy()
+		with (instance_place(((x + hsp) + xscale), y, obj_destructibles))
+			instance_destroy()
+		with (instance_place(x, ((y + vsp) + 1), obj_destructibles))
+			instance_destroy()
+		with (instance_place(x, ((y + vsp) - 1), obj_destructibles))
+			instance_destroy()
+		with (instance_place(x, (y + 1), obj_destructibles))
+			instance_destroy()
+		with (instance_place(x, (y - 1), obj_destructibles))
+			instance_destroy()
+	}
 	if (state == states.mach1)
 	{
 		if (place_meeting(x + xscale, y, obj_destructibles))

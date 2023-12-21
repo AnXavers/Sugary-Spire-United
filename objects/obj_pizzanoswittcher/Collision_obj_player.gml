@@ -4,5 +4,9 @@ with (other)
 		character = "P";
 	else
 		character = "N";
-	scr_characterglobal();
+	characterspr();
+	characterpal();
+	charactergui();
+	characterenv();
+	charactersfx();
 }

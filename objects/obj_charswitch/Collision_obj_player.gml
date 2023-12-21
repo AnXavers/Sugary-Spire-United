@@ -10,7 +10,11 @@ with obj_player
 		ini_open(global.fileselect);
 		ini_write_string("Carryover", "player", character)
 		ini_close();
-		scr_characterglobal();
+		characterspr();
+		characterpal();
+		charactergui();
+		characterenv();
+		charactersfx();
 		paletteselect = clamp(paletteselect, 1, palnum)
 	}
 }

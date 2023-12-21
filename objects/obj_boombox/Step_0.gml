@@ -12,3 +12,4 @@ if obj_player.sprite_index != obj_player.spr_breakdance
 	instance_destroy()
 	obj_player.boombox_timer = -1
 }
+image_angle = scr_slopeanglenonplayer(x, y)

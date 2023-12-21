@@ -1,13 +1,7 @@
 flags.do_once = false;
 condition = function()
 {
-	var _check = false;
-	with (obj_player)
-	{
-		if (place_meeting(roomstartx, roomstarty, other))
-			_check = true;
-	}
-	return _check;
+	return place_meeting(obj_player.roomstartx, obj_player.roomstarty, self);
 };
 output = function()
 {

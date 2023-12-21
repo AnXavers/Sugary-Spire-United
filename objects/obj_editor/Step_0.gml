@@ -19,7 +19,7 @@ if mouse_check_button_pressed(mb_left)
 	}
 	else if mode == 2
 	{
-	    tilemap_set(map_id, 2, floor(selected_obj_x / 32), floor(selected_obj_y / 32));
+		tilemap_set(map_id, 2, floor(selected_obj_x / 32), floor(selected_obj_y / 32));
 	}
 }
 if mode == 3

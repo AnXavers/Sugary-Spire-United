@@ -49,7 +49,7 @@ for (var i = 0; i < _string_length; i++)
 #region //confecti
 	//missing confecti
 	//draw_sprite(spr_rankribbon, 1, 496, 234)
-    draw_sprite_ext(mallowspr, mallowdex, 514 + (shake1 ? irandom_range(-2, 2) : 0), 190 + (shake1 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
+	draw_sprite_ext(mallowspr, mallowdex, 514 + (shake1 ? irandom_range(-2, 2) : 0), 190 + (shake1 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
 	draw_sprite_ext(chocospr, chocodex, 594 + (shake2 ? irandom_range(-2, 2) : 0), 186 + (shake2 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
 	draw_sprite_ext(crackspr, crackdex, 677 + (shake3 ? irandom_range(-2, 2) : 0), 187 + (shake3 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);
 	draw_sprite_ext(wormspr, wormdex, 754 + (shake4 ? irandom_range(-2, 2) : 0), 195 + (shake4 ? irandom_range(-2, 2) : 0) + clipy, 1, 1, 0, c_white, 1);

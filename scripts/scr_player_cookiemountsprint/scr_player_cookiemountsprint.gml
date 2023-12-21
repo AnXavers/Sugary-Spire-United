@@ -13,6 +13,8 @@ function state_player_cookiemountattack()
 	}
 	sprite_index = spr_cookiemount_dash
 	movespeed = approach(movespeed, (16 * xscale), 2)
+	verticalMovespeed = approach(verticalMovespeed, 3, 0.2)
+	vsp = verticalMovespeed
 	image_speed = 0.35
 	if (floor(image_index) == (image_number - 1))
 	{
@@ -22,5 +24,14 @@ function state_player_cookiemountattack()
 		sprite_index = spr_cookiemount_idle
 		image_speed = 0.35
 		state = states.cookiemount
+	}
+	if place_meeting(x, y, obj_hotcaramel)
+	{
+		verticalMovespeed = -9
+		vsp = verticalMovespeed
+		sprite_index = spr_cookiemountballonstart
+		image_speed = 0.35
+		image_index = 0;
+		state = states.cookiemountfireass
 	}
 }

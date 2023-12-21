@@ -18,15 +18,15 @@ function txr_thread_read(argument0) {
 	var m = ds_map_create();
 	n = buffer_read(b, buffer_u32);
 	repeat (n) {
-	    var v = txr_value_read(b);
-	    m[?v] = txr_value_read(b);
+		var v = txr_value_read(b);
+		m[?v] = txr_value_read(b);
 	}
 	th[@txr_thread.locals] = m;
 	//show_debug_message(txr_sfmt("actions@%", b.tell()));
 	var n = buffer_read(b, buffer_u32);
 	var w = array_create(n);
 	for (var i = 0; i < n; i++) {
-	    w[i] = txr_action_read(b);
+		w[i] = txr_action_read(b);
 	}
 	th[@txr_thread.actions] = w;
 	//

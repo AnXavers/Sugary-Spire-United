@@ -2,6 +2,7 @@ if (instance_place(x, y - 1, obj_player) && (obj_player.state == states.cookiemo
 {
 	alarm[0] = 1;
 	obj_player.state = states.normal;
+	obj_player.movespeed = abs(obj_player.hsp);
 	obj_player.ridingmarsh = false;
 }
 if (instance_place(x, y - 1, obj_cookiemount))

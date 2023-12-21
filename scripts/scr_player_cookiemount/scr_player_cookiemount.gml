@@ -51,52 +51,45 @@ function state_player_cookiemount()
 	}
 	if (key_jump2 && grounded)
 		vsp = -12
-	if (move == 0 && input_buffer == 0 && sprite_index != spr_cookiemount_skid && sprite_index != spr_cookiemount_dash)
+	if (move == 0 && input_buffer == 0 && sprite_index != spr_cookiemount_skid && sprite_index != spr_cookiemountfireass && sprite_index != spr_cookiemountfireassend)
 	{
 		image_speed = 0.35;
 		sprite_index = spr_cookiemount_idle;
 	}
-	if (move != 0 && sprite_index != spr_cookiemount_skid && sprite_index != spr_cookiemount_dash)
+	if (move != 0 && sprite_index != spr_cookiemount_skid && sprite_index != spr_cookiemountfireass && sprite_index != spr_cookiemountfireassend)
 		sprite_index = spr_player_cookiemount;
-	if (move != 0 && xscale != move  && sprite_index != spr_cookiemount_dash)
+	if (move != 0 && xscale != move)
 	{
 		xscale = move;
-		image_speed = 0.35;
-		image_index = 0;
-		sprite_index = spr_cookiemount_skid;
+		if (sprite_index != spr_cookiemountfireass && sprite_index != spr_cookiemountfireassend)
+		{
+			image_speed = 0.35;
+			image_index = 0;
+			sprite_index = spr_cookiemount_skid;
+		}
 	}
-	if (floor(image_index) == (image_number - 1) && sprite_index == spr_cookiemount_skid)
+	if ((floor(image_index) == (image_number - 1) && sprite_index == spr_cookiemount_skid) || (grounded && (sprite_index == spr_cookiemountfireassend || sprite_index == spr_cookiemountfireass)))
 		sprite_index = spr_player_cookiemount;
-	if (key_slap)
+	if (floor(image_index) == (image_number - 1) && sprite_index == spr_cookiemountfireass)
+		sprite_index = spr_cookiemountfireassend
+	if (key_slap) && global.moveset
 	{
 		sprite_index = spr_cookiemount_dash;
 		image_speed = 0.35;
 		image_index = 0;
 		hsp = movespeed * xscale;
-		vsp = -9.2
+		verticalMovespeed = -4
+		vsp = verticalMovespeed
 		state = states.cookiemountattack;
 	}
-	if ((sprite_index == spr_cookiemountfireass) || (sprite_index == spr_cookiemountfireassstart && floor(image_index) == (image_number - 1)))
+	if place_meeting(x, y, obj_hotcaramel) && sprite_index != spr_cookiemountfireass
 	{
+		verticalMovespeed = -9
+		vsp = verticalMovespeed
+		sprite_index = spr_cookiemountballonstart
 		image_speed = 0.35
-		vsp = 4
-		sprite_index = spr_cookiemountfireass
-		if (key_jump2)
-		{
-			sprite_index = spr_cookiemountfireassend
-			vsp = 20
-			instance_create(x, y, obj_cloudeffect)
-		}
+		image_index = 0;
+		state = states.cookiemountfireass
 	}
-	if sprite_index == spr_cookiemountfireassend
-	{
-		vsp = approach(vsp, 10, 1)
-	}
-	if place_meeting(x, y, obj_hotcaramel)
-	{
-		vsp = -10
-		if sprite_index != spr_cookiemountfireass
-			sprite_index = spr_cookiemountfireassstart
-		image_speed = 0.35
-	}
+	
 }

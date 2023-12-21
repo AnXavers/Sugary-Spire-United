@@ -92,12 +92,12 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 				if (state == states.punch)
 				{
 				 sprite_index = choose(spr_blockbreak1, spr_blockbreak2, spr_blockbreak3, spr_blockbreak4, spr_blockbreak5, spr_blockbreak6, spr_blockbreak7, spr_punch)
-                image_index = 0
-                state = states.tackle
-                movespeed = 3
+				image_index = 0
+				state = states.tackle
+				movespeed = 3
 				machpunchAnim = true;
 				hsp = 2 * xscale
-                vsp = -3
+				vsp = -3
 				other.thrown = true
 				other.vsp = -10;
 			other.movespeed = movespeed + 12;

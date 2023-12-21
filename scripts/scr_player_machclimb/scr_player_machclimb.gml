@@ -7,7 +7,7 @@ function state_player_climbwall()
 	move = key_right + key_left;
 	suplexmove = 0;
 	vsp = -verticalMovespeed;
-		if global.moveset = 2 && verticalMovespeed > 0
+	if global.moveset == 2 && verticalMovespeed > 0
 		verticalMovespeed -= 0.075
 	if (vsp != 0 && place_meeting(x + xscale, y, obj_molassesWall))
 	{
@@ -76,10 +76,10 @@ function state_player_climbwall()
 		}
 	}
 	if ((grounded && verticalMovespeed <= 0) || verticalMovespeed <= 0)
-{
-    state = states.jump
-    sprite_index = spr_fall
-}
+	{
+		state = states.jump
+		sprite_index = spr_fall
+	}
 	if ((scr_solid(x, y - 1, true) && vsp <= 0 && !place_meeting(x, y - 1, obj_destructibles)) && !scr_slope_ext(x + xscale, y))
 	{
 		sprite_index = spr_ceilingcrash;

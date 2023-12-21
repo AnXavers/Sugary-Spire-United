@@ -43,10 +43,10 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				repeat (3)
 					instance_create(x, y, obj_slapstar);
 					   if (state == states.mach3 && sprite_index != spr_superjump_cancel && sprite_index != spr_mach3hit && ((character == "P" && global.newplayeranim == 1)) || character == "S")
-    {
-            sprite_index = spr_mach3hit
-        image_index = 0
-    }
+	{
+			sprite_index = spr_mach3hit
+		image_index = 0
+	}
 				if (!grounded && state != states.freefall && key_jump2)
 				{
 					suplexmove = 0;
@@ -124,49 +124,49 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				}
 			}
 			if (place_meeting(x, (y + 1), other.id) && state == states.pogo && vsp > 0 && other.baddieID.vsp >= 0 && sprite_index != spr_noise_pogobounce)
-            {
-                switch pogochargeactive
-                {
-                    case 0:
-                        pogospeedprev = 0
-                        other.baddieID.vsp = -3
-                        scr_sound(sound_stomp)
-                        other.baddieID.state = states.stunned
-                        if (other.baddieID.stunned < 100)
-                            other.baddieID.stunned = 100
-                        sprite_index = spr_noise_pogobounce
-                        break
-                    case 1:
-                        pogospeedprev = 0
-                        instance_destroy(other.baddieID)
-                        instance_destroy(other.id)
-                        sprite_index = spr_noise_pogobouncemach
-                        break
-                }
+			{
+				switch pogochargeactive
+				{
+					case 0:
+						pogospeedprev = 0
+						other.baddieID.vsp = -3
+						scr_sound(sound_stomp)
+						other.baddieID.state = states.stunned
+						if (other.baddieID.stunned < 100)
+							other.baddieID.stunned = 100
+						sprite_index = spr_noise_pogobounce
+						break
+					case 1:
+						pogospeedprev = 0
+						instance_destroy(other.baddieID)
+						instance_destroy(other.id)
+						sprite_index = spr_noise_pogobouncemach
+						break
+				}
 
-                instance_create(x, (y + 50), obj_stompeffect)
-                image_index = 0
-                movespeed = 0
-                vsp = 0
-            }
-			      if (instance_exists(other.baddieID) && state == states.punch)
-            {
-                sprite_index = choose(spr_blockbreak1, spr_blockbreak2, spr_blockbreak3, spr_blockbreak4, spr_blockbreak5, spr_blockbreak6, spr_blockbreak7, spr_punch)
-                image_index = 0
-                state = states.tackle
-                movespeed = 3
+				instance_create(x, (y + 50), obj_stompeffect)
+				image_index = 0
+				movespeed = 0
+				vsp = 0
+			}
+				  if (instance_exists(other.baddieID) && state == states.punch)
+			{
+				sprite_index = choose(spr_blockbreak1, spr_blockbreak2, spr_blockbreak3, spr_blockbreak4, spr_blockbreak5, spr_blockbreak6, spr_blockbreak7, spr_punch)
+				image_index = 0
+				state = states.tackle
+				movespeed = 3
 				hsp = 2 * xscale
-                vsp = -3
-                if instance_exists(other.baddieID)
-                {
-                    with (other.baddieID)
-                    {
-                        instance_create(x, y, obj_slapstar)
-                        instance_create(x, y, obj_slapstar)
-                        instance_create(x, y, obj_slapstar)
-                        instance_create(x, y, obj_baddiegibs)
-                        instance_create(x, y, obj_baddiegibs)
-                        instance_create(x, y, obj_baddiegibs)
+				vsp = -3
+				if instance_exists(other.baddieID)
+				{
+					with (other.baddieID)
+					{
+						instance_create(x, y, obj_slapstar)
+						instance_create(x, y, obj_slapstar)
+						instance_create(x, y, obj_slapstar)
+						instance_create(x, y, obj_baddiegibs)
+						instance_create(x, y, obj_baddiegibs)
+						instance_create(x, y, obj_baddiegibs)
 						alarm[2] = 1;
 					instance_create(x, y, obj_bangeffect);
 					scr_sound(sound_slaphit);
@@ -177,22 +177,22 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 					state = 6;
 					stunned = 1000;
 				   throw_hit = 1
-                        with (obj_camera)
-                        {
-                            shake_mag = 3
-                            shake_mag_acc = (3 / room_speed)
-                        }
-                        alarm[3] = 3
-                        global.hit += 1
-                        global.combotime = 60
-                   
+						with (obj_camera)
+						{
+							shake_mag = 3
+							shake_mag_acc = (3 / room_speed)
+						}
+						alarm[3] = 3
+						global.hit += 1
+						global.combotime = 60
+				   
 						alarm[2] = 1;
-                    
-                    }
-                }
-                other.baddieID.hsp = (xscale * 25)
-                other.baddieID.vsp = -6
-            }
+					
+					}
+				}
+				other.baddieID.hsp = (xscale * 25)
+				other.baddieID.vsp = -6
+			}
 			if (instance_exists(other.baddieID) && (state == states.cotton && sprite_index == spr_cotton_attack))
 			{
 				with (other.baddieID)

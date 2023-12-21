@@ -84,11 +84,11 @@ function do_grab()
 			}
 			else if character == "PT"
 			{
-    state = states.punch
-    sprite_index = spr_noise_spin
-    image_index = 0
+	state = states.punch
+	sprite_index = spr_noise_spin
+	image_index = 0
 	if movespeed < 10
-    movespeed = 10
+	movespeed = 10
 	scr_sound(sound_suplex1)
 	scr_sound(sound_throw)
 		instance_create(x, y, obj_jumpdust);

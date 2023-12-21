@@ -119,12 +119,12 @@ function state_player_jump()
 		image_index = 0;
 	}
 		 if (key_attack && !pogochargeactive && !key_slap2 && character == "PT")
-            {
-                sprite_index = spr_noise_pogostart
-                image_index = 0
+			{
+				sprite_index = spr_noise_pogostart
+				image_index = 0
 				pogospeed = movespeed
-                state = states.pogo
-            }
+				state = states.pogo
+			}
 	if (grounded && vsp > 0 && !key_attack)
 	{
 		if (key_attack)
@@ -307,7 +307,7 @@ function state_player_jump()
 				doublejumped = 0
 			}
 		}
-		if (floor(image_index) == (image_number - 1) && sprite_index == spr_noise_doublejump)
+	if (floor(image_index) == (image_number - 1) && sprite_index == spr_noise_doublejump)
 		sprite_index = spr_noise_doublejumpfall
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_candytransitionup)
 		sprite_index = spr_candyup;
@@ -329,24 +329,23 @@ function state_player_jump()
 	{
 		if character != "PT"
 		{
-		mach2 = 0;
-		if (movespeed < 6)
-			movespeed = 6;
-		sprite_index = spr_mach1;
-			image_index = 0;
-		jumpAnim = 1;
-		state = states.mach2;
-		if global.moveset = 2
+			mach2 = 0;
+			if (movespeed < 6)
+				movespeed = 6;
+			sprite_index = spr_mach1;
+				image_index = 0;
+			jumpAnim = 1;
+			state = states.mach2;
+			if global.moveset == 2
 				state = states.mach1
-	
 		}
 		else
 		{
-                sprite_index = spr_noise_pogobounce
-                image_index = 0
-				pogospeed = movespeed
-                state = states.pogo
-            }
+			sprite_index = spr_noise_pogobounce
+			image_index = 0
+			pogospeed = movespeed
+			state = states.pogo
+		}
 	}
 	
 }

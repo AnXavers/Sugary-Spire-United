@@ -10,20 +10,21 @@ function state_player_mach2()
 		exit;
 	}
 	if (windingAnim < 2000)
+	{
 		windingAnim++;
 		if (global.moveset = 2 && grounded)
 			mach2 += 1.5;
-			else
-		mach2 = 35
-
+		else
+			mach2 = 35
+	}
 	hsp = xscale * movespeed;
 	move = key_right + key_left;
 	move2 = key_right2 + key_left2;
 	characterwallclimb = 0
 	crouchslideAnim = 1;
 	//this gives characters the ability to climb walls at mach 2
-	if (character == "P" || character == "N" || character == "T" || character == "S" || character = "Z" || character == "V")
-	characterwallclimb = 1
+	if (character != "G" && character != "C" && character != "M" && character != "RM" && character != "GB")
+		characterwallclimb = 1
 	//yayyyyyyyy
 	if (key_jump)
 		input_buffer_jump = 0;
@@ -93,45 +94,45 @@ function state_player_mach2()
 			if global.moveset != 2
 			{
 				if (movespeed < 12)
-			movespeed += 0.1;
-		if (abs(hsp) >= 12 && sprite_index != spr_suplexdash)
-		{
-			machhitAnim = 0;
-			trace("Jerked off");
-			if (movespeed < 12)
-				movespeed = 12;
-				if character != "PT"
-			state = states.mach3;
+					movespeed += 0.1;
+				if (abs(hsp) >= 12 && sprite_index != spr_suplexdash)
+				{
+					machhitAnim = 0;
+					trace("Jerked off");
+					if (movespeed < 12)
+						movespeed = 12;
+						if character != "PT"
+					state = states.mach3;
+					else
+					state = states.pizzano_rocketfist
+					flash = 1;
+					if (sprite_index != spr_rollgetup)
+						sprite_index = spr_mach3player;
+					instance_create(x, y, obj_jumpdust, 
+					{
+						obj_player: id
+					});
+				}
+			}
 			else
-			state = states.pizzano_rocketfist
-			flash = 1;
-			if (sprite_index != spr_rollgetup)
-				sprite_index = spr_mach3player;
-			instance_create(x, y, obj_jumpdust, 
 			{
-				obj_player: id
-			});
-		}
-			}
-			if global.moveset = 2
-	{
-		if (grounded && character == "P")
-            {
-                if (mach2 < 100)
-                    mach2 += 1.5
-                if (mach2 >= 100)
-                {
-                    machhitAnim = 0
-                    state = states.mach3
-                    flash = 1
-                    sprite_index = spr_mach3player
-                    instance_create(x, y, obj_jumpdust)
-                    if (movespeed < 12)
-                        movespeed = 12
-                }
+				if (grounded && character == "P")
+		            {
+		                if (mach2 < 100)
+		                    mach2 += 1.5
+		                if (mach2 >= 100)
+		                {
+		                    machhitAnim = 0
+		                    state = states.mach3
+		                    flash = 1
+		                    sprite_index = spr_mach3player
+		                    instance_create(x, y, obj_jumpdust)
+		                    if (movespeed < 12)
+		                        movespeed = 12
+		                }
 			
+					}
 			}
-	}
 	}
 	if (movespeed >= 8)
 	{
@@ -252,9 +253,9 @@ function state_player_mach2()
 		sprite_index = spr_secondjump1;
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_secondjump1)
 		sprite_index = spr_secondjump2;
-		if (floor(image_index) == (image_number - 1) && sprite_index == spr_longjump)
+	if (floor(image_index) == (image_number - 1) && sprite_index == spr_longjump)
 		sprite_index = spr_longjumpend;
-		if (floor(image_index) == (image_number - 1) && sprite_index == spr_walljumpstart)
+	if (floor(image_index) == (image_number - 1) && sprite_index == spr_walljumpstart)
 		sprite_index = spr_walljumpend
 	if (grounded && (floor(image_index) == (image_number - 1) && sprite_index == spr_rollgetup))
 		sprite_index = spr_mach2;

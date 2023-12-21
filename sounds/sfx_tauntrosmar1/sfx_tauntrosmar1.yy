@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.882381,
+  "duration": 0.690612,
   "parent": {
     "name": "Taunt",
     "path": "folders/Sounds/Sounds/Player/Taunt.yy",

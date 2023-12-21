@@ -26,7 +26,7 @@ else
 		tvsprite = spr_tvoff;
 	with (obj_player)
 	{
-		scr_characterglobal();
+		characterspr();
 		state = 2;
 		targetDoor = "A";
 	}

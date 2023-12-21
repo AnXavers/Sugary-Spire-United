@@ -59,41 +59,41 @@ if (character == "P")
 if ((angry == 1 || global.stylethreshold > 3) && sprite_index == spr_idle)
 	sprite_index = spr_angryidle;
 scr_playersounds();
-    if (state != states.pogo && state != states.backbreaker)
+	if (state != states.pogo && state != states.backbreaker)
 {
-    pogospeed = 6
-    pogospeedprev = 0
+	pogospeed = 6
+	pogospeedprev = 0
 }
 if (pogochargeactive == 1)
 {
-    if (flashflicker == 0)
-    {
-        if (pogochargeactive == 1 && sprite_index == spr_noise_pogofall)
-            sprite_index = spr_noise_pogofallmach
-        if (pogochargeactive == 1 && sprite_index == spr_noise_pogobounce)
-            sprite_index = spr_noise_pogobouncemach
-    }
-    flashflicker = 1
-    pogocharge--
+	if (flashflicker == 0)
+	{
+		if (pogochargeactive == 1 && sprite_index == spr_noise_pogofall)
+			sprite_index = spr_noise_pogofallmach
+		if (pogochargeactive == 1 && sprite_index == spr_noise_pogobounce)
+			sprite_index = spr_noise_pogobouncemach
+	}
+	flashflicker = 1
+	pogocharge--
 }
 else
-    flashflicker = 0
+	flashflicker = 0
 if (pogocharge == 0)
 {
-    pogochargeactive = 0
-    pogocharge = 100
+	pogochargeactive = 0
+	pogocharge = 100
 }
 if (flashflicker == 1)
 {
-    flashflickertime++
-    if (flashflickertime == 20)
-    {
-        flash = 1
-        flashflickertime = 0
-    }
+	flashflickertime++
+	if (flashflickertime == 20)
+	{
+		flash = 1
+		flashflickertime = 0
+	}
 }
 if (wallclingcooldown < 10)
-    wallclingcooldown++
+	wallclingcooldown++
 if (sprite_index == spr_winding && state != states.normal)
 	windingAnim = 0;
 else

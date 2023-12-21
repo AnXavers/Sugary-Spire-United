@@ -381,26 +381,26 @@ function state_player_normal()
 		image_index = 0;
 		sprite_index = spr_gumbob_brew_pulloutdrink;
 	}
-		if (key_attack && character == "PT" && pogochargeactive = 1)
+	if (key_attack && character == "PT" && pogochargeactive = 1)
 	{
 		if !key_up
 		{
-		sprite_index = spr_superjump_cancelprep;
-		image_index = 0;
-		movespeed = 0;
-		mach2 = 0;
-		charged = 0;
-		state = states.pizzano_rocketfist;
+			sprite_index = spr_superjump_cancelprep;
+			image_index = 0;
+			movespeed = 0;
+			mach2 = 0;
+			charged = 0;
+			state = states.pizzano_rocketfist;
 		}
 		else
 		{
-		alarm[0] = 240;
-		sprite_index = spr_superjumpprep;
-		image_index = 0;
-		movespeed = 0;
-		mach2 = 0;
-		state = states.Sjump;
-	}
+			alarm[0] = 240;
+			sprite_index = spr_superjumpprep;
+			image_index = 0;
+			movespeed = 0;
+			mach2 = 0;
+			state = states.Sjump;
+		}
 	}
 	if (key_attack && grounded && !scr_solid(x + xscale, y, true) && pogochargeactive = 0)
 	{
@@ -413,7 +413,7 @@ function state_player_normal()
 			sprite_index = spr_mach1;
 			jumpAnim = 1;
 			state = states.mach2;
-			if global.moveset = 2
+			if global.moveset == 2
 				state = states.mach1
 		}
 		else if character != "PT"
@@ -428,7 +428,7 @@ function state_player_normal()
 			pogospeed = movespeed
 			image_index = 0
 			state = states.pogo
-			}
+		}
 			
 	}
 	if (character == "C")
