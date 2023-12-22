@@ -305,30 +305,42 @@ switch (room)
 	case mines_1:
 		window_set_caption("Hard at work underneath the Sugary Spire");
 		break;
+	case rm_preinitializer:
+	case rm_initializer:
 	case rm_titlecard:
 		window_set_caption("Loading the Sugary Spire");
 		break;
 	case rm_painterarena:
 		window_set_caption("Artist's representation of the Sugary Spire");
 		break;
+	case rm_pizzanoarena:
+		window_set_caption("Madman's thoughts on the Sugary Spire");
+		break;
 	case estate_1_new:
 	case estate_1_old:
 	case estate_1:
 		window_set_caption("Property of the Sugary Spire");
 		break;
+	case mountain_intro_old:
+	case mountain_intro:
+		window_set_caption("Fudging it up inside of the Sugary Spire");
+		break;
 	case bee_1_old:
 	case bee_1:
-		window_set_caption("Buzzing cities in the Sugary Spire.");
+		window_set_caption("Buzzing cities within Sugary Spire");
+		break;
+	case finale_1:
+		window_set_caption("At the end of the Sugary Spire");
 		break;
 	case sucrose_1:
-		window_set_caption("At the end of the Spire.");
+		window_set_caption("Desolate Wastelands inside of the Sugary Spire");
 		break;
 	case silver_0:
 	case silver_1:
 	case silver_2:
 	case silver_3:
 	case silver_4:
-		window_set_caption("The edge.");
+		window_set_caption("The edge");
 		break;
 }
 audio_listener_position(Cam_x, Cam_y, 0);

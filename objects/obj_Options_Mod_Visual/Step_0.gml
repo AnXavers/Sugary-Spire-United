@@ -18,8 +18,9 @@ if canmove
 		optionsaved_oldhud = global.oldhud;
 		optionsaved_harryfreeze = global.harryfreeze;
 		optionsaved_newvoicelines = global.newvoicelines;
+		optionsaved_destroyables = global.destroyables;
 	}
-	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 10)
+	if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 11)
 	{
 		optionselected++;
 		scr_sound(sound_step);
@@ -33,6 +34,7 @@ if canmove
 		optionsaved_harryfreeze = global.harryfreeze;
 		optionsaved_newvoicelines = global.newvoicelines;
 		optionsaved_destroyables = global.destroyables;
+		optionsaved_richpresence = global.richpresence;
 	}
 	switch (optionselected)
 	{
@@ -187,10 +189,10 @@ if canmove
 			}
 			break;
 		case 10:
-			subtitle = "PLAYS THE NEW PIZZELLE VOICELINES";
+			subtitle = "CHOOSE WHAT DESTROYABLES APPEAR IN LEVELS";
 			CursorY = 1050;
 			optionsaved_destroyables += (key_right2 + key_left2);
-			optionsaved_destroyables = wrap(optionsaved_destroyables, 0, 2);
+			optionsaved_destroyables = wrap(optionsaved_destroyables, 0, 3);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow);
@@ -198,6 +200,20 @@ if canmove
 				ini_write_real("Settings", "destroyables", optionsaved_destroyables);
 				ini_close();
 				global.destroyables = optionsaved_destroyables;
+			}
+			break;
+		case 11:
+			subtitle = "SHOWS YOUR INGAME STATUS ON DICSORD";
+			CursorY = 1200;
+			optionsaved_richpresence += (key_right2 + key_left2);
+			optionsaved_richpresence = wrap(optionsaved_richpresence, 0, 1);
+			if (key_jump)
+			{
+				scr_sound(sound_enemythrow);
+				ini_open("optionData.ini");
+				ini_write_real("Settings", "richpresence", optionsaved_richpresence);
+				ini_close();
+				global.richpresence = optionsaved_richpresence;
 			}
 			break;
 	}

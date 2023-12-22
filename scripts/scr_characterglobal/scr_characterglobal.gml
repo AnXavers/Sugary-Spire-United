@@ -352,7 +352,7 @@ function characterspr()
 	spr_escapepopup = spr_sugarrush
 	spr_fireassend = spr_pizzelle_fireassend
 	spr_fireassgrab = spr_pizzelle_fireassgrab
-	spr_fireassstart = spr_pizzelle_fireassstart_new
+	spr_fireassstart = spr_pizzelle_fireass
 	spr_donutSlam_land = spr_pizzelle_donutSlam_land
 	spr_skatedive = spr_pizzelle_skatedive
 	spr_skatedoublejump = spr_pizzelle_skatedoublejump
@@ -422,8 +422,8 @@ function characterspr()
 		spr_angryidle = spr_pizzelle_3hpidle_new
 		spr_angrywalk = spr_pizzelle_3hpwalk_new;
 		spr_splat = spr_pizzelle_splat_new;
-		spr_fireass = spr_pizzelle_fireass
-		spr_fireassgrab = spr_pizzelle_fireassgrab
+		spr_fireass = spr_pizzelle_fireass_new
+		spr_fireassgrab = spr_pizzelle_fireassgrab_new
 		spr_fireassstart = spr_pizzelle_fireassstart_new
 		spr_fireassend = spr_pizzelle_fireassend
 		spr_mach3hit = spr_pizzelle_mach3hit_new
@@ -436,6 +436,8 @@ function characterspr()
 		spr_mach3roll = spr_pizzelle_mach3roll_new
 		spr_suplexbump = spr_pizzelle_splat_new
 		spr_mach3jump = spr_pizzelle_mach3jump_new;
+		spr_winding = spr_pizzelle_winding_new
+		spr_mach3ceiling = spr_pizzelle_ceilingmach_new
 	}
 	else if global.newplayeranim == 2
 	{

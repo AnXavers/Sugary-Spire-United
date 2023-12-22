@@ -168,8 +168,8 @@ global.newscorefont = ini_read_real("Settings", "newscorefont", 0);
 global.newplayeranim = ini_read_real("Settings", "newplayeranim", 0);
 global.erankstack = ini_read_real("Settings", "erankstack", 0);
 global.slopeangle = ini_read_real("Settings", "slopeangle", 1);
-global.richpresense = ini_read_real("Settings", "richpresense", 0);
-global.richpresensetype = ini_read_real("Settings", "richpresensetype", 0);
+global.richpresence = ini_read_real("Settings", "richpresence", 0);
+global.richpresencetype = ini_read_real("Settings", "richpresencetype", 0);
 global.coneballparry = ini_read_real("Settings", "coneballparry", 0);
 global.language = ini_read_real("Settings", "language", 0);
 global.machsfx = ini_read_real("Settings", "machsfx", 0);
@@ -183,6 +183,9 @@ global.destroyables = ini_read_real("Settings", "destroyables", 0)
 global.checkpoints = ini_read_real("Settings", "checkpoints", 0)
 global.cam_w = ini_read_real("Settings", "reswidth", 960);
 global.cam_h = ini_read_real("Settings", "resheight", 540);
+global.richpresence = ini_read_real("Settings", "richpresence", 0);
+if global.richpresence
+	instance_create(-1000, -1000, objNekoPresenceDemo)
 window_set_size(global.cam_w, global.cam_h)
 surface_resize(application_surface, global.cam_w, global.cam_h)
 for (i = 0; i < (array_length(global.musiclist) - 1); i++)

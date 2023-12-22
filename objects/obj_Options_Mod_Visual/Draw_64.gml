@@ -31,9 +31,13 @@ draw_option(480, 950 + ScrollY, "NEW PIZZELLE VOICELINES", optionselected == 9);
 draw_option(280, 1000 + ScrollY, "ON", optionsaved_newvoicelines);
 draw_option(680, 1000 + ScrollY, "OFF", !optionsaved_newvoicelines);
 draw_option(480, 1050 + ScrollY, "DESTROYABLES", optionselected == 10);
-draw_option(180, 1100 + ScrollY, "DEFAULT", optionsaved_destroyables == 0);
-draw_option(480, 1100 + ScrollY, "NEW", optionsaved_destroyables == 1);
-draw_option(780, 1100 + ScrollY, "OLD", optionsaved_destroyables == 2);
+draw_option(280, 1100 + ScrollY, "DEFAULT", optionsaved_destroyables == 0);
+draw_option(680, 1100 + ScrollY, "FINALIZED", optionsaved_destroyables == 1);
+draw_option(280, 1150 + ScrollY, "SEPTEMBER", optionsaved_destroyables == 2);
+draw_option(680, 1150 + ScrollY, "CLASSIC", optionsaved_destroyables == 3);
+draw_option(480, 1200 + ScrollY, "DISCORD RICH PRESENCE", optionselected == 11);
+draw_option(280, 1250 + ScrollY, "ON", optionsaved_richpresence);
+draw_option(680, 1250 + ScrollY, "OFF", !optionsaved_richpresence);
 draw_set_font(global.smallfont);
 var _string_width = string_width(subtitle) + 32;
 if (subtitle != "")
