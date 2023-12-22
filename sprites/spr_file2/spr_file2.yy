@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "spr_file2",
   "bbox_bottom": 495,
-  "bbox_left": 285,
-  "bbox_right": 579,
+  "bbox_left": 5,
+  "bbox_right": 299,
   "bbox_top": 197,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -116,5 +116,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 960,
+  "width": 400,
 }

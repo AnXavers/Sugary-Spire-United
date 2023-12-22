@@ -10,6 +10,12 @@ function do_taunt()
 			scr_sound(sound_supertaunt1);
 			image_index = 0;
 			sprite_index = choose(spr_supertaunt1, spr_supertaunt2, spr_supertaunt3);
+			if (global.panic = 1 && global.exitgatetaunt < 10 && place_meeting(x, y, obj_exitgate))
+			{
+				create_small_number(x, y, "250");
+				global.collect += 250
+				global.exitgatetaunt++
+			}
 		}
 		else
 		{

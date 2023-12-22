@@ -5,3 +5,4 @@ vsp = -5
 grav = 0.5
 xscale = 1;
 grace = 20
+stuckfix = 0

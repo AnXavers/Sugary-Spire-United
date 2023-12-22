@@ -4251,6 +4251,7 @@
     {"id":{"name":"spr_stick_takemoney1","path":"sprites/spr_stick_takemoney1/spr_stick_takemoney1.yy",},},
     {"id":{"name":"steamy_secret3_old","path":"rooms/steamy_secret3_old/steamy_secret3_old.yy",},},
     {"id":{"name":"spr_rank_timenum","path":"sprites/spr_rank_timenum/spr_rank_timenum.yy",},},
+    {"id":{"name":"sfx_wrenchadjust","path":"sounds/sfx_wrenchadjust/sfx_wrenchadjust.yy",},},
     {"id":{"name":"bg_templebgnew1Escape","path":"sprites/bg_templebgnew1Escape/bg_templebgnew1Escape.yy",},},
     {"id":{"name":"silver_4","path":"rooms/silver_4/silver_4.yy",},},
     {"id":{"name":"spr_pizzelle_cookiemount_idle","path":"sprites/spr_pizzelle_cookiemount_idle/spr_pizzelle_cookiemount_idle.yy",},},

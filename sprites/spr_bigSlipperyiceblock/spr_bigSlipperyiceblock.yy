@@ -55,8 +55,8 @@
   "nineSlice": {
     "resourceType": "GMNineSliceData",
     "resourceVersion": "1.0",
-    "bottom": 23,
-    "enabled": false,
+    "bottom": 0,
+    "enabled": true,
     "guideColour": [
       4294902015,
       4294902015,
@@ -65,8 +65,8 @@
     ],
     "highlightColour": 1728023040,
     "highlightStyle": 1,
-    "left": 22,
-    "right": 24,
+    "left": 0,
+    "right": 0,
     "tileMode": [
       2,
       2,
@@ -74,7 +74,7 @@
       2,
       1,
     ],
-    "top": 28,
+    "top": 0,
   },
   "origin": 0,
   "parent": {

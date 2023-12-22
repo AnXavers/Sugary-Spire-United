@@ -640,6 +640,7 @@ function characterspr()
 			mu_lap10song = mu_pizzano_death
 			sfx_taunt = "sfx_tauntpizzano"
 			taunt_upperrange = 8
+			break;
 		case "G":
 			spr_idle = spr_gumbob_idle;
 			spr_move = spr_gumbob_walk;
@@ -670,6 +671,7 @@ function characterspr()
 			// audio
 			sfx_taunt = "sfx_tauntgumbob"
 			taunt_upperrange = 1
+			break;
 		case "C":
 			spr_idle = spr_coneboy_idle;
 			spr_move = spr_coneboy_walk;
@@ -707,7 +709,7 @@ function characterspr()
 			}
 			sfx_taunt = "sound_tauntextra"
 			taunt_upperrange = 2
-			// palettes
+			break;
 		case "S":
 			spr_idle = spr_peppino_idle;
 			spr_move = spr_peppino_move;
@@ -998,20 +1000,6 @@ function characterspr()
 			font_lapcount = global.lapcountpepfont
 			font_collect_new = global.collectpepfont
 			font_collect = global.collectpepfont
-			// audio
-			mu_escapesong = mu_peppino_escape
-			mu_lap2song = mu_peppino_lap
-			mu_lap5song = mu_peppino_despairy
-			mu_lap10song = mu_peppino_death
-			sfx_lapbell = sfx_lapbells_pep
-			sfx_escapecollectbig = sfx_bellcollectbig
-			sfx_escapecollect = sfx_bellcollectsmall
-			sfx_collectmassive = sfx_collectgiant
-			sfx_collectlarge = sfx_collectbig
-			sfx_collect = sfx_collectsmall
-			sfx_taunt = "sound_tauntpeppino"
-			taunt_upperrange = 1
-			sfx_supertaunt = sound_supertaunt1
 			break;
 		case "T":
 			spr_idle = spr_noise_idle;
@@ -2149,6 +2137,17 @@ function charactersfx()
 		case "S":
 			sfx_taunt = "sfx_tauntpeppino"
 			taunt_upperrange = 1
+			mu_escapesong = mu_peppino_escape
+			mu_lap2song = mu_peppino_lap
+			mu_lap5song = mu_peppino_despairy
+			mu_lap10song = mu_peppino_death
+			sfx_lapbell = sfx_lapbells_pep
+			sfx_escapecollectbig = sfx_bellcollectbig
+			sfx_escapecollect = sfx_bellcollectsmall
+			sfx_collectmassive = sfx_collectgiant
+			sfx_collectlarge = sfx_collectbig
+			sfx_collect = sfx_collectsmall
+			sfx_supertaunt = sound_supertaunt1
 			break;
 		case "PT":
 		case "T":

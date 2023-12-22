@@ -74,23 +74,14 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 			other.state = enemystates.stun;
 			other.vsp = -11;
 			if (state == states.mach2)
-			{
 				other.vsp = -7;
 			other.movespeed = movespeed + 2;
-			}
 			if (state == states.pogo && !pogochargeactive)
-			{
 				other.vsp = -7;
-			other.movespeed = movespeed + 2;
-			}
-				if (state == states.pogo && pogochargeactive)
-				{
-				other.state = enemystates.stun;
-			other.vsp = -11;
-			other.movespeed = movespeed + 2;
-				}
-				if (state == states.punch)
-				{
+			if (state == states.pogo && pogochargeactive)
+				other.vsp = -11;
+			if (state == states.punch)
+			{
 				 sprite_index = choose(spr_blockbreak1, spr_blockbreak2, spr_blockbreak3, spr_blockbreak4, spr_blockbreak5, spr_blockbreak6, spr_blockbreak7, spr_punch)
 				image_index = 0
 				state = states.tackle
@@ -100,8 +91,8 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 				vsp = -3
 				other.thrown = true
 				other.vsp = -10;
-			other.movespeed = movespeed + 12;
-				}
+				other.movespeed = movespeed + 12;
+			}
 			if (state == states.bottlerocket)
 			{
 				other.vsp -= 7;

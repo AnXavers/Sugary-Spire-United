@@ -3970,6 +3970,7 @@
     {"name":"spr_stick_takemoney1","order":10,"path":"sprites/spr_stick_takemoney1/spr_stick_takemoney1.yy",},
     {"name":"steamy_secret3_old","order":17,"path":"rooms/steamy_secret3_old/steamy_secret3_old.yy",},
     {"name":"spr_rank_timenum","order":766,"path":"sprites/spr_rank_timenum/spr_rank_timenum.yy",},
+    {"name":"sfx_wrenchadjust","order":11,"path":"sounds/sfx_wrenchadjust/sfx_wrenchadjust.yy",},
     {"name":"bg_templebgnew1Escape","order":25,"path":"sprites/bg_templebgnew1Escape/bg_templebgnew1Escape.yy",},
     {"name":"silver_4","order":4,"path":"rooms/silver_4/silver_4.yy",},
     {"name":"spr_pizzelle_cookiemount_idle","order":2,"path":"sprites/spr_pizzelle_cookiemount_idle/spr_pizzelle_cookiemount_idle.yy",},
