@@ -35,7 +35,7 @@ function scr_enemy_throw()
 		{
 			case obj_gumslime:
 				bombreset = 200;
-				scr_sound(sound_enemythrow);
+				scr_sound(sfx_gumspit);
 				with (instance_create(x + (image_xscale * 6), y - 6, obj_gumslime_proj))
 				{
 					image_xscale = other.image_xscale;
@@ -55,7 +55,7 @@ function scr_enemy_throw()
 				break;
 			case obj_spitwad:
 				bombreset = 200;
-				scr_sound(sound_enemythrow);
+				scr_sound(sfx_gumspit);
 				with (instance_create(x + (image_xscale * 6), y - 6, obj_gumslime_proj))
 				{
 					image_xscale = other.image_xscale;
@@ -83,8 +83,7 @@ function scr_enemy_throw()
 				break;
 			case obj_gumballmachine:
 				bombreset = 500;
-				if (!audio_is_playing(sound_enemythrow))
-					scr_sound(sound_enemythrow);
+				scr_sound(sound_enemythrow);
 				with (instance_create(x + (image_xscale * 6), y - 6, obj_gumball))
 				{
 					image_xscale = other.image_xscale;
@@ -94,8 +93,7 @@ function scr_enemy_throw()
 				break;
 			case obj_cottonwitch:
 				bombreset = 400;
-				if (!audio_is_playing(sound_enemythrow))
-					scr_sound(sound_enemythrow);
+				scr_sound(sfx_cottonthrow);
 				if (!painter && important)
 				{
 					with (instance_create(x, y, obj_cottonwitchprojectile))
@@ -158,8 +156,7 @@ function scr_enemy_throw()
 				break;
 			case obj_eskimo:
 				bombreset = 400;
-				if (!audio_is_playing(sound_enemythrow))
-					scr_sound(sound_enemythrow);
+				scr_sound(sfx_eskimothrow);
 				with (instance_create(x, y, obj_eskimoprojectile))
 					image_xscale = other.image_xscale;
 				break;

@@ -40,6 +40,8 @@ function state_player_hurt()
 			sprite_index = spr_cookiemounthurt;
 			vsp = -8;
 			hsp = -image_xscale * 8;
+			var _sfx = scr_sound(sfx_dogmount_ride)
+			audio_sound_pitch(_sfx, 1.20)
 		}
 		ridingmarsh = false;
 	}

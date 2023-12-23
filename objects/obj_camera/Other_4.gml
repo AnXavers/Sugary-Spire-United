@@ -76,5 +76,5 @@ if (instance_exists(obj_player) && (obj_player.state != states.timesup && obj_pl
 global.wave = global.maxwave - global.fill;
 scr_layerswap();
 var _chance = (current_hour <= 6 || current_hour >= 18) ? 0.02 : 0.01;
-if chance(_chance)
+if chance(_chance) && scr_roomcheck()
 	instance_create(random(room_width), random(room_height), obj_hallucinationspawner)

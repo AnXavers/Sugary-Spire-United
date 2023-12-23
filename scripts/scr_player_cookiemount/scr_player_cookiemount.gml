@@ -7,7 +7,7 @@ function state_player_cookiemount()
 	if (move != 0 && input_buffer == 0)
 	{
 		if (move == xscale)
-			movespeed = approach(movespeed, xscale * 16, 0.65);
+			movespeed = (global.moveset == 1) ? approach(movespeed, xscale * 16, 0.65) : approach(movespeed, xscale * 10, 0.65);
 		else
 			movespeed = approach(movespeed, 0, 0.45);
 		if (movespeed != 0 && place_meeting_solid(x + sign(xscale), y, obj_solid) && (!place_meeting_slope(x + sign(xscale * 10), y + 1) && (!place_meeting(x + sign(xscale), y, obj_destructibles) && !place_meeting(x + sign(xscale), y, obj_chocofrog))))
@@ -72,8 +72,9 @@ function state_player_cookiemount()
 		sprite_index = spr_player_cookiemount;
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_cookiemountfireass)
 		sprite_index = spr_cookiemountfireassend
-	if (key_slap) && global.moveset
+	if (key_slap) && (global.moveset == 1)
 	{
+		scr_sound(sfx_playerspin);
 		sprite_index = spr_cookiemount_dash;
 		image_speed = 0.35;
 		image_index = 0;
@@ -82,7 +83,7 @@ function state_player_cookiemount()
 		vsp = verticalMovespeed
 		state = states.cookiemountattack;
 	}
-	if place_meeting(x, y, obj_hotcaramel) && sprite_index != spr_cookiemountfireass
+	if (place_meeting(x, y, obj_hotcaramel) && sprite_index != spr_cookiemountfireass && (global.moveset == 1))
 	{
 		verticalMovespeed = -9
 		vsp = verticalMovespeed

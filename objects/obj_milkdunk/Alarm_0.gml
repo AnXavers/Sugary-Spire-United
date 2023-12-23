@@ -2,6 +2,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 {
 	audio_stop_sound(sound_points);
 	scr_sound(sound_points);
+	scr_sound(sfx_dunk);
 	global.collect += 100;
 	create_small_number(x + 64, y + 32, "100");
 	repeat (5)

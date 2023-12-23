@@ -37,7 +37,9 @@ function state_player_honey()
 			state = states.jump;
 		}
 		jumpAnim = 1;
+		audio_stop_sound(sfx_honeysplat)
 		scr_sound(sound_jump);
+		scr_sound(sfx_honeyrelease);
 		if (instance_exists(webID))
 		{
 			with (webID)
