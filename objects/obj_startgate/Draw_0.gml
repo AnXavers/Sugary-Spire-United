@@ -52,7 +52,7 @@ else
 }
 if (surface_exists(surf))
 	draw_surface(surf, xLeft, yTop);
-if (showtext)
+if (showtext) && (showinfo)
 {
 	ini_open(global.fileselect);
 	draw_set_font(global.smallfont);
@@ -137,6 +137,6 @@ if (showtext)
 		pal_swap_set(spr_palcandle, pal, false);
 		draw_text(x + _xx + 20, y + _yy + _yyoffset - 320, string_char_at(_string, i + 1));
 		shader_reset();
+		ini_close();
 	}
-	ini_close();
 }

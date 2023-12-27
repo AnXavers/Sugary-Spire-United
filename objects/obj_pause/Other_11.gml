@@ -5,6 +5,7 @@ if (global.levelname != "none")
 	instance_activate_all();
 	scr_levelSet();
 	room = global.firstlvlRoom
+	modifierinitiate()
 	global.gamePauseState = 0;
 	with (obj_player)
 		targetDoor = "A";

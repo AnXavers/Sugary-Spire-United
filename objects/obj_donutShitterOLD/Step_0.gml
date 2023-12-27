@@ -55,6 +55,7 @@ switch (state)
 				}
 				donutNumber--;
 				image_index = 0;
+				scr_sound(sfx_gumspit);
 			}
 			if (donutNumber <= 0 && animation_end())
 			{

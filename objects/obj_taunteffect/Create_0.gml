@@ -40,9 +40,3 @@ with obj_player
 image_speed = 0.5;
 sprite_index = spr_taunteffect
 depth = -1
-if (global.panic = 1 && global.exitgatetaunt < 10 && place_meeting(x, y, obj_exitgate))
-{
-	create_small_number(x, y, "25");
-	global.collect += 25
-	global.exitgatetaunt++
-}

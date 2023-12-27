@@ -11,6 +11,7 @@ if (visible)
 			xscale = other.image_xscale;
 			image_index = 0;
 			sprite_index = spr_bottlerocketstart;
+			scr_sound(sfx_sodaopen);
 		}
 	}
 }

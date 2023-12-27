@@ -2,7 +2,7 @@ scr_sound(sound_enemythrow)
 optionselected = 0;
 sub_optionselected = 0;
 level = instance_nearest(x, y, obj_startgate).level
-var _lvl = "Level" + capitalize_section(level, 1, 1)
+var _lvl = capitalize_section(global.levelname, 1, 1) + "Modifiers"
 ini_open("optionData.ini");
 global.gamemode = ini_read_real(_lvl, "gamemode", 0);
 global.leveldesign = ini_read_real(_lvl, "leveldesign", 1);

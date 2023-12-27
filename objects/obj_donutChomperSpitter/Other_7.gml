@@ -4,6 +4,7 @@ if (sprite_index == spr_donutShitterEating)
 	{
 		audio_stop_sound(sound_points);
 		scr_sound(sound_points);
+		scr_sound(sfx_gumspit);
 		global.collect += 50;
 		create_small_number(x, y, "50");
 		instance_create(x, y, obj_collecteffect, 
@@ -17,7 +18,7 @@ if (sprite_index == spr_donutShitterEating)
 			hsp = lengthdir_x(14, _angle);
 			vsp = lengthdir_y(14, _angle);
 			shattedBy = other.object_index;
-			image_angle = other.image_angle
+			image_angle = (other.image_angle - 90)
 		}
 		givenPoints = true;
 	}

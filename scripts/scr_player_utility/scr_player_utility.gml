@@ -28,6 +28,13 @@ function do_taunt()
 				global.collect += (15 + (trickcount * 5))
 				trickcount++
 			}
+			else
+			if (global.panic = 1 && global.exitgatetaunt < 10 && place_meeting(x, y, obj_exitgate))
+			{
+				create_small_number(x, y, "25");
+				global.collect += 25
+				global.exitgatetaunt++
+			}
 		}
 		instance_create(x, y, obj_taunteffect);
 		with (obj_baddie)

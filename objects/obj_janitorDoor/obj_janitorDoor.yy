@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_worlddoor_closed",
-    "path": "sprites/spr_worlddoor_closed/spr_worlddoor_closed.yy",
+    "name": "spr_worlddoor",
+    "path": "sprites/spr_worlddoor/spr_worlddoor.yy",
   },
   "spriteMaskId": null,
   "visible": true,

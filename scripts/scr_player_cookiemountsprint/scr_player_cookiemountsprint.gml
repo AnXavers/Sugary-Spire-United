@@ -12,13 +12,13 @@ function state_player_cookiemountattack()
 			instance_create(x, y, obj_slapstar);
 	}
 	sprite_index = spr_cookiemount_dash
-	movespeed = approach(movespeed, (16 * xscale), 2)
+	movespeed = approach(movespeed, (13 * xscale), 2)
 	verticalMovespeed = approach(verticalMovespeed, 3, 0.2)
 	vsp = verticalMovespeed
 	image_speed = 0.35
 	if (floor(image_index) == (image_number - 1))
 	{
-		movespeed = (16 * xscale);
+		movespeed = (13 * xscale);
 		hsp = movespeed
 		image_index = 0
 		sprite_index = spr_cookiemount_idle

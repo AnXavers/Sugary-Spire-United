@@ -679,6 +679,7 @@ function sh_quick_load()
 			targetDoor = other.targetDoor;
 			targetRoom = other.targetRoom;
 			ds_queue_clear(global.newhudmessage);
+			modifierinitiate()
 			audio_stop_all();
 		}
 	}

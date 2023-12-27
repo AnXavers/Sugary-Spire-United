@@ -2,7 +2,7 @@ draw_set_font(global.promptfont);
 draw_set_halign(fa_center);
 draw_set_color(c_white);
 draw_set_alpha(bgalpha);
-draw_sprite_tiled(bg_tutorial1_0, 0, bg_scroll, bg_scroll);
+draw_sprite_tiled(bg_titlescreen, 0, bg_scroll, bg_scroll);
 var _borderwave = wave(-4, 4, 4, 0, )
 draw_sprite(spr_titlescreenborder, 0, _borderwave, _borderwave)
 draw_sprite_ext(spr_titlescreenborder, 0, global.cam_w - _borderwave, _borderwave, -1, 1, 0, c_white, bgalpha)

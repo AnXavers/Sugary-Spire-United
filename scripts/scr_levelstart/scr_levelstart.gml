@@ -76,3 +76,37 @@ function scr_levelstart(argument0, argument1)
 	global.brank = global.srank - ((global.srank / 4) * 2);
 	global.crank = global.srank - ((global.srank / 4) * 3);
 }
+function modifierinitiate()
+{
+	var _lvl = capitalize_section(global.levelname, 1, 1) + "Modifiers"
+	ini_open("optionData.ini");
+	global.gamemode = ini_read_real(_lvl, "gamemode", 0);
+	global.leveldesign = ini_read_real(_lvl, "leveldesign", 1);
+	global.lapmode = ini_read_real(_lvl, "lapmode", 1);
+	global.jerald = ini_read_real(_lvl, "jerald", 0);
+	global.perfect = ini_read_real(_lvl, "perfect", 0);
+	global.flashlight = ini_read_real(_lvl, "flashlight", 0);
+	global.collects = ini_read_real(_lvl, "collects", 1);
+	global.breakables = ini_read_real(_lvl, "breakables", 1);
+	global.enemies = ini_read_real(_lvl, "enemies", 1);
+	global.escapetimer = ini_read_real(_lvl, "escapetimer", 0);
+	ini_close();
+	with obj_player
+	{
+		switch global.leveldesign
+		{
+			case 1:
+				if ((asset_get_index(room_get_name(targetRoom) + "_new")) != -1)
+					targetRoom = asset_get_index(room_get_name(targetRoom) + "_new")
+				break;
+			case 2:
+				if ((asset_get_index(room_get_name(targetRoom) + "_old")) != -1)
+					targetRoom = asset_get_index(room_get_name(targetRoom) + "_old")
+				break;
+			case 3:
+				if ((asset_get_index(room_get_name(targetRoom) + "_custom")) != -1)
+					targetRoom = asset_get_index(room_get_name(targetRoom) + "_custom")
+				break;
+		}
+	}
+}

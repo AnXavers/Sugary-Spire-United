@@ -12,7 +12,7 @@ with (instance_create(x, y, enemy))
 	squashedx = true;
 	squashvalx = 0;
 	stunned = 20;
-	if (enemy == obj_baddie)
+	if (other.enemy == obj_baddie)
 	{
 		invincible = false;
 		visible = true;
@@ -24,3 +24,4 @@ with (instance_create(x, y, enemy))
 }
 if (important)
 	instance_destroy();
+scr_sound(sfx_shoot)

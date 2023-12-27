@@ -30,6 +30,7 @@ if (sprite_index != spr_exitgateclosed)
 			}
 			else if (animation_end() || keyboard_check_pressed(vk_enter))
 			{
+				modifierinitiate();
 				if (!instance_exists(obj_titlecard) && other.do_titlecard)
 				{
 					with (instance_create(x, y, obj_titlecard))

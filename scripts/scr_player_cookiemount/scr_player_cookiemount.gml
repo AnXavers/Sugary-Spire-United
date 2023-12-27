@@ -7,7 +7,7 @@ function state_player_cookiemount()
 	if (move != 0 && input_buffer == 0)
 	{
 		if (move == xscale)
-			movespeed = (global.moveset == 1) ? approach(movespeed, xscale * 16, 0.65) : approach(movespeed, xscale * 10, 0.65);
+			movespeed = (global.moveset != 1) ? approach(movespeed, xscale * 16, 0.65) : approach(movespeed, xscale * 13, 0.65);
 		else
 			movespeed = approach(movespeed, 0, 0.45);
 		if (movespeed != 0 && place_meeting_solid(x + sign(xscale), y, obj_solid) && (!place_meeting_slope(x + sign(xscale * 10), y + 1) && (!place_meeting(x + sign(xscale), y, obj_destructibles) && !place_meeting(x + sign(xscale), y, obj_chocofrog))))
@@ -31,7 +31,7 @@ function state_player_cookiemount()
 		if (input_buffer == 0)
 			movespeed = approach(movespeed, 0, 0.75);
 	}
-	if (key_attack2)
+	if (((key_attack2) && global.moveset == 1) || (key_jump2 && global.moveset != 1))
 	{
 		movespeed = abs(hsp);
 		if (movespeed < 6)
@@ -49,7 +49,7 @@ function state_player_cookiemount()
 			sprite_index = spr_cookiemountkick;
 		}
 	}
-	if (key_jump2 && grounded)
+	if (key_jump2 && grounded && global.moveset == 1)
 		vsp = -12
 	if (move == 0 && input_buffer == 0 && sprite_index != spr_cookiemount_skid && sprite_index != spr_cookiemountfireass && sprite_index != spr_cookiemountfireassend)
 	{
@@ -91,6 +91,7 @@ function state_player_cookiemount()
 		image_speed = 0.35
 		image_index = 0;
 		state = states.cookiemountfireass
+		scr_sound(sfx_balloonblowup)
 	}
 	
 }

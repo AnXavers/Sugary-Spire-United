@@ -10,9 +10,9 @@ if (animation_end() && sprite_index == spr_pizzano_hudpress)
 	sprite_index = spr_pizzano_hud;
 switch (state)
 {
-	case 1:
+	case states.normal:
 		break;
-	case 35:
+	case states.throwing:
 		if (animation_end(undefined, 4))
 		{
 			var cur_trap = instance_nearest(trap_x, trap_y, obj_pizzanotrap_parent);

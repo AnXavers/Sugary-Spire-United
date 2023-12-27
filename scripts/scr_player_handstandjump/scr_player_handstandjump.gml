@@ -118,6 +118,8 @@ function state_player_handstandjump()
 		image_index = 0;
 		image_speed = 0.2;
 		state = states.machtumble;
+		var _sfx = (character == "T" || character == "PT") ? sfx_playerspin : sound_throw;
+		scr_sound(_sfx);
 		with (instance_create(x, y, obj_jumpdust))
 			image_xscale = other.xscale;
 	}

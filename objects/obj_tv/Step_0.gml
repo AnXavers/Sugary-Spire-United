@@ -332,8 +332,17 @@ switch (obj_player.state)
 	case states.rupertstick:
 		if (ds_list_find_index(global.saveroom, "rupert") == -1)
 		{
-			scr_queue_text("Is... it... cold in here... or is it just me?");
+			scr_queue_text("Is... is it... cold in here... or is it just me?");
 			ds_list_add(global.saveroom, "rupert");
+		}
+		break;
+	case states.candy_dash:
+	case states.candy_normal:
+	case states.candy_pinball:
+		if (ds_list_find_index(global.saveroom, "candy") == -1)
+		{
+			scr_queue_text("This is the candy transformation text");
+			ds_list_add(global.saveroom, "candy");
 		}
 		break;
 }

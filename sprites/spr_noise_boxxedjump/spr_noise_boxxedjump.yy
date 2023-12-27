@@ -32,8 +32,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Boxxed",
-    "path": "folders/Sprites/Player/Noise/Boxxed.yy",
+    "name": "Bomb",
+    "path": "folders/Sprites/Player/Noise/Bomb.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

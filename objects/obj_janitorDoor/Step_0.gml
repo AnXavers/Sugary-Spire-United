@@ -18,9 +18,7 @@ with (obj_player)
 			with (other)
 			{
 				ds_list_add(global.saveroom, id);
-				image_index = 0;
-				sprite_index = spr_worlddoor_open;
-				image_speed = 0.35;
+				image_index = 1;
 			}
 			instance_create(x, y, obj_lock);
 			global.roomsave = 0;
@@ -46,7 +44,6 @@ with (obj_player)
 			else
 			{
 				state = states.victory;
-				image_index = 0;
 				obj_camera.chargecamera = 0;
 				targetDoor = other.targetDoor;
 				targetRoom = other.targetRoom;

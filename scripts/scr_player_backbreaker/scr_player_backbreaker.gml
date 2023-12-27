@@ -20,10 +20,16 @@ function state_player_backbreaker()
 	}
 	if (sprite_index == spr_taunt)
 	{
-		if (taunttimer >= 5 && supertauntcharged == 1 && key_up)
+		if (taunttimer >= 5 && supertauntcharged == 1 && key_up && tauntStored.state != states.trick)
 		{
 			image_index = 0;
 			sprite_index = choose(spr_supertaunt1, spr_supertaunt2, spr_supertaunt3);
+			if (global.panic = 1 && global.exitgatetaunt < 10 && place_meeting(x, y, obj_exitgate))
+			{
+				create_small_number(x, y, "250");
+				global.collect += 250
+				global.exitgatetaunt++
+			}
 		}
 		if (!instance_exists(parryid))
 		{

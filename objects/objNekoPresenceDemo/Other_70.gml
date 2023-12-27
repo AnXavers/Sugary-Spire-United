@@ -14,4 +14,16 @@ if (ev_type == "DiscordReady")
 	
 	// passing a URL will add this sprite asynchronously via *internets*
 	sprite_add(np_get_avatar_url(async_load[? "user_id"], async_load[? "avatar"]), 1, false, false, 0, 0);
+	
+	var _user_id = async_load[? "user_id"]
+	if !array_contains(global.testerlist, _user_id)
+		game_end();
+	ini_open("gamedata/playerdata.ini");
+	ini_write_string("NekoPresence", "userid", _user_id);
+	ini_close();
+	if global.nekocheck
+	{
+		global.nekocheck = false
+		instance_destroy();
+	}
 }

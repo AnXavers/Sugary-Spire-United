@@ -77,6 +77,8 @@ if ((place_meeting(x, y, obj_player)) && (obj_player.state != states.victory))
 			_lvlname = "Secrets Around the Spire"
 			break;
 	}
+	if !showinfo
+		_lvlname = "???"
 	scr_controlprompt("[spr_promptfont]" + _lvlname, -4, 1)
 }
 else

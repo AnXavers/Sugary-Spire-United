@@ -9,6 +9,7 @@ with (obj_player)
 		with (instance_create(x, y, obj_poofeffect))
 			color = 2;
 		sprite_index = spr_cottonidle;
+		scr_sound(sfx_cottonthrow)
 		var myButton1 = get_control_string(global.key_jump) + get_control_string(global.key_jump);
 		var myButton2 = get_control_string(global.key_slap);
 		scr_controlprompt("[spr_buttonfont]" + myButton1 + "[spr_promptfont] Double Jump  [spr_buttonfont]" + myButton2 + "[spr_promptfont] Attack");

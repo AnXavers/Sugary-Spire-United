@@ -4,6 +4,7 @@ if (sprite_index == spr_donutShitterEating)
 	{
 		audio_stop_sound(sound_points);
 		scr_sound(sound_points);
+		scr_sound(sfx_gumspit);
 		global.collect += 50;
 		create_small_number(x, y, "50");
 		instance_create(x, y, obj_collecteffect, 

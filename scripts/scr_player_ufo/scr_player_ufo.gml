@@ -19,11 +19,14 @@ function state_player_ufofloat()
 	{
 		image_index = 0;
 		sprite_index = spr_ufoShootHold;
+		scr_soundloop(sfx_ufocharge)
 	}
 	else if (!key_slap && sprite_index == spr_ufoShootHold)
 	{
 		image_index = 0;
 		sprite_index = spr_ufoShoot;
+		audio_stop_sound(sfx_ufocharge)
+		scr_sound(sfx_ufoshoot)
 		with (instance_create(x, y + 25, obj_donutShitted, 
 		{
 			bigShot: shoot_buffer >= 30
@@ -58,6 +61,7 @@ function state_player_ufofloat()
 		verticalMovespeed = 0;
 	if (ufotimer <= 0)
 	{
+		audio_stop_sound(sfx_ufocharge)
 		with (instance_create(x, y, obj_ufo_dead))
 			hsp = other.hsp + 2;
 		vsp = -11;
@@ -77,8 +81,14 @@ function state_player_ufofloat()
 			alarm[1] = 60;
 		}
 	}
-	image_speed = 0.35;
+	if (global.moveset == 1 && key_attack)
+	{
+		state = states.ufodash
+		audio_stop_sound(sfx_ufodash)
+		scr_sound(sfx_ufodash)
+	}
 	exit;
+	image_speed = 0.35;
 }
 function state_player_ufodash()
 {

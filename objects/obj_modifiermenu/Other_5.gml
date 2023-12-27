@@ -1,4 +1,4 @@
-var _lvl = "Level" + capitalize_section(level, 1, 1)
+var _lvl = capitalize_section(global.levelname, 1, 1) + "Modifiers"
 ini_open("optionData.ini");
 ini_write_real(_lvl, "gamemode", global.gamemode);
 ini_write_real(_lvl, "leveldesign", global.leveldesign);

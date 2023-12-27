@@ -14,6 +14,6 @@ global.collectsound = mu_entryway_title;
 flash = false;
 image_speed = 0.35;
 gotowardsPlayer = false;
-var my_sona = irandom_range(1, 19);
+var my_sona = irandom_range(1, 21);
 sprite_index = asset_get_index("spr_candysona_idle" + string(my_sona));
 deadspr = asset_get_index("spr_candysona_dead" + string(my_sona));
