@@ -438,6 +438,8 @@ function characterspr()
 		spr_mach3jump = spr_pizzelle_mach3jump_new;
 		spr_winding = spr_pizzelle_winding_new
 		spr_mach3ceiling = spr_pizzelle_ceilingmach_new
+		spr_machslideboostFallStart = spr_pizzelle_machslideboostFall_new;
+		spr_machslideboostFall = spr_pizzelle_machslideboostFall_new;
 	}
 	else if global.newplayeranim == 2
 	{

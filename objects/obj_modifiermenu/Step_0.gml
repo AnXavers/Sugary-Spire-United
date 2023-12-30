@@ -82,6 +82,8 @@ if canmove
 	CursorY = (sub_optionselected * 30)
 	if (keyboard_check(vk_escape) || keyboard_check(vk_enter))
 	{
+		audio_stop_sound(mu_modifiers)
+		audio_stop_sound(sfx_modifiersstart)
 		with obj_player
 		{
 			switch other.optionsaved_leveldesign
@@ -118,6 +120,8 @@ if canmove
 		}
 	}
 }
+if !audio_is_playing(sfx_modifiersstart) && !audio_is_playing(mu_modifiers) && !instance_exists(obj_titlecard) && !instance_exists(obj_fadeout)
+	scr_soundloop(mu_modifiers)
 modifierfxval = lerp(modifierfxval, 4, 0.05)
 fx_set_parameter(modifierfx, "g_Radius", [modifierfxval])
 bgTileX++

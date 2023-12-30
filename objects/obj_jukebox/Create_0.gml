@@ -5,3 +5,4 @@ selectedxy = 0;
 bgTileX = 0;
 bgTileY = 0;
 wait = 0;
+depth = (obj_player.depth - 1)

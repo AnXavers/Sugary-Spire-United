@@ -52,3 +52,4 @@ ScrollY = 0
 CursorY = 0
 canmove = false
 alarm[0] = 25
+scr_sound(sfx_modifiersstart)

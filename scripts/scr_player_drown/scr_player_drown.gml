@@ -1,10 +1,6 @@
 function state_player_drown()
-{
-	var _waterY = y;
-	with (instance_place(x, y, obj_molasseswater))
-		_waterY = wave(3, -3, 3, 0) + (y + 9);
-	y = round(lerp(y, _waterY, 0.25));
-	vsp = round(lerp(0, vsp, 0.15));
+{;
+	vsp = lerp(vsp, 1, 0.05)
 	hsp = round(lerp(0, hsp, 0.15));
 	if (animation_end() || key_down)
 		scr_playerrespawn(false);

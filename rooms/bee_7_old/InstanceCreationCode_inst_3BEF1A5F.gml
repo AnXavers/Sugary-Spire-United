@@ -1,1 +1,1 @@
-targetRoom = bee_8_old
+targetRoom = bee_6_old

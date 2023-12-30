@@ -84,6 +84,7 @@ function state_player_ufofloat()
 	if (global.moveset == 1 && key_attack)
 	{
 		state = states.ufodash
+		audio_stop_sound(sfx_ufocharge)
 		audio_stop_sound(sfx_ufodash)
 		scr_sound(sfx_ufodash)
 	}

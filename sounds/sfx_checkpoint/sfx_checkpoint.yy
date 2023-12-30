@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.065792,
+  "duration": 1.58322,
   "parent": {
     "name": "Environment",
     "path": "folders/Sounds/Sounds/Environment.yy",

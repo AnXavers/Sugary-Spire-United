@@ -45,7 +45,7 @@ function scr_enemy_throw()
 				break;
 			case obj_honeyslime:
 				bombreset = 200;
-				scr_sound(sound_enemythrow);
+				scr_sound(sfx_gumspit);
 				with (instance_create(x + (image_xscale * 6), y - 6, obj_sludge))
 				{
 					image_xscale = other.image_xscale;
@@ -65,7 +65,7 @@ function scr_enemy_throw()
 				break;
 			case obj_googlyjuice:
 				bombreset = 400;
-				scr_sound(sound_enemythrow);
+				scr_sound(sfx_glassbreak);
 				with (instance_create(x, y, obj_puddle))
 				{
 					image_xscale = sign(other.image_xscale);
@@ -83,7 +83,7 @@ function scr_enemy_throw()
 				break;
 			case obj_gumballmachine:
 				bombreset = 500;
-				scr_sound(sound_enemythrow);
+				scr_sound(sfx_gumballmachine);
 				with (instance_create(x + (image_xscale * 6), y - 6, obj_gumball))
 				{
 					image_xscale = other.image_xscale;
@@ -108,6 +108,7 @@ function scr_enemy_throw()
 			case obj_guard:
 			case obj_flyingguard:
 				scr_sound(sfx_whistle);
+				scr_sound(sfx_guardalarm);
 				if (object_index != obj_flyingguard)
 					vsp = -9;
 				alarmed = true;
@@ -139,8 +140,8 @@ function scr_enemy_throw()
 				break;
 			case obj_mintsplosion:
 				bombreset = 200;
-				if (!audio_is_playing(sound_enemythrow))
-					scr_sound(sound_enemythrow);
+				if (!audio_is_playing(sfx_robotshoot))
+					scr_sound(sfx_robotshoot);
 				with (instance_create(x, y + 10, obj_mintsplosion_bomb))
 				{
 					image_xscale = other.image_xscale;
@@ -152,7 +153,7 @@ function scr_enemy_throw()
 				hsp = image_xscale * -8;
 				with (instance_create(x, y, obj_icescreamer_cone))
 					image_xscale = other.image_xscale;
-				scr_sound(sound_enemythrow);
+				scr_sound(sfx_robotshoot);
 				break;
 			case obj_eskimo:
 				bombreset = 400;
@@ -169,12 +170,12 @@ function scr_enemy_throw()
 				break;
 			case obj_conedrone:
 				bombreset = 300;
-				scr_sound(sound_enemythrow);
+				scr_sound(sfx_robotshoot);
 				instance_create(x, y, obj_conedroneprojectile);
 				break;
 			case obj_beesoldier:
 				bombreset = 500;
-				scr_sound(sound_enemythrow);
+				scr_sound(sfx_robotshoot);
 				instance_create(x, y, obj_beemissile);
 				break;
 			case obj_crackerkicker:
