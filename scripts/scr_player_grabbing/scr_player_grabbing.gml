@@ -1,7 +1,7 @@
 function state_player_grabbing()
 {
 	if (!place_meeting(x, y, obj_baddie))
-		state = 1;
+		state = states.normal;
 	move = key_left + key_right;
 	hsp = move * movespeed;
 	if (!key_jump2 && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)

@@ -33,7 +33,7 @@ function scr_collide_destructibles()
 			state = states.tackle;
 		}
 	}
-	if (state == states.mach2 || state == states.slipnslide || state = states.punch || state == states.rupertnormal || state == states.rupertjump || state == states.rupertslide || state == states.grind || state == states.trick || state == states.geyser || (state == states.bottlerocket && substate == 0) || state == states.mach3 || state == states.climbceiling || state == states.machroll || (state == states.cotton && (sprite_index == spr_cotton_attack || movespeed >= 8)) || state == states.machtumble || state == 3 || state == 19 || state == states.crouchslide || state == states.uppercut || state == states.parry || state == states.puddle || state == states.tumble || state == states.pizzano_mach || state == states.door || state == states.comingoutdoor || state == states.pizzano_rocketfist || state == states.pizzano_shoulderbash || state == states.minecart || state == states.flushed || state == states.frostburn || state == states.frostburnspin || state == states.pizzano_kungfu || state == states.pizzano_twirl || state == states.pizzano_machtwirl || state == states.pizzano_pummel || state == states.cookiemount || state == states.cookiemountattack || state == states.cookiemountfireass || state == states.pepperman_pinball || (state == states.pogo && pogochargeactive == 1))
+	if (state == states.mach2 || state == states.slipnslide || state = states.punch || state == states.rupertnormal || state == states.rupertjump || state == states.rupertslide || state == states.grind || state == states.trick || state == states.geyser || (state == states.bottlerocket && substate == 0) || state == states.mach3 || state == states.climbceiling || state == states.machroll || (state == states.cotton && (sprite_index == spr_cotton_attack || movespeed >= 8)) || state == states.machtumble || state == 3 || state == 19 || state == states.crouchslide || state == states.uppercut || state == states.parry || state == states.puddle || state == states.tumble || state == states.pizzano_mach || state == states.door || state == states.comingoutdoor || state == states.pizzano_rocketfist || state == states.pizzano_shoulderbash || state == states.minecart || state == states.flushed || state == states.frostburn || state == states.frostburnspin || state == states.pizzano_kungfu || state == states.pizzano_twirl || state == states.pizzano_machtwirl || state == states.pizzano_pummel || state == states.cookiemount || state == states.cookiemountattack || state == states.cookiemountfireass || state == states.pepperman_pinball || (state == states.pogo && pogochargeactive == 1) || state == states.shoulder)
 	{
 		if (place_meeting(x + hsp, y, obj_destructibles))
 		{
@@ -208,7 +208,7 @@ function scr_collide_destructibles()
 			}
 		}
 	}
-	if (state == states.jump || state == states.Sjump || state == states.mach2 || state == states.mach3 || state == states.pizzano_mach || state == states.pizzano_twirl || state == states.pizzano_machtwirl || state == states.pepperman_pinball)
+	if (state == states.jump || state == states.Sjump || state == states.mach2 || state == states.mach3 || state == states.pizzano_mach || state == states.pizzano_twirl || state == states.pizzano_machtwirl || state == states.pepperman_pinball || state == states.shoulder)
 	{
 		if (place_meeting(x, y + vsp, obj_destructibles) && vsp < 0)
 		{

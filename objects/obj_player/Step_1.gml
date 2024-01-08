@@ -11,7 +11,7 @@ if (state == states.gottreasure || sprite_index == spr_peppino_knightstart || sp
 else
 	cutscene = 0;
 is_inSecretPortal = false;
-if (grounded && vsp >= 0 && !(state == states.climbwall || state == states.tumble || state == states.grab|| state == states.freefallland || state == states.shotgun || state == states.finishingblow))
+if (grounded && vsp >= 0 && !(state == states.climbwall || state == states.tumble || state == states.grab || state == states.freefallland || state == states.shotgun || state == states.finishingblow || state == states.shoulder))
 {
 	var targetangle = 360;
 	var RotationStep = ((abs(hsp) / 16) - 2) * -1;

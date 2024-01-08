@@ -61,6 +61,17 @@ function state_player_mach2()
 	var mach_sprite = (movespeed >= 8) ? spr_mach2 : spr_mach1;
 	if (grounded)
 	{
+		if (global.attackmove == 2 && key_slap && (sprite_index == spr_longjumpend || sprite_index == spr_longjump))
+		{
+			sprite_index = spr_shoulder
+			if (movespeed < 8)
+				movespeed = 8;
+			state = states.shoulder
+			instance_create(x, y, obj_dashcloud)
+			image_index = 0;
+			image_speed = 0.35;
+			exit;
+		}
 		if (machpunchAnim == 0 && sprite_index != mach_sprite && sprite_index != spr_mach3player)
 		{
 			if (sprite_index != spr_suplexdash && sprite_index != spr_rollgetup)
@@ -91,48 +102,47 @@ function state_player_mach2()
 	{
 		if (slopeCheck(x, y) && hsp != 0 && movespeed > 8)
 			player_slopeMomentum(0.1, 0.2);
-			if global.moveset != 2
+		if global.moveset != 2
+		{
+			if (movespeed < 12)
+				movespeed += 0.1;
+			if (abs(hsp) >= 12 && sprite_index != spr_suplexdash)
 			{
+				machhitAnim = 0;
+				trace("Jerked off");
 				if (movespeed < 12)
-					movespeed += 0.1;
-				if (abs(hsp) >= 12 && sprite_index != spr_suplexdash)
-				{
-					machhitAnim = 0;
-					trace("Jerked off");
-					if (movespeed < 12)
-						movespeed = 12;
-						if character != "PT"
+					movespeed = 12;
+				if character != "PT"
 					state = states.mach3;
-					else
+				else
 					state = states.pizzano_rocketfist
-					flash = 1;
-					if (sprite_index != spr_rollgetup)
-						sprite_index = spr_mach3player;
-					instance_create(x, y, obj_jumpdust, 
-					{
-						obj_player: id
-					});
+				flash = 1;
+				if (sprite_index != spr_rollgetup)
+					sprite_index = spr_mach3player;
+				instance_create(x, y, obj_jumpdust, 
+				{
+					obj_player: id
+				});
+			}
+		}
+		else
+		{
+			if (grounded && character == "P")
+			{
+				if (mach2 < 100)
+					mach2 += 1.5
+				if (mach2 >= 100)
+				{
+					machhitAnim = 0
+					state = states.mach3
+					flash = 1
+					sprite_index = spr_mach3player
+					instance_create(x, y, obj_jumpdust)
+					if (movespeed < 12)
+					movespeed = 12
 				}
 			}
-			else
-			{
-				if (grounded && character == "P")
-		            {
-		                if (mach2 < 100)
-		                    mach2 += 1.5
-		                if (mach2 >= 100)
-		                {
-		                    machhitAnim = 0
-		                    state = states.mach3
-		                    flash = 1
-		                    sprite_index = spr_mach3player
-		                    instance_create(x, y, obj_jumpdust)
-		                    if (movespeed < 12)
-		                        movespeed = 12
-		                }
-			
-					}
-			}
+		}
 	}
 	if (movespeed >= 8)
 	{
@@ -162,15 +172,15 @@ function state_player_mach2()
 		}
 	}
 	if (key_down && (!(place_meeting(x, y, obj_dashpad))))
-    {
-        flash = 0
-        state = states.machroll
-        if (!grounded)
-            sprite_index = spr_dive
-        image_index = 0
-        sprite_index = spr_machroll
-        vsp = 10
-    }
+	{
+		flash = 0
+		state = states.machroll
+		if (!grounded)
+			sprite_index = spr_dive
+		image_index = 0
+		sprite_index = spr_machroll
+		vsp = 10
+	}
 	if (((!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)) && characterwallclimb)
 	{
 		if (!upsideDownJump)

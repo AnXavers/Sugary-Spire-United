@@ -51,6 +51,7 @@ switch other.state
 	case states.costumegrab:
 	case states.bottlerocket:
 	case states.supergrab:
+	case states.shoulder:
 		hit = 1
 		break
 	default:

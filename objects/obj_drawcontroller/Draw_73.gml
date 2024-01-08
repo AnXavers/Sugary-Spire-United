@@ -119,7 +119,7 @@ if (sucrose_lighting || bloodsauce_lighting || dance_lighting || stormy_lighting
 	if (stormy_lighting && surface_exists(stormy_surface))
 	{
 		surface_set_target(stormy_surface);
-		draw_clear_alpha(c_black, 1);
+		draw_clear(c_black);
 		draw_set_blend_mode(3);
 		with (obj_player)
 		{
@@ -132,6 +132,7 @@ if (sucrose_lighting || bloodsauce_lighting || dance_lighting || stormy_lighting
 		draw_set_alpha(0.75);
 		surface_reset_target();
 		draw_surface(stormy_surface, cam_x, cam_y);
+		draw_set_alpha(1);
 	}
 }
 if (instance_exists(obj_bosscontroller) && instance_exists(par_boss) && boss_radius <= 300 && obj_bosscontroller.showing_versus == 0)

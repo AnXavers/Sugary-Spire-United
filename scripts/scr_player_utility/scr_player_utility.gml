@@ -70,7 +70,24 @@ function do_grab()
 		}
 		else if (!key_up)
 		{
-			if (character == "N")
+			if global.attackmove == 2
+			{
+				scr_sound(sound_suplex1)
+				sprite_index = spr_shoulder
+				if (movespeed < 8)
+					movespeed = 8;
+				state = states.shoulder
+				flash = 1;
+				instance_create(x, y, obj_crazyrunothereffect);
+				if (!instance_exists(obj_superdashcloud) && grounded)
+					instance_create(x, y, obj_superdashcloud, 
+					{
+						obj_player: id
+					});
+				p1Vibration(30, 5);
+				image_index = 0;
+			}
+			else if ((character == "N" && global.attackmove == 0) || (global.attackmove == 3))
 			{
 				scr_sound(sfx_kungfuair);
 				if (movespeed < 9)
@@ -97,17 +114,17 @@ function do_grab()
 			}
 			else if character == "PT"
 			{
-	state = states.punch
-	sprite_index = spr_noise_spin
-	image_index = 0
-	if movespeed < 10
-	movespeed = 10
-	scr_sound(sound_suplex1)
-	scr_sound(sound_throw)
-		instance_create(x, y, obj_jumpdust);
-				image_index = 0;
+				state = states.punch
+				sprite_index = spr_noise_spin
+				image_index = 0
+				if movespeed < 10
+				movespeed = 10
+				scr_sound(sound_suplex1)
+				scr_sound(sound_throw)
+					instance_create(x, y, obj_jumpdust);
+						image_index = 0;
 			}
-			else if (character != "G" && character != "C" && character != "V" && character != "M" && character != "RM" && character != "GB" && character != "PT")
+			else if ((character != "G" && character != "C" && character != "V" && character != "M" && character != "RM" && character != "GB" && character != "PT") || global.attackmove == 1)
 			{
 				scr_sound(sound_suplex1);
 				instance_create(x, y, obj_slaphitbox);

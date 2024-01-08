@@ -72,6 +72,17 @@ function state_player_mach3()
 	}
 	if (grounded)
 	{
+		if (global.attackmove == 2 && key_slap && (sprite_index == spr_longjumpend || sprite_index == spr_longjump))
+		{
+			sprite_index = spr_shoulder
+			if (movespeed < 8)
+				movespeed = 8;
+			state = states.shoulder
+			instance_create(x, y, obj_dashcloud)
+			image_index = 0;
+			image_speed = 0.35;
+			exit;
+		}
 		if (slopeCheck(x, y) && hsp != 0 && movespeed > 12 && movespeed < 18)
 			player_slopeMomentum(0.1, 0.2);
 	}

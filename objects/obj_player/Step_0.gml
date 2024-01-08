@@ -42,7 +42,7 @@ if (state != states.freefall && state != states.freefallprep && state != states.
 if (!global.freezeframe && state != 0)
 {
 	if (!instance_exists(baddiegrabbedID) && (state == states.grab || state == states.superslam || state == 5))
-		state = 1;
+		state = states.normal;
 	if (!(state == states.grab || state == 5 || state == states.superslam || state == states.finishingblow))
 		baddiegrabbedID = -4;
 }
@@ -139,7 +139,7 @@ if (key_particles == 1)
 	instance_create(random_range(x + 25, x - 25), random_range(y + 35, y - 25), obj_keyeffect);
 if (inv_frames == 0 && hurted == 0)
 	image_alpha = 1;
-if (state == states.mach2 || state == states.pizzano_kungfu || state == states.bottlerocket || state == 5 || state == states.skateboard || state == 19 || state == 9 || state == 6 || state == 13 || state == 20 || state == 22 || state == states.facestomp || state == states.machfreefall || state == states.facestomp || state == states.machroll || state == states.mach3 || state == states.freefall || state == states.Sjump)
+if (state == states.mach2 || state == states.pizzano_kungfu || state == states.bottlerocket || state == 5 || state == states.skateboard || state == 19 || state == 9 || state == 6 || state == 13 || state == 20 || state == 22 || state == states.facestomp || state == states.machfreefall || state == states.facestomp || state == states.machroll || state == states.mach3 || state == states.freefall || state == states.Sjump || state == states.shoulder)
 	attacking = 1;
 else
 	attacking = 0;
@@ -148,7 +148,7 @@ if (state == states.throwing || state == states.punch || state == states.backkic
 else
 	grabbing = 0;
 var _machslideCheck = sprite_index == spr_machslideboost3 || sprite_index == spr_machslideboost3FallStart || sprite_index == spr_machslideboost3Fall;
-if ((state == states.mach3 || (state == states.machslide && _machslideCheck) || state == states.slipnslide || state == states.rupertslide || state == states.rupertnormal || (state == states.rupertjump && vsp > 0) || (state == states.tumble && sprite_index != spr_tumblestart && sprite_index != spr_tumbleend) || (state == 11 && (verticalMovespeed > 8 || mach2 >= 100)) || (state == states.climbceiling && (movespeed > 8 || mach2 >= 100)) || (state == 12 && (verticalMovespeed > 8 || mach2 >= 100)) || state == states.frostburnspin || state == states.pizzano_kungfu || (state == states.cottonroll && movespeed > 8) || state == states.bottlerocket || state == states.machtumble || state == states.minecart || state == states.fireass || state == states.puddle || state == 3 || state == states.skateboard || state == states.chainsaw || state == states.freefall || state == states.Sjump || (state == states.machroll && movespeed >= 12) || state == states.machfreefall || state == 5 || (state == states.superslam && sprite_index == spr_piledriver) || (state == states.superslam && sprite_index == spr_piledriverstart) || state == 19 || state == 20 || state == 13 || state == 9 || state == 6 || state == 7) || state == states.uppercut || state == states.pizzano_mach || state == states.ufodash || state = states.pizzano_rocketfist || (state = states.jump && sprite_index = spr_noise_noisebombspinjump) || (state = states.pogo && pogochargeactive = 1))
+if ((state == states.mach3 || (state == states.machslide && _machslideCheck) || state == states.slipnslide || state == states.rupertslide || state == states.rupertnormal || (state == states.rupertjump && vsp > 0) || (state == states.tumble && sprite_index != spr_tumblestart && sprite_index != spr_tumbleend) || (state == 11 && (verticalMovespeed > 8 || mach2 >= 100)) || (state == states.climbceiling && (movespeed > 8 || mach2 >= 100)) || (state == 12 && (verticalMovespeed > 8 || mach2 >= 100)) || state == states.frostburnspin || state == states.pizzano_kungfu || (state == states.cottonroll && movespeed > 8) || state == states.bottlerocket || state == states.machtumble || state == states.minecart || state == states.fireass || state == states.puddle || state == 3 || state == states.skateboard || state == states.chainsaw || state == states.freefall || state == states.Sjump || (state == states.machroll && movespeed >= 12) || state == states.machfreefall || state == 5 || (state == states.superslam && sprite_index == spr_piledriver) || (state == states.superslam && sprite_index == spr_piledriverstart) || state == 19 || state == 20 || state == 13 || state == 9 || state == 6 || state == 7) || state == states.uppercut || state == states.pizzano_mach || state == states.ufodash || state = states.pizzano_rocketfist || (state = states.jump && sprite_index = spr_noise_noisebombspinjump) || (state = states.pogo && pogochargeactive = 1) || state == states.shoulder)
 	instakillmove = 1;
 else
 	instakillmove = 0;
@@ -293,6 +293,8 @@ if (state != states.pizzano_pummel && state != 0)
 	pummelhit = 0;
 	pummelfinish = 0;
 }
+if (state != states.shoulder)
+	audio_stop_sound(shouldersfx)
 if (gumbobpropellercooldown > 0)
 	gumbobpropellercooldown--;
 if (global.starrmode == 1)

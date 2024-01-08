@@ -63,7 +63,7 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 {
 	with (obj_player)
 	{
-		if (state == states.mach3 || state == states.mach2 || state == states.pizzano_kungfu || state == states.minecart || state == states.bottlerocket || state == states.machtumble || state == states.pepperman_pinball || state = states.punch || state = states.pogo || state == states.pizzano_rocketfist)
+		if (state == states.mach3 || state == states.mach2 || state == states.pizzano_kungfu || state == states.minecart || state == states.bottlerocket || state == states.machtumble || state == states.pepperman_pinball || state = states.punch || state = states.pogo || state == states.pizzano_rocketfist || state == states.shoulder)
 		{
 			instance_create(other.x, other.y, obj_slapstar);
 			instance_create(other.x, other.y, obj_baddiegibs);
