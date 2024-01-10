@@ -133,7 +133,7 @@ add_music(rm_painterarena, mu_painter, mu_painter, false);
 add_music(rm_pizzanoarena, mu_pizzanothemetune, mu_pizzanothemetune, true);
 add_music(rm_coneballarena, mu_coneball1, mu_coneball1, true);
 add_music(stormy_12, mu_exitway, mu_steamysecret, false);
-add_music(stormy_7, mu_coneboy_escape, mu_steamysecret, true);
+add_music(stormy_7, mu_stormy, mu_steamysecret, true);
 add_music(stormy_8, mu_exitway, mu_steamysecret, true);
 add_music(options_room, mu_confectionary, mu_confectionary, true);
 add_music(secrets_start, mu_secrets, mu_secrets, false);

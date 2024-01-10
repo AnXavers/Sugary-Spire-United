@@ -106,6 +106,7 @@ global.secretstotal = array_length(global.secretsspire)
 global.secrettime = time_in_frames(0, 25)
 global.editorinsts = []
 global.editorlayers = []
+global.nekocheck = true
 var i = 0
 var I = 0
 for (var i = 0; room_exists(i); i++)
@@ -184,8 +185,7 @@ global.checkpoints = ini_read_real("Settings", "checkpoints", 0)
 global.cam_w = ini_read_real("Settings", "reswidth", 960);
 global.cam_h = ini_read_real("Settings", "resheight", 540);
 global.richpresence = ini_read_real("Settings", "richpresence", 0);
-if global.richpresence
-	instance_create(-1000, -1000, objNekoPresenceDemo)
+instance_create(-1000, -1000, obj_richpresence)
 window_set_size(global.cam_w, global.cam_h)
 surface_resize(application_surface, global.cam_w, global.cam_h)
 for (i = 0; i < (array_length(global.musiclist) - 1); i++)

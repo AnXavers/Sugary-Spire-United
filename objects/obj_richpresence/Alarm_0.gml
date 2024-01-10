@@ -44,5 +44,4 @@ switch global.levelname
 if global.panic
 	_icon = "escape" + _icon
 np_setpresence(string(global.collect) + " Points", window_get_caption(), _icon, "")
-
 alarm[0] = (room_speed * 5)

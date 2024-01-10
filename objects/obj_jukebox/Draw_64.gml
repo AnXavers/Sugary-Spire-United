@@ -1,7 +1,7 @@
 if (active == 1)
 {
 	draw_sprite_tiled_ext(bg_options, 0, bgTileX, bgTileY, 1, 1, c_white, 0.75);
-	draw_set_font(global.font);
+	draw_set_font(global.smallfont);
 	draw_set_halign(fa_right);
 	var i = 0
 	for (i = 0; i < (array_length(global.musiclist) - 1); i++)

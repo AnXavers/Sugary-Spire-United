@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "mu_tutorial",
+  "name": "mu_stormy",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 229.43347,
+  "duration": 104.136,
   "parent": {
-    "name": "Spire",
-    "path": "folders/Sounds/Music/Spire.yy",
+    "name": "Stormy",
+    "path": "folders/Sounds/Music/Levels/Stormy.yy",
   },
-  "preload": true,
+  "preload": false,
   "sampleRate": 44100,
-  "soundFile": "mu_tutorial.ogg",
-  "type": 1,
+  "soundFile": "mu_stormy.mp3",
+  "type": 0,
   "volume": 1.0,
 }

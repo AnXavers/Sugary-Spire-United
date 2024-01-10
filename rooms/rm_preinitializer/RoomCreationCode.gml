@@ -235,6 +235,5 @@ global.testerlist = [
 1055633917283156059, // gimbo
 455665608001060864 // anxavers
 ]
-global.nekocheck = true
 
 exit

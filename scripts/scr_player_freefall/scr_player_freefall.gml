@@ -84,7 +84,8 @@ function state_player_freefall()
 				movespeed = 12;
 			else
 				movespeed = 8;
-			xscale = -slopeMomentum_direction();
+			if !place_meeting(x, y, obj_grindRail_Slope)
+				xscale = -slopeMomentum_direction();
 			with (instance_create(x, y, obj_jumpdust))
 				image_xscale = other.xscale;
 		}

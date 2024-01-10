@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "mu_tutorial",
+  "name": "mu_bee_2_custom",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 229.43347,
+  "duration": 72.30692,
   "parent": {
-    "name": "Spire",
-    "path": "folders/Sounds/Music/Spire.yy",
+    "name": "Bee",
+    "path": "folders/Sounds/Music/Levels/Bee.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "mu_tutorial.ogg",
+  "soundFile": "mu_bee_2_custom.mp3",
   "type": 1,
   "volume": 1.0,
 }

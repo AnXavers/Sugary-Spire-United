@@ -91,7 +91,7 @@ function scr_enemy_grabbed()
 			shake_mag_acc = 3 / room_speed;
 		}
 	}
-	if (obj_player.state == states.shoulder && floor(obj_player.image_index) == 2)
+	if (obj_player.state == states.shoulder)
 	{
 		global.hit++;
 		hp--;
