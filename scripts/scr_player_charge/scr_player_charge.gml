@@ -8,7 +8,7 @@ function state_player_charge()
 		hsp = (xscale * movespeed) - 5;
 	else if (place_meeting(x, y + 1, obj_railh2))
 		hsp = (xscale * movespeed) + 5;
-	if (!key_attack)
+	if (!key_sprint)
 		movespeed -= 0.5;
 	else if (movespeed < 10)
 		movespeed++;
@@ -24,7 +24,7 @@ function state_player_charge()
 	}
 	if (movespeed <= 0)
 		state = states.grab;
-	if (key_slap2)
+	if (key_attack2)
 	{
 		sprite_index = spr_swingdingend;
 		state = states.finishingblow;

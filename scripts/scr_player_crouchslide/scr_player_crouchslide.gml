@@ -9,7 +9,7 @@ function state_player_crouchslide()
 	if (movespeed >= 0 && !scr_slope() && grounded)
 		movespeed -= 0.2;
 	mask_index = spr_crouchmask;
-	if (key_attack2 && !scr_solid(x + 27, y - 32) && !scr_solid(x - 27, y - 32) && !scr_solid(x, y - 32) && !scr_solid(x, y - 16))
+	if (key_sprint2 && !scr_solid(x + 27, y - 32) && !scr_solid(x - 27, y - 32) && !scr_solid(x, y - 32) && !scr_solid(x, y - 16))
 	{
 		switch (character)
 		{

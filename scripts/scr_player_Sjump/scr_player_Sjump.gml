@@ -100,7 +100,7 @@ function state_player_Sjump()
 		if (move == -1)
 			hsp = -6
 	}
-	if ((key_attack2 || key_slap2) && !grounded && vsp < -10 && !charactersjump && (sprite_index != spr_superjump_cancelprep))
+	if ((key_sprint2 || key_attack2) && !grounded && vsp < -10 && !charactersjump && (sprite_index != spr_superjump_cancelprep))
 	{
 		scr_sound(sound_superjumpcancel);
 		image_index = 0;
@@ -121,7 +121,7 @@ function state_player_Sjump()
 		with (instance_create(x, y, obj_jumpdust))
 			image_xscale = other.xscale;
 	}
-	if ((key_attack2 || key_slap2) && !grounded &&  (vsp < -10 || sprite_index == spr_noise_jetpackboostdown) && charactersjump)
+	if ((key_sprint2 || key_attack2) && !grounded &&  (vsp < -10 || sprite_index == spr_noise_jetpackboostdown) && charactersjump)
 	{
 		scr_sound(sound_superjumpcancel);
 		flash = 1;

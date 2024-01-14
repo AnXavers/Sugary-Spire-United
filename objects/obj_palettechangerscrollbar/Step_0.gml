@@ -72,7 +72,7 @@ if (mouse_check_button_pressed(mb_left) && obj_palettechanger.stop == 0 && selec
 		keyboard_lastchar = ""
 	}
 }
-if ((obj_player.key_jump2 || keyboard_check_pressed(vk_return) || obj_player.key_slap2) && selected == 0 && input_text == 1)
+if ((obj_player.key_jump2 || keyboard_check_pressed(vk_return) || obj_player.key_attack2) && selected == 0 && input_text == 1)
 {
 	input_text = 0
 	if (obj_player.key_jump2 || keyboard_check_pressed(vk_return))

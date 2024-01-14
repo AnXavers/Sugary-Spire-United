@@ -22,7 +22,7 @@ function state_player_knightpep()
 	}
 	if (grounded && vsp > 0)
 		jumpstop = 0;
-	if ((sprite_index == spr_peppino_knightidle || sprite_index == spr_peppino_knightwalk) && key_slap2)
+	if ((sprite_index == spr_peppino_knightidle || sprite_index == spr_peppino_knightwalk) && key_attack2)
 	{
 		scr_sound(mu_martian_greenhouse);
 		instance_create(x, y, obj_swordhitbox);

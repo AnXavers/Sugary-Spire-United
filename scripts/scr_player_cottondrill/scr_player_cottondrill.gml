@@ -49,7 +49,7 @@ function state_player_cottondrill()
 			image_index = 0;
 		}
 	}
-	if (key_slap2 && sprite_index != spr_cotton_attack && groundedcot == 1)
+	if (key_attack2 && sprite_index != spr_cotton_attack && groundedcot == 1)
 	{
 		state = states.cotton;
 		flash = 1;

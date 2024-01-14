@@ -208,7 +208,7 @@ function state_player_normal()
 		state = states.jump;
 		image_index = 0;
 	}
-	if (character == "C" && key_attack && inhalingenemy == 0 && substate == 0)
+	if (character == "C" && key_sprint && inhalingenemy == 0 && substate == 0)
 		state = states.coneboy_inhale115;
 	if (character == "C" && inhalingenemy == 1 && key_down && grounded)
 	{
@@ -219,7 +219,7 @@ function state_player_normal()
 		scr_sound(sfx_coneboyswallow);
 		inhalingenemy = false;
 	}
-	if (character == "C" && inhalingenemy == 1 && key_slap && grounded)
+	if (character == "C" && inhalingenemy == 1 && key_attack && grounded)
 	{
 		sprite_index = spr_coneboy_spit;
 		instance_create(x, y, obj_coneboyprojectile);
@@ -268,7 +268,7 @@ function state_player_normal()
 		image_index = 0;
 		jumpAnim = 1;
 	}
-	if (grounded && input_buffer_jump < 8 && !key_down && !key_attack && vsp > 0)
+	if (grounded && input_buffer_jump < 8 && !key_down && !key_sprint && vsp > 0)
 	{
 		scr_sound(sound_jump);
 		sprite_index = spr_jump;
@@ -294,7 +294,7 @@ function state_player_normal()
 		movespeed = 0;
 	if (movespeed > 7)
 		movespeed -= 0.1;
-	if (key_slap2 && shotgunAnim == 1 && !instance_exists(obj_cutscene_upstairs))
+	if (key_attack2 && shotgunAnim == 1 && !instance_exists(obj_cutscene_upstairs))
 	{
 		global.ammo--;
 		sprite_index = spr_shotgun;
@@ -354,7 +354,7 @@ function state_player_normal()
 			canrebound = 1;
 			state = states.jump;
 		}
-		if (key_slap2 && !key_down && suplexmove == 0 && shotgunAnim == 0)
+		if (key_attack2 && !key_down && suplexmove == 0 && shotgunAnim == 0)
 		{
 			scr_sound(sound_suplex1);
 			instance_create(x, y, obj_slaphitbox);
@@ -375,13 +375,13 @@ function state_player_normal()
 		image_index = 0;
 		breakdanceammo--;
 	}
-	if (key_slap2 && character == "G")
+	if (key_attack2 && character == "G")
 	{
 		state = states.gumbob_mixnbrew;
 		image_index = 0;
 		sprite_index = spr_gumbob_brew_pulloutdrink;
 	}
-	if (key_attack && character == "PT" && pogochargeactive = 1)
+	if (key_sprint && character == "PT" && pogochargeactive = 1)
 	{
 		if !key_up
 		{
@@ -402,7 +402,7 @@ function state_player_normal()
 			state = states.Sjump;
 		}
 	}
-	if (key_attack && grounded && !scr_solid(x + xscale, y, true) && pogochargeactive = 0)
+	if (key_sprint && grounded && !scr_solid(x + xscale, y, true) && pogochargeactive = 0)
 	{
 		image_index = 0;
 		if character != "M" && character != "PT"
@@ -437,7 +437,7 @@ function state_player_normal()
 		{
 			if (sprite_index == spr_idle || sprite_index == spr_idle2 || sprite_index == spr_idle3)
 				sprite_index = spr_coneboy_sword_idle;
-			if (key_up && key_slap2)
+			if (key_up && key_attack2)
 			{
 				vsp = -15;
 				state = states.uppercut;
@@ -445,7 +445,7 @@ function state_player_normal()
 				sprite_index = spr_coneboy_sworduppercut;
 				instance_create(x, y, obj_coneboyswordhitbox);
 			}
-			if (key_attack)
+			if (key_sprint)
 			{
 				instance_create(x, y, obj_coneboyswordhitbox);
 				sprite_index = spr_coneboy_sworddash;
@@ -461,7 +461,7 @@ function state_player_normal()
 				state = states.coneboy_kick;
 				instance_create(x, y, obj_coneboyjuice);
 			}
-			if (key_attack)
+			if (key_sprint)
 			{
 				sprite_index = spr_coneboy_juicewave;
 				state = states.coneboy_inhale115;

@@ -14,7 +14,7 @@ function state_player_honey()
 		x = lerp(x, webID.x, 0.3);
 		y = lerp(y, webID.y, 0.3);
 	}
-	if (key_jump || key_slap2)
+	if (key_jump || key_attack2)
 	{
 		if (instance_exists(webID))
 		{

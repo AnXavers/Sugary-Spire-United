@@ -1,7 +1,7 @@
 scr_getinput()
 var _zoom = obj_cameraRegion.zoom
-x += ((key_right + key_left) * 4 * (key_attack + 1)) * _zoom
-y += ((key_down - key_up) * 4 * (key_attack + 1)) * _zoom
+x += ((key_right + key_left) * 4 * (key_sprint + 1)) * _zoom
+y += ((key_down - key_up) * 4 * (key_sprint + 1)) * _zoom
 if mouse_check_button_pressed(mb_left)
 {
 	if mode == 1

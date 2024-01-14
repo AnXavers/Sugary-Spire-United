@@ -26,7 +26,7 @@ if (optionselected == 1 && (key_jump || keyboard_check_pressed(vk_enter)))
 	scr_sound(sound_explosion);
 	instance_destroy();
 }
-if (key_slap2 || keyboard_check_pressed(vk_escape) || (optionselected == 0 && (key_jump || keyboard_check_pressed(vk_enter))))
+if (key_attack2 || keyboard_check_pressed(vk_escape) || (optionselected == 0 && (key_jump || keyboard_check_pressed(vk_enter))))
 {
 	scr_sound(sound_enemythrow);
 	instance_destroy();

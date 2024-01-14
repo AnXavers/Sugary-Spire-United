@@ -30,7 +30,7 @@ function state_player_machroll()
 	{
 		if (crouchslipbuffer <= 0)
 		{
-			if (key_attack && character != "PT")
+			if (key_sprint && character != "PT")
 			{
 				scr_sound(sound_rollgetup);
 				image_index = 0;
@@ -47,7 +47,7 @@ function state_player_machroll()
 				image_index = 0;
 				state = states.machslide;
 			}
-				else if (key_attack && character == "PT")
+				else if (key_sprint && character == "PT")
 			{
 				scr_sound(sound_rollgetup);
 				image_index = 0;

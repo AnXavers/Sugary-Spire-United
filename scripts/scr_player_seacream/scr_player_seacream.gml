@@ -52,7 +52,7 @@ function state_player_seacreamjump()
 	}
 	if (seacream_stick_buffer > 0)
 		seacream_stick_buffer--;
-	var mvsp = key_attack ? 6 : 4;
+	var mvsp = key_sprint ? 6 : 4;
 	var accel = 0.5;
 	if ((move == -1 && movespeed > -mvsp) || (move == 1 && movespeed < mvsp))
 		movespeed = approach(movespeed, move * mvsp, accel);

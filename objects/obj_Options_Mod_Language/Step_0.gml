@@ -43,7 +43,7 @@ if canmove
 			}
 			break;
 	}
-	if (key_slap2 || key_start)
+	if (key_attack2 || key_start)
 	{
 		scr_sound(sound_enemythrow);
 		instance_destroy();

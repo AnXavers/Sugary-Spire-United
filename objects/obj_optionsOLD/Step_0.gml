@@ -167,7 +167,7 @@ switch (menu)
 	case "MISC":
 		break;
 }
-if (key_slap2 && menu == "HOME")
+if (key_attack2 && menu == "HOME")
 {
 	if (room == realtitlescreen)
 		obj_mainfartselect.abletomove = true;

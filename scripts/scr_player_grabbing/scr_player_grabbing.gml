@@ -14,13 +14,13 @@ function state_player_grabbing()
 		movespeed = 0;
 	if (xscale == -1 && move == 1)
 		movespeed = 0;
-	if (key_attack && grounded)
+	if (key_sprint && grounded)
 	{
 		movespeed = 0;
 		image_index = 0;
 		state = states.grab;
 	}
-	if (key_attack && !grounded)
+	if (key_sprint && !grounded)
 	{
 		movespeed = 0;
 		image_index = 0;
@@ -45,7 +45,7 @@ function state_player_grabbing()
 			sprite_index = spr_player_grabbingmove;
 		xscale = move;
 	}
-	if (key_jump && grounded && !key_down && !key_attack)
+	if (key_jump && grounded && !key_down && !key_sprint)
 	{
 		vsp = -9;
 		image_index = 0;

@@ -32,7 +32,7 @@ function state_player_mach3()
 		case "G":
 			if (grounded && vsp > 0)
 				jumpstop = 0;
-			if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1) && key_attack)
+			if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1) && key_sprint)
 			{
 				image_index = 0;
 				state = states.pizzano_machtwirl;
@@ -58,7 +58,7 @@ function state_player_mach3()
 		default:
 			if (grounded && vsp > 0)
 				jumpstop = 0;
-			if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1) && key_attack)
+			if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1) && key_sprint)
 			{
 				image_index = 0;
 				sprite_index = spr_mach3jump;
@@ -72,7 +72,7 @@ function state_player_mach3()
 	}
 	if (grounded)
 	{
-		if (global.attackmove == 2 && key_slap && (sprite_index == spr_longjumpend || sprite_index == spr_longjump))
+		if (global.attackmove == 2 && key_attack && (sprite_index == spr_longjumpend || sprite_index == spr_longjump))
 		{
 			sprite_index = spr_shoulder
 			if (movespeed < 8)
@@ -129,7 +129,7 @@ function state_player_mach3()
 		hsp = 0;
 		image_index = 0;
 	}
-	if ((!key_attack && grounded) && sprite_index != spr_machdashpad && Dashpad_buffer <= 0)
+	if ((!key_sprint && grounded) && sprite_index != spr_machdashpad && Dashpad_buffer <= 0)
 	{
 		scr_sound(sound_break);
 		sprite_index = spr_machslidestart;

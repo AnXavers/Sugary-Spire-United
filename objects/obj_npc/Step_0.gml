@@ -1,5 +1,5 @@
 speaking = false;
-if (place_meeting(x, y, obj_player) && ((!press_to_speak) || (obj_player.key_slap2 && press_to_speak)))
+if (place_meeting(x, y, obj_player) && ((!press_to_speak) || (obj_player.key_attack2 && press_to_speak)))
 	speaking = true;
 if global.panic
 	sprite_index = speaking ? panicspeak : panicidle;

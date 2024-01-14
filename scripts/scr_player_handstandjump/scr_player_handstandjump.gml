@@ -105,14 +105,14 @@ function state_player_handstandjump()
 	image_speed = 0.3;
 	if (!instance_exists(obj_slidecloud) && grounded && movespeed > 5)
 		instance_create(x, y, obj_slidecloud);
-	if (key_attack && floor(image_index) == (image_number - 1) && sprite_index != spr_bump)
+	if (key_sprint && floor(image_index) == (image_number - 1) && sprite_index != spr_bump)
 	{
 		image_speed = 0.35;
 		state = states.mach2;
 		sprite_index = spr_mach2;
 		grav = 0.5;
 	}
-	if (key_slap2 && !key_down)
+	if (key_attack2 && !key_down)
 	{
 		sprite_index = spr_machtumble;
 		image_index = 0;

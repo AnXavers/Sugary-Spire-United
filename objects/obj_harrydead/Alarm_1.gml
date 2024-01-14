@@ -5,7 +5,8 @@ instance_destroy(obj_cameraRegion)
 audio_resume_all()
 scr_sound(sound_explosion)
 screen_flash(1)
-layer_destroy(global.harryeffect)
+if global.harryfreeze
+	layer_destroy(global.harryeffect)
 global.combofreeze = 30;
 global.combotime = 60;
 switch (global.combo)

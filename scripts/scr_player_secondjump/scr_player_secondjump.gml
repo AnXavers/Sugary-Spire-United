@@ -29,7 +29,7 @@ function state_player_secondjump()
 		vsp = grav;
 		jumpstop = 1;
 	}
-	if (grounded && input_buffer_highjump < 8 && !key_attack && !key_down && vsp > 0)
+	if (grounded && input_buffer_highjump < 8 && !key_sprint && !key_down && vsp > 0)
 	{
 		instance_create(x, y, obj_highjumpcloud1);
 		vsp = -14;
@@ -46,7 +46,7 @@ function state_player_secondjump()
 	}
 	if (grounded && vsp > 0)
 	{
-		if (key_attack)
+		if (key_sprint)
 			landAnim = 0;
 		input_buffer_highjump = 0;
 		state = states.normal;

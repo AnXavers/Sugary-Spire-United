@@ -1,7 +1,7 @@
 function state_player_runonball()
 {
 	move = key_left + key_right;
-	if (!key_attack)
+	if (!key_sprint)
 		hsp = move * movespeed;
 	else
 		hsp = image_xscale * movespeed;
@@ -14,7 +14,7 @@ function state_player_runonball()
 		jumpAnim = 1;
 		jumpstop = 0;
 	}
-	if (key_jump && grounded && !key_down && !key_attack)
+	if (key_jump && grounded && !key_down && !key_sprint)
 	{
 		vsp = -7;
 		state = states.jump;
@@ -27,7 +27,7 @@ function state_player_runonball()
 	}
 	movespeed = 2.5;
 	sprite_index = spr_slipnslide;
-	if (key_attack && grounded)
+	if (key_sprint && grounded)
 	{
 		if (mach2 < 35)
 		{
@@ -37,7 +37,7 @@ function state_player_runonball()
 		if (mach2 >= 35)
 			movespeed = 6;
 	}
-	if (!key_attack)
+	if (!key_sprint)
 		mach2 = 0;
 	image_speed = 0.35;
 }

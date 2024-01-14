@@ -33,7 +33,7 @@ function state_player_punch()
 	
 		if (pogochargeactive == 1)
 		{
-			if key_attack2
+			if key_sprint2
 			{
 				state = states.pizzano_rocketfist
 				image_index = 0
@@ -86,7 +86,7 @@ function state_player_punch()
 			machhitAnim = 0
 			instance_create((x - 10), (y + 10), obj_bumpeffect)
 		}
-		if (key_attack2 && character == "PT" && pogochargeactive == 0)
+		if (key_sprint2 && character == "PT" && pogochargeactive == 0)
 		{
 			sprite_index = spr_noise_pogostart
 			image_index = 0

@@ -19,7 +19,7 @@ function state_player_costumegrab()
 	}
 	if costumeBlock != -4
 	{
-		if (key_slap2)
+		if (key_attack2)
 		{
 			with self.costumeBlock
 			{

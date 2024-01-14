@@ -74,7 +74,7 @@ if (obj_player.key_down2 && stop == 0)
 	global.oldcolorchoosen = clamp((global.colorchoosen + 1), 0, (obj_player.colorheight - 1))
 else if (obj_player.key_up2 && stop == 0)
 	global.oldcolorchoosen = clamp((global.colorchoosen - 1), 0, (obj_player.colorheight - 1))
-if ((obj_player.key_slap2 || keyboard_check_pressed(vk_return)) && stop == 0 && has_selectedoption <= 0)
+if ((obj_player.key_attack2 || keyboard_check_pressed(vk_return)) && stop == 0 && has_selectedoption <= 0)
 {
 	ini_open((((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
 	ini_write_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Red", slider[0].finalvalue)
@@ -128,7 +128,7 @@ if (mouse_check_button_pressed(mb_left) && input_text == 0 && stop == 0)
 		input = palettename
 	}
 }
-if ((obj_player.key_jump2 || keyboard_check_pressed(vk_return) || obj_player.key_slap2) && input_text == 1)
+if ((obj_player.key_jump2 || keyboard_check_pressed(vk_return) || obj_player.key_attack2) && input_text == 1)
 {
 	input_text = 0
 	if (obj_player.key_jump2 || keyboard_check_pressed(vk_return))

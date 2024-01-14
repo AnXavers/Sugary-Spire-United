@@ -49,7 +49,7 @@ function state_player_climbwall()
 	}
 	if (grabclimbbuffer > 0)
 		grabclimbbuffer--;
-	if (!key_attack && grabclimbbuffer <= 0)
+	if (!key_sprint && grabclimbbuffer <= 0)
 	{
 		movespeed = 0;
 		vsp /= 2;
@@ -106,7 +106,7 @@ function state_player_climbwall()
 		dir = (move == xscale) ? xscale : -xscale;
 		movespeed = verticalMovespeed;
 	}
-	if (key_jump && key_attack)
+	if (key_jump && key_sprint)
 	{
 		if (movespeed >= 12 && !place_meeting(x + xscale, y, obj_molassesWall) && character != "S")
 		{
@@ -221,7 +221,7 @@ function state_player_climbceiling()
 			mach2 = 100;
 		}
 	}
-	if (!key_attack)
+	if (!key_sprint)
 	{
 		vsp = 0;
 		xscale *= -1;
@@ -265,7 +265,7 @@ function state_player_climbceiling()
 		image_index = 0;
 		instance_create(x + (10 * -xscale), y + 10, obj_bumpeffect);
 	}
-	if (key_jump && key_attack)
+	if (key_jump && key_sprint)
 	{
 		if (movespeed >= 12 && character != "S")
 		{
@@ -338,7 +338,7 @@ function state_player_climbdownwall()
 		mach4mode = true;
 	crouchslideAnim = 1;
 	sprite_index = spr_climbdownwall;
-	if (!key_attack && grabclimbbuffer <= 0)
+	if (!key_sprint && grabclimbbuffer <= 0)
 	{
 		xscale *= -1;
 		movespeed = 0;
@@ -402,7 +402,7 @@ function state_player_climbdownwall()
 			sprite_index = spr_bodyslamland;
 		}
 	}
-	if (key_jump && key_attack)
+	if (key_jump && key_sprint)
 	{
 		if (movespeed >= 12 && !place_meeting(x - xscale, y, obj_molassesWall) && character != "S")
 		{

@@ -4,7 +4,7 @@ function state_player_shoulder()
 	hsp = (movespeed * xscale)
 	var _lerpamount = 0.01
 	var _speedlimit = 16
-	if key_attack
+	if key_sprint
 	{
 		_lerpamount *= 1.5
 		_speedlimit = 18
@@ -65,7 +65,7 @@ function state_player_shoulder()
 		audio_stop_sound(shouldersfx)
 		do_uppercut();
 	}
-	else if !key_slap
+	else if !key_attack
 	{
 		state = states.mach2;
 		sprite_index = spr_mach2
@@ -79,7 +79,7 @@ function state_player_shoulder()
 	}
 	else if animation_end()
 	{
-		if !instance_exists(obj_superdashcloud) && key_attack
+		if !instance_exists(obj_superdashcloud) && key_sprint
 			instance_create(x, y, obj_superdashcloud)
 		else if !instance_exists(obj_dashcloud)
 			instance_create(x, y, obj_dashcloud)

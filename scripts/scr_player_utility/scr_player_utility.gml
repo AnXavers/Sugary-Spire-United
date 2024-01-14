@@ -46,7 +46,7 @@ function do_taunt()
 }
 function do_grab()
 {
-	if (key_slap2 && !key_down && !suplexmove && shotgunAnim == 0)
+	if (key_attack2 && !key_down && !suplexmove && shotgunAnim == 0)
 	{
 		if (global.treat)
 		{

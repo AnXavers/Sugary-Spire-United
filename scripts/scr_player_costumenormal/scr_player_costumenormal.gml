@@ -38,14 +38,14 @@ function state_player_costumenormal()
 				vsp = -6;
 		}
 		chuckcooldown = approach(chuckcooldown, 120, 1);
-		if (key_attack && chuckcooldown >= 30)
+		if (key_sprint && chuckcooldown >= 30)
 		{
 			if (move != 0)
 				xscale = move;
 			state = states.costumechuck;
 			sprite_index = spr_swingding;
 		}
-		if (key_slap2 && grounded && place_meeting(x, y + 64, obj_iceblock))
+		if (key_attack2 && grounded && place_meeting(x, y + 64, obj_iceblock))
 		{
 			substate = substates.unknown_2;
 			costumegrabdelay = 15;

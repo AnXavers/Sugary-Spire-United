@@ -31,7 +31,7 @@ function state_player_cookiemount()
 		if (input_buffer == 0)
 			movespeed = approach(movespeed, 0, 0.75);
 	}
-	if (((key_attack2) && global.moveset == 1) || (key_jump2 && global.moveset != 1))
+	if (((key_sprint2) && global.moveset == 1) || (key_jump2 && global.moveset != 1))
 	{
 		movespeed = abs(hsp);
 		if (movespeed < 6)
@@ -72,7 +72,7 @@ function state_player_cookiemount()
 		sprite_index = spr_player_cookiemount;
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_cookiemountfireass)
 		sprite_index = spr_cookiemountfireassend
-	if (key_slap) && (global.moveset == 1)
+	if (key_attack) && (global.moveset == 1)
 	{
 		scr_sound(sfx_playerspin);
 		sprite_index = spr_cookiemount_dash;

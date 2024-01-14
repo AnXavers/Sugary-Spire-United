@@ -4,7 +4,7 @@ if (!showText && keyboard_check_pressed(vk_anykey))
 	showText = true;
 	alarm[0] = 120;
 }
-else if (showText && key_slap2)
+else if (showText && key_attack2)
 {
 	event_user(0);
 	video_close();

@@ -21,7 +21,7 @@ function scr_player_pogo() //im so jolly
 		xscale = move
 	if (move != xscale)
 		pogospeed = 6
-	if (grounded && (!key_slap2) && sprite_index != spr_noise_pogobounce && sprite_index != spr_noise_pogobouncemach)
+	if (grounded && (!key_attack2) && sprite_index != spr_noise_pogobounce && sprite_index != spr_noise_pogobouncemach)
 	{
 		pogospeedprev = 0
 		image_index = 0
@@ -62,7 +62,7 @@ function scr_player_pogo() //im so jolly
 	}
 	if (movespeed > 12)
 		pogocharge = 100
-	if (!key_attack)
+	if (!key_sprint)
 		state = states.normal
 	image_speed = 0.35
 	do_taunt()

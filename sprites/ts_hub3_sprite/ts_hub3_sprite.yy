@@ -3,9 +3,9 @@
   "resourceVersion": "1.0",
   "name": "ts_hub3_sprite",
   "bbox_bottom": 817,
-  "bbox_left": 0,
-  "bbox_right": 1023,
-  "bbox_top": 0,
+  "bbox_left": 32,
+  "bbox_right": 959,
+  "bbox_top": 32,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a04d793b-42da-4ea5-a089-626d87f9a064",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"018e7443-d053-4071-890b-01632b38a305",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 928,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"99e2f162-e581-4d4a-ade0-b3fbb349b47d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b617220e-030a-4528-8fe2-c36cc0f6c0dd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a04d793b-42da-4ea5-a089-626d87f9a064","path":"sprites/ts_hub3_sprite/ts_hub3_sprite.yy",},},},"Disabled":false,"id":"defa3d83-b97c-4beb-8e90-2c0db878e833","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"018e7443-d053-4071-890b-01632b38a305","path":"sprites/ts_hub3_sprite/ts_hub3_sprite.yy",},},},"Disabled":false,"id":"ae9f3118-b7f0-4e75-b2d2-8e14b70e5c07","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

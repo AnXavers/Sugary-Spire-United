@@ -65,7 +65,7 @@ function state_player_mach1()
 				jumpAnim = 0;
 				image_index = 0;
 			}
-			if (!key_attack && grounded)
+			if (!key_sprint && grounded)
 			{
 				state = states.normal;
 				image_index = 0;
@@ -78,7 +78,7 @@ function state_player_mach1()
 				mach2 = 0;
 			}
 			image_speed = 0.45;
-			if (key_jump && grounded && key_attack)
+			if (key_jump && grounded && key_sprint)
 			{
 				scr_sound(sound_jump);
 				sprite_index = spr_airdash1;
@@ -109,7 +109,7 @@ function state_player_mach1()
 				}
 				instance_create(x, y, obj_taunteffect);
 			}
-			if (key_slap2 && !key_down && suplexmove == 0 && shotgunAnim == 0 && global.cane != 1)
+			if (key_attack2 && !key_down && suplexmove == 0 && shotgunAnim == 0 && global.cane != 1)
 			{
 				scr_sound(sound_suplex1);
 				instance_create(x, y, obj_slaphitbox);

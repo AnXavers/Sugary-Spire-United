@@ -15,7 +15,7 @@ function state_player_tackle()
 	crouchAnim = 1;
 	if (animation_end())
 	{
-		if (key_attack && grounded && character != "PT")
+		if (key_sprint && grounded && character != "PT")
 		{
 			mach2 = 0;
 			if (movespeed < 6)
@@ -27,7 +27,7 @@ function state_player_tackle()
 		}
 		else
 			state = states.normal;
-				if (key_attack && grounded && character == "PT")
+				if (key_sprint && grounded && character == "PT")
 		{
 			mach2 = 0;
 			if (movespeed < 8)

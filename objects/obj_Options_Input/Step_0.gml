@@ -14,7 +14,7 @@ if (canmove)
 			optionselected++;
 			scr_sound(sound_step);
 		}
-		if (key_slap2 || key_start)
+		if (key_attack2 || key_start)
 		{
 			ini_open("optionData.ini");
 			ini_write_string("ControlsKeys", "up", global.key_up);
@@ -22,10 +22,10 @@ if (canmove)
 			ini_write_string("ControlsKeys", "left", global.key_left);
 			ini_write_string("ControlsKeys", "down", global.key_down);
 			ini_write_string("ControlsKeys", "jump", global.key_jump);
-			ini_write_string("ControlsKeys", "slap", global.key_slap);
+			ini_write_string("ControlsKeys", "slap", global.key_attack);
 			ini_write_string("ControlsKeys", "taunt", global.key_taunt);
 			ini_write_string("ControlsKeys", "shoot", global.key_shoot);
-			ini_write_string("ControlsKeys", "attack", global.key_attack);
+			ini_write_string("ControlsKeys", "attack", global.key_sprint);
 			ini_write_string("ControlsKeys", "start", global.key_start);
 			ini_write_string("ControlsKeys", "special", global.key_special);
 			ini_close();
@@ -46,10 +46,10 @@ if (canmove)
 				ini_write_string("ControlsKeys", "left", global.key_left);
 				ini_write_string("ControlsKeys", "down", global.key_down);
 				ini_write_string("ControlsKeys", "jump", global.key_jump);
-				ini_write_string("ControlsKeys", "slap", global.key_slap);
+				ini_write_string("ControlsKeys", "slap", global.key_attack);
 				ini_write_string("ControlsKeys", "taunt", global.key_taunt);
 				ini_write_string("ControlsKeys", "shoot", global.key_shoot);
-				ini_write_string("ControlsKeys", "attack", global.key_attack);
+				ini_write_string("ControlsKeys", "attack", global.key_sprint);
 				ini_write_string("ControlsKeys", "start", global.key_start);
 				ini_write_string("ControlsKeys", "special", global.key_special);
 				ini_close();
@@ -137,14 +137,14 @@ if (canmove)
 			{
 				if (keyboard_check_pressed(vk_anykey))
 				{
-					global.key_slap = keyboard_key;
+					global.key_attack = keyboard_key;
 					selecting = false;
 				}
 			}
 			if ((key_jump || keyboard_check_pressed(vk_enter)) && selecting == 0)
 			{
 				selecting = true;
-				global.key_slap = -1;
+				global.key_attack = -1;
 			}
 			break;
 		case 7:
@@ -182,14 +182,14 @@ if (canmove)
 			{
 				if (keyboard_check_pressed(vk_anykey))
 				{
-					global.key_attack = keyboard_key;
+					global.key_sprint = keyboard_key;
 					selecting = false;
 				}
 			}
 			if ((key_jump || keyboard_check_pressed(vk_enter)) && selecting == 0)
 			{
 				selecting = true;
-				global.key_attack = -1;
+				global.key_sprint = -1;
 			}
 			break;
 		case 10:

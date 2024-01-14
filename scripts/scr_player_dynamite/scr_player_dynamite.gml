@@ -13,14 +13,14 @@ function state_player_dynamite() //oughhhh im so noise bombs rn
 	{
 		if character == "V" ||  character == "T"
 		{
-		if (key_attack && hsp != 0)
+		if (key_sprint && hsp != 0)
 			state = states.mach2
 		else
 			state = states.normal
 		}
 		if character == "PT" 
 		{
-		if (key_attack && hsp != 0)
+		if (key_sprint && hsp != 0)
 			state = states.pogo
 		else
 			state = states.normal

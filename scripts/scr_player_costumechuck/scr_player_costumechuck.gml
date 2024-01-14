@@ -14,7 +14,7 @@ function state_player_costumechuck()
 			sprite_index = spr_mach3hitwall;
 			image_index = 0;
 		}
-		if (chuckcooldown == 0 || !key_attack)
+		if (chuckcooldown == 0 || !key_sprint)
 			state = states.costumenormal;
 	}
 	if (substate == 1)

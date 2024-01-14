@@ -9,7 +9,7 @@ if (pray_delay == 0)
 			scr_sound(sfx_cottongone);
 			scr_sound(sound_losetransformation);
 			state = states.normal;
-			if (key_attack)
+			if (key_sprint)
 			{
 				if (abs(movespeed < 10))
 					movespeed = 10;

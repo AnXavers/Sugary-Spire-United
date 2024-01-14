@@ -44,7 +44,7 @@ function state_player_slap()
 		momemtum = 0;
 	}
 	landAnim = 0;
-	if (key_slap)
+	if (key_attack)
 		slapbuffer = 0;
 	if (floor(image_index) == (image_number - 1) && slapbuffer < 8)
 	{

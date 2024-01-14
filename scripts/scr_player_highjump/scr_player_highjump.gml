@@ -28,7 +28,7 @@ function state_player_highjump()
 	}
 	if (grounded && vsp > 0)
 	{
-		if (key_attack)
+		if (key_sprint)
 			landAnim = 0;
 		state = 1;
 		jumpAnim = 1;
@@ -41,7 +41,7 @@ function state_player_highjump()
 		if (!audio_is_playing(sfx_land))
 			audio_play_sound(sfx_land, 1, false);
 	}
-	if (grounded && input_buffer_jump < 8 && !key_attack && !key_down && vsp > 0)
+	if (grounded && input_buffer_jump < 8 && !key_sprint && !key_down && vsp > 0)
 	{
 		vsp = -9;
 		state = states.jump;

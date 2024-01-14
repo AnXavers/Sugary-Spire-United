@@ -1,6 +1,6 @@
 function state_player_freefall()
 {
-	if ((key_shoot2 || key_slap2 || key_attack2) && character == "M")
+	if ((key_shoot2 || key_attack2 || key_sprint2) && character == "M")
 	{
 		state = states.pepperman_pinball
 		image_index = 0;

@@ -25,7 +25,7 @@ function state_player_cotton()
 		momemtum = 0;
 	if (move != 0)
 	{
-		if (key_attack && move == xscale && grounded)
+		if (key_sprint && move == xscale && grounded)
 		{
 			if (movespeed < 8)
 				movespeed += 0.25;
@@ -65,7 +65,7 @@ function state_player_cotton()
 		instance_create(x, y, obj_highjumpcloud2);
 		scr_sound(sfx_cottonjump);
 	}
-	if (key_slap2 && sprite_index != spr_cotton_attack && groundedcot == 1)
+	if (key_attack2 && sprite_index != spr_cotton_attack && groundedcot == 1)
 	{
 		flash = 1;
 		image_index = 0;

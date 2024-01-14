@@ -45,7 +45,7 @@ function state_player_jump()
 		vsp = grav;
 		jumpstop = 1;
 	}
-	if (grounded && input_buffer_jump < 8 && !key_down && !key_attack && vsp > 0 && !(sprite_index == spr_facestomp || sprite_index == spr_freefall))
+	if (grounded && input_buffer_jump < 8 && !key_down && !key_sprint && vsp > 0 && !(sprite_index == spr_facestomp || sprite_index == spr_freefall))
 	{
 		scr_sound(sound_jump);
 		sprite_index = spr_jump;
@@ -61,7 +61,7 @@ function state_player_jump()
 		freefallstart = 0;
 		instance_create_depth(x, y, 0, obj_landcloud);
 	}
-	if (key_attack && (obj_player.character == "N" || obj_player.character == "T") && charged)
+	if (key_sprint && (obj_player.character == "N" || obj_player.character == "T") && charged)
 	{
 		sprite_index = spr_superjump_cancelprep;
 		image_index = 0;
@@ -79,7 +79,7 @@ function state_player_jump()
 		mach2 = 0;
 		state = states.Sjump;
 	}
-	if (key_attack && character == "PT" && pogochargeactive = 1)
+	if (key_sprint && character == "PT" && pogochargeactive = 1)
 	{
 		if !key_up
 		{
@@ -109,7 +109,7 @@ function state_player_jump()
 		mach2 = 0;
 		state = states.Sjump;
 	}
-	if (key_attack && grounded && fallinganimation < 40 && character == "DEEZNUTS")
+	if (key_sprint && grounded && fallinganimation < 40 && character == "DEEZNUTS")
 	{
 		mach2 = 0;
 		movespeed = 0;
@@ -118,16 +118,16 @@ function state_player_jump()
 		state = states.pizzano_mach;
 		image_index = 0;
 	}
-		 if (key_attack && !pogochargeactive && !key_slap2 && character == "PT")
+		 if (key_sprint && !pogochargeactive && !key_attack2 && character == "PT")
 			{
 				sprite_index = spr_noise_pogostart
 				image_index = 0
 				pogospeed = movespeed
 				state = states.pogo
 			}
-	if (grounded && vsp > 0 && !key_attack)
+	if (grounded && vsp > 0 && !key_sprint)
 	{
-		if (key_attack)
+		if (key_sprint)
 			landAnim = 0;
 		input_buffer_secondjump = 0;
 		state = states.normal;
@@ -249,7 +249,7 @@ function state_player_jump()
 			sprite_index = spr_caneslam;
 			vsp = -18;
 		}
-		if (!key_down && key_slap2 && suplexmove == 0 && shotgunAnim == 0)
+		if (!key_down && key_attack2 && suplexmove == 0 && shotgunAnim == 0)
 		{
 			scr_sound(sound_suplex1);
 			instance_create(x, y, obj_slaphitbox);
@@ -311,7 +311,7 @@ function state_player_jump()
 		sprite_index = spr_noise_doublejumpfall
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_candytransitionup)
 		sprite_index = spr_candyup;
-	if (character == "C" && inhalingenemy == 1 && key_slap && !grounded)
+	if (character == "C" && inhalingenemy == 1 && key_attack && !grounded)
 	{
 		sprite_index = spr_spitair;
 		with (instance_create(x, y, obj_coneboyprojectile))
@@ -325,7 +325,7 @@ function state_player_jump()
 		hsp = -5 * xscale;
 		move = 0;
 	}
-	if (key_attack && grounded && fallinganimation < 40 && pogochargeactive = 0)
+	if (key_sprint && grounded && fallinganimation < 40 && pogochargeactive = 0)
 	{
 		if character != "PT"
 		{

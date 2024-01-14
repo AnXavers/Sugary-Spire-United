@@ -9,7 +9,7 @@ function state_player_golf()
 		sprite_index = spr_swingding;
 	else if (animation_end())
 		state = 1;
-	if (key_slap2)
+	if (key_attack2)
 	{
 		image_index = 0;
 		sprite_index = spr_swingdingend;

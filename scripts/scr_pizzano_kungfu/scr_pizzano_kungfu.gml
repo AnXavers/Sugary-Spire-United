@@ -25,7 +25,7 @@ function scr_pizzano_kungfu()
 				sprite_index = spr_pizzano_kungfuair3;
 			if (grounded)
 			{
-				if (key_attack)
+				if (key_sprint)
 					state = states.mach2;
 				else
 					state = states.normal;
@@ -49,7 +49,7 @@ function scr_pizzano_kungfu()
 			}
 			if (grounded)
 			{
-				if (key_attack)
+				if (key_sprint)
 					state = states.mach2;
 				else
 					state = states.normal;
@@ -68,11 +68,11 @@ function scr_pizzano_kungfu()
 				if (move != xscale && movespeed > -12)
 					movespeed -= 0.4;
 			}
-			else if (kungtime <= 15 && movespeed > 0 && !key_attack)
+			else if (kungtime <= 15 && movespeed > 0 && !key_sprint)
 				movespeed -= 0.15;
 			if (animation_end())
 			{
-				if (key_attack)
+				if (key_sprint)
 					state = states.mach2;
 				else
 					state = states.normal;
@@ -90,7 +90,7 @@ function scr_pizzano_kungfu()
 			break;
 	}
 	image_speed = 0.35;
-	if (key_slap2)
+	if (key_attack2)
 	{
 		scr_sound(sound_suplex1);
 		instance_create(x, y, obj_slaphitbox);
@@ -112,7 +112,7 @@ function scr_pizzano_kungfu()
 	}
 	if (scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles))
 	{
-		if ((!grounded || slopeCheck(x + xscale, y)) && key_attack)
+		if ((!grounded || slopeCheck(x + xscale, y)) && key_sprint)
 		{
 			verticalMovespeed = movespeed;
 			if (vsp > 0 && place_meeting(x + xscale, y, obj_icyWall))

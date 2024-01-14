@@ -108,7 +108,7 @@ function state_player_crouch()
 		}
 		instance_create(x, y, obj_taunteffect);
 	}
-	if (key_slap2 && grounded)
+	if (key_attack2 && grounded)
 	{
 		if (character == "C")
 		{

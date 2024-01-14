@@ -46,7 +46,7 @@ function state_player_mach2()
 		default:
 			if (grounded && vsp > 0)
 				jumpstop = 0;
-			if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1) && key_attack)
+			if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1) && key_sprint)
 			{
 				image_index = 0;
 				sprite_index = spr_secondjump1;
@@ -61,7 +61,7 @@ function state_player_mach2()
 	var mach_sprite = (movespeed >= 8) ? spr_mach2 : spr_mach1;
 	if (grounded)
 	{
-		if (global.attackmove == 2 && key_slap && (sprite_index == spr_longjumpend || sprite_index == spr_longjump))
+		if (global.attackmove == 2 && key_attack && (sprite_index == spr_longjumpend || sprite_index == spr_longjump))
 		{
 			sprite_index = spr_shoulder
 			if (movespeed < 8)
@@ -146,7 +146,7 @@ function state_player_mach2()
 	}
 	if (movespeed >= 8)
 	{
-		if (!key_attack && grounded)
+		if (!key_sprint && grounded)
 		{
 			scr_sound(sound_break);
 			sprite_index = spr_machslidestart;
@@ -163,7 +163,7 @@ function state_player_mach2()
 	}
 	else if (movespeed < 8)
 	{
-		if (!key_attack && grounded)
+		if (!key_sprint && grounded)
 			state = states.normal;
 		if (move == -xscale && grounded)
 		{
@@ -278,7 +278,7 @@ function state_player_mach2()
 		image_speed = abs(movespeed) / 15;
 	if (grounded)
 		upsideDownJump = false;
-	if ((obj_player.character == "N" || obj_player.character == "T") && key_up && key_slap2 && charged)
+	if ((obj_player.character == "N" || obj_player.character == "T") && key_up && key_attack2 && charged)
 	{
 		flash = 1;
 		alarm[0] = 240;

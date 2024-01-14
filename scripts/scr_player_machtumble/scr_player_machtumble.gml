@@ -37,7 +37,7 @@ function state_player_machtumble()
 		image_index = 0;
 		instance_create(x + (10 * xscale), y + 10, obj_bumpeffect);
 	}
-	if (key_slap2)
+	if (key_attack2)
 		bufferslap = 0;
 	else if (bufferslap < 10)
 		bufferslap++;
@@ -61,7 +61,7 @@ function state_player_machtumble()
 	}
 	if (animation_end())
 	{
-		if (key_attack)
+		if (key_sprint)
 		{
 			if (mach2 < 100)
 			{
@@ -74,13 +74,13 @@ function state_player_machtumble()
 				sprite_index = spr_mach3player;
 			}
 		}
-		else if (!key_attack && bufferslap >= 8)
+		else if (!key_sprint && bufferslap >= 8)
 		{
 			image_speed = 0.35;
 			state = 1;
 			grav = 0.5;
 		}
-		else if (!key_attack && bufferslap < 8)
+		else if (!key_sprint && bufferslap < 8)
 		{
 			sprite_index = spr_machtumble;
 			image_index = 0;

@@ -5,7 +5,7 @@ with (other)
 		scr_sound(sfx_cottongone);
 		scr_sound(sound_losetransformation);
 		state = 1;
-		if (key_attack)
+		if (key_sprint)
 		{
 			if (abs(movespeed < 10))
 				movespeed = 10;

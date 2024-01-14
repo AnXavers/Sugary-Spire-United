@@ -8,7 +8,7 @@ function scr_coneboy_inhale() //gml_Script_scr_coneboy_inhale
 		if (!inhaling)
 			inhaling = 1
 		sprite_index = spr_coneboy_inhaling
-		if ((!key_attack) || inhalingenemy == 1)
+		if ((!key_sprint) || inhalingenemy == 1)
 		{
 			state = 1
 			inhaling = 0
@@ -33,7 +33,7 @@ function scr_coneboy_inhale() //gml_Script_scr_coneboy_inhale
 	if (substate == 2)
 	{
 		hsp = (xscale * movespeed)
-		if (!key_attack)
+		if (!key_sprint)
 		{
 			state = 1
 			sprite_index = spr_coneboy_idle

@@ -20,7 +20,7 @@ function scr_pizzano_shoulderbash()
 			audio_stop_sound(sound_suplex1);
 		scr_sound(sound_bump);
 	}
-	if (key_attack && grounded)
+	if (key_sprint && grounded)
 	{
 		flash = 1;
 		state = states.mach2;

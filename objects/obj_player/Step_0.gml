@@ -347,7 +347,7 @@ if (!ds_list_empty(sour_buddies))
 	hsp /= sourreduction;
 	if (sour_buddies_timer > 0)
 		sour_buddies_timer--;
-	else if (key_jump || key_slap2 || key_right2 || key_left2 || key_attack2 || state == states.mach3)
+	else if (key_jump || key_attack2 || key_right2 || key_left2 || key_sprint2 || state == states.mach3)
 	{
 		var _range = irandom_range(0, _size);
 		ds_list_delete(sour_buddies, _range);

@@ -43,7 +43,7 @@ function state_player_holdbomb()
 				jumpstop = 1;
 			}
 		}
-		if (grounded && key_jump && !key_down && !key_attack && vsp > 0)
+		if (grounded && key_jump && !key_down && !key_sprint && vsp > 0)
 		{
 			scr_sound(sound_jump);
 			sprite_index = spr_haulingjump;
@@ -51,7 +51,7 @@ function state_player_holdbomb()
 			vsp = -11;
 			image_index = 0;
 		}
-		if (key_slap2 && grounded)
+		if (key_attack2 && grounded)
 		{
 			hsp = 0;
 			movespeed = 0;

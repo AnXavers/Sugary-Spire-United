@@ -14,7 +14,7 @@ function state_player_fireass()
 			xscale = move;
 		hsp = move * movespeed;
 		movespeed = 5;
-		if (key_slap2 && global.moveset == 1)
+		if (key_attack2 && global.moveset == 1)
 		{
 			sprite_index = spr_fireassgrab
 			movespeed = 11;

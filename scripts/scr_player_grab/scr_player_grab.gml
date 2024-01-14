@@ -96,7 +96,7 @@ function state_player_grab()
 	}
 	if (key_jump)
 		input_buffer_jump = 0;
-	if (grounded && input_buffer_jump < 8 && !key_down && !key_attack && vsp > 0 && sprite_index != spr_swingding)
+	if (grounded && input_buffer_jump < 8 && !key_down && !key_sprint && vsp > 0 && sprite_index != spr_swingding)
 	{
 		scr_sound(sound_jump);
 		sprite_index = spr_haulingjump;
@@ -126,7 +126,7 @@ function state_player_grab()
 	}
 	if (swingdingbuffer > 0)
 		swingdingbuffer--;
-	if (key_slap2)
+	if (key_attack2)
 	{
 		if (move != 0)
 			move = xscale;
@@ -140,7 +140,7 @@ function state_player_grab()
 			sprite_index = spr_uppercutfinishingblow;
 		image_index = 0;
 	}
-	if (key_attack)
+	if (key_sprint)
 	{
 		sprite_index = spr_swingding;
 		if (movespeed < 10)

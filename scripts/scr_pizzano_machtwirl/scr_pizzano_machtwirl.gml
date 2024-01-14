@@ -17,7 +17,7 @@ function scr_pizzano_machtwirl()
 	if !key_jump2 && vsp < -4
 		vsp = -4
 	if grounded {
-		if key_attack {
+		if key_sprint {
 			state = states.mach2
 			image_index = 0;
 			
@@ -37,7 +37,7 @@ function scr_pizzano_machtwirl()
 		instance_destroy(jumpbad)
 		vsp = -10
 	}
-	if key_slap2 {
+	if key_attack2 {
 		if !charged && !key_up {
 			flash = 1
 			state = states.pizzano_rocketfist
@@ -82,7 +82,7 @@ function scr_pizzano_machtwirl()
 		}
 	}
 
-	if key_attack && (!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)  
+	if key_sprint && (!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)  
 	{
 		verticalMovespeed = movespeed;
 		if (vsp > 0) && (place_meeting(x + xscale, y, obj_icyWall)) 

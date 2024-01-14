@@ -49,9 +49,9 @@ function state_player_handstand()
 	}
 	if (sprite_index == spr_null && floor(image_index) == (image_number - 1))
 		sprite_index = spr_null;
-	if (!key_attack)
+	if (!key_sprint)
 		state = states.normal;
-	if (key_slap2 && bounced != 0 && !key_up)
+	if (key_attack2 && bounced != 0 && !key_up)
 	{
 		sprite_index = spr_null;
 		image_index = 0;
@@ -62,7 +62,7 @@ function state_player_handstand()
 		bounced = 0;
 		state = states.mach3;
 	}
-	else if (key_slap2 && bounced != 0 && key_up)
+	else if (key_attack2 && bounced != 0 && key_up)
 	{
 		sprite_index = spr_null;
 		image_index = 0;

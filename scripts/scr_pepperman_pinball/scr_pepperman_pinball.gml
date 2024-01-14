@@ -34,13 +34,13 @@ function state_pepperman_pinball(){
 				instance_create(x, y, obj_slapstar);
 		}	
 	}
-	if ((key_slap2 || key_shoot2 || key_jump2) && (sprite_index == spr_pepperman_rolling))
+	if ((key_attack2 || key_shoot2 || key_jump2) && (sprite_index == spr_pepperman_rolling))
 	{
 		state = states.mach3
 		sprite_index = spr_mach3jump
 		exit;
 	}
-	else if !(key_attack)
+	else if !(key_sprint)
 	{
 		state = states.normal
 		sprite_index = spr_idle

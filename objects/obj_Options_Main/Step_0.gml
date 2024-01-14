@@ -64,7 +64,7 @@ if (selected == 0)
 				instance_create(0, 0, obj_Options_Mod);
 			}
 	}
-	if (key_slap2 || key_start)
+	if (key_attack2 || key_start)
 	{
 		scr_sound(sound_enemythrow);
 		instance_destroy();

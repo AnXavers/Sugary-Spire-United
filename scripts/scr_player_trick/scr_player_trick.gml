@@ -2,7 +2,7 @@ function state_player_trick()
 {
 	hsp = movespeed * xscale;
 	sprite_index = spr_trick;
-	if (key_attack && ((!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)) && (character == "P" || character == "N"))
+	if (key_sprint && ((!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles)) && (character == "P" || character == "N"))
 	{
 		verticalMovespeed = movespeed;
 		if (vsp > 0 && place_meeting(x + xscale, y, obj_icyWall))

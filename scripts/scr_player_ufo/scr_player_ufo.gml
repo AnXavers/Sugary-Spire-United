@@ -15,13 +15,13 @@ function state_player_ufofloat()
 	}
 	if (move != 0 && sprite_index != spr_ufoShoot)
 		xscale = move;
-	if (key_slap && sprite_index != spr_ufoShootHold)
+	if (key_attack && sprite_index != spr_ufoShootHold)
 	{
 		image_index = 0;
 		sprite_index = spr_ufoShootHold;
 		scr_soundloop(sfx_ufocharge)
 	}
-	else if (!key_slap && sprite_index == spr_ufoShootHold)
+	else if (!key_attack && sprite_index == spr_ufoShootHold)
 	{
 		image_index = 0;
 		sprite_index = spr_ufoShoot;
@@ -39,9 +39,9 @@ function state_player_ufofloat()
 		}
 		shoot_buffer = 0;
 	}
-	if (key_slap && shoot_buffer <= 30)
+	if (key_attack && shoot_buffer <= 30)
 		shoot_buffer++;
-	if (shoot_buffer < 30 && !key_slap)
+	if (shoot_buffer < 30 && !key_attack)
 		shoot_buffer += 0.3;
 	if (shoot_buffer >= 30)
 		image_index = 0;
@@ -81,7 +81,7 @@ function state_player_ufofloat()
 			alarm[1] = 60;
 		}
 	}
-	if (global.moveset == 1 && key_attack)
+	if (global.moveset == 1 && key_sprint)
 	{
 		state = states.ufodash
 		audio_stop_sound(sfx_ufocharge)

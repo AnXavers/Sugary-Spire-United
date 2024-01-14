@@ -7,7 +7,7 @@ function state_player_donut()
 	sprite_index = spr_throwDonut;
 	if (animation_end())
 	{
-		if (key_attack && movespeed >= 10)
+		if (key_sprint && movespeed >= 10)
 		{
 			state = states.mach2;
 			if (movespeed < 10)

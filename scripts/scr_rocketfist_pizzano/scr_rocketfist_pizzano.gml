@@ -114,7 +114,7 @@ else if sprite_index != spr_superjump_cancelprep
 	
 	if !grounded && hsp != 0 && sprite_index != spr_superjump_cancel
 		sprite_index = spr_superjump_cancel
-	if ((key_slap2 && key_up && charged) || (character == "T" && key_up))
+	if ((key_attack2 && key_up && charged) || (character == "T" && key_up))
 	{
 		flash = 1
 		alarm[0] = 240
@@ -140,28 +140,28 @@ else if sprite_index != spr_superjump_cancelprep
 		vsp = -15
 		sprite_index = spr_noise_noisebombspinjump
 	}
-	if key_slap2 && character != "PT"
+	if key_attack2 && character != "PT"
 	{
 		image_index = 0;
 		state = states.freefallprep;
 		sprite_index = spr_bodyslamstart;
 		vsp = -6;
 	}
-	if key_slap2 && character == "PT"
+	if key_attack2 && character == "PT"
 	{
 		image_index = 0;
 		state = states.Sjump;
 		sprite_index = spr_noise_jetpackboostdown;
 		scr_sound(sound_superjumprelease)
 	}
-	if key_attack2 && character != "PT"
+	if key_sprint2 && character != "PT"
 	{
 		image_index = 0;
 		state = states.mach2;
 		sprite_index = spr_mach2;
 		vsp = -5;
 	 }
-	 if key_attack2 && character == "PT"
+	 if key_sprint2 && character == "PT"
 	{
 		image_index = 0;
 		state = states.pogo;
