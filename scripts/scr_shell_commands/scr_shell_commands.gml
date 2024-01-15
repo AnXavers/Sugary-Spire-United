@@ -723,3 +723,27 @@ function meta_set_resolution()
 		argumentDescriptions: ["the name to give yourself."]
 	};
 }
+function sh_possess()
+{
+	var _asset = asset_get_index(argument0[1])
+	if global.possessed != obj_player
+		instance_destroy(global.possessed)
+	if _asset != obj_player
+		global.possessed = instance_create(obj_player.x, obj_player.y, _asset)
+	else
+	{
+		global.possessed = obj_player
+		obj_player.state = states.normal
+		obj_player.visible = true
+	}
+}
+function meta_possess()
+{
+	return 
+	{
+		description: "Allows you to possess a certain object",
+		arguments: ["<object>"],
+		suggestions: [global.objectlist],
+		argumentDescriptions: ["the object to possess."]
+	};
+}

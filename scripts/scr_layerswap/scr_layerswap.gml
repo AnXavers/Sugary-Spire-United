@@ -97,7 +97,7 @@ function scr_layerswap()
 		layer_change_background(bg_exitwayclouds1, bg_exitwayclouds1E)
 		layer_change_background(bg_exitwaycityback, bg_exitwaycitybackE)
 		layer_change_background(bg_exitwaycity, bg_exitwaycityE)
-		layer_change_background(bg_hub3, bg_stormy1_esc)
+		layer_change_background(bg_stormy, bg_stormy1_esc)
 		layer_change_background(bg_stormy_rain, bg_stormy_rain_esc)
 		layer_change_background(bg_hub3_clouds, bg_hub3_clouds_esc)
 	}

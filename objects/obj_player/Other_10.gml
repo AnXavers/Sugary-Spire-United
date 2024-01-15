@@ -54,5 +54,10 @@ vertical = false;
 secretPortal = false;
 roomstartx = x;
 roomstarty = y;
+if global.possessed != obj_player
+{
+	global.possessed.x = roomstartx
+	global.possessed.y = roomstarty
+}
 if ((!room_exists(targetRoom) && room == rm_missing) || targetRoom == rm_blank)
 	show_debug_message("Room \"" + string(targetRoom) + "\" does not exist. Sent Player to \"rm_missing\"");

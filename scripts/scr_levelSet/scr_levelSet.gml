@@ -83,6 +83,16 @@ function scr_levelSet()
 	global.lowfacefill = time_in_frames(0, 10)
 	global.secretsspire = [entryway_secret_1, entryway_secret_2, entryway_secret_3, steamy_secret_1, steamy_secret_2, steamy_secret_3, molasses_secret_1, molasses_secret_2, molasses_secret_3, mountain_secret_1, mountain_secret_2, mountain_secret_3, dance_secret1, dance_secret2, dance_secret3, estate_secret1, estate_secret2, estate_secret3, bee_secret_1, bee_secret_2, bee_secret_3, sucrose_secret1, sucrose_secret2, sucrose_secret3, exitway_secret_1, stormy_secret_1, stormy_secret_2, stormy_secret_3, martian_secret_1, entrance_secret3, entrance_secret4, entrance_secret5, medieval_secret4, medieval_secret5, medieval_secret6, dungeon_secret1, dungeon_secret2, dungeon_secret3]
 	global.secretstotal = array_length(global.secretsspire)
+	global.gamemode = 0
+	global.leveldesign = 1
+	global.lapmode = 1
+	global.jerald = 0
+	global.perfect = 0
+	global.flashlight = 0
+	global.collects = 1
+	global.breakables = 1
+	global.enemies = 1
+	global.escapetimer = 0
 	with (obj_camera)
 	{
 		NextFreeze = false;

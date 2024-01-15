@@ -23,8 +23,16 @@ with (obj_baddie)
 	if (distance_to_object(other.id) < 64 && (object_index != obj_charcherry || (object_index == obj_charcherry && state == 16)))
 	{
 		scr_sleep();
-		hsp = obj_player.xscale * 25;
-		vsp = 0;
+		if !place_meeting(x + xscale, y, obj_solid)
+		{
+			hsp = obj_player.xscale * 25;
+			vsp = 0;
+		}
+		else
+		{
+			hsp = 0
+			vsp = -25
+		}
 		grav = 0;
 		state = 6;
 		hp = 0;

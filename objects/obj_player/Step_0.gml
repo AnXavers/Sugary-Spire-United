@@ -1,3 +1,28 @@
+if global.possessed != obj_player
+{
+	visible = false
+	hspeed = 0
+	vspeed = 0
+	state = states.actor
+	if instance_exists(global.possessed)
+	{
+		with global.possessed
+		{
+			hspeed = lerp(hspeed, (10 * (obj_player.key_right + obj_player.key_left)), 0.02)
+			vspeed = lerp(vspeed, (10 * (obj_player.key_down - obj_player.key_up)), 0.02)
+			obj_player.x = x
+			obj_player.y = y
+			persistent = true
+		}
+		exit;
+	}
+	else
+	{
+		global.possessed = obj_player
+		state = states.normal
+		visible = true
+	}
+}
 audio_emitter_position(playerSound, x, y, 0);
 audio_emitter_gain(playerSound, global.soundVolume);
 var a = instance_place(x, y, obj_secret_tiles);

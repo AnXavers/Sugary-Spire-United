@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 4.08458,
+  "duration": 181.36816,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "mu_modifiers.wav",
+  "soundFile": "mu_modifiers.ogg",
   "type": 0,
   "volume": 1.0,
 }

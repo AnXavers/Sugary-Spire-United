@@ -208,7 +208,7 @@ function scr_collide_destructibles()
 			}
 		}
 	}
-	if (state == states.jump || state == states.Sjump || state == states.mach2 || state == states.mach3 || state == states.pizzano_mach || state == states.pizzano_twirl || state == states.pizzano_machtwirl || state == states.pepperman_pinball || state == states.shoulder)
+	if (state == states.jump || state == states.Sjump || state == states.mach2 || state == states.mach3 || state == states.pizzano_mach || state == states.pizzano_twirl || state == states.pizzano_machtwirl || state == states.pepperman_pinball || state == states.shoulder || (state == states.pogo && pogochargeactive == 1))
 	{
 		if (place_meeting(x, y + vsp, obj_destructibles) && vsp < 0)
 		{

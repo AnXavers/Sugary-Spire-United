@@ -3,8 +3,13 @@ if (global.gamePauseState == 1 && fadealpha <= 0)
 	global.gamePauseState = 0;
 	instance_activate_all();
 	audio_resume_all();
-	audio_resume_sound(global.secret_room ? global.secretmusic : global.music);
-	audio_pause_sound(global.secret_room ? global.music : global.secretmusic);
+	if global.levelname != "secrets"
+	{
+		audio_resume_sound(global.secret_room ? global.secretmusic : global.music);
+		audio_pause_sound(global.secret_room ? global.music : global.secretmusic);
+	}
+	else
+		audio_resume_sound(mu_secrets)
 	video_resume();
 	instance_destroy();
 }

@@ -110,4 +110,4 @@ if (tauntBuffer == 1)
 }
 if (place_meeting_solid(x, y) && state == 6 && thrown)
 	instance_destroy();
-persistent = (state == enemystates.grabbed) ? true : false;
+persistent = (state == enemystates.grabbed && obj_tv.tvsprite != spr_tvoff) ? true : false;

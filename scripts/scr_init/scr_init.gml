@@ -107,6 +107,7 @@ global.secrettime = time_in_frames(0, 25)
 global.editorinsts = []
 global.editorlayers = []
 global.nekocheck = true
+global.possessed = obj_player
 var i = 0
 var I = 0
 for (var i = 0; room_exists(i); i++)

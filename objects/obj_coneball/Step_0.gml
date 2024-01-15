@@ -1,4 +1,4 @@
-if (image_alpha == 1)
+if (image_alpha == 1 && global.possessed != id)
 {
 	var dir = point_direction(x, y, obj_player.x, obj_player.y);
 	if (!global.freezeframe)
@@ -15,7 +15,7 @@ if (image_alpha == 1)
 		}
 	}
 }
-else
+else if image_alpha != 1
 	image_alpha += 0.01;
 var pid = instance_place(x, y, obj_player);
 if (pid > 0 && !pid.cutscene && obj_player.state != states.actor && !instance_exists(obj_fadeout) && !instance_exists(obj_endlevelfade) && image_alpha == 1)

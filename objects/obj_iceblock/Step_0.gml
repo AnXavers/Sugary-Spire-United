@@ -98,6 +98,8 @@ if (!global.freezeframe && invtime <= 0 && place_meeting(x, y, obj_player) && st
 				other.vsp -= 7;
 				other.movespeed += 2;
 			}
+			if place_meeting(x + hsp, y, obj_icewall)
+				instance_destroy(instance_nearest(x + hsp, y, obj_icewall))
 			other.xscale = xscale;
 			other.hsp = other.movespeed * other.xscale;
 			other.flash = true;
