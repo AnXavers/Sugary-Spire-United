@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_cottonplatform",
-    "path": "sprites/spr_cottonplatform/spr_cottonplatform.yy",
+    "name": "spr_leaftplatform",
+    "path": "sprites/spr_leaftplatform/spr_leaftplatform.yy",
   },
   "spriteMaskId": null,
   "visible": true,
