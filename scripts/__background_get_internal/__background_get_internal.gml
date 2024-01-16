@@ -1,4 +1,4 @@
-function __background_get_internal()
+function __background_get_internal(argument0, argument1, argument2)
 {
 	var __prop = argument0;
 	var __bind = argument1;

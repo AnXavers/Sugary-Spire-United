@@ -168,7 +168,7 @@ function state_player_normal()
 		}
 		if (shotgunAnim == 1)
 		{
-			sprite_index = spr_shotgun_land;
+			sprite_index = spr_peppino_shotgun_land;
 			if (floor(image_index) == (image_number - 1))
 			{
 				landAnim = 0;

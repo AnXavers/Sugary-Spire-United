@@ -1,4 +1,4 @@
-function __background_set()
+function __background_set(argument0, argument1, argument2)
 {
 	var __prop = argument0;
 	var __bind = argument1;

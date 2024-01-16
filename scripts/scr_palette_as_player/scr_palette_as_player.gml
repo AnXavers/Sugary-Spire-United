@@ -1,11 +1,11 @@
-function scr_palette_as_player(argument0 = sprite_index, argument1 = image_index)
+function scr_palette_as_player(argument0 = sprite_index, argument1 = image_index, argument2 = -1)
 {
-	if instance_exists(obj_player)
+	if (instance_exists(obj_player) && argument2 == -1)
 	{
 		with (obj_player)
 		{
 			var my_color_array = my_palettes[paletteselect][2];
-			var using_pattern = sprite_exists(my_color_array[2]);
+			var using_pattern = (sprite_exists(my_color_array[2]) && my_palettes[paletteselect][1]);
 		}
 		if (surface_exists(obj_player.my_pal_surface) && !using_pattern)
 			pal_swap_set(obj_player.my_pal_surface, 1, true);

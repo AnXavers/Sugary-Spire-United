@@ -41,12 +41,7 @@ if (room != timesuproom && room != rank_room && !instance_exists(obj_endlevelfad
 		else if global.levelname == "yogurt"
 			_new_song = mu_pizzelle_death;
 		else if global.levelname == "sucrose"
-		{
-			if global.lapcount >= 2
-				_new_song = mu_sucrose_lap
-			else
-				_new_song = mu_sucrose
-		}
+			_new_song = mu_sucrose
 		else
 		{
 			if (global.lapcount == 5 && global.lapmode == 2)

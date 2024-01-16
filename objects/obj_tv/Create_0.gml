@@ -11,7 +11,6 @@ surface_set_target(tvbg_surface);
 draw_clear_alpha(0, 0);
 surface_reset_target();
 image_speed = 0.35;
-chose = 0;
 message = "";
 comboAnim = false;
 showtext = 0;

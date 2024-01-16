@@ -241,7 +241,7 @@ function get_control_string(argument0)
 			break;
 	}
 }
-function get_control_string_npc()
+function get_control_string_npc(argument0)
 {
 	switch (argument0)
 	{

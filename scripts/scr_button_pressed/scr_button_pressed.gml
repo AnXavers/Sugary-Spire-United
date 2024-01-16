@@ -1,4 +1,4 @@
-function scr_button_pressed()
+function scr_button_pressed(argument0)
 {
 	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(global.key_jump))
 		return -1;

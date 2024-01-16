@@ -2,12 +2,8 @@ draw_set_font(font_dialog);
 draw_set_halign(0);
 draw_set_color(c_white);
 var curMsg = global.dialogmsg[current_message];
-var dialogLength = array_length(global.dialogmsg);
 var _text = curMsg[0];
-var _textLength = string_length(_text);
 var _portrait = curMsg[1];
-var _sound = curMsg[2];
-var _func = curMsg[3];
 var hasImage = _portrait != -4;
 if (!surface_exists(surface))
 	surface = surface_create(760, 100);

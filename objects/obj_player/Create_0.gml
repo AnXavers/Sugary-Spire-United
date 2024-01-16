@@ -25,7 +25,6 @@ global.color4 = 0
 global.color5 = 0
 my_pal_surface = -4;
 my_pal_buffer = -4;
-global.doortaunt = 0
 my_palettes = [];
 new_palette("Default", 0, c_white, 13150344);
 new_palette("Sugar", 0, 8441896, 6066975);
@@ -85,7 +84,6 @@ is_inSecretPortal = false;
 global.dialogmsg = ds_queue_create();
 sourbuddycnt = 0;
 chuckcooldown = 120;
-secreteye = 0;
 ufovsp = 0;
 ridingmarsh = 0;
 input_buffer = 0;
@@ -271,7 +269,6 @@ sourbuddied = 0;
 sour_buddies = ds_list_create();
 sour_buddies_timer = 60;
 unlatchcount = 0;
-unlatchtimer = 0;
 surf_width = 2;
 surf_height = 10;
 surf_pallete = -1;

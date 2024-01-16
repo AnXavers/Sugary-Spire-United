@@ -12,8 +12,8 @@ function scr_collision_init() //scr_collision_init
 	prevVsp = 0
 	hspCarry = 0
 	vspCarry = 0
-	var true_hsp = 0
-	var true_vsp = 0
+	true_hsp = 0
+	true_vsp = 0
 }
 
 function scr_collision() //scr_collision

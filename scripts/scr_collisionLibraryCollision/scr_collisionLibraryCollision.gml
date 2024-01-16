@@ -251,7 +251,6 @@ function place_meeting_movingPlatform(argument0, argument1, argument2 = obj_movi
 {
 	return instance_place_list_movingPlatform(argument0, argument1, argument2) > 0;
 }
-
 function position_meeting_movingPlatform(argument0, argument1, argument2 = obj_movingPlatform) //position_meeting_movingPlatform
 {
 	old_mask = mask_index

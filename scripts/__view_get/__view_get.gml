@@ -1,4 +1,4 @@
-function __view_get()
+function __view_get(argument0, argument1)
 {
 	var __prop = argument0;
 	var __index = argument1;

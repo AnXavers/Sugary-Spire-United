@@ -311,8 +311,6 @@ if (state == states.climbceiling || state == 12 || state == 11)
 	slideHsp = 0;
 if (state != states.bushdisguise)
 	bushdetection = 0;
-if (state != states.crouch)
-	crouchjumptimer = 0;
 if (state != states.pizzano_pummel && state != 0)
 {
 	pummelhit = 0;

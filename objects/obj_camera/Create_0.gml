@@ -5,7 +5,6 @@ global.conedowntime = -1;
 global.getawayfill = time_in_frames(0, 30)
 global.lowfacefill = time_in_frames(0, 10)
 greyscalefade = 0;
-SSapplication_surface = -4;
 finalApplicationSurface = -4;
 Collectshake = 0;
 Camera_width = room_width;

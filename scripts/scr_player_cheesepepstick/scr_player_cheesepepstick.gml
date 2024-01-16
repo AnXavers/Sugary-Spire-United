@@ -7,7 +7,7 @@ function state_player_cheesepepstick()
 	{
 		hsp = 3;
 		vsp = 0;
-		sprite_index = spr_cheesepep_stickceilling;
+		sprite_index = spr_peppino_cheesestickceilling;
 	}
 	else if (place_meeting(x + 1, y, obj_railv) || place_meeting(x - 1, y, obj_railv))
 	{
@@ -15,14 +15,14 @@ function state_player_cheesepepstick()
 			xscale = -1;
 		else
 			xscale = 1;
-		sprite_index = spr_cheesepep_stickwall;
+		sprite_index = spr_peppino_cheesestickwall;
 		vsp = -3;
 	}
 	else
 	{
 		grav = 0.5;
 		image_index = 0;
-		sprite_index = spr_cheesepep_jump;
+		sprite_index = spr_peppino_cheesejump;
 		state = 6;
 	}
 	if (key_jump && (place_meeting(x + 1, y, obj_railv) || place_meeting(x - 1, y, obj_railv)))
@@ -31,7 +31,7 @@ function state_player_cheesepepstick()
 		grav = 0.5;
 		vsp = -9;
 		image_index = 0;
-		sprite_index = spr_cheesepep_jump;
+		sprite_index = spr_peppino_cheesejump;
 		state = 6;
 	}
 	if (key_jump && place_meeting(x, y - 1, obj_railh))
@@ -40,7 +40,7 @@ function state_player_cheesepepstick()
 		grav = 0.5;
 		vsp = 1;
 		image_index = 0;
-		sprite_index = spr_cheesepep_jump;
+		sprite_index = spr_peppino_cheesejump;
 		state = 6;
 	}
 	image_speed = 0.35;

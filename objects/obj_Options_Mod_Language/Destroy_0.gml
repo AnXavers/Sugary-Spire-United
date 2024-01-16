@@ -1,1 +1,1 @@
-obj_Options_Mod.alarm[0] = 1;
+obj_Options_Mod_old.alarm[0] = 1;

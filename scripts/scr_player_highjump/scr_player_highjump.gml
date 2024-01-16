@@ -59,7 +59,7 @@ function state_player_highjump()
 		input_buffer_jump = 0;
 	if (jumpAnim == 1)
 	{
-		sprite_index = spr_player_Sjumpstart;
+		sprite_index = spr_superjumpprep;
 		if (floor(image_index) == 3)
 			jumpAnim = 0;
 	}
