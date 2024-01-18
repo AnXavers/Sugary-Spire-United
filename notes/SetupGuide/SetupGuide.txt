@@ -1,0 +1,41 @@
+================================================================================
+            	      	BNET_FRAMEWORK by: BahamaGames
+================================================================================
+GameMaker
+
+	1) First ensure that object BNET_NETWORKMANAGER is placed at the bottom of the object resource tree. (GMS2.3+ Set filter custom)
+	2) Then navigate to it's create event. The variables listed under ("The following can be edited:") may be edited.
+	3) If using GML server. MongoDB, Email and File functions are non useable. If used, may result in issues.
+	4) If using the networking event within another object. Use 'bnet_buffer_encoded()' to ensure that the buffer isnt bnet encoded.
+
+WARNING!!! REMINDER BEFORE USE OF FUNCTIONS. BNET_NETWORKMANAGER MUST BE INITIATED. YOU CAN DO SO BY USING FUNCTION(S): bnet_server_create(), bnet_server_connect().
+
+YOU CAN CHECK THE CONNECTION STATUS USING FUNCTION: bnet("connected");
+
+Deploying on Linux(Tested with Google Cloud Compute Engine)
+
+	1) Add the bnet.jar by clicking the gear icon select Upload File then bnet.jar.
+	2) Run sudo apt update
+	3) Run sudo apt install default-jdk
+	4) Run sudo apt install default-jre
+	5) Run sudo apt-get install tmux
+	6) Run timux
+	
+	7) Java steps
+	
+	-Usefull commands
+		~rm						to remove a file.
+		~[CTRL]+[b], then [d]	to detach your session from TMUX
+		~tmux a					to reattach session
+		
+Java
+
+	1) Run bnet.jar.
+	2) To toogle debug logs enter '-d=true'.
+	3) To dump logs turn on file system process by entering: 'file' 'start', then '-dl=true', '-de=true' for exceptions.
+	4) Type 'server' 'start' to quick start a tcp server. By default ip is set to '127.0.0.1' if using outside local computer set the ip to appropriate internal.
+	
+Type '-h' / '--help' for more assistence.
+
+LEAVE A RATING AND COMMENT. ADDITIONAL FEATURES WILL BE ADDED IN THE FUTURE, OR UPON REQUEST.
+					PLEASE REPORT BUGS AND CONCERNS.

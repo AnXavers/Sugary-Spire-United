@@ -1,0 +1,11 @@
+{
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "_bnet_client_list_serialize",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "CLIENT SERIALIZATION",
+    "path": "folders/Scripts/BNET/HELPFULL FUNCTIONS (DO NOT DELETE)/MISC/CLIENT SERIALIZATION.yy",
+  },
+}
