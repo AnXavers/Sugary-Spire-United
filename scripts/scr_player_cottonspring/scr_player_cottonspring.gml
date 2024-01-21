@@ -1,29 +1,38 @@
 function state_player_cottonspring()
 {
+	grav = 0
 	static cotton_afterimagetimer = 6;
 	image_speed = 0.35;
-	if (verticalMovespeed < 9)
-		verticalMovespeed = approach(verticalMovespeed, 20, 2);
-	else
-		verticalMovespeed = approach(verticalMovespeed, 20, 0.5);
+	movespeed = lerp(movespeed, 0, 0.01)
+	verticalMovespeed = lerp(verticalMovespeed, 14, 0.01)
 	vsp = verticalMovespeed;
+	hsp = movespeed
 	sprite_index = spr_cotton_drill;
-	var dir = (point_direction(x, y, x + hsp, y + vsp) + 90);
-	image_angle = dir
-	if !audio_is_playing(sfx_spring)
+	var _futurex = x + hsp
+	var _futurey = y + vsp
+	if (place_meeting_solid(_futurex, _futurey, obj_solid) && (!place_meeting_slope(_futurex, _futurey) && (!place_meeting(_futurex, _futurey, obj_destructibles) && !place_meeting(_futurex, _futurey, obj_chocofrog))))
 	{
-		doublejumped = 1;
-		state = states.cotton;
-		grav = 0.1;
-		image_index = 0;
-		sprite_index = spr_cotton_doublejump;
+		if place_meeting_solid(_futurex, y, obj_solid)
+			hsp = -hsp
+		if place_meeting_solid(x, _futurey, obj_solid)
+			vsp = -vsp
+		if (sign(hsp) == sign(movespeed) && sign(vsp) == sign(verticalMovespeed))
+		{
+			hsp = -hsp
+			vsp = -vsp
+		}
+		verticalMovespeed = vsp
+		movespeed = hsp
+		scr_sound(sound_bump)
 	}
+	draw_angle = point_direction(x, y, x + hsp, y + vsp) + 90
 	if (grounded && !place_meeting(x, y + 1, obj_destructibles) && !place_meeting(x, y + 1, obj_chocofrog))
 	{
 		doublejumped = 0;
 		if (slopeCheck(x, y))
 		{
-			movespeed = (verticalMovespeed / 20) * 12;
+			movespeed = (vsp / 20) * 12;
+			hsp = movespeed
 			vsp = 3;
 			state = states.cottonroll;
 			image_index = 0;
@@ -45,7 +54,7 @@ function state_player_cottonspring()
 			image_index = 0;
 		}
 	}
-	if (key_attack2 && sprite_index != spr_cotton_attack && groundedcot == 1)
+	if (key_attack2 && sprite_index != spr_cotton_attack && groundedcot == 1 && !place_meeting(x, y, obj_cottonspring))
 	{
 		state = states.cotton;
 		flash = 1;
@@ -57,17 +66,20 @@ function state_player_cottonspring()
 			vsp = -5;
 		else
 			vsp = 0;
+		hsp = movespeed
 		grav = 0.2;
 		grounded = false;
 		scr_sound(sfx_cottonattack);
 		groundedcot = 0;
 	}
-	if (key_jump && !grounded && doublejumped == 0)
+	if ((key_jump && !grounded) || !audio_is_playing(sfx_spring))
 	{
 		doublejumped = 1;
 		movespeed = 0;
+		hsp = movespeed
 		state = states.cotton;
 		vsp = -10;
+		verticalMovespeed = vsp
 		grav = 0.1;
 		image_index = 0;
 		sprite_index = spr_cotton_doublejump;
