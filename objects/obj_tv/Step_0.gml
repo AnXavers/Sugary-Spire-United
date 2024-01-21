@@ -142,6 +142,7 @@ switch (state)
 			case states.cotton:
 			case states.cottondrill:
 			case states.cottonroll:
+			case states.cottonspring:
 				idlespr = cottontvspr;
 				break;
 			case states.rupertnormal:

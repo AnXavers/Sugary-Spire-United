@@ -518,7 +518,6 @@
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"intro.mp4","CopyToMask":-1,"filePath":"datafiles/gamedata",},
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"playerdata.ini","CopyToMask":-1,"filePath":"datafiles/gamedata",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"gcmt-dll.dll","CopyToMask":0,"filePath":"datafiles/GMLive",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"gmlive-server-alt.exe","CopyToMask":0,"filePath":"datafiles/GMLive",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"gmlive-server.exe","CopyToMask":0,"filePath":"datafiles/GMLive",},
@@ -3246,7 +3245,6 @@
     {"id":{"name":"spr_towercomplex","path":"sprites/spr_towercomplex/spr_towercomplex.yy",},},
     {"id":{"name":"spr_bubblefont","path":"sprites/spr_bubblefont/spr_bubblefont.yy",},},
     {"id":{"name":"spr_pizzelle_keyget","path":"sprites/spr_pizzelle_keyget/spr_pizzelle_keyget.yy",},},
-    {"id":{"name":"spr_johnegbert_mug","path":"sprites/spr_johnegbert_mug/spr_johnegbert_mug.yy",},},
     {"id":{"name":"spr_goo","path":"sprites/spr_goo/spr_goo.yy",},},
     {"id":{"name":"spr_checkpoint_activating","path":"sprites/spr_checkpoint_activating/spr_checkpoint_activating.yy",},},
     {"id":{"name":"spr_beesoldier_projectile","path":"sprites/spr_beesoldier_projectile/spr_beesoldier_projectile.yy",},},
@@ -5796,7 +5794,6 @@
     {"id":{"name":"spr_candysona_dead5","path":"sprites/spr_candysona_dead5/spr_candysona_dead5.yy",},},
     {"id":{"name":"spr_doorkey","path":"sprites/spr_doorkey/spr_doorkey.yy",},},
     {"id":{"name":"spr_pizzasona18trans","path":"sprites/spr_pizzasona18trans/spr_pizzasona18trans.yy",},},
-    {"id":{"name":"spr_mugbeer","path":"sprites/spr_mugbeer/spr_mugbeer.yy",},},
     {"id":{"name":"spr_toppintomato_taunt","path":"sprites/spr_toppintomato_taunt/spr_toppintomato_taunt.yy",},},
     {"id":{"name":"spr_peppino_suplexgrabjump","path":"sprites/spr_peppino_suplexgrabjump/spr_peppino_suplexgrabjump.yy",},},
     {"id":{"name":"bg_fudgetop3_mountain2","path":"sprites/bg_fudgetop3_mountain2/bg_fudgetop3_mountain2.yy",},},

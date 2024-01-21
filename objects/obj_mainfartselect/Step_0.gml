@@ -25,8 +25,16 @@ if (abletomove)
 		scr_sound(sound_step);
 		selected--;
 	}
+	if portingsaves
+	{
+		if -key_left2
+			portingselected = 0
+		if key_right2
+			portingselected = 1
+	}
 	if key_jump
 	{
+		var _sssavelocation = environment_get_variable("LOCALAPPDATA") + "\\SugarySpire\\" + global.fileselect
 		if !selectedactive
 		{
 			selectedactive = true
@@ -44,18 +52,36 @@ if (abletomove)
 					break;
 			}
 		}
-		else if sprfile[selected] != asset_get_index("spr_file" + string(selected + 1) + "confirm")
+		else if portingsaves
 		{
 			scr_sound(sound_toppingot);
 			abletomove = false;
 			drawindex = 0
 			sprfile[selected] = asset_get_index("spr_file" + string(selected + 1) + "confirm")
+			if portingselected
+				file_copy(_sssavelocation, global.fileselect)
+		}
+		else if sprfile[selected] != asset_get_index("spr_file" + string(selected + 1) + "confirm")
+		{
+			if file_exists(_sssavelocation) && !file_exists(global.fileselect)
+			{
+				portingsaves = true
+				scr_sound(sound_enemythrow)
+			}
+			else
+			{
+				scr_sound(sound_toppingot);
+				abletomove = false;
+				drawindex = 0
+				sprfile[selected] = asset_get_index("spr_file" + string(selected + 1) + "confirm")
+			}
 		}
 	}
-	if (key_escape && sprfile[selected] != asset_get_index("spr_file" + string(selected + 1) + "confirm"))
+	if (key_escape && sprfile[selected] != asset_get_index("spr_file" + string(selected + 1) + "confirm") && !portingsaves)
 	{
 		scr_sound(sound_enemyslap);
 		selectedactive = false
+		portingselected = 1
 	}
 }
 var justfarded = 0;
@@ -63,17 +89,17 @@ switch (selected)
 {
 	case 0:
 		justfarded = 96;
-		_message = "FILE 1";
+		_message = "File 1";
 		global.fileselect = "saveData.ini"
 		break;
 	case 1:
 		justfarded = 480;
-		_message = "FILE 2";
+		_message = "File 2";
 		global.fileselect = "saveData2.ini"
 		break;
 	case 2:
 		justfarded = 828;
-		_message = "FILE 3";
+		_message = "File 3";
 		global.fileselect = "saveData3.ini"
 		break;
 }

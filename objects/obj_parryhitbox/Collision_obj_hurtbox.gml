@@ -23,20 +23,17 @@ with (obj_baddie)
 	if (distance_to_object(other.id) < 64 && (object_index != obj_charcherry || (object_index == obj_charcherry && state == 16)))
 	{
 		scr_sleep();
-		if !place_meeting(x + image_xscale, y, obj_solid)
+		if place_meeting(x, y, obj_solid)
 		{
-			hsp = obj_player.xscale * 25;
-			vsp = 0;
+			x = obj_player.x
+			y = obj_player.y
 		}
-		else
-		{
-			hsp = 0
-			vsp = -25
-		}
+		hsp = obj_player.xscale * 25;
+		vsp = 0;
 		grav = 0;
-		state = 6;
 		hp = 0;
 		thrown = 1;
+		state = enemystates.stun;
 	}
 }
 with (obj_player)

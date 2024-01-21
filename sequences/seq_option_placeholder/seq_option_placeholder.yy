@@ -15,7 +15,15 @@
     "Keyframes": [],
   },
   "eventStubScript": null,
-  "eventToFunction": {},
+  "eventToFunction": {
+    "0": "",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+  },
   "length": 150.0,
   "lockOrigin": false,
   "moments": {

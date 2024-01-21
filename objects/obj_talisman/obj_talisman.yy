@@ -25,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_mugbeer",
-    "path": "sprites/spr_mugbeer/spr_mugbeer.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

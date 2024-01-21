@@ -85,8 +85,6 @@ function state_player_cottondrill()
 	}
 	if (cotton_afterimagetimer > 0)
 		cotton_afterimagetimer--;
-	if (cotton_afterimagetimer <= 0)
-	{
+	else
 		cotton_afterimagetimer = 6;
-	}
 }

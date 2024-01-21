@@ -124,7 +124,7 @@ function scr_collide_destructibles()
 			}
 		}
 	}
-	if (state == states.cottondrill || state == states.pizzano_twirl || (state == states.bottlerocket && substate == 2))
+	if (state == states.cottondrill || state = states.cottonspring || state == states.pizzano_twirl || (state == states.bottlerocket && substate == 2))
 	{
 		if (place_meeting(x, y + vsp, obj_destructibles))
 		{

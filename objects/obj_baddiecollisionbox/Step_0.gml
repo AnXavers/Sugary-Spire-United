@@ -9,7 +9,7 @@ if (instance_exists(baddieID))
 }
 if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj_player) && obj_player.cutscene == 0 && obj_player.state != states.hurt)
 {
-	if (baddieID.state != 8)
+	if (baddieID.state != enemystates.grabbed)
 	{
 		with (obj_player)
 		{
@@ -149,7 +149,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				movespeed = 0
 				vsp = 0
 			}
-				  if (instance_exists(other.baddieID) && state == states.punch)
+			if (instance_exists(other.baddieID) && state == states.punch)
 			{
 				sprite_index = choose(spr_blockbreak1, spr_blockbreak2, spr_blockbreak3, spr_blockbreak4, spr_blockbreak5, spr_blockbreak6, spr_blockbreak7, spr_punch)
 				image_index = 0
@@ -168,15 +168,15 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 						instance_create(x, y, obj_baddiegibs)
 						instance_create(x, y, obj_baddiegibs)
 						alarm[2] = 1;
-					instance_create(x, y, obj_bangeffect);
-					scr_sound(sound_slaphit);
-					hp = 0;
-					thrown = true;
-					hsp = obj_player.xscale * 20;
-					vsp = -6;
-					state = 6;
-					stunned = 1000;
-				   throw_hit = 1
+						instance_create(x, y, obj_bangeffect);
+						scr_sound(sound_slaphit);
+						hp = 0;
+						thrown = true;
+						hsp = obj_player.xscale * 20;
+						vsp = -6;
+						state = 6;
+						stunned = 1000;
+						throw_hit = 1
 						with (obj_camera)
 						{
 							shake_mag = 3
@@ -185,9 +185,7 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 						alarm[3] = 3
 						global.hit += 1
 						global.combotime = 60
-				   
 						alarm[2] = 1;
-					
 					}
 				}
 				other.baddieID.hsp = (xscale * 25)

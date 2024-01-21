@@ -308,8 +308,8 @@ function scr_playerstate()
 		case states.candy_pinball:
 			_stateFunction = state_pepperman_pinball;
 			break;
-		case states.barrelfloat:
-			_stateFunction = state_pepperman_pinball;
+		case states.cottonspring:
+			_stateFunction = state_player_cottonspring;
 			break;
 		case states.cookiemount:
 			_stateFunction = state_player_cookiemount;

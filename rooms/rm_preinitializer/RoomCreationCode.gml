@@ -81,7 +81,7 @@ enum states {
 	candy_normal, // 79
 	candy_pinball, // 80
 	candy_dash, // 81
-	barrelfloat, // 82
+	cottonspring, // 82
 	cookiemount, // 83
 	cookiemountattack, // 84
 	cookiemountfireass, // 85

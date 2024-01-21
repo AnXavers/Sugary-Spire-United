@@ -13,3 +13,17 @@ draw_text(250, ((global.cam_h / 2) + 45) + wave(-6, 6, 4, 0), "No Judgement");
 draw_set_alpha(1);
 draw_sprite(sprfile[selected], floor(drawindex), filecoords[selected][0], filecoords[selected][1]);
 draw_text(xi, yi, string_hash_to_newline(_message));
+if portingsaves
+{
+	var _camwm = global.cam_w / 2
+	var _camhm = global.cam_h / 2
+	draw_set_color(c_black)
+	draw_set_alpha(0.5)
+	draw_rectangle(0, 0, global.cam_w, global.cam_h, false)
+	draw_set_color(c_white)
+	draw_set_alpha(1)
+	draw_text(_camwm, _camhm - 30, "Do you wish to port your save data from vanilla SS?")
+	var _uhh = _camhm + 30
+	draw_option(_camwm - 50, _uhh, "No", !portingselected)
+	draw_option(_camwm + 50, _uhh, "Yes", portingselected)
+}
