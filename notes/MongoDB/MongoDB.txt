@@ -1,0 +1,24 @@
+================================================================================
+            	      	BNET_FRAMEWORK by: BahamaGames
+================================================================================
+MongoDB is a document-oriented database program. Classified as a NoSQL database 
+program. BNet utilizes MongoDb via it's provided java server, and gml functions.
+
+Using MongoDB function(s) may have impact on network performance resulting in a timeout.
+Suggested to use sparsely and only when needed.
+
+To get started goto:
+
+MongoDb Website
+	1) Ensure you hava an associated account. https://account.mongodb.com/account/login?n=%2Fv2%2F622e9f50aa1b586e79f49b9e&nextHash=%23clusters
+	2) If not have done so already create a project / cluster. Follow their tutorial if needed.
+	3) After done setting up. Within database deployments click connect , select 'Connect your application`.
+	4) Set the DRIVER to 'Java', and VERSION to '4.3 or later'.
+	5) Copy the connection string, modifying appropriately if needed should look something like this: mongodb+srv://<username>:<password>@<cluster>.xskge.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+	6) Add needed ip to NetworkAccess.
+	
+Java
+	7) Start up bnet.jar.
+	8) Execute 'mongo -c (paste connection string)'. Example: mongo -c mongodb+srv://bnetdemo:bnetdemo12345@cluster0.ulh94.mongodb.net
+	
+	Type '-help' for more assistence.

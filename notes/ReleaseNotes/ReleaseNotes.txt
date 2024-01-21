@@ -1,0 +1,153 @@
+================================================================================
+            	      	BNET_FRAMEWORK by: BahamaGames
+================================================================================
+JAVA BUILT USING:
+Eclipse IDE: 2019-09 R (4.13.0)
+Compiler compilance level: 1.8
+JRE(Java Runtime Environment): 11.
+
+GML BUILT USING:
+IDE v2.2.5.481		- RUNTIME v2.2.5.378 
+IDE v2022.3.0.625	- RUNTIME v2022.3.0.497
+
+Always check BNET_NETWORKMANAGER create evet for new variables added for edit.
+
+Although a simple congestion avoidence algorithym is in place use data functions
+sparingly. Basically send data only when needed especially with udp protocol.
+
+================================================================================
+KNOWN LIMITATIONS:
+
+Gml
+	-Lockstep
+		~Alpha phase.
+		~Values should remain constant when starting lockstep.
+		~Does not account for game fps, does not use delta timing.
+		~Must recreate instances if wish to start another session.
+		~No prediction or rollback.
+
+Java
+	-Cli(Command Line Interface)
+		~Alpha phase.
+================================================================================
+KNOWN BUGS / ISSUE:
+
+Gml
+	-Server
+		
+	-Client
+		~Rapidly switching rooms along with other function(Stress test) results in mis match room. This does not reflect the server or client, but rather incomplete demo conditional checks. 
+		
+	-Voip
+		~Audio buffer errors
+			~Poor quality(Not to invested in this feature sadly).
+			~Cut-outs during stream.
+		
+Java
+	-Server
+		
+	-MongoDb
+		~Will throw an exception if any defualt key is missing.
+		
+================================================================================
+RELEASE NOTES:
+
+version 2.0.0 (4/ 30/ 2022)
+
+OVERALL CHANGES
+	-System overhaul, nearly completely re written.
+	-Major performance update.
+	-Some features have been temporaly / perminately removed, no known date for re-installment.
+		~Udphp
+		~Broadcasting
+		~Dsmap			*DEPRECATED SUGGESTED TO USE FUNCTIONS LISTED UNDER NET, OR EVENT FUNCTIONS.
+		~Leaderboard	*DEPRECATED SUGGESTED TO USE FILE OR MONGODB FUNCTIONS TO CREATE YOUR OWN.
+		~Lobby			*DEPRECATED SUGGESTED TO USE NAMESPACE FUNCTIONS TO CREATE YOUR OWN.
+		~Account		*DEPRECATED SUGGESTED TO USE EMAIL, EVENT, ALONG SIDE FILE OR MONGODB FUNCTIONS TO CREATE YOUR OWN.
+		
+GMS CHANGES
+	-Added additional helper functions for eaiser development. DO NOT DELETE.
+	-Revamped call-back system. Check out Call-Backs within note section for further information.
+		~Most call-backs now returns a ds_map named 'bnet_callback_load' much like 'async_load' that stores READ ONLY data pertaining to the call-back.
+	-Revamped buffer send functions, listed under NET. Must now create a script named 'bnetOnMessage()' that takes in 1 argument 'bufferid', to process received buffer.
+	-Added onError call-back. Check out Error-Codes within notes section.
+	-Added MongoDB functions. Check out MongoDb within note section.
+	-Added Event functions.
+	-Removed manadatory login to java server.
+	-Removed BNET auto destroy if client server doesnt match.
+	-Revamped connection handling.
+		~Client now auto detects which protocol to use. 'Server still has to specify protocol type: network_socket_tcp, network_socket_ws'.
+		~Must now provide a uuid.
+		~All connection, and disconnection to the server are now automatically transmitted to all clients.
+		~Must now set an alarm within 'bnet_server_destroy()' to notify clients that the server has initiated to be shut downed.
+	-Revamped room functions.
+		~bnet_room_create(), bnet_room_search(), bnet_room_leave(), bnet_room_destroy(), are all now combined into 'bnet_room_goto()'.
+		~bnet_room_set_settings() renamed to bnet_room_update().
+		~Can now create empty rooms.
+		~Can now leave a room empty.
+		~bnet_room_invite(), bnet_room_accept_invite() DEPRECATED.
+	-Revamped instance functions.
+		~Added barebone lockstep mechanics(ALPHA PHASE).
+		~No longer need to add bnet_instance_init() within user-event0 to create on demand.
+		~Can now provide room_id to create, update, and dedstroy an instance within a different room.
+		~Must now provide a uuid for instances.
+		~'bnet_instance_create_depth()', and 'bnet_instance_create_layer()' now returns a gml 'instanceid'.
+		~Can now set to only sync when tick-rate is greater than 0 'bnet_instance_update_player()', and 'bnet_instance_update_npc()'.
+		~Can now set a tolerance for individual sync variables.
+		~Added helper function to assign init-vars. 'bnet_instance_init_data()'.
+		~Added helper function to assign sync-vars. 'bnet_instance_sync_data()'.
+		~Added 'bnet_instance_update_apply()' used to manually apply update to an instance.
+
+JAVA CHANGES
+	-Added a simple cli (Command line interface) for ease of use.(ALPHA PHASE) Features included.
+		~Mongodb connection handling.
+		~Server creation, destruction, listing.
+	-Can now deploy multiple servers by providing unique names to each.
+	-Added server shutdown alarm when you request to stop the server.
+	-Added MongoDb support.
+	-Websocket secure available.
+	-Server now dumps error exceptions, and client logs to text files located within dump folder. By default errors are dumped.
+	
+BUG FIXES
+	-Call-back system.
+
+version 1.6.7 (2/ 14/ 2022)
+
+FIXED LOADING INSTANCE'S POSITION.
+REMOVED bnet("lobby_join_list"), bnet("lobby_left_list"), bnet("room_join_list"), AND bnet("room_left_list").
+DECREASED OVERALL PACKET SIZES.
+MAJOR PERFORMANCE UPDATE.
+MINOR BUG FIXES.
+ADDED bnet("lobby_criteria_list"), AND bnet("room_criteria_list"). RETURNS A LIST OF STRINGS CONTAINING LOBBY OR ROOM CRITERIAS.
+MUST NOW PROVIDE IP AND PORT TO bnet_server_connect() TO CONNECT TO JAVA SERVER. LOOK INTO FUNCTION FOR EXAMPLE.
+ADDED DAEMON AND GUI FOR JAVA SERVER DEPLOYMENT.
+bnet_instance_init() NO LONGER REQUIRES YOU TO ADD IT TO THE INSTANCE'S USER EVENT 0. SIMPLY PROVIDE THE PARAMETERS WITHIN THE CREATE EVENT.
+ADDED bnet_instance_is_local(). FASTER WAY TO VALIDATE IF THE INSTANCE BELONGS TO THE LOCAL CLIENT.
+CHANGED bnet_instance_is_player() TO bnet_instance_update_player(), AND bnet_instance_is_npc() TO bnet_instance_update_npc().
+ADDED AN ARGUMENT TO THE ARRAY OF "syncVariable", and "reverseSync" within bnet_instance_*. CAN NOW SET INDEPENDENT TIMERS FOR EACH VARIABLE. syncVar[3] = "sync timer".
+[EXPERIMENTAL] ADDED A SIMPLE LOCK STEP SYSTEM. CHECK Lockstep NOTE SECTION FOR MORE INFO.
+ADDED bnet_instance_create_depth(), AND bnet_instance_create_layer(). CAN NOW CREATE INSTANCE'S LOCALLY WITHOUT SERVER VALIDATION, MAY CAUSE DESYNC.
+ADDED ARGUMENT auto_destroy TO bnet_room_create(), AND bnet_room_set_settings(). CAN NOW CREATE EMPTY ROOMS THAT ARE NOT AUTO DESTROYED.
+ADDED bnet_room_destroy() CAN NOW DESTROY A ROOM A WILL WITHOUT BEING WITHIN IT, KICKING THE CLIENTS WITHIN.
+ADDED bnet_room_get_goto(). THIS REPLACES bnet("goto") WHICH NOW RETURNS A ds_list. CAN NOW JOIN A INDEXED GAMEMAKER WITHIN A BNET SYNCED ROOM.
+ADDED ARGUMENT room_id TO bnet_room_invite(). MUST NOW SPECIFY THE GAMEMAKER ROOM ID TO INVITE THE CLIENT TOO.
+RENAMED bnet_ds_map_get() TO bnet_ds_map_get_map(). IT NOW ACCEPTS 1 ARGUMENT "index". WHICH ALLOWS YOU TO TARGET AN INDEX WITHIN RECIEVED DS MAP LIST.
+ADDED bnet_ds_map_get_list(). THIS RETURNS A DS_LIST THAT CONTAINS ALL RECEIVED DS_MAPS SENT BY bnet_ds_map_send().
+RENAMED bnet_buffer_get() TO bnet_buffer_get_buffer(). IT NOW ACCEPTS 1 ARGUMENT "index". WHICH ALLOWS YOU TO TARGET AN INDEX WITHIN RECIEVED BUFFER LIST.
+ADDED bnet_buffer_get_list(). THIS RETURNS A DS_LIST THAT CONTAINS ALL RECEIVED BUFFERS SENT BY bnet_buffer_send().
+
+================================================================================
+THATS ALL :D!!! 
+Contacts for further assistance
+email: bahamagames@gmail.com 
+discord: rickky#1696
+
+Some additionally features that are noted down for future implemention in no perticular order.
+swicth to complete udp protocol
+bit packing
+cli for gml server
+packet encryption
+developer functions
+bluetooth
+analytics
+much more :)
