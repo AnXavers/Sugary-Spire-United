@@ -21,16 +21,6 @@ function scr_mathlibs(argument0, argument1, argument2)
 	{
 		return a / b;
 	}
-	function Wave(from, to, duration, offset, time = noone)
-	{
-		var a4 = (to - from) * 0.5;
-		
-		var t = current_time;
-		if time != noone
-			t = time;
-		
-		return from + a4 + (sin((((t * 0.001) + (duration * offset)) / duration) * (pi * 2)) * a4);
-	}
 	function distance_between_points(x1, y1, x2, y2)
 	{
 		return sqrt(sqr(x2 - x1) + sqr(y2 - y1));

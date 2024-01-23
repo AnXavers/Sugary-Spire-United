@@ -1,4 +1,3 @@
-global.realtime = (current_second + ((current_minute + (current_hour * 60)) * 60))
 var timecycle = ((global.realtime / 86400) * (pi * 2))
 var dayxtimecycle = ((sin(timecycle) + 1) * 375)
 var dayytimecycle = (((cos(timecycle) + 1) * 200) - 10)

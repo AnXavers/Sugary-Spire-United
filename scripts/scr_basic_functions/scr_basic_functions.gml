@@ -22,10 +22,10 @@ function chance(dec)
 {
 	return dec > random(1);
 }
-function wave(argument0, argument1, argument2, argument3, argument4 = current_time)
+function wave(from, to, duration, offset, time = current_time)
 {
-	var a4 = (argument1 - argument0) * 0.5;
-	return argument0 + a4 + (sin((((argument4 * 0.001) + (argument2 * argument3)) / argument2) * (pi * 2)) * a4);
+	var a4 = (to - from) * 0.5;
+	return from + a4 + (sin((((time * 0.001) + (duration * offset)) / duration) * (pi * 2)) * a4);
 }
 function loop(argument0, argument1, argument2, argument3 = 0, argument4 = current_time / 1000)
 {

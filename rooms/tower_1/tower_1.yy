@@ -95,6 +95,7 @@
     {"name":"inst_64827363","path":"rooms/tower_1/tower_1.yy",},
     {"name":"inst_440AD127","path":"rooms/tower_1/tower_1.yy",},
     {"name":"inst_31FA6CBD","path":"rooms/tower_1/tower_1.yy",},
+    {"name":"inst_89061C9","path":"rooms/tower_1/tower_1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -193,6 +194,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_31FA6CBD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_doorP","path":"objects/obj_doorP/obj_doorP.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_doorP","path":"objects/obj_doorP/obj_doorP.yy",},"propertyId":{"name":"id_door","path":"objects/obj_doorP/obj_doorP.yy",},"value":"\"Z\"",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2672.0,"y":352.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_89061C9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_hubelevator","path":"objects/obj_hubelevator/obj_hubelevator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2496.0,"y":1152.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_Secret","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":64,"SerialiseWidth":134,"TileCompressedData":[
 -1246,-2147483648,1,51,-127,-2147483648,-15,51,2,20,21,-117,-2147483648,-15,51,2,40,41,-116,-2147483648,-16,51,2,60,61,-117,-2147483648,-14,51,3,252,80,81,-117,-2147483648,-15,51,2,100,101,-117,-2147483648,-15,51,2,120,121,-117,-2147483648,7,51,460,461,462,463,464,465,-8,51,2,140,61,-117,-2147483648,7,51,480,481,482,483,484,485,-6,51,4,278,51,40,81,-117,-2147483648,7,51,500,501,502,503,504,505,-8,51,2,60,101,-118,-2147483648,6,520,521,522,523,524,525,-4,-2147483648,1,51,-123,-2147483648,6,540,541,542,543,544,545,-128,-2147483648,6,560,561,562,563,564,565,-128,-2147483648,6,580,581,582,583,584,585,

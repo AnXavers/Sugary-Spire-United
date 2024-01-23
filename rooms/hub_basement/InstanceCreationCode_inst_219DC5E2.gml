@@ -1,7 +1,7 @@
 targetRoom = martian_1;
 targetDoor = "A";
 level = "martian";
-details = [gate_createlayer(spr_bee_startgate, 0), gate_createlayer(spr_bee_startgate, 1), gate_createlayer(spr_bee_startgate, 2)];
+details = [gate_createlayer(spr_martian_startgate, 0), gate_createlayer(spr_martian_startgate, 1), gate_createlayer(spr_martian_startgate, 2)];
 info = 
 {
 	bginfo: [spr_martiancard_bg, 2, 4, 8, 0, 0],
