@@ -4448,6 +4448,7 @@
     {"id":{"name":"spr_pizzano_crazyrun","path":"sprites/spr_pizzano_crazyrun/spr_pizzano_crazyrun.yy",},},
     {"id":{"name":"spr_cotton_idle","path":"sprites/spr_cotton_idle/spr_cotton_idle.yy",},},
     {"id":{"name":"spr_noise_supertaunt1","path":"sprites/spr_noise_supertaunt1/spr_noise_supertaunt1.yy",},},
+    {"id":{"name":"mu_rankloopnew","path":"sounds/mu_rankloopnew/mu_rankloopnew.yy",},},
     {"id":{"name":"spr_icepopbg","path":"sprites/spr_icepopbg/spr_icepopbg.yy",},},
     {"id":{"name":"spr_peppino_jetpackmid","path":"sprites/spr_peppino_jetpackmid/spr_peppino_jetpackmid.yy",},},
     {"id":{"name":"spr_janitor2_summonPresent","path":"sprites/spr_janitor2_summonPresent/spr_janitor2_summonPresent.yy",},},

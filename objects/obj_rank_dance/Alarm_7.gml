@@ -1,2 +1,2 @@
 /// @description Start Music
-scr_music(mu_rankloop)
+scr_music(mu_rankloopnew)
