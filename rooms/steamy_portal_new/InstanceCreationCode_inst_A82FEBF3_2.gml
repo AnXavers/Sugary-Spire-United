@@ -1,1 +1,1 @@
-targetRoom = steamy_1;
+targetRoom = steamy_1_new;
