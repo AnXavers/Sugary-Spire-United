@@ -4164,6 +4164,7 @@
     {"name":"spr_pizzano_crazyrun","order":8,"path":"sprites/spr_pizzano_crazyrun/spr_pizzano_crazyrun.yy",},
     {"name":"spr_cotton_idle","order":5,"path":"sprites/spr_cotton_idle/spr_cotton_idle.yy",},
     {"name":"spr_noise_supertaunt1","order":152,"path":"sprites/spr_noise_supertaunt1/spr_noise_supertaunt1.yy",},
+    {"name":"mu_rankloopnew","order":8,"path":"sounds/mu_rankloopnew/mu_rankloopnew.yy",},
     {"name":"spr_icepopbg","order":9,"path":"sprites/spr_icepopbg/spr_icepopbg.yy",},
     {"name":"spr_peppino_jetpackmid","order":150,"path":"sprites/spr_peppino_jetpackmid/spr_peppino_jetpackmid.yy",},
     {"name":"spr_janitor2_summonPresent","order":7,"path":"sprites/spr_janitor2_summonPresent/spr_janitor2_summonPresent.yy",},
