@@ -2,6 +2,7 @@ function state_player_cotton()
 {
 	static cotton_afterimagetimer = 6;
 	move = key_left + key_right;
+	var _meetingcotton = place_meeting(x, y, obj_cottonsolid)
 	if (sprite_index == spr_cotton_slam && move != xscale)
 	{
 		image_index = 0;
@@ -23,7 +24,7 @@ function state_player_cotton()
 		hsp = xscale * movespeed;
 	if (((move != 0 && move != xscale) || grounded) && momemtum == 1)
 		momemtum = 0;
-	if (move != 0)
+	if (move != 0 && !_meetingcotton)
 	{
 		if (key_sprint && move == xscale && grounded)
 		{
@@ -40,7 +41,7 @@ function state_player_cotton()
 	}
 	else if (movespeed > 0 && sprite_index != spr_cotton_attack && momemtum == 0)
 		movespeed -= 0.5;
-	if (scr_solid(x + xscale, y, true) && !scr_slope_ext(x + xscale, y))
+	if (scr_solid(x + xscale, y, true) && !scr_slope_ext(x + xscale, y) && !_meetingcotton)
 	{
 		if (movespeed < 8 && (place_meeting(x + xscale, y, obj_destructibles) || place_meeting(x + xscale, y, obj_chocofrog)))
 			movespeed = 0;
@@ -56,7 +57,7 @@ function state_player_cotton()
 	}
 	if (vsp > 5)
 		vsp = 5;
-	if (key_jump && grounded)
+	if (key_jump && grounded && !_meetingcotton)
 	{
 		vsp = -14;
 		grav = 0.025;
@@ -88,15 +89,22 @@ function state_player_cotton()
 		if (movespeed < 8)
 			movespeed = 8;
 		move = xscale;
-		if ((-key_left2 && xscale == 1) || (key_right2 && xscale == -1))
+		if ((-key_left2 && xscale == 1) || (key_right2 && xscale == -1) && !_meetingcotton)
 		{
 			movespeed = 0;
 			vsp = 0;
 			hsp = 0;
 			sprite_index = spr_cotton_fall;
 		}
+		else if _meetingcotton
+		{
+			vsp = 0
+			grav = 0
+			movespeed = 8
+			hsp = movespeed * xscale
+		}
 	}
-	if (animation_end() && sprite_index == spr_cotton_attack)
+	if (animation_end() && sprite_index == spr_cotton_attack && !_meetingcotton)
 	{
 		image_index = 0;
 		sprite_index = spr_cottonidle;
@@ -133,7 +141,7 @@ function state_player_cotton()
 		instance_create(x, y, obj_landcloud);
 		scr_sound(sound_land);
 	}
-	if (key_jump && !grounded && doublejumped == 0)
+	if (key_jump && !grounded && doublejumped == 0 && !_meetingcotton)
 	{
 		doublejumped = 1;
 		vsp = -10;
@@ -167,7 +175,7 @@ function state_player_cotton()
 		with (instance_create(x, y, obj_afterimageoutward))
 			vspeed = -7;
 	}
-	if (key_down2 && move != 0 && grounded)
+	if (key_down2 && move != 0 && grounded && !_meetingcotton)
 	{
 		if (movespeed < 3)
 			movespeed = 3;
@@ -178,12 +186,12 @@ function state_player_cotton()
 	}
 	if (!grounded && sprite_index != spr_cotton_jump && sprite_index != spr_cotton_attack && sprite_index != spr_cotton_doublejump && sprite_index != spr_cotton_doublefall && sprite_index != spr_cotton_drill)
 		sprite_index = spr_cotton_fall;
-	if (!key_jump2 && jumpstop == 0 && vsp < 0.5)
+	if (!key_jump2 && jumpstop == 0 && vsp < 0.5 && !_meetingcotton)
 	{
 		vsp /= 20;
 		jumpstop = 1;
 	}
-	if (grounded && vsp > 0)
+	if (grounded && vsp > 0 && !_meetingcotton)
 	{
 		jumpstop = 0;
 		doublejumped = 0;

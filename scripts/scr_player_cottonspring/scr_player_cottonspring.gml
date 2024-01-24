@@ -3,8 +3,12 @@ function state_player_cottonspring()
 	grav = 0
 	static cotton_afterimagetimer = 6;
 	image_speed = 0.35;
-	movespeed = lerp(movespeed, 0, 0.01)
-	verticalMovespeed = lerp(verticalMovespeed, 14, 0.01)
+	var _meetingcotton = place_meeting(x, y, obj_cottonsolid)
+	if !_meetingcotton
+	{
+		movespeed = lerp(movespeed, 0, 0.01)
+		verticalMovespeed = lerp(verticalMovespeed, 14, 0.01)
+	}
 	vsp = verticalMovespeed;
 	hsp = movespeed
 	sprite_index = spr_cotton_drill;
@@ -26,7 +30,7 @@ function state_player_cottonspring()
 		scr_sound(sound_bump)
 	}
 	draw_angle = point_direction(x, y, x + hsp, y + vsp) + 90
-	if (grounded && !place_meeting(x, y + 1, obj_destructibles) && !place_meeting(x, y + 1, obj_chocofrog))
+	if (grounded && !place_meeting(x, y + 1, obj_destructibles) && !place_meeting(x, y + 1, obj_chocofrog) && !_meetingcotton)
 	{
 		doublejumped = 0;
 		if (slopeCheck(x, y))
@@ -54,7 +58,7 @@ function state_player_cottonspring()
 			image_index = 0;
 		}
 	}
-	if (key_attack2 && sprite_index != spr_cotton_attack && groundedcot == 1 && !place_meeting(x, y, obj_cottonspring))
+	if (key_attack2 && sprite_index != spr_cotton_attack && groundedcot == 1 && !place_meeting(x, y, obj_cottonspring) && !_meetingcotton)
 	{
 		state = states.cotton;
 		flash = 1;
@@ -72,7 +76,7 @@ function state_player_cottonspring()
 		scr_sound(sfx_cottonattack);
 		groundedcot = 0;
 	}
-	if ((key_jump && !grounded) || !audio_is_playing(sfx_spring))
+	if ((key_jump && !grounded) || (!audio_is_playing(sfx_spring) && !_meetingcotton))
 	{
 		doublejumped = 1;
 		movespeed = 0;
