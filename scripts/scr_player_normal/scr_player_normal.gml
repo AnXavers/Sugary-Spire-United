@@ -1,5 +1,6 @@
 function state_player_normal()
 {
+	idletimer++
 	roomname = room_get_name(room);
 	if (dir != xscale)
 	{
@@ -469,4 +470,6 @@ function state_player_normal()
 			}
 		}
 	}
+	if state != states.normal
+		idletimer = 0
 }

@@ -25,6 +25,7 @@ global.modoptions = [
 [false, "VOICELINES", "PLACEHOLDER DESCRIPTION", spr_null, [["FINALIZED", seq_option_placeholder], ["CLASSIC", seq_option_placeholder], ["HEAD", seq_option_placeholder]], ini_read_real("ModSettings", "voicelines", 0)],
 [false, "DESTROYABLES", "PLACEHOLDER DESCRIPTION", spr_null, [["FINALIZED", seq_option_placeholder], ["DEMO", seq_option_placeholder], ["SEPTEMBER", seq_option_placeholder], ["CLASSIC", seq_option_placeholder]], ini_read_real("ModSettings", "destroyables", 0)],
 [false, "COLLECTS", "PLACEHOLDER DESCRIPTION", spr_null, [["FINALIZED", seq_option_placeholder], ["P-RANK", seq_option_placeholder], ["DEMO", seq_option_placeholder], ["CLASSIC", seq_option_placeholder]], ini_read_real("ModSettings", "collects", 0)],
+[false, "RANK STYLE", "PLACEHOLDER DESCRIPTION", spr_null, [["P-RANK", seq_option_placeholder], ["DANCE & CAFE", seq_option_placeholder], ["DEMO", seq_option_placeholder], ["CLASSIC", seq_option_placeholder]], ini_read_real("ModSettings", "rankstyle", 0)],
 [false, "RICH PRESENCE", "PLACEHOLDER DESCRIPTION", spr_null, [["OFF", seq_option_placeholder], ["ON", seq_option_placeholder], ["HEAD", seq_option_placeholder]], ini_read_real("ModSettings", "richpresence", 0)],
 ]],
 

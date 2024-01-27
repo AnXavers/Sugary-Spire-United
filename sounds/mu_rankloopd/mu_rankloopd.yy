@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "mu_rankloopnew",
+  "name": "mu_rankloopd",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 10.43966,
+  "duration": 31.686531,
   "parent": {
     "name": "Ranks",
     "path": "folders/Sounds/Music/Ranks.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "mu_rankloopnew.wav",
+  "soundFile": "mu_rankloopd.mp3",
   "type": 0,
   "volume": 1.0,
 }

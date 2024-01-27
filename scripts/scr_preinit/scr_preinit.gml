@@ -160,7 +160,10 @@ enum states {
 	tv_transition, // 158
 	tv_expression, // 159
 	pogo, // 160
-	dynamite // 161
+	dynamite, // 161
+	disguise_normal, // 160
+	disguise_attack, // 161
+	cottonswim // 161
 };
 
 enum substates {

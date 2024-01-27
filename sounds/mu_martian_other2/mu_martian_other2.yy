@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sfx_dialogueMartin",
+  "name": "mu_martian_other2",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 3.284376,
+  "duration": 72.30692,
   "parent": {
-    "name": "Dialouge",
-    "path": "folders/Sounds/Sounds/Dialouge.yy",
+    "name": "Martian",
+    "path": "folders/Sounds/Music/Levels/Martian.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "sfx_dialogueMartin.wav",
+  "soundFile": "mu_martian_other2.mp3",
   "type": 1,
   "volume": 1.0,
 }

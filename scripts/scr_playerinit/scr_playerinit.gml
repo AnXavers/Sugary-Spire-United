@@ -518,11 +518,14 @@ function scr_playerstate()
 		case states.supergrab:
 			_stateFunction = state_player_supergrab;
 			break;
-			case states.pogo:
+		case states.pogo:
 			_stateFunction = scr_player_pogo;
 			break;
-			case states.dynamite:
+		case states.dynamite:
 			_stateFunction = state_player_dynamite
+			break
+		case states.cottonswim:
+			_stateFunction = state_player_cottonswim()
 			break
 		case states.ufodashOLD:
 			show_error("Smirk old code lmao", false);

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "mu_rankloop_new",
+  "name": "mu_martian_other1",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 10.43966,
+  "duration": 152.0849,
   "parent": {
-    "name": "Ranks",
-    "path": "folders/Sounds/Music/Ranks.yy",
+    "name": "Martian",
+    "path": "folders/Sounds/Music/Levels/Martian.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "mu_rankloop_new.wav",
+  "soundFile": "mu_martian_other1.mp3",
   "type": 1,
   "volume": 1.0,
 }
