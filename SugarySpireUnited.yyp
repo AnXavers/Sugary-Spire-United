@@ -63,6 +63,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bee","folderPath":"folders/Rooms/Levels/Bee.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Old","folderPath":"folders/Rooms/Levels/Bee/Old.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cottontown","folderPath":"folders/Rooms/Levels/Cottontown.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"New","folderPath":"folders/Rooms/Levels/Cottontown/New.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Old","folderPath":"folders/Rooms/Levels/Cottontown/Old.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Danceoff","folderPath":"folders/Rooms/Levels/Danceoff.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"old","folderPath":"folders/Rooms/Levels/Danceoff/old.yy",},
@@ -548,7 +549,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tower","folderPath":"folders/Tile Sets/Tower.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Unused or Unknown","folderPath":"folders/Tile Sets/Unused or Unknown.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"New","folderPath":"folders/Rooms/Levels/Cottontown/New.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"BNet.zip","CopyToMask":-1,"filePath":"datafiles/BNet",},

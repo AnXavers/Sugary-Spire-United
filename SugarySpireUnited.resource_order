@@ -45,6 +45,7 @@
     {"name":"Bee","order":7,"path":"folders/Rooms/Levels/Bee.yy",},
     {"name":"Old","order":19,"path":"folders/Rooms/Levels/Bee/Old.yy",},
     {"name":"Cottontown","order":1,"path":"folders/Rooms/Levels/Cottontown.yy",},
+    {"name":"New","order":23,"path":"folders/Rooms/Levels/Cottontown/New.yy",},
     {"name":"Old","order":22,"path":"folders/Rooms/Levels/Cottontown/Old.yy",},
     {"name":"Danceoff","order":6,"path":"folders/Rooms/Levels/Danceoff.yy",},
     {"name":"old","order":20,"path":"folders/Rooms/Levels/Danceoff/old.yy",},
@@ -494,7 +495,6 @@
     {"name":"Tower","order":3,"path":"folders/Tile Sets/Tower.yy",},
     {"name":"Unused or Unknown","order":2,"path":"folders/Tile Sets/Unused or Unknown.yy",},
     {"name":"Timelines","order":24,"path":"folders/Timelines.yy",},
-    {"name":"New","order":23,"path":"folders/Rooms/Levels/Cottontown/New.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_minedummycart","order":1,"path":"objects/obj_minedummycart/obj_minedummycart.yy",},
