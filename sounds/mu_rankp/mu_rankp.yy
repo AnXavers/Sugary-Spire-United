@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 7.017687,
+  "duration": 7.166236,
   "parent": {
     "name": "Ranks",
     "path": "folders/Sounds/Music/Ranks.yy",

@@ -95,6 +95,15 @@ function state_player_cotton()
 			hsp = 0;
 			sprite_index = spr_cotton_fall;
 		}
+		if place_meeting(x + hsp, y, obj_cottonsolid)
+		{
+			state = states.cottonswim
+			sprite_index = spr_cotton_drill
+			movespeed = max(hsp * xscale, 14)
+			movespeed *= xscale
+			verticalMovespeed = 0
+			draw_angle = point_direction(x, y, x + hsp, y + vsp) + 90
+		}
 	}
 	if (animation_end() && sprite_index == spr_cotton_attack)
 	{

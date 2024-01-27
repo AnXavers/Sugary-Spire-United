@@ -83,6 +83,14 @@ function state_player_cottondrill()
 		}
 		scr_sound(sfx_cottonjump);
 	}
+	if place_meeting(x, y + vsp, obj_cottonsolid) && sign(vsp) == 1
+	{
+		state = states.cottonswim
+		sprite_index = spr_cotton_drill
+		movespeed = 0
+		verticalMovespeed = max(verticalMovespeed, 14)
+		draw_angle = point_direction(x, y, x + hsp, y + vsp) + 90
+	}
 	if (cotton_afterimagetimer > 0)
 		cotton_afterimagetimer--;
 	else

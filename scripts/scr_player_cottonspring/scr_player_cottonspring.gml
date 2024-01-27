@@ -72,7 +72,7 @@ function state_player_cottonspring()
 		scr_sound(sfx_cottonattack);
 		groundedcot = 0;
 	}
-	if ((key_jump && !grounded) || !audio_is_playing(sfx_spring))
+	if ((key_jump && !grounded) || (!audio_is_playing(sfx_spring)))
 	{
 		doublejumped = 1;
 		movespeed = 0;
@@ -90,6 +90,15 @@ function state_player_cottonspring()
 			sprite_index = spr_cottonpoof;
 		}
 		scr_sound(sfx_cottonjump);
+	}
+	if place_meeting(x + hsp, y + vsp, obj_cottonsolid)
+	{
+		state = states.cottonswim
+		sprite_index = spr_cotton_drill
+		var _hdir = sign(movespeed)
+		var _vdir = sign(verticalMovespeed)
+		movespeed = (max(movespeed * _hdir, 14)) * _hdir
+		verticalMovespeed = (max(verticalMovespeed * _vdir, 14)) * _vdir
 	}
 	if (cotton_afterimagetimer > 0)
 		cotton_afterimagetimer--;

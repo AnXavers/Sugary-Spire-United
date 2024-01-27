@@ -314,6 +314,7 @@ patternnumb = 0;
 boombox_timer = -1;
 noisetaunt = 0;
 shouldersfx = -1;
+idletimer = 0;
 u_mask = shader_get_uniform(5, "u_MaskColour");
 u_spr = shader_get_uniform(5, "u_SprRect");
 u_pat = shader_get_uniform(5, "u_PatRect");

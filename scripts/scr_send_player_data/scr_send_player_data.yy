@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Client To Server",
-    "path": "folders/Scripts/Online/Client To Server.yy",
+    "path": "folders/Scripts/BNET/Client To Server.yy",
   },
 }

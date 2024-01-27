@@ -176,3 +176,7 @@ OldDrawY = 0;
 checkpointspr = spr_checkpointflag_unvisit
 checkpointalpha = 0
 checkpointindex = 0
+sstvhsp = choose(0.5, -0.5)
+sstvvsp = choose(0.5, -0.5)
+sstvx = 139
+sstvy = 134

@@ -1,3 +1,4 @@
+global.realtime = (current_second + ((current_minute + (current_hour * 60)) * 60))
 cakeX = 0
 if global.oldhud
 	cakeX = 700

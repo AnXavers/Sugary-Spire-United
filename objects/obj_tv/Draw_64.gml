@@ -80,8 +80,13 @@ if !global.oldhud
 		static_index += 0.3;
 		draw_sprite_ext(spr_tv_newstatic, static_index, 832 + anchor_point("right"), 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
 	}
-	if (tvsprite != spr_tvoff && tvsprite != spr_tvturnon && global.dialogueVolume <= 0)
-		draw_sprite_ext(spr_tvmuteicon, 0, 832 + DrawX + anchor_point("right"), 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
+	if (tvsprite != spr_tvoff && tvsprite != spr_tvturnon)
+	{
+		if global.dialogueVolume <= 0
+			draw_sprite_ext(spr_tvmuteicon, 0, 832 + DrawX + anchor_point("right"), 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
+		if obj_player.idletimer >= 400
+			draw_sprite(spr_tv_sstv, 0, sstvx, sstvy)
+	}
 }
 draw_set_font(global.promptfont);
 draw_set_halign(fa_center);

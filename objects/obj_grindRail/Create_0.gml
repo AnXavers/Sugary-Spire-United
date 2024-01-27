@@ -6,7 +6,7 @@ canCollide = function(argument0 = obj_player)
 		case obj_player:
 		case obj_player2:
 			var _state = global.freezeframe ? argument0.frozenstate : argument0.state;
-			return _state != 128 && _state != 88 && _state != 97 && _state != 98 && _state != 96 && _state != 31 && _state != 143 && _state != 67 && _state != 45 && _state != 72 && _state != 110 && _state != 0;
+			return _state != states.noclip && _state != 88 && _state != states.cottondrill && _state != states.cottonroll && _state != states.tumble && _state != states.machroll && _state != states.frostburnbump && _state != states.crouchslide && _state != states.backbreaker && _state != states.bump && _state != states.actor && _state != states.frozen;
 			break;
 		case obj_creamThief:
 			return true;

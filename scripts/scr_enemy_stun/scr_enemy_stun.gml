@@ -15,6 +15,8 @@ function scr_enemy_stun()
 	image_speed = 0.35;
 	var t = thrown;
 	var f = throw_hit;
+	if (thrown && (vspeed == 0 && hspeed == 0))
+		instance_destroy()
 	if (thrown && linethrown)
 	{
 		if (abs(hithsp) > abs(hitvsp))

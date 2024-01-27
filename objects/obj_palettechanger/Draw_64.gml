@@ -40,7 +40,7 @@ if surface_exists(surface)
 	pal_swap_set(surface, 1, 1)
 	draw_sprite_ext(obj_tv.idletvspr, image_idnex, 832, 100, 1, 1, 0, c_white, 1)
 	pal_swap_reset()
-	draw_sprite_ext(spr_tvframe, 0, 832, 100, 1, 1, 0, c_white, 1)
+	draw_sprite_ext(obj_tv.tvspr, 0, 832, 100, 1, 1, 0, c_white, 1)
 }
 draw_set_font(global.smallfont)
 draw_set_halign(fa_center)

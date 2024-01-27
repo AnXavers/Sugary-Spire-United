@@ -13,6 +13,18 @@ else
 	DrawY = lerp(DrawY, 0, 0.15);
 	alpha = 1;
 }
+var _sstvx = sstvx + sstvhsp
+var _sstvy = sstvx + sstvvsp
+if (_sstvx < sprite_get_bbox_left(tvspr) || _sstvx > sprite_get_bbox_right(tvspr))
+{
+	sstvhsp = -sstvhsp
+	sstvx += sstvhsp
+}
+if (_sstvy < sprite_get_bbox_top(tvspr) || _sstvy > sprite_get_bbox_bottom(tvspr))
+{
+	sstvvsp = -sstvvsp
+	sstvy += sstvvsp
+}
 if (global.hurtcounter >= global.hurtmilestone && global.hurtcounter >= 5)
 {
 	showtext = 1;

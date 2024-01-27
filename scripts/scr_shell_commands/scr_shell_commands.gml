@@ -175,6 +175,8 @@ function toggle_collision_function()
 		global.showcollisionarray[i++] = obj_grindRail_Slope;
 		global.showcollisionarray[i++] = obj_minecartRail;
 		global.showcollisionarray[i++] = obj_minecartRail_Slope;
+		global.showcollisionarray[i++] = obj_cottonsolid;
+		global.showcollisionarray[i++] = obj_cottonslopeplatform;
 	}
 	var array = global.showcollisionarray;
 	var length = array_length(array);
