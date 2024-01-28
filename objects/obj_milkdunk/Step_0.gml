@@ -4,6 +4,7 @@ if (instance_place(x, y - 1, obj_player) && (obj_player.state == states.cookiemo
 	obj_player.state = states.normal;
 	obj_player.movespeed = abs(obj_player.hsp);
 	obj_player.ridingmarsh = false;
+	global.dogtimer = 0
 }
 if (instance_place(x, y - 1, obj_cookiemount))
 {

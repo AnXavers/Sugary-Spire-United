@@ -22,13 +22,15 @@ function scr_roomnames(argument0 = room)
 		case entryway_secret_1_new:
 		case entrywaysecret_1_old:
 		case entryway_secret_1_custom:
-			room_name = "Hidden behind some walls."
+			room_name = "Hidden Behind Some Walls."
 			break
 		case entryway_secret_2:
-		case entryway_secret_2_new:
 		case entrywaysecret_2_old:
-		case entryway_secret_2_custom:
 			room_name = "Wet Floor"
+			break
+		case entryway_secret_2_new:
+		case entryway_secret_2_custom:
+			room_name = "Probably An OSHA Violation"
 			break
 		case entryway_secret_3:
 		case entryway_secret_3_new:
@@ -48,17 +50,21 @@ function scr_roomnames(argument0 = room)
 		case entryway_2:
 			room_name = "Hard Hat Required"
 			break
-		case entryway_3_new:
 		case entryway_3_old:
-		case entryway_3_custom:
 		case entryway_3:
 			room_name = "Orange City"
 			break
-		case entryway_4_new:
+		case entryway_3_new:
+		case entryway_3_custom:
+			room_name = "Dont Slip"
+			break
 		case entryway_4_old:
-		case entryway_4_custom:
 		case entryway_4:
 			room_name = "Construction Conglomerate"
+			break
+		case entryway_4_new:
+		case entryway_4_custom:
+			room_name = "Road Work Ahead"
 			break
 		case entryway_5_new:
 		case entryway_5_old:
@@ -66,27 +72,33 @@ function scr_roomnames(argument0 = room)
 		case entryway_5:
 			room_name = "Had A Joke But I'm Still Working On It"
 			break
-		case entryway_6_new:
 		case entryway_6_old:
-		case entryway_6_custom:
 		case entryway_6:
 			room_name = "Down And Around"
 			break
+		case entryway_6_new:
+		case entryway_6_custom:
+			room_name = "Architecture 101"
+			break
 		case entryway_6b_new:
 		case entryway_6b_custom:
-			room_name = "All The Way Back"
+			room_name = "Impractical Scaffolding"
 			break
-		case entryway_7_new:
 		case entryway_7_old:
-		case entryway_7_custom:
 		case entryway_7:
 			room_name = "Wires And Boxes"
 			break
-		case entryway_8_new:
+		case entryway_7_new:
+		case entryway_7_custom:
+			room_name = "Unsafe Work Environment"
+			break
 		case entryway_8_old:
-		case entryway_8_custom:
 		case entryway_8:
 			room_name = "City Outskirts"
+			break
+		case entryway_8_new:
+		case entryway_8_custom:
+			room_name = "A Metropolis Now"
 			break
 		case entryway_9_new:
 		case entryway_9_old:
@@ -100,19 +112,18 @@ function scr_roomnames(argument0 = room)
 		case entryway_10:
 			room_name = "Operation Crunch Creak Construct"
 			break
-		case entryway_11_new:
 		case entryway_11_old:
-		case entryway_11_custom:
 		case entryway_11:
 			room_name = "Beary Careful"
 			break
-		case entryway_portal_new:
+		case entryway_11_new:
+		case entryway_11_custom:
+			room_name = "Meet Gummy Harry"
+			break
 		case entryway_portal_custom:
-		case entryway_portal:
 			room_name = "Ready For Round 2?"
-		case entryway_treasure_new:
+			break
 		case entryway_treasure_custom:
-		case entryway_treasure:
 			room_name = "An Artifact Hidden Away"
 			break
 		case steamy_secret_1:

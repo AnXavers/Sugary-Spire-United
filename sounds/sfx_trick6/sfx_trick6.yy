@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.420522,
+  "duration": 0.322857,
   "parent": {
     "name": "Trick",
     "path": "folders/Sounds/Sounds/Player/Taunt/Trick.yy",

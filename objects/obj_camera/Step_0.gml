@@ -146,9 +146,10 @@ if (shake_mag > 0 && !global.freezeframe)
 var lspd = 0.25;
 cam_angle = lerp(cam_angle, cam_langle, lspd);
 cam_zoom = lerp(cam_zoom, cam_lzoom, lspd);
+global.cam_zoom = lerp(global.cam_zoom, global.cam_targetzoom, lspd);
 camera_set_view_angle(view_camera[0], cam_angle + camera_get_view_angle(view_camera[0]));
-var vw = global.cam_w * cam_zoom
-var vh = global.cam_h * cam_zoom
+var vw = global.cam_w * cam_zoom * global.cam_zoom
+var vh = global.cam_h * cam_zoom * global.cam_zoom
 camera_set_view_size(view_camera[0], vw, vh);
 if (instance_exists(obj_player) && !instance_exists(obj_editor) && (obj_player.state != states.timesup && obj_player.state != states.gameover))
 {
@@ -259,6 +260,15 @@ if (pizdex < sprite_get_number(spr_pizzelle_hp))
 	pizdex += 0.35;
 else
 	pizdex = 0;
+if global.dogtimer > 0
+{
+	global.dogtimer++
+	dogtimery = approach(dogtimery, 0, 3)
+}
+else
+{
+	dogtimery = approach(dogtimery, 200, 3)
+}
 switch (room)
 {
 	case devroom:

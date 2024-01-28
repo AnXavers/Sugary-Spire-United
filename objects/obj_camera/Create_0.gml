@@ -45,7 +45,7 @@ bubblescale = 0;
 window_set_size(960, 540);
 global.maxwave = 0;
 global.wave = 0;
-pizzaindex = 0;
+index = 0
 heatpal = 0;
 frozen = false;
 freezetype = 0;
@@ -75,3 +75,7 @@ painterdex = 0;
 pizdex = 0;
 global.Eranklength = 0
 collected = -1
+global.dogtimer = 0
+dogtimery = 200
+global.cam_zoom = 1
+global.cam_targetzoom = 1
