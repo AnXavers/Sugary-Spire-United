@@ -209,18 +209,15 @@ function state_player_normal()
 		state = states.jump;
 		image_index = 0;
 	}
-	if (character == "C" && key_sprint && inhalingenemy == 0 && substate == 0)
+	if (character == "C" && key_attack2  && inhalingenemy == 0 && substate == 0 && grounded)
 		state = states.coneboy_inhale115;
 	if (character == "C" && inhalingenemy == 1 && key_down && grounded)
 	{
-		if (storedinhalebaddie == "obj_knight")
-			substate = substates.unknown_1;
-		else if (storedinhalebaddie == "obj_googlyjuice")
-			substate = substates.unknown_2;
+	    scr_inhalesubstate()
 		scr_sound(sfx_coneboyswallow);
 		inhalingenemy = false;
 	}
-	if (character == "C" && inhalingenemy == 1 && key_attack && grounded)
+	if (character == "C" && inhalingenemy == 1 && key_attack2 && grounded)
 	{
 		sprite_index = spr_coneboy_spit;
 		instance_create(x, y, obj_coneboyprojectile);
@@ -254,6 +251,12 @@ function state_player_normal()
 		scr_sound(sfx_coneboykick);
 		audio_sound_pitch(sfx_coneboykick, 1.2);
 		headless = 1;
+	}
+	if (character == "C" && substate != 0 && key_shoot2 && headless == 0 && !instance_exists(obj_coneboyhead))
+	{
+		substate = 0
+		image_index = 0;
+		scr_sound(sfx_coneboyswallow)
 	}
 	if (sprite_index == spr_coneboy_spit && animation_end())
 		sprite_index = spr_idle;
@@ -467,6 +470,16 @@ function state_player_normal()
 				sprite_index = spr_coneboy_juicewave;
 				state = states.coneboy_inhale115;
 				movespeed = 6;
+			}
+		}
+		if (substate == 3)
+		{
+			if key_attack2
+			{
+		state = states.coneboy_inhale115;
+		sprite_index = spr_pizzano_superjump_cancelprep
+		image_index = 0
+		movespeed = 12
 			}
 		}
 	}
