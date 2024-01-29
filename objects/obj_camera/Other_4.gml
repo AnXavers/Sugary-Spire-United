@@ -79,3 +79,8 @@ var _chance = (current_hour <= 6 || current_hour >= 18) ? 0.02 : 0.01;
 if chance(_chance) && scr_roomcheck()
 	instance_create(random(room_width), random(room_height), obj_hallucinationspawner)
 global.dancetimer = 0
+if (obj_player.state != states.cookiemount && obj_player.state != states.cookiemountfireass && obj_player.state != states.cookiemountattack)
+{
+	global.dogtimer = 0
+	dogtimery = 200
+}

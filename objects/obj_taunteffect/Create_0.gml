@@ -1,5 +1,3 @@
-trickxpos = 50
-trickalpha = 0.5
 with obj_player
 {
 	if tauntStored.state != states.trick
@@ -33,10 +31,7 @@ with obj_player
 			noisetaunt = 0
 	}
 	else
-	{
-		scr_sound(asset_get_index("sfx_trick" + string(clamp(trickcount, 1, 6))))
-	}
+		instance_create(x, y, obj_trickeffect)
 }
 image_speed = 0.5;
-sprite_index = spr_taunteffect
 depth = -1

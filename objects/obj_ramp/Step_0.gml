@@ -9,7 +9,6 @@ if (place_meeting(x, y - 16, obj_player))
 				state = states.trick;
 				vsp = -12;
 				movespeed = 14;
-				trickcount = 0;
 			}
 			else if (state == states.cookiemount)
 			{

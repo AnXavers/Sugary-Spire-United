@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1e6e86ec-bf2c-4c35-a108-e054be8b2498","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 8,
   "parent": {
     "name": "Dogtimer",
     "path": "folders/Sprites/Dogtimer.yy",
@@ -59,7 +59,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 54,
+    "xorigin": 109,
     "yorigin": 94,
   },
   "swatchColours": null,

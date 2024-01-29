@@ -381,9 +381,22 @@ if (state != states.ufodashOLD)
 	ufomaxspeed = 0;
 if (obj_player.state != states.seacream && obj_player.state != states.seacreamjump && obj_player.state != states.seacreamstick)
 	additionalspeedvar = 0;
+if (state != states.backbreaker && state != states.trick)
+	global.cam_targetzoom = 1
+if (lastframestate == states.trick && trickcount > 0 && state != states.backbreaker && global.cam_targetzoom == 1)
+{
+	if trickcount < 6
+		scr_sound(sfx_trickend1)
+	else
+		scr_sound(sfx_trickend2)
+	with instance_create(x, y, obj_trickeffect)
+		image_index = clamp(obj_player.trickcount - 1, 0, image_number - 1)
+	trickcount = 0
+}
 if (keyboard_check_pressed(vk_pageup))
 	patternnumb++;
 if (keyboard_check_pressed(vk_pagedown))
 	patternnumb--;
 patternnumb %= 2;
 patternspr = asset_get_index("spr_pattern" + string(patternnumb));
+lastframestate = state

@@ -1,6 +1,6 @@
 draw_set_alpha(promptalpha);
 draw_set_halign(fa_center)
-draw_text_scribble(480 + anchor_point("middle"), 400 + anchor_point("bottom"), "[shake]" + controlprompt);
+draw_text_scribble((global.cam_w / 2), global.cam_h - 140, "[shake]" + controlprompt);
 draw_set_alpha(1);
 if (is_hub() || !scr_roomcheck() || global.levelname == "none")
 	exit;

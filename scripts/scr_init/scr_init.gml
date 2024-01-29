@@ -56,6 +56,7 @@ global.lapcountpepfont = font_add_sprite_ext(spr_lapcount_font_pep, "0123456789"
 global.collectpepfont = font_add_sprite_ext(spr_font_collect, "0123456789", 1, 0);
 global.timerpepfont = font_add_sprite_ext(spr_wartimer_font1, "1234567890", 0, 6);
 global.combopepfont = font_add_sprite_ext(spr_tv_combobubbletext, "0123456789", 1, 0);
+global.dogtimerfont = font_add_sprite_ext(spr_dogtimer_font, "1234567890:", 1, 0);
 global.shellactivate = false;
 global.showcollisions = false;
 global.debugmode = false;
