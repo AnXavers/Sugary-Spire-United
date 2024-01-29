@@ -191,19 +191,6 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				other.baddieID.hsp = (xscale * 25)
 				other.baddieID.vsp = -6
 			}
-			/*/if (instance_exists(other.baddieID) && inhaling && inhalingenemy = false && state = states.coneboy_inhale)
-			{
-				if instance_exists(other.baddieID)
-				{
-					with (other.baddieID)
-					{
-						if distance_to_object(obj_player) <= 1 && state = enemystates.inhaled
-							instance_destroy(other.baddieID)
-						global.hit += 1
-						global.combotime = 60
-					}
-				}
-			}/*/
 			if (instance_exists(other.baddieID) && (state == states.cotton && sprite_index == spr_cotton_attack))
 			{
 				with (other.baddieID)

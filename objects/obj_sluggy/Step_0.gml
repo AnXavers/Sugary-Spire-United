@@ -1,5 +1,6 @@
 if (state != enemystates.rage && state != enemystates.slugjump && grounded && !pizzano)
 	scr_scareenemy();
+	scr_inhaleableenemy()
 if (state == enemystates.stun && stunned > 40 && birdcreated == 0)
 {
 	birdcreated = 1;

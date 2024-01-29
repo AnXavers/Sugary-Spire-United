@@ -4,6 +4,7 @@ if (state == enemystates.stun && stunned > 40 && birdcreated == 0)
 	with (instance_create(x, y, obj_enemybird))
 		ID = other.id;
 }
+scr_inhaleableenemy()
 if (state != enemystates.stun && state != enemystates.frozen)
 	birdcreated = 0;
 if (flash == 1 && alarm[2] <= 0)

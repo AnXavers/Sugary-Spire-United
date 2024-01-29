@@ -72,17 +72,17 @@ function scr_coneboy_inhale() //gml_Script_scr_coneboy_inhale
 	}
 	if (substate == 3)
 	{
-		if sprite_index == spr_pizzano_superjump_cancelprep
+		if sprite_index == spr_coneboy_chargestart
 		hsp = 0
 		else
 		hsp = (xscale * (movespeed + 3))
 		vsp = 0
 		if animation_end()
 	{
-		if sprite_index == spr_pizzano_superjump_cancelprep
+		if sprite_index == spr_coneboy_chargestart
 		{
 		image_index = 0
-		sprite_index = spr_machtumble
+		sprite_index = spr_coneboy_charge
 		movespeed = 12
 		}
 		else
