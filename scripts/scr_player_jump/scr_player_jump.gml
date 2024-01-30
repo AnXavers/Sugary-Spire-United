@@ -223,6 +223,7 @@ function state_player_jump()
 	}
 	do_taunt();
 	scr_noise_abilities();
+	scr_coneboy_copyabilities()
 	if (key_down2)
 	{
 		image_index = 0;

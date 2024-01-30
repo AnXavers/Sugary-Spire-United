@@ -10,6 +10,11 @@ with (obj_player)
 		with (other.id)
 			instance_destroy();
 	}
+		if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && state == states.cottonbounce && cottonsize > 3)
+	{
+		with (other.id)
+			instance_destroy();
+	}
 	if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && state == states.cottonroll)
 	{
 		with (other.id)

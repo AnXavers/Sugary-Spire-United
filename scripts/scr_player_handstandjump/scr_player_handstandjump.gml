@@ -60,7 +60,6 @@ function state_player_handstandjump()
 	{
 		sprite_index = spr_longjump;
 		image_index = 0
-		
 		instance_create(x, y, obj_jumpdust);
 		state = states.mach2;
 		jumpstop = 0;

@@ -11,6 +11,9 @@ function scr_inhalesubstate()
         case "obj_babybear":
             substate = 3
             break
+			 case "obj_cottonwitch":
+            substate = 4
+            break
     }
 }
 

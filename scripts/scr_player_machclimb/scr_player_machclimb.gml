@@ -42,6 +42,8 @@ function state_player_climbwall()
 		mach4mode = true;
 	crouchslideAnim = 1;
 	sprite_index = spr_climbwall;
+	if substate == 2 && character == "C"
+	sprite_index = spr_coneboy_juicewallclimb
 	if (verticalMovespeed <= 0)
 	{
 		movespeed = 0;

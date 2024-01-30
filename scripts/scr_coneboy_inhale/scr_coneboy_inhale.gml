@@ -1,4 +1,4 @@
-function scr_coneboy_inhale() //gml_Script_scr_coneboy_inhale
+function scr_coneboy_inhale()
 {
 		image_speed = 0.35
 	move = (key_left + key_right)
@@ -70,28 +70,38 @@ function scr_coneboy_inhale() //gml_Script_scr_coneboy_inhale
 		if (move == xscale)
 			movespeed += 0.1
 	}
-	if (substate == 3)
-	{
-		if sprite_index == spr_coneboy_chargestart
-		hsp = 0
-		else
-		hsp = (xscale * (movespeed + 3))
-		vsp = 0
-		if animation_end()
-	{
-		if sprite_index == spr_coneboy_chargestart
-		{
-		image_index = 0
-		sprite_index = spr_coneboy_charge
-		movespeed = 12
-		}
-		else
-		{
-		state = key_sprint ? states.mach3 : states.normal
-		image_index = 0
-		sprite_index = states.mach3 ? spr_coneboy_dash : spr_coneboy_idle
-	}
-	}
-	}
+    if (substate == 3)
+    {
+        if (sprite_index == spr_coneboy_chargestart)
+            hsp = lerp(hsp, 0, 0.1)
+        else
+            hsp = (xscale * movespeed)
+        vsp = 0
+        if animation_end()
+        {
+            if (sprite_index == spr_coneboy_chargestart)
+            {
+                image_index = 0
+                sprite_index = spr_coneboy_charge
+				flash = true
+				movespeed = 9
+				create_heat_afterimage(0);
+				instance_create(x, y, obj_crazyrunothereffect);
+				if (!instance_exists(obj_superdashcloud) && grounded)
+					instance_create(x, y, obj_superdashcloud, 
+					{
+						obj_player: id
+					});
+            }
+            else
+            {
+                state = (key_sprint ? states.mach3 : states.normal)
+                image_index = 0
+				flash = states.mach3
+                sprite_index = (states.mach3 ? spr_coneboy_dash : spr_coneboy_idle)
+            }
+        }
+		if sprite_index = spr_coneboy_charge
+			 movespeed = approach(movespeed, 14, 0.4)
+    }
 }
-
