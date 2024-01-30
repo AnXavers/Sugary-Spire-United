@@ -527,6 +527,12 @@ function scr_playerstate()
 		case states.cottonswim:
 			_stateFunction = state_player_cottonswim()
 			break
+			case states.cottonbash:
+			_stateFunction = state_coneboy_cottonbash()
+			break
+			case states.cottonbounce:
+			_stateFunction = state_coneboy_cottonbounce()
+			break
 		case states.ufodashOLD:
 			show_error("Smirk old code lmao", false);
 			_stateFunction = state_player_ufodash;

@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cbecc99b-93c5-4a27-b6a6-d849ae167ce3","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Coneboy",
     "path": "folders/Sprites/Player/Coneboy.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 66,
-    "yorigin": 79,
+    "yorigin": 103,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

@@ -1,5 +1,6 @@
-function scr_coneboy_inhale() //gml_Script_scr_coneboy_inhale
+function scr_coneboy_inhale()
 {
+		image_speed = 0.35
 	move = (key_left + key_right)
 	if (substate == 0)
 	{
@@ -8,14 +9,19 @@ function scr_coneboy_inhale() //gml_Script_scr_coneboy_inhale
 		if (!inhaling)
 			inhaling = 1
 		sprite_index = spr_coneboy_inhaling
-		if ((!key_sprint) || inhalingenemy == 1)
+		if ((!key_attack) || inhalingenemy == 1)
 		{
 			state = 1
 			inhaling = 0
 		}
+		if global.player_input_device = -2
+		inhalestrength = 80
+		else
+		{
 		inhalestrength = (gamepad_button_value(0, gp_shoulderlb) * 20)
-		camera_shake(inhalestrength, 20)
+		camera_shake(inhalestrength / 16, 20 / 16)
 		p1Vibration((inhalestrength + 1), 20)
+		}
 	}
 	if (substate == 1)
 	{
@@ -64,5 +70,38 @@ function scr_coneboy_inhale() //gml_Script_scr_coneboy_inhale
 		if (move == xscale)
 			movespeed += 0.1
 	}
+    if (substate == 3)
+    {
+        if (sprite_index == spr_coneboy_chargestart)
+            hsp = lerp(hsp, 0, 0.1)
+        else
+            hsp = (xscale * movespeed)
+        vsp = 0
+        if animation_end()
+        {
+            if (sprite_index == spr_coneboy_chargestart)
+            {
+                image_index = 0
+                sprite_index = spr_coneboy_charge
+				flash = true
+				movespeed = 9
+				create_heat_afterimage(0);
+				instance_create(x, y, obj_crazyrunothereffect);
+				if (!instance_exists(obj_superdashcloud) && grounded)
+					instance_create(x, y, obj_superdashcloud, 
+					{
+						obj_player: id
+					});
+            }
+            else
+            {
+                state = (key_sprint ? states.mach3 : states.normal)
+                image_index = 0
+				flash = states.mach3
+                sprite_index = (states.mach3 ? spr_coneboy_dash : spr_coneboy_idle)
+            }
+        }
+		if sprite_index = spr_coneboy_charge
+			 movespeed = approach(movespeed, 14, 0.4)
+    }
 }
-
