@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "mu_escapesecret.ogg",
+  "soundFile": "mu_escapesecret.wav",
   "type": 1,
   "volume": 1.0,
 }
