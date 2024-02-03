@@ -1,1 +1,1 @@
-sprite_index = spr_treasure_dance;
+sprite_index = spr_treasure_bee;

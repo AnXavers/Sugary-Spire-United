@@ -38,7 +38,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"25e2dd70-caf7-4956-9854-97f2441882a0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 4,
   "parent": {
     "name": "devroom",
     "path": "folders/Sprites/devroom.yy",
@@ -90,7 +90,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 92,
-    "yorigin": 100,
+    "yorigin": 83,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
