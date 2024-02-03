@@ -685,6 +685,7 @@ function characterspr()
 			spr_couchstart = spr_coneboy_guard;
 			spr_mach1 = spr_coneboy_dash;
 			spr_mach2 = spr_coneboy_dash;
+			spr_breakdance = spr_coneboy_boogy4
 			spr_mach3player = spr_coneboy_dash;
 			spr_crazyrun = spr_coneboy_crazyrun;
 			spr_machslide = spr_coneboy_slidekick;

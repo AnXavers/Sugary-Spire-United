@@ -223,6 +223,7 @@ function state_player_jump()
 	}
 	do_taunt();
 	scr_noise_abilities();
+	scr_coneboy_copyabilities()
 	if (key_down2)
 	{
 		image_index = 0;
@@ -274,15 +275,24 @@ function state_player_jump()
 		movespeed = 0;
 		vsp = 0;
 	}
-	if (key_jump && (character == "N" || character == "PT") && !grounded && doublejumped == 0 && !scr_solid(x + xscale, y, true))
+	if (key_jump && !grounded && doublejumped == 0 && !scr_solid(x + xscale, y, true))
 	{
+			if  (character == "N" || character == "PT")
+		{
 		doublejumped = 1;
 		vsp = -10;
 		sprite_index = spr_djump;
-		if character == "PT"
-		jumpAnim = true
+		jumpAnim = (character == "PT" ? true : false)
+		}
 	}
-		if (key_jump && (obj_player.character == "N"))
+			if character == "C" && key_jump
+		{
+			vsp = -10;
+			sprite_index = spr_coneboy_inhaledjump;
+			image_index = 0
+			jumpAnim = true
+		}
+	if (key_jump && (obj_player.character == "N"))
 		{
 			if place_meeting((x + xscale), y, obj_solid)
 			{

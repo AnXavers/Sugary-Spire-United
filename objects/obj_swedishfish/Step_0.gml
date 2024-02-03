@@ -1,3 +1,4 @@
+scr_inhaleableenemy()
 if (state == enemystates.stun && stunned > 100 && birdcreated == 0)
 {
 	birdcreated = 1;

@@ -209,18 +209,15 @@ function state_player_normal()
 		state = states.jump;
 		image_index = 0;
 	}
-	if (character == "C" && key_sprint && inhalingenemy == 0 && substate == 0)
+	if (character == "C" && key_attack2  && inhalingenemy == 0 && substate == 0 && grounded)
 		state = states.coneboy_inhale115;
 	if (character == "C" && inhalingenemy == 1 && key_down && grounded)
 	{
-		if (storedinhalebaddie == "obj_knight")
-			substate = substates.unknown_1;
-		else if (storedinhalebaddie == "obj_googlyjuice")
-			substate = substates.unknown_2;
+	    scr_inhalesubstate()
 		scr_sound(sfx_coneboyswallow);
 		inhalingenemy = false;
 	}
-	if (character == "C" && inhalingenemy == 1 && key_attack && grounded)
+	if (character == "C" && inhalingenemy == 1 && key_attack2 && grounded)
 	{
 		sprite_index = spr_coneboy_spit;
 		instance_create(x, y, obj_coneboyprojectile);
@@ -254,6 +251,12 @@ function state_player_normal()
 		scr_sound(sfx_coneboykick);
 		audio_sound_pitch(sfx_coneboykick, 1.2);
 		headless = 1;
+	}
+	if (character == "C" && substate != 0 && key_special2 && headless == 0 && !instance_exists(obj_coneboyhead))
+	{
+		substate = 0
+		image_index = 0;
+		scr_sound(sfx_coneboyswallow)
 	}
 	if (sprite_index == spr_coneboy_spit && animation_end())
 		sprite_index = spr_idle;
@@ -432,44 +435,7 @@ function state_player_normal()
 		}
 			
 	}
-	if (character == "C")
-	{
-		if (substate == 1)
-		{
-			if (sprite_index == spr_idle || sprite_index == spr_idle2 || sprite_index == spr_idle3)
-				sprite_index = spr_coneboy_sword_idle;
-			if (key_up && key_attack2)
-			{
-				vsp = -15;
-				state = states.uppercut;
-				suplexmove = true;
-				sprite_index = spr_coneboy_sworduppercut;
-				instance_create(x, y, obj_coneboyswordhitbox);
-			}
-			if (key_sprint)
-			{
-				instance_create(x, y, obj_coneboyswordhitbox);
-				sprite_index = spr_coneboy_sworddash;
-				state = states.coneboy_inhale115;
-			}
-		}
-		if (substate == 2)
-		{
-			if (key_shoot2 && instance_number(obj_coneboyjuice) < 3)
-			{
-				image_index = 0;
-				sprite_index = spr_coneboy_juicespit;
-				state = states.coneboy_kick;
-				instance_create(x, y, obj_coneboyjuice);
-			}
-			if (key_sprint)
-			{
-				sprite_index = spr_coneboy_juicewave;
-				state = states.coneboy_inhale115;
-				movespeed = 6;
-			}
-		}
-	}
+	scr_coneboy_copyabilities()
 	if state != states.normal
 		idletimer = 0
 }

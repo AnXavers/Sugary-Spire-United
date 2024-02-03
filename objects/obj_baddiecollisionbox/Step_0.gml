@@ -191,6 +191,59 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 				other.baddieID.hsp = (xscale * 25)
 				other.baddieID.vsp = -6
 			}
+			if (instance_exists(other.baddieID) && state == states.handstandjump && character == "C" && substate = 1)
+			{
+				image_index = 0
+				state = states.tackle
+				hsp = 4 * -xscale
+				vsp = -6
+				if instance_exists(other.baddieID)
+				{
+					with (other.baddieID)
+					{
+						instance_create(x, y, obj_slapstar)
+						instance_create(x, y, obj_slapstar)
+						instance_create(x, y, obj_slapstar)
+						instance_create(x, y, obj_baddiegibs)
+						instance_create(x, y, obj_baddiegibs)
+						instance_create(x, y, obj_baddiegibs)
+						alarm[2] = 1;
+						instance_create(x, y, obj_bangeffect);
+						scr_sound(sound_slaphit);
+						hp = 0;
+						thrown = true;
+						hsp = obj_player.xscale * 20;
+						vsp = -6;
+						state = 6;
+						stunned = 1000;
+						throw_hit = 1
+						with (obj_camera)
+						{
+							shake_mag = 3
+							shake_mag_acc = (3 / room_speed)
+						}
+						alarm[3] = 3
+						global.hit += 1
+						global.combotime = 60
+						alarm[2] = 1;
+					}
+				}
+				if !key_up
+				{
+					sprite_index = spr_canehit
+					if floor(image_index) >= 2
+					{
+					other.baddieID.hsp = (xscale * 25)
+					other.baddieID.vsp = -6
+					}
+				}
+				else
+				{
+				sprite_index = spr_coneboy_sword_attackup
+				other.baddieID.hsp = 2
+				other.baddieID.vsp = -10
+				}
+			}
 			if (instance_exists(other.baddieID) && (state == states.cotton && sprite_index == spr_cotton_attack))
 			{
 				with (other.baddieID)
@@ -203,6 +256,25 @@ if (instance_exists(baddieID) && !baddieID.invincible && place_meeting(x, y, obj
 					thrown = true;
 					hsp = obj_player.xscale * 20;
 					vsp = -6;
+					state = 6;
+					stunned = 500;
+				}
+			}
+			if (instance_exists(other.baddieID) && (state == states.cottonbounce))
+			{
+			cottonsize += 1
+				with (other.baddieID)
+				{
+					global.hit++;
+					global.combotime = 60;
+					instance_create(x, y, obj_slapstar);
+					instance_create(x, y, obj_baddiegibs);
+					instance_create(x, y, obj_bangeffect);
+					scr_sound(sound_slaphit);
+					hp = 0;
+					thrown = true
+					hsp = 0
+					vsp = 0
 					state = 6;
 					stunned = 500;
 				}

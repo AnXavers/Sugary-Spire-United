@@ -1,1 +1,1 @@
-targetRoom = dance_6;
+targetRoom = dance_silver;

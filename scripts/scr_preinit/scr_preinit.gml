@@ -161,6 +161,8 @@ enum states {
 	tv_expression, // 159
 	pogo, // 160
 	dynamite, // 161
+	cottonbash, //162
+	cottonbounce, //163
 	disguise_normal, // 160
 	disguise_attack, // 161
 	cottonswim // 161
