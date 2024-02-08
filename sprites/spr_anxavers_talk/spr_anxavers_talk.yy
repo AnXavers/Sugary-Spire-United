@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "devroom",
-    "path": "folders/Sprites/devroom.yy",
+    "name": "npc sprites",
+    "path": "folders/Sprites/devroom/npc sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

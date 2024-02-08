@@ -548,8 +548,8 @@ function characterspr()
 			spr_mach3jump = spr_pizzano_mach3jump;
 			spr_mach3hit = spr_pizzano_mach3slam;
 			spr_mach3hitwall = spr_pizzano_mach3hitwall;
-			spr_mach3roll = spr_pizzano_crouchslide
-			spr_mach3rollstart = spr_pizzano_crouchslide
+			spr_mach3roll = spr_pizzano_machroll
+			spr_mach3rollstart = spr_pizzano_machroll
 			spr_crazyrun = spr_pizzano_crazyrun;
 			spr_machslidestart = spr_pizzano_crouchslide;
 			spr_machslide = spr_pizzano_crouchslide;
