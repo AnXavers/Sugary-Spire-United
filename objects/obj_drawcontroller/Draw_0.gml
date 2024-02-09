@@ -58,6 +58,7 @@ with (obj_player)
 {
 	if (visible && bbox_in_camera_ext(c, 32))
 	{
+		sprite_index = spriteremap()
 		var my_color_array = my_palettes[paletteselect][2];
 		var using_pattern = sprite_exists(my_color_array[2]);
 		if (!using_pattern)
@@ -113,6 +114,7 @@ with (obj_player)
 			draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 			draw_set_halign(0);
 		}
+		sprite_index = spritedemap()
 	}
 }
 with (obj_baddieDead)

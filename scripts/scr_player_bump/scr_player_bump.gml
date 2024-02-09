@@ -17,8 +17,6 @@ function state_player_bump()
 	{
 		state = states.jump;
 		sprite_index = spr_pizzelle_jump;
-		if (shotgunAnim == 1)
-			sprite_index = spr_shotgun_jump;
 	}
 	if (audio_is_playing(sound_tumble))
 		audio_stop_sound(sound_tumble);

@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 149.976,
+  "duration": 103.500046,
   "parent": {
     "name": "Custom",
     "path": "folders/Sounds/Music/Levels/Cottontown/Custom.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "mu_gateau.mp3",
+  "soundFile": "mu_gateau.ogg",
   "type": 0,
   "volume": 1.0,
 }
