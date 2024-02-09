@@ -60,7 +60,7 @@ function cutscene_lapPortal_middle()
 		state = states.actor;
 		hsp = 0;
 		vsp = 0;
-		sprite_index = spr_bodyslamfall;
+		sprite_index = spr_pizzelle_groundpound;
 		image_speed = 0.35;
 		if (!instance_exists(obj_fadeout))
 		{
@@ -92,7 +92,7 @@ function cutscene_lapPortal_end()
 		hsp = 0;
 		vsp = 0;
 		movespeed = 0;
-		sprite_index = spr_bodyslamfall;
+		sprite_index = spr_pizzelle_groundpound;
 		state = states.freefall;
 		_finished = true;
 	}

@@ -119,7 +119,7 @@ function state_player_slap()
 			state = states.normal;
 		else if (!grounded)
 		{
-			sprite_index = spr_fall;
+			sprite_index = spr_pizzelle_fall;
 			state = states.jump;
 		}
 	}

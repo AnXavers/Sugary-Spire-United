@@ -7,7 +7,7 @@ function cutscene_rosetteMines_prestart()
 		image_speed = 0.35;
 		if (grounded)
 		{
-			if (sprite_index == spr_fall)
+			if (sprite_index == spr_pizzelle_fall)
 			{
 				hsp = 0;
 				image_index = 0;
@@ -22,7 +22,7 @@ function cutscene_rosetteMines_prestart()
 		else
 		{
 			hsp = approach(hsp, 0, 5);
-			sprite_index = spr_fall;
+			sprite_index = spr_pizzelle_fall;
 		}
 	}
 	if (finished == 1)
@@ -50,7 +50,7 @@ function cutscene_rosetteMines_start()
 				image_speed = 0.45;
 			else
 				image_speed = 0.6;
-			sprite_index = spr_move;
+			sprite_index = spr_pizzelle_walk;
 		}
 		if (point_distance(x, 0, target_x, 0) <= 7 && grounded)
 		{
@@ -77,7 +77,7 @@ function cutscene_rosetteMines_middle()
 	with (obj_player)
 	{
 		image_speed = 0.35;
-		sprite_index = spr_idle;
+		sprite_index = spr_pizzelle_idle;
 	}
 	with (obj_rosette)
 	{

@@ -54,5 +54,5 @@ function state_player_pal()
 			scr_sound(sound_step);
 		}
 	}
-	sprite_index = spr_idle;
+	sprite_index = spr_pizzelle_idle;
 }

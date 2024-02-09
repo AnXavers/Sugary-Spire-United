@@ -5,7 +5,7 @@ function state_player_changing()
 	vsp = 0;
 	movespeed = 0;
 	pogomovespeed = 0;
-	sprite_index = spr_idle;
+	sprite_index = spr_pizzelle_idle;
 	image_speed = 0.35;
 	visible = false;
 	x = approach(x, obj_costumerdoor.x, 2);

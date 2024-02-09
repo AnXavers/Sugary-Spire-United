@@ -48,7 +48,7 @@ function state_player_jump()
 	if (grounded && input_buffer_jump < 8 && !key_down && !key_sprint && vsp > 0 && !(sprite_index == spr_facestomp || sprite_index == spr_freefall))
 	{
 		scr_sound(sound_jump);
-		sprite_index = spr_jump;
+		sprite_index = spr_pizzelle_jump;
 		if (shotgunAnim == 1)
 			sprite_index = spr_shotgun_jump;
 		instance_create_depth(x, y, -6, obj_highjumpcloud2);
@@ -165,9 +165,9 @@ function state_player_jump()
 			if (sprite_index == spr_airdash1)
 				sprite_index = spr_airdash2;
 			if (sprite_index == spr_suplexdashCancel)
-				sprite_index = spr_fall;
-			if (sprite_index == spr_jump)
-				sprite_index = spr_fall;
+				sprite_index = spr_pizzelle_fall;
+			if (sprite_index == spr_pizzelle_jump)
+				sprite_index = spr_pizzelle_fall;
 		}
 	}
 	if (stompAnim == 1)
@@ -227,7 +227,7 @@ function state_player_jump()
 	if (key_down2)
 	{
 		image_index = 0;
-		sprite_index = spr_bodyslamstart;
+		sprite_index = spr_pizzelle_groundpoundprep;
 		vsp = -6;
 		if (global.treat)
 		{

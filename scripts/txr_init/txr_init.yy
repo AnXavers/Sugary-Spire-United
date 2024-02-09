@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Tiny Expression Runtime",
-    "path": "folders/Scripts/Tiny Expression Runtime.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }

@@ -253,7 +253,7 @@ function gml_parser(l_src)constructor{
 						break;
 					}
 				}
-				if(!l_isu&&l_found!=2)return self.h_error("Expected 2 hex characters in \\x");
+				if(!l_isu&&l_found!=2)return self.h_error("Expected 2 hex charname in \\x");
 				_gml_parser_gml_parser_string_buf_impl__add_code_point(l_sb,l_val);
 				break;
 			default:

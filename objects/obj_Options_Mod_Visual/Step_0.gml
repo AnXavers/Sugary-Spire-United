@@ -48,10 +48,10 @@ if canmove
 			}
 			break;
 		case 1:
-			subtitle = "TOGGLES THE NEW SCORE FONT SEEN IN SS DEV STREAMS";
+			subtitle = "TOGGLES THE SCORE FONT";
 			CursorY = 100;
 			optionsaved_newscorefont += (key_right2 + key_left2);
-			optionsaved_newscorefont = wrap(optionsaved_newscorefont, 0, 1);
+			optionsaved_newscorefont = wrap(optionsaved_newscorefont, 0, 2);
 			if (key_jump)
 			{
 				scr_sound(sound_enemythrow)

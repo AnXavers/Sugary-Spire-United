@@ -4,7 +4,7 @@ function scr_coneboy_copyabilities()
 	{
 		if (substate == 1)
 		{
-			if (sprite_index == spr_idle || sprite_index == spr_idle2 || sprite_index == spr_idle3)
+			if (sprite_index == spr_pizzelle_idle || sprite_index == spr_idle2 || sprite_index == spr_idle3)
 				sprite_index = spr_coneboy_sword_idle;
 			if (key_up && key_attack2)
 			{

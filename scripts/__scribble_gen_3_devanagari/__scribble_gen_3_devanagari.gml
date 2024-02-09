@@ -312,7 +312,7 @@ function __scribble_gen_3_devanagari()
 	var _lookupMap = global.__scribble_krutidev_lookup_map;
 	
 	//Create a 64-bit minibuffer
-	//Fortunately all the characters we're looking for fit into 16 bits and we only need to look for 4 at a time
+	//Fortunately all the charname we're looking for fit into 16 bits and we only need to look for 4 at a time
 	var _oneChar   = 0x0000;
 	var _twoChar   =			  ((_glyph_grid[# 0, __SCRIBBLE_GEN_GLYPH.__UNICODE] & 0xFFFF) << 16);
 	var _threeChar = _twoChar   | ((_glyph_grid[# 1, __SCRIBBLE_GEN_GLYPH.__UNICODE] & 0xFFFF) << 32);
@@ -373,7 +373,7 @@ function __scribble_gen_3_devanagari()
 				
 				if (_foundLength > _replacementLength)
 				{
-					//If we're replacing with fewer characters than we found then we need to delete some characters
+					//If we're replacing with fewer charname than we found then we need to delete some charname
 					var _copyStart = _i + _copyCount + _foundLength - _replacementLength;
 					var _copyLength = _glyph_count - _copyStart;
 					
@@ -382,7 +382,7 @@ function __scribble_gen_3_devanagari()
 				}
 				else if (_foundLength < _replacementLength)
 				{
-					//Otherwise, we're adding characters to the array so we have to insert some characters into the output grid
+					//Otherwise, we're adding charname to the array so we have to insert some charname into the output grid
 					
 					var _insertPos = _i + _copyCount;
 					ds_grid_set_grid_region(_temp_grid, _glyph_grid, _insertPos, 0, _glyph_count, __SCRIBBLE_GEN_GLYPH.__SIZE, 0, 0);
@@ -396,7 +396,7 @@ function __scribble_gen_3_devanagari()
 					}
 					else if (_replacementLength - _foundLength == 2)
 					{
-						//Adding two characters
+						//Adding two charname
 						_glyph_grid[# _insertPos, __SCRIBBLE_GEN_GLYPH.__UNICODE	  ] = __SCRIBBLE_DEVANAGARI_OFFSET + _replacementArray[_replacementLength-2];
 						_glyph_grid[# _insertPos, __SCRIBBLE_GEN_GLYPH.__CONTROL_COUNT] = _glyph_grid[# _insertPos-1, __SCRIBBLE_GEN_GLYPH.__CONTROL_COUNT];
 						
@@ -424,7 +424,7 @@ function __scribble_gen_3_devanagari()
 	
 	
 	
-	#region Copy data across for all the Krutidev characters we've just inserted
+	#region Copy data across for all the Krutidev charname we've just inserted
 	
 	var _control_index = 0;
 	

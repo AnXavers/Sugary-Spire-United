@@ -41,7 +41,7 @@ function state_player_fireass()
 			state = states.normal;
 			hsp = 0;
 			image_index = 0;
-			sprite_index = obj_player.spr_idle
+			sprite_index = spr_pizzelle_idle
 			alarm[5] = 2;
 			alarm[7] = 60;
 			hurted = 1;

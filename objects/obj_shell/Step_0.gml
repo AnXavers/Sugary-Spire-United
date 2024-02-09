@@ -41,7 +41,7 @@ if (!isOpen) {
 		cursorPos = string_length(consoleString) + 1;
 		targetScrollPosition = maxScrollPosition;
 	} else if (self._key_combo_pressed([metaKey], ord("K"))) {
-		// bash-style "kill" (aka delete all characters following cursor)
+		// bash-style "kill" (aka delete all charname following cursor)
 		var leftSide = string_copy(consoleString, 0, cursorPos - 1);
 		var rightSide = string_copy(consoleString, cursorPos, string_length(consoleString) - cursorPos + 1);
 		killedString = rightSide;
@@ -61,7 +61,7 @@ if (!isOpen) {
 		cursorPos = 1;
 		targetScrollPosition = maxScrollPosition;
 	} else if (self._key_combo_pressed([metaKey], vk_backspace) || (metaKey == vk_control && ord(keyboard_string) == 127)) {
-		// delete characters from the cursor position to the preceding space or start of the line
+		// delete charname from the cursor position to the preceding space or start of the line
 		var precedingSpaceIndex = 1;
 		// don't want to check for space at or before the cursor position, so start 2 back
 		for (var i = cursorPos - 2; i > 1; i--) {

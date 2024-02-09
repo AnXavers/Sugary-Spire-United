@@ -9,6 +9,9 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
+  "ConfigValues": {
+    "Developer": {"textureGroupId":"{\"name\":\"Player\",\"path\":\"texturegroups/Player\"}",},
+  },
   "DynamicTexturePage": false,
   "edgeFiltering": false,
   "For3D": false,
@@ -56,9 +59,9 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d2fae4a2-65d6-4cbe-9396-679e6d7261d2","path":"sprites/spr_noise_bodyslamland/spr_noise_bodyslamland.yy",},},},"Disabled":false,"id":"05e3643f-7cb9-43a0-aeb4-356d206f2228","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cec71608-968d-4d83-9634-326b2157b9e9","path":"sprites/spr_noise_bodyslamland/spr_noise_bodyslamland.yy",},},},"Disabled":false,"id":"ebb4e89f-7a93-4ddd-ab49-cce7968bdc5c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7e6dc70e-9dd5-48eb-8b21-1842670ba0b2","path":"sprites/spr_noise_bodyslamland/spr_noise_bodyslamland.yy",},},},"Disabled":false,"id":"2b98d8a7-0715-4ce8-82f2-c5b1d609189c","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d2fae4a2-65d6-4cbe-9396-679e6d7261d2","path":"sprites/spr_noise_bodyslamland/spr_noise_bodyslamland.yy",},},},"Disabled":false,"id":"f810a9b3-9e2f-4079-904a-6f6bde948e1b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cec71608-968d-4d83-9634-326b2157b9e9","path":"sprites/spr_noise_bodyslamland/spr_noise_bodyslamland.yy",},},},"Disabled":false,"id":"7ce74c28-a9fc-4c77-8032-86f3ae609795","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7e6dc70e-9dd5-48eb-8b21-1842670ba0b2","path":"sprites/spr_noise_bodyslamland/spr_noise_bodyslamland.yy",},},},"Disabled":false,"id":"7519c207-99e6-4442-ac1a-159ffe35b23c","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

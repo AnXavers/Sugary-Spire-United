@@ -32,7 +32,7 @@ function state_player_honey()
 			state = states.mach2;
 		if (state == states.chainsaw)
 		{
-			sprite_index = spr_jump;
+			sprite_index = spr_pizzelle_jump;
 			movespeed = 0;
 			state = states.jump;
 		}

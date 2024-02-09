@@ -60,7 +60,7 @@ function scr_hurtplayer(argument0 = obj_player)
 					if (xscale == other.image_xscale)
 						sprite_index = spr_hurtjump;
 					else
-						sprite_index = spr_hurt;
+						sprite_index = spr_pizzelle_hurt;
 					if (!is_undefined(argument1))
 						movespeed = argument1;
 					else

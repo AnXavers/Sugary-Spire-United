@@ -2,7 +2,7 @@ function state_player_hurt()
 {
 	if (sprite_index == spr_hurtjump)
 		hsp = xscale * movespeed;
-	else if (sprite_index == spr_hurt)
+	else if (sprite_index == spr_pizzelle_hurt)
 		hsp = -xscale * movespeed;
 	if (movespeed > 0)
 		movespeed -= 0.1;

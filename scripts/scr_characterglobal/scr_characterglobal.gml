@@ -1,22 +1,6 @@
 function characterspr()
 {
 	// sprites
-	spr_idle = spr_pizzelle_idle;
-	spr_move = spr_pizzelle_walk;
-	spr_angryidle = spr_pizzelle_3hpidle;
-	spr_angrywalk = spr_pizzelle_3hpwalk;
-	spr_crawl = spr_pizzelle_crawl;
-	spr_hurt = spr_pizzelle_hurt;
-	spr_jump = spr_pizzelle_jump;
-	spr_jump2 = spr_pizzelle_jump;
-	spr_fall = spr_pizzelle_fall;
-	spr_fall2 = spr_pizzelle_fall;
-	spr_bodyslamstart = spr_pizzelle_groundpoundprep;
-	spr_bodyslamfall = spr_pizzelle_groundpound;
-	spr_bodyslamland = spr_pizzelle_groundpoundland;
-	spr_bombdropstart = spr_pizzelle_bodyslamstart;
-	spr_bombdropfall = spr_pizzelle_bodyslamfall;
-	spr_bombdropland = spr_pizzelle_bodyslamland;
 	spr_crouch = spr_pizzelle_crouch;
 	spr_crouchjump = spr_pizzelle_crouchjump;
 	spr_crouchfall = spr_pizzelle_crouchfall;
@@ -73,7 +57,6 @@ function characterspr()
 	spr_crouch = spr_pizzelle_crouch;
 	spr_bump = spr_pizzelle_bump;
 	spr_victory = spr_pizzelle_entergate;
-	spr_hurt = spr_pizzelle_hurt;
 	spr_climbwall = spr_pizzelle_climbwall;
 	spr_climbdownwall = spr_pizzelle_climbdownwall;
 	spr_grab = spr_pizzelle_grab;
@@ -413,76 +396,6 @@ function characterspr()
 	spr_cottoncreator = spr_cottonmaker
 	spr_cotton_platform = spr_cottonplatform_tiled
 	spr_electrocuted = spr_pizzelle_electrocuted
-	if global.newplayeranim == 1
-	{
-		spr_mach1 = spr_pizzelle_mach1_new;
-		spr_mach2 = spr_pizzelle_mach2_new;
-		spr_mach3player = spr_pizzelle_mach3_new;
-		spr_crazyrun = spr_pizzelle_crazyrun_new;
-		spr_angryidle = spr_pizzelle_3hpidle_new
-		spr_angrywalk = spr_pizzelle_3hpwalk_new;
-		spr_splat = spr_pizzelle_splat_new;
-		spr_fireass = spr_pizzelle_fireass_new
-		spr_fireassgrab = spr_pizzelle_fireassgrab_new
-		spr_fireassstart = spr_pizzelle_fireassstart_new
-		spr_fireassend = spr_pizzelle_fireassend
-		spr_mach3hit = spr_pizzelle_mach3hit_new
-		spr_machslideboost3 = spr_pizzelle_mach3boost_new
-		spr_climbwall = spr_pizzelle_climbwall_new
-		spr_longjump = spr_pizzelle_longjump_new
-		spr_longjumpend = spr_pizzelle_longjumpfall_new
-		spr_rollgetup = spr_pizzelle_rollgetup_new
-		spr_mach3rollstart = spr_pizzelle_mach3rollstart_new
-		spr_mach3roll = spr_pizzelle_mach3roll_new
-		spr_suplexbump = spr_pizzelle_splat_new
-		spr_mach3jump = spr_pizzelle_mach3jump_new;
-		spr_winding = spr_pizzelle_winding_new
-		spr_mach3ceiling = spr_pizzelle_ceilingmach_new
-		spr_machslideboostFallStart = spr_pizzelle_machslideboostFall_new;
-		spr_machslideboostFall = spr_pizzelle_machslideboostFall_new;
-	}
-	else if global.newplayeranim == 2
-	{
-		spr_mach1 = spr_pizzelle_mach1_alt;
-		spr_mach2 = spr_pizzelle_mach2_alt;
-		spr_mach3player = spr_pizzelle_mach3_alt;
-		spr_crazyrun = spr_pizzelle_crazyrun_alt;
-		spr_mach3ceiling = spr_pizzelle_climbceilingmach_alt
-	}
-	else if global.newplayeranim == 3
-	{
-		spr_jump = spr_pizzelle_jump_classic;
-		spr_land = spr_pizzelle_land_classic;
-		spr_land2 = spr_pizzelle_land2_classic;
-		spr_Timesup = spr_pizzelle_timeup_classic;
-		spr_mach2 = spr_pizzelle_mach2_classic;
-		spr_secondjump1 = spr_pizzelle_secondjump1_classic;
-		spr_secondjump2 = spr_pizzelle_secondjump2_classic;
-		spr_mach2jump = spr_pizzelle_mach2flip_classic;
-		spr_machpunch1 = spr_pizzelle_machpunch1_classic;
-		spr_machpunch2 = spr_pizzelle_machpunch2_classic;
-		spr_mach3jump = spr_pizzelle_mach3jump_classic;
-		spr_blockbreak1 = spr_pizzelle_suplexmash1_classic;
-		spr_blockbreak2 = spr_pizzelle_suplexmash2_classic;
-		spr_blockbreak3 = spr_pizzelle_suplexmash3_classic;
-		spr_blockbreak4 = spr_pizzelle_suplexmash4_classic;
-		spr_blockbreak5 = spr_pizzelle_suplexmash1_classic
-		spr_blockbreak6 = spr_pizzelle_suplexmash2_classic
-		spr_blockbreak7 = spr_pizzelle_suplexmash3_classic
-		spr_mach3player = spr_pizzelle_mach3_classic;
-		spr_angryidle = spr_pizzelle_3hpidle_classic;
-		spr_angrywalk = spr_pizzelle_3hpwalk_classic;
-		spr_suplexdash = spr_pizzelle_suplexgrab_classic;
-		spr_piledriverstart = spr_pizzelle_piledriverstart_classic;
-		spr_piledriver = spr_pizzelle_piledriver_classic;
-		spr_piledriverland = spr_pizzelle_piledriverland_classic;
-		spr_haulingstart = spr_pizzelle_haulingstart_classic;
-		spr_uppercutbegin = spr_pizzelle_uppercutbegin_classic;
-		spr_uppercutend = spr_pizzelle_uppercutend_classic;
-		spr_fireass = spr_pizzelle_fireass_classic;
-		spr_cookiemount_skid = spr_pizzelle_cookiemount_skid_old
-		spr_skateidle = spr_pizzelle_skateidle_old
-	}
 	if global.destroyables
 	{
 		spr_small_destroyable = spr_smallbreak_new
@@ -511,22 +424,6 @@ function characterspr()
 	switch (character)
 	{
 		case "N":
-			spr_idle = spr_pizzano_idle;
-			spr_move = spr_pizzano_walk;
-			spr_angryidle = spr_pizzano_3hpidle;
-			spr_angrywalk = spr_pizzano_3hpwalk;
-			spr_crawl = spr_pizzano_crawl;
-			spr_hurt = spr_pizzano_hurt;
-			spr_jump = spr_pizzano_jump;
-			spr_jump2 = spr_pizzano_jump;
-			spr_fall = spr_pizzano_fall;
-			spr_fall2 = spr_pizzano_fall;
-			spr_bodyslamstart = spr_pizzano_bodyslamstart;
-			spr_bodyslamfall = spr_pizzano_bodyslamfall;
-			spr_bodyslamland = spr_pizzano_bodyslamland;
-			spr_bombdropstart = spr_pizzano_bodyslamstart;
-			spr_bombdropfall = spr_pizzano_bodyslamfall;
-			spr_bombdropland = spr_pizzano_bodyslamland;
 			spr_crouch = spr_pizzano_crouch;
 			spr_crouchjump = spr_pizzano_crouchjump;
 			spr_crouchfall = spr_pizzano_crouchfall;
@@ -561,7 +458,6 @@ function characterspr()
 			spr_crouchslide = spr_pizzano_crouchslide;
 			spr_crouch = spr_pizzano_crouch;
 			spr_victory = spr_pizzano_entergate;
-			spr_hurt = spr_pizzano_hurt;
 			spr_Timesup = spr_pizzano_timeup;
 			spr_hurtjump = spr_pizzano_hurt;
 			spr_entergate = spr_pizzano_entergate;
@@ -621,20 +517,6 @@ function characterspr()
 			spr_cottoncreator = spr_cottonmakerstormy
 			spr_cotton_platform = spr_cottonplatform_stormy
 			img_featuringme = 1
-			if global.newplayeranim == 2
-				spr_jump = spr_pizzano_jump_alt
-			else if global.newplayeranim == 3
-			{
-				spr_mach1 = spr_pizzano_mach1_old
-				spr_mach2 = spr_pizzano_mach2_old
-				spr_mach3player = spr_pizzano_mach3_old
-				spr_mach3jump = spr_pizzano_mach3jump_old;
-				spr_mach3rollstart = spr_pizzano_crouchslide_old	
-				spr_mach3roll = spr_pizzano_crouchslide_old
-				spr_player_rankA = spr_pizzano_rankA_old;
-				spr_player_rankB = spr_pizzano_rankB_old;
-				spr_player_rankC = spr_pizzano_rankC_old;
-			}
 			// audio
 			mu_escapesong = mu_pizzano_escape
 			mu_lap2song = mu_pizzano_lap
@@ -644,14 +526,6 @@ function characterspr()
 			taunt_upperrange = 8
 			break;
 		case "G":
-			spr_idle = spr_gumbob_idle;
-			spr_move = spr_gumbob_walk;
-			spr_hurt = spr_gumbob_hurt;
-			spr_jump = spr_gumbob_jump;
-			spr_jump2 = spr_gumbob_jump;
-			spr_fall = spr_gumbob_fall;
-			spr_fall2 = spr_gumbob_fall;
-			spr_hurt = spr_gumbob_hurt;
 			spr_hurtjump = spr_gumbob_hurt;
 			spr_idle1 = spr_gumbob_idle;
 			spr_idle2 = spr_gumbob_idle;
@@ -675,12 +549,6 @@ function characterspr()
 			taunt_upperrange = 1
 			break;
 		case "C":
-			spr_idle = spr_coneboy_idle;
-			spr_move = spr_coneboy_walk;
-			spr_jump = spr_coneboy_jump;
-			spr_jump2 = spr_coneboy_jump;
-			spr_fall = spr_coneboy_fall;
-			spr_hurt = spr_coneboy_hurt;
 			spr_crouch = spr_coneboy_guard;
 			spr_couchstart = spr_coneboy_guard;
 			spr_mach1 = spr_coneboy_dash;
@@ -692,44 +560,10 @@ function characterspr()
 			spr_taunt = spr_coneboy_taunt;
 			spr_spitair = spr_coneboy_spitair;
 			img_featuringme = 3;
-			if (inhalingenemy == 1)
-			{
-				spr_idle = spr_coneboy_inhaledidle;
-				spr_move = spr_coneboy_inhaledwalk;
-				spr_jump = spr_coneboy_inhaledjump;
-				spr_jump2 = spr_gumbob_jump;
-				spr_fall = spr_coneboy_inhaledfall;
-				spr_fall2 = spr_gumbob_fall;
-			}
-			else if (headless == 1)
-			{
-				spr_idle = spr_coneboy_idleheadless;
-				spr_move = spr_coneboy_walkheadless;
-				spr_jump = spr_coneboy_jumpheadless;
-				spr_jump2 = spr_gumbob_jump;
-				spr_fall = spr_coneboy_fallheadless;
-				spr_fall2 = spr_gumbob_fall;
-			}
 			sfx_taunt = "sound_tauntextra"
 			taunt_upperrange = 2
 			break;
 		case "S":
-			spr_idle = spr_peppino_idle;
-			spr_move = spr_peppino_move;
-			spr_angryidle = spr_peppino_3hpidle;
-			spr_angrywalk = spr_peppino_3hpwalk;
-			spr_crawl = spr_peppino_crawl;
-			spr_hurt = spr_peppino_hurt;
-			spr_jump = spr_peppino_jump;
-			spr_jump2 = spr_peppino_jump;
-			spr_fall = spr_peppino_fall;
-			spr_fall2 = spr_peppino_fall2;
-			spr_bodyslamstart = spr_peppino_bodyslamstart;
-			spr_bodyslamfall = spr_peppino_bodyslamfall;
-			spr_bodyslamland = spr_peppino_bodyslamland;
-			spr_bombdropstart = spr_peppino_poundcancel1;
-			spr_bombdropfall = spr_peppino_poundcancel1;
-			spr_bombdropland = spr_peppino_poundcancel2;
 			spr_crouch = spr_peppino_crouch;
 			spr_crouchjump = spr_peppino_crouchjump;
 			spr_crouchfall = spr_peppino_crouchfall;
@@ -781,7 +615,6 @@ function characterspr()
 			spr_crouch = spr_peppino_crouch;
 			spr_bump = spr_peppino_bump;
 			spr_victory = spr_peppino_entergate;
-			spr_hurt = spr_peppino_hurt;
 			spr_climbwall = spr_peppino_climbwall;
 			spr_grab = spr_peppino_grab;
 			spr_mach2jump = spr_peppino_mach2jump;
@@ -1005,22 +838,6 @@ function characterspr()
 			font_collect = global.collectpepfont
 			break;
 		case "T":
-			spr_idle = spr_noise_idle;
-			spr_move = spr_noise_move;
-			spr_angryidle = spr_noise_angryidle;
-			spr_angrywalk = spr_noise_angrymove;
-			spr_crawl = spr_noise_crawl;
-			spr_hurt = spr_noise_hurt;
-			spr_jump = spr_noise_jump;
-			spr_jump2 = spr_noise_jump;
-			spr_fall = spr_noise_fall;
-			spr_fall2 = spr_noise_fall;
-			spr_bodyslamstart = spr_noise_bodyslamstart;
-			spr_bodyslamfall = spr_noise_bodyslam;
-			spr_bodyslamland = spr_noise_bodyslamland;
-			spr_bombdropstart = spr_noise_bodyslamstart;
-			spr_bombdropfall = spr_noise_bodyslam;
-			spr_bombdropland = spr_noise_bodyslamland;
 			spr_crouch = spr_noise_crouch;
 			spr_crouchjump = spr_noise_crouchjump;
 			spr_crouchfall = spr_noise_crouchfall;
@@ -1069,7 +886,6 @@ function characterspr()
 			spr_crouch = spr_noise_crouch;
 			spr_bump = spr_noise_bump;
 			spr_victory = spr_noise_entergate;
-			spr_hurt = spr_noise_hurt;
 			spr_climbwall = spr_noise_climbwall;
 			spr_grab = spr_noise_haulingidle;
 			spr_mach2jump = spr_noise_mach2jump;
@@ -1094,7 +910,7 @@ function characterspr()
 			spr_suplexmash2 = spr_noise_finishingblow2;
 			spr_suplexmash3 = spr_noise_finishingblow3;
 			spr_suplexmash4 = spr_noise_finishingblow4;
-			  spr_blockbreak1 = spr_noise_suplexmash1;
+			spr_blockbreak1 = spr_noise_suplexmash1;
 			spr_blockbreak2 = spr_noise_suplexmash2;
 			spr_blockbreak3 = spr_noise_suplexmash3;
 			spr_blockbreak4 = spr_noise_suplexmash4;
@@ -1295,22 +1111,6 @@ function characterspr()
 			sfx_supertaunt = sound_supertaunt1
 			break;
 		case "PT":
-			spr_idle = spr_noise_idle;
-			spr_move = spr_noise_move;
-			spr_angryidle = spr_noise_angryidle;
-			spr_angrywalk = spr_noise_angrymove;
-			spr_crawl = spr_noise_crawl;
-			spr_hurt = spr_noise_hurt;
-			spr_jump = spr_noise_jump;
-			spr_jump2 = spr_noise_jump;
-			spr_fall = spr_noise_fall;
-			spr_fall2 = spr_noise_fall;
-			spr_bodyslamstart = spr_noise_bodyslamstart;
-			spr_bodyslamfall = spr_noise_bodyslam;
-			spr_bodyslamland = spr_noise_bodyslamland;
-			spr_bombdropstart = spr_noise_bodyslamstart;
-			spr_bombdropfall = spr_noise_bodyslam;
-			spr_bombdropland = spr_noise_bodyslamland;
 			spr_crouch = spr_noise_crouch;
 			spr_crouchjump = spr_noise_crouchjump;
 			spr_crouchfall = spr_noise_crouchfall;
@@ -1360,7 +1160,6 @@ function characterspr()
 			spr_crouch = spr_noise_crouch;
 			spr_bump = spr_noise_bump;
 			spr_victory = spr_noise_entergate;
-			spr_hurt = spr_noise_hurt;
 			spr_climbwall = spr_noise_climbwall;
 			spr_grab = spr_noise_haulingidle;
 			spr_mach2jump = spr_noise_mach2jump;
@@ -1586,22 +1385,6 @@ function characterspr()
 			sfx_supertaunt = sound_supertaunt1
 			break;
 		case "V":
-			spr_idle = spr_vigilante_idle;
-			spr_move = spr_vigilante_move;
-			spr_angryidle = spr_vigilante_angryidle;
-			spr_angrywalk = spr_vigilante_angrymove;
-			spr_crawl = spr_vigilante_crouchmove;
-			spr_hurt = spr_vigilante_hurt;
-			spr_jump = spr_vigilante_jump;
-			spr_jump2 = spr_vigilante_jump;
-			spr_fall = spr_vigilante_fall;
-			spr_fall2 = spr_vigilante_fall;
-			spr_bodyslamstart = spr_vigilante_bodyslamprep;
-			spr_bodyslamfall = spr_vigilante_bodyslam;
-			spr_bodyslamland = spr_vigilante_bodyslamland;
-			spr_bombdropstart = spr_vigilante_bodyslamprep;
-			spr_bombdropfall = spr_vigilante_bodyslam;
-			spr_bombdropland = spr_vigilante_bodyslamland;
 			spr_crouch = spr_vigilante_crouch;
 			spr_crouchjump = spr_vigilante_crouchjumpstart;
 			spr_crouchfall = spr_vigilante_crouchjump;
@@ -1634,7 +1417,6 @@ function characterspr()
 			spr_crouch = spr_vigilante_crouch;
 			spr_bump = spr_vigilante_bump;
 			spr_victory = spr_vigilante_gottreasure;
-			spr_hurt = spr_vigilante_hurt;
 			spr_climbwall = spr_vigilante_wallclimb;
 			spr_mach2jump = spr_vigilante_spinjump2;
 			spr_Timesup = spr_peppino_timesup
@@ -1814,17 +1596,6 @@ function characterspr()
 			sfx_supertaunt = sound_supertaunt1
 			break;
 		case "M":
-			spr_idle = spr_pepperman_idle
-			spr_move = spr_pepperman_move
-			spr_jump = spr_pepperman_jump
-			spr_bodyslamstart = spr_pepperman_groundpoundstart
-			spr_bodyslamfall = spr_pepperman_groundpound
-			spr_bodyslamland = spr_pepperman_groundpoundland
-			spr_bombdropstart = spr_pepperman_groundpoundstart
-			spr_bombdropfall = spr_pepperman_groundpound
-			spr_bombdropland = spr_pepperman_groundpoundland
-			spr_fall = spr_pepperman_fall
-			spr_hurt = spr_pepperman_hurtplayer
 			spr_entergate = spr_pepperman_lookdoor
 			spr_mach3player = spr_pepperman_shoulderloop
 			spr_machslideboost3 = spr_pepperman_shoulderturn
@@ -1836,22 +1607,6 @@ function characterspr()
 			break;
 		case "Z":
 			// sprites
-			spr_idle = spr_pizzall_idle;
-			spr_move = spr_pizzall_walk;
-			spr_angryidle = spr_pizzall_3hpidle;
-			spr_angrywalk = spr_pizzall_3hpwalk;
-			spr_crawl = spr_pizzall_machsliding;
-			spr_hurt = spr_pizzall_hurt;
-			spr_jump = spr_pizzall_jump;
-			spr_jump2 = spr_pizzall_jump;
-			spr_fall = spr_pizzall_fall;
-			spr_fall2 = spr_pizzall_fall;
-			spr_bodyslamstart = spr_pizzall_bodyslamstart;
-			spr_bodyslamfall = spr_pizzall_bodyslamfall;
-			spr_bodyslamland = spr_pizzall_bodyslamland;
-			spr_bombdropstart = spr_pizzall_bodyslamstart;
-			spr_bombdropfall = spr_pizzall_bodyslamfall;
-			spr_bombdropland = spr_pizzall_bodyslamland;
 			spr_crouch = spr_pizzall_machsliding;
 			spr_bump = spr_pizzall_bump;
 			spr_land = spr_pizzall_land;
@@ -1879,7 +1634,6 @@ function characterspr()
 			spr_crouch = spr_pizzall_machsliding;
 			spr_bump = spr_pizzall_bump;
 			spr_victory = spr_pizzall_enterkey;
-			spr_hurt = spr_pizzall_hurt;
 			spr_climbwall = spr_pizzall_climbwall;
 			spr_grab = spr_pizzall_suplexdash;
 			spr_mach2jump = spr_pizzall_mach2jump;
@@ -1930,8 +1684,6 @@ function characterspr()
 			break;
 		case "RM":
 			// sprites
-			spr_idle = spr_rosmar_idle;
-			spr_move = spr_rosmar_walk;
 			spr_taunt = spr_rosmar_taunt;
 			break;
 	}
@@ -1942,7 +1694,7 @@ function characterpal()
 	palnum = 29
 	ini_open((("Custom/Pizzelle_") + string(customsavedpalette)) + "_palettes.ini")
 	for (var i = 0; i <= 10 ; i++)
-		global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
+		global.custompal_col[i] = (65536 * ini_read_real(((string(charname) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(charname) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(charname) + "Colors") + string(i)), "Red", 0)))
 	ini_close()
 	set_palette(0, "Default", 0);
 	set_palette(1, "Sugar", 0, 8441896, 6066975, 8628991, 14496, 5579956, 144);
@@ -1983,7 +1735,7 @@ function characterpal()
 			ini_open((("Custom/Pizzano_") + string(customsavedpalette)) + "_palettes.ini")
 			var i = 0
 			for (var i = 0; i <= 10 ; i++)
-				global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
+				global.custompal_col[i] = (65536 * ini_read_real(((string(charname) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(charname) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(charname) + "Colors") + string(i)), "Red", 0)))
 			ini_close()
 			if (state == states.cotton || state == states.cottondrill || state == states.cottonroll)
 				var outline_col = scribble_rgb_to_bgr($500050)
@@ -2022,7 +1774,7 @@ function characterpal()
 			ini_open((("Custom/Gumbob_") + string(customsavedpalette)) + "_palettes.ini")
 			var i = 0
 			for (var i = 0; i <= 10 ; i++)
-				global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
+				global.custompal_col[i] = (65536 * ini_read_real(((string(charname) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(charname) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(charname) + "Colors") + string(i)), "Red", 0)))
 			ini_close()
 			set_palette(0, "Default", 0, c_white, 11094670, 11565048, 5644188, 248);
 			set_palette(1, "Familiar Slime", c_white, 12464, 13150344, 8446200, 37088);
@@ -2055,7 +1807,7 @@ function characterpal()
 			ini_open((("Custom/Coneboy_") + string(customsavedpalette)) + "_palettes.ini")
 			var i = 0
 			for (var i = 0; i <= 10 ; i++)
-				global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
+				global.custompal_col[i] = (65536 * ini_read_real(((string(charname) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(charname) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(charname) + "Colors") + string(i)), "Red", 0)))
 			ini_close()
 			set_palette(0, "Default", 0, 10921727, 2763501, 4751560, 2645925, 33279, 4259839, 9958399);
 			set_palette(1, "Familiar IceCream", 0, 11073784, 5802208, 11073784, 2577322, 33279, 4259839, 9958399);
@@ -2178,5 +1930,56 @@ function charactersfx()
 	if global.newvoicelines
 	{
 		sfx_fireass = sfx_newfireassp
+	}
+}
+function spriteremap(argument0 = sprite_index)
+{
+	if instance_exists(obj_player)
+	{
+		var _spr = string_trim_start(sprite_get_name(argument0), ["spr_pizzelle"])
+		var _characterspr = "spr_" + obj_player.charname + _spr
+		var _era = ""
+		switch global.newplayeranim
+		{
+			case 1:
+				_era = "_new"
+				break;
+			case 2:
+				_era = "_alt"
+				break;
+			case 3:
+				_era = "_classic"
+				break;
+		}
+		var _eraspr = (_characterspr + _era)
+		if asset_get_index(_eraspr) != -1
+		{
+			show_debug_message(_eraspr)
+			return asset_get_index(_eraspr)
+		}
+		else if asset_get_index(_characterspr) != -1
+		{
+			show_debug_message(_characterspr)
+			return asset_get_index(_characterspr)
+		}
+		else
+		{
+			show_debug_message(argument0)
+			return argument0
+		}
+	}
+}
+function spritedemap(argument0 = sprite_index)
+{
+	if instance_exists(obj_player)
+	{
+		var _spr = asset_get_index("spr_pizzelle" + string_trim_end(string_trim_start(sprite_get_name(argument0), ["spr_" + obj_player.charname]), ["_new", "_classic", "_alt"]))
+		if _spr != -1
+		{
+			show_debug_message(_spr)
+			return _spr
+		}
+		show_debug_message(argument0)
+		return argument0
 	}
 }

@@ -106,8 +106,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "SugarySpireUnited",
-    "path": "SugarySpireUnited.yyp",
+    "name": "Coneboy",
+    "path": "folders/Sprites/Player/Coneboy.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

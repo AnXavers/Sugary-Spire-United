@@ -1,6 +1,6 @@
 obj_player.vsp = 0
 obj_player.hsp = 0
-obj_player.sprite_index = obj_player.spr_idle
+obj_player.sprite_index = spr_pizzelle_idle
 obj_player.state = states.actor
 var _cam_x = camera_get_view_x(view_camera[0])
 var _cam_y = camera_get_view_y(view_camera[0])
@@ -17,15 +17,15 @@ if (input_text == 1 || _stop == 1)
 	stop = 1
 if (obj_player.key_right2 && stop == 0)
 {
-	ini_open((((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
-	ini_write_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Red", slider[0].finalvalue)
-	ini_write_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Green", slider[1].finalvalue)
-	ini_write_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Blue", slider[2].finalvalue)
+	ini_open((((("Custom/" + string(obj_player.charname)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
+	ini_write_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Red", slider[0].finalvalue)
+	ini_write_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Green", slider[1].finalvalue)
+	ini_write_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Blue", slider[2].finalvalue)
 	ini_close()
 	obj_player.customsavedpalette = clamp((obj_player.customsavedpalette + 1), 1, 5)
 	with obj_player
 		scr_playercolors()
-	ini_open((((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
+	ini_open((((("Custom/" + string(obj_player.charname)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
 	palettename = ini_read_string("General", "PaletteName", "Palette 1")
 	ini_close()
 	input = palettename
@@ -38,15 +38,15 @@ if (obj_player.key_right2 && stop == 0)
 }
 if ((-obj_player.key_left2) && stop == 0)
 {
-	ini_open((((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
-	ini_write_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Red", slider[0].finalvalue)
-	ini_write_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Green", slider[1].finalvalue)
-	ini_write_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Blue", slider[2].finalvalue)
+	ini_open((((("Custom/" + string(obj_player.charname)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
+	ini_write_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Red", slider[0].finalvalue)
+	ini_write_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Green", slider[1].finalvalue)
+	ini_write_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Blue", slider[2].finalvalue)
 	ini_close()
 	obj_player.customsavedpalette = clamp((obj_player.customsavedpalette - 1), 1, 5)
 	with (obj_player)
 		scr_playercolors()
-	ini_open((((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
+	ini_open((((("Custom/" + string(obj_player.charname)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
 	palettename = ini_read_string("General", "PaletteName", "Palette 1")
 	ini_close()
 	input = palettename
@@ -59,10 +59,10 @@ if ((-obj_player.key_left2) && stop == 0)
 }
 if (global.colorchoosen != global.oldcolorchoosen)
 {
-	ini_open((((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
-	ini_write_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Red", slider[0].finalvalue)
-	ini_write_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Green", slider[1].finalvalue)
-	ini_write_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Blue", slider[2].finalvalue)
+	ini_open((((("Custom/" + string(obj_player.charname)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
+	ini_write_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Red", slider[0].finalvalue)
+	ini_write_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Green", slider[1].finalvalue)
+	ini_write_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Blue", slider[2].finalvalue)
 	ini_close()
 	global.colorchoosen = clamp(global.oldcolorchoosen, 0, (obj_player.colorheight - 1))
 	with (obj_palettechangerscrollbar)
@@ -76,10 +76,10 @@ else if (obj_player.key_up2 && stop == 0)
 	global.oldcolorchoosen = clamp((global.colorchoosen - 1), 0, (obj_player.colorheight - 1))
 if ((obj_player.key_attack2 || keyboard_check_pressed(vk_return)) && stop == 0 && has_selectedoption <= 0)
 {
-	ini_open((((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
-	ini_write_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Red", slider[0].finalvalue)
-	ini_write_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Green", slider[1].finalvalue)
-	ini_write_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Blue", slider[2].finalvalue)
+	ini_open((((("Custom/" + string(obj_player.charname)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
+	ini_write_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Red", slider[0].finalvalue)
+	ini_write_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Green", slider[1].finalvalue)
+	ini_write_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Blue", slider[2].finalvalue)
 	ini_close()
 	with (obj_player)
 	{
@@ -89,10 +89,10 @@ if ((obj_player.key_attack2 || keyboard_check_pressed(vk_return)) && stop == 0 &
 		visible = true
 		xscale = -1
 		array_delete(my_palettes, (array_length(my_palettes) - 1), 10)
-		ini_open((((("Custom/" + string(characters)) + "_") + string(customsavedpalette)) + "_palettes.ini"))
+		ini_open((((("Custom/" + string(charname)) + "_") + string(customsavedpalette)) + "_palettes.ini"))
 		var i = 0
 		for (var i = 0; i <= 10 ; i++)
-			global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
+			global.custompal_col[i] = (65536 * ini_read_real(((string(charname) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(charname) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(charname) + "Colors") + string(i)), "Red", 0)))
 		ini_close()
 		new_palette("Custom", 0, global.custompal_col[1], global.custompal_col[9], global.custompal_col[3], global.custompal_col[4], global.custompal_col[7], global.custompal_col[8], global.custompal_col[0], global.custompal_col[2]);
 		state = (62 << 0)
@@ -134,7 +134,7 @@ if ((obj_player.key_jump2 || keyboard_check_pressed(vk_return) || obj_player.key
 	if (obj_player.key_jump2 || keyboard_check_pressed(vk_return))
 	{
 		palettename = string(input)
-		ini_open((((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
+		ini_open((((("Custom/" + string(obj_player.charname)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
 		ini_write_string("General", "PaletteName", string(palettename))
 		ini_close()
 	}

@@ -7,7 +7,7 @@ with (other)
 		if (xscale == _target_xscale)
 			sprite_index = spr_hurtjump;
 		else
-			sprite_index = spr_hurt;
+			sprite_index = spr_pizzelle_hurt;
 		xscale = _target_xscale;
 	}
 }

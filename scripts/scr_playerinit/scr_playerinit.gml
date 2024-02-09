@@ -49,7 +49,7 @@ function scr_playerrespawn(argument0 = true)
 			alarm[8] = 30;
 			alarm[7] = 60;
 			hurted = 1;
-			sprite_index = spr_hurt;
+			sprite_index = spr_pizzelle_hurt;
 			movespeed = 0;
 			vsp = -3;
 		}

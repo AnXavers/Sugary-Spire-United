@@ -29,7 +29,7 @@ if (DestroyedBy.object_index == obj_player)
 			if (state == states.freefall || state == states.freefallland)
 			{
 				state = states.freefallland;
-				sprite_index = spr_bodyslamland;
+				sprite_index = spr_pizzelle_groundpoundland;
 				image_index = 0;
 			}
 			else if (state == states.superslam)

@@ -263,7 +263,7 @@ function __scribble_gen_6_build_lines()
 				}
 				else
 				{
-					// Check for \n line break characters or nulls (manual page breaks) stored at the start of words
+					// Check for \n line break charname or nulls (manual page breaks) stored at the start of words
 					var _glyph_start_ord = _glyph_grid[# _word_start_glyph, __SCRIBBLE_GEN_GLYPH.__UNICODE];
 					if (_glyph_start_ord == 0x0A) //Newline
 					{

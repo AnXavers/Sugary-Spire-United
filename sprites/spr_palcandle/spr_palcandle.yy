@@ -4,7 +4,7 @@
   "name": "spr_palcandle",
   "bbox_bottom": 2,
   "bbox_left": 0,
-  "bbox_right": 7,
+  "bbox_right": 6,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 8,
+  "width": 7,
 }

@@ -113,7 +113,7 @@ function __scribble_gen_2_parser()
 	//Place our input string into a buffer for quicker reading
 	buffer_seek(_string_buffer, buffer_seek_start, 0);
 	buffer_write(_string_buffer, buffer_string, _element_text);
-	buffer_write(_string_buffer, buffer_u64, 0x0); //Add some extra null characters to avoid errors where we're reading outside the buffer
+	buffer_write(_string_buffer, buffer_u64, 0x0); //Add some extra null charname to avoid errors where we're reading outside the buffer
 	buffer_seek(_string_buffer, buffer_seek_start, 0);
 	
 	#region Determine the overall bidi direction for the string
@@ -1102,7 +1102,7 @@ function __scribble_gen_2_parser()
 				
 				#endregion
 			}
-			else if (_glyph_ord > 0x20) //Only write glyphs that aren't system control characters
+			else if (_glyph_ord > 0x20) //Only write glyphs that aren't system control charname
 			{
 				#region Add a standard glyph
 				

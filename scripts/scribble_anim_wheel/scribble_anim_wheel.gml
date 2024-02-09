@@ -1,6 +1,6 @@
 /// @param size	   Wheel amplitude, in pixels
-/// @param frequency  Wheel frequency. Larger values create more "humps" over a certain number of characters
-/// @param speed	  Wheel speed. Larger numbers cause characters to move up and down more rapidly
+/// @param frequency  Wheel frequency. Larger values create more "humps" over a certain number of charname
+/// @param speed	  Wheel speed. Larger numbers cause charname to move up and down more rapidly
 
 function scribble_anim_wheel(_size, _frequency, _speed)
 {

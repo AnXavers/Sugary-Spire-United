@@ -72,7 +72,7 @@ function state_player_crouch()
 				sprite_index = spr_shotgun_duck;
 		}
 		if (move != 0)
-			sprite_index = spr_crawl;
+			sprite_index = spr_pizzelle_crawl;
 	}
 	if (crouchAnim == 1 && sprite_index != spr_coneboy_slidekick)
 	{

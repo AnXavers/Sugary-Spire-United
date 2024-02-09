@@ -26,7 +26,7 @@ function scr_gumbob_propeller()
 	{
 		gumbobpropellerlength = 100;
 		state = states.normal;
-		sprite_index = spr_fall;
+		sprite_index = spr_pizzelle_fall;
 		gumbobpropellercooldown = 100;
 	}
 	if (!key_jump2)

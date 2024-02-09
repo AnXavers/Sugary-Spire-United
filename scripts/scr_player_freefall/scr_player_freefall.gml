@@ -67,10 +67,10 @@ function state_player_freefall()
 	}
 	if (sprite_index != obj_player.spr_outofcontrolfall)
 	{
-		if (sprite_index == spr_bodyslamstart)
-			sprite_index = spr_bodyslamfall;
-		if (sprite_index == spr_bombdropstart)
-			sprite_index = spr_bombdropfall;
+		if (sprite_index == spr_pizzelle_groundpoundprep)
+			sprite_index = spr_pizzelle_groundpound;
+		if (sprite_index == spr_pizzelle_bodyslamstart)
+			sprite_index = spr_pizzelle_bodyslamfall;
 		if (global.treat)
 			sprite_index = spr_donutSlam;
 	}
@@ -114,12 +114,12 @@ function state_player_freefall()
 			instance_create(x, y, obj_landcloud);
 			freefallstart = 0;
 			image_index = 0;
-			if (sprite_index == spr_bodyslamfall)
-				sprite_index = spr_bodyslamland;
+			if (sprite_index == spr_pizzelle_groundpound)
+				sprite_index = spr_pizzelle_groundpoundland;
 			if (sprite_index == spr_donutSlam)
 				sprite_index = spr_donutSlam_land;
-			if (sprite_index == spr_bombdropfall)
-				sprite_index = spr_bombdropland;
+			if (sprite_index == spr_pizzelle_bodyslamfall)
+				sprite_index = spr_pizzelle_bodyslamland;
 		}
 	}
 	image_speed = 0.35;

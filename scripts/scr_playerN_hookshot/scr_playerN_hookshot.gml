@@ -9,7 +9,7 @@ function scr_playerN_hookshot()
 		vsp = -6;
 		instance_create(x, y, obj_washingmachine);
 		scr_sound(mu_ranks);
-		sprite_index = spr_jump;
+		sprite_index = spr_pizzelle_jump;
 		stompAnim = 0;
 		state = states.jump;
 		jumpAnim = 1;

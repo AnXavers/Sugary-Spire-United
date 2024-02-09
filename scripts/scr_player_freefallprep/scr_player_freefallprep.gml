@@ -11,10 +11,10 @@ function state_player_freefallprep()
 	stopAnim = 1;
 	crouchslideAnim = 1;
 	crouchAnim = 1;
-	if (sprite_index != spr_bombdropstart)
+	if (sprite_index != spr_pizzelle_bodyslamstart)
 	{
 		if (!global.treat)
-			sprite_index = spr_bodyslamstart;
+			sprite_index = spr_pizzelle_groundpoundprep;
 		else
 			sprite_index = spr_donutSlam_intro;
 	}

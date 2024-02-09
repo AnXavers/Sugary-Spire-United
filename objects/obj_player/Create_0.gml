@@ -1,12 +1,12 @@
 scr_collision_init();
 scr_playersounds_init();
-ini_open("Custom/Pizzelle_1_palettes.ini")
+ini_open("Custom/pizzelle_1_palettes.ini")
 character = "P"
-characters = "Pizzelle";
+charname = "pizzelle";
 customsavedpalette = 1
 var i = 0
 for (var i = 0; i <= 10 ; i++)
-	global.custompal_col[i] = (65536 * ini_read_real(((string(characters) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(characters) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(characters) + "Colors") + string(i)), "Red", 0)))
+	global.custompal_col[i] = (65536 * ini_read_real(((string(charname) + "Colors") + string(i)), "Blue", 0) + (256 * ini_read_real(((string(charname) + "Colors") + string(i)), "Green", 0) + ini_read_real(((string(charname) + "Colors") + string(i)), "Red", 0)))
 ini_close()
 lastroom = -4;
 upsideDownJump = false;
@@ -295,7 +295,7 @@ substate = substates.unknown_0;
 playedjumpsound = 0;
 doublejump = 0;
 playerPrevstate = states.frozen;
-playerPrevSprite = spr_idle;
+playerPrevSprite = spr_pizzelle_idle;
 kungaircount = 0;
 kungairtime = 0;
 disguisetimer = 0;

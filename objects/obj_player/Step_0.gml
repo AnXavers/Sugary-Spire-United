@@ -23,6 +23,44 @@ if global.possessed != obj_player
 		visible = true
 	}
 }
+switch character
+{
+	case "P":
+		charname = "pizzelle"
+		break;
+	case "PN":
+	case "N":
+		charname = "pizzano"
+		break;
+	case "G":
+		charname = "gumbob"
+		break;
+	case "C":
+		charname = "coneboy"
+		break;
+	case "RM":
+		charname = "rosmar"
+		break;
+	case "S":
+		charname = "peppino"
+		break;
+	case "PT":
+	case "T":
+		charname = "noise"
+		break;
+	case "V":
+		charname = "vigilante"
+		break;
+	case "M":
+		charname = "pepperman"
+		break;
+	case "Z":
+		charname = "pizzall"
+		break;
+	case "GB":
+		charname = "gusbri"
+		break;
+}
 audio_emitter_position(playerSound, x, y, 0);
 audio_emitter_gain(playerSound, global.soundVolume);
 var a = instance_place(x, y, obj_secret_tiles);
@@ -81,8 +119,8 @@ if (character == "P")
 		anger--;
 	}
 }
-if ((angry == 1 || global.stylethreshold > 3) && sprite_index == spr_idle)
-	sprite_index = spr_angryidle;
+if ((angry == 1 || global.stylethreshold > 3) && sprite_index == spr_pizzelle_idle)
+	sprite_index = spr_pizzelle_3hpidle;
 scr_playersounds();
 	if (state != states.pogo && state != states.backbreaker)
 {

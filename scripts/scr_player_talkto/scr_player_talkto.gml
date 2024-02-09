@@ -5,6 +5,6 @@ function state_player_talkto()
 		state = states.normal;
 	hsp = 0;
 	vsp = 0;
-	if (sprite_index != spr_idle)
-		sprite_index = spr_idle;
+	if (sprite_index != spr_pizzelle_idle)
+		sprite_index = spr_pizzelle_idle;
 }

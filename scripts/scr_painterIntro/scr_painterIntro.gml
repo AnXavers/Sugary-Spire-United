@@ -37,7 +37,7 @@ function scr_paintercut_walk()
 				image_speed = 0.45;
 			else
 				image_speed = 0.6;
-			sprite_index = spr_move;
+			sprite_index = spr_pizzelle_walk;
 		}
 		if (point_distance(x, 0, target_x, 0) <= 7 && grounded)
 		{
@@ -62,7 +62,7 @@ function cutscene_player_land()
 	obj_player.image_speed = 0.35;
 	with (obj_player)
 	{
-		if (grounded && vsp > 0 && sprite_index != spr_land && sprite_index != spr_idle)
+		if (grounded && vsp > 0 && sprite_index != spr_land && sprite_index != spr_pizzelle_idle)
 		{
 			image_index = 0;
 			sprite_index = spr_land;
@@ -70,7 +70,7 @@ function cutscene_player_land()
 		}
 		if (animation_end() && sprite_index == spr_land)
 		{
-			sprite_index = spr_idle;
+			sprite_index = spr_pizzelle_idle;
 			_finish = 1;
 		}
 	}

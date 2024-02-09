@@ -22,7 +22,7 @@ function state_player_mach2()
 	move2 = key_right2 + key_left2;
 	characterwallclimb = 0
 	crouchslideAnim = 1;
-	//this gives characters the ability to climb walls at mach 2
+	//this gives charname the ability to climb walls at mach 2
 	if (character != "G" && character != "C" && character != "M" && character != "RM" && character != "GB")
 		characterwallclimb = 1
 	//yayyyyyyyy

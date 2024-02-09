@@ -144,7 +144,7 @@ else if sprite_index != spr_superjump_cancelprep
 	{
 		image_index = 0;
 		state = states.freefallprep;
-		sprite_index = spr_bodyslamstart;
+		sprite_index = spr_pizzelle_groundpoundprep;
 		vsp = -6;
 	}
 	if key_attack2 && character == "PT"

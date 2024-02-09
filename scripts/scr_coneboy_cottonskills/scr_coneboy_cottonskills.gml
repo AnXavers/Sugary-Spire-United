@@ -101,7 +101,7 @@ function state_coneboy_cottonbounce()
 		if !key_sprint
 		{
 		state = states.normal
-		sprite_index = spr_idle
+		sprite_index = spr_pizzelle_idle
 		}
 		else
 		{

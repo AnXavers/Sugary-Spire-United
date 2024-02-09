@@ -27,7 +27,7 @@ function state_player_stunned()
 	{
 		mask_index = obj_player.spr_mask;
 		state = states.normal;
-		sprite_index = spr_idle;
+		sprite_index = spr_pizzelle_idle;
 		image_index = 0;
 	}
 	audio_sound_gain(sfx_hurt, 0.7, 0);

@@ -2,17 +2,17 @@ while (readcolor == 1)
 {
 	selected = 0
 	input_text = 0
-	ini_open((((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
+	ini_open((((("Custom/" + string(obj_player.charname)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
 	switch colorchannel
 	{
 		case 0:
-			colorvalue = (ini_read_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Red", 0) / 255)
+			colorvalue = (ini_read_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Red", 0) / 255)
 			break
 		case 1:
-			colorvalue = (ini_read_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Green", 0) / 255)
+			colorvalue = (ini_read_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Green", 0) / 255)
 			break
 		case 2:
-			colorvalue = (ini_read_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Blue", 0) / 255)
+			colorvalue = (ini_read_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Blue", 0) / 255)
 			break
 	}
 

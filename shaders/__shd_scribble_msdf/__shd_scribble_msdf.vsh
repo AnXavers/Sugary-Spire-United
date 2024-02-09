@@ -167,7 +167,7 @@ vec2 pulse(vec2 position, vec2 centre, float characterIndex)
 }
 
 //Shake the character along the x/y axes
-//We use integer time steps so that at low speeds characters don't jump around too much
+//We use integer time steps so that at low speeds charname don't jump around too much
 //Lots of magic numbers in here to try to get a nice-looking shake
 vec2 shake(vec2 position, float characterIndex)
 {

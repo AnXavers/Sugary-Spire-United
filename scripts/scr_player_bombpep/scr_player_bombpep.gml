@@ -40,7 +40,7 @@ function state_player_bombpep()
 		alarm[7] = 60;
 		hurted = 1;
 		state = states.normal;
-		sprite_index = spr_idle;
+		sprite_index = spr_pizzelle_idle;
 		image_index = 0;
 	}
 	if (bombpeptimer <= 0 && sprite_index == spr_pizzelle_bombrunabouttoexplode)

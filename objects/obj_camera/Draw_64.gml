@@ -22,13 +22,13 @@ if (DrawHUD)
 		if (global.collect > global.srank)
 			draw_sprite_ext(obj_player.spr_srankhud, obj_stylebar.image_index, 128 + shakeX + cakeX, 96 + shakeY + DrawY, 1, 1, 0, c_white, 1);
 		shader_reset();
-		if !global.newscorefont
+		draw_set_halign(fa_center);
+		draw_set_color(c_white);
+		var _string = string(global.collect);
+		var _string_length = string_length(_string);
+		if global.newscorefont == 0
 		{
 			draw_set_font(obj_player.font_collect);
-			draw_set_halign(fa_center);
-			draw_set_color(c_white);
-			var _string = string(global.collect);
-			var _string_length = string_length(_string);
 			for (var i = 0; i < _string_length; i++)
 			{
 				var _xx = 140 + (-(string_width(_string) / 2) + ((string_width(_string) / _string_length) * i));
@@ -38,22 +38,26 @@ if (DrawHUD)
 		}
 		else
 		{
-			draw_set_font(obj_player.font_collect_new);
-			draw_set_halign(fa_center);
-			var _string = string(global.collect);
-			var _string_length = string_length(_string);
+			var _palspr = spr_palcandle
+			var _font = global.candlefont
+			if global.newscorefont == 2
+			{
+				_palspr = spr_palcandle_new
+				_font = global.newcandlefont
+			}
+			draw_set_font(_font)
 			if (collected != _string)
 			{
 				for (i = 0; i < _string_length; i++)
-					colors[i] = irandom(6);
+					colors[i] = irandom(sprite_get_width(_palspr) - 1);
 				collected = _string;
 			}
 			for (var i = 0; i < _string_length; i++)
 			{
-				var _xx = 150 + (-(string_width(_string) / 2) + ((string_width(_string) / _string_length) * i));
+				var _xx = 145 + (-(string_width(_string) / 2) + ((string_width(_string) / _string_length) * i));
 				var _yyoffset = ((i % 2) == 0) ? -4 : 0;
 				pal = colors[i]
-				pal_swap_set(spr_palcandle, pal, false);
+				pal_swap_set(_palspr, pal, false);
 				draw_text(_xx + shakeX + cakeX, 29 + obj_stylebar.hudbounce + _yyoffset + DrawY + shakeY, string_char_at(_string, i + 1));
 				shader_reset();
 			}

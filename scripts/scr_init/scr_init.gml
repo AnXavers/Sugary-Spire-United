@@ -41,6 +41,7 @@ global.creditsfont = font_add_sprite_ext(spr_creditsfont, " ABCDEFGHIJKLMNOPQRST
 global.combofont = font_add_sprite_ext(spr_fontcombo, "0123456789", 1, 0);
 global.collectfont = font_add_sprite_ext(spr_fontcollect, "0123456789", 1, 0);
 global.candlefont = font_add_sprite_ext(spr_fontcandle, "0123456789", 1, 0);
+global.newcandlefont = font_add_sprite_ext(spr_fontcandle_new, "0123456789", 1, 0);
 global.rankcombofont = font_add_sprite_ext(spr_fontrankcombo, "0123456789", 1, 0);
 global.bubblefont = font_add_sprite_ext(spr_bubblefont, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789", 1, 0);
 global.timerfont = font_add_sprite_ext(spr_timer_font, "1234567890", 0, 6);
@@ -214,6 +215,12 @@ switch (ini_read_real("Settings", "machsfx", 0))
 		break;
 }
 window_set_fullscreen(ini_read_real("Settings", "fullscrn", 0));
+ini_close();
+ini_open("silversave.ini");
+if ini_key_exists("Main", "fragments")
+	global.fragments = json_parse(ini_read_string("Main", "fragments", "0"));
+else
+	global.fragments = ["", ""]
 ini_close();
 audio_sound_gain(sfx_combovoice1p, 2, 0);
 audio_sound_gain(sfx_combovoice2p, 2, 0);

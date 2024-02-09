@@ -3,43 +3,43 @@ function scr_playercolors()
 	switch (character)
 	{
 		case "P":
-			characters = "Pizzelle";
+			charname = "Pizzelle";
 			colorheight = 10;
 			break;
 		case "N":
-			characters = "Pizzano";
+			charname = "Pizzano";
 			colorheight = 10;
 			break;
 		case "G":
-			characters = "Gumbob";
+			charname = "Gumbob";
 			colorheight = 7;
 			break;
 		case "C":
-			characters = "Coneboy";
+			charname = "Coneboy";
 			colorheight = 9;
 			break;
 		case "S":
-			characters = "Peppino";
+			charname = "Peppino";
 			colorheight = 6;
 			break;
 		case "T":
-			characters = "The Noise";
+			charname = "The Noise";
 			colorheight = 6;
 			break;
 		case "V":
-			characters = "Vigilante";
+			charname = "Vigilante";
 			colorheight = 6;
 			break;
 		case "M":
-			characters = "Pepperman";
+			charname = "Pepperman";
 			colorheight = 6;
 			break;
 		case "PN":
-			characters = "Pogo Pizzano";
+			charname = "Pogo Pizzano";
 			colorheight = 11;
 			break;
 		default:
-			characters = "BF";
+			charname = "BF";
 			colorheight = 0;
 			break;
 	}
@@ -55,28 +55,28 @@ function scr_playercolors()
 	colorindex[9] = 9;
 	colorindex[10] = 10;
 	colorindex[11] = 11;
-	ini_open("Custom/" + string(characters) + "_" + string(customsavedpalette) + "_palettes.ini");
-	if (!ini_section_exists(string(characters) + "Colors" + string(colorindex[0])))
+	ini_open("Custom/" + string(charname) + "_" + string(customsavedpalette) + "_palettes.ini");
+	if (!ini_section_exists(string(charname) + "Colors" + string(colorindex[0])))
 	{
-		ini_write_real(string(characters) + "Colors" + string(colorindex[0]), "Red", 0);
-		ini_write_real(string(characters) + "Colors" + string(colorindex[0]), "Green", 0);
-		ini_write_real(string(characters) + "Colors" + string(colorindex[0]), "Blue", 0);
+		ini_write_real(string(charname) + "Colors" + string(colorindex[0]), "Red", 0);
+		ini_write_real(string(charname) + "Colors" + string(colorindex[0]), "Green", 0);
+		ini_write_real(string(charname) + "Colors" + string(colorindex[0]), "Blue", 0);
 	}
 	for (var i = 1; i < colorheight; i++)
 	{
-		if (!ini_section_exists(string(characters) + "Colors" + string(colorindex[i])))
+		if (!ini_section_exists(string(charname) + "Colors" + string(colorindex[i])))
 		{
-			ini_write_real(string(characters) + "Colors" + string(colorindex[i]), "Red", 255);
-			ini_write_real(string(characters) + "Colors" + string(colorindex[i]), "Green", 255);
-			ini_write_real(string(characters) + "Colors" + string(colorindex[i]), "Blue", 255);
+			ini_write_real(string(charname) + "Colors" + string(colorindex[i]), "Red", 255);
+			ini_write_real(string(charname) + "Colors" + string(colorindex[i]), "Green", 255);
+			ini_write_real(string(charname) + "Colors" + string(colorindex[i]), "Blue", 255);
 		}
 	}
-	ini_open("Custom/" + string(characters) + "_" + string(customsavedpalette) + "_palettes.ini");
+	ini_open("Custom/" + string(charname) + "_" + string(customsavedpalette) + "_palettes.ini");
 	for (i = 0; i < colorheight; i++)
 	{
-		colored[colorindex[i]][0] = ini_read_real(string(characters) + "Colors" + string(colorindex[i]), "Red", 0);
-		colored[colorindex[i]][1] = ini_read_real(string(characters) + "Colors" + string(colorindex[i]), "Green", 0);
-		colored[colorindex[i]][2] = ini_read_real(string(characters) + "Colors" + string(colorindex[i]), "Blue", 0);
+		colored[colorindex[i]][0] = ini_read_real(string(charname) + "Colors" + string(colorindex[i]), "Red", 0);
+		colored[colorindex[i]][1] = ini_read_real(string(charname) + "Colors" + string(colorindex[i]), "Green", 0);
+		colored[colorindex[i]][2] = ini_read_real(string(charname) + "Colors" + string(colorindex[i]), "Blue", 0);
 	}
 	ini_close();
 	for (i = 0; i < colorheight; i++)

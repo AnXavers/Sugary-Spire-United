@@ -16,7 +16,7 @@ function state_player_bump()
 	if (animation_end())
 	{
 		state = states.jump;
-		sprite_index = spr_jump;
+		sprite_index = spr_pizzelle_jump;
 		if (shotgunAnim == 1)
 			sprite_index = spr_shotgun_jump;
 	}

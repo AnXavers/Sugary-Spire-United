@@ -14,7 +14,7 @@ function cutscene_end_player()
 	obj_player.state = states.normal;
 	obj_player.hsp = 0;
 	obj_player.vsp = 0;
-	obj_player.sprite_index = obj_player.spr_idle;
+	obj_player.sprite_index = spr_pizzelle_idle;
 	cutscene_event_end();
 }
 function cutscene_start_player()
@@ -22,7 +22,7 @@ function cutscene_start_player()
 	obj_player.state = states.actor;
 	obj_player.hsp = 0;
 	obj_player.vsp = 0;
-	obj_player.sprite_index = obj_player.spr_idle;
+	obj_player.sprite_index = spr_pizzelle_idle;
 	cutscene_event_end();
 }
 function cutscene_create_instance(argument0, argument1, argument2)

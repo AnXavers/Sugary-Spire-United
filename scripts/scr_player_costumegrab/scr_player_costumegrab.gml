@@ -33,7 +33,7 @@ function state_player_costumegrab()
 					movespeed = 8 + realmvsp;
 				vsp = -1;
 			}
-			sprite_index = spr_idle;
+			sprite_index = spr_pizzelle_idle;
 			costumeBlock = -4;
 			costumeBlockDetails = -4;
 			state = states.costumenormal;
@@ -54,7 +54,7 @@ function state_player_costumegrab()
 				movespeed = 0.2;
 				vsp = 1;
 			}
-			sprite_index = spr_idle;
+			sprite_index = spr_pizzelle_idle;
 			costumeBlock = -4;
 			costumeBlockDetails = -4;
 			dummyBlock = -4;

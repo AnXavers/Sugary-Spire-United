@@ -26,7 +26,7 @@ function cutscene_secretPortal_start()
 		state = states.actor;
 		hsp = 0;
 		vsp = 0;
-		sprite_index = spr_hurt;
+		sprite_index = spr_pizzelle_hurt;
 		image_speed = 0.35;
 		if (instance_exists(_portal))
 		{
@@ -105,7 +105,7 @@ function cutscene_secretPortal_preend()
 				sprite_index = spr_cottonidle;
 				break;
 			default:
-				sprite_index = spr_bodyslamfall;
+				sprite_index = spr_pizzelle_groundpound;
 				break;
 		}
 		image_speed = 0.35;

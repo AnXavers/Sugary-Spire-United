@@ -29,7 +29,7 @@ function do_special()
 			{
 				typing = 0
 				state = states.normal;
-				sprite_index = spr_idle
+				sprite_index = spr_pizzelle_idle
 			}
 		}
 	}

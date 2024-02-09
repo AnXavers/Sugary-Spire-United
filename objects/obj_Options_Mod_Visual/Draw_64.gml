@@ -1,9 +1,10 @@
 draw_set_font(global.font);
 draw_set_halign(fa_center);
 draw_option(150, 30 + ScrollY, "BACK", optionselected == 0);
-draw_option(480, 100 + ScrollY, "NEW SCORE FONT", optionselected == 1);
-draw_option(280, 150 + ScrollY, "ON", optionsaved_newscorefont);
-draw_option(680, 150 + ScrollY, "OFF", !optionsaved_newscorefont);
+draw_option(480, 100 + ScrollY, "SCORE FONT", optionselected == 1);
+draw_option(180, 150 + ScrollY, "CANDLE", optionsaved_newscorefont == 2);
+draw_option(480, 150 + ScrollY, "RANK CANDLE", optionsaved_newscorefont == 1);
+draw_option(780, 150 + ScrollY, "DEMO", optionsaved_newscorefont == 0);
 draw_option(480, 200 + ScrollY, "PLAYER ANIMATIONS", optionselected == 2);
 draw_option(280, 250 + ScrollY, "DEFAULT", optionsaved_newplayeranim == 0);
 draw_option(680, 250 + ScrollY, "NEW", optionsaved_newplayeranim == 1);

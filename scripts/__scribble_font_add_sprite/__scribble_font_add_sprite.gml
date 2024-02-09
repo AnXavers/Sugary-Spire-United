@@ -62,7 +62,7 @@ function __scribble_font_add_sprite_common(_sprite, _spritefont, _proportional, 
 	
 	var _info_glyphs_dict = _font_info.glyphs;
 	var _info_glyph_names = variable_struct_get_names(_info_glyphs_dict);
-	if (SCRIBBLE_VERBOSE) __scribble_trace("  \"", _sprite_name, "\" has ", array_length(_info_glyph_names), " characters");
+	if (SCRIBBLE_VERBOSE) __scribble_trace("  \"", _sprite_name, "\" has ", array_length(_info_glyph_names), " charname");
 	
 	var _size = array_length(_info_glyph_names);
 	

@@ -27,8 +27,8 @@ if (DestroyedBy.object_index == obj_player)
 			instance_create(x, y, obj_landcloud);
 			freefallstart = 0;
 			image_index = 0;
-			if (sprite_index == spr_bodyslamfall)
-				sprite_index = spr_bodyslamland;
+			if (sprite_index == spr_pizzelle_groundpound)
+				sprite_index = spr_pizzelle_groundpoundland;
 			else
 				sprite_index = spr_donutSlam_land;
 		}

@@ -6,7 +6,7 @@ if (other.key_up2 && (!instance_exists(obj_palettechanger)))
 		global.oldcolorchoosen = 0
 		for (var i = 0; i < obj_player.colorheight; i++)
 			color[i] = obj_player.color[i]
-		ini_open((((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
+		ini_open((((("Custom/" + string(obj_player.charname)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
 		palettename = ini_read_string("General", "PaletteName", "Palette 1")
 		ini_close()
 		input = palettename
@@ -18,17 +18,17 @@ if (other.key_up2 && (!instance_exists(obj_palettechanger)))
 				colorchannel = i
 				other.slider[colorchannel] = id
 				readcolor = 1
-				ini_open((((("Custom/" + string(obj_player.characters)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
+				ini_open((((("Custom/" + string(obj_player.charname)) + "_") + string(obj_player.customsavedpalette)) + "_palettes.ini"))
 				switch colorchannel
 				{
 					case 0:
-						colorvalue = (ini_read_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Red", 0) / 255)
+						colorvalue = (ini_read_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Red", 0) / 255)
 						break
 					case 1:
-						colorvalue = (ini_read_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Green", 0) / 255)
+						colorvalue = (ini_read_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Green", 0) / 255)
 						break
 					case 2:
-						colorvalue = (ini_read_real(((string(obj_player.characters) + "Colors") + string(global.colorchoosen)), "Blue", 0) / 255)
+						colorvalue = (ini_read_real(((string(obj_player.charname) + "Colors") + string(global.colorchoosen)), "Blue", 0) / 255)
 						break
 				}
 

@@ -56,7 +56,7 @@ function state_player_climbwall()
 		movespeed = 0;
 		vsp /= 2;
 		state = states.jump;
-		sprite_index = spr_fall;
+		sprite_index = spr_pizzelle_fall;
 		slideHsp = -9 * xscale;
 	}
 	if (!scr_solid(x + xscale, y))
@@ -80,7 +80,7 @@ function state_player_climbwall()
 	if ((grounded && verticalMovespeed <= 0) || verticalMovespeed <= 0)
 	{
 		state = states.jump
-		sprite_index = spr_fall
+		sprite_index = spr_pizzelle_fall
 	}
 	if ((scr_solid(x, y - 1, true) && vsp <= 0 && !place_meeting(x, y - 1, obj_destructibles)) && !scr_slope_ext(x + xscale, y))
 	{
@@ -158,7 +158,7 @@ function state_player_climbwall()
 	if (grounded && verticalMovespeed < 0)
 	{
 		state = states.jump;
-		sprite_index = spr_fall;
+		sprite_index = spr_pizzelle_fall;
 		vsp = -verticalMovespeed;
 	}
 	image_speed = 0.6;
@@ -346,7 +346,7 @@ function state_player_climbdownwall()
 		movespeed = 0;
 		vsp /= 2;
 		state = states.jump;
-		sprite_index = spr_fall;
+		sprite_index = spr_pizzelle_fall;
 		slideHsp = -9 * xscale;
 	}
 	if (!scr_solid(x - (xscale * 3), y))
@@ -401,7 +401,7 @@ function state_player_climbdownwall()
 			instance_create(x, y, obj_landcloud);
 			freefallstart = 0;
 			image_index = 0;
-			sprite_index = spr_bodyslamland;
+			sprite_index = spr_pizzelle_groundpoundland;
 		}
 	}
 	if (key_jump && key_sprint)

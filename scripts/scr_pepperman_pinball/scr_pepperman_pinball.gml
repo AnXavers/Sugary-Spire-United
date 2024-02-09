@@ -43,13 +43,13 @@ function state_pepperman_pinball(){
 	else if !(key_sprint)
 	{
 		state = states.normal
-		sprite_index = spr_idle
+		sprite_index = spr_pizzelle_idle
 		exit;
 	}
 	if (key_down2)
 	{
 		image_index = 0;
-		sprite_index = spr_bodyslamstart;
+		sprite_index = spr_pizzelle_groundpoundprep;
 		vsp = -6;
 		if (global.treat)
 		{

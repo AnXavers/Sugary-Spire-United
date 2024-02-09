@@ -29,7 +29,7 @@ function state_player_normal()
 				idle = 0;
 				image_index = 0;
 			}
-			if (sprite_index != spr_caneidle && global.panic == 0 && sprite_index != spr_angryidle && !key_taunt)
+			if (sprite_index != spr_caneidle && global.panic == 0 && sprite_index != spr_pizzelle_3hpidle && !key_taunt)
 			{
 				if (idle >= 300 && sprite_index != spr_idle1 && sprite_index != spr_idle2 && sprite_index != spr_idle3)
 				{
@@ -65,7 +65,7 @@ function state_player_normal()
 									sprite_index = spr_caneidle;
 								else
 								{
-									sprite_index = spr_idle;
+									sprite_index = spr_pizzelle_idle;
 									if (global.levelname == "fudge")
 										sprite_index = spr_fudgeidle;
 									if (global.levelname == "dance")
@@ -73,7 +73,7 @@ function state_player_normal()
 								}
 							}
 							else
-								sprite_index = spr_idle;
+								sprite_index = spr_pizzelle_idle;
 						}
 						else if (character == "P" || character == "N")
 						{
@@ -96,7 +96,7 @@ function state_player_normal()
 							sprite_index = spr_caneidle;
 						else
 						{
-							sprite_index = spr_idle;
+							sprite_index = spr_pizzelle_idle;
 							if (global.levelname == "fudge")
 								sprite_index = spr_fudgeidle;
 							if (global.levelname == "dance")
@@ -116,13 +116,13 @@ function state_player_normal()
 			idle = 0;
 			facehurt = 0;
 			if (angry == 1 || global.stylethreshold > 3)
-				sprite_index = spr_angrywalk;
+				sprite_index = spr_pizzelle_3hpwalk;
 			else if (global.cane == 1)
 				sprite_index = spr_canewalk;
 			else if (global.levelname == "dance")
 				sprite_index = spr_dancewalk;
 			else
-				sprite_index = spr_move;
+				sprite_index = spr_pizzelle_walk;
 		}
 		if (key_taunt)
 		{
@@ -160,7 +160,7 @@ function state_player_normal()
 				{
 					landAnim = 0;
 					if (global.cane == 0)
-						sprite_index = spr_move;
+						sprite_index = spr_pizzelle_walk;
 					else
 						sprite_index = spr_canewalk;
 					image_index = 0;
@@ -174,7 +174,7 @@ function state_player_normal()
 			{
 				landAnim = 0;
 				if (global.cane == 0)
-					sprite_index = spr_move;
+					sprite_index = spr_pizzelle_walk;
 				else
 					sprite_index = spr_canewalk;
 				image_index = 0;
@@ -202,7 +202,7 @@ function state_player_normal()
 	if (!grounded && !key_jump)
 	{
 		if (shotgunAnim == 0)
-			sprite_index = spr_fall;
+			sprite_index = spr_pizzelle_fall;
 		else
 			sprite_index = spr_shotgun_fall;
 		jumpAnim = 0;
@@ -259,11 +259,11 @@ function state_player_normal()
 		scr_sound(sfx_coneboyswallow)
 	}
 	if (sprite_index == spr_coneboy_spit && animation_end())
-		sprite_index = spr_idle;
+		sprite_index = spr_pizzelle_idle;
 	if (key_jump && grounded && !key_down)
 	{
 		scr_sound(sound_jump);
-		sprite_index = spr_jump;
+		sprite_index = spr_pizzelle_jump;
 		if (shotgunAnim == 1)
 			sprite_index = spr_shotgun_jump;
 		instance_create(x, y, obj_highjumpcloud2);
@@ -275,7 +275,7 @@ function state_player_normal()
 	if (grounded && input_buffer_jump < 8 && !key_down && !key_sprint && vsp > 0)
 	{
 		scr_sound(sound_jump);
-		sprite_index = spr_jump;
+		sprite_index = spr_pizzelle_jump;
 		if (shotgunAnim == 1)
 			sprite_index = spr_shotgun_jump;
 		instance_create(x, y, obj_highjumpcloud2);

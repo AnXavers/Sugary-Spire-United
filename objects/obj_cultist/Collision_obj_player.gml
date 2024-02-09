@@ -17,7 +17,7 @@ if (pray_delay == 0)
 					movespeed = abs(movespeed);
 				state = states.mach2;
 			}
-			sprite_index = spr_idle;
+			sprite_index = spr_pizzelle_idle;
 			instance_create(x, y, obj_poofeffect);
 			image_index = 0;
 			if (other.canCollect == 1 && ds_list_find_index(global.saveroom, id) == -1)

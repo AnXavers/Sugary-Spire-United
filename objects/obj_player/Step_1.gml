@@ -1,3 +1,4 @@
+sprite_index = spritedemap()
 if (key_jump)
 	playedjumpsound = 0;
 scr_getinput();

@@ -19,13 +19,13 @@ function state_player_freefallland()
 	if (animation_end())
 	{
 		state = 1;
-		sprite_index = spr_idle;
+		sprite_index = spr_pizzelle_idle;
 		freefallsmash = 0;
 		if (key_jump2 && character == "N")
 		{
 			with (instance_create(x, y + 20, obj_bangeffect))
 				sprite_index = spr_highjumpcloud2;
-			sprite_index = spr_jump;
+			sprite_index = spr_pizzelle_jump;
 			image_index = 0;
 			stopAnim = 1;
 			jumpAnim = 1;

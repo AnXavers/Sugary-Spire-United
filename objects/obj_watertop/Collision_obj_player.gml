@@ -13,7 +13,7 @@ with (other)
 				movespeed = abs(movespeed);
 			state = states.mach2;
 		}
-		sprite_index = spr_idle;
+		sprite_index = spr_pizzelle_idle;
 		instance_create(x, y, obj_poofeffect);
 		image_index = 0;
 	}

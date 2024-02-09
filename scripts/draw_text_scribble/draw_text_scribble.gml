@@ -13,7 +13,7 @@
 /// @param x			The x coordinate of the drawn string
 /// @param y			The y coordinate of the drawn string
 /// @param string	   The string to draw
-/// @param [charCount]  The number of characters from the string to draw. If not specified, all characters will be drawn
+/// @param [charCount]  The number of charname from the string to draw. If not specified, all charname will be drawn
 
 function draw_text_scribble(_x, _y, _string, _reveal = undefined)
 {

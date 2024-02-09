@@ -91,7 +91,7 @@ function state_player_ladder()
 	if (key_jump)
 	{
 		scr_sound(sound_jump);
-		sprite_index = spr_jump;
+		sprite_index = spr_pizzelle_jump;
 		ladderbuffer = 20;
 		jumpAnim = 1;
 		state = states.jump;

@@ -70,7 +70,7 @@ function state_player_machroll()
 	{
 		image_index = 0;
 		state = states.freefallprep;
-		sprite_index = spr_bombdropstart;
+		sprite_index = spr_pizzelle_bodyslamstart;
 		vsp = -6;
 		if (global.treat)
 		{

@@ -41,7 +41,7 @@ if (state == 17)
 			if (xscale == other.image_xscale)
 				sprite_index = spr_hurtjump;
 			else
-				sprite_index = spr_hurt;
+				sprite_index = spr_pizzelle_hurt;
 			movespeed = 8;
 			vsp = -5;
 			timeuntilhpback = 300;

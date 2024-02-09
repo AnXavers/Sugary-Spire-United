@@ -58,7 +58,7 @@ function __scribble_font_add_msdf_from_project(_sprite)
 	var _json_line_height = _em_size*_metrics_map[? "lineHeight"];
 	
 	var _size = ds_list_size(_json_glyph_list);
-	if (SCRIBBLE_VERBOSE) __scribble_trace("\"" + _name + "\" has " + string(_size) + " characters");
+	if (SCRIBBLE_VERBOSE) __scribble_trace("\"" + _name + "\" has " + string(_size) + " charname");
 	
 	var _font_data = new __scribble_class_font(_name, _size, true);
 	_font_data.__runtime = true;
