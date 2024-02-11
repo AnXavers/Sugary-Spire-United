@@ -13,3 +13,10 @@ vibration1 = 0
 vibrationDecay1 = 0
 vibration2 = 0
 vibrationDecay2 = 0
+ function CheckUsedIndex(argument0)
+{
+        if (global.player_input_device == argument0)
+            return 1;
+			else
+    return 0;
+}

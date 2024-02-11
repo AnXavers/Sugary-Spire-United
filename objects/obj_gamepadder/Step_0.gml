@@ -54,7 +54,7 @@ else
 		_index = scr_button_pressed(i)
 		if (_index != -2)
 		{
-			if (device_to_reconnect == 1 && _index == -1 && (keyboard_check_pressed(global.key_jumpN) || keyboard_check_pressed(global.key_startN)))
+			if ((!CheckUsedIndex(_index)|| (device_to_reconnect == 1 && _index == -1) && (keyboard_check_pressed(global.key_jumpN) || keyboard_check_pressed(global.key_startN))))
 			{
 				device_selected[device_to_reconnect] = 1
 				global.player_input_device = _index
