@@ -17,7 +17,7 @@ else
 {
 	draw_rectangle_color(0, 0, 960, 540, c_black, c_black, c_black, c_black, 0)
 	draw_set_font(global.smallfont)
-	_txt = "CONTROLLER DISCONNECTED\n\nPRESS START TO CONTINUE"
+	_txt = "CONTROLLER DISCONNECTED\n\nPRESS START OR JUMP TO CONTINUE"
 	var _h = (string_height(_txt) / 2)
 	draw_text(480, (270 - _h), _txt)
 }

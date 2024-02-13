@@ -17,6 +17,6 @@ vibrationDecay2 = 0
 {
         if (global.player_input_device == argument0)
             return 1;
-			else
+		else
     return 0;
 }

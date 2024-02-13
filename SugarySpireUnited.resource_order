@@ -4531,7 +4531,7 @@
     {"name":"spr_secretTile_cutoffDEBUG","order":7,"path":"sprites/spr_secretTile_cutoffDEBUG/spr_secretTile_cutoffDEBUG.yy",},
     {"name":"spr_fridge_opening","order":224,"path":"sprites/spr_fridge_opening/spr_fridge_opening.yy",},
     {"name":"bg_futopmelt2_new","order":53,"path":"sprites/bg_futopmelt2_new/bg_futopmelt2_new.yy",},
-    {"name":"spr_coneboy_charge","order":39,"path":"sprites/spr_coneboy_charge/spr_coneboy_charge.yy",},
+    {"name":"spr_coneboy_chargeloop","order":39,"path":"sprites/spr_coneboy_chargeloop/spr_coneboy_chargeloop.yy",},
     {"name":"spr_bigbreakEscape_Debris","order":6,"path":"sprites/spr_bigbreakEscape_Debris/spr_bigbreakEscape_Debris.yy",},
     {"name":"spr_noise_haulingidle","order":62,"path":"sprites/spr_noise_haulingidle/spr_noise_haulingidle.yy",},
     {"name":"spr_swedishmonkey_idle","order":2,"path":"sprites/spr_swedishmonkey_idle/spr_swedishmonkey_idle.yy",},

@@ -82,7 +82,7 @@ function scr_coneboy_inhale()
             if (sprite_index == spr_coneboy_chargestart)
             {
                 image_index = 0
-                sprite_index = spr_coneboy_charge
+                sprite_index = spr_coneboy_chargeloop
 				flash = true
 				movespeed = 9
 				create_heat_afterimage(0);
@@ -101,7 +101,7 @@ function scr_coneboy_inhale()
                 sprite_index = (states.mach3 ? spr_coneboy_dash : spr_coneboy_idle)
             }
         }
-		if sprite_index = spr_coneboy_charge
+		if sprite_index = spr_coneboy_chargeloop
 			 movespeed = approach(movespeed, 14, 0.4)
     }
 }
