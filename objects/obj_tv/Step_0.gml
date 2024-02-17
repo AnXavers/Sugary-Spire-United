@@ -1,4 +1,3 @@
-sprite_index = spritedemap();
 scr_tvsprites();
 if (!visible)
 	sprite_index = spr_tvoff;

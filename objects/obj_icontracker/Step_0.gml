@@ -13,3 +13,8 @@ with (target)
 visible = !bbox_in_cam;
 if (visible_cond != -4 && !bbox_in_cam)
 	visible = visible_cond();
+if target == obj_gravplug
+{
+	if target.activetimer == 0
+		instance_destroy()
+}

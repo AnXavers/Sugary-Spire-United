@@ -2567,6 +2567,7 @@
     {"id":{"name":"spr_peppino_shotgunwalk","path":"sprites/spr_peppino_shotgunwalk/spr_peppino_shotgunwalk.yy",},},
     {"id":{"name":"scr_player_bombpep","path":"scripts/scr_player_bombpep/scr_player_bombpep.yy",},},
     {"id":{"name":"scr_enemy_land","path":"scripts/scr_enemy_land/scr_enemy_land.yy",},},
+    {"id":{"name":"bg_hub3_4","path":"sprites/bg_hub3_4/bg_hub3_4.yy",},},
     {"id":{"name":"scr_enemy_stun","path":"scripts/scr_enemy_stun/scr_enemy_stun.yy",},},
     {"id":{"name":"tutorial_7_old","path":"rooms/tutorial_7_old/tutorial_7_old.yy",},},
     {"id":{"name":"scr_enemy_turn","path":"scripts/scr_enemy_turn/scr_enemy_turn.yy",},},

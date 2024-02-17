@@ -68,9 +68,10 @@ if !global.oldhud
 	if (sprite_index != spr_tvturnon && (obj_player.character != "S" && obj_player.character != "T" && obj_player.character != "V" && obj_player.character != "M"))
 		draw_sprite_ext(draw_static ? spr_tvpropellerstatic : spr_tvpropeller, propindex, 832 + anchor_point("right"), 74 + DrawY + bobbing, 1, 1, 0, c_white, 1);
 }
+var _remappedspr = spriteremap()
 scr_palette_as_player();
-draw_sprite_ext(sprite_index, image_index, 832 - DrawX + anchor_point("right"), 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
-if (sprite_index != spr_pizzanotv_panic && !global.oldhud)
+draw_sprite_ext(_remappedspr, image_index, 832 - DrawX + anchor_point("right"), 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
+if (_remappedspr != spr_pizzanotv_panic && !global.oldhud)
 	draw_sprite_ext(tvspr, image_index, 832 - DrawX + anchor_point("right"), 74 + DrawY + bobbing + OldDrawY, 1, 1, 0, c_white, 1);
 pal_swap_reset();
 if !global.oldhud

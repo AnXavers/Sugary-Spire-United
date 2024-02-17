@@ -318,6 +318,7 @@ noisetaunt = 0;
 shouldersfx = -1;
 idletimer = 0;
 lastframestate = states.normal
+lastcottonspring = -1
 u_mask = shader_get_uniform(5, "u_MaskColour");
 u_spr = shader_get_uniform(5, "u_SprRect");
 u_pat = shader_get_uniform(5, "u_PatRect");

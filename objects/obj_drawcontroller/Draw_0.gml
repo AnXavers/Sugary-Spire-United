@@ -58,7 +58,6 @@ with (obj_player)
 {
 	if (visible && bbox_in_camera_ext(c, 32))
 	{
-		sprite_index = spriteremap()
 		var my_color_array = my_palettes[paletteselect][2];
 		var using_pattern = sprite_exists(my_color_array[2]);
 		if (!using_pattern)
@@ -94,12 +93,13 @@ with (obj_player)
 			_y_shake = random_range(-6, 6);
 		}
 		scr_palette_as_player();
-		draw_sprite_ext(sprite_index, image_index, x + _x_shake, y + _y_shake, xscale * scale, yscale * scale, draw_angle, image_blend, image_alpha);
+		var _remappedspr = spriteremap()
+		draw_sprite_ext(_remappedspr, image_index, x + _x_shake, y + _y_shake, xscale * scale, yscale * scale, draw_angle, image_blend, image_alpha);
 		pal_swap_reset();
 		if (flash)
-			draw_sprite_ext_flash(sprite_index, image_index, x + _x_shake, y + _y_shake, xscale * scale, yscale * scale, draw_angle, c_white, image_alpha);
+			draw_sprite_ext_flash(_remappedspr, image_index, x + _x_shake, y + _y_shake, xscale * scale, yscale * scale, draw_angle, c_white, image_alpha);
 		if (is_inSecretPortal)
-			draw_sprite_ext_flash(sprite_index, image_index, x + _x_shake, y + _y_shake, xscale * scale, yscale * scale, draw_angle, 9251145, image_alpha * (1.5 - scale));
+			draw_sprite_ext_flash(_remappedspr, image_index, x + _x_shake, y + _y_shake, xscale * scale, yscale * scale, draw_angle, 9251145, image_alpha * (1.5 - scale));
 		if (global.debugmode == 1)
 		{
 			draw_set_font(font_dev);
@@ -114,7 +114,6 @@ with (obj_player)
 			draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 			draw_set_halign(0);
 		}
-		sprite_index = spritedemap()
 	}
 }
 with (obj_baddieDead)

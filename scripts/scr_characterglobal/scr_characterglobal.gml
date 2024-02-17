@@ -1953,33 +1953,10 @@ function spriteremap(argument0 = sprite_index)
 		}
 		var _eraspr = (_characterspr + _era)
 		if asset_get_index(_eraspr) != -1
-		{
-			show_debug_message(_eraspr)
 			return asset_get_index(_eraspr)
-		}
 		else if asset_get_index(_characterspr) != -1
-		{
-			show_debug_message(_characterspr)
 			return asset_get_index(_characterspr)
-		}
 		else
-		{
-			show_debug_message(argument0)
 			return argument0
-		}
-	}
-}
-function spritedemap(argument0 = sprite_index)
-{
-	if instance_exists(obj_player)
-	{
-		var _spr = asset_get_index("spr_pizzelle" + string_trim_end(string_trim_start(sprite_get_name(argument0), ["spr_" + obj_player.charname]), ["_new", "_classic", "_alt"]))
-		if _spr != -1
-		{
-			show_debug_message(_spr)
-			return _spr
-		}
-		show_debug_message(argument0)
-		return argument0
 	}
 }

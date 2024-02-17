@@ -31,4 +31,3 @@ if (draw_combo != global.combo && global.combotime > 0 && global.combo > 0)
 	ComboShake = true;
 	alarm[2] = 20;
 }
-sprite_index = spriteremap()

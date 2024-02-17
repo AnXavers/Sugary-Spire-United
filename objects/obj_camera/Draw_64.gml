@@ -292,18 +292,4 @@ if (global.dogtimer > 0)
 	draw_sprite(spr_dogtimer_limit, 0, global.cam_w - 50, global.cam_h + dogtimery)
 	draw_text(30, global.cam_h - 140 + dogtimery, _display_mins + ":" + _display_secs);
 }
-if instance_exists(obj_gravplug)
-{
-	var _plugtimer = (instance_nearest(obj_player.x, obj_player.y, obj_gravplug).activetimer)
-	if (_plugtimer > 0)
-	{
-		draw_set_halign(fa_center)
-		var _display_mins = string(frames_in_minutes(_plugtimer))
-		var _display_secs = string(((frames_in_seconds(_plugtimer)) mod 60))
-		if string_length(_display_secs) == 1
-			_display_secs = ("0" + _display_secs)
-		draw_text((global.cam_w / 2), 100, _display_mins + ":" + _display_secs);
-		draw_set_halign(fa_left)
-	}
-}
 index += 0.35

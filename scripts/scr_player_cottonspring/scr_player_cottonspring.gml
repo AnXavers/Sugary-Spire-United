@@ -72,7 +72,7 @@ function state_player_cottonspring()
 		scr_sound(sfx_cottonattack);
 		groundedcot = 0;
 	}
-	if ((key_jump && !grounded) || (!audio_is_playing(sfx_spring)))
+	if (key_jump && !grounded)
 	{
 		doublejumped = 1;
 		movespeed = 0;
