@@ -4855,7 +4855,7 @@
     {"id":{"name":"spr_secretTile_cutoffDEBUG","path":"sprites/spr_secretTile_cutoffDEBUG/spr_secretTile_cutoffDEBUG.yy",},},
     {"id":{"name":"spr_fridge_opening","path":"sprites/spr_fridge_opening/spr_fridge_opening.yy",},},
     {"id":{"name":"bg_futopmelt2_new","path":"sprites/bg_futopmelt2_new/bg_futopmelt2_new.yy",},},
-    {"id":{"name":"spr_coneboy_charge","path":"sprites/spr_coneboy_charge/spr_coneboy_charge.yy",},},
+    {"id":{"name":"spr_coneboy_chargeloop","path":"sprites/spr_coneboy_chargeloop/spr_coneboy_chargeloop.yy",},},
     {"id":{"name":"spr_bigbreakEscape_Debris","path":"sprites/spr_bigbreakEscape_Debris/spr_bigbreakEscape_Debris.yy",},},
     {"id":{"name":"spr_noise_haulingidle","path":"sprites/spr_noise_haulingidle/spr_noise_haulingidle.yy",},},
     {"id":{"name":"spr_swedishmonkey_idle","path":"sprites/spr_swedishmonkey_idle/spr_swedishmonkey_idle.yy",},},

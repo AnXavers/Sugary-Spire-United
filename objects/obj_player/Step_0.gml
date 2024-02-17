@@ -271,7 +271,7 @@ if (((state == states.mach2 && sprite_index != spr_mach1) || state == states.mac
 	{
 		obj_player: id
 	});
-if (state == states.pizzano_kungfu || (state == states.coneboy_inhale115 && sprite_index == spr_coneboy_charge))
+if (state == states.pizzano_kungfu || (state == states.coneboy_inhale115 && sprite_index == spr_coneboy_chargeloop))
 {
 	blue_aftimg--;
 	if (blue_aftimg <= 0)
