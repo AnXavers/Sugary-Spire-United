@@ -7121,6 +7121,7 @@
     {"id":{"name":"ts_clock_sprite","path":"sprites/ts_clock_sprite/ts_clock_sprite.yy",},},
     {"id":{"name":"entryway_2_new","path":"rooms/entryway_2_new/entryway_2_new.yy",},},
     {"id":{"name":"martian_portal","path":"rooms/martian_portal/martian_portal.yy",},},
+    {"id":{"name":"spr_bigcollect5P_new","path":"sprites/spr_bigcollect5P_new/spr_bigcollect5P_new.yy",},},
     {"id":{"name":"ts_clock","path":"tilesets/ts_clock/ts_clock.yy",},},
     {"id":{"name":"spr_soldier_shootstart","path":"sprites/spr_soldier_shootstart/spr_soldier_shootstart.yy",},},
     {"id":{"name":"ts_steamtest_sprite","path":"sprites/ts_steamtest_sprite/ts_steamtest_sprite.yy",},},

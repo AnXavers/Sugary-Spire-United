@@ -1,4 +1,4 @@
-if obj_player.lastcottonspring = id
+if obj_player.lastcottonspring == id
 {
 	doublejumped = 1;
 	movespeed = 0;
@@ -12,7 +12,7 @@ if obj_player.lastcottonspring = id
 	instance_create(x, y, obj_highjumpcloud2);
 	with (instance_create(x, y, obj_highjumpcloud2))
 	{
-		image_xscale = other.xscale;
+		image_xscale = obj_player.xscale;
 		sprite_index = spr_cottonpoof;
 	}
 	scr_sound(sfx_cottonjump);

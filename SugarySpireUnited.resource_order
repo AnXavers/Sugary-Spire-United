@@ -6664,6 +6664,7 @@
     {"name":"ts_molasses2","order":1,"path":"tilesets/ts_molasses2/ts_molasses2.yy",},
     {"name":"entryway_2_new","order":2,"path":"rooms/entryway_2_new/entryway_2_new.yy",},
     {"name":"martian_portal","order":2,"path":"rooms/martian_portal/martian_portal.yy",},
+    {"name":"spr_bigcollect5P_new","order":31,"path":"sprites/spr_bigcollect5P_new/spr_bigcollect5P_new.yy",},
     {"name":"spr_soldier_shootstart","order":7,"path":"sprites/spr_soldier_shootstart/spr_soldier_shootstart.yy",},
     {"name":"ts_steamtest_sprite","order":3,"path":"sprites/ts_steamtest_sprite/ts_steamtest_sprite.yy",},
     {"name":"ts_steamtest","order":3,"path":"tilesets/ts_steamtest/ts_steamtest.yy",},
