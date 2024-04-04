@@ -1,6 +1,7 @@
 function scr_sound()
 {
-	var snd = audio_play_sound(argument[irandom(argument_count - 1)], 1, false);
+	var snd = fmod_system_create_sound(argument[irandom(argument_count - 1)], FMOD_MODE.LOOP_OFF);
+	volume
 	audio_sound_gain(snd, global.soundVolume, 0);
 	return snd;
 }
