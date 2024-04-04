@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a2afeb86-5b8d-4437-9b9e-572101bd7d82}">
+		<property name="assetPath">
+			<value>Music/mu_stormy2_old.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>104.136</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{125dbe82-c920-43b3-bf14-92372dca34f5}</destination>
+		</relationship>
+	</object>
+</objects>

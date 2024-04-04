@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c3801a33-c19e-4f84-a18f-a8d8eb8ac745}">
+		<property name="assetPath">
+			<value>Sfx/sfx_combovoice5n.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.0154648526077097</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{125dbe82-c920-43b3-bf14-92372dca34f5}</destination>
+		</relationship>
+	</object>
+</objects>

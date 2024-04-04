@@ -1,9 +1,11 @@
 {
-  "resourceType": "GMNotes",
-  "resourceVersion": "1.1",
-  "name": "Call-backs",
-  "parent": {
-    "name": "BNET",
-    "path": "folders/Notes/BNET.yy",
+  "$GMNotes":"",
+  "%Name":"Call-backs",
+  "name":"Call-backs",
+  "parent":{
+    "name":"BNET",
+    "path":"folders/Notes/BNET.yy",
   },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
 }

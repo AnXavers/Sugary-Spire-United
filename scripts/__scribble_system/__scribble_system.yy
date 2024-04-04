@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "__scribble_system",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Scribble",
-    "path": "folders/Extensions/Scribble.yy",
+  "$GMScript":"",
+  "%Name":"__scribble_system",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__scribble_system",
+  "parent":{
+    "name":"Scribble",
+    "path":"folders/Extensions/Scribble.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

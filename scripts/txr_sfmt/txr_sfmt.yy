@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "txr_sfmt",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Helper scripts",
-    "path": "folders/Scripts/Tiny Expression Runtime/Helper scripts.yy",
+  "$GMScript":"",
+  "%Name":"txr_sfmt",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"txr_sfmt",
+  "parent":{
+    "name":"Helper scripts",
+    "path":"folders/Scripts/Tiny Expression Runtime/Helper scripts.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

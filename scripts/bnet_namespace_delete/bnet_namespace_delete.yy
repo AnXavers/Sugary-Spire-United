@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "bnet_namespace_delete",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "NAMESPACE",
-    "path": "folders/Scripts/BNET/NAMESPACE.yy",
+  "$GMScript":"",
+  "%Name":"bnet_namespace_delete",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"bnet_namespace_delete",
+  "parent":{
+    "name":"NAMESPACE",
+    "path":"folders/Scripts/BNET/NAMESPACE.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

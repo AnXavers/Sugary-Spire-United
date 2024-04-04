@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_levelcorrection",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "General",
-    "path": "folders/Scripts/General.yy",
+  "$GMScript":"",
+  "%Name":"scr_levelcorrection",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_levelcorrection",
+  "parent":{
+    "name":"General",
+    "path":"folders/Scripts/General.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

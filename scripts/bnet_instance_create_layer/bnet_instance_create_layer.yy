@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "bnet_instance_create_layer",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "INSTANCE",
-    "path": "folders/Scripts/BNET/INSTANCE.yy",
+  "$GMScript":"",
+  "%Name":"bnet_instance_create_layer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"bnet_instance_create_layer",
+  "parent":{
+    "name":"INSTANCE",
+    "path":"folders/Scripts/BNET/INSTANCE.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

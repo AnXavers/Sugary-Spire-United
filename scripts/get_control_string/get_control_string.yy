@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "get_control_string",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Input",
-    "path": "folders/Scripts/General/Input.yy",
+  "$GMScript":"",
+  "%Name":"get_control_string",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_control_string",
+  "parent":{
+    "name":"Input",
+    "path":"folders/Scripts/General/Input.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

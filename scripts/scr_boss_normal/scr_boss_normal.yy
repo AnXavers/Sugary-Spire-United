@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_boss_normal",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Boss",
-    "path": "folders/Scripts/Enemy/Boss.yy",
+  "$GMScript":"",
+  "%Name":"scr_boss_normal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_boss_normal",
+  "parent":{
+    "name":"Boss",
+    "path":"folders/Scripts/Enemy/Boss.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

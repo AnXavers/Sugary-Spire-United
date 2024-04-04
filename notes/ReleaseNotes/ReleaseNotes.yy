@@ -1,9 +1,11 @@
 {
-  "resourceType": "GMNotes",
-  "resourceVersion": "1.1",
-  "name": "ReleaseNotes",
-  "parent": {
-    "name": "BNET",
-    "path": "folders/Notes/BNET.yy",
+  "$GMNotes":"",
+  "%Name":"ReleaseNotes",
+  "name":"ReleaseNotes",
+  "parent":{
+    "name":"BNET",
+    "path":"folders/Notes/BNET.yy",
   },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
 }

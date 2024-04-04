@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "bnet_mongodb_document_get",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "DOCUMENT",
-    "path": "folders/Scripts/BNET/MONGODB/DOCUMENT.yy",
+  "$GMScript":"",
+  "%Name":"bnet_mongodb_document_get",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"bnet_mongodb_document_get",
+  "parent":{
+    "name":"DOCUMENT",
+    "path":"folders/Scripts/BNET/MONGODB/DOCUMENT.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

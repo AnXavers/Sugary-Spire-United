@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "bnet_voip",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "CHAT",
-    "path": "folders/Scripts/BNET/CHAT.yy",
+  "$GMScript":"",
+  "%Name":"bnet_voip",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"bnet_voip",
+  "parent":{
+    "name":"CHAT",
+    "path":"folders/Scripts/BNET/CHAT.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

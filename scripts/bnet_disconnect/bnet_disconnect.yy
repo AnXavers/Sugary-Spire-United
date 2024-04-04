@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "bnet_disconnect",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "CLIENT",
-    "path": "folders/Scripts/BNET/CONNECTION/CLIENT.yy",
+  "$GMScript":"",
+  "%Name":"bnet_disconnect",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"bnet_disconnect",
+  "parent":{
+    "name":"CLIENT",
+    "path":"folders/Scripts/BNET/CONNECTION/CLIENT.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

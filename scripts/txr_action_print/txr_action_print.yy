@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "txr_action_print",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Action",
-    "path": "folders/Scripts/Tiny Expression Runtime/Serialization/Action.yy",
+  "$GMScript":"",
+  "%Name":"txr_action_print",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"txr_action_print",
+  "parent":{
+    "name":"Action",
+    "path":"folders/Scripts/Tiny Expression Runtime/Serialization/Action.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

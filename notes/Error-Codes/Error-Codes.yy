@@ -1,9 +1,11 @@
 {
-  "resourceType": "GMNotes",
-  "resourceVersion": "1.1",
-  "name": "Error-Codes",
-  "parent": {
-    "name": "BNET",
-    "path": "folders/Notes/BNET.yy",
+  "$GMNotes":"",
+  "%Name":"Error-Codes",
+  "name":"Error-Codes",
+  "parent":{
+    "name":"BNET",
+    "path":"folders/Notes/BNET.yy",
   },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
 }

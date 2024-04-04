@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_parallaxbg",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Parallax",
-    "path": "folders/Scripts/General/Parallax.yy",
+  "$GMScript":"",
+  "%Name":"scr_parallaxbg",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_parallaxbg",
+  "parent":{
+    "name":"Parallax",
+    "path":"folders/Scripts/General/Parallax.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

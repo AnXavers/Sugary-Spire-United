@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "txr_value_read",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Serialization",
-    "path": "folders/Scripts/Tiny Expression Runtime/Serialization.yy",
+  "$GMScript":"",
+  "%Name":"txr_value_read",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"txr_value_read",
+  "parent":{
+    "name":"Serialization",
+    "path":"folders/Scripts/Tiny Expression Runtime/Serialization.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
