@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "bnet_network_send_broadcast_udp",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "NET",
-    "path": "folders/Scripts/BNET/NET.yy",
+  "$GMScript":"",
+  "%Name":"bnet_network_send_broadcast_udp",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"bnet_network_send_broadcast_udp",
+  "parent":{
+    "name":"NET",
+    "path":"folders/Scripts/BNET/NET.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

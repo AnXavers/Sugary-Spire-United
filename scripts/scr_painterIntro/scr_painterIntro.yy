@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_painterIntro",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Painter",
-    "path": "folders/Scripts/Enemy/Boss/Painter.yy",
+  "$GMScript":"",
+  "%Name":"scr_painterIntro",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_painterIntro",
+  "parent":{
+    "name":"Painter",
+    "path":"folders/Scripts/Enemy/Boss/Painter.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

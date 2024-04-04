@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_gumbob_propeller",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "States",
-    "path": "folders/Scripts/Player/States.yy",
+  "$GMScript":"",
+  "%Name":"scr_gumbob_propeller",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_gumbob_propeller",
+  "parent":{
+    "name":"States",
+    "path":"folders/Scripts/Player/States.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "bnet_server_version_check",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "MISCELLANEOUS",
-    "path": "folders/Scripts/BNET/MISCELLANEOUS.yy",
+  "$GMScript":"",
+  "%Name":"bnet_server_version_check",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"bnet_server_version_check",
+  "parent":{
+    "name":"MISCELLANEOUS",
+    "path":"folders/Scripts/BNET/MISCELLANEOUS.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

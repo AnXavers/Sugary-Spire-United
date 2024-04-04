@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_confecti_normal",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Confecti",
-    "path": "folders/Scripts/General/Confecti.yy",
+  "$GMScript":"",
+  "%Name":"scr_confecti_normal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_confecti_normal",
+  "parent":{
+    "name":"Confecti",
+    "path":"folders/Scripts/General/Confecti.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "bnet_file_delete",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "FILE",
-    "path": "folders/Scripts/BNET/FILE.yy",
+  "$GMScript":"",
+  "%Name":"bnet_file_delete",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"bnet_file_delete",
+  "parent":{
+    "name":"FILE",
+    "path":"folders/Scripts/BNET/FILE.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

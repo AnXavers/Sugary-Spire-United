@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Extensions","order":13,"path":"folders/Extensions.yy",},
     {"name":"GMLive","order":1,"path":"folders/Extensions/GMLive.yy",},
     {"name":"Internal","order":1,"path":"folders/Extensions/GMLive/Internal.yy",},
@@ -499,7 +499,7 @@
     {"name":"Unused or Unknown","order":2,"path":"folders/Tile Sets/Unused or Unknown.yy",},
     {"name":"Timelines","order":24,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"obj_minedummycart","order":1,"path":"objects/obj_minedummycart/obj_minedummycart.yy",},
     {"name":"obj_doorS","order":6,"path":"objects/obj_doorS/obj_doorS.yy",},
     {"name":"sfx_newidle1p","order":23,"path":"sounds/sfx_newidle1p/sfx_newidle1p.yy",},

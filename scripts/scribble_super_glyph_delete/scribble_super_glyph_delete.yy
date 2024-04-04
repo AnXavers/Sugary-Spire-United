@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scribble_super_glyph_delete",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Scribble",
-    "path": "folders/Extensions/Scribble.yy",
+  "$GMScript":"",
+  "%Name":"scribble_super_glyph_delete",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scribble_super_glyph_delete",
+  "parent":{
+    "name":"Scribble",
+    "path":"folders/Extensions/Scribble.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

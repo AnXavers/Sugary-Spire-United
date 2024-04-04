@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "bnet_mongodb_collection_create",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "COLLECTION",
-    "path": "folders/Scripts/BNET/MONGODB/COLLECTION.yy",
+  "$GMScript":"",
+  "%Name":"bnet_mongodb_collection_create",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"bnet_mongodb_collection_create",
+  "parent":{
+    "name":"COLLECTION",
+    "path":"folders/Scripts/BNET/MONGODB/COLLECTION.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

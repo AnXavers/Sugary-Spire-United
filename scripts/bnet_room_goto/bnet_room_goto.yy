@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "bnet_room_goto",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "ROOM",
-    "path": "folders/Scripts/BNET/ROOM.yy",
+  "$GMScript":"",
+  "%Name":"bnet_room_goto",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"bnet_room_goto",
+  "parent":{
+    "name":"ROOM",
+    "path":"folders/Scripts/BNET/ROOM.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

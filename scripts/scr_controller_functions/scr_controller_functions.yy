@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_controller_functions",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Input",
-    "path": "folders/Scripts/General/Input.yy",
+  "$GMScript":"",
+  "%Name":"scr_controller_functions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_controller_functions",
+  "parent":{
+    "name":"Input",
+    "path":"folders/Scripts/General/Input.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

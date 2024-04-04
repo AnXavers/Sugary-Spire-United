@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "tile_layer_find",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Compatibility",
-    "path": "folders/Scripts/Compatibility.yy",
+  "$GMScript":"",
+  "%Name":"tile_layer_find",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tile_layer_find",
+  "parent":{
+    "name":"Compatibility",
+    "path":"folders/Scripts/Compatibility.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
