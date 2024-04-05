@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{f57eae89-e79d-42cf-b702-87d380b82197}">
+		<property name="name">
+			<value>martian_freezer</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b8aabc3c-c1ce-40d1-9847-f23c0449f707}</destination>
+		</relationship>
+	</object>
+</objects>
