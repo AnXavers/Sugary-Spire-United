@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{6b44b7ea-ad0d-49f4-b937-df969a8fba97}">
+		<property name="name">
+			<value>Hubstate</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ffceb18f-7322-42b5-b76b-6d3d370fefe8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{430db16e-6e03-463b-bd19-4a23c3ba7afb}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{430db16e-6e03-463b-bd19-4a23c3ba7afb}">
+		<property name="maximum">
+			<value>5</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
