@@ -2,7 +2,11 @@
   "$GMExtensionConfigSet": "GMExtensionConfigSet",
   "configurables": {
     "c7909757-05f8-4365-b44d-00795f9489f9": null,
-    "69e2040b-c54f-4d66-87d8-04c2caa2f267": null,
+    "69e2040b-c54f-4d66-87d8-04c2caa2f267": {
+      "Default": {
+        "value": "C:\\\\Program Files (x86)\\\\FMOD SoundSystem\\\\FMOD Studio API Windows"
+      }
+    },
     "aff0f052-c04f-4ea7-9c53-c10ef775761d": null,
     "56095c61-1b68-47e5-8371-cd33dc182612": null,
     "b6788195-a70c-47ef-9e3a-71d3164e6811": null,
