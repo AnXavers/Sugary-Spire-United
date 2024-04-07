@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{ae0e2f22-d615-4772-9714-ff52c0a9396c}">
+		<property name="name">
+			<value>Coneballstate</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ffceb18f-7322-42b5-b76b-6d3d370fefe8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c845b418-2161-4ec5-b32b-df35dbb4a5e3}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c845b418-2161-4ec5-b32b-df35dbb4a5e3}">
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
