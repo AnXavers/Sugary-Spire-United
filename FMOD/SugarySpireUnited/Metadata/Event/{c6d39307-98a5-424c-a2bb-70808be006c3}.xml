@@ -23,8 +23,6 @@
 			<destination>{1d3cc154-b66e-4582-8cd3-ba3c0a723236}</destination>
 		</relationship>
 		<relationship name="markerTracks">
-			<destination>{340d512d-d29d-423c-b27a-3755b120d583}</destination>
-			<destination>{b2094a83-677e-4e02-9497-99a5330a65c2}</destination>
 			<destination>{9d01af25-a8e7-45ec-9cb8-8269d61a0b20}</destination>
 			<destination>{f22ec787-467f-4e29-9d46-fe6427c9b4e3}</destination>
 		</relationship>
@@ -64,8 +62,6 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{1d3cc154-b66e-4582-8cd3-ba3c0a723236}" />
-	<object class="MarkerTrack" id="{340d512d-d29d-423c-b27a-3755b120d583}" />
-	<object class="MarkerTrack" id="{b2094a83-677e-4e02-9497-99a5330a65c2}" />
 	<object class="MarkerTrack" id="{9d01af25-a8e7-45ec-9cb8-8269d61a0b20}" />
 	<object class="MarkerTrack" id="{f22ec787-467f-4e29-9d46-fe6427c9b4e3}" />
 	<object class="GroupTrack" id="{d20c6c63-2d58-4725-b0d8-8a02ce264ab3}">
@@ -195,7 +191,7 @@
 			<destination>{52e14cd7-59a8-4966-af92-c6b6fc48f68f}</destination>
 		</relationship>
 		<relationship name="markerTrack">
-			<destination>{340d512d-d29d-423c-b27a-3755b120d583}</destination>
+			<destination>{9d01af25-a8e7-45ec-9cb8-8269d61a0b20}</destination>
 		</relationship>
 		<relationship name="transitionTimeline">
 			<destination>{2086536a-bf6d-4c1f-a6f1-ccd1044d5fb7}</destination>
