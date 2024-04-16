@@ -26,7 +26,7 @@ if (flash)
 {
 	gpu_set_fog(true, c_white, 0, 1);
 	draw_text(x, y, number);
-	gpu_set_fog(false, 0, 0, 0);
+	gpu_set_fog(false, c_black, 0, 0);
 }
 else
 	draw_text(x, y, number);

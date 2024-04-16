@@ -4,7 +4,7 @@ audio_stop_sound(sfx_harrypause)
 instance_destroy(obj_cameraRegion)
 audio_resume_all()
 scr_sound(sound_explosion)
-screen_flash(1)
+global.screenflash = 1
 if global.harryfreeze
 	layer_destroy(global.harryeffect)
 global.combofreeze = 30;

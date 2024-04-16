@@ -127,14 +127,14 @@ function draw_sprite_ext_flash(argument0, argument1, argument2, argument3, argum
 {
 	gpu_set_fog(true, argument7, 0, 1);
 	draw_sprite_ext(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8);
-	gpu_set_fog(false, 0, 0, 0);
+	gpu_set_fog(false, c_black, 0, 0);
 	exit;
 }
 function draw_self_flash(argument0)
 {
 	gpu_set_fog(true, argument0, 0, 1);
 	draw_self();
-	gpu_set_fog(false, 0, 0, 0);
+	gpu_set_fog(false, c_black, 0, 0);
 	exit;
 }
 function string_contains(argument0, argument1)

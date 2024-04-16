@@ -9,28 +9,23 @@ var appa = 1;
 if (!global.gamePauseState)
 {
 	if (global.panic && global.fill <= 3600)
-		shader = 13;
-	else
-		shader = -4;
+		shader = shd_greyscale;
 	if (global.screenmelt && global.panic)
 		appa = lerp(1, 0.5, global.wave / global.maxwave);
-}
-if (!global.gamePauseState)
-{
 	surface_set_target(finalApplicationSurface);
-	shader_set(14);
-	var fade = shader_get_uniform(14, "fade");
+	shader_set(shd_premulti);
+	var fade = shader_get_uniform(shd_premulti, "fade");
 	shader_set_uniform_f(fade, global.greyscalefade);
-	gpu_set_blendmode_ext(2, 6);
+	gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
 	draw_surface_stretched_ext(application_surface, 0, 0, global.cam_w, global.cam_h, c_white, appa);
-	gpu_set_blendmode(0);
+	gpu_set_blendmode(bm_normal);
 	shader_reset();
 	surface_reset_target();
 }
 if (global.smoothscale)
 {
 	gpu_set_tex_filter(true);
-	shader_set(6);
+	shader_set(shd_pixelscale);
 	shader_set_uniform_f_array(uRes, sRes);
 	draw_surface_stretched_ext(finalApplicationSurface, 0, 0, global.cam_w, global.cam_h, c_white, 1);
 	shader_reset();

@@ -32,9 +32,9 @@ else
 	surface_set_target(goo_surface);
 	draw_clear_alpha(0, 0);
 	draw_sprite(spr_combometer_goo, goo_index, -3, _hy + 6);
-	draw_set_blend_mode(3);
+	gpu_set_blendmode(3);
 	draw_sprite(spr_combometer_cut, 0, 0, 0);
-	draw_set_blend_mode(0);
+	gpu_set_blendmode(bm_normal);
 	surface_reset_target();
 	draw_surface(goo_surface, (_cx + combo_x) - 50, (88 + combo_y) - 91);
 	draw_sprite_ext(spr_combometer, -1, _cx + combo_x, 88 + combo_y, 1, 1, 0, c_white, alpha);
@@ -60,9 +60,9 @@ if !global.oldhud
 		hscroll[i] += bg_details[i][2]
 		draw_sprite_tiled(bg_details[i][0], bg_details[i][1], hscroll[i] + (obj_player.x * bg_details[i][3] / 4), 0);
 	}
-	draw_set_blend_mode(3);
+	gpu_set_blendmode(3);
 	draw_sprite(tvcutspr, 0, 0, 0);
-	draw_set_blend_mode(0);
+	gpu_set_blendmode(bm_normal);
 	surface_reset_target();
 	draw_surface(tvbg_surface, 693 + anchor_point("right"), -60 + DrawY + bobbing)
 	if (sprite_index != spr_tvturnon && (obj_player.character != "S" && obj_player.character != "T" && obj_player.character != "V" && obj_player.character != "M"))

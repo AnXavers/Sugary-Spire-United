@@ -5,10 +5,10 @@ if (!surface_exists(contentsurf))
 surface_set_target(contentsurf);
 var xpos = 32 - ((sprite_get_width(objspr) / 2) - sprite_get_xoffset(objspr));
 var ypos = 32 - ((sprite_get_height(objspr) / 2) - sprite_get_yoffset(objspr));
-shader_set(0);
-var colorblend1 = shader_get_uniform(0, "blendcolor1");
+shader_set(shd_afterimage);
+var colorblend1 = shader_get_uniform(shd_afterimage, "blendcolor1");
 shader_set_uniform_f(colorblend1, 0, 0.7490196078431373, 0.9529411764705882);
-var colorblend2 = shader_get_uniform(0, "blendcolor2");
+var colorblend2 = shader_get_uniform(shd_afterimage, "blendcolor2");
 shader_set_uniform_f(colorblend2, 0, 0, 0);
 if (objspr != -1)
 	draw_sprite(objspr, 0, xpos, ypos);

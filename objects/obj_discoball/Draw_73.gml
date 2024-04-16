@@ -11,9 +11,9 @@ if (idraw)
 	{
 		surface_set_target(darkSurf);
 		draw_clear_alpha(0, 0.6);
-		draw_set_blend_mode(3);
+		gpu_set_blendmode(3);
 		draw_triangle_color(cam_middle, -150, cam_middle - 250, cam_height, cam_middle + 250, cam_height, 0, 0, 0, 0);
-		draw_set_blend_mode(0);
+		gpu_set_blendmode(bm_normal);
 		draw_set_alpha(1);
 		surface_reset_target();
 	}

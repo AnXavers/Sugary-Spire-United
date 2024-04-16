@@ -5,9 +5,9 @@ if (point_in_rectangle(x, y, camera_get_view_x(view_camera[0]) - 64, camera_get_
 		s = surface_create(sprite_width, sprite_height);
 		surface_set_target(s);
 		draw_clear_alpha(c_white, 0);
-		gpu_set_blendmode(0);
+		gpu_set_blendmode(bm_normal);
 		draw_sprite_ext(sprite_index, image_index, sprite_xoffset, sprite_yoffset, image_xscale, image_yscale, 0, image_blend, image_alpha);
-		gpu_set_blendmode_ext(9, 6);
+		gpu_set_blendmode_ext(bm_dest_color, bm_inv_src_alpha);
 		if (mode == 1)
 		{
 			for (var i = -1; i < 2; i++)
@@ -18,7 +18,7 @@ if (point_in_rectangle(x, y, camera_get_view_x(view_camera[0]) - 64, camera_get_
 		}
 		else
 			draw_sprite_tiled(blendsprite, 0, 0, 0);
-		gpu_set_blendmode(0);
+		gpu_set_blendmode(bm_normal);
 		surface_reset_target();
 	}
 	if (surface_exists(s))

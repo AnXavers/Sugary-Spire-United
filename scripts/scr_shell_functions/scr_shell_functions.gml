@@ -1,7 +1,3 @@
-function scr_shell_openconsole()
-{
-	global.shellactivate = true;
-}
 function scr_shell_closeconsole()
 {
 	if (instance_exists(obj_pause))
@@ -31,8 +27,4 @@ function scr_fartcommand(argument0 = "BALLS")
 			return true;
 			break;
 	}
-}
-function scr_shell_roomstart()
-{
-	toggle_collision_function();
 }

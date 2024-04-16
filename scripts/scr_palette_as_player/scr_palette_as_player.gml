@@ -12,17 +12,17 @@ function scr_palette_as_player(argument0 = sprite_index, argument1 = image_index
 	}
 	if (using_pattern && sprite_exists(argument0))
 	{
-		var s_pat = shader_get_sampler_index(5, "s_Pattern");
+		var s_pat = shader_get_sampler_index(shd_pattern, "s_Pattern");
 		var tex = sprite_get_texture(my_color_array[2], 0);
 		var tex2 = sprite_get_texture(argument0, argument1);
-		shader_set(5);
+		shader_set(shd_pattern);
 		texture_set_stage(s_pat, tex);
 		var mask_color = 4259839;
-		var u_mask = shader_get_uniform(5, "u_MaskColour");
-		var u_spr = shader_get_uniform(5, "u_SprRect");
-		var u_pat = shader_get_uniform(5, "u_PatRect");
-		var u_texel = shader_get_uniform(5, "u_TexelScl");
-		var u_offset = shader_get_uniform(5, "u_SprOffset");
+		var u_mask = shader_get_uniform(shd_pattern, "u_MaskColour");
+		var u_spr = shader_get_uniform(shd_pattern, "u_SprRect");
+		var u_pat = shader_get_uniform(shd_pattern, "u_PatRect");
+		var u_texel = shader_get_uniform(shd_pattern, "u_TexelScl");
+		var u_offset = shader_get_uniform(shd_pattern, "u_SprOffset");
 		shader_set_uniform_f(u_mask, color_get_red(mask_color), color_get_green(mask_color), color_get_blue(mask_color));
 		var uvs = sprite_get_uvs(argument0, argument1);
 		shader_set_uniform_f(u_spr, uvs[0], uvs[1], uvs[2], uvs[3]);

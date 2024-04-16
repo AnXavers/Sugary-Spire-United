@@ -36,10 +36,9 @@
   ],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"targetRoom","filters":[],"listItems":[],"multiselect":false,"name":"targetRoom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"63","varType":4,},
+    {"$GMObjectProperty":"","%Name":"targetRoom","filters":[],"listItems":[],"multiselect":false,"name":"targetRoom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_missing","varType":4,},
     {"$GMObjectProperty":"","%Name":"secretActivated","filters":[],"listItems":[],"multiselect":false,"name":"secretActivated","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":4,},
-    {"$GMObjectProperty":"","%Name":"functionState","filters":[],"listItems":[],"multiselect":false,"name":"functionState","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"defaultSecretState()","varType":4,},
-    {"$GMObjectProperty":"","%Name":"storedState","filters":[],"listItems":[],"multiselect":false,"name":"storedState","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"74","varType":4,},
+    {"$GMObjectProperty":"","%Name":"storedState","filters":[],"listItems":[],"multiselect":false,"name":"storedState","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"states.freefall","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

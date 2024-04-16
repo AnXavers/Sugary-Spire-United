@@ -97,7 +97,7 @@ function live_room_loader_add_layer(l_ql){
 				l_aval=l_qb[?"color"];
 				if(l_aval<0)l_aval+=4294967296.;
 				if(l_aval!=undefined){
-					layer_background_blend(l_rb,(l_aval&16777215));
+					layer_background_blend(l_rb,(l_aval&c_white));
 					layer_background_alpha(l_rb,((l_aval>>24)/255));
 				}
 				l_aval=l_qb[?"htiled"];
@@ -220,7 +220,7 @@ function live_room_loader_add_layer(l_ql){
 						l_f=l_qinst[?"color"];
 						if(l_f<0)l_f+=4294967296.;
 						if(l_f!=undefined){
-							self.image_blend=(l_f&16777215);
+							self.image_blend=(l_f&c_white);
 							self.image_alpha=(l_f>>24)/255;
 						}
 						l_s=l_qinst[?"obj"];
@@ -277,7 +277,7 @@ function live_room_loader_add_layer(l_ql){
 					l_f=l_qspr[?"color"];
 					if(l_f<0)l_f+=4294967296.;
 					if(l_f!=undefined){
-						layer_sprite_blend(l_rspr2,(l_f&16777215));
+						layer_sprite_blend(l_rspr2,(l_f&c_white));
 						layer_sprite_alpha(l_rspr2,((l_f>>24)/255));
 					}
 					if(l_qspr[?"animationFPS"]!=undefined)layer_sprite_speed(l_rspr2,live_room_loader_anim_speed(l_qspr[?"animationFPS"],l_qspr[?"animationSpeedType"]));

@@ -50,10 +50,10 @@ function scr_parallaxbg_end()
 {
 	if (event_type == 8 && event_number == 0)
 	{
-		gpu_set_blendenable(0);
+		gpu_set_blendenable(false);
 		gpu_set_colorwriteenable(0, 0, 0, 1);
 		draw_rectangle(-192, -192, 1152, 732, false);
-		gpu_set_blendenable(1);
+		gpu_set_blendenable(true);
 		gpu_set_colorwriteenable(1, 1, 1, 1);
 		surface_reset_target();
 	}

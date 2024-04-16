@@ -47,13 +47,6 @@ function camera_get_position_struct(argument0, argument1 = -4) constructor
 		centeredcam_y -= argument1[1];
 	}
 }
-function screen_flash(argument0)
-{
-	global.screenflash = argument0;
-}
-function pummel_dim()
-{
-}
 function anchor_point(_point)
 {
 	switch _point

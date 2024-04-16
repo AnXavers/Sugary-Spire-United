@@ -7,9 +7,9 @@ for (var i = 0; i < ds_list_size(global.afterimage_list); i++)
 		{
 			if (color_choose != 0)
 			{
-				shader_set(0);
-				var colorblend1 = shader_get_uniform(0, "blendcolor1");
-				var colorblend2 = shader_get_uniform(0, "blendcolor2");
+				shader_set(shd_afterimage);
+				var colorblend1 = shader_get_uniform(shd_afterimage, "blendcolor1");
+				var colorblend2 = shader_get_uniform(shd_afterimage, "blendcolor2");
 				shader_set_uniform_f(colorblend1, color_get_red(obj_afterimagecontroller.color_arr[color_choose].light) / 255, color_get_green(obj_afterimagecontroller.color_arr[color_choose].light) / 255, color_get_blue(obj_afterimagecontroller.color_arr[color_choose].light) / 255);
 				shader_set_uniform_f(colorblend2, color_get_red(obj_afterimagecontroller.color_arr[color_choose].dark) / 255, color_get_green(obj_afterimagecontroller.color_arr[color_choose].dark) / 255, color_get_blue(obj_afterimagecontroller.color_arr[color_choose].dark) / 255);
 			}

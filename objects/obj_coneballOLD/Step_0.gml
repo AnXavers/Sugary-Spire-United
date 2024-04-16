@@ -120,7 +120,7 @@ if (place_meeting(x, y, obj_player) && attacking && attack > 1 && image_index > 
 }
 if (sprite_index == spr_coneballraintrans && image_index > 8)
 {
-	screen_flash(3);
+	global.screenflash = 3
 	if (!audio_is_playing(sfx_coneballrain))
 		scr_sound(sfx_coneballrain);
 	shake_mag = 100;

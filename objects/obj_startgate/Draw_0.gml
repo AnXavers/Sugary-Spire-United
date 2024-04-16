@@ -38,7 +38,7 @@ else
 		drawIndex += drawImgSpd;
 		draw_sprite_tiled_ext(drawSpr, drawIndex, drawx, drawy, drawXscale, drawYscale, drawBlend, drawAlpha);
 	}
-	gpu_set_blendmode(0);
+	gpu_set_blendmode(bm_normal);
 	with (gate)
 	{
 		if (func != -4)

@@ -7,5 +7,5 @@ nextPowTwo = function()
 };
 var wScalar = nextPowTwo(global.cam_w);
 var hScalar = nextPowTwo(global.cam_h);
-uRes = shader_get_uniform(6, "uRes");
+uRes = shader_get_uniform(shd_pixelscale, "uRes");
 sRes = [wScalar, hScalar];

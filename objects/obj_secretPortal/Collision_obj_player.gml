@@ -5,7 +5,7 @@ if (secretActivated && !place_meeting(x, y, obj_secretPortalexit))
 		var _cutscene = cutscene_create([cutscene_secretPortal_start, cutscene_secretPortal_middle, cutscene_secretPortal_preend, cutscene_secretPortal_end]);
 		cutscene_declare_actor(id, "SECRETPORTAL");
 		if (is_undefined(storedState))
-			storedState = functionState();
+			storedState = obj_player.state;
 		with (_cutscene)
 			storedState = other.storedState;
 		image_index = 0;

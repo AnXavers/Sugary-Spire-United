@@ -13,12 +13,12 @@ if (surface_exists(global.parallaxbg_surface))
 	var draw_y = cam_y + rot_y;
 	if (get_panic())
 	{
-		shader_set(15);
-		var panic_id = shader_get_uniform(15, "panic");
+		shader_set(shd_panicbg);
+		var panic_id = shader_get_uniform(shd_panicbg, "panic");
 		shader_set_uniform_f(panic_id, global.wave / global.maxwave);
-		var time_id = shader_get_uniform(15, "time");
+		var time_id = shader_get_uniform(shd_panicbg, "time");
 		shader_set_uniform_f(time_id, current_time / 1000);
-		var fade = shader_get_uniform(15, "fade");
+		var fade = shader_get_uniform(shd_panicbg, "fade");
 		shader_set_uniform_f(fade, global.greyscalefade / 0.6);
 		draw_surface_ext(global.parallaxbg_surface, draw_x, draw_y, camera_get_view_width(view_camera[0]) / 960, camera_get_view_height(view_camera[0]) / 540, -rotation, c_white, 1);
 		shader_reset();

@@ -51,9 +51,9 @@ if (surface_exists(mycut))
 	surface_set_target(mycut);
 	draw_set_color(c_white);
 	draw_rectangle(-960, -540, 1920, 1080, false);
-	draw_set_blend_mode(3);
+	gpu_set_blendmode(3);
 	draw_sprite_ext(spr_npcbubble, 1, 480, 0, 9, tgty / sprite_get_height(spr_npcbubble), 0, c_white, 1);
-	draw_set_blend_mode(0);
+	gpu_set_blendmode(bm_normal);
 	surface_reset_target();
 }
 if (surface_exists(mysurf))
@@ -61,9 +61,9 @@ if (surface_exists(mysurf))
 	surface_set_target(mysurf);
 	draw_set_color(c_white);
 	draw_sprite_tiled(mytex, 0, mytex_x, mytex_y);
-	draw_set_blend_mode(3);
+	gpu_set_blendmode(3);
 	draw_surface(mycut, 0, 0);
-	draw_set_blend_mode(0);
+	gpu_set_blendmode(bm_normal);
 	draw_sprite_ext(spr_npcbubble, 0, surface_get_width(mysurf) / 2, 0, 9, tgty / sprite_get_height(spr_npcbubble), 0, c_white, 1);
 	surface_reset_target();
 	draw_surface(mysurf, 0 + wave_x, boxy);

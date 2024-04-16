@@ -39,7 +39,7 @@ if (global.coneballparry == 1 && distance_to_object(obj_parryhitbox) <= 40)
 	hspeed = 0
 	audio_stop_sound(sound_parry);
 	scr_sound(sound_parry);
-	screen_flash(3)
+	global.screenflash = 3
 	parryspeed = -2
 	alarm[1] = 10
 	with (obj_player)

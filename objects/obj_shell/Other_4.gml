@@ -1,1 +1,1 @@
-scr_shell_roomstart();
+toggle_collision_function();

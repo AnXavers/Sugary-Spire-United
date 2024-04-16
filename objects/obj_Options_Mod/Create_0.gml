@@ -1,16 +1,43 @@
+depth = -100
+
+settings = ds_map_create()
+selected = [""]
+
+function category_create(_nameid, _subids, _name = -1, _icon = -1)
+{
+	ds_map_add(settings, _nameid,
+	{
+		subids: _subids,
+		name: _name,
+		icon: _icon,
+	}
+	)
+}
+function option_create(_nameid, _optionnames, _name = -1, _icon = -1, _sequence = -1)
+{
+	ds_map_add(settings, _nameid,
+	{
+		optionnames: _optionnames,
+		name: _name,
+		icon: _icon,
+		sequence: _sequence,
+	}
+	)
+}
+
+
+/*
 depth = -100;
 selectedy = 0
 selected = [0, 0, 0]
 ini_open("optionData.ini");
 
-/*
-Descriptions
-For a category, [Type (0), Category Name, Description, Icon, [Options/Subcategories]]
-For an option, [Type (1), Option Name, Description, Icon, [[Value name, Preview (Sequence)], [Value name, Preview (Sequence)], ...], Set Value]
-Templates
-For a category, [0, "PLACEHOLDER NAME", "PLACEHOLDER DESCRIPTION", spr_null, []]
-For an option, [1, "PLACEHOLDER NAME", "PLACEHOLDER DESCRIPTION", spr_null, [["PLACEHOLDER NAME", seq_option_placeholder]] ini_read_real("ModSettings", "Placeholder", 0)]
-*/
+	Descriptions
+	For a category, [Type (0), Category Name, Description, Icon, [Options/Subcategories]]
+	For an option, [Type (1), Option Name, Description, Icon, [[Value name, Preview (Sequence)], [Value name, Preview (Sequence)], ...], Set Value]
+	Templates
+	For a category, [0, "PLACEHOLDER NAME", "PLACEHOLDER DESCRIPTION", spr_null, []]
+	For an option, [1, "PLACEHOLDER NAME", "PLACEHOLDER DESCRIPTION", spr_null, [["PLACEHOLDER NAME", seq_option_placeholder]] ini_read_real("ModSettings", "Placeholder", 0)]
 
 global.modoptions = [
 
@@ -123,3 +150,5 @@ global.modoptions = [
 ],
 
 ]
+
+*/

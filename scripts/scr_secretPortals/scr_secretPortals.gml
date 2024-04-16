@@ -1,10 +1,3 @@
-function defaultSecretState(argument0 = undefined)
-{
-	var _p = obj_player;
-	if (!is_undefined(argument0))
-		_p = argument0;
-	return _p.state;
-}
 function portal_activate(argument0, argument1)
 {
 	with (argument0)
