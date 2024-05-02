@@ -4,7 +4,7 @@ var _y = y;
 if (state == 8)
 	_y += 8;
 draw_sprite(spr_iceblock_bg, color_index, x, _y);
-if (contentspr != -4)
+if (contentspr != -4 && contentspr != -1)
 {
 	if (!surface_exists(contentsurf))
 		contentsurf = surface_create(64, 64);
