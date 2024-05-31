@@ -4,5 +4,31 @@
 		<property name="name">
 			<value>Master</value>
 		</property>
+		<relationship name="items">
+			<destination>{aa1ce75e-9f4f-4971-b95e-7329714ed3f6}</destination>
+			<destination>{573ccbbe-667c-4ec7-9bfc-6cb9cb3cd613}</destination>
+			<destination>{488a7feb-f230-49c5-a0e6-76c1505d8227}</destination>
+			<destination>{3684cded-78c1-40e6-a202-7c76ed1252d4}</destination>
+		</relationship>
+	</object>
+	<object class="Tag" id="{aa1ce75e-9f4f-4971-b95e-7329714ed3f6}">
+		<property name="name">
+			<value>sfx2d</value>
+		</property>
+	</object>
+	<object class="Tag" id="{573ccbbe-667c-4ec7-9bfc-6cb9cb3cd613}">
+		<property name="name">
+			<value>sfx3d</value>
+		</property>
+	</object>
+	<object class="Tag" id="{488a7feb-f230-49c5-a0e6-76c1505d8227}">
+		<property name="name">
+			<value>music</value>
+		</property>
+	</object>
+	<object class="Tag" id="{3684cded-78c1-40e6-a202-7c76ed1252d4}">
+		<property name="name">
+			<value>world</value>
+		</property>
 	</object>
 </objects>

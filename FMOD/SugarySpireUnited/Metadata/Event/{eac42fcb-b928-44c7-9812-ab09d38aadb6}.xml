@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{eac42fcb-b928-44c7-9812-ab09d38aadb6}">
 		<property name="name">
-			<value>titlecard</value>
+			<value>swamp_titlecard</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{d7120e3e-f53f-4400-9550-3776cbba93ae}</destination>
+			<destination>{cb654106-324f-4089-9207-1f8be9d9daaf}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{f8ad6ef3-8859-4b1e-9425-074f525330d6}</destination>

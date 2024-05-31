@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{99ec7b81-1e52-4413-af66-4dcf02f8064d}">
 		<property name="name">
-			<value>titlecard</value>
+			<value>dungeon_titlecard</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{94804e87-deab-4311-96ae-7f2813b5ae82}</destination>
+			<destination>{251d05a6-4bf2-42f9-8099-235d924a86f5}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{bf3ba33d-c992-47c0-9653-1e2acd594241}</destination>
