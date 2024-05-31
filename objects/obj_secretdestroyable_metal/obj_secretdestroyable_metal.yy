@@ -30,7 +30,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"tiles","filters":[],"listItems":[],"multiselect":false,"name":"tiles","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[\"Tiles_1\", \"Tiles_2\", \"Tiles_3\", \"Tiles_4\", \"Tiles_Foreground1\", \"Tiles_Foreground2\"]","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"tiles","filters":[],"listItems":[],"multiselect":false,"name":"tiles","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[\"Tiles_1\", \"Tiles_2\", \"Tiles_3\", \"Tiles_4\", \"Tiles_Foreground1\", \"Tiles_Foreground2\"]","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

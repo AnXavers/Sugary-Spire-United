@@ -31,8 +31,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"movespeed","filters":[],"listItems":[],"multiselect":false,"name":"movespeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"12","varType":4,},
-    {"$GMObjectProperty":"","%Name":"gobackspeed","filters":[],"listItems":[],"multiselect":false,"name":"gobackspeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"16","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"movespeed","filters":[],"listItems":[],"multiselect":false,"name":"movespeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"12","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"gobackspeed","filters":[],"listItems":[],"multiselect":false,"name":"gobackspeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"16","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

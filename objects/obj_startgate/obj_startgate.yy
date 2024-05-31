@@ -32,8 +32,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"do_gateconfecti","filters":[],"listItems":[],"multiselect":false,"name":"do_gateconfecti","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":4,},
-    {"$GMObjectProperty":"","%Name":"do_gatesecrets","filters":[],"listItems":[],"multiselect":false,"name":"do_gatesecrets","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"do_gateconfecti","filters":[],"listItems":[],"multiselect":false,"name":"do_gateconfecti","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"do_gatesecrets","filters":[],"listItems":[],"multiselect":false,"name":"do_gatesecrets","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

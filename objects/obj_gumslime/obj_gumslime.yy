@@ -32,7 +32,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"firstGumslime","filters":[],"listItems":[],"multiselect":false,"name":"firstGumslime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"firstGumslime","filters":[],"listItems":[],"multiselect":false,"name":"firstGumslime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

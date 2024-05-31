@@ -26,9 +26,9 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"jumpLeft","filters":[],"listItems":[],"multiselect":false,"name":"jumpLeft","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":4,},
-    {"$GMObjectProperty":"","%Name":"jumpRight","filters":[],"listItems":[],"multiselect":false,"name":"jumpRight","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":4,},
-    {"$GMObjectProperty":"","%Name":"jumpPower","filters":[],"listItems":[],"multiselect":false,"name":"jumpPower","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-11","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"jumpLeft","filters":[],"listItems":[],"multiselect":false,"name":"jumpLeft","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"jumpRight","filters":[],"listItems":[],"multiselect":false,"name":"jumpRight","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"jumpPower","filters":[],"listItems":[],"multiselect":false,"name":"jumpPower","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-11","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

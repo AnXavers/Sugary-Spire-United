@@ -24,9 +24,9 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"targetRoom","filters":[],"listItems":[],"multiselect":false,"name":"targetRoom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"63","varType":4,},
-    {"$GMObjectProperty":"","%Name":"ResetMusic","filters":[],"listItems":[],"multiselect":false,"name":"ResetMusic","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":4,},
-    {"$GMObjectProperty":"","%Name":"targetDoor","filters":[],"listItems":[],"multiselect":false,"name":"targetDoor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"A\"","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"targetRoom","filters":[],"listItems":[],"multiselect":false,"name":"targetRoom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"63","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"ResetMusic","filters":[],"listItems":[],"multiselect":false,"name":"ResetMusic","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"targetDoor","filters":[],"listItems":[],"multiselect":false,"name":"targetDoor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"A\"","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
