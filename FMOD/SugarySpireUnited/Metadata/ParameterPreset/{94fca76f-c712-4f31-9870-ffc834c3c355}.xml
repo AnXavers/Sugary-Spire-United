@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{94fca76f-c712-4f31-9870-ffc834c3c355}">
+		<property name="name">
+			<value>Machstate</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ffceb18f-7322-42b5-b76b-6d3d370fefe8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a6098562-3324-4f85-ab4c-82e70d7c9342}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a6098562-3324-4f85-ab4c-82e70d7c9342}">
+		<property name="maximum">
+			<value>8</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
