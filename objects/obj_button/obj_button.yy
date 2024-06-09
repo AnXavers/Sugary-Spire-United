@@ -37,8 +37,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"save_trigger","filters":[],"listItems":[],"multiselect":false,"name":"save_trigger","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":4,},
-    {"$GMObjectProperty":"","%Name":"no_player","filters":[],"listItems":[],"multiselect":false,"name":"no_player","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"save_trigger","filters":[],"listItems":[],"multiselect":false,"name":"save_trigger","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"no_player","filters":[],"listItems":[],"multiselect":false,"name":"no_player","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

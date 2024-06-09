@@ -31,8 +31,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"rotateSpeed","filters":[],"listItems":[],"multiselect":false,"name":"rotateSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":4,},
-    {"$GMObjectProperty":"","%Name":"addtoAngle","filters":[],"listItems":[],"multiselect":false,"name":"addtoAngle","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"90","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"rotateSpeed","filters":[],"listItems":[],"multiselect":false,"name":"rotateSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"addtoAngle","filters":[],"listItems":[],"multiselect":false,"name":"addtoAngle","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"90","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

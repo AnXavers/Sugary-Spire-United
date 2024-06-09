@@ -31,8 +31,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"gateID","filters":[],"listItems":[],"multiselect":false,"name":"gateID","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":4,},
-    {"$GMObjectProperty":"","%Name":"reversed","filters":[],"listItems":[],"multiselect":false,"name":"reversed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"gateID","filters":[],"listItems":[],"multiselect":false,"name":"gateID","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"reversed","filters":[],"listItems":[],"multiselect":false,"name":"reversed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

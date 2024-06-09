@@ -26,8 +26,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"stopFadeBackIn","filters":[],"listItems":[],"multiselect":false,"name":"stopFadeBackIn","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":4,},
-    {"$GMObjectProperty":"","%Name":"layerArray","filters":[],"listItems":[],"multiselect":false,"name":"layerArray","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[\"Tiles_Secret\", \"Tiles_Secret1\", \"Tiles_Secret2\", \"Tiles_Secret3\", \"Tiles_Secret4\"]","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"stopFadeBackIn","filters":[],"listItems":[],"multiselect":false,"name":"stopFadeBackIn","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"false","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"layerArray","filters":[],"listItems":[],"multiselect":false,"name":"layerArray","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[\"Tiles_Secret\", \"Tiles_Secret1\", \"Tiles_Secret2\", \"Tiles_Secret3\", \"Tiles_Secret4\"]","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
