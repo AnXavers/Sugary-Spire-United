@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="ParameterPreset" id="{73778ca9-f2cf-4ce4-9754-ed6fc2c65d28}">
+	<object class="ParameterPreset" id="{9cccf9aa-30e4-4f35-aa8b-8c5c851493d6}">
 		<property name="name">
-			<value>noise_taunt_count</value>
+			<value>gamefocused</value>
 		</property>
 		<relationship name="folder">
 			<destination>{ffceb18f-7322-42b5-b76b-6d3d370fefe8}</destination>
 		</relationship>
 		<relationship name="parameter">
-			<destination>{a97370c3-48c3-45d4-9e22-f86583e259b7}</destination>
+			<destination>{1e9e6e82-16ac-4ab4-bfca-e7d7d3bf03a5}</destination>
 		</relationship>
 	</object>
-	<object class="GameParameter" id="{a97370c3-48c3-45d4-9e22-f86583e259b7}">
-		<property name="parameterType">
-			<value>1</value>
-		</property>
-		<property name="maximum">
-			<value>11</value>
-		</property>
+	<object class="GameParameter" id="{1e9e6e82-16ac-4ab4-bfca-e7d7d3bf03a5}">
 		<property name="isGlobal">
 			<value>true</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>1</value>
 		</property>
 		<property name="isExposedRecursively">
 			<value>false</value>
