@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3ab337f4-91d9-419b-b80b-8cd90b045f61}">
+		<property name="assetPath">
+			<value>Sfx/noisejetpackstart.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.7307708333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{125dbe82-c920-43b3-bf14-92372dca34f5}</destination>
+		</relationship>
+	</object>
+</objects>

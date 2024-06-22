@@ -37,7 +37,7 @@ switch (obj_player.character)
 		_char = 3;
 		break;
 		
-	case "P":
+	case "S":
 		_char = 4;
 		break;
 		

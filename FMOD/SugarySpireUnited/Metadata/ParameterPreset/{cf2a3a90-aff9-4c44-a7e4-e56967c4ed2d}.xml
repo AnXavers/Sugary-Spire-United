@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{cf2a3a90-aff9-4c44-a7e4-e56967c4ed2d}">
+		<property name="name">
+			<value>grounded</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ffceb18f-7322-42b5-b76b-6d3d370fefe8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d4f47596-9ec0-4d96-96ca-84024131d38c}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d4f47596-9ec0-4d96-96ca-84024131d38c}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>11</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

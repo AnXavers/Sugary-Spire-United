@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{9f55504f-c6d5-4e3e-b565-fb5df5b6e7e3}">
+		<property name="assetPath">
+			<value>Sfx/slipnslideend.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2.4137499999999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{125dbe82-c920-43b3-bf14-92372dca34f5}</destination>
+		</relationship>
+	</object>
+</objects>
