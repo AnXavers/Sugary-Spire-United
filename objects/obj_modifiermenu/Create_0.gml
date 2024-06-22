@@ -52,4 +52,5 @@ ScrollY = 0
 CursorY = 0
 canmove = false
 alarm[0] = 25
-scr_sound(sfx_modifiersstart)
+mus = fmod_studio_event_description_create_instance(fmod_studio_system_get_event(mu_modifiers));
+fmod_studio_event_instance_start(mus);

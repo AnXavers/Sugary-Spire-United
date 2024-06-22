@@ -10,6 +10,7 @@ global.playmiliseconds = 0;
 global.playseconds = 0;
 global.playminutes = 0;
 global.playhour = 0;
+global.panic = false;
 global.fill = 0;
 global.freezeframe = false;
 global.freezeframetimer = 5;

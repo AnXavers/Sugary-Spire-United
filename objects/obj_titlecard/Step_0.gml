@@ -6,7 +6,8 @@ if (!shown)
 	{
 		shown = 1
 		room_goto(rm_titlecard)
-		scr_sound(info.song);
+		fmod_studio_event_instance_start(snd_inst);
+		fmod_studio_event_instance_release(snd_inst);
 		switch info.bginfo[1]
 		{
 			case 0:
@@ -104,9 +105,8 @@ else
 			featuringY = ((approach(featuringY, info.featuringinfo[4], 40) + (info.featuringinfo[2] == 6 ? wave(2, -2, 5, 0) : 0)) + (info.featuringinfo[2] == 7 ? irandom_range(-2, 2) : 0))
 		}
 	}
-	if (((!audio_is_playing(info.song)) && round(step) > 3) || keyboard_check_pressed(vk_enter))
+	if ((!fmod_studio_event_instance_is_valid(snd_inst) && round(step) > 3) || keyboard_check_pressed(vk_enter))
 	{
-		audio_stop_sound(info.song)
 		if (!instance_exists(obj_fadeout))
 		{
 			instance_create(x, y, obj_fadeout);

@@ -18,7 +18,7 @@ if (sprite_index != spr_exitgateclosed)
 			targetDoor = other.targetDoor;
 			targetRoom = other.targetRoom;
 			ds_queue_clear(global.newhudmessage);
-			audio_stop_all();
+			stop_music(FMOD_STUDIO_STOP_MODE.ALLOWFADEOUT)
 		}
 		if (sprite_index == spr_entergate && !instance_exists(obj_modifiermenu))
 		{

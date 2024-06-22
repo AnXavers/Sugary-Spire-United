@@ -10,6 +10,7 @@
     {"name":"inst_76C7A65C","path":"rooms/rm_preinitializer/rm_preinitializer.yy",},
     {"name":"inst_6EBECF44","path":"rooms/rm_preinitializer/rm_preinitializer.yy",},
     {"name":"inst_40F89AF9","path":"rooms/rm_preinitializer/rm_preinitializer.yy",},
+    {"name":"inst_5D12A3E8","path":"rooms/rm_preinitializer/rm_preinitializer.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -18,6 +19,7 @@
         {"$GMRInstance":"","%Name":"inst_76C7A65C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76C7A65C","objectId":{"name":"obj_gmliveblank","path":"objects/obj_gmliveblank/obj_gmliveblank.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-96.0,"y":32.0,},
         {"$GMRInstance":"","%Name":"inst_6EBECF44","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6EBECF44","objectId":{"name":"obj_gmlive","path":"objects/obj_gmlive/obj_gmlive.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-96.0,"y":64.0,},
         {"$GMRInstance":"","%Name":"inst_40F89AF9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_40F89AF9","objectId":{"name":"obj_richpresence","path":"objects/obj_richpresence/obj_richpresence.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-1000.0,"y":-1000.0,},
+        {"$GMRInstance":"","%Name":"inst_5D12A3E8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D12A3E8","objectId":{"name":"obj_fmod_studio_manager","path":"objects/obj_fmod_studio_manager/obj_fmod_studio_manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-64.0,"y":0.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
   ],
   "name":"rm_preinitializer",

@@ -6,6 +6,6 @@ if len > 0
 	if !texture_is_ready(tex)
 		texture_prefetch(tex);
 }
-else
+else if (obj_fmod_studio_manager.fmod_ready)
 	room_goto(rm_initializer);
 alarm[0] = 1;

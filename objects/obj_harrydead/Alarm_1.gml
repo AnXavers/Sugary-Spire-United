@@ -38,8 +38,7 @@ global.wave = 0;
 global.maxwave = global.fill;
 if global.gamemode != 1
 {
-	if (set_theme != -4)
-		obj_music.escapemusic = set_theme;
+	change_music(mu_escape, mu_escape_secret)
 }
 if !instance_exists(obj_panicchanger)
 	instance_create(x, y, obj_panicchanger);
