@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_playerN_hookshot",
   "isCompatibility":false,
   "isDnD":false,

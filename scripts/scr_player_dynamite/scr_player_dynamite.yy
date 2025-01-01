@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_player_dynamite",
   "isCompatibility":false,
   "isDnD":false,

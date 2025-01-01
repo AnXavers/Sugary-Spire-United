@@ -1,5 +1,5 @@
 {
-  "$GMRoom":"",
+  "$GMRoom":"v1",
   "%Name":"estate_secret2_new",
   "creationCodeFile":"",
   "inheritCode":false,

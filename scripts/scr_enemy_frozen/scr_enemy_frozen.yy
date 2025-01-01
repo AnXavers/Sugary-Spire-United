@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_enemy_frozen",
   "isCompatibility":false,
   "isDnD":false,

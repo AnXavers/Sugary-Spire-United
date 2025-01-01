@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_lapPortals",
   "isCompatibility":false,
   "isDnD":false,

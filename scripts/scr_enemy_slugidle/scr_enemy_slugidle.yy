@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_enemy_slugidle",
   "isCompatibility":false,
   "isDnD":false,

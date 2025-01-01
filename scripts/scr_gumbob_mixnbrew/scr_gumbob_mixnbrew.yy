@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_gumbob_mixnbrew",
   "isCompatibility":false,
   "isDnD":false,

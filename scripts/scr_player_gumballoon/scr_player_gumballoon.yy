@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_player_gumballoon",
   "isCompatibility":false,
   "isDnD":false,

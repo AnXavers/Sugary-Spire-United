@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_palette_as_player",
   "isCompatibility":false,
   "isDnD":false,

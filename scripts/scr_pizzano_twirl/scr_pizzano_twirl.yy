@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_pizzano_twirl",
   "isCompatibility":false,
   "isDnD":false,

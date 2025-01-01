@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_painter_dash",
   "isCompatibility":false,
   "isDnD":false,

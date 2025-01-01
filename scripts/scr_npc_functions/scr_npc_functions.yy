@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_npc_functions",
   "isCompatibility":false,
   "isDnD":false,

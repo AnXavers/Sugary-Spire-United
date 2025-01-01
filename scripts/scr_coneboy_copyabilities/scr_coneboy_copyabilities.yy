@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_coneboy_copyabilities",
   "isCompatibility":false,
   "isDnD":false,

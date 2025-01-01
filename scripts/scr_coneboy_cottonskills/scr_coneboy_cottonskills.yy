@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_coneboy_cottonskills",
   "isCompatibility":false,
   "isDnD":false,

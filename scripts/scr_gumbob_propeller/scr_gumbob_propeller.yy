@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_gumbob_propeller",
   "isCompatibility":false,
   "isDnD":false,

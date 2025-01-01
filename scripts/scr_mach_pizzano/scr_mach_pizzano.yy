@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_mach_pizzano",
   "isCompatibility":false,
   "isDnD":false,

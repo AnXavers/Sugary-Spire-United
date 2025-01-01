@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_rocketfist_pizzano",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_pizzano_shoulderbash",
   "isCompatibility":false,
   "isDnD":false,

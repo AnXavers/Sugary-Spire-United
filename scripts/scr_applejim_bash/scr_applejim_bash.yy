@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_applejim_bash",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_confecti_normal",
   "isCompatibility":false,
   "isDnD":false,

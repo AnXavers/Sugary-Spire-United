@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_player_cookiemountfireass",
   "isCompatibility":false,
   "isDnD":false,

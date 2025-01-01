@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_boss_frozen",
   "isCompatibility":false,
   "isDnD":false,

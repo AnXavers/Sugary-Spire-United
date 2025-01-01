@@ -4,7 +4,7 @@ if instance_exists(obj_player)
 ini_open(global.fileselect);
 obj_player.character = ini_read_string("Carryover", "player", "P")
 ini_close();
-txt = "[fa_center][fa_middle][spr_npcfont][shake][c_red]NOTICE!##[c_white]Nothing seen may be final, and it is all subject to change."
+txt = "[fa_center][fa_middle][spr_npcfont][shake][c_red]NOTICE!##[c_white]SSU is a cancelled project and I have moved on from it. #Please go follow PTU's development instead."
 if room == rm_missing
 {
 	txt = "[fa_center][fa_middle][spr_npcfont][shake][c_red]MISSING ROOM!##[c_white]Press enter to go to hub."

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_characterglobal",
   "isCompatibility":false,
   "isDnD":false,

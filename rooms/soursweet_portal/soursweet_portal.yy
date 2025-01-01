@@ -1,5 +1,5 @@
 {
-  "$GMRoom":"",
+  "$GMRoom":"v1",
   "%Name":"soursweet_portal",
   "creationCodeFile":"",
   "inheritCode":false,

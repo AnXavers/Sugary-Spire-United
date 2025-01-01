@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_transformationCheck",
   "isCompatibility":false,
   "isDnD":false,
