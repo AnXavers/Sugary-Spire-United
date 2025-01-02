@@ -10,8 +10,8 @@ if (ev_type == "DiscordReady")
 		ini_write_string("NekoPresence", "userid", _user_id);
 	_user_id = ini_read_string("NekoPresence", "userid", _user_id);
 	ini_close()
-	if !array_contains(global.testerlist, _user_id)
-		game_end();
+	//if !array_contains(global.testerlist, _user_id)
+	//	game_end();
 	if global.nekocheck
 	{
 		global.nekocheck = false
